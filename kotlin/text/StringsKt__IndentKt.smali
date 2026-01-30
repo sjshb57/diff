@@ -713,9 +713,7 @@
 
     invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->EeJhlKMQTtf:Ljava/lang/String;
+    const-string v1, "marginPrefix"
 
     invoke-static {v6, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1034,9 +1032,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->lDDGQzlXX:Ljava/lang/String;
+    const-string v0, ""
 
     invoke-static {p0, v0}, Lkotlin/text/StringsKt;->replaceIndent(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

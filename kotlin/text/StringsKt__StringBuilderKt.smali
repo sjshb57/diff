@@ -95,9 +95,7 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p0, 0x0
-
-    sget-object p0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->SxD:Ljava/lang/String;
+    const-string p0, "str"
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -207,9 +205,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->WuHFtmZNUW:Ljava/lang/String;
+    const-string p1, "append(\'\\n\')"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -233,9 +229,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/android/gms/internal/stats/VUpu/YEFIqUAF;->rGTDBYvx:Ljava/lang/String;
+    const-string p1, "append(\'\\n\')"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -293,9 +287,7 @@
 .method private static final appendLine(Ljava/lang/StringBuilder;Z)Ljava/lang/StringBuilder;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->LgsNscynNnDadmF:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -319,9 +311,7 @@
 .method private static final appendLine(Ljava/lang/StringBuilder;[C)Ljava/lang/StringBuilder;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->oRAJBTqRoEYTOM:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

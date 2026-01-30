@@ -126,9 +126,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/browser/customtabs/NP/AfoCF;->AqmFSERyV:Ljava/lang/String;
+    const-string p1, "append(value)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -146,9 +144,7 @@
 .method private static final appendLine(Ljava/lang/StringBuilder;I)Ljava/lang/StringBuilder;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/browser/customtabs/NP/AfoCF;->OZQkgnAcgsz:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -162,9 +158,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/api/client/util/escape/TGjE/orViZ;->hwDghDqOY:Ljava/lang/String;
+    const-string p1, "append(\'\\n\')"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -878,9 +872,7 @@
 .method private static final insertRange(Ljava/lang/StringBuilder;ILjava/lang/CharSequence;II)Ljava/lang/StringBuilder;
     .registers 6
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/HGf/BqwBVtsr;->jCjRUQLCG:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

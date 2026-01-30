@@ -72,9 +72,7 @@
 
     aget-object p0, p0, p1
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->IVdL:Ljava/lang/String;
+    const-string v0, "SHA"
 
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 

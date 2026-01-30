@@ -385,9 +385,7 @@
 
     move-result-object p1
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->fMrFa:Ljava/lang/String;
+    const-string v0, "this as java.lang.String).toUpperCase(locale)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1403,9 +1401,7 @@
 .method private static final varargs formatNullable(Lkotlin/jvm/internal/StringCompanionObject;Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .registers 5
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->OkoF:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2371,9 +2367,7 @@
 .method public static final startsWith(Ljava/lang/String;Ljava/lang/String;IZ)Z
     .registers 10
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/security/sW/SFkL;->nieZoKW:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2576,9 +2570,7 @@
 .method private static final toCharArray(Ljava/lang/String;)[C
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->uKGaIwrT:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2825,9 +2817,7 @@
         warningSince = "1.5"
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->WKEXcxUkQw:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2910,9 +2900,7 @@
 
     move-result-object p0
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/activity/result/contract/Kr/Zeqt;->ipdvv:Ljava/lang/String;
+    const-string p1, "this as java.lang.String).toUpperCase(locale)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -2147,9 +2147,7 @@
 .method public static final lastIndexOf(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
     .registers 10
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->cSALlIobF:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2759,9 +2757,7 @@
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/activity/result/contract/Kr/Zeqt;->qMGiesoOaXOCVx:Ljava/lang/String;
+    const-string p1, " is less than zero."
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4503,9 +4499,7 @@
 
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->rDkG:Ljava/lang/String;
+    const-string p2, ") is less than start index ("
 
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5522,9 +5516,7 @@
 .method public static final subSequence(Ljava/lang/CharSequence;Lkotlin/ranges/IntRange;)Ljava/lang/CharSequence;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/browser/customtabs/NP/AfoCF;->qfJFcrXWwx:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -7146,9 +7138,7 @@
 
     :cond_37
     :goto_37
-    const/4 p0, 0x0
-
-    sget-object p0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->yozVmcsATCAXxHy:Ljava/lang/String;
+    const-string p0, ""
 
     check-cast p0, Ljava/lang/CharSequence;
 

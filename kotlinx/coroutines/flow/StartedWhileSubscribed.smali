@@ -297,9 +297,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/api/client/util/escape/TGjE/orViZ;->wmMGnfpOodteav:Ljava/lang/String;
+    const-string v3, "replayExpiration="
 
     invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

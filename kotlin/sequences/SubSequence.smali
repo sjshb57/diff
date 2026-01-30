@@ -160,9 +160,7 @@
     :cond_4d
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const/4 p3, 0x0
-
-    sget-object p3, Lcom/google/android/gms/drive/query/internal/ipbP/WoKRHhTzodlI;->aDgxhqSZJBxQJ:Ljava/lang/String;
+    const-string p3, "startIndex should be non-negative, but is "
 
     invoke-direct {p1, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

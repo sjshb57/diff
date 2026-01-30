@@ -72,9 +72,7 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/stats/VUpu/YEFIqUAF;->mmJrkzHoSVMEIl:Ljava/lang/String;
+    const-string v0, "SharingStarted.Eagerly"
 
     return-object v0
 .end method
