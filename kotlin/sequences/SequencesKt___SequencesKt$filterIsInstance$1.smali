@@ -87,7 +87,6 @@
 
     const/4 v0, 0x3
 
-    .line 473
     const-string v1, "R"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
@@ -104,7 +103,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 473
     invoke-virtual {p0, p1}, Lkotlin/sequences/SequencesKt___SequencesKt$filterIsInstance$1;->invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object p1

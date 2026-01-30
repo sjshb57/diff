@@ -214,7 +214,6 @@
 
     move-result-object v0
 
-    .line 2849
     iget v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$zipWithNext$2;->label:I
 
     const/4 v2, 0x1
@@ -256,14 +255,12 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 2850
     iget-object v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$zipWithNext$2;->$this_zipWithNext:Lkotlin/sequences/Sequence;
 
     invoke-interface {v1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 2851
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
@@ -274,7 +271,6 @@
 
     return-object p1
 
-    .line 2852
     :cond_38
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -286,7 +282,6 @@
 
     move-object v3, v1
 
-    .line 2853
     :goto_3f
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -294,12 +289,10 @@
 
     if-eqz v1, :cond_61
 
-    .line 2854
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2855
     iget-object v5, p0, Lkotlin/sequences/SequencesKt___SequencesKt$zipWithNext$2;->$transform:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v5, p1, v1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -326,7 +319,6 @@
 
     return-object v0
 
-    .line 2858
     :cond_61
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

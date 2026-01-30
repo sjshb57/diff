@@ -50,7 +50,6 @@
 .method public static final boxBoolean(Z)Ljava/lang/Boolean;
     .registers 1
 
-    .line 20
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -61,7 +60,6 @@
 .method public static final boxByte(B)Ljava/lang/Byte;
     .registers 1
 
-    .line 24
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -72,7 +70,6 @@
 .method public static final boxChar(C)Ljava/lang/Character;
     .registers 2
 
-    .line 48
     new-instance v0, Ljava/lang/Character;
 
     invoke-direct {v0, p0}, Ljava/lang/Character;-><init>(C)V
@@ -83,7 +80,6 @@
 .method public static final boxDouble(D)Ljava/lang/Double;
     .registers 3
 
-    .line 44
     new-instance v0, Ljava/lang/Double;
 
     invoke-direct {v0, p0, p1}, Ljava/lang/Double;-><init>(D)V
@@ -94,7 +90,6 @@
 .method public static final boxFloat(F)Ljava/lang/Float;
     .registers 2
 
-    .line 40
     new-instance v0, Ljava/lang/Float;
 
     invoke-direct {v0, p0}, Ljava/lang/Float;-><init>(F)V
@@ -105,7 +100,6 @@
 .method public static final boxInt(I)Ljava/lang/Integer;
     .registers 2
 
-    .line 32
     new-instance v0, Ljava/lang/Integer;
 
     invoke-direct {v0, p0}, Ljava/lang/Integer;-><init>(I)V
@@ -116,7 +110,6 @@
 .method public static final boxLong(J)Ljava/lang/Long;
     .registers 3
 
-    .line 36
     new-instance v0, Ljava/lang/Long;
 
     invoke-direct {v0, p0, p1}, Ljava/lang/Long;-><init>(J)V
@@ -127,7 +120,6 @@
 .method public static final boxShort(S)Ljava/lang/Short;
     .registers 2
 
-    .line 28
     new-instance v0, Ljava/lang/Short;
 
     invoke-direct {v0, p0}, Ljava/lang/Short;-><init>(S)V

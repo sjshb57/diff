@@ -74,7 +74,6 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 136
     invoke-virtual {p0}, Lkotlin/text/Regex$findAll$1;->invoke()Lkotlin/text/MatchResult;
 
     move-result-object v0
@@ -85,7 +84,6 @@
 .method public final invoke()Lkotlin/text/MatchResult;
     .registers 4
 
-    .line 136
     iget-object v0, p0, Lkotlin/text/Regex$findAll$1;->this$0:Lkotlin/text/Regex;
 
     iget-object v1, p0, Lkotlin/text/Regex$findAll$1;->$input:Ljava/lang/CharSequence;

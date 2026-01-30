@@ -133,7 +133,6 @@
 
     move-result-object v1
 
-    .line 183
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$1$1$emit$1;->label:I
 
     const/4 v3, 0x1
@@ -158,14 +157,12 @@
     :cond_32
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 184
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$1$1;->$isEmpty:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     const/4 v2, 0x0
 
     iput-boolean v2, p2, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 185
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     iput v3, v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$1$1$emit$1;->label:I
@@ -178,7 +175,6 @@
 
     return-object v1
 
-    .line 186
     :cond_45
     :goto_45
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

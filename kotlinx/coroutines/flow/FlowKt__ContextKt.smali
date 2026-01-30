@@ -49,7 +49,6 @@
 
     const/4 v1, 0x2
 
-    .line 147
     invoke-static {p0, p1, v0, v1, v0}, Lkotlinx/coroutines/flow/FlowKt;->buffer$default(Lkotlinx/coroutines/flow/Flow;ILkotlinx/coroutines/channels/BufferOverflow;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -85,7 +84,6 @@
 
     goto :goto_21
 
-    .line 127
     :cond_9
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -99,7 +97,6 @@
 
     move-result-object p0
 
-    .line 126
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -114,7 +111,6 @@
     :goto_21
     if-ne p1, v0, :cond_34
 
-    .line 129
     sget-object v1, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p2, v1, :cond_28
@@ -138,7 +134,6 @@
     :goto_34
     if-ne p1, v0, :cond_39
 
-    .line 137
     sget-object p2, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
 
     const/4 p1, 0x0
@@ -148,7 +143,6 @@
 
     move-object v4, p2
 
-    .line 141
     instance-of p1, p0, Lkotlinx/coroutines/flow/internal/FusibleFlow;
 
     if-eqz p1, :cond_4d
@@ -175,7 +169,6 @@
 
     goto :goto_5a
 
-    .line 142
     :cond_4d
     new-instance p1, Lkotlinx/coroutines/flow/internal/ChannelFlowOperatorImpl;
 
@@ -208,7 +201,6 @@
 
     const/4 p1, -0x2
 
-    .line 147
     :cond_5
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt;->buffer(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
@@ -231,7 +223,6 @@
 
     if-eqz p3, :cond_b
 
-    .line 125
     sget-object p2, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     :cond_b
@@ -256,14 +247,12 @@
         }
     .end annotation
 
-    .line 259
     instance-of v0, p0, Lkotlinx/coroutines/flow/CancellableFlow;
 
     if-eqz v0, :cond_5
 
     goto :goto_d
 
-    .line 260
     :cond_5
     new-instance v0, Lkotlinx/coroutines/flow/CancellableFlowImpl;
 
@@ -280,7 +269,6 @@
 .method private static final checkFlowContext$FlowKt__ContextKt(Lkotlin/coroutines/CoroutineContext;)V
     .registers 3
 
-    .line 281
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -293,7 +281,6 @@
 
     return-void
 
-    .line 282
     :cond_b
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -307,7 +294,6 @@
 
     move-result-object p0
 
-    .line 281
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -339,7 +325,6 @@
 
     const/4 v2, -0x1
 
-    .line 187
     invoke-static {p0, v2, v0, v1, v0}, Lkotlinx/coroutines/flow/FlowKt;->buffer$default(Lkotlinx/coroutines/flow/Flow;ILkotlinx/coroutines/channels/BufferOverflow;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -363,10 +348,8 @@
         }
     .end annotation
 
-    .line 241
     invoke-static {p1}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->checkFlowContext$FlowKt__ContextKt(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 243
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -377,7 +360,6 @@
 
     goto :goto_2d
 
-    .line 244
     :cond_c
     instance-of v0, p0, Lkotlinx/coroutines/flow/internal/FusibleFlow;
 
@@ -403,7 +385,6 @@
 
     goto :goto_2d
 
-    .line 245
     :cond_1d
     new-instance v7, Lkotlinx/coroutines/flow/internal/ChannelFlowOperatorImpl;
 

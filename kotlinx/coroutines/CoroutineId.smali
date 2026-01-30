@@ -90,14 +90,12 @@
 .method public constructor <init>(J)V
     .registers 4
 
-    .line 287
     sget-object v0, Lkotlinx/coroutines/CoroutineId;->Key:Lkotlinx/coroutines/CoroutineId$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
 
     invoke-direct {p0, v0}, Lkotlin/coroutines/AbstractCoroutineContextElement;-><init>(Lkotlin/coroutines/CoroutineContext$Key;)V
 
-    .line 286
     iput-wide p1, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     return-void
@@ -178,7 +176,6 @@
 .method public final getId()J
     .registers 3
 
-    .line 286
     iget-wide v0, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     return-wide v0
@@ -199,7 +196,6 @@
 .method public bridge synthetic restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
     .registers 3
 
-    .line 284
     check-cast p2, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/CoroutineId;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/String;)V
@@ -210,7 +206,6 @@
 .method public restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/String;)V
     .registers 3
 
-    .line 308
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -223,7 +218,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 289
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CoroutineId("
@@ -248,7 +242,6 @@
 .method public bridge synthetic updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/Object;
     .registers 2
 
-    .line 284
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CoroutineId;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;
 
     move-result-object p1
@@ -259,7 +252,6 @@
 .method public updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;
     .registers 10
 
-    .line 292
     sget-object v0, Lkotlinx/coroutines/CoroutineName;->Key:Lkotlinx/coroutines/CoroutineName$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -281,18 +273,15 @@
     :cond_12
     const-string p1, "coroutine"
 
-    .line 293
     :cond_14
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    .line 294
     invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 295
     move-object v2, v1
 
     check-cast v2, Ljava/lang/CharSequence;
@@ -313,12 +302,10 @@
 
     if-gez v2, :cond_2f
 
-    .line 296
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    .line 297
     :cond_2f
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -334,7 +321,6 @@
 
     const/4 v3, 0x0
 
-    .line 298
     invoke-virtual {v1, v3, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -345,25 +331,20 @@
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 299
     const-string v2, " @"
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 300
     invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/16 p1, 0x23
 
-    .line 301
     invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 302
     iget-wide v2, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 297
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1

@@ -66,7 +66,6 @@
 
     iput-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1;->$action$inlined:Lkotlin/jvm/functions/Function3;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -125,7 +124,6 @@
 
     move-result-object v1
 
-    .line 105
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1$1;->label:I
 
     const/4 v3, 0x2
@@ -167,12 +165,10 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 113
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1;->$this_catch$inlined:Lkotlinx/coroutines/flow/Flow;
 
     iput-object p0, v0, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1$1;->L$0:Ljava/lang/Object;
@@ -192,13 +188,11 @@
     :cond_56
     move-object v2, p0
 
-    .line 105
     :goto_57
     check-cast p2, Ljava/lang/Throwable;
 
     if-eqz p2, :cond_73
 
-    .line 114
     iget-object v2, v2, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1;->$action$inlined:Lkotlin/jvm/functions/Function3;
 
     const/4 v4, 0x0
@@ -225,7 +219,6 @@
 
     return-object v1
 
-    .line 108
     :cond_73
     :goto_73
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -210,7 +210,6 @@
 
     move-result-object v0
 
-    .line 273
     iget v1, p0, Lkotlin/text/Regex$splitToSequence$1;->label:I
 
     const/4 v2, 0x3
@@ -269,7 +268,6 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 274
     iget-object v1, p0, Lkotlin/text/Regex$splitToSequence$1;->this$0:Lkotlin/text/Regex;
 
     invoke-static {v1}, Lkotlin/text/Regex;->access$getNativePattern$p(Lkotlin/text/Regex;)Ljava/util/regex/Pattern;
@@ -282,7 +280,6 @@
 
     move-result-object v1
 
-    .line 275
     iget v5, p0, Lkotlin/text/Regex$splitToSequence$1;->$limit:I
 
     if-eq v5, v4, :cond_a6
@@ -304,7 +301,6 @@
 
     move v1, v5
 
-    .line 284
     :cond_54
     iget-object v7, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
 
@@ -340,7 +336,6 @@
 
     return-object v0
 
-    .line 285
     :cond_74
     :goto_74
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->end()I
@@ -349,7 +344,6 @@
 
     add-int/2addr v1, v4
 
-    .line 286
     iget v7, p0, Lkotlin/text/Regex$splitToSequence$1;->$limit:I
 
     sub-int/2addr v7, v4
@@ -362,7 +356,6 @@
 
     if-nez v7, :cond_54
 
-    .line 288
     :cond_84
     iget-object p1, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
 
@@ -398,14 +391,12 @@
 
     return-object v0
 
-    .line 289
     :cond_a3
     :goto_a3
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 276
     :cond_a6
     :goto_a6
     iget-object v1, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
@@ -428,7 +419,6 @@
 
     return-object v0
 
-    .line 277
     :cond_b8
     :goto_b8
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

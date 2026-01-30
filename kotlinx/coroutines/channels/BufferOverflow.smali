@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 21
     new-instance v0, Lkotlinx/coroutines/channels/BufferOverflow;
 
     const-string v1, "SUSPEND"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 26
     new-instance v0, Lkotlinx/coroutines/channels/BufferOverflow;
 
     const-string v1, "DROP_OLDEST"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 32
     new-instance v0, Lkotlinx/coroutines/channels/BufferOverflow;
 
     const-string v1, "DROP_LATEST"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 17
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -111,7 +111,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 37
     new-instance v0, Lkotlinx/coroutines/CoroutineStart;
 
     const-string v1, "DEFAULT"
@@ -122,7 +121,6 @@
 
     sput-object v0, Lkotlinx/coroutines/CoroutineStart;->DEFAULT:Lkotlinx/coroutines/CoroutineStart;
 
-    .line 48
     new-instance v0, Lkotlinx/coroutines/CoroutineStart;
 
     const-string v1, "LAZY"
@@ -133,7 +131,6 @@
 
     sput-object v0, Lkotlinx/coroutines/CoroutineStart;->LAZY:Lkotlinx/coroutines/CoroutineStart;
 
-    .line 57
     new-instance v0, Lkotlinx/coroutines/CoroutineStart;
 
     const-string v1, "ATOMIC"
@@ -144,7 +141,6 @@
 
     sput-object v0, Lkotlinx/coroutines/CoroutineStart;->ATOMIC:Lkotlinx/coroutines/CoroutineStart;
 
-    .line 76
     new-instance v0, Lkotlinx/coroutines/CoroutineStart;
 
     const-string v1, "UNDISPATCHED"
@@ -172,7 +168,6 @@
         }
     .end annotation
 
-    .line 20
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -232,7 +227,6 @@
         }
     .end annotation
 
-    .line 90
     sget-object v0, Lkotlinx/coroutines/CoroutineStart$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Lkotlinx/coroutines/CoroutineStart;->ordinal()I
@@ -259,7 +253,6 @@
 
     goto :goto_26
 
-    .line 94
     :cond_15
     new-instance p1, Lkotlin/NoWhenBranchMatchedException;
 
@@ -267,19 +260,16 @@
 
     throw p1
 
-    .line 93
     :cond_1b
     invoke-static {p1, p2}, Lkotlinx/coroutines/intrinsics/UndispatchedKt;->startCoroutineUndispatched(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
 
     goto :goto_26
 
-    .line 92
     :cond_1f
     invoke-static {p1, p2}, Lkotlin/coroutines/ContinuationKt;->startCoroutine(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
 
     goto :goto_26
 
-    .line 91
     :cond_23
     invoke-static {p1, p2}, Lkotlinx/coroutines/intrinsics/CancellableKt;->startCoroutineCancellable(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
 
@@ -307,7 +297,6 @@
         }
     .end annotation
 
-    .line 109
     sget-object v0, Lkotlinx/coroutines/CoroutineStart$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Lkotlinx/coroutines/CoroutineStart;->ordinal()I
@@ -334,7 +323,6 @@
 
     goto :goto_2c
 
-    .line 113
     :cond_15
     new-instance p1, Lkotlin/NoWhenBranchMatchedException;
 
@@ -342,13 +330,11 @@
 
     throw p1
 
-    .line 112
     :cond_1b
     invoke-static {p1, p2, p3}, Lkotlinx/coroutines/intrinsics/UndispatchedKt;->startCoroutineUndispatched(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)V
 
     goto :goto_2c
 
-    .line 111
     :cond_1f
     invoke-static {p1, p2, p3}, Lkotlin/coroutines/ContinuationKt;->startCoroutine(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)V
 
@@ -367,7 +353,6 @@
 
     move-object v2, p3
 
-    .line 110
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/intrinsics/CancellableKt;->startCoroutineCancellable$default(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Lkotlin/coroutines/Continuation;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     :goto_2c
@@ -377,7 +362,6 @@
 .method public final isLazy()Z
     .registers 2
 
-    .line 122
     sget-object v0, Lkotlinx/coroutines/CoroutineStart;->LAZY:Lkotlinx/coroutines/CoroutineStart;
 
     if-ne p0, v0, :cond_6

@@ -68,13 +68,10 @@
 .method public constructor <init>(DD)V
     .registers 5
 
-    .line 135
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 140
     iput-wide p1, p0, Lkotlin/ranges/OpenEndDoubleRange;->_start:D
 
-    .line 141
     iput-wide p3, p0, Lkotlin/ranges/OpenEndDoubleRange;->_endExclusive:D
 
     return-void
@@ -103,7 +100,6 @@
 .method public contains(D)Z
     .registers 5
 
-    .line 147
     iget-wide v0, p0, Lkotlin/ranges/OpenEndDoubleRange;->_start:D
 
     cmpl-double v0, p1, v0
@@ -130,7 +126,6 @@
 .method public bridge synthetic contains(Ljava/lang/Comparable;)Z
     .registers 4
 
-    .line 135
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
@@ -147,7 +142,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 151
     instance-of v0, p1, Lkotlin/ranges/OpenEndDoubleRange;
 
     if-eqz v0, :cond_27
@@ -168,7 +162,6 @@
 
     if-nez v0, :cond_25
 
-    .line 152
     :cond_13
     iget-wide v0, p0, Lkotlin/ranges/OpenEndDoubleRange;->_start:D
 
@@ -203,7 +196,6 @@
 .method public bridge synthetic getEndExclusive()Ljava/lang/Comparable;
     .registers 2
 
-    .line 135
     invoke-virtual {p0}, Lkotlin/ranges/OpenEndDoubleRange;->getEndExclusive()Ljava/lang/Double;
 
     move-result-object v0
@@ -216,7 +208,6 @@
 .method public getEndExclusive()Ljava/lang/Double;
     .registers 3
 
-    .line 143
     iget-wide v0, p0, Lkotlin/ranges/OpenEndDoubleRange;->_endExclusive:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -229,7 +220,6 @@
 .method public bridge synthetic getStart()Ljava/lang/Comparable;
     .registers 2
 
-    .line 135
     invoke-virtual {p0}, Lkotlin/ranges/OpenEndDoubleRange;->getStart()Ljava/lang/Double;
 
     move-result-object v0
@@ -242,7 +232,6 @@
 .method public getStart()Ljava/lang/Double;
     .registers 3
 
-    .line 142
     iget-wide v0, p0, Lkotlin/ranges/OpenEndDoubleRange;->_start:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -255,7 +244,6 @@
 .method public hashCode()I
     .registers 4
 
-    .line 156
     invoke-virtual {p0}, Lkotlin/ranges/OpenEndDoubleRange;->isEmpty()Z
 
     move-result v0
@@ -290,7 +278,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 148
     iget-wide v0, p0, Lkotlin/ranges/OpenEndDoubleRange;->_start:D
 
     iget-wide v2, p0, Lkotlin/ranges/OpenEndDoubleRange;->_endExclusive:D
@@ -313,7 +300,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 159
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

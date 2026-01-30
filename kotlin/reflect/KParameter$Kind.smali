@@ -86,7 +86,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 55
     new-instance v0, Lkotlin/reflect/KParameter$Kind;
 
     const-string v1, "INSTANCE"
@@ -97,7 +96,6 @@
 
     sput-object v0, Lkotlin/reflect/KParameter$Kind;->INSTANCE:Lkotlin/reflect/KParameter$Kind;
 
-    .line 58
     new-instance v0, Lkotlin/reflect/KParameter$Kind;
 
     const-string v1, "EXTENSION_RECEIVER"
@@ -108,7 +106,6 @@
 
     sput-object v0, Lkotlin/reflect/KParameter$Kind;->EXTENSION_RECEIVER:Lkotlin/reflect/KParameter$Kind;
 
-    .line 61
     new-instance v0, Lkotlin/reflect/KParameter$Kind;
 
     const-string v1, "VALUE"
@@ -136,7 +133,6 @@
         }
     .end annotation
 
-    .line 53
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

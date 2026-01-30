@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +15,6 @@
 .method public static detectVersion()Ljava/lang/String;
     .registers 1
 
-    .line 31
     :try_start_0
     sget-object v0, Lkotlin/KotlinVersion;->CURRENT:Lkotlin/KotlinVersion;
 

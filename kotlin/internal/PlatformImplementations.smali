@@ -54,7 +54,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,7 +76,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
     sget-object v0, Lkotlin/internal/PlatformImplementations$ReflectThrowable;->addSuppressed:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_19
@@ -99,7 +97,6 @@
 .method public defaultPlatformRandom()Lkotlin/random/Random;
     .registers 2
 
-    .line 45
     new-instance v0, Lkotlin/random/FallbackThreadLocalRandom;
 
     invoke-direct {v0}, Lkotlin/random/FallbackThreadLocalRandom;-><init>()V
@@ -120,7 +117,6 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 42
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Retrieving groups by name is not supported on this platform."
@@ -147,7 +143,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 37
     sget-object v0, Lkotlin/internal/PlatformImplementations$ReflectThrowable;->getSuppressed:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_1a
@@ -170,7 +165,6 @@
 
     if-nez p1, :cond_1e
 
-    .line 38
     :cond_1a
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 

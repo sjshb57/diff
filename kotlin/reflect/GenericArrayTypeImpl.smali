@@ -53,10 +53,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 145
     iput-object p1, p0, Lkotlin/reflect/GenericArrayTypeImpl;->elementType:Ljava/lang/reflect/Type;
 
     return-void
@@ -67,7 +65,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 150
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_16
@@ -102,7 +99,6 @@
 .method public getGenericComponentType()Ljava/lang/reflect/Type;
     .registers 2
 
-    .line 146
     iget-object v0, p0, Lkotlin/reflect/GenericArrayTypeImpl;->elementType:Ljava/lang/reflect/Type;
 
     return-object v0
@@ -111,7 +107,6 @@
 .method public getTypeName()Ljava/lang/String;
     .registers 3
 
-    .line 148
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -138,7 +133,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 152
     invoke-virtual {p0}, Lkotlin/reflect/GenericArrayTypeImpl;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object v0
@@ -153,7 +147,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 154
     invoke-virtual {p0}, Lkotlin/reflect/GenericArrayTypeImpl;->getTypeName()Ljava/lang/String;
 
     move-result-object v0

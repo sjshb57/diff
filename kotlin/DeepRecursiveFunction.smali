@@ -82,10 +82,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 70
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 73
     iput-object p1, p0, Lkotlin/DeepRecursiveFunction;->block:Lkotlin/jvm/functions/Function3;
 
     return-void
@@ -108,7 +106,6 @@
         }
     .end annotation
 
-    .line 73
     iget-object v0, p0, Lkotlin/DeepRecursiveFunction;->block:Lkotlin/jvm/functions/Function3;
 
     return-object v0

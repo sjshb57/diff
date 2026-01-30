@@ -90,14 +90,12 @@
         }
     .end annotation
 
-    .line 142
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object v0
 
     if-nez v0, :cond_26
 
-    .line 145
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isCanceled()Z
 
     move-result v0
@@ -133,7 +131,6 @@
 
     goto :goto_39
 
-    .line 147
     :cond_26
     iget-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$awaitImpl$2$1;->$cont:Lkotlinx/coroutines/CancellableContinuation;
 

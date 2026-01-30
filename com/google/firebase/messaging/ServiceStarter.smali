@@ -47,21 +47,16 @@
 .method private constructor <init>()V
     .registers 2
 
-    .line 122
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 98
     iput-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->firebaseMessagingServiceClassName:Ljava/lang/String;
 
-    .line 108
     iput-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
-    .line 110
     iput-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 113
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
@@ -74,12 +69,10 @@
 .method private doStartService(Landroid/content/Context;Landroid/content/Intent;)I
     .registers 7
 
-    .line 148
     invoke-direct {p0, p1, p2}, Lcom/google/firebase/messaging/ServiceStarter;->resolveServiceClassName(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 149
     const/4 v1, 0x0
 
     sget-object v1, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->RdqnIXxIJW:Ljava/lang/String;
@@ -88,14 +81,12 @@
 
     const/4 v2, 0x3
 
-    .line 150
     invoke-static {v1, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
     if-eqz v2, :cond_22
 
-    .line 151
     new-instance v2, Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
@@ -112,7 +103,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 153
     :cond_22
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -120,7 +110,6 @@
 
     invoke-virtual {p2, v2, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 158
     :cond_29
     :try_start_29
     invoke-virtual {p0, p1}, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission(Landroid/content/Context;)Z
@@ -129,20 +118,17 @@
 
     if-eqz v0, :cond_34
 
-    .line 159
     invoke-static {p1, p2}, Lcom/google/firebase/messaging/WakeLockHolder;->startWakefulService(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
 
     move-result-object p1
 
     goto :goto_3d
 
-    .line 161
     :cond_34
     invoke-virtual {p1, p2}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     move-result-object p1
 
-    .line 162
     const-string p2, "Missing wake lock permission, service start may be delayed"
 
     invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -150,7 +136,6 @@
     :goto_3d
     if-nez p1, :cond_47
 
-    .line 165
     const-string p1, "Error while delivering the message: ServiceIntent not found."
 
     invoke-static {v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
@@ -170,7 +155,6 @@
     :catch_49
     move-exception p1
 
-    .line 177
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v0, "Failed to start service while in background: "
@@ -192,7 +176,6 @@
     :catch_5e
     move-exception p1
 
-    .line 172
     const/4 p2, 0x0
 
     sget-object p2, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->hgZIfLwBAmTjPa:Ljava/lang/String;
@@ -211,20 +194,17 @@
 
     monitor-enter v0
 
-    .line 116
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/ServiceStarter;->instance:Lcom/google/firebase/messaging/ServiceStarter;
 
     if-nez v1, :cond_e
 
-    .line 117
     new-instance v1, Lcom/google/firebase/messaging/ServiceStarter;
 
     invoke-direct {v1}, Lcom/google/firebase/messaging/ServiceStarter;-><init>()V
 
     sput-object v1, Lcom/google/firebase/messaging/ServiceStarter;->instance:Lcom/google/firebase/messaging/ServiceStarter;
 
-    .line 119
     :cond_e
     sget-object v1, Lcom/google/firebase/messaging/ServiceStarter;->instance:Lcom/google/firebase/messaging/ServiceStarter;
     :try_end_10
@@ -249,7 +229,6 @@
 
     monitor-enter p0
 
-    .line 202
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/ServiceStarter;->firebaseMessagingServiceClassName:Ljava/lang/String;
     :try_end_5
@@ -257,12 +236,10 @@
 
     if-eqz v1, :cond_9
 
-    .line 203
     monitor-exit p0
 
     return-object v1
 
-    .line 205
     :cond_9
     :try_start_9
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -279,18 +256,15 @@
 
     if-eqz p2, :cond_76
 
-    .line 206
     iget-object v2, p2, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
     if-nez v2, :cond_1a
 
     goto :goto_76
 
-    .line 211
     :cond_1a
     iget-object p2, p2, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
-    .line 212
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
@@ -309,7 +283,6 @@
 
     goto :goto_57
 
-    .line 224
     :cond_2d
     iget-object v0, p2, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
@@ -321,7 +294,6 @@
 
     if-eqz v0, :cond_4f
 
-    .line 225
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -344,13 +316,11 @@
 
     goto :goto_53
 
-    .line 227
     :cond_4f
     iget-object p1, p2, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->firebaseMessagingServiceClassName:Ljava/lang/String;
 
-    .line 229
     :goto_53
     iget-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->firebaseMessagingServiceClassName:Ljava/lang/String;
     :try_end_55
@@ -360,7 +330,6 @@
 
     return-object p1
 
-    .line 213
     :cond_57
     :goto_57
     :try_start_57
@@ -390,12 +359,10 @@
     :try_end_74
     .catchall {:try_start_57 .. :try_end_74} :catchall_7f
 
-    .line 220
     monitor-exit p0
 
     return-object v1
 
-    .line 207
     :cond_76
     :goto_76
     :try_start_76
@@ -407,7 +374,6 @@
     :try_end_7d
     .catchall {:try_start_76 .. :try_end_7d} :catchall_7f
 
-    .line 208
     monitor-exit p0
 
     return-object v1
@@ -423,7 +389,6 @@
 .method public static setForTesting(Lcom/google/firebase/messaging/ServiceStarter;)V
     .registers 1
 
-    .line 274
     sput-object p0, Lcom/google/firebase/messaging/ServiceStarter;->instance:Lcom/google/firebase/messaging/ServiceStarter;
 
     return-void
@@ -434,7 +399,6 @@
 .method getMessagingEvent()Landroid/content/Intent;
     .registers 2
 
-    .line 127
     iget-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->messagingEvents:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -449,15 +413,12 @@
 .method hasAccessNetworkStatePermission(Landroid/content/Context;)Z
     .registers 3
 
-    .line 253
     iget-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
     if-nez v0, :cond_15
 
-    .line 254
     const-string v0, "android.permission.ACCESS_NETWORK_STATE"
 
-    .line 255
     invoke-virtual {p1, v0}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
     move-result p1
@@ -478,7 +439,6 @@
 
     iput-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 259
     :cond_15
     iget-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
@@ -490,7 +450,6 @@
 
     const/4 p1, 0x3
 
-    .line 260
     const-string v0, "FirebaseMessaging"
 
     invoke-static {v0, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -499,12 +458,10 @@
 
     if-eqz p1, :cond_2b
 
-    .line 261
     const-string p1, "Missing Permission: android.permission.ACCESS_NETWORK_STATE this should normally be included by the manifest merger, but may needed to be manually added to your manifest"
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 269
     :cond_2b
     iget-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
@@ -518,15 +475,12 @@
 .method hasWakeLockPermission(Landroid/content/Context;)Z
     .registers 3
 
-    .line 233
     iget-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
     if-nez v0, :cond_15
 
-    .line 234
     const-string v0, "android.permission.WAKE_LOCK"
 
-    .line 235
     invoke-virtual {p1, v0}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
     move-result p1
@@ -547,7 +501,6 @@
 
     iput-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
-    .line 239
     :cond_15
     iget-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
@@ -559,7 +512,6 @@
 
     const/4 p1, 0x3
 
-    .line 240
     const-string v0, "FirebaseMessaging"
 
     invoke-static {v0, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -568,12 +520,10 @@
 
     if-eqz p1, :cond_2b
 
-    .line 241
     const-string p1, "Missing Permission: android.permission.WAKE_LOCK this should normally be included by the manifest merger, but may needed to be manually added to your manifest"
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 249
     :cond_2b
     iget-object p1, p0, Lcom/google/firebase/messaging/ServiceStarter;->hasWakeLockPermission:Ljava/lang/Boolean;
 
@@ -589,7 +539,6 @@
 
     const/4 v0, 0x3
 
-    .line 133
     const-string v1, "FirebaseMessaging"
 
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -598,32 +547,27 @@
 
     if-eqz v0, :cond_e
 
-    .line 134
     const-string v0, "Starting service"
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 138
     :cond_e
     iget-object v0, p0, Lcom/google/firebase/messaging/ServiceStarter;->messagingEvents:Ljava/util/Queue;
 
     invoke-interface {v0, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
-    .line 140
     new-instance p2, Landroid/content/Intent;
 
     const-string v0, "com.google.firebase.MESSAGING_EVENT"
 
     invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 141
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 142
     invoke-direct {p0, p1, p2}, Lcom/google/firebase/messaging/ServiceStarter;->doStartService(Landroid/content/Context;Landroid/content/Intent;)I
 
     move-result p1

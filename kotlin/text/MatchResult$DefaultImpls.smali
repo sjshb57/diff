@@ -28,7 +28,6 @@
 .method public static getDestructured(Lkotlin/text/MatchResult;)Lkotlin/text/MatchResult$Destructured;
     .registers 2
 
-    .line 80
     new-instance v0, Lkotlin/text/MatchResult$Destructured;
 
     invoke-direct {v0, p0}, Lkotlin/text/MatchResult$Destructured;-><init>(Lkotlin/text/MatchResult;)V

@@ -66,7 +66,6 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 119
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/ktx/RemoteConfigKt$configUpdates$1$1;->invoke()V
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,7 +76,6 @@
 .method public final invoke()V
     .registers 2
 
-    .line 119
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/ktx/RemoteConfigKt$configUpdates$1$1;->$registration:Lcom/google/firebase/remoteconfig/ConfigUpdateListenerRegistration;
 
     invoke-interface {v0}, Lcom/google/firebase/remoteconfig/ConfigUpdateListenerRegistration;->remove()V

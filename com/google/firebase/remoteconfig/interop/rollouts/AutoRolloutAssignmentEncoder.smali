@@ -24,7 +24,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 16
     new-instance v0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder;
 
     invoke-direct {v0}, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder;-><init>()V
@@ -37,7 +36,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,14 +53,12 @@
         }
     .end annotation
 
-    .line 23
     const-class v0, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
 
     sget-object v1, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder$RolloutAssignmentEncoder;->INSTANCE:Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder$RolloutAssignmentEncoder;
 
     invoke-interface {p1, v0, v1}, Lcom/google/firebase/encoders/config/EncoderConfig;->registerEncoder(Ljava/lang/Class;Lcom/google/firebase/encoders/ObjectEncoder;)Lcom/google/firebase/encoders/config/EncoderConfig;
 
-    .line 24
     const-class v0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;
 
     sget-object v1, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder$RolloutAssignmentEncoder;->INSTANCE:Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder$RolloutAssignmentEncoder;

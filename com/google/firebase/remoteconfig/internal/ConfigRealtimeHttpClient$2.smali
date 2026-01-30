@@ -25,7 +25,6 @@
 .method constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;)V
     .registers 2
 
-    .line 413
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$2;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +37,10 @@
 .method public onError(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
     .registers 3
 
-    .line 421
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$2;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-static {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->access$000(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;)V
 
-    .line 422
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$2;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-static {v0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->access$100(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V

@@ -97,7 +97,6 @@
 
     const/16 v0, 0x100
 
-    .line 126
     invoke-direct {p0, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder;-><init>(I)V
 
     return-void
@@ -106,7 +105,6 @@
 .method public constructor <init>(I)V
     .registers 3
 
-    .line 119
     new-instance v0, Lcom/google/flatbuffers/ArrayReadWriteBuf;
 
     invoke-direct {v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;-><init>(I)V
@@ -121,24 +119,20 @@
 .method public constructor <init>(Lcom/google/flatbuffers/ReadWriteBuf;I)V
     .registers 4
 
-    .line 140
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 87
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
-    .line 88
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->keyPool:Ljava/util/HashMap;
 
-    .line 89
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -147,20 +141,16 @@
 
     const/4 v0, 0x0
 
-    .line 91
     iput-boolean v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->finished:Z
 
-    .line 94
     new-instance v0, Lcom/google/flatbuffers/FlexBuffersBuilder$1;
 
     invoke-direct {v0, p0}, Lcom/google/flatbuffers/FlexBuffersBuilder$1;-><init>(Lcom/google/flatbuffers/FlexBuffersBuilder;)V
 
     iput-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->keyComparator:Ljava/util/Comparator;
 
-    .line 141
     iput-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
-    .line 142
     iput p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->flags:I
 
     return-void
@@ -171,7 +161,6 @@
 
     const/4 v0, 0x1
 
-    .line 151
     invoke-direct {p0, p1, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder;-><init>(Ljava/nio/ByteBuffer;I)V
 
     return-void
@@ -182,7 +171,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 137
     new-instance v0, Lcom/google/flatbuffers/ArrayReadWriteBuf;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
@@ -199,7 +187,6 @@
 .method static synthetic access$000(Lcom/google/flatbuffers/FlexBuffersBuilder;)Lcom/google/flatbuffers/ReadWriteBuf;
     .registers 1
 
-    .line 51
     iget-object p0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     return-object p0
@@ -212,7 +199,6 @@
 
     shl-int p1, v0, p1
 
-    .line 393
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v0}, Lcom/google/flatbuffers/ReadWriteBuf;->writePosition()I
@@ -228,7 +214,6 @@
 
     if-eqz v0, :cond_19
 
-    .line 395
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     const/4 v2, 0x0
@@ -248,7 +233,6 @@
 
     int-to-long v0, p2
 
-    .line 614
     invoke-static {v0, v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->widthUInBits(J)I
 
     move-result p2
@@ -263,7 +247,6 @@
 
     move p2, p1
 
-    .line 617
     :goto_c
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -273,7 +256,6 @@
 
     if-ge p2, v3, :cond_33
 
-    .line 618
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -304,30 +286,25 @@
 
     move-result v3
 
-    .line 619
     invoke-static {v6, v3}, Ljava/lang/Math;->max(II)I
 
     move-result v6
 
     goto :goto_c
 
-    .line 622
     :cond_33
     invoke-direct {p0, v6}, Lcom/google/flatbuffers/FlexBuffersBuilder;->align(I)I
 
     move-result p2
 
-    .line 624
     invoke-direct {p0, v0, v1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeInt(JI)V
 
-    .line 626
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v0}, Lcom/google/flatbuffers/ReadWriteBuf;->writePosition()I
 
     move-result v0
 
-    .line 627
     :goto_40
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -337,7 +314,6 @@
 
     if-ge p1, v1, :cond_63
 
-    .line 628
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -348,7 +324,6 @@
 
     iget v1, v1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->key:I
 
-    .line 630
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -367,7 +342,6 @@
 
     goto :goto_40
 
-    .line 633
     :cond_63
     new-instance p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
@@ -399,7 +373,6 @@
 
     int-to-long v3, v2
 
-    .line 496
     invoke-static {v3, v4}, Lcom/google/flatbuffers/FlexBuffersBuilder;->widthUInBits(J)I
 
     move-result v5
@@ -412,7 +385,6 @@
 
     if-eqz v1, :cond_21
 
-    .line 501
     iget-object v7, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v7}, Lcom/google/flatbuffers/ReadWriteBuf;->writePosition()I
@@ -441,7 +413,6 @@
 
     move/from16 v5, p2
 
-    .line 506
     :goto_26
     iget-object v9, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -451,7 +422,6 @@
 
     if-ge v5, v9, :cond_68
 
-    .line 507
     iget-object v9, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v9, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -472,7 +442,6 @@
 
     move-result v9
 
-    .line 508
     invoke-static {v12, v9}, Ljava/lang/Math;->max(II)I
 
     move-result v12
@@ -483,7 +452,6 @@
 
     if-ne v5, v9, :cond_65
 
-    .line 511
     iget-object v8, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -494,7 +462,6 @@
 
     iget v8, v8, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
-    .line 512
     invoke-static {v8}, Lcom/google/flatbuffers/FlexBuffers;->isTypedVectorElementType(I)Z
 
     move-result v10
@@ -503,7 +470,6 @@
 
     goto :goto_65
 
-    .line 513
     :cond_5d
     new-instance v1, Lcom/google/flatbuffers/FlexBuffers$FlexBufferException;
 
@@ -522,21 +488,18 @@
     :cond_68
     move/from16 v9, p2
 
-    .line 526
     invoke-direct {p0, v12}, Lcom/google/flatbuffers/FlexBuffersBuilder;->align(I)I
 
     move-result v5
 
     if-eqz v1, :cond_7d
 
-    .line 529
     iget-wide v10, v1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     invoke-direct {p0, v10, v11, v5}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeOffset(JI)V
 
     const-wide/16 v10, 0x1
 
-    .line 530
     iget v7, v1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
 
     shl-long/2addr v10, v7
@@ -546,10 +509,8 @@
     :cond_7d
     if-nez p5, :cond_82
 
-    .line 533
     invoke-direct {p0, v3, v4, v5}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeInt(JI)V
 
-    .line 536
     :cond_82
     iget-object v3, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -559,7 +520,6 @@
 
     move v4, v9
 
-    .line 537
     :goto_89
     iget-object v7, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -569,7 +529,6 @@
 
     if-ge v4, v7, :cond_9f
 
-    .line 538
     iget-object v7, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -587,7 +546,6 @@
     :cond_9f
     if-nez p4, :cond_bd
 
-    .line 542
     :goto_a1
     iget-object v4, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -597,7 +555,6 @@
 
     if-ge v9, v4, :cond_bd
 
-    .line 543
     iget-object v4, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     iget-object v5, v0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
@@ -618,7 +575,6 @@
 
     goto :goto_a1
 
-    .line 546
     :cond_bd
     new-instance v4, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
@@ -641,7 +597,6 @@
     :cond_ca
     move v2, v6
 
-    .line 547
     :goto_cb
     invoke-static {v8, v2}, Lcom/google/flatbuffers/FlexBuffers;->toTypedVector(II)I
 
@@ -675,7 +630,6 @@
 
     return p1
 
-    .line 186
     :cond_4
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -683,7 +637,6 @@
 
     move-result v0
 
-    .line 187
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->flags:I
 
     and-int/lit8 v1, v1, 0x1
@@ -692,7 +645,6 @@
 
     if-eqz v1, :cond_3b
 
-    .line 188
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->keyPool:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -703,26 +655,22 @@
 
     if-nez v1, :cond_36
 
-    .line 190
     sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     move-result-object v1
 
-    .line 191
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     array-length v4, v1
 
     invoke-interface {v3, v1, v2, v4}, Lcom/google/flatbuffers/ReadWriteBuf;->put([BII)V
 
-    .line 192
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v1, v2}, Lcom/google/flatbuffers/ReadWriteBuf;->put(B)V
 
-    .line 193
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->keyPool:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -733,7 +681,6 @@
 
     goto :goto_55
 
-    .line 195
     :cond_36
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -741,7 +688,6 @@
 
     goto :goto_55
 
-    .line 198
     :cond_3b
     sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
@@ -749,19 +695,16 @@
 
     move-result-object v1
 
-    .line 199
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     array-length v4, v1
 
     invoke-interface {v3, v1, v2, v4}, Lcom/google/flatbuffers/ReadWriteBuf;->put([BII)V
 
-    .line 200
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v1, v2}, Lcom/google/flatbuffers/ReadWriteBuf;->put(B)V
 
-    .line 201
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->keyPool:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -777,12 +720,10 @@
 .method private putUInt(Ljava/lang/String;J)V
     .registers 6
 
-    .line 279
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 282
     invoke-static {p2, p3}, Lcom/google/flatbuffers/FlexBuffersBuilder;->widthUInBits(J)I
 
     move-result v0
@@ -791,7 +732,6 @@
 
     long-to-int p2, p2
 
-    .line 285
     invoke-static {p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->uInt8(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
@@ -805,7 +745,6 @@
 
     long-to-int p2, p2
 
-    .line 287
     invoke-static {p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->uInt16(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
@@ -819,20 +758,17 @@
 
     long-to-int p2, p2
 
-    .line 289
     invoke-static {p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->uInt32(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
 
     goto :goto_26
 
-    .line 291
     :cond_22
     invoke-static {p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->uInt64(IJ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
 
-    .line 293
     :goto_26
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -844,7 +780,6 @@
 .method private putUInt64(Ljava/lang/String;J)V
     .registers 5
 
-    .line 275
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
@@ -865,7 +800,6 @@
 
     const/4 v0, -0x1
 
-    .line 372
     invoke-static {v0}, Lcom/google/flatbuffers/FlexBuffers$Unsigned;->byteToUnsignedInt(B)I
 
     move-result v1
@@ -880,7 +814,6 @@
 
     return p0
 
-    .line 373
     :cond_c
     invoke-static {v0}, Lcom/google/flatbuffers/FlexBuffers$Unsigned;->shortToUnsignedInt(S)I
 
@@ -896,7 +829,6 @@
 
     return p0
 
-    .line 374
     :cond_17
     invoke-static {v0}, Lcom/google/flatbuffers/FlexBuffers$Unsigned;->intToUnsignedLong(I)J
 
@@ -919,7 +851,6 @@
 .method private writeAny(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;I)V
     .registers 5
 
-    .line 558
     iget v0, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
     if-eqz v0, :cond_1d
@@ -940,14 +871,12 @@
 
     if-eq v0, v1, :cond_1d
 
-    .line 569
     iget-wide v0, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     invoke-direct {p0, v0, v1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeOffset(JI)V
 
     goto :goto_22
 
-    .line 566
     :cond_17
     iget-wide v0, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->dValue:D
 
@@ -955,7 +884,6 @@
 
     goto :goto_22
 
-    .line 563
     :cond_1d
     iget-wide v0, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
@@ -968,7 +896,6 @@
 .method private writeBlob(I[BIZ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 10
 
-    .line 379
     array-length v0, p2
 
     int-to-long v0, v0
@@ -977,26 +904,22 @@
 
     move-result v0
 
-    .line 380
     invoke-direct {p0, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder;->align(I)I
 
     move-result v1
 
-    .line 381
     array-length v2, p2
 
     int-to-long v2, v2
 
     invoke-direct {p0, v2, v3, v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeInt(JI)V
 
-    .line 382
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v1}, Lcom/google/flatbuffers/ReadWriteBuf;->writePosition()I
 
     move-result v1
 
-    .line 383
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     array-length v3, p2
@@ -1007,12 +930,10 @@
 
     if-eqz p4, :cond_23
 
-    .line 385
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {p2, v4}, Lcom/google/flatbuffers/ReadWriteBuf;->put(B)V
 
-    .line 387
     :cond_23
     invoke-static {p1, v1, p3, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->blob(IIII)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
@@ -1028,7 +949,6 @@
 
     if-ne p3, v0, :cond_a
 
-    .line 576
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     double-to-float p1, p1
@@ -1042,7 +962,6 @@
 
     if-ne p3, v0, :cond_13
 
-    .line 578
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {p3, p1, p2}, Lcom/google/flatbuffers/ReadWriteBuf;->putDouble(D)V
@@ -1073,7 +992,6 @@
 
     goto :goto_2a
 
-    .line 405
     :cond_e
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -1081,7 +999,6 @@
 
     goto :goto_2a
 
-    .line 404
     :cond_14
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -1091,7 +1008,6 @@
 
     goto :goto_2a
 
-    .line 403
     :cond_1b
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -1103,7 +1019,6 @@
 
     goto :goto_2a
 
-    .line 402
     :cond_23
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
@@ -1120,7 +1035,6 @@
 .method private writeOffset(JI)V
     .registers 6
 
-    .line 552
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v0}, Lcom/google/flatbuffers/ReadWriteBuf;->writePosition()I
@@ -1135,7 +1049,6 @@
 
     int-to-long p1, p1
 
-    .line 554
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeInt(JI)V
 
     return-void
@@ -1144,7 +1057,6 @@
 .method private writeString(ILjava/lang/String;)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 5
 
-    .line 367
     sget-object v0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
@@ -1167,12 +1079,10 @@
 .method public endMap(Ljava/lang/String;I)I
     .registers 10
 
-    .line 598
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 600
     iget-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1187,7 +1097,6 @@
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 602
     iget-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1200,7 +1109,6 @@
 
     move-result-object v6
 
-    .line 603
     iget-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1221,7 +1129,6 @@
 
     move-result-object p1
 
-    .line 605
     :goto_2e
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -1231,7 +1138,6 @@
 
     if-le v0, p2, :cond_42
 
-    .line 606
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1244,13 +1150,11 @@
 
     goto :goto_2e
 
-    .line 608
     :cond_42
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 609
     iget-wide p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     long-to-int p1, p1
@@ -1261,12 +1165,10 @@
 .method public endVector(Ljava/lang/String;IZZ)I
     .registers 12
 
-    .line 449
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 450
     iget-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1289,7 +1191,6 @@
 
     move-result-object p1
 
-    .line 452
     :goto_15
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -1299,7 +1200,6 @@
 
     if-le p3, p2, :cond_29
 
-    .line 453
     iget-object p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p3}, Ljava/util/ArrayList;->size()I
@@ -1312,13 +1212,11 @@
 
     goto :goto_15
 
-    .line 455
     :cond_29
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 456
     iget-wide p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     long-to-int p1, p1
@@ -1329,7 +1227,6 @@
 .method public finish()Ljava/nio/ByteBuffer;
     .registers 5
 
-    .line 472
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -1354,7 +1251,6 @@
 
     move-result v0
 
-    .line 473
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1365,7 +1261,6 @@
 
     invoke-direct {p0, v2, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeAny(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;I)V
 
-    .line 475
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
@@ -1382,7 +1277,6 @@
 
     invoke-interface {v2, v3}, Lcom/google/flatbuffers/ReadWriteBuf;->put(B)V
 
-    .line 477
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     int-to-byte v0, v0
@@ -1391,10 +1285,8 @@
 
     const/4 v0, 0x1
 
-    .line 478
     iput-boolean v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->finished:Z
 
-    .line 479
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     invoke-interface {v0}, Lcom/google/flatbuffers/ReadWriteBuf;->data()[B
@@ -1417,7 +1309,6 @@
 .method public getBuffer()Lcom/google/flatbuffers/ReadWriteBuf;
     .registers 2
 
-    .line 162
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->bb:Lcom/google/flatbuffers/ReadWriteBuf;
 
     return-object v0
@@ -1426,7 +1317,6 @@
 .method public putBlob(Ljava/lang/String;[B)I
     .registers 5
 
-    .line 425
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result p1
@@ -1435,17 +1325,14 @@
 
     const/4 v1, 0x0
 
-    .line 426
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeBlob(I[BIZ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
 
-    .line 427
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 428
     iget-wide p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     long-to-int p1, p1
@@ -1458,7 +1345,6 @@
 
     const/4 v0, 0x0
 
-    .line 415
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putBlob(Ljava/lang/String;[B)I
 
     move-result p1
@@ -1469,7 +1355,6 @@
 .method public putBoolean(Ljava/lang/String;Z)V
     .registers 4
 
-    .line 179
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
@@ -1490,7 +1375,6 @@
 
     const/4 v0, 0x0
 
-    .line 170
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putBoolean(Ljava/lang/String;Z)V
 
     return-void
@@ -1501,7 +1385,6 @@
 
     const/4 v0, 0x0
 
-    .line 318
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putFloat(Ljava/lang/String;D)V
 
     return-void
@@ -1512,7 +1395,6 @@
 
     const/4 v0, 0x0
 
-    .line 301
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putFloat(Ljava/lang/String;F)V
 
     return-void
@@ -1521,7 +1403,6 @@
 .method public putFloat(Ljava/lang/String;D)V
     .registers 5
 
-    .line 327
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
@@ -1540,7 +1421,6 @@
 .method public putFloat(Ljava/lang/String;F)V
     .registers 4
 
-    .line 310
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
@@ -1561,7 +1441,6 @@
 
     const/4 v0, 0x0
 
-    .line 211
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putInt(Ljava/lang/String;I)V
 
     return-void
@@ -1572,7 +1451,6 @@
 
     const/4 v0, 0x0
 
-    .line 246
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putInt(Ljava/lang/String;J)V
 
     return-void
@@ -1583,7 +1461,6 @@
 
     int-to-long v0, p2
 
-    .line 220
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putInt(Ljava/lang/String;J)V
 
     return-void
@@ -1592,7 +1469,6 @@
 .method public putInt(Ljava/lang/String;J)V
     .registers 6
 
-    .line 229
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result p1
@@ -1609,7 +1485,6 @@
 
     if-gtz v0, :cond_1b
 
-    .line 231
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     long-to-int p2, p2
@@ -1635,7 +1510,6 @@
 
     if-gtz v0, :cond_32
 
-    .line 233
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     long-to-int p2, p2
@@ -1661,7 +1535,6 @@
 
     if-gtz v0, :cond_4b
 
-    .line 235
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     long-to-int p2, p2
@@ -1674,7 +1547,6 @@
 
     goto :goto_54
 
-    .line 237
     :cond_4b
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
@@ -1693,7 +1565,6 @@
 
     const/4 v0, 0x0
 
-    .line 336
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putString(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
@@ -1704,19 +1575,16 @@
 .method public putString(Ljava/lang/String;Ljava/lang/String;)I
     .registers 7
 
-    .line 346
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putKey(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 347
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->flags:I
 
     and-int/lit8 v0, v0, 0x2
 
     if-eqz v0, :cond_49
 
-    .line 348
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stringPool:Ljava/util/HashMap;
 
     invoke-virtual {v0, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1727,12 +1595,10 @@
 
     if-nez v0, :cond_2d
 
-    .line 350
     invoke-direct {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeString(ILjava/lang/String;)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
 
-    .line 351
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stringPool:Ljava/util/HashMap;
 
     iget-wide v1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
@@ -1745,19 +1611,16 @@
 
     invoke-virtual {v0, p2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 352
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 353
     iget-wide p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     long-to-int p1, p1
 
     return p1
 
-    .line 355
     :cond_2d
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
@@ -1769,7 +1632,6 @@
 
     move-result p2
 
-    .line 356
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -1784,25 +1646,21 @@
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 357
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
 
     return p1
 
-    .line 360
     :cond_49
     invoke-direct {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->writeString(ILjava/lang/String;)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     move-result-object p1
 
-    .line 361
     iget-object p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 362
     iget-wide p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     long-to-int p1, p1
@@ -1817,7 +1675,6 @@
 
     int-to-long v1, p1
 
-    .line 254
     invoke-direct {p0, v0, v1, v2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putUInt(Ljava/lang/String;J)V
 
     return-void
@@ -1828,7 +1685,6 @@
 
     const/4 v0, 0x0
 
-    .line 262
     invoke-direct {p0, v0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder;->putUInt(Ljava/lang/String;J)V
 
     return-void
@@ -1839,7 +1695,6 @@
 
     const/4 v0, 0x0
 
-    .line 271
     invoke-virtual {p1}, Ljava/math/BigInteger;->longValue()J
 
     move-result-wide v1
@@ -1852,7 +1707,6 @@
 .method public startMap()I
     .registers 2
 
-    .line 588
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1865,7 +1719,6 @@
 .method public startVector()I
     .registers 2
 
-    .line 437
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder;->stack:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I

@@ -118,7 +118,6 @@
         }
     .end annotation
 
-    .line 341
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1$1;->$state:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object p2, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
@@ -145,12 +144,10 @@
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1$1;->$result:Lkotlinx/coroutines/CompletableDeferred;
 
-    .line 342
     invoke-static {p1}, Lkotlinx/coroutines/flow/StateFlowKt;->MutableStateFlow(Ljava/lang/Object;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p1
 
-    .line 343
     new-instance v2, Lkotlinx/coroutines/flow/ReadonlyStateFlow;
 
     move-object v3, p1
@@ -169,10 +166,8 @@
 
     invoke-interface {v1, v2}, Lkotlinx/coroutines/CompletableDeferred;->complete(Ljava/lang/Object;)Z
 
-    .line 342
     iput-object p1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 346
     :cond_30
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

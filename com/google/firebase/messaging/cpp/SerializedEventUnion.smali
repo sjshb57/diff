@@ -17,7 +17,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 11
     const-string v0, "SerializedMessage"
 
     const-string v1, "SerializedTokenReceived"
@@ -36,7 +35,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
 .method public static name(I)Ljava/lang/String;
     .registers 2
 
-    .line 13
     sget-object v0, Lcom/google/firebase/messaging/cpp/SerializedEventUnion;->names:[Ljava/lang/String;
 
     aget-object p0, v0, p0

@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 102
     new-instance v0, Lkotlin/internal/RequireKotlinVersionKind;
 
     const-string v1, "LANGUAGE_VERSION"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/internal/RequireKotlinVersionKind;->LANGUAGE_VERSION:Lkotlin/internal/RequireKotlinVersionKind;
 
-    .line 103
     new-instance v0, Lkotlin/internal/RequireKotlinVersionKind;
 
     const-string v1, "COMPILER_VERSION"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/internal/RequireKotlinVersionKind;->COMPILER_VERSION:Lkotlin/internal/RequireKotlinVersionKind;
 
-    .line 104
     new-instance v0, Lkotlin/internal/RequireKotlinVersionKind;
 
     const-string v1, "API_VERSION"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 100
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

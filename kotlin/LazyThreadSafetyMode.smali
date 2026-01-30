@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 54
     new-instance v0, Lkotlin/LazyThreadSafetyMode;
 
     const-string v1, "SYNCHRONIZED"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/LazyThreadSafetyMode;->SYNCHRONIZED:Lkotlin/LazyThreadSafetyMode;
 
-    .line 60
     new-instance v0, Lkotlin/LazyThreadSafetyMode;
 
     const-string v1, "PUBLICATION"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/LazyThreadSafetyMode;->PUBLICATION:Lkotlin/LazyThreadSafetyMode;
 
-    .line 67
     new-instance v0, Lkotlin/LazyThreadSafetyMode;
 
     const-string v1, "NONE"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 49
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

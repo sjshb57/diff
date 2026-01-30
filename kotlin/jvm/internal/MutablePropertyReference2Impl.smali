@@ -7,7 +7,6 @@
 .method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .registers 5
 
-    .line 23
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlin/jvm/internal/MutablePropertyReference2;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
@@ -16,12 +15,10 @@
 .method public constructor <init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
     .registers 5
 
-    .line 15
     move-object v0, p1
 
     check-cast v0, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;
 
-    .line 16
     invoke-interface {v0}, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;->getJClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -30,7 +27,6 @@
 
     xor-int/lit8 p1, p1, 0x1
 
-    .line 15
     invoke-direct {p0, v0, p2, p3, p1}, Lkotlin/jvm/internal/MutablePropertyReference2;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
@@ -41,7 +37,6 @@
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 6
 
-    .line 28
     invoke-virtual {p0}, Lkotlin/jvm/internal/MutablePropertyReference2Impl;->getGetter()Lkotlin/reflect/KProperty2$Getter;
 
     move-result-object v0
@@ -68,7 +63,6 @@
 .method public set(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .registers 7
 
-    .line 33
     invoke-virtual {p0}, Lkotlin/jvm/internal/MutablePropertyReference2Impl;->getSetter()Lkotlin/reflect/KMutableProperty2$Setter;
 
     move-result-object v0

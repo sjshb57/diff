@@ -62,7 +62,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/internal/FlowCoroutineKt$scopedFlow$$inlined$unsafeFlow$1;->$block$inlined:Lkotlin/jvm/functions/Function3;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +84,6 @@
         }
     .end annotation
 
-    .line 113
     new-instance v0, Lkotlinx/coroutines/flow/internal/FlowCoroutineKt$scopedFlow$1$1;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/internal/FlowCoroutineKt$scopedFlow$$inlined$unsafeFlow$1;->$block$inlined:Lkotlin/jvm/functions/Function3;
@@ -108,7 +106,6 @@
 
     return-object p1
 
-    .line 108
     :cond_15
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

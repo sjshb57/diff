@@ -68,7 +68,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -81,7 +80,6 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 126
     const-string v1, "This continuation is already complete"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -98,7 +96,6 @@
 
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 129
     const-string v0, "This continuation is already complete"
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -113,7 +110,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 132
     const-string v0, "This continuation is already complete"
 
     return-object v0

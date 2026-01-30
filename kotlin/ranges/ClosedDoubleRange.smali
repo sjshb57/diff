@@ -68,13 +68,10 @@
 .method public constructor <init>(DD)V
     .registers 5
 
-    .line 95
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 99
     iput-wide p1, p0, Lkotlin/ranges/ClosedDoubleRange;->_start:D
 
-    .line 100
     iput-wide p3, p0, Lkotlin/ranges/ClosedDoubleRange;->_endInclusive:D
 
     return-void
@@ -85,7 +82,6 @@
 .method public contains(D)Z
     .registers 5
 
-    .line 106
     iget-wide v0, p0, Lkotlin/ranges/ClosedDoubleRange;->_start:D
 
     cmpl-double v0, p1, v0
@@ -112,7 +108,6 @@
 .method public bridge synthetic contains(Ljava/lang/Comparable;)Z
     .registers 4
 
-    .line 95
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
@@ -129,7 +124,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 110
     instance-of v0, p1, Lkotlin/ranges/ClosedDoubleRange;
 
     if-eqz v0, :cond_27
@@ -150,7 +144,6 @@
 
     if-nez v0, :cond_25
 
-    .line 111
     :cond_13
     iget-wide v0, p0, Lkotlin/ranges/ClosedDoubleRange;->_start:D
 
@@ -185,7 +178,6 @@
 .method public bridge synthetic getEndInclusive()Ljava/lang/Comparable;
     .registers 2
 
-    .line 95
     invoke-virtual {p0}, Lkotlin/ranges/ClosedDoubleRange;->getEndInclusive()Ljava/lang/Double;
 
     move-result-object v0
@@ -198,7 +190,6 @@
 .method public getEndInclusive()Ljava/lang/Double;
     .registers 3
 
-    .line 102
     iget-wide v0, p0, Lkotlin/ranges/ClosedDoubleRange;->_endInclusive:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -211,7 +202,6 @@
 .method public bridge synthetic getStart()Ljava/lang/Comparable;
     .registers 2
 
-    .line 95
     invoke-virtual {p0}, Lkotlin/ranges/ClosedDoubleRange;->getStart()Ljava/lang/Double;
 
     move-result-object v0
@@ -224,7 +214,6 @@
 .method public getStart()Ljava/lang/Double;
     .registers 3
 
-    .line 101
     iget-wide v0, p0, Lkotlin/ranges/ClosedDoubleRange;->_start:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -237,7 +226,6 @@
 .method public hashCode()I
     .registers 4
 
-    .line 115
     invoke-virtual {p0}, Lkotlin/ranges/ClosedDoubleRange;->isEmpty()Z
 
     move-result v0
@@ -272,7 +260,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 107
     iget-wide v0, p0, Lkotlin/ranges/ClosedDoubleRange;->_start:D
 
     iget-wide v2, p0, Lkotlin/ranges/ClosedDoubleRange;->_endInclusive:D
@@ -313,7 +300,6 @@
 .method public bridge synthetic lessThanOrEquals(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
     .registers 5
 
-    .line 95
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
@@ -336,7 +322,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 118
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

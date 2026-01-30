@@ -46,28 +46,22 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object v1, p1, La/v;->m:La/o;
 
-    .line 3
     iget-object v3, p0, Lcom/onevcat/uniwebview/b0;->a:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/onevcat/uniwebview/b0;->b:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     sget-object p1, La/i;->c:La/i$a;
 
-    .line 5
     sget-object p1, La/i;->d:La/i;
 
-    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v4, "UniWebView will load HTML string with base url: "
@@ -118,7 +112,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

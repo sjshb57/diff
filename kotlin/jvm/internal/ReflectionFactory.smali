@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,7 +21,6 @@
 .method public createKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
     .registers 3
 
-    .line 18
     new-instance v0, Lkotlin/jvm/internal/ClassReference;
 
     invoke-direct {v0, p1}, Lkotlin/jvm/internal/ClassReference;-><init>(Ljava/lang/Class;)V
@@ -33,7 +31,6 @@
 .method public createKotlinClass(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KClass;
     .registers 3
 
-    .line 22
     new-instance p2, Lkotlin/jvm/internal/ClassReference;
 
     invoke-direct {p2, p1}, Lkotlin/jvm/internal/ClassReference;-><init>(Ljava/lang/Class;)V
@@ -50,7 +47,6 @@
 .method public getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
     .registers 3
 
-    .line 30
     new-instance v0, Lkotlin/jvm/internal/ClassReference;
 
     invoke-direct {v0, p1}, Lkotlin/jvm/internal/ClassReference;-><init>(Ljava/lang/Class;)V
@@ -61,7 +57,6 @@
 .method public getOrCreateKotlinClass(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KClass;
     .registers 3
 
-    .line 34
     new-instance p2, Lkotlin/jvm/internal/ClassReference;
 
     invoke-direct {p2, p1}, Lkotlin/jvm/internal/ClassReference;-><init>(Ljava/lang/Class;)V
@@ -72,7 +67,6 @@
 .method public getOrCreateKotlinPackage(Ljava/lang/Class;Ljava/lang/String;)Lkotlin/reflect/KDeclarationContainer;
     .registers 4
 
-    .line 26
     new-instance v0, Lkotlin/jvm/internal/PackageReference;
 
     invoke-direct {v0, p1, p2}, Lkotlin/jvm/internal/PackageReference;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
@@ -83,15 +77,12 @@
 .method public mutableCollectionType(Lkotlin/reflect/KType;)Lkotlin/reflect/KType;
     .registers 6
 
-    .line 107
     move-object v0, p1
 
     check-cast v0, Lkotlin/jvm/internal/TypeReference;
 
-    .line 108
     new-instance v1, Lkotlin/jvm/internal/TypeReference;
 
-    .line 109
     invoke-interface {p1}, Lkotlin/reflect/KType;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v2
@@ -104,7 +95,6 @@
 
     move-result-object v3
 
-    .line 110
     invoke-virtual {v0}, Lkotlin/jvm/internal/TypeReference;->getFlags$kotlin_stdlib()I
 
     move-result v0
@@ -137,15 +127,12 @@
 .method public nothingType(Lkotlin/reflect/KType;)Lkotlin/reflect/KType;
     .registers 6
 
-    .line 116
     move-object v0, p1
 
     check-cast v0, Lkotlin/jvm/internal/TypeReference;
 
-    .line 117
     new-instance v1, Lkotlin/jvm/internal/TypeReference;
 
-    .line 118
     invoke-interface {p1}, Lkotlin/reflect/KType;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v2
@@ -158,7 +145,6 @@
 
     move-result-object v3
 
-    .line 119
     invoke-virtual {v0}, Lkotlin/jvm/internal/TypeReference;->getFlags$kotlin_stdlib()I
 
     move-result v0
@@ -173,10 +159,8 @@
 .method public platformType(Lkotlin/reflect/KType;Lkotlin/reflect/KType;)Lkotlin/reflect/KType;
     .registers 6
 
-    .line 99
     new-instance v0, Lkotlin/jvm/internal/TypeReference;
 
-    .line 100
     invoke-interface {p1}, Lkotlin/reflect/KType;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v1
@@ -187,7 +171,6 @@
 
     check-cast p1, Lkotlin/jvm/internal/TypeReference;
 
-    .line 101
     invoke-virtual {p1}, Lkotlin/jvm/internal/TypeReference;->getFlags$kotlin_stdlib()I
 
     move-result p1
@@ -218,7 +201,6 @@
 .method public renderLambdaToString(Lkotlin/jvm/internal/FunctionBase;)Ljava/lang/String;
     .registers 3
 
-    .line 44
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -235,7 +217,6 @@
 
     move-result-object p1
 
-    .line 45
     const-string v0, "kotlin.jvm.functions."
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -257,7 +238,6 @@
 .method public renderLambdaToString(Lkotlin/jvm/internal/Lambda;)Ljava/lang/String;
     .registers 2
 
-    .line 39
     invoke-virtual {p0, p1}, Lkotlin/jvm/internal/ReflectionFactory;->renderLambdaToString(Lkotlin/jvm/internal/FunctionBase;)Ljava/lang/String;
 
     move-result-object p1
@@ -277,7 +257,6 @@
         }
     .end annotation
 
-    .line 94
     check-cast p1, Lkotlin/jvm/internal/TypeParameterReference;
 
     invoke-virtual {p1, p2}, Lkotlin/jvm/internal/TypeParameterReference;->setUpperBounds(Ljava/util/List;)V
@@ -298,7 +277,6 @@
         }
     .end annotation
 
-    .line 84
     new-instance v0, Lkotlin/jvm/internal/TypeReference;
 
     invoke-direct {v0, p1, p2, p3}, Lkotlin/jvm/internal/TypeReference;-><init>(Lkotlin/reflect/KClassifier;Ljava/util/List;Z)V
@@ -309,7 +287,6 @@
 .method public typeParameter(Ljava/lang/Object;Ljava/lang/String;Lkotlin/reflect/KVariance;Z)Lkotlin/reflect/KTypeParameter;
     .registers 6
 
-    .line 89
     new-instance v0, Lkotlin/jvm/internal/TypeParameterReference;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lkotlin/jvm/internal/TypeParameterReference;-><init>(Ljava/lang/Object;Ljava/lang/String;Lkotlin/reflect/KVariance;Z)V

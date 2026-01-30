@@ -82,7 +82,6 @@
 
     iput-object p2, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$3;->$this_minus:Lkotlin/sequences/Sequence;
 
-    .line 2638
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -100,21 +99,18 @@
         }
     .end annotation
 
-    .line 2640
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$3;->$elements:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->convertToListIfNotCollection(Ljava/lang/Iterable;)Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 2641
     invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_13
 
-    .line 2642
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$3;->$this_minus:Lkotlin/sequences/Sequence;
 
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
@@ -123,7 +119,6 @@
 
     return-object v0
 
-    .line 2644
     :cond_13
     iget-object v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$3;->$this_minus:Lkotlin/sequences/Sequence;
 

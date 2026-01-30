@@ -96,10 +96,8 @@
         }
     .end annotation
 
-    .line 315
     invoke-direct {p0, p2, p3, p4}, Lkotlinx/coroutines/flow/internal/ChannelFlow;-><init>(Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
-    .line 311
     iput-object p1, p0, Lkotlinx/coroutines/flow/ChannelFlowBuilder;->block:Lkotlin/jvm/functions/Function2;
 
     return-void
@@ -112,7 +110,6 @@
 
     if-eqz p6, :cond_8
 
-    .line 312
     sget-object p2, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext;
@@ -129,10 +126,8 @@
 
     if-eqz p5, :cond_13
 
-    .line 314
     sget-object p4, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 310
     :cond_13
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/ChannelFlowBuilder;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
@@ -158,7 +153,6 @@
         }
     .end annotation
 
-    .line 320
     iget-object p0, p0, Lkotlinx/coroutines/flow/ChannelFlowBuilder;->block:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {p0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -217,7 +211,6 @@
         }
     .end annotation
 
-    .line 317
     new-instance v0, Lkotlinx/coroutines/flow/ChannelFlowBuilder;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/ChannelFlowBuilder;->block:Lkotlin/jvm/functions/Function2;
@@ -232,7 +225,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 323
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "block["

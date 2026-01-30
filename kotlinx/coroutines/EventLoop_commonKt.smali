@@ -61,7 +61,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 143
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "REMOVED_TASK"
@@ -70,7 +69,6 @@
 
     sput-object v0, Lkotlinx/coroutines/EventLoop_commonKt;->DISPOSED_TASK:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 168
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "CLOSED_EMPTY"
@@ -85,7 +83,6 @@
 .method public static final synthetic access$getCLOSED_EMPTY$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/EventLoop_commonKt;->CLOSED_EMPTY:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
@@ -94,7 +91,6 @@
 .method public static final synthetic access$getDISPOSED_TASK$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/EventLoop_commonKt;->DISPOSED_TASK:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
@@ -105,7 +101,6 @@
 
     const-wide/32 v0, 0xf4240
 
-    .line 166
     div-long/2addr p0, v0
 
     return-wide p0

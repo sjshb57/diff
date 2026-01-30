@@ -19,10 +19,8 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
     invoke-static {}, Lcom/google/flatbuffers/Utf8;->getDefault()Lcom/google/flatbuffers/Utf8;
 
     move-result-object v0
@@ -35,7 +33,6 @@
 .method protected static __has_identifier(Ljava/nio/ByteBuffer;Ljava/lang/String;)Z
     .registers 7
 
-    .line 214
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -51,7 +48,6 @@
     :goto_9
     if-ge v2, v1, :cond_20
 
-    .line 218
     invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -84,7 +80,6 @@
 
     return p0
 
-    .line 215
     :cond_22
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -98,7 +93,6 @@
 .method protected static __indirect(ILjava/nio/ByteBuffer;)I
     .registers 2
 
-    .line 79
     invoke-virtual {p1, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result p1
@@ -111,7 +105,6 @@
 .method protected static __offset(IILjava/nio/ByteBuffer;)I
     .registers 4
 
-    .line 57
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
@@ -120,7 +113,6 @@
 
     add-int/2addr p0, v0
 
-    .line 58
     invoke-virtual {p2, v0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result p1
@@ -139,21 +131,18 @@
 .method protected static __string(ILjava/nio/ByteBuffer;Lcom/google/flatbuffers/Utf8;)Ljava/lang/String;
     .registers 4
 
-    .line 111
     invoke-virtual {p1, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
     add-int/2addr p0, v0
 
-    .line 112
     invoke-virtual {p1, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
     add-int/lit8 p0, p0, 0x4
 
-    .line 113
     invoke-virtual {p2, p1, p0, v0}, Lcom/google/flatbuffers/Utf8;->decodeUtf8(Ljava/nio/ByteBuffer;II)Ljava/lang/String;
 
     move-result-object p0
@@ -164,7 +153,6 @@
 .method protected static __union(Lcom/google/flatbuffers/Table;ILjava/nio/ByteBuffer;)Lcom/google/flatbuffers/Table;
     .registers 3
 
-    .line 201
     invoke-static {p1, p2}, Lcom/google/flatbuffers/Table;->__indirect(ILjava/nio/ByteBuffer;)I
 
     move-result p1
@@ -177,26 +165,22 @@
 .method protected static compareStrings(IILjava/nio/ByteBuffer;)I
     .registers 11
 
-    .line 257
     invoke-virtual {p2, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
     add-int/2addr p0, v0
 
-    .line 258
     invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
     add-int/2addr p1, v0
 
-    .line 259
     invoke-virtual {p2, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
-    .line 260
     invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v1
@@ -205,7 +189,6 @@
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 263
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v2
@@ -217,7 +200,6 @@
 
     add-int v4, v3, p0
 
-    .line 265
     invoke-virtual {p2, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v5
@@ -230,7 +212,6 @@
 
     if-eq v5, v7, :cond_35
 
-    .line 266
     invoke-virtual {p2, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result p0
@@ -257,24 +238,20 @@
 .method protected static compareStrings(I[BLjava/nio/ByteBuffer;)I
     .registers 10
 
-    .line 279
     invoke-virtual {p2, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
     add-int/2addr p0, v0
 
-    .line 280
     invoke-virtual {p2, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v0
 
-    .line 281
     array-length v1, p1
 
     add-int/lit8 p0, p0, 0x4
 
-    .line 283
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v2
@@ -286,7 +263,6 @@
 
     add-int v4, v3, p0
 
-    .line 285
     invoke-virtual {p2, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v5
@@ -295,7 +271,6 @@
 
     if-eq v5, v6, :cond_25
 
-    .line 286
     invoke-virtual {p2, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result p0
@@ -322,7 +297,6 @@
 .method protected __indirect(I)I
     .registers 3
 
-    .line 68
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
@@ -337,7 +311,6 @@
 .method protected __offset(I)I
     .registers 4
 
-    .line 53
     iget v0, p0, Lcom/google/flatbuffers/Table;->vtable_size:I
 
     if-ge p1, v0, :cond_e
@@ -368,7 +341,6 @@
 
     const/4 v1, 0x0
 
-    .line 318
     invoke-virtual {p0, v0, v1}, Lcom/google/flatbuffers/Table;->__reset(ILjava/nio/ByteBuffer;)V
 
     return-void
@@ -377,15 +349,12 @@
 .method protected __reset(ILjava/nio/ByteBuffer;)V
     .registers 3
 
-    .line 298
     iput-object p2, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     if-eqz p2, :cond_16
 
-    .line 300
     iput p1, p0, Lcom/google/flatbuffers/Table;->bb_pos:I
 
-    .line 301
     invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result p2
@@ -394,7 +363,6 @@
 
     iput p1, p0, Lcom/google/flatbuffers/Table;->vtable_start:I
 
-    .line 302
     iget-object p2, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->getShort(I)S
@@ -408,13 +376,10 @@
     :cond_16
     const/4 p1, 0x0
 
-    .line 304
     iput p1, p0, Lcom/google/flatbuffers/Table;->bb_pos:I
 
-    .line 305
     iput p1, p0, Lcom/google/flatbuffers/Table;->vtable_start:I
 
-    .line 306
     iput p1, p0, Lcom/google/flatbuffers/Table;->vtable_size:I
 
     :goto_1d
@@ -424,7 +389,6 @@
 .method protected __string(I)Ljava/lang/String;
     .registers 4
 
-    .line 94
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     iget-object v1, p0, Lcom/google/flatbuffers/Table;->utf8:Lcom/google/flatbuffers/Utf8;
@@ -439,7 +403,6 @@
 .method protected __union(Lcom/google/flatbuffers/Table;I)Lcom/google/flatbuffers/Table;
     .registers 4
 
-    .line 189
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-static {p1, p2, v0}, Lcom/google/flatbuffers/Table;->__union(Lcom/google/flatbuffers/Table;ILjava/nio/ByteBuffer;)Lcom/google/flatbuffers/Table;
@@ -452,12 +415,10 @@
 .method protected __vector(I)I
     .registers 3
 
-    .line 135
     iget v0, p0, Lcom/google/flatbuffers/Table;->bb_pos:I
 
     add-int/2addr p1, v0
 
-    .line 136
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
@@ -474,7 +435,6 @@
 .method protected __vector_as_bytebuffer(II)Ljava/nio/ByteBuffer;
     .registers 5
 
-    .line 151
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/Table;->__offset(I)I
 
     move-result p1
@@ -485,7 +445,6 @@
 
     return-object p1
 
-    .line 153
     :cond_8
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
@@ -499,15 +458,12 @@
 
     move-result-object v0
 
-    .line 154
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/Table;->__vector(I)I
 
     move-result v1
 
-    .line 155
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 156
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/Table;->__vector_len(I)I
 
     move-result p1
@@ -524,7 +480,6 @@
 .method protected __vector_in_bytebuffer(Ljava/nio/ByteBuffer;II)Ljava/nio/ByteBuffer;
     .registers 5
 
-    .line 172
     invoke-virtual {p0, p2}, Lcom/google/flatbuffers/Table;->__offset(I)I
 
     move-result p2
@@ -535,16 +490,13 @@
 
     return-object p1
 
-    .line 174
     :cond_8
     invoke-virtual {p0, p2}, Lcom/google/flatbuffers/Table;->__vector(I)I
 
     move-result v0
 
-    .line 175
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 176
     invoke-virtual {p0, p2}, Lcom/google/flatbuffers/Table;->__vector_len(I)I
 
     move-result p2
@@ -555,7 +507,6 @@
 
     invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 177
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-object p1
@@ -564,12 +515,10 @@
 .method protected __vector_len(I)I
     .registers 3
 
-    .line 123
     iget v0, p0, Lcom/google/flatbuffers/Table;->bb_pos:I
 
     add-int/2addr p1, v0
 
-    .line 124
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
@@ -578,7 +527,6 @@
 
     add-int/2addr p1, v0
 
-    .line 125
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getInt(I)I
@@ -591,7 +539,6 @@
 .method public getByteBuffer()Ljava/nio/ByteBuffer;
     .registers 2
 
-    .line 44
     iget-object v0, p0, Lcom/google/flatbuffers/Table;->bb:Ljava/nio/ByteBuffer;
 
     return-object v0
@@ -608,7 +555,6 @@
 .method protected sortTables([ILjava/nio/ByteBuffer;)V
     .registers 7
 
-    .line 230
     array-length v0, p1
 
     new-array v0, v0, [Ljava/lang/Integer;
@@ -617,7 +563,6 @@
 
     move v2, v1
 
-    .line 231
     :goto_5
     array-length v3, p1
 
@@ -635,7 +580,6 @@
 
     goto :goto_5
 
-    .line 232
     :cond_13
     new-instance v2, Lcom/google/flatbuffers/Table$1;
 
@@ -643,7 +587,6 @@
 
     invoke-static {v0, v2}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 237
     :goto_1b
     array-length p2, p1
 

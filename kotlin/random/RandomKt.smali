@@ -51,7 +51,6 @@
 .method public static final Random(I)Lkotlin/random/Random;
     .registers 3
 
-    .line 318
     new-instance v0, Lkotlin/random/XorWowRandom;
 
     shr-int/lit8 v1, p0, 0x1f
@@ -66,7 +65,6 @@
 .method public static final Random(J)Lkotlin/random/Random;
     .registers 5
 
-    .line 333
     new-instance v0, Lkotlin/random/XorWowRandom;
 
     long-to-int v1, p0
@@ -95,7 +93,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 382
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Random range is empty: ["
@@ -130,7 +127,6 @@
 
     return-void
 
-    .line 380
     :cond_5
     invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -162,7 +158,6 @@
 
     return-void
 
-    .line 378
     :cond_3
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -196,7 +191,6 @@
 
     return-void
 
-    .line 379
     :cond_5
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -224,7 +218,6 @@
 .method public static final fastLog2(I)I
     .registers 1
 
-    .line 372
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -245,14 +238,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 346
     invoke-virtual {p1}, Lkotlin/ranges/IntRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_46
 
-    .line 347
     invoke-virtual {p1}, Lkotlin/ranges/IntRange;->getLast()I
 
     move-result v0
@@ -277,7 +268,6 @@
 
     goto :goto_45
 
-    .line 348
     :cond_28
     invoke-virtual {p1}, Lkotlin/ranges/IntRange;->getFirst()I
 
@@ -305,7 +295,6 @@
 
     goto :goto_45
 
-    .line 349
     :cond_41
     invoke-virtual {p0}, Lkotlin/random/Random;->nextInt()I
 
@@ -314,7 +303,6 @@
     :goto_45
     return p0
 
-    .line 346
     :cond_46
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -346,14 +334,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 362
     invoke-virtual {p1}, Lkotlin/ranges/LongRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_4b
 
-    .line 363
     invoke-virtual {p1}, Lkotlin/ranges/LongRange;->getLast()J
 
     move-result-wide v0
@@ -382,7 +368,6 @@
 
     goto :goto_4a
 
-    .line 364
     :cond_2d
     invoke-virtual {p1}, Lkotlin/ranges/LongRange;->getFirst()J
 
@@ -412,7 +397,6 @@
 
     goto :goto_4a
 
-    .line 365
     :cond_46
     invoke-virtual {p0}, Lkotlin/random/Random;->nextLong()J
 
@@ -421,7 +405,6 @@
     :goto_4a
     return-wide p0
 
-    .line 362
     :cond_4b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

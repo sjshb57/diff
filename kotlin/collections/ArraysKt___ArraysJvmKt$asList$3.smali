@@ -69,7 +69,6 @@
 
     iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
-    .line 168
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -80,7 +79,6 @@
 .method public contains(I)Z
     .registers 3
 
-    .line 171
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->contains([II)Z
@@ -93,7 +91,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 168
     instance-of v0, p1, Ljava/lang/Integer;
 
     if-nez v0, :cond_6
@@ -119,7 +116,6 @@
 .method public get(I)Ljava/lang/Integer;
     .registers 3
 
-    .line 172
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     aget p1, v0, p1
@@ -134,7 +130,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 168
     invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->get(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -145,7 +140,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 169
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     array-length v0, v0
@@ -156,7 +150,6 @@
 .method public indexOf(I)I
     .registers 3
 
-    .line 173
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->indexOf([II)I
@@ -169,7 +162,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 168
     instance-of v0, p1, Ljava/lang/Integer;
 
     if-nez v0, :cond_6
@@ -195,7 +187,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 170
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     array-length v0, v0
@@ -216,7 +207,6 @@
 .method public lastIndexOf(I)I
     .registers 3
 
-    .line 174
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$3;->$this_asList:[I
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->lastIndexOf([II)I
@@ -229,7 +219,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 168
     instance-of v0, p1, Ljava/lang/Integer;
 
     if-nez v0, :cond_6

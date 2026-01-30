@@ -212,7 +212,6 @@
 
     const/16 v0, 0x17
 
-    .line 102
     new-array v0, v0, [Ljava/lang/Class;
 
     const-class v2, Lkotlin/jvm/functions/Function0;
@@ -353,14 +352,12 @@
 
     aput-object v2, v0, v6
 
-    .line 101
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 206
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-static {v0, v5}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -371,7 +368,6 @@
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 208
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -391,13 +387,11 @@
 
     if-gez v3, :cond_b4
 
-    .line 209
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     :cond_b4
     check-cast v5, Ljava/lang/Class;
 
-    .line 107
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -406,54 +400,45 @@
 
     move-result-object v3
 
-    .line 209
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move v3, v6
 
     goto :goto_a3
 
-    .line 210
     :cond_c3
     check-cast v2, Ljava/util/List;
 
-    .line 206
     check-cast v2, Ljava/lang/Iterable;
 
-    .line 107
     invoke-static {v2}, Lkotlin/collections/MapsKt;->toMap(Ljava/lang/Iterable;)Ljava/util/Map;
 
     move-result-object v0
 
     sput-object v0, Lkotlin/jvm/internal/ClassReference;->FUNCTION_CLASSES:Ljava/util/Map;
 
-    .line 109
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 110
     const-string v2, "boolean"
 
     const-string v3, "kotlin.Boolean"
 
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 111
     const-string v2, "char"
 
     const-string v5, "kotlin.Char"
 
     invoke-virtual {v0, v2, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 112
     const-string v2, "byte"
 
     const-string v6, "kotlin.Byte"
 
     invoke-virtual {v0, v2, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 113
     const/4 v2, 0x0
 
     sget-object v2, Lcom/google/android/gms/security/sW/SFkL;->NSwRWrfGf:Ljava/lang/String;
@@ -462,114 +447,94 @@
 
     invoke-virtual {v0, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 114
     const-string v2, "int"
 
     const-string v8, "kotlin.Int"
 
     invoke-virtual {v0, v2, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 115
     const-string v2, "float"
 
     const-string v9, "kotlin.Float"
 
     invoke-virtual {v0, v2, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 116
     const-string v2, "long"
 
     const-string v10, "kotlin.Long"
 
     invoke-virtual {v0, v2, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 117
     const-string v2, "double"
 
     const-string v11, "kotlin.Double"
 
     invoke-virtual {v0, v2, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 109
     sput-object v0, Lkotlin/jvm/internal/ClassReference;->primitiveFqNames:Ljava/util/HashMap;
 
-    .line 120
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 121
     const-string v12, "java.lang.Boolean"
 
     invoke-virtual {v2, v12, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 122
     const/4 v3, 0x0
 
     sget-object v3, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->laHXBmw:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 123
     const-string v3, "java.lang.Byte"
 
     invoke-virtual {v2, v3, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 124
     const-string v3, "java.lang.Short"
 
     invoke-virtual {v2, v3, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 125
     const-string v3, "java.lang.Integer"
 
     invoke-virtual {v2, v3, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 126
     const-string v3, "java.lang.Float"
 
     invoke-virtual {v2, v3, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 127
     const-string v3, "java.lang.Long"
 
     invoke-virtual {v2, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 128
     const-string v3, "java.lang.Double"
 
     invoke-virtual {v2, v3, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 120
     sput-object v2, Lkotlin/jvm/internal/ClassReference;->primitiveWrapperFqNames:Ljava/util/HashMap;
 
-    .line 132
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    .line 133
     const-string v5, "java.lang.Object"
 
     const-string v6, "kotlin.Any"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 134
     const-string v5, "java.lang.String"
 
     const-string v6, "kotlin.String"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 135
     const-string v5, "java.lang.CharSequence"
 
     const-string v6, "kotlin.CharSequence"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 136
     const-string v5, "java.lang.Throwable"
 
     const/4 v6, 0x0
@@ -578,124 +543,106 @@
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 137
     const-string v5, "java.lang.Cloneable"
 
     const-string v6, "kotlin.Cloneable"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 138
     const-string v5, "java.lang.Number"
 
     const-string v6, "kotlin.Number"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 139
     const-string v5, "java.lang.Comparable"
 
     const-string v6, "kotlin.Comparable"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 140
     const-string v5, "java.lang.Enum"
 
     const-string v6, "kotlin.Enum"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 141
     const-string v5, "java.lang.annotation.Annotation"
 
     const-string v6, "kotlin.Annotation"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 142
     const-string v5, "java.lang.Iterable"
 
     const-string v6, "kotlin.collections.Iterable"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 143
     const-string v5, "java.util.Iterator"
 
     const-string v6, "kotlin.collections.Iterator"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 144
     const-string v5, "java.util.Collection"
 
     const-string v6, "kotlin.collections.Collection"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 145
     const-string v5, "java.util.List"
 
     const-string v6, "kotlin.collections.List"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 146
     const-string v5, "java.util.Set"
 
     const-string v6, "kotlin.collections.Set"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 147
     const-string v5, "java.util.ListIterator"
 
     const-string v6, "kotlin.collections.ListIterator"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 148
     const-string v5, "java.util.Map"
 
     const-string v6, "kotlin.collections.Map"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 149
     const-string v5, "java.util.Map$Entry"
 
     const-string v6, "kotlin.collections.Map.Entry"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 150
     const-string v5, "kotlin.jvm.internal.StringCompanionObject"
 
     const-string v6, "kotlin.String.Companion"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 151
     const-string v5, "kotlin.jvm.internal.EnumCompanionObject"
 
     const-string v6, "kotlin.Enum.Companion"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 153
     move-object v5, v0
 
     check-cast v5, Ljava/util/Map;
 
     invoke-virtual {v3, v5}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    .line 154
     check-cast v2, Ljava/util/Map;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    .line 155
     invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object v0
@@ -706,7 +653,6 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 211
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -724,14 +670,12 @@
 
     move-result-object v2
 
-    .line 212
     move-object v6, v3
 
     check-cast v6, Ljava/util/Map;
 
     check-cast v2, Ljava/lang/String;
 
-    .line 156
     new-instance v7, Ljava/lang/StringBuilder;
 
     const-string v8, "kotlin.jvm.internal."
@@ -774,7 +718,6 @@
 
     move-result-object v2
 
-    .line 212
     invoke-virtual {v2}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
     move-result-object v5
@@ -787,13 +730,11 @@
 
     goto :goto_1e2
 
-    .line 214
     :cond_230
     move-object v0, v3
 
     check-cast v0, Ljava/util/Map;
 
-    .line 158
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->FUNCTION_CLASSES:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -833,7 +774,6 @@
 
     move-result v2
 
-    .line 159
     invoke-virtual {v6}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v6
@@ -854,14 +794,11 @@
 
     goto :goto_23d
 
-    .line 132
     :cond_26f
     sput-object v3, Lkotlin/jvm/internal/ClassReference;->classFqNames:Ljava/util/HashMap;
 
-    .line 163
     check-cast v3, Ljava/util/Map;
 
-    .line 215
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-interface {v3}, Ljava/util/Map;->size()I
@@ -876,14 +813,12 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 216
     invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/Iterable;
 
-    .line 217
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -899,15 +834,12 @@
 
     move-result-object v3
 
-    .line 218
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 216
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 163
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -918,12 +850,10 @@
 
     move-result-object v3
 
-    .line 218
     invoke-interface {v0, v6, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_28c
 
-    .line 163
     :cond_2aa
     sput-object v0, Lkotlin/jvm/internal/ClassReference;->simpleNames:Ljava/util/Map;
 
@@ -944,7 +874,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ClassReference;->jClass:Ljava/lang/Class;
@@ -955,7 +884,6 @@
 .method public static final synthetic access$getClassFqNames$cp()Ljava/util/HashMap;
     .registers 1
 
-    .line 10
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->classFqNames:Ljava/util/HashMap;
 
     return-object v0
@@ -964,7 +892,6 @@
 .method public static final synthetic access$getFUNCTION_CLASSES$cp()Ljava/util/Map;
     .registers 1
 
-    .line 10
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->FUNCTION_CLASSES:Ljava/util/Map;
 
     return-object v0
@@ -973,7 +900,6 @@
 .method public static final synthetic access$getSimpleNames$cp()Ljava/util/Map;
     .registers 1
 
-    .line 10
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->simpleNames:Ljava/util/Map;
 
     return-object v0
@@ -982,7 +908,6 @@
 .method private final error()Ljava/lang/Void;
     .registers 2
 
-    .line 88
     new-instance v0, Lkotlin/jvm/KotlinReflectionNotSupportedError;
 
     invoke-direct {v0}, Lkotlin/jvm/KotlinReflectionNotSupportedError;-><init>()V
@@ -1073,7 +998,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 91
     instance-of v0, p1, Lkotlin/jvm/internal/ClassReference;
 
     if-eqz v0, :cond_19
@@ -1120,7 +1044,6 @@
         }
     .end annotation
 
-    .line 27
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1142,7 +1065,6 @@
         }
     .end annotation
 
-    .line 21
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1162,7 +1084,6 @@
         }
     .end annotation
 
-    .line 10
     iget-object v0, p0, Lkotlin/jvm/internal/ClassReference;->jClass:Ljava/lang/Class;
 
     return-object v0
@@ -1179,7 +1100,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1200,7 +1120,6 @@
         }
     .end annotation
 
-    .line 24
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1213,7 +1132,6 @@
 .method public getObjectInstance()Ljava/lang/Object;
     .registers 2
 
-    .line 30
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1226,7 +1144,6 @@
 .method public getQualifiedName()Ljava/lang/String;
     .registers 3
 
-    .line 15
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->Companion:Lkotlin/jvm/internal/ClassReference$Companion;
 
     invoke-virtual {p0}, Lkotlin/jvm/internal/ClassReference;->getJClass()Ljava/lang/Class;
@@ -1253,7 +1170,6 @@
         }
     .end annotation
 
-    .line 46
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1266,7 +1182,6 @@
 .method public getSimpleName()Ljava/lang/String;
     .registers 3
 
-    .line 12
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->Companion:Lkotlin/jvm/internal/ClassReference$Companion;
 
     invoke-virtual {p0}, Lkotlin/jvm/internal/ClassReference;->getJClass()Ljava/lang/Class;
@@ -1291,7 +1206,6 @@
         }
     .end annotation
 
-    .line 42
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1312,7 +1226,6 @@
         }
     .end annotation
 
-    .line 38
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1325,7 +1238,6 @@
 .method public getVisibility()Lkotlin/reflect/KVisibility;
     .registers 2
 
-    .line 50
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1338,7 +1250,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 94
     move-object v0, p0
 
     check-cast v0, Lkotlin/reflect/KClass;
@@ -1357,7 +1268,6 @@
 .method public isAbstract()Z
     .registers 2
 
-    .line 62
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1370,7 +1280,6 @@
 .method public isCompanion()Z
     .registers 2
 
-    .line 78
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1383,7 +1292,6 @@
 .method public isData()Z
     .registers 2
 
-    .line 70
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1396,7 +1304,6 @@
 .method public isFinal()Z
     .registers 2
 
-    .line 54
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1409,7 +1316,6 @@
 .method public isFun()Z
     .registers 2
 
-    .line 82
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1422,7 +1328,6 @@
 .method public isInner()Z
     .registers 2
 
-    .line 74
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1435,7 +1340,6 @@
 .method public isInstance(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 34
     sget-object v0, Lkotlin/jvm/internal/ClassReference;->Companion:Lkotlin/jvm/internal/ClassReference$Companion;
 
     invoke-virtual {p0}, Lkotlin/jvm/internal/ClassReference;->getJClass()Ljava/lang/Class;
@@ -1452,7 +1356,6 @@
 .method public isOpen()Z
     .registers 2
 
-    .line 58
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1465,7 +1368,6 @@
 .method public isSealed()Z
     .registers 2
 
-    .line 66
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1478,7 +1380,6 @@
 .method public isValue()Z
     .registers 2
 
-    .line 86
     invoke-direct {p0}, Lkotlin/jvm/internal/ClassReference;->error()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1491,7 +1392,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 97
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

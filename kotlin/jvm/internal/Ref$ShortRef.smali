@@ -25,7 +25,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +35,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 36
     iget-short v0, p0, Lkotlin/jvm/internal/Ref$ShortRef;->element:S
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;

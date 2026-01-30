@@ -37,7 +37,6 @@
 .method private static final max-J1ME1BU(II)I
     .registers 2
 
-    .line 35
     invoke-static {p0, p1}, Lkotlin/comparisons/UComparisonsKt;->maxOf-J1ME1BU(II)I
 
     move-result p0
@@ -48,7 +47,6 @@
 .method private static final max-eb3DHEI(JJ)J
     .registers 4
 
-    .line 45
     invoke-static {p0, p1, p2, p3}, Lkotlin/comparisons/UComparisonsKt;->maxOf-eb3DHEI(JJ)J
 
     move-result-wide p0
@@ -59,7 +57,6 @@
 .method private static final min-J1ME1BU(II)I
     .registers 2
 
-    .line 15
     invoke-static {p0, p1}, Lkotlin/comparisons/UComparisonsKt;->minOf-J1ME1BU(II)I
 
     move-result p0
@@ -70,7 +67,6 @@
 .method private static final min-eb3DHEI(JJ)J
     .registers 4
 
-    .line 25
     invoke-static {p0, p1, p2, p3}, Lkotlin/comparisons/UComparisonsKt;->minOf-eb3DHEI(JJ)J
 
     move-result-wide p0

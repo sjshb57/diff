@@ -53,7 +53,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 216
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,14 +71,12 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 219
     sget-object v0, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     invoke-virtual {v0, p3}, Lkotlin/io/path/LinkFollowing;->toLinkOptions(Z)[Ljava/nio/file/LinkOption;
 
     move-result-object p3
 
-    .line 220
     array-length v0, p3
 
     invoke-static {p3, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -124,7 +121,6 @@
 
     if-nez v0, :cond_4f
 
-    .line 223
     :cond_38
     array-length v0, p3
 
@@ -150,7 +146,6 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 226
     :cond_4f
     sget-object p1, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
 

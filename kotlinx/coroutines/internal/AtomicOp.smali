@@ -87,10 +87,8 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 49
     invoke-direct {p0}, Lkotlinx/coroutines/internal/OpDescriptor;-><init>()V
 
-    .line 50
     sget-object v0, Lkotlinx/coroutines/internal/AtomicKt;->NO_DECISION:Ljava/lang/Object;
 
     iput-object v0, p0, Lkotlinx/coroutines/internal/AtomicOp;->_consensus:Ljava/lang/Object;
@@ -101,7 +99,6 @@
 .method private final decide(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 5
 
-    .line 55
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -125,19 +122,16 @@
     :goto_11
     sget-object v0, Lkotlinx/coroutines/internal/AtomicOp;->_consensus$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 56
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 57
     sget-object v2, Lkotlinx/coroutines/internal/AtomicKt;->NO_DECISION:Ljava/lang/Object;
 
     if-eq v1, v2, :cond_1c
 
     return-object v1
 
-    .line 58
     :cond_1c
     sget-object v1, Lkotlinx/coroutines/internal/AtomicKt;->NO_DECISION:Ljava/lang/Object;
 
@@ -149,7 +143,6 @@
 
     return-object p1
 
-    .line 59
     :cond_25
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -188,17 +181,14 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/AtomicOp;->_consensus$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 70
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 71
     sget-object v1, Lkotlinx/coroutines/internal/AtomicKt;->NO_DECISION:Ljava/lang/Object;
 
     if-ne v0, v1, :cond_12
 
-    .line 72
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/AtomicOp;->prepare(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -207,7 +197,6 @@
 
     move-result-object v0
 
-    .line 75
     :cond_12
     invoke-virtual {p0, p1, v0}, Lkotlinx/coroutines/internal/AtomicOp;->complete(Ljava/lang/Object;Ljava/lang/Object;)V
 

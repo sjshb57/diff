@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 26
     const-string v0, "Write operation attempted on a read-only class."
 
     invoke-direct {p0, v0}, Lcom/yahoo/sketches/SketchesException;-><init>(Ljava/lang/String;)V
@@ -30,7 +29,6 @@
         }
     .end annotation
 
-    .line 38
     invoke-direct {p0, p1}, Lcom/yahoo/sketches/SketchesException;-><init>(Ljava/lang/String;)V
 
     return-void

@@ -89,10 +89,8 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 95
     iput-object p1, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     iput-object p2, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
@@ -232,7 +230,6 @@
 .method public final getRoot()Ljava/io/File;
     .registers 2
 
-    .line 95
     iget-object v0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     return-object v0
@@ -241,7 +238,6 @@
 .method public final getRootName()Ljava/lang/String;
     .registers 3
 
-    .line 100
     iget-object v0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -266,7 +262,6 @@
         }
     .end annotation
 
-    .line 95
     iget-object v0, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
 
     return-object v0
@@ -275,7 +270,6 @@
 .method public final getSize()I
     .registers 2
 
-    .line 110
     iget-object v0, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -310,7 +304,6 @@
 .method public final isRooted()Z
     .registers 3
 
-    .line 105
     iget-object v0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -347,14 +340,12 @@
 
     if-gt p1, p2, :cond_2f
 
-    .line 117
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v0
 
     if-gt p2, v0, :cond_2f
 
-    .line 120
     new-instance v0, Ljava/io/File;
 
     iget-object v1, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
@@ -399,7 +390,6 @@
 
     return-object v0
 
-    .line 118
     :cond_2f
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

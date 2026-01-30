@@ -73,7 +73,6 @@
 
     iput-object p1, p0, Lkotlin/collections/AbstractMap$keys$1;->this$0:Lkotlin/collections/AbstractMap;
 
-    .line 85
     invoke-direct {p0}, Lkotlin/collections/AbstractSet;-><init>()V
 
     return-void
@@ -84,7 +83,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 86
     iget-object v0, p0, Lkotlin/collections/AbstractMap$keys$1;->this$0:Lkotlin/collections/AbstractMap;
 
     invoke-virtual {v0, p1}, Lkotlin/collections/AbstractMap;->containsKey(Ljava/lang/Object;)Z
@@ -97,7 +95,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 96
     iget-object v0, p0, Lkotlin/collections/AbstractMap$keys$1;->this$0:Lkotlin/collections/AbstractMap;
 
     invoke-virtual {v0}, Lkotlin/collections/AbstractMap;->size()I
@@ -117,7 +114,6 @@
         }
     .end annotation
 
-    .line 89
     iget-object v0, p0, Lkotlin/collections/AbstractMap$keys$1;->this$0:Lkotlin/collections/AbstractMap;
 
     invoke-virtual {v0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
@@ -128,7 +124,6 @@
 
     move-result-object v0
 
-    .line 90
     new-instance v1, Lkotlin/collections/AbstractMap$keys$1$iterator$1;
 
     invoke-direct {v1, v0}, Lkotlin/collections/AbstractMap$keys$1$iterator$1;-><init>(Ljava/util/Iterator;)V

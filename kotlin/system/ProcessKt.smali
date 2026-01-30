@@ -29,10 +29,8 @@
 .method private static final exitProcess(I)Ljava/lang/Void;
     .registers 2
 
-    .line 19
     invoke-static {p0}, Ljava/lang/System;->exit(I)V
 
-    .line 20
     new-instance p0, Ljava/lang/RuntimeException;
 
     const-string v0, "System.exit returned normally, while it was supposed to halt JVM."

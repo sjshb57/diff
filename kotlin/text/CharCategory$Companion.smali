@@ -41,7 +41,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 164
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +59,6 @@
 .method public final valueOf(I)Lkotlin/text/CharCategory;
     .registers 5
 
-    .line 172
     new-instance v0, Lkotlin/ranges/IntRange;
 
     const/4 v1, 0x0
@@ -83,7 +81,6 @@
 
     goto :goto_2c
 
-    .line 173
     :cond_15
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -110,7 +107,6 @@
     :goto_2c
     return-object p1
 
-    .line 174
     :cond_2d
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

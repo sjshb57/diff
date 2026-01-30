@@ -17,7 +17,6 @@
 .method public constructor <init>(I)V
     .registers 9
 
-    .line 40
     sget-object v2, Lkotlin/jvm/internal/FunctionReference;->NO_RECEIVER:Ljava/lang/Object;
 
     const/4 v5, 0x0
@@ -54,7 +53,6 @@
 
     move-object v2, p2
 
-    .line 45
     invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
@@ -89,15 +87,12 @@
 
     move-object v6, p5
 
-    .line 50
     invoke-direct/range {v2 .. v7}, Lkotlin/jvm/internal/CallableReference;-><init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 51
     iput p1, p0, Lkotlin/jvm/internal/FunctionReference;->arity:I
 
     shr-int/lit8 p1, p6, 0x1
 
-    .line 52
     iput p1, p0, Lkotlin/jvm/internal/FunctionReference;->flags:I
 
     return-void
@@ -108,7 +103,6 @@
 .method protected computeReflected()Lkotlin/reflect/KCallable;
     .registers 2
 
-    .line 69
     invoke-static {p0}, Lkotlin/jvm/internal/Reflection;->function(Lkotlin/jvm/internal/FunctionReference;)Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -125,7 +119,6 @@
 
     return v0
 
-    .line 105
     :cond_4
     instance-of v1, p1, Lkotlin/jvm/internal/FunctionReference;
 
@@ -133,10 +126,8 @@
 
     if-eqz v1, :cond_52
 
-    .line 106
     check-cast p1, Lkotlin/jvm/internal/FunctionReference;
 
-    .line 108
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -151,7 +142,6 @@
 
     if-eqz v1, :cond_50
 
-    .line 109
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getSignature()Ljava/lang/String;
 
     move-result-object v1
@@ -178,7 +168,6 @@
 
     if-ne v1, v3, :cond_50
 
-    .line 112
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getBoundReceiver()Ljava/lang/Object;
 
     move-result-object v1
@@ -193,7 +182,6 @@
 
     if-eqz v1, :cond_50
 
-    .line 113
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getOwner()Lkotlin/reflect/KDeclarationContainer;
 
     move-result-object v1
@@ -216,13 +204,11 @@
     :goto_51
     return v0
 
-    .line 115
     :cond_52
     instance-of v0, p1, Lkotlin/reflect/KFunction;
 
     if-eqz v0, :cond_5f
 
-    .line 116
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->compute()Lkotlin/reflect/KCallable;
 
     move-result-object v0
@@ -240,7 +226,6 @@
 .method public getArity()I
     .registers 2
 
-    .line 57
     iget v0, p0, Lkotlin/jvm/internal/FunctionReference;->arity:I
 
     return v0
@@ -249,7 +234,6 @@
 .method protected bridge synthetic getReflected()Lkotlin/reflect/KCallable;
     .registers 2
 
-    .line 12
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -260,7 +244,6 @@
 .method protected getReflected()Lkotlin/reflect/KFunction;
     .registers 2
 
-    .line 63
     invoke-super {p0}, Lkotlin/jvm/internal/CallableReference;->getReflected()Lkotlin/reflect/KCallable;
 
     move-result-object v0
@@ -273,7 +256,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 123
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getOwner()Lkotlin/reflect/KDeclarationContainer;
 
     move-result-object v0
@@ -324,7 +306,6 @@
 .method public isExternal()Z
     .registers 2
 
-    .line 81
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -339,7 +320,6 @@
 .method public isInfix()Z
     .registers 2
 
-    .line 93
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -354,7 +334,6 @@
 .method public isInline()Z
     .registers 2
 
-    .line 75
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -369,7 +348,6 @@
 .method public isOperator()Z
     .registers 2
 
-    .line 87
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -384,7 +362,6 @@
 .method public isSuspend()Z
     .registers 2
 
-    .line 99
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getReflected()Lkotlin/reflect/KFunction;
 
     move-result-object v0
@@ -399,21 +376,18 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 128
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->compute()Lkotlin/reflect/KCallable;
 
     move-result-object v0
 
     if-eq v0, p0, :cond_b
 
-    .line 130
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 134
     :cond_b
     const-string v0, "<init>"
 
@@ -438,7 +412,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 136
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionReference;->getName()Ljava/lang/String;
 
     move-result-object v1

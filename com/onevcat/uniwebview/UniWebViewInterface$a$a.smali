@@ -81,7 +81,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 3
 
-    .line 1
     iget-object v0, p0, Lcom/onevcat/uniwebview/UniWebViewInterface$a$a;->a:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object v1, p0, Lcom/onevcat/uniwebview/UniWebViewInterface$a$a;->b:Lkotlin/jvm/functions/Function0;
@@ -96,7 +95,6 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

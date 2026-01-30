@@ -68,7 +68,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -104,7 +103,6 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 28
     new-instance v0, Lkotlin/concurrent/ThreadsKt$thread$thread$1;
 
     invoke-direct {v0, p5}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;-><init>(Lkotlin/jvm/functions/Function0;)V
@@ -113,34 +111,28 @@
 
     const/4 p1, 0x1
 
-    .line 34
     invoke-virtual {v0, p1}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->setDaemon(Z)V
 
     :cond_10
     if-lez p4, :cond_15
 
-    .line 36
     invoke-virtual {v0, p4}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->setPriority(I)V
 
     :cond_15
     if-eqz p3, :cond_1a
 
-    .line 38
     invoke-virtual {v0, p3}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->setName(Ljava/lang/String;)V
 
     :cond_1a
     if-eqz p2, :cond_1f
 
-    .line 40
     invoke-virtual {v0, p2}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->setContextClassLoader(Ljava/lang/ClassLoader;)V
 
     :cond_1f
     if-eqz p0, :cond_24
 
-    .line 42
     invoke-virtual {v0}, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->start()V
 
-    .line 43
     :cond_24
     check-cast v0, Ljava/lang/Thread;
 
@@ -205,7 +197,6 @@
 
     move-object v5, p5
 
-    .line 20
     invoke-static/range {v0 .. v5}, Lkotlin/concurrent/ThreadsKt;->thread(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;)Ljava/lang/Thread;
 
     move-result-object p0

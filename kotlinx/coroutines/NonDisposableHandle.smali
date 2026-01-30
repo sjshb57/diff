@@ -61,7 +61,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 662
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,7 +93,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 683
     const-string v0, "NonDisposableHandle"
 
     return-object v0

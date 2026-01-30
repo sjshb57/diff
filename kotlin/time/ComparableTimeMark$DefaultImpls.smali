@@ -32,7 +32,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 213
     invoke-interface {p0, p1}, Lkotlin/time/ComparableTimeMark;->minus-UwyO8pc(Lkotlin/time/ComparableTimeMark;)J
 
     move-result-wide p0
@@ -53,7 +52,6 @@
 .method public static hasNotPassedNow(Lkotlin/time/ComparableTimeMark;)Z
     .registers 1
 
-    .line 180
     check-cast p0, Lkotlin/time/TimeMark;
 
     invoke-static {p0}, Lkotlin/time/TimeMark$DefaultImpls;->hasNotPassedNow(Lkotlin/time/TimeMark;)Z
@@ -66,7 +64,6 @@
 .method public static hasPassedNow(Lkotlin/time/ComparableTimeMark;)Z
     .registers 1
 
-    .line 180
     check-cast p0, Lkotlin/time/TimeMark;
 
     invoke-static {p0}, Lkotlin/time/TimeMark$DefaultImpls;->hasPassedNow(Lkotlin/time/TimeMark;)Z
@@ -79,7 +76,6 @@
 .method public static minus-LRDsOJo(Lkotlin/time/ComparableTimeMark;J)Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 182
     invoke-static {p1, p2}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
 
     move-result-wide p1

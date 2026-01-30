@@ -39,12 +39,10 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/onevcat/uniwebview/a2;->a:Z
 
     invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V
 
-    .line 2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

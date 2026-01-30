@@ -51,18 +51,14 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 6
 
-    .line 1
     sget-object v0, La/l;->b:La/l$a;
 
-    .line 2
     sget-object v0, La/l;->c:La/l;
 
-    .line 3
     iget-object v1, p0, Lcom/onevcat/uniwebview/j0;->a:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const-string v2, "name"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -77,7 +73,6 @@
 
     if-eqz v0, :cond_31
 
-    .line 5
     iget v1, p0, Lcom/onevcat/uniwebview/j0;->b:F
 
     iget v2, p0, Lcom/onevcat/uniwebview/j0;->c:F
@@ -100,7 +95,6 @@
 
     float-to-int v3, v3
 
-    .line 6
     invoke-static {v1, v2, v3}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v1
@@ -111,7 +105,6 @@
 
     iput-object v1, v0, La/g0;->g:Ljava/lang/Integer;
 
-    .line 7
     :cond_31
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

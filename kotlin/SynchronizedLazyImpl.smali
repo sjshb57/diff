@@ -88,13 +88,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 55
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 56
     iput-object p1, p0, Lkotlin/SynchronizedLazyImpl;->initializer:Lkotlin/jvm/functions/Function0;
 
-    .line 57
     sget-object p1, Lkotlin/UNINITIALIZED_VALUE;->INSTANCE:Lkotlin/UNINITIALIZED_VALUE;
 
     iput-object p1, p0, Lkotlin/SynchronizedLazyImpl;->_value:Ljava/lang/Object;
@@ -103,7 +100,6 @@
 
     move-object p2, p0
 
-    .line 59
     :cond_11
     iput-object p2, p0, Lkotlin/SynchronizedLazyImpl;->lock:Ljava/lang/Object;
 
@@ -119,7 +115,6 @@
 
     const/4 p2, 0x0
 
-    .line 55
     :cond_5
     invoke-direct {p0, p1, p2}, Lkotlin/SynchronizedLazyImpl;-><init>(Lkotlin/jvm/functions/Function0;Ljava/lang/Object;)V
 
@@ -129,7 +124,6 @@
 .method private final writeReplace()Ljava/lang/Object;
     .registers 3
 
-    .line 86
     new-instance v0, Lkotlin/InitializedLazyImpl;
 
     invoke-virtual {p0}, Lkotlin/SynchronizedLazyImpl;->getValue()Ljava/lang/Object;
@@ -151,34 +145,28 @@
         }
     .end annotation
 
-    .line 63
     iget-object v0, p0, Lkotlin/SynchronizedLazyImpl;->_value:Ljava/lang/Object;
 
-    .line 64
     sget-object v1, Lkotlin/UNINITIALIZED_VALUE;->INSTANCE:Lkotlin/UNINITIALIZED_VALUE;
 
     if-eq v0, v1, :cond_7
 
     return-object v0
 
-    .line 69
     :cond_7
     iget-object v0, p0, Lkotlin/SynchronizedLazyImpl;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 70
     :try_start_a
     iget-object v1, p0, Lkotlin/SynchronizedLazyImpl;->_value:Ljava/lang/Object;
 
-    .line 71
     sget-object v2, Lkotlin/UNINITIALIZED_VALUE;->INSTANCE:Lkotlin/UNINITIALIZED_VALUE;
 
     if-eq v1, v2, :cond_11
 
     goto :goto_1f
 
-    .line 74
     :cond_11
     iget-object v1, p0, Lkotlin/SynchronizedLazyImpl;->initializer:Lkotlin/jvm/functions/Function0;
 
@@ -188,17 +176,14 @@
 
     move-result-object v1
 
-    .line 75
     iput-object v1, p0, Lkotlin/SynchronizedLazyImpl;->_value:Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    .line 76
     iput-object v2, p0, Lkotlin/SynchronizedLazyImpl;->initializer:Lkotlin/jvm/functions/Function0;
     :try_end_1f
     .catchall {:try_start_a .. :try_end_1f} :catchall_21
 
-    .line 69
     :goto_1f
     monitor-exit v0
 
@@ -215,7 +200,6 @@
 .method public isInitialized()Z
     .registers 3
 
-    .line 82
     iget-object v0, p0, Lkotlin/SynchronizedLazyImpl;->_value:Ljava/lang/Object;
 
     sget-object v1, Lkotlin/UNINITIALIZED_VALUE;->INSTANCE:Lkotlin/UNINITIALIZED_VALUE;
@@ -236,7 +220,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 84
     invoke-virtual {p0}, Lkotlin/SynchronizedLazyImpl;->isInitialized()Z
 
     move-result v0

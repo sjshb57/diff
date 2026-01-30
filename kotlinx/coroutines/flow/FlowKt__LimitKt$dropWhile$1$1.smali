@@ -158,7 +158,6 @@
 
     move-result-object v1
 
-    .line 35
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1$emit$1;->label:I
 
     const/4 v3, 0x3
@@ -207,14 +206,12 @@
     :cond_46
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 36
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1;->$matched:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     iget-boolean p2, p2, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     if-eqz p2, :cond_5d
 
-    .line 37
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     iput v5, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1$emit$1;->label:I
@@ -227,14 +224,12 @@
 
     return-object v1
 
-    .line 42
     :cond_5a
     :goto_5a
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 38
     :cond_5d
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1;->$predicate:Lkotlin/jvm/functions/Function2;
 
@@ -264,12 +259,10 @@
 
     if-nez p2, :cond_8c
 
-    .line 39
     iget-object p2, v2, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1;->$matched:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     iput-boolean v5, p2, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 40
     iget-object p2, v2, Lkotlinx/coroutines/flow/FlowKt__LimitKt$dropWhile$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     const/4 v2, 0x0
@@ -288,7 +281,6 @@
 
     return-object v1
 
-    .line 42
     :cond_89
     :goto_89
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -27,7 +27,6 @@
 .method public static final synthetic access$notSupportedError()Ljava/lang/Void;
     .registers 1
 
-    .line 1
     invoke-static {}, Lkotlin/jvm/internal/LocalVariableReferencesKt;->notSupportedError()Ljava/lang/Void;
 
     move-result-object v0
@@ -38,7 +37,6 @@
 .method private static final notSupportedError()Ljava/lang/Void;
     .registers 2
 
-    .line 13
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Not supported for local property reference."

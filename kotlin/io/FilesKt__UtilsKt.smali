@@ -109,7 +109,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 293
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -120,7 +119,6 @@
 
     if-nez v0, :cond_2e
 
-    .line 294
     new-instance p1, Lkotlin/io/NoSuchFileException;
 
     const/4 v7, 0x2
@@ -141,7 +139,6 @@
 
     move-result-object p0
 
-    .line 295
     sget-object p1, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-eq p0, p1, :cond_2c
@@ -154,7 +151,6 @@
     :goto_2d
     return v1
 
-    .line 299
     :cond_2e
     :try_start_2e
     invoke-static {p0}, Lkotlin/io/FilesKt;->walkTopDown(Ljava/io/File;)Lkotlin/io/FileTreeWalk;
@@ -189,14 +185,12 @@
 
     check-cast v3, Ljava/io/File;
 
-    .line 300
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v4
 
     if-nez v4, :cond_68
 
-    .line 301
     new-instance v10, Lkotlin/io/NoSuchFileException;
 
     const-string v7, "The source file doesn\'t exist."
@@ -217,25 +211,21 @@
 
     move-result-object v3
 
-    .line 302
     sget-object v4, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-ne v3, v4, :cond_41
 
     return v2
 
-    .line 305
     :cond_68
     invoke-static {v3, p0}, Lkotlin/io/FilesKt;->toRelativeString(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 306
     new-instance v5, Ljava/io/File;
 
     invoke-direct {v5, p1, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 307
     invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
     move-result v4
@@ -259,7 +249,6 @@
 
     goto :goto_99
 
-    .line 309
     :cond_86
     invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
@@ -267,7 +256,6 @@
 
     if-eqz v4, :cond_93
 
-    .line 310
     invoke-static {v5}, Lkotlin/io/FilesKt;->deleteRecursively(Ljava/io/File;)Z
 
     move-result v4
@@ -276,7 +264,6 @@
 
     goto :goto_99
 
-    .line 312
     :cond_93
     invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
@@ -284,28 +271,23 @@
 
     if-nez v4, :cond_a9
 
-    .line 316
     :goto_99
     new-instance v4, Lkotlin/io/FileAlreadyExistsException;
 
-    .line 318
     const-string v6, "The destination file already exists."
 
-    .line 316
     invoke-direct {v4, v3, v5, v6}, Lkotlin/io/FileAlreadyExistsException;-><init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
 
     invoke-interface {p3, v5, v4}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 318
     sget-object v4, Lkotlin/io/OnErrorAction;->TERMINATE:Lkotlin/io/OnErrorAction;
 
     if-ne v3, v4, :cond_41
 
     return v2
 
-    .line 325
     :cond_a9
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
@@ -313,7 +295,6 @@
 
     if-eqz v4, :cond_b3
 
-    .line 326
     invoke-virtual {v5}, Ljava/io/File;->mkdirs()Z
 
     goto :goto_41
@@ -329,7 +310,6 @@
 
     move v6, p2
 
-    .line 328
     invoke-static/range {v4 .. v9}, Lkotlin/io/FilesKt;->copyTo$default(Ljava/io/File;Ljava/io/File;ZIILjava/lang/Object;)Ljava/io/File;
 
     move-result-object v4
@@ -346,7 +326,6 @@
 
     if-eqz v4, :cond_41
 
-    .line 329
     new-instance v4, Ljava/io/IOException;
 
     const/4 v5, 0x0
@@ -388,12 +367,10 @@
 
     if-eqz p4, :cond_d
 
-    .line 291
     sget-object p3, Lkotlin/io/FilesKt__UtilsKt$copyRecursively$1;->INSTANCE:Lkotlin/io/FilesKt__UtilsKt$copyRecursively$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function2;
 
-    .line 288
     :cond_d
     invoke-static {p0, p1, p2, p3}, Lkotlin/io/FilesKt;->copyRecursively(Ljava/io/File;Ljava/io/File;ZLkotlin/jvm/functions/Function2;)Z
 
@@ -413,14 +390,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 218
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_7e
 
-    .line 222
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -429,7 +404,6 @@
 
     if-eqz p2, :cond_27
 
-    .line 225
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
     move-result p2
@@ -438,7 +412,6 @@
 
     goto :goto_2f
 
-    .line 226
     :cond_1f
     new-instance p2, Lkotlin/io/FileAlreadyExistsException;
 
@@ -448,7 +421,6 @@
 
     throw p2
 
-    .line 224
     :cond_27
     new-instance p2, Lkotlin/io/FileAlreadyExistsException;
 
@@ -458,7 +430,6 @@
 
     throw p2
 
-    .line 229
     :cond_2f
     :goto_2f
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
@@ -467,7 +438,6 @@
 
     if-eqz p2, :cond_44
 
-    .line 230
     invoke-virtual {p1}, Ljava/io/File;->mkdirs()Z
 
     move-result p2
@@ -476,7 +446,6 @@
 
     goto :goto_6f
 
-    .line 231
     :cond_3c
     new-instance p2, Lkotlin/io/FileSystemException;
 
@@ -486,7 +455,6 @@
 
     throw p2
 
-    .line 233
     :cond_44
     invoke-virtual {p1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -499,7 +467,6 @@
     :cond_4d
     new-instance p2, Ljava/io/FileInputStream;
 
-    .line 235
     invoke-direct {p2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     check-cast p2, Ljava/io/Closeable;
@@ -511,7 +478,6 @@
 
     new-instance v0, Ljava/io/FileOutputStream;
 
-    .line 236
     invoke-direct {v0, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
     check-cast v0, Ljava/io/Closeable;
@@ -523,7 +489,6 @@
 
     check-cast v1, Ljava/io/FileOutputStream;
 
-    .line 237
     check-cast p0, Ljava/io/InputStream;
 
     check-cast v1, Ljava/io/OutputStream;
@@ -534,13 +499,11 @@
 
     const/4 p0, 0x0
 
-    .line 236
     :try_start_69
     invoke-static {v0, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_6c
     .catchall {:try_start_69 .. :try_end_6c} :catchall_77
 
-    .line 235
     invoke-static {p2, p0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     :goto_6f
@@ -549,7 +512,6 @@
     :catchall_70
     move-exception p0
 
-    .line 236
     :try_start_71
     throw p0
     :try_end_72
@@ -568,7 +530,6 @@
     :catchall_77
     move-exception p0
 
-    .line 235
     :try_start_78
     throw p0
     :try_end_79
@@ -581,7 +542,6 @@
 
     throw p1
 
-    .line 219
     :cond_7e
     new-instance p1, Lkotlin/io/NoSuchFileException;
 
@@ -618,7 +578,6 @@
 
     const/16 p3, 0x2000
 
-    .line 217
     :cond_b
     invoke-static {p0, p1, p2, p3}, Lkotlin/io/FilesKt;->copyTo(Ljava/io/File;Ljava/io/File;ZI)Ljava/io/File;
 
@@ -637,29 +596,24 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 45
     invoke-static {p0, p1, p2}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
     move-result-object p0
 
-    .line 46
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
-    .line 47
     invoke-virtual {p0}, Ljava/io/File;->mkdir()Z
 
     move-result p1
 
     if-eqz p1, :cond_18
 
-    .line 48
     const-string p1, "dir"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 
-    .line 50
     :cond_18
     new-instance p1, Ljava/io/IOException;
 
@@ -691,7 +645,6 @@
 
     if-eqz p4, :cond_6
 
-    .line 44
     const-string p0, "tmp"
 
     :cond_6
@@ -728,7 +681,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 85
     invoke-static {p0, p1, p2}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
 
     move-result-object p0
@@ -747,7 +699,6 @@
 
     if-eqz p4, :cond_6
 
-    .line 84
     const-string p0, "tmp"
 
     :cond_6
@@ -781,14 +732,12 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 347
     invoke-static {p0}, Lkotlin/io/FilesKt;->walkBottomUp(Ljava/io/File;)Lkotlin/io/FileTreeWalk;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/sequences/Sequence;
 
-    .line 476
     invoke-interface {p0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -811,7 +760,6 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 347
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
     move-result v3
@@ -851,31 +799,26 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 384
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v0
 
-    .line 385
     invoke-static {p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object v1
 
-    .line 386
     invoke-virtual {v1}, Lkotlin/io/FilePathComponents;->isRooted()Z
 
     move-result v2
 
     if-eqz v2, :cond_1e
 
-    .line 387
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
     return p0
 
-    .line 388
     :cond_1e
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSize()I
 
@@ -893,7 +836,6 @@
 
     goto :goto_3f
 
-    .line 390
     :cond_2b
     invoke-virtual {v0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -930,7 +872,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 401
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -949,7 +890,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -978,7 +918,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 99
     sget-char v0, Ljava/io/File;->separatorChar:C
 
     const/16 v1, 0x2f
@@ -1027,7 +966,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -1056,7 +994,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 410
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
@@ -1127,7 +1064,6 @@
         }
     .end annotation
 
-    .line 416
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1138,7 +1074,6 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 417
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1157,12 +1092,10 @@
 
     check-cast v1, Ljava/io/File;
 
-    .line 418
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 419
     const-string v3, "."
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1171,7 +1104,6 @@
 
     if-nez v3, :cond_f
 
-    .line 420
     const-string v3, ".."
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1217,7 +1149,6 @@
 
     goto :goto_f
 
-    .line 421
     :cond_53
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1230,7 +1161,6 @@
 .method private static final normalize$FilesKt__UtilsKt(Lkotlin/io/FilePathComponents;)Lkotlin/io/FilePathComponents;
     .registers 3
 
-    .line 413
     new-instance v0, Lkotlin/io/FilePathComponents;
 
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
@@ -1261,7 +1191,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 128
     new-instance v0, Ljava/io/File;
 
     invoke-static {p0, p1}, Lkotlin/io/FilesKt;->toRelativeString(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
@@ -1284,7 +1213,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 148
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p0
@@ -1315,7 +1243,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 138
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
@@ -1341,7 +1268,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 437
     invoke-static {p1}, Lkotlin/io/FilesKt;->isRooted(Ljava/io/File;)Z
 
     move-result v0
@@ -1350,7 +1276,6 @@
 
     return-object p1
 
-    .line 439
     :cond_11
     invoke-virtual {p0}, Ljava/io/File;->toString()Ljava/lang/String;
 
@@ -1360,7 +1285,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 440
     move-object v0, p0
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -1443,7 +1367,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 450
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1468,12 +1391,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 460
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
 
-    .line 461
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v0
@@ -1501,7 +1422,6 @@
 
     move-result-object v0
 
-    .line 462
     :goto_28
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
@@ -1529,7 +1449,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 472
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1552,17 +1471,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 357
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
 
-    .line 358
     invoke-static {p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p1
 
-    .line 359
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
     move-result-object v0
@@ -1581,7 +1497,6 @@
 
     return v1
 
-    .line 361
     :cond_22
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
@@ -1595,7 +1510,6 @@
 
     goto :goto_41
 
-    .line 362
     :cond_2d
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1634,7 +1548,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 372
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1657,7 +1570,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 117
     invoke-static {p0, p1}, Lkotlin/io/FilesKt__UtilsKt;->toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
@@ -1699,7 +1611,6 @@
 .method private static final toRelativeStringOrNull$FilesKt__UtilsKt(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
     .registers 16
 
-    .line 153
     invoke-static {p0}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
@@ -1708,7 +1619,6 @@
 
     move-result-object p0
 
-    .line 154
     invoke-static {p1}, Lkotlin/io/FilesKt;->toComponents(Ljava/io/File;)Lkotlin/io/FilePathComponents;
 
     move-result-object p1
@@ -1717,7 +1627,6 @@
 
     move-result-object p1
 
-    .line 155
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getRoot()Ljava/io/File;
 
     move-result-object v0
@@ -1736,18 +1645,15 @@
 
     return-object v1
 
-    .line 159
     :cond_20
     invoke-virtual {p1}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v0
 
-    .line 160
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v2
 
-    .line 164
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
 
     move-result v3
@@ -1757,7 +1663,6 @@
     :goto_2d
     if-ge v4, v3, :cond_48
 
-    .line 165
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
     move-result-object v5
@@ -1784,7 +1689,6 @@
 
     goto :goto_2d
 
-    .line 171
     :cond_48
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1794,7 +1698,6 @@
 
     if-gt v4, v5, :cond_77
 
-    .line 173
     :goto_51
     invoke-virtual {p1}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1820,13 +1723,11 @@
 
     return-object v1
 
-    .line 177
     :cond_68
     invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     if-eq v5, v4, :cond_72
 
-    .line 180
     sget-char v6, Ljava/io/File;->separatorChar:C
 
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -1843,12 +1744,10 @@
 
     if-ge v4, v0, :cond_80
 
-    .line 188
     sget-char p1, Ljava/io/File;->separatorChar:C
 
     invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 190
     :cond_80
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSegments()Ljava/util/List;
 
@@ -1894,7 +1793,6 @@
 
     invoke-static/range {v4 .. v13}, Lkotlin/collections/CollectionsKt;->joinTo$default(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Appendable;
 
-    .line 193
     :cond_a5
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

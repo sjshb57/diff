@@ -87,10 +87,8 @@
         }
     .end annotation
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
     iput-object p1, p0, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->completion:Lkotlin/coroutines/Continuation;
 
     return-void
@@ -116,7 +114,6 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "create(Any?;Continuation) has not been overridden"
@@ -143,7 +140,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 60
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "create(Continuation) has not been overridden"
@@ -156,7 +152,6 @@
 .method public getCallerFrame()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
     .registers 3
 
-    .line 73
     iget-object v0, p0, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->completion:Lkotlin/coroutines/Continuation;
 
     instance-of v1, v0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
@@ -185,7 +180,6 @@
         }
     .end annotation
 
-    .line 18
     iget-object v0, p0, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->completion:Lkotlin/coroutines/Continuation;
 
     return-object v0
@@ -194,7 +188,6 @@
 .method public getStackTraceElement()Ljava/lang/StackTraceElement;
     .registers 2
 
-    .line 76
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->getStackTraceElement(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/StackTraceElement;
 
     move-result-object v0
@@ -216,7 +209,6 @@
 
     move-object v0, p0
 
-    .line 28
     :goto_1
     move-object v1, v0
 
@@ -224,21 +216,17 @@
 
     invoke-static {v1}, Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineResumed(Lkotlin/coroutines/Continuation;)V
 
-    .line 29
     check-cast v0, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;
 
-    .line 30
     iget-object v1, v0, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->completion:Lkotlin/coroutines/Continuation;
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 33
     :try_start_e
     invoke-virtual {v0, p1}, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 34
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v2
@@ -247,7 +235,6 @@
 
     return-void
 
-    .line 35
     :cond_19
     sget-object v2, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
@@ -262,7 +249,6 @@
     :catchall_20
     move-exception p1
 
-    .line 37
     sget-object v2, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p1}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -273,11 +259,9 @@
 
     move-result-object p1
 
-    .line 39
     :goto_2b
     invoke-virtual {v0}, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->releaseIntercepted()V
 
-    .line 40
     instance-of v0, v1, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;
 
     if-eqz v0, :cond_34
@@ -286,7 +270,6 @@
 
     goto :goto_1
 
-    .line 46
     :cond_34
     invoke-interface {v1, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
@@ -296,7 +279,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 68
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Continuation at "

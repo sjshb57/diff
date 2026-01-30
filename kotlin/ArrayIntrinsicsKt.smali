@@ -37,7 +37,6 @@
         }
     .end annotation
 
-    .line 26
     const-string v0, "T?"
 
     const/4 v1, 0x0

@@ -140,10 +140,8 @@
 
     const/4 v1, 0x0
 
-    .line 144
     invoke-direct {p0, v0, v1}, Lkotlinx/coroutines/channels/BufferedChannel;-><init>(ILkotlin/jvm/functions/Function1;)V
 
-    .line 143
     iput p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->capacity:I
 
     const/4 v0, 0x1
@@ -156,7 +154,6 @@
 
     goto :goto_2b
 
-    .line 147
     :cond_e
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -174,7 +171,6 @@
 
     move-result-object p1
 
-    .line 146
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -185,7 +181,6 @@
 
     throw v0
 
-    .line 154
     :cond_2b
     :goto_2b
     new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
@@ -194,21 +189,18 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 157
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p1
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
-    .line 160
     invoke-static {}, Lkotlinx/coroutines/channels/BroadcastChannelKt;->access$getNO_ELEMENT$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object p1
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
-    .line 325
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -221,7 +213,6 @@
 .method public static final synthetic access$getLock$p(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)Ljava/util/concurrent/locks/ReentrantLock;
     .registers 1
 
-    .line 139
     iget-object p0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     return-object p0
@@ -230,7 +221,6 @@
 .method public static final synthetic access$getOnSendInternalResult$p(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)Ljava/util/HashMap;
     .registers 1
 
-    .line 139
     iget-object p0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->onSendInternalResult:Ljava/util/HashMap;
 
     return-object p0
@@ -239,7 +229,6 @@
 .method public static final synthetic access$removeSubscriber(Lkotlinx/coroutines/channels/BroadcastChannelImpl;Lkotlinx/coroutines/channels/ReceiveChannel;)V
     .registers 2
 
-    .line 139
     invoke-direct {p0, p1}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->removeSubscriber(Lkotlinx/coroutines/channels/ReceiveChannel;)V
 
     return-void
@@ -267,28 +256,23 @@
         }
     .end annotation
 
-    .line 188
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 416
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 189
     :try_start_7
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 417
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 418
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -315,19 +299,15 @@
 
     goto :goto_16
 
-    .line 419
     :cond_29
     check-cast v2, Ljava/util/List;
 
-    .line 189
     iput-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
-    .line 190
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2f
     .catchall {:try_start_7 .. :try_end_2f} :catchall_33
 
-    .line 416
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return-void
@@ -345,21 +325,17 @@
 .method public cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
     .registers 5
 
-    .line 343
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 436
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 346
     :try_start_7
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 437
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -377,12 +353,10 @@
 
     check-cast v2, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 346
     invoke-virtual {v2, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
 
     goto :goto_f
 
-    .line 348
     :cond_1f
     invoke-static {}, Lkotlinx/coroutines/channels/BroadcastChannelKt;->access$getNO_ELEMENT$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -390,14 +364,12 @@
 
     iput-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
-    .line 350
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
 
     move-result p1
     :try_end_29
     .catchall {:try_start_7 .. :try_end_29} :catchall_2d
 
-    .line 436
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return p1
@@ -413,21 +385,17 @@
 .method public close(Ljava/lang/Throwable;)Z
     .registers 7
 
-    .line 331
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 430
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 333
     :try_start_7
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 431
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -445,25 +413,21 @@
 
     check-cast v2, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 333
     invoke-virtual {v2, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->close(Ljava/lang/Throwable;)Z
 
     goto :goto_f
 
-    .line 338
     :cond_1f
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 433
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 434
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -484,33 +448,27 @@
 
     check-cast v4, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 338
     invoke-virtual {v4}, Lkotlinx/coroutines/channels/BufferedChannel;->hasElements$kotlinx_coroutines_core()Z
 
     move-result v4
 
     if-eqz v4, :cond_2e
 
-    .line 434
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2e
 
-    .line 435
     :cond_45
     check-cast v2, Ljava/util/List;
 
-    .line 338
     iput-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
-    .line 340
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->close(Ljava/lang/Throwable;)Z
 
     move-result p1
     :try_end_4d
     .catchall {:try_start_7 .. :try_end_4d} :catchall_51
 
-    .line 430
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return p1
@@ -526,7 +484,6 @@
 .method public final getCapacity()I
     .registers 2
 
-    .line 143
     iget v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->capacity:I
 
     return v0
@@ -540,15 +497,12 @@
         }
     .end annotation
 
-    .line 382
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 440
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 384
     :try_start_7
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForSend()Z
 
@@ -556,7 +510,6 @@
 
     if-eqz v1, :cond_1d
 
-    .line 385
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->getCloseCause()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -574,7 +527,6 @@
     :cond_1c
     throw v1
 
-    .line 388
     :cond_1d
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
@@ -584,17 +536,14 @@
 
     if-eq v1, v2, :cond_2b
 
-    .line 390
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
     :try_end_27
     .catchall {:try_start_7 .. :try_end_27} :catchall_37
 
-    .line 440
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return-object v1
 
-    .line 388
     :cond_2b
     :try_start_2b
     new-instance v1, Ljava/lang/IllegalStateException;
@@ -614,7 +563,6 @@
     :catchall_37
     move-exception v1
 
-    .line 440
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     throw v1
@@ -628,15 +576,12 @@
         }
     .end annotation
 
-    .line 394
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 441
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 396
     :try_start_7
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForReceive()Z
 
@@ -648,7 +593,6 @@
 
     goto :goto_1a
 
-    .line 398
     :cond_f
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
@@ -660,13 +604,11 @@
 
     goto :goto_1a
 
-    .line 400
     :cond_18
     iget-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
     :try_end_1a
     .catchall {:try_start_7 .. :try_end_1a} :catchall_1e
 
-    .line 441
     :goto_1a
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
@@ -683,15 +625,12 @@
 .method public isClosedForSend()Z
     .registers 3
 
-    .line 355
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 439
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 355
     :try_start_7
     invoke-super {p0}, Lkotlinx/coroutines/channels/BufferedChannel;->isClosedForSend()Z
 
@@ -699,7 +638,6 @@
     :try_end_b
     .catchall {:try_start_7 .. :try_end_b} :catchall_f
 
-    .line 439
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return v1
@@ -722,15 +660,12 @@
         }
     .end annotation
 
-    .line 166
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 415
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 169
     :try_start_7
     iget v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->capacity:I
 
@@ -754,7 +689,6 @@
 
     goto :goto_11
 
-    .line 174
     :goto_1a
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForSend()Z
 
@@ -770,14 +704,12 @@
 
     if-ne v2, v3, :cond_35
 
-    .line 175
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->getCloseCause()Ljava/lang/Throwable;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lkotlinx/coroutines/channels/BufferedChannel;->close(Ljava/lang/Throwable;)Z
 
-    .line 176
     check-cast v1, Lkotlinx/coroutines/channels/ReceiveChannel;
     :try_end_31
     .catchall {:try_start_7 .. :try_end_31} :catchall_54
@@ -786,7 +718,6 @@
 
     return-object v1
 
-    .line 180
     :cond_35
     :try_start_35
     iget-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
@@ -797,14 +728,12 @@
 
     if-eq v2, v3, :cond_44
 
-    .line 181
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lkotlinx/coroutines/channels/BufferedChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 184
     :cond_44
     iget-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
@@ -818,7 +747,6 @@
     :try_end_4e
     .catchall {:try_start_35 .. :try_end_4e} :catchall_54
 
-    .line 415
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     check-cast v1, Lkotlinx/coroutines/channels/ReceiveChannel;
@@ -845,15 +773,12 @@
         }
     .end annotation
 
-    .line 279
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 429
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 280
     :try_start_7
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->onSendInternalResult:Ljava/util/HashMap;
 
@@ -863,27 +788,22 @@
 
     if-eqz v1, :cond_16
 
-    .line 283
     invoke-interface {p1, v1}, Lkotlinx/coroutines/selects/SelectInstance;->selectInRegistrationPhase(Ljava/lang/Object;)V
     :try_end_12
     .catchall {:try_start_7 .. :try_end_12} :catchall_34
 
-    .line 284
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return-void
 
-    .line 286
     :cond_16
     :try_start_16
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_18
     .catchall {:try_start_16 .. :try_end_18} :catchall_34
 
-    .line 429
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 289
     invoke-interface {p1}, Lkotlinx/coroutines/selects/SelectInstance;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
@@ -915,7 +835,6 @@
     :catchall_34
     move-exception p1
 
-    .line 429
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     throw p1
@@ -970,7 +889,6 @@
 
     move-result-object v1
 
-    .line 212
     iget v2, v0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$send$1;->label:I
 
     const/4 v3, 0x1
@@ -1005,15 +923,12 @@
     :cond_3c
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 213
     iget-object p2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 420
     check-cast p2, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 215
     :try_start_46
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForSend()Z
 
@@ -1021,7 +936,6 @@
 
     if-nez v2, :cond_99
 
-    .line 217
     iget v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->capacity:I
 
     const/4 v4, -0x1
@@ -1030,19 +944,15 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
-    .line 219
     :cond_53
     iget-object v2, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
     :try_end_55
     .catchall {:try_start_46 .. :try_end_55} :catchall_9e
 
-    .line 420
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 226
     check-cast v2, Ljava/lang/Iterable;
 
-    .line 421
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -1068,7 +978,6 @@
 
     check-cast v2, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 230
     iput-object v4, v0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$send$1;->L$0:Ljava/lang/Object;
 
     iput-object p2, v0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$send$1;->L$1:Ljava/lang/Object;
@@ -1101,7 +1010,6 @@
 
     if-nez p2, :cond_94
 
-    .line 233
     invoke-virtual {v4}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForSend()Z
 
     move-result p2
@@ -1123,13 +1031,11 @@
 
     goto :goto_62
 
-    .line 235
     :cond_96
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 215
     :cond_99
     :try_start_99
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->getSendException()Ljava/lang/Throwable;
@@ -1143,7 +1049,6 @@
     :catchall_9e
     move-exception p1
 
-    .line 420
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     throw p1
@@ -1152,7 +1057,6 @@
 .method public toString()Ljava/lang/String;
     .registers 12
 
-    .line 408
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1191,27 +1095,20 @@
     :goto_25
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 409
     const-string v1, "BROADCAST=<"
 
-    .line 408
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 409
     invoke-super {p0}, Lkotlinx/coroutines/channels/BufferedChannel;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 408
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 409
     const-string v1, ">; SUBSCRIBERS="
 
-    .line 408
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 410
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     move-object v2, v1
@@ -1250,7 +1147,6 @@
 
     move-result-object v1
 
-    .line 408
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -1269,15 +1165,12 @@
         }
     .end annotation
 
-    .line 237
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 423
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 239
     :try_start_7
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->isClosedForSend()Z
 
@@ -1295,14 +1188,12 @@
 
     return-object p1
 
-    .line 242
     :cond_15
     :try_start_15
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 424
     instance-of v2, v1, Ljava/util/Collection;
 
     if-eqz v2, :cond_27
@@ -1319,7 +1210,6 @@
 
     goto :goto_47
 
-    .line 425
     :cond_27
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1338,14 +1228,12 @@
 
     check-cast v2, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 242
     invoke-virtual {v2}, Lkotlinx/coroutines/channels/BufferedChannel;->shouldSendSuspend$kotlinx_coroutines_core()Z
 
     move-result v2
 
     if-eqz v2, :cond_2b
 
-    .line 243
     sget-object p1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     invoke-virtual {p1}, Lkotlinx/coroutines/channels/ChannelResult$Companion;->failure-PtdJZtk()Ljava/lang/Object;
@@ -1358,7 +1246,6 @@
 
     return-object p1
 
-    .line 245
     :cond_47
     :goto_47
     :try_start_47
@@ -1370,13 +1257,11 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->lastConflatedElement:Ljava/lang/Object;
 
-    .line 251
     :cond_4e
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->subscribers:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 427
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1394,12 +1279,10 @@
 
     check-cast v2, Lkotlinx/coroutines/channels/BufferedChannel;
 
-    .line 251
     invoke-virtual {v2, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_56
 
-    .line 253
     :cond_66
     sget-object p1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 

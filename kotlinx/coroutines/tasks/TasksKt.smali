@@ -49,7 +49,6 @@
 .method public static final synthetic access$awaitImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 3
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/tasks/TasksKt;->awaitImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -73,7 +72,6 @@
 
     const/4 v0, 0x0
 
-    .line 46
     invoke-static {p0, v0}, Lkotlinx/coroutines/tasks/TasksKt;->asDeferredImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;)Lkotlinx/coroutines/Deferred;
 
     move-result-object p0
@@ -97,7 +95,6 @@
         }
     .end annotation
 
-    .line 59
     invoke-static {p0, p1}, Lkotlinx/coroutines/tasks/TasksKt;->asDeferredImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;)Lkotlinx/coroutines/Deferred;
 
     move-result-object p0
@@ -125,33 +122,28 @@
 
     const/4 v1, 0x1
 
-    .line 62
     invoke-static {v0, v1, v0}, Lkotlinx/coroutines/CompletableDeferredKt;->CompletableDeferred$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;
 
     move-result-object v2
 
-    .line 63
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->isComplete()Z
 
     move-result v3
 
     if-eqz v3, :cond_2d
 
-    .line 64
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object v3
 
     if-nez v3, :cond_27
 
-    .line 66
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->isCanceled()Z
 
     move-result v3
 
     if-eqz v3, :cond_1f
 
-    .line 67
     move-object p0, v2
 
     check-cast p0, Lkotlinx/coroutines/Job;
@@ -160,7 +152,6 @@
 
     goto :goto_39
 
-    .line 70
     :cond_1f
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
@@ -170,7 +161,6 @@
 
     goto :goto_39
 
-    .line 73
     :cond_27
     check-cast v3, Ljava/lang/Throwable;
 
@@ -178,7 +168,6 @@
 
     goto :goto_39
 
-    .line 77
     :cond_2d
     sget-object v0, Lkotlinx/coroutines/tasks/DirectExecutor;->INSTANCE:Lkotlinx/coroutines/tasks/DirectExecutor;
 
@@ -193,7 +182,6 @@
     :goto_39
     if-eqz p1, :cond_45
 
-    .line 89
     new-instance p0, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$2;
 
     invoke-direct {p0, p1}, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$2;-><init>(Lcom/google/android/gms/tasks/CancellationTokenSource;)V
@@ -202,7 +190,6 @@
 
     invoke-interface {v2, p0}, Lkotlinx/coroutines/CompletableDeferred;->invokeOnCompletion(Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
 
-    .line 94
     :cond_45
     new-instance p0, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$3;
 
@@ -216,14 +203,12 @@
 .method private static final asDeferredImpl$lambda$0(Lkotlinx/coroutines/CompletableDeferred;Lcom/google/android/gms/tasks/Task;)V
     .registers 3
 
-    .line 78
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object v0
 
     if-nez v0, :cond_1c
 
-    .line 81
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isCanceled()Z
 
     move-result v0
@@ -249,7 +234,6 @@
 
     goto :goto_21
 
-    .line 83
     :cond_1c
     check-cast v0, Ljava/lang/Throwable;
 
@@ -273,12 +257,10 @@
         }
     .end annotation
 
-    .line 20
     new-instance v0, Lcom/google/android/gms/tasks/CancellationTokenSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/CancellationTokenSource;-><init>()V
 
-    .line 21
     new-instance v1, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/CancellationTokenSource;->getToken()Lcom/google/android/gms/tasks/CancellationToken;
@@ -287,7 +269,6 @@
 
     invoke-direct {v1, v2}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>(Lcom/google/android/gms/tasks/CancellationToken;)V
 
-    .line 23
     new-instance v2, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;
 
     invoke-direct {v2, v0, p0, v1}, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;-><init>(Lcom/google/android/gms/tasks/CancellationTokenSource;Lkotlinx/coroutines/Deferred;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
@@ -296,7 +277,6 @@
 
     invoke-interface {p0, v2}, Lkotlinx/coroutines/Deferred;->invokeOnCompletion(Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
 
-    .line 37
     invoke-virtual {v1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object p0
@@ -320,7 +300,6 @@
         }
     .end annotation
 
-    .line 121
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/tasks/TasksKt;->awaitImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -345,7 +324,6 @@
 
     const/4 v0, 0x0
 
-    .line 106
     invoke-static {p0, v0, p1}, Lkotlinx/coroutines/tasks/TasksKt;->awaitImpl(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/CancellationTokenSource;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -369,35 +347,30 @@
         }
     .end annotation
 
-    .line 125
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->isComplete()Z
 
     move-result v0
 
     if-eqz v0, :cond_31
 
-    .line 126
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object p1
 
     if-nez p1, :cond_30
 
-    .line 128
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->isCanceled()Z
 
     move-result p1
 
     if-nez p1, :cond_17
 
-    .line 132
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 129
     :cond_17
     new-instance p1, Ljava/util/concurrent/CancellationException;
 
@@ -421,11 +394,9 @@
 
     throw p1
 
-    .line 135
     :cond_30
     throw p1
 
-    .line 169
     :cond_31
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
@@ -437,15 +408,12 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 175
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 176
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 141
     sget-object v2, Lkotlinx/coroutines/tasks/DirectExecutor;->INSTANCE:Lkotlinx/coroutines/tasks/DirectExecutor;
 
     check-cast v2, Ljava/util/concurrent/Executor;
@@ -460,7 +428,6 @@
 
     if-eqz p1, :cond_5b
 
-    .line 152
     new-instance p0, Lkotlinx/coroutines/tasks/TasksKt$awaitImpl$2$2;
 
     invoke-direct {p0, p1}, Lkotlinx/coroutines/tasks/TasksKt$awaitImpl$2$2;-><init>(Lcom/google/android/gms/tasks/CancellationTokenSource;)V
@@ -469,13 +436,11 @@
 
     invoke-interface {v1, p0}, Lkotlinx/coroutines/CancellableContinuation;->invokeOnCancellation(Lkotlin/jvm/functions/Function1;)V
 
-    .line 177
     :cond_5b
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 168
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1

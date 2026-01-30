@@ -10,7 +10,6 @@
 .method public synthetic constructor <init>()V
     .registers 1
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 0
     check-cast p1, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;
 
     invoke-virtual {p1}, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;->toByteArray()[B

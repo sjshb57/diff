@@ -87,7 +87,6 @@
 .method static constructor <clinit>()V
     .registers 4
 
-    .line 103
     new-instance v0, Lcom/google/flatbuffers/ArrayReadWriteBuf;
 
     const/4 v1, 0x1
@@ -108,7 +107,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -117,7 +115,6 @@
 .method static synthetic access$000()Lcom/google/flatbuffers/ReadBuf;
     .registers 1
 
-    .line 45
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers;->EMPTY_BB:Lcom/google/flatbuffers/ReadBuf;
 
     return-object v0
@@ -126,7 +123,6 @@
 .method static synthetic access$100(Lcom/google/flatbuffers/ReadBuf;II)I
     .registers 3
 
-    .line 45
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readInt(Lcom/google/flatbuffers/ReadBuf;II)I
 
     move-result p0
@@ -137,7 +133,6 @@
 .method static synthetic access$200(Lcom/google/flatbuffers/ReadBuf;II)I
     .registers 3
 
-    .line 45
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->indirect(Lcom/google/flatbuffers/ReadBuf;II)I
 
     move-result p0
@@ -148,7 +143,6 @@
 .method static synthetic access$300(Lcom/google/flatbuffers/ReadBuf;II)J
     .registers 3
 
-    .line 45
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readUInt(Lcom/google/flatbuffers/ReadBuf;II)J
 
     move-result-wide p0
@@ -159,7 +153,6 @@
 .method static synthetic access$400(Lcom/google/flatbuffers/ReadBuf;II)D
     .registers 3
 
-    .line 45
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readDouble(Lcom/google/flatbuffers/ReadBuf;II)D
 
     move-result-wide p0
@@ -170,7 +163,6 @@
 .method static synthetic access$500(Lcom/google/flatbuffers/ReadBuf;II)J
     .registers 3
 
-    .line 45
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readLong(Lcom/google/flatbuffers/ReadBuf;II)J
 
     move-result-wide p0
@@ -181,21 +173,18 @@
 .method public static getRoot(Lcom/google/flatbuffers/ReadBuf;)Lcom/google/flatbuffers/FlexBuffers$Reference;
     .registers 5
 
-    .line 214
     invoke-interface {p0}, Lcom/google/flatbuffers/ReadBuf;->limit()I
 
     move-result v0
 
     add-int/lit8 v1, v0, -0x1
 
-    .line 215
     invoke-interface {p0, v1}, Lcom/google/flatbuffers/ReadBuf;->get(I)B
 
     move-result v1
 
     add-int/lit8 v0, v0, -0x2
 
-    .line 216
     invoke-interface {p0, v0}, Lcom/google/flatbuffers/ReadBuf;->get(I)B
 
     move-result v2
@@ -206,7 +195,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 218
     new-instance v3, Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     invoke-direct {v3, p0, v0, v1, v2}, Lcom/google/flatbuffers/FlexBuffers$Reference;-><init>(Lcom/google/flatbuffers/ReadBuf;III)V
@@ -219,7 +207,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 202
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->hasArray()Z
 
     move-result v0
@@ -258,7 +245,6 @@
 
     int-to-long v0, p1
 
-    .line 156
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readUInt(Lcom/google/flatbuffers/ReadBuf;II)J
 
     move-result-wide p0
@@ -365,7 +351,6 @@
 
     return-wide p0
 
-    .line 189
     :cond_a
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getDouble(I)D
 
@@ -373,7 +358,6 @@
 
     return-wide p0
 
-    .line 188
     :cond_f
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getFloat(I)F
 
@@ -387,7 +371,6 @@
 .method private static readInt(Lcom/google/flatbuffers/ReadBuf;II)I
     .registers 3
 
-    .line 172
     invoke-static {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffers;->readLong(Lcom/google/flatbuffers/ReadBuf;II)J
 
     move-result-wide p0
@@ -420,7 +403,6 @@
 
     return-wide p0
 
-    .line 181
     :cond_10
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getLong(I)J
 
@@ -428,7 +410,6 @@
 
     return-wide p0
 
-    .line 180
     :cond_15
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getInt(I)I
 
@@ -439,7 +420,6 @@
 
     return-wide p0
 
-    .line 179
     :cond_1b
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getShort(I)S
 
@@ -447,7 +427,6 @@
 
     goto :goto_19
 
-    .line 178
     :cond_20
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->get(I)B
 
@@ -479,7 +458,6 @@
 
     return-wide p0
 
-    .line 165
     :cond_10
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getLong(I)J
 
@@ -487,7 +465,6 @@
 
     return-wide p0
 
-    .line 164
     :cond_15
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getInt(I)I
 
@@ -499,7 +476,6 @@
 
     return-wide p0
 
-    .line 163
     :cond_1e
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->getShort(I)S
 
@@ -513,7 +489,6 @@
 
     return-wide p0
 
-    .line 162
     :cond_28
     invoke-interface {p0, p1}, Lcom/google/flatbuffers/ReadBuf;->get(I)B
 

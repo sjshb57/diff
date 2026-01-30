@@ -51,7 +51,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 162
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +61,6 @@
 .method public execute(Ljava/lang/Runnable;)V
     .registers 2
 
-    .line 164
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
     return-void

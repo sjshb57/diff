@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,17 +35,14 @@
         }
     .end annotation
 
-    .line 80
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getRetainedItems()I
 
     move-result v0
 
-    .line 81
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMinValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 82
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -63,10 +59,8 @@
 
     const/4 v2, 0x0
 
-    .line 85
     aput-object v1, v0, v2
 
-    .line 86
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMaxValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -75,20 +69,16 @@
 
     aput-object v1, v0, v4
 
-    .line 87
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBaseBufferCount()I
 
     move-result v1
 
-    .line 88
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 91
     invoke-static {v5, v2, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 94
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v6
@@ -99,7 +89,6 @@
 
     if-lez v10, :cond_4f
 
-    .line 96
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v10
@@ -123,7 +112,6 @@
 
     mul-int/2addr v12, v10
 
-    .line 100
     invoke-static {v5, v12, v0, v11, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v11, v10
@@ -140,7 +128,6 @@
 
     add-int/2addr v1, v3
 
-    .line 106
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object p0
@@ -168,15 +155,12 @@
         }
     .end annotation
 
-    .line 112
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->insertPreLongs(Lcom/yahoo/memory/WritableMemory;I)V
 
     const/4 p1, 0x3
 
-    .line 113
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->insertSerVer(Lcom/yahoo/memory/WritableMemory;I)V
 
-    .line 114
     sget-object p1, Lcom/yahoo/sketches/Family;->QUANTILES:Lcom/yahoo/sketches/Family;
 
     invoke-virtual {p1}, Lcom/yahoo/sketches/Family;->getID()I
@@ -185,10 +169,8 @@
 
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->insertFamilyID(Lcom/yahoo/memory/WritableMemory;I)V
 
-    .line 115
     invoke-static {p0, p2}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->insertFlags(Lcom/yahoo/memory/WritableMemory;I)V
 
-    .line 116
     invoke-static {p0, p3}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->insertK(Lcom/yahoo/memory/WritableMemory;I)V
 
     return-void
@@ -221,7 +203,6 @@
         }
     .end annotation
 
-    .line 38
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->isEmpty()Z
 
     move-result v0
@@ -253,17 +234,14 @@
 
     if-eqz v0, :cond_24
 
-    .line 45
     new-array p1, v2, [B
 
-    .line 46
     invoke-static {p1}, Lcom/yahoo/memory/WritableMemory;->wrap([B)Lcom/yahoo/memory/WritableMemory;
 
     move-result-object p2
 
     const/4 v0, 0x1
 
-    .line 48
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result p0
@@ -272,40 +250,33 @@
 
     return-object p1
 
-    .line 53
     :cond_24
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/ItemsByteArrayImpl;->combinedBufferToItemsArray(Lcom/yahoo/sketches/quantiles/ItemsSketch;Z)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 56
     invoke-virtual {p2, p1}, Lcom/yahoo/sketches/ArrayOfItemsSerDe;->serializeToByteArray([Ljava/lang/Object;)[B
 
     move-result-object v7
 
-    .line 57
     array-length p1, v7
 
     add-int/2addr p1, v3
 
-    .line 58
     new-array p1, p1, [B
 
-    .line 59
     invoke-static {p1}, Lcom/yahoo/memory/WritableMemory;->wrap([B)Lcom/yahoo/memory/WritableMemory;
 
     move-result-object v4
 
     const/4 p2, 0x2
 
-    .line 62
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v0
 
     invoke-static {v4, p2, v1, v0}, Lcom/yahoo/sketches/quantiles/ItemsByteArrayImpl;->insertPre0(Lcom/yahoo/memory/WritableMemory;III)V
 
-    .line 63
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v0
@@ -314,7 +285,6 @@
 
     const/4 v8, 0x0
 
-    .line 66
     array-length v9, v7
 
     const-wide/16 v5, 0x10

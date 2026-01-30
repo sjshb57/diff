@@ -70,7 +70,6 @@
 .method public static final checkUIntRangeBounds-J1ME1BU(II)V
     .registers 3
 
-    .line 153
     invoke-static {p1, p0}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$2(II)I
 
     move-result v0
@@ -106,7 +105,6 @@
 .method public static final checkULongRangeBounds-eb3DHEI(JJ)V
     .registers 5
 
-    .line 154
     invoke-static {p2, p3, p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result v0
@@ -146,7 +144,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 138
     invoke-virtual {p0, p1}, Lkotlin/random/Random;->nextBytes(I)[B
 
     move-result-object p0
@@ -169,7 +166,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 129
     invoke-virtual {p0, p1}, Lkotlin/random/Random;->nextBytes([B)[B
 
     return-object p1
@@ -186,7 +182,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 148
     invoke-virtual {p0, p1, p2, p3}, Lkotlin/random/Random;->nextBytes([BII)[B
 
     return-object p1
@@ -206,7 +201,6 @@
 
     if-eqz p4, :cond_d
 
-    .line 147
     invoke-static {p1}, Lkotlin/UByteArray;->getSize-impl([B)I
 
     move-result p3
@@ -226,7 +220,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p0}, Lkotlin/random/Random;->nextInt()I
 
     move-result p0
@@ -249,14 +242,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
     invoke-virtual {p1}, Lkotlin/ranges/UIntRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_57
 
-    .line 60
     invoke-virtual {p1}, Lkotlin/ranges/UIntRange;->getLast-pVg5ArA()I
 
     move-result v0
@@ -289,7 +280,6 @@
 
     goto :goto_56
 
-    .line 61
     :cond_2e
     invoke-virtual {p1}, Lkotlin/ranges/UIntRange;->getFirst-pVg5ArA()I
 
@@ -329,7 +319,6 @@
 
     goto :goto_56
 
-    .line 62
     :cond_52
     invoke-static {p0}, Lkotlin/random/URandomKt;->nextUInt(Lkotlin/random/Random;)I
 
@@ -338,7 +327,6 @@
     :goto_56
     return p0
 
-    .line 59
     :cond_57
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -366,7 +354,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
     invoke-static {p1, p2}, Lkotlin/random/URandomKt;->checkUIntRangeBounds-J1ME1BU(II)V
 
     const/high16 v0, -0x80000000
@@ -375,14 +362,12 @@
 
     xor-int/2addr p2, v0
 
-    .line 44
     invoke-virtual {p0, p1, p2}, Lkotlin/random/Random;->nextInt(II)I
 
     move-result p0
 
     xor-int/2addr p0, v0
 
-    .line 45
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -399,7 +384,6 @@
 
     const/4 v0, 0x0
 
-    .line 27
     invoke-static {p0, v0, p1}, Lkotlin/random/URandomKt;->nextUInt-a8DCA5k(Lkotlin/random/Random;II)I
 
     move-result p0
@@ -414,7 +398,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 72
     invoke-virtual {p0}, Lkotlin/random/Random;->nextLong()J
 
     move-result-wide v0
@@ -437,14 +420,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
     invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_6e
 
-    .line 116
     invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
@@ -489,7 +470,6 @@
 
     goto :goto_6d
 
-    .line 117
     :cond_3b
     invoke-virtual {p1}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
@@ -541,7 +521,6 @@
 
     goto :goto_6d
 
-    .line 118
     :cond_69
     invoke-static {p0}, Lkotlin/random/URandomKt;->nextULong(Lkotlin/random/Random;)J
 
@@ -550,7 +529,6 @@
     :goto_6d
     return-wide p0
 
-    .line 115
     :cond_6e
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -582,7 +560,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 83
     invoke-static {p0, v0, v1, p1, p2}, Lkotlin/random/URandomKt;->nextULong-jmpaW-c(Lkotlin/random/Random;JJ)J
 
     move-result-wide p0
@@ -597,7 +574,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 95
     invoke-static {p1, p2, p3, p4}, Lkotlin/random/URandomKt;->checkULongRangeBounds-eb3DHEI(JJ)V
 
     const-wide/high16 v0, -0x8000000000000000L
@@ -606,14 +582,12 @@
 
     xor-long/2addr p3, v0
 
-    .line 100
     invoke-virtual {p0, p1, p2, p3, p4}, Lkotlin/random/Random;->nextLong(JJ)J
 
     move-result-wide p0
 
     xor-long/2addr p0, v0
 
-    .line 101
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0

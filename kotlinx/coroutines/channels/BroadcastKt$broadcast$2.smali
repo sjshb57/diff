@@ -194,7 +194,6 @@
 
     move-result-object v0
 
-    .line 55
     iget v1, p0, Lkotlinx/coroutines/channels/BroadcastKt$broadcast$2;->label:I
 
     const/4 v2, 0x2
@@ -251,7 +250,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 56
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastKt$broadcast$2;->$channel:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -297,7 +295,6 @@
 
     move-result-object p1
 
-    .line 57
     move-object v5, p0
 
     check-cast v5, Lkotlin/coroutines/Continuation;
@@ -316,7 +313,6 @@
 
     return-object v0
 
-    .line 59
     :cond_6b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

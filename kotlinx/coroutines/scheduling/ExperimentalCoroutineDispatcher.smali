@@ -83,7 +83,6 @@
         message = "Binary compatibility for Ktor 1.0-beta"
     .end annotation
 
-    .line 40
     sget-wide v3, Lkotlinx/coroutines/scheduling/TasksKt;->IDLE_WORKER_KEEP_ALIVE_NS:J
 
     const/16 v6, 0x8
@@ -110,7 +109,6 @@
 
     if-eqz p4, :cond_6
 
-    .line 38
     sget p1, Lkotlinx/coroutines/scheduling/TasksKt;->CORE_POOL_SIZE:I
 
     :cond_6
@@ -118,10 +116,8 @@
 
     if-eqz p3, :cond_c
 
-    .line 39
     sget p2, Lkotlinx/coroutines/scheduling/TasksKt;->MAX_POOL_SIZE:I
 
-    .line 37
     :cond_c
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;-><init>(II)V
 
@@ -131,22 +127,16 @@
 .method public constructor <init>(IIJLjava/lang/String;)V
     .registers 6
 
-    .line 29
     invoke-direct {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcher;-><init>()V
 
-    .line 25
     iput p1, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->corePoolSize:I
 
-    .line 26
     iput p2, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->maxPoolSize:I
 
-    .line 27
     iput-wide p3, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->idleWorkerKeepAliveNs:J
 
-    .line 28
     iput-object p5, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->schedulerName:Ljava/lang/String;
 
-    .line 46
     invoke-direct {p0}, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->createScheduler()Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
     move-result-object p1
@@ -163,7 +153,6 @@
 
     if-eqz p6, :cond_6
 
-    .line 28
     const-string p5, "CoroutineScheduler"
 
     :cond_6
@@ -177,7 +166,6 @@
 
     move-wide v3, p3
 
-    .line 24
     invoke-direct/range {v0 .. v5}, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;-><init>(IIJLjava/lang/String;)V
 
     return-void
@@ -186,7 +174,6 @@
 .method public constructor <init>(IILjava/lang/String;)V
     .registers 10
 
-    .line 34
     sget-wide v3, Lkotlinx/coroutines/scheduling/TasksKt;->IDLE_WORKER_KEEP_ALIVE_NS:J
 
     move-object v0, p0
@@ -209,7 +196,6 @@
 
     if-eqz p5, :cond_6
 
-    .line 31
     sget p1, Lkotlinx/coroutines/scheduling/TasksKt;->CORE_POOL_SIZE:I
 
     :cond_6
@@ -217,7 +203,6 @@
 
     if-eqz p5, :cond_c
 
-    .line 32
     sget p2, Lkotlinx/coroutines/scheduling/TasksKt;->MAX_POOL_SIZE:I
 
     :cond_c
@@ -225,10 +210,8 @@
 
     if-eqz p4, :cond_12
 
-    .line 33
     sget-object p3, Lkotlinx/coroutines/scheduling/TasksKt;->DEFAULT_SCHEDULER_NAME:Ljava/lang/String;
 
-    .line 30
     :cond_12
     invoke-direct {p0, p1, p2, p3}, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;-><init>(IILjava/lang/String;)V
 
@@ -246,7 +229,6 @@
 
     const/16 p1, 0x10
 
-    .line 79
     :cond_8
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->blocking(I)Lkotlinx/coroutines/CoroutineDispatcher;
 
@@ -267,7 +249,6 @@
 .method private final createScheduler()Lkotlinx/coroutines/scheduling/CoroutineScheduler;
     .registers 8
 
-    .line 108
     new-instance v6, Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
     iget v1, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->corePoolSize:I
@@ -292,7 +273,6 @@
 
     if-lez p1, :cond_c
 
-    .line 81
     new-instance v0, Lkotlinx/coroutines/scheduling/LimitingDispatcher;
 
     const/4 v1, 0x0
@@ -305,7 +285,6 @@
 
     return-object v0
 
-    .line 80
     :cond_c
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -333,7 +312,6 @@
 .method public close()V
     .registers 2
 
-    .line 66
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->coroutineScheduler:Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/scheduling/CoroutineScheduler;->close()V
@@ -344,7 +322,6 @@
 .method public dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 9
 
-    .line 50
     :try_start_0
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->coroutineScheduler:Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
@@ -364,7 +341,6 @@
 
     goto :goto_10
 
-    .line 54
     :catch_b
     sget-object v0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
@@ -377,7 +353,6 @@
 .method public final dispatchWithContext$kotlinx_coroutines_core(Ljava/lang/Runnable;Lkotlinx/coroutines/scheduling/TaskContext;Z)V
     .registers 5
 
-    .line 99
     :try_start_0
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->coroutineScheduler:Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
@@ -387,7 +362,6 @@
 
     goto :goto_13
 
-    .line 104
     :catch_6
     sget-object p3, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
@@ -408,7 +382,6 @@
 .method public dispatchYield(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 9
 
-    .line 59
     :try_start_0
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->coroutineScheduler:Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
@@ -428,7 +401,6 @@
 
     goto :goto_10
 
-    .line 63
     :catch_b
     sget-object v0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
@@ -441,7 +413,6 @@
 .method public getExecutor()Ljava/util/concurrent/Executor;
     .registers 2
 
-    .line 43
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->coroutineScheduler:Lkotlinx/coroutines/scheduling/CoroutineScheduler;
 
     check-cast v0, Ljava/util/concurrent/Executor;
@@ -454,12 +425,10 @@
 
     if-lez p1, :cond_32
 
-    .line 93
     iget v0, p0, Lkotlinx/coroutines/scheduling/ExperimentalCoroutineDispatcher;->corePoolSize:I
 
     if-gt p1, v0, :cond_10
 
-    .line 94
     new-instance v0, Lkotlinx/coroutines/scheduling/LimitingDispatcher;
 
     const/4 v1, 0x0
@@ -472,7 +441,6 @@
 
     return-object v0
 
-    .line 93
     :cond_10
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -504,7 +472,6 @@
 
     throw v0
 
-    .line 92
     :cond_32
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -532,7 +499,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 69
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

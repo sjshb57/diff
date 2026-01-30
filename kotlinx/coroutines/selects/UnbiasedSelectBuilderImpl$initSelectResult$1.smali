@@ -176,7 +176,6 @@
 
     move-result-object v0
 
-    .line 69
     iget v1, p0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl$initSelectResult$1;->label:I
 
     const/4 v2, 0x1
@@ -209,7 +208,6 @@
     :cond_19
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 71
     :try_start_1c
     iget-object p1, p0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl$initSelectResult$1;->this$0:Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;
 
@@ -229,7 +227,6 @@
 
     return-object v0
 
-    .line 76
     :cond_2a
     :goto_2a
     iget-object v0, p0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl$initSelectResult$1;->this$0:Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;
@@ -242,12 +239,10 @@
 
     invoke-static {v0, p1}, Lkotlinx/coroutines/selects/SelectOldKt;->access$resumeUndispatched(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Object;)V
 
-    .line 77
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 73
     :goto_38
     iget-object v0, p0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl$initSelectResult$1;->this$0:Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;
 
@@ -259,7 +254,6 @@
 
     invoke-static {v0, p1}, Lkotlinx/coroutines/selects/SelectOldKt;->access$resumeUndispatchedWithException(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Throwable;)V
 
-    .line 74
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

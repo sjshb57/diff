@@ -107,7 +107,6 @@
 .method private synthetic constructor <init>([I)V
     .registers 2
 
-    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/UIntArray;->storage:[I
@@ -128,7 +127,6 @@
 .method public static constructor-impl(I)[I
     .registers 1
 
-    .line 20
     new-array p0, p0, [I
 
     invoke-static {p0}, Lkotlin/UIntArray;->constructor-impl([I)[I
@@ -151,7 +149,6 @@
 .method public static contains-WZ4Q5Ns([II)Z
     .registers 2
 
-    .line 58
     invoke-static {p0, p1}, Lkotlin/collections/ArraysKt;->contains([II)Z
 
     move-result p0
@@ -174,10 +171,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 62
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 87
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -192,7 +187,6 @@
 
     goto :goto_32
 
-    .line 88
     :cond_12
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -209,7 +203,6 @@
 
     move-result-object v0
 
-    .line 62
     instance-of v2, v0, Lkotlin/UInt;
 
     if-eqz v2, :cond_31
@@ -281,7 +274,6 @@
 .method public static final get-pVg5ArA([II)I
     .registers 2
 
-    .line 28
     aget p0, p0, p1
 
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
@@ -294,7 +286,6 @@
 .method public static getSize-impl([I)I
     .registers 1
 
-    .line 41
     array-length p0, p0
 
     return p0
@@ -319,7 +310,6 @@
 .method public static isEmpty-impl([I)Z
     .registers 1
 
-    .line 65
     array-length p0, p0
 
     if-nez p0, :cond_5
@@ -346,7 +336,6 @@
         }
     .end annotation
 
-    .line 44
     new-instance v0, Lkotlin/UIntArray$Iterator;
 
     invoke-direct {v0, p0}, Lkotlin/UIntArray$Iterator;-><init>([I)V
@@ -359,7 +348,6 @@
 .method public static final set-VXSXFK8([III)V
     .registers 3
 
-    .line 37
     aput p2, p0, p1
 
     return-void
@@ -453,7 +441,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 12
     instance-of v0, p1, Lkotlin/UInt;
 
     if-nez v0, :cond_6
@@ -479,7 +466,6 @@
 .method public contains-WZ4Q5Ns(I)Z
     .registers 3
 
-    .line 52
     iget-object v0, p0, Lkotlin/UIntArray;->storage:[I
 
     invoke-static {v0, p1}, Lkotlin/UIntArray;->contains-WZ4Q5Ns([II)Z
@@ -505,7 +491,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 61
     iget-object v0, p0, Lkotlin/UIntArray;->storage:[I
 
     invoke-static {v0, p1}, Lkotlin/UIntArray;->containsAll-impl([ILjava/util/Collection;)Z
@@ -530,7 +515,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 41
     iget-object v0, p0, Lkotlin/UIntArray;->storage:[I
 
     invoke-static {v0}, Lkotlin/UIntArray;->getSize-impl([I)I
@@ -555,7 +539,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 65
     iget-object v0, p0, Lkotlin/UIntArray;->storage:[I
 
     invoke-static {v0}, Lkotlin/UIntArray;->isEmpty-impl([I)Z
@@ -576,7 +559,6 @@
         }
     .end annotation
 
-    .line 44
     iget-object v0, p0, Lkotlin/UIntArray;->storage:[I
 
     invoke-static {v0}, Lkotlin/UIntArray;->iterator-impl([I)Ljava/util/Iterator;
@@ -643,7 +625,6 @@
 .method public bridge synthetic size()I
     .registers 2
 
-    .line 12
     invoke-virtual {p0}, Lkotlin/UIntArray;->getSize()I
 
     move-result v0

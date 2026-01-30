@@ -58,10 +58,8 @@
 
     const/4 v0, 0x0
 
-    .line 127
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 14
     sput-object v0, Lkotlin/jvm/internal/CollectionToArray;->EMPTY:[Ljava/lang/Object;
 
     return-void
@@ -82,26 +80,22 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 83
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
 
     if-nez v0, :cond_e
 
-    .line 21
     :goto_b
     sget-object p0, Lkotlin/jvm/internal/CollectionToArray;->EMPTY:[Ljava/lang/Object;
 
     goto :goto_5c
 
-    .line 85
     :cond_e
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 86
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -110,7 +104,6 @@
 
     goto :goto_b
 
-    .line 22
     :cond_19
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -119,19 +112,16 @@
     :goto_1c
     add-int/lit8 v2, v1, 0x1
 
-    .line 91
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
     aput-object v3, v0, v1
 
-    .line 92
     array-length v1, v0
 
     if-lt v2, v1, :cond_4d
 
-    .line 93
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -157,7 +147,6 @@
 
     goto :goto_43
 
-    .line 99
     :cond_3d
     new-instance p0, Ljava/lang/OutOfMemoryError;
 
@@ -165,7 +154,6 @@
 
     throw p0
 
-    .line 102
     :cond_43
     :goto_43
     invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -178,7 +166,6 @@
 
     goto :goto_5d
 
-    .line 104
     :cond_4d
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -186,7 +173,6 @@
 
     if-nez v1, :cond_5d
 
-    .line 23
     invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p0
@@ -222,10 +208,8 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 105
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
@@ -236,7 +220,6 @@
 
     if-nez v0, :cond_17
 
-    .line 34
     array-length p0, p1
 
     if-lez p0, :cond_85
@@ -245,20 +228,17 @@
 
     goto/16 :goto_85
 
-    .line 107
     :cond_17
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 108
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
     if-nez v3, :cond_27
 
-    .line 34
     array-length p0, p1
 
     if-lez p0, :cond_85
@@ -267,7 +247,6 @@
 
     goto :goto_85
 
-    .line 39
     :cond_27
     array-length v3, p1
 
@@ -299,19 +278,16 @@
     :goto_3f
     add-int/lit8 v3, v2, 0x1
 
-    .line 113
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     aput-object v4, v0, v2
 
-    .line 114
     array-length v2, v0
 
     if-lt v3, v2, :cond_70
 
-    .line 115
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -337,7 +313,6 @@
 
     goto :goto_66
 
-    .line 121
     :cond_60
     new-instance p0, Ljava/lang/OutOfMemoryError;
 
@@ -345,7 +320,6 @@
 
     throw p0
 
-    .line 124
     :cond_66
     :goto_66
     invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -358,7 +332,6 @@
 
     goto :goto_86
 
-    .line 126
     :cond_70
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -368,12 +341,10 @@
 
     if-ne v0, p1, :cond_7b
 
-    .line 43
     aput-object v1, p1, v3
 
     goto :goto_85
 
-    .line 46
     :cond_7b
     invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -425,14 +396,12 @@
         }
     .end annotation
 
-    .line 57
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
 
     if-nez v0, :cond_d
 
-    .line 58
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object p0
@@ -441,13 +410,11 @@
 
     return-object p0
 
-    .line 59
     :cond_d
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 60
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -462,7 +429,6 @@
 
     return-object p0
 
-    .line 61
     :cond_1e
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -479,19 +445,16 @@
     :goto_29
     add-int/lit8 v0, p2, 0x1
 
-    .line 65
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     aput-object v1, p1, p2
 
-    .line 66
     array-length p2, p1
 
     if-lt v0, p2, :cond_59
 
-    .line 67
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result p2
@@ -515,7 +478,6 @@
 
     goto :goto_4f
 
-    .line 73
     :cond_49
     new-instance p0, Ljava/lang/OutOfMemoryError;
 
@@ -523,7 +485,6 @@
 
     throw p0
 
-    .line 76
     :cond_4f
     :goto_4f
     invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -536,7 +497,6 @@
 
     goto :goto_6a
 
-    .line 78
     :cond_59
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 

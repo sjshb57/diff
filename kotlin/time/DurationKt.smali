@@ -113,7 +113,6 @@
 .method public static final synthetic access$durationOf(JI)J
     .registers 3
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlin/time/DurationKt;->durationOf(JI)J
 
     move-result-wide p0
@@ -124,7 +123,6 @@
 .method public static final synthetic access$durationOfMillis(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfMillis(J)J
 
     move-result-wide p0
@@ -135,7 +133,6 @@
 .method public static final synthetic access$durationOfMillisNormalized(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfMillisNormalized(J)J
 
     move-result-wide p0
@@ -146,7 +143,6 @@
 .method public static final synthetic access$durationOfNanos(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfNanos(J)J
 
     move-result-wide p0
@@ -157,7 +153,6 @@
 .method public static final synthetic access$durationOfNanosNormalized(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfNanosNormalized(J)J
 
     move-result-wide p0
@@ -168,7 +163,6 @@
 .method public static final synthetic access$millisToNanos(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->millisToNanos(J)J
 
     move-result-wide p0
@@ -179,7 +173,6 @@
 .method public static final synthetic access$nanosToMillis(J)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->nanosToMillis(J)J
 
     move-result-wide p0
@@ -190,7 +183,6 @@
 .method public static final synthetic access$parseDuration(Ljava/lang/String;Z)J
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->parseDuration(Ljava/lang/String;Z)J
 
     move-result-wide p0
@@ -209,7 +201,6 @@
 
     add-long/2addr p0, v0
 
-    .line 1465
     invoke-static {p0, p1}, Lkotlin/time/Duration;->constructor-impl(J)J
 
     move-result-wide p0
@@ -228,7 +219,6 @@
 
     add-long/2addr p0, v0
 
-    .line 1464
     invoke-static {p0, p1}, Lkotlin/time/Duration;->constructor-impl(J)J
 
     move-result-wide p0
@@ -239,7 +229,6 @@
 .method private static final durationOfMillisNormalized(J)J
     .registers 8
 
-    .line 1474
     new-instance v0, Lkotlin/ranges/LongRange;
 
     const-wide v1, -0x431bde82d7aL
@@ -254,7 +243,6 @@
 
     if-eqz v0, :cond_1e
 
-    .line 1475
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->millisToNanos(J)J
 
     move-result-wide p0
@@ -272,7 +260,6 @@
 
     move-wide v0, p0
 
-    .line 1477
     invoke-static/range {v0 .. v5}, Lkotlin/ranges/RangesKt;->coerceIn(JJJ)J
 
     move-result-wide p0
@@ -292,7 +279,6 @@
 
     shl-long/2addr p0, v0
 
-    .line 1463
     invoke-static {p0, p1}, Lkotlin/time/Duration;->constructor-impl(J)J
 
     move-result-wide p0
@@ -303,7 +289,6 @@
 .method private static final durationOfNanosNormalized(J)J
     .registers 7
 
-    .line 1467
     new-instance v0, Lkotlin/ranges/LongRange;
 
     const-wide v1, -0x3ffffffffffa14bfL  # -2.0000000001722644
@@ -318,14 +303,12 @@
 
     if-eqz v0, :cond_1a
 
-    .line 1468
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfNanos(J)J
 
     move-result-wide p0
 
     goto :goto_22
 
-    .line 1470
     :cond_1a
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->nanosToMillis(J)J
 
@@ -342,7 +325,6 @@
 .method public static final getDays(D)J
     .registers 3
 
-    .line 1312
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -355,7 +337,6 @@
 .method public static final getDays(I)J
     .registers 3
 
-    .line 1294
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -368,7 +349,6 @@
 .method public static final getDays(J)J
     .registers 3
 
-    .line 1301
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -441,7 +421,6 @@
 .method public static final getHours(D)J
     .registers 3
 
-    .line 1286
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -454,7 +433,6 @@
 .method public static final getHours(I)J
     .registers 3
 
-    .line 1268
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -467,7 +445,6 @@
 .method public static final getHours(J)J
     .registers 3
 
-    .line 1275
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -540,7 +517,6 @@
 .method public static final getMicroseconds(D)J
     .registers 3
 
-    .line 1182
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -553,7 +529,6 @@
 .method public static final getMicroseconds(I)J
     .registers 3
 
-    .line 1164
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -566,7 +541,6 @@
 .method public static final getMicroseconds(J)J
     .registers 3
 
-    .line 1171
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -639,7 +613,6 @@
 .method public static final getMilliseconds(D)J
     .registers 3
 
-    .line 1208
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -652,7 +625,6 @@
 .method public static final getMilliseconds(I)J
     .registers 3
 
-    .line 1190
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -665,7 +637,6 @@
 .method public static final getMilliseconds(J)J
     .registers 3
 
-    .line 1197
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -738,7 +709,6 @@
 .method public static final getMinutes(D)J
     .registers 3
 
-    .line 1260
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -751,7 +721,6 @@
 .method public static final getMinutes(I)J
     .registers 3
 
-    .line 1242
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -764,7 +733,6 @@
 .method public static final getMinutes(J)J
     .registers 3
 
-    .line 1249
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -837,7 +805,6 @@
 .method public static final getNanoseconds(D)J
     .registers 3
 
-    .line 1156
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -850,7 +817,6 @@
 .method public static final getNanoseconds(I)J
     .registers 3
 
-    .line 1138
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -863,7 +829,6 @@
 .method public static final getNanoseconds(J)J
     .registers 3
 
-    .line 1145
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -936,7 +901,6 @@
 .method public static final getSeconds(D)J
     .registers 3
 
-    .line 1234
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -949,7 +913,6 @@
 .method public static final getSeconds(I)J
     .registers 3
 
-    .line 1216
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -962,7 +925,6 @@
 .method public static final getSeconds(J)J
     .registers 3
 
-    .line 1223
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -1051,7 +1013,6 @@
 
     int-to-long v0, v0
 
-    .line 1460
     div-long/2addr p0, v0
 
     return-wide p0
@@ -1062,14 +1023,12 @@
 
     move-object/from16 v6, p0
 
-    .line 1336
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
     move-result v7
 
     if-eqz v7, :cond_2e1
 
-    .line 1339
     sget-object v0, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {v0}, Lkotlin/time/Duration$Companion;->getZERO-UwyO8pc()J
@@ -1078,7 +1037,6 @@
 
     const/4 v10, 0x0
 
-    .line 1341
     invoke-virtual {v6, v10}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -1121,7 +1079,6 @@
 
     if-eqz v13, :cond_34
 
-    .line 1345
     move-object v1, v6
 
     check-cast v1, Ljava/lang/CharSequence;
@@ -1139,13 +1096,11 @@
     :cond_34
     move v15, v10
 
-    .line 1347
     :goto_35
     const-string v5, "No components"
 
     if-le v7, v12, :cond_2da
 
-    .line 1349
     invoke-virtual {v6, v12}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -1181,7 +1136,6 @@
     :goto_55
     if-ge v12, v7, :cond_165
 
-    .line 1355
     invoke-virtual {v6, v12}, Ljava/lang/String;->charAt(I)C
 
     move-result v13
@@ -1203,7 +1157,6 @@
 
     goto :goto_55
 
-    .line 1356
     :cond_68
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1214,7 +1167,6 @@
     :cond_6e
     move v11, v12
 
-    .line 1490
     :goto_6f
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -1228,7 +1180,6 @@
 
     move/from16 v18, v15
 
-    .line 1360
     new-instance v15, Lkotlin/ranges/CharRange;
 
     invoke-direct {v15, v0, v5}, Lkotlin/ranges/CharRange;-><init>(CC)V
@@ -1290,7 +1241,6 @@
 
     const/4 v5, 0x0
 
-    .line 1486
     :cond_ac
     invoke-static {v6, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1300,7 +1250,6 @@
 
     invoke-static {v7, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1361
     move-object/from16 v20, v7
 
     check-cast v20, Ljava/lang/CharSequence;
@@ -1311,14 +1260,12 @@
 
     if-eqz v11, :cond_15f
 
-    .line 1362
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
     move-result v11
 
     add-int/2addr v12, v11
 
-    .line 1363
     move-object v11, v6
 
     check-cast v11, Ljava/lang/CharSequence;
@@ -1337,14 +1284,12 @@
 
     add-int/lit8 v12, v12, 0x1
 
-    .line 1365
     invoke-static {v11, v1}, Lkotlin/time/DurationUnitKt;->durationUnitByIsoChar(CZ)Lkotlin/time/DurationUnit;
 
     move-result-object v11
 
     if-eqz v2, :cond_ec
 
-    .line 1366
     move-object v13, v11
 
     check-cast v13, Ljava/lang/Enum;
@@ -1376,19 +1321,16 @@
 
     const/16 v23, 0x0
 
-    .line 1368
     invoke-static/range {v20 .. v25}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
     move-result v2
 
-    .line 1369
     sget-object v13, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     if-ne v11, v13, :cond_130
 
     if-lez v2, :cond_130
 
-    .line 1370
     invoke-static {v7, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v13, 0x0
@@ -1401,7 +1343,6 @@
 
     move/from16 p1, v1
 
-    .line 1371
     invoke-static {v15}, Lkotlin/time/DurationKt;->parseOverLongIsoComponent(Ljava/lang/String;)J
 
     move-result-wide v0
@@ -1414,7 +1355,6 @@
 
     move-result-wide v0
 
-    .line 1372
     invoke-static {v7, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -1440,7 +1380,6 @@
     :cond_130
     move/from16 p1, v1
 
-    .line 1374
     invoke-static {v7}, Lkotlin/time/DurationKt;->parseOverLongIsoComponent(Ljava/lang/String;)J
 
     move-result-wide v0
@@ -1468,7 +1407,6 @@
 
     goto/16 :goto_66
 
-    .line 1363
     :cond_14b
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1488,7 +1426,6 @@
 
     throw v0
 
-    .line 1361
     :cond_15f
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1501,7 +1438,6 @@
 
     goto/16 :goto_2cd
 
-    .line 1350
     :cond_169
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1522,7 +1458,6 @@
 
     const/16 v0, 0x8
 
-    .line 1380
     invoke-static {v7, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v7
@@ -1559,7 +1494,6 @@
 
     if-eqz v0, :cond_19f
 
-    .line 1381
     sget-object v0, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {v0}, Lkotlin/time/Duration$Companion;->getINFINITE-UwyO8pc()J
@@ -1573,7 +1507,6 @@
 
     if-eqz v13, :cond_1c7
 
-    .line 1388
     invoke-virtual {v6, v12}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -1608,7 +1541,6 @@
 
     goto :goto_1cb
 
-    .line 1390
     :cond_1c1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1631,7 +1563,6 @@
 
     if-eqz v0, :cond_1e3
 
-    .line 1493
     :goto_1d2
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -1654,7 +1585,6 @@
     :cond_1e3
     move v1, v12
 
-    .line 1499
     :goto_1e4
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -1666,7 +1596,6 @@
 
     move-result v3
 
-    .line 1397
     new-instance v4, Lkotlin/ranges/CharRange;
 
     const/16 v5, 0x39
@@ -1695,7 +1624,6 @@
 
     const/16 v11, 0x30
 
-    .line 1495
     :cond_208
     invoke-static {v6, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1705,7 +1633,6 @@
 
     invoke-static {v1, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1398
     move-object/from16 v19, v1
 
     check-cast v19, Ljava/lang/CharSequence;
@@ -1716,7 +1643,6 @@
 
     if-eqz v3, :cond_2c7
 
-    .line 1399
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -1725,7 +1651,6 @@
 
     move v3, v12
 
-    .line 1505
     :goto_222
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -1737,7 +1662,6 @@
 
     move-result v4
 
-    .line 1400
     new-instance v13, Lkotlin/ranges/CharRange;
 
     const/16 v5, 0x61
@@ -1760,7 +1684,6 @@
 
     goto :goto_222
 
-    .line 1501
     :cond_242
     invoke-static {v6, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1770,21 +1693,18 @@
 
     invoke-static {v3, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1401
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v4
 
     add-int/2addr v12, v4
 
-    .line 1402
     invoke-static {v3}, Lkotlin/time/DurationUnitKt;->durationUnitByShortName(Ljava/lang/String;)Lkotlin/time/DurationUnit;
 
     move-result-object v3
 
     if-eqz v2, :cond_269
 
-    .line 1403
     move-object v4, v3
 
     check-cast v4, Ljava/lang/Enum;
@@ -1820,14 +1740,12 @@
 
     const/16 v22, 0x0
 
-    .line 1405
     invoke-static/range {v19 .. v24}, Lkotlin/text/StringsKt;->indexOf$default(Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
 
     move-result v4
 
     if-lez v4, :cond_2b3
 
-    .line 1407
     invoke-static {v1, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v5, 0x0
@@ -1838,7 +1756,6 @@
 
     invoke-static {v11, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1408
     invoke-static {v11}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v5
@@ -1851,7 +1768,6 @@
 
     move-result-wide v5
 
-    .line 1409
     invoke-static {v1, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -1876,7 +1792,6 @@
 
     goto :goto_2bf
 
-    .line 1410
     :cond_2ab
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1886,7 +1801,6 @@
 
     throw v0
 
-    .line 1412
     :cond_2b3
     invoke-static {v1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
@@ -1911,7 +1825,6 @@
 
     goto/16 :goto_1cc
 
-    .line 1398
     :cond_2c7
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1923,7 +1836,6 @@
     :goto_2cd
     if-eqz v18, :cond_2d3
 
-    .line 1417
     invoke-static {v8, v9}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
 
     move-result-wide v8
@@ -1931,7 +1843,6 @@
     :cond_2d3
     return-wide v8
 
-    .line 1379
     :cond_2d4
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1942,14 +1853,12 @@
     :cond_2da
     move-object v7, v5
 
-    .line 1348
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {v0, v7}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 1337
     :cond_2e1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1963,7 +1872,6 @@
 .method private static final parseOverLongIsoComponent(Ljava/lang/String;)J
     .registers 10
 
-    .line 1422
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -1978,7 +1886,6 @@
 
     if-lez v0, :cond_1a
 
-    .line 1424
     const-string v5, "+-"
 
     check-cast v5, Ljava/lang/CharSequence;
@@ -2007,7 +1914,6 @@
 
     if-le v0, v6, :cond_72
 
-    .line 1425
     new-instance v0, Lkotlin/ranges/IntRange;
 
     move-object v6, p0
@@ -2022,7 +1928,6 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 1507
     instance-of v5, v0, Ljava/util/Collection;
 
     if-eqz v5, :cond_3c
@@ -2039,7 +1944,6 @@
 
     goto :goto_61
 
-    .line 1508
     :cond_3c
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -2060,7 +1964,6 @@
 
     move-result v5
 
-    .line 1425
     new-instance v6, Lkotlin/ranges/CharRange;
 
     const/16 v7, 0x30
@@ -2081,7 +1984,6 @@
 
     goto :goto_72
 
-    .line 1427
     :cond_61
     :goto_61
     invoke-virtual {p0, v4}, Ljava/lang/String;->charAt(I)C
@@ -2102,7 +2004,6 @@
     :goto_71
     return-wide v0
 
-    .line 1430
     :cond_72
     :goto_72
     const-string v0, "+"
@@ -2140,7 +2041,6 @@
         }
     .end annotation
 
-    .line 1440
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2194,7 +2094,6 @@
 
     move v0, p1
 
-    .line 1511
     :goto_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2226,7 +2125,6 @@
 
     goto :goto_1
 
-    .line 1436
     :cond_1e
     const-string p2, "null cannot be cast to non-null type java.lang.String"
 
@@ -2246,7 +2144,6 @@
 .method private static final times-kIfJnKk(DJ)J
     .registers 4
 
-    .line 1331
     invoke-static {p2, p3, p0, p1}, Lkotlin/time/Duration;->times-UwyO8pc(JD)J
 
     move-result-wide p0
@@ -2257,7 +2154,6 @@
 .method private static final times-mvk6XK0(IJ)J
     .registers 3
 
-    .line 1319
     invoke-static {p1, p2, p0}, Lkotlin/time/Duration;->times-UwyO8pc(JI)J
 
     move-result-wide p0
@@ -2272,14 +2168,12 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1119
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, p2, v0}, Lkotlin/time/DurationUnitKt;->convertDurationUnit(DLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)D
 
     move-result-wide v0
 
-    .line 1120
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v2
@@ -2288,12 +2182,10 @@
 
     if-eqz v2, :cond_40
 
-    .line 1121
     invoke-static {v0, v1}, Lkotlin/math/MathKt;->roundToLong(D)J
 
     move-result-wide v0
 
-    .line 1122
     new-instance v2, Lkotlin/ranges/LongRange;
 
     const-wide v3, -0x3ffffffffffa14bfL  # -2.0000000001722644
@@ -2308,14 +2200,12 @@
 
     if-eqz v2, :cond_31
 
-    .line 1123
     invoke-static {v0, v1}, Lkotlin/time/DurationKt;->durationOfNanos(J)J
 
     move-result-wide p0
 
     goto :goto_3f
 
-    .line 1125
     :cond_31
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
@@ -2327,7 +2217,6 @@
 
     move-result-wide p0
 
-    .line 1126
     invoke-static {p0, p1}, Lkotlin/time/DurationKt;->durationOfMillisNormalized(J)J
 
     move-result-wide p0
@@ -2335,7 +2224,6 @@
     :goto_3f
     return-wide p0
 
-    .line 1120
     :cond_40
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -2357,7 +2245,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1090
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     check-cast v0, Ljava/lang/Enum;
@@ -2370,7 +2257,6 @@
 
     int-to-long v0, p0
 
-    .line 1091
     sget-object p0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {v0, v1, p1, p0}, Lkotlin/time/DurationUnitKt;->convertDurationUnitOverflow(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J
@@ -2386,7 +2272,6 @@
     :cond_1b
     int-to-long v0, p0
 
-    .line 1093
     invoke-static {v0, v1, p1}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
 
     move-result-wide p0
@@ -2404,14 +2289,12 @@
 
     const-wide v0, 0x3ffffffffffa14bfL  # 1.9999999999138678
 
-    .line 1100
     sget-object v2, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {v0, v1, v2, p2}, Lkotlin/time/DurationUnitKt;->convertDurationUnitOverflow(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J
 
     move-result-wide v0
 
-    .line 1101
     new-instance v2, Lkotlin/ranges/LongRange;
 
     neg-long v3, v0
@@ -2424,7 +2307,6 @@
 
     if-eqz v0, :cond_27
 
-    .line 1102
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, p2, v0}, Lkotlin/time/DurationUnitKt;->convertDurationUnitOverflow(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J
@@ -2437,7 +2319,6 @@
 
     return-wide p0
 
-    .line 1104
     :cond_27
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
@@ -2449,7 +2330,6 @@
 
     const-wide v5, 0x3fffffffffffffffL  # 1.9999999999999998
 
-    .line 1105
     invoke-static/range {v1 .. v6}, Lkotlin/ranges/RangesKt;->coerceIn(JJJ)J
 
     move-result-wide p0

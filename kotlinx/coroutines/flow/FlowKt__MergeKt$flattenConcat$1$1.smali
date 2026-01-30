@@ -83,7 +83,6 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 3
 
-    .line 83
     check-cast p1, Lkotlinx/coroutines/flow/Flow;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MergeKt$flattenConcat$1$1;->emit(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -144,7 +143,6 @@
 
     move-result-object v1
 
-    .line 83
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__MergeKt$flattenConcat$1$1$emit$1;->label:I
 
     const/4 v3, 0x1

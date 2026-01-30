@@ -53,7 +53,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 15
     sget-object v0, Lkotlinx/coroutines/flow/internal/SafeCollectorKt$emitFun$1;->INSTANCE:Lkotlinx/coroutines/flow/internal/SafeCollectorKt$emitFun$1;
 
     const-string v1, "null cannot be cast to non-null type kotlin.Function3<kotlinx.coroutines.flow.FlowCollector<kotlin.Any?>, kotlin.Any?, kotlin.coroutines.Continuation<kotlin.Unit>, kotlin.Any?>"
@@ -76,7 +75,6 @@
 .method public static final synthetic access$getEmitFun$p()Lkotlin/jvm/functions/Function3;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/flow/internal/SafeCollectorKt;->emitFun:Lkotlin/jvm/functions/Function3;
 
     return-object v0

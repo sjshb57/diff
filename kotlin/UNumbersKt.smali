@@ -79,7 +79,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 169
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -92,7 +91,6 @@
 .method private static final countLeadingZeroBits-VKZWuLQ(J)I
     .registers 2
 
-    .line 97
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfLeadingZeros(J)I
 
     move-result p0
@@ -103,7 +101,6 @@
 .method private static final countLeadingZeroBits-WZ4Q5Ns(I)I
     .registers 1
 
-    .line 23
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -118,7 +115,6 @@
 
     and-int/2addr p0, v0
 
-    .line 242
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -133,7 +129,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 161
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -148,7 +143,6 @@
 .method private static final countOneBits-VKZWuLQ(J)I
     .registers 2
 
-    .line 89
     invoke-static {p0, p1}, Ljava/lang/Long;->bitCount(J)I
 
     move-result p0
@@ -159,7 +153,6 @@
 .method private static final countOneBits-WZ4Q5Ns(I)I
     .registers 1
 
-    .line 15
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result p0
@@ -174,7 +167,6 @@
 
     and-int/2addr p0, v0
 
-    .line 234
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -191,7 +183,6 @@
 
     or-int/lit16 p0, p0, 0x100
 
-    .line 177
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -202,7 +193,6 @@
 .method private static final countTrailingZeroBits-VKZWuLQ(J)I
     .registers 2
 
-    .line 105
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -213,7 +203,6 @@
 .method private static final countTrailingZeroBits-WZ4Q5Ns(I)I
     .registers 1
 
-    .line 31
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -228,7 +217,6 @@
 
     or-int/2addr p0, v0
 
-    .line 250
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -239,7 +227,6 @@
 .method private static final rotateLeft-JSWoG40(JI)J
     .registers 3
 
-    .line 138
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p0
@@ -254,7 +241,6 @@
 .method private static final rotateLeft-LxnNnR4(BI)B
     .registers 2
 
-    .line 211
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateLeft(BI)B
 
     move-result p0
@@ -269,7 +255,6 @@
 .method private static final rotateLeft-V7xB4Y4(II)I
     .registers 2
 
-    .line 64
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -284,7 +269,6 @@
 .method private static final rotateLeft-olVBNx4(SI)S
     .registers 2
 
-    .line 284
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateLeft(SI)S
 
     move-result p0
@@ -299,7 +283,6 @@
 .method private static final rotateRight-JSWoG40(JI)J
     .registers 3
 
-    .line 153
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateRight(JI)J
 
     move-result-wide p0
@@ -314,7 +297,6 @@
 .method private static final rotateRight-LxnNnR4(BI)B
     .registers 2
 
-    .line 226
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateRight(BI)B
 
     move-result p0
@@ -329,7 +311,6 @@
 .method private static final rotateRight-V7xB4Y4(II)I
     .registers 2
 
-    .line 80
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateRight(II)I
 
     move-result p0
@@ -344,7 +325,6 @@
 .method private static final rotateRight-olVBNx4(SI)S
     .registers 2
 
-    .line 299
     invoke-static {p0, p1}, Lkotlin/NumbersKt;->rotateRight(SI)S
 
     move-result p0
@@ -361,7 +341,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 186
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -378,7 +357,6 @@
 .method private static final takeHighestOneBit-VKZWuLQ(J)J
     .registers 2
 
-    .line 114
     invoke-static {p0, p1}, Ljava/lang/Long;->highestOneBit(J)J
 
     move-result-wide p0
@@ -393,7 +371,6 @@
 .method private static final takeHighestOneBit-WZ4Q5Ns(I)I
     .registers 1
 
-    .line 40
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -412,7 +389,6 @@
 
     and-int/2addr p0, v0
 
-    .line 259
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -431,7 +407,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 195
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -448,7 +423,6 @@
 .method private static final takeLowestOneBit-VKZWuLQ(J)J
     .registers 2
 
-    .line 123
     invoke-static {p0, p1}, Ljava/lang/Long;->lowestOneBit(J)J
 
     move-result-wide p0
@@ -463,7 +437,6 @@
 .method private static final takeLowestOneBit-WZ4Q5Ns(I)I
     .registers 1
 
-    .line 49
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -482,7 +455,6 @@
 
     and-int/2addr p0, v0
 
-    .line 268
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0

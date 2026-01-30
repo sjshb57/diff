@@ -66,10 +66,8 @@
 
     const/4 v0, 0x1
 
-    .line 82
     invoke-direct {p0, v0}, Lkotlinx/coroutines/JobSupport;-><init>(Z)V
 
-    .line 83
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CompletableDeferredImpl;->initParentJob(Lkotlinx/coroutines/Job;)V
 
     return-void
@@ -88,7 +86,6 @@
         }
     .end annotation
 
-    .line 86
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CompletableDeferredImpl;->awaitInternal(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
@@ -106,7 +103,6 @@
         }
     .end annotation
 
-    .line 90
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CompletableDeferredImpl;->makeCompleting$kotlinx_coroutines_core(Ljava/lang/Object;)Z
 
     move-result p1
@@ -117,7 +113,6 @@
 .method public completeExceptionally(Ljava/lang/Throwable;)Z
     .registers 6
 
-    .line 92
     new-instance v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     const/4 v1, 0x2
@@ -143,7 +138,6 @@
         }
     .end annotation
 
-    .line 85
     invoke-virtual {p0}, Lkotlinx/coroutines/CompletableDeferredImpl;->getCompletedInternal$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object v0
@@ -161,7 +155,6 @@
         }
     .end annotation
 
-    .line 87
     invoke-virtual {p0}, Lkotlinx/coroutines/CompletableDeferredImpl;->getOnAwaitInternal()Lkotlinx/coroutines/selects/SelectClause1;
 
     move-result-object v0

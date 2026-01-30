@@ -67,12 +67,10 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 21
     instance-of v0, p0, Lkotlin/collections/MapWithDefault;
 
     if-eqz v0, :cond_10
 
-    .line 22
     check-cast p0, Lkotlin/collections/MapWithDefault;
 
     invoke-interface {p0, p1}, Lkotlin/collections/MapWithDefault;->getOrImplicitDefault(Ljava/lang/Object;)Ljava/lang/Object;
@@ -81,7 +79,6 @@
 
     return-object p0
 
-    .line 105
     :cond_10
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -89,7 +86,6 @@
 
     if-nez v0, :cond_36
 
-    .line 106
     invoke-interface {p0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result p0
@@ -98,7 +94,6 @@
 
     goto :goto_36
 
-    .line 24
     :cond_1d
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -153,7 +148,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 37
     instance-of v0, p0, Lkotlin/collections/MapWithDefault;
 
     if-eqz v0, :cond_19
@@ -170,7 +164,6 @@
 
     goto :goto_21
 
-    .line 38
     :cond_19
     new-instance v0, Lkotlin/collections/MapWithDefaultImpl;
 
@@ -210,7 +203,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
     instance-of v0, p0, Lkotlin/collections/MutableMapWithDefault;
 
     if-eqz v0, :cond_19
@@ -227,7 +219,6 @@
 
     goto :goto_21
 
-    .line 53
     :cond_19
     new-instance v0, Lkotlin/collections/MutableMapWithDefaultImpl;
 

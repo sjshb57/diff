@@ -39,7 +39,6 @@
 
     const/4 v0, 0x0
 
-    .line 111
     invoke-direct {p0, v0}, Lkotlinx/coroutines/internal/LockFreeTaskQueue;-><init>(Z)V
 
     return-void

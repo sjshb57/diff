@@ -25,7 +25,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 1
     invoke-direct {p0}, Lkotlin/sequences/SequencesKt___SequencesKt;-><init>()V
 
     return-void

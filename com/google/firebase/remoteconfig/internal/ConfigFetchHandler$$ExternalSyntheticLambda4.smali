@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$$ExternalSyntheticLambda4;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
@@ -27,7 +26,6 @@
 .method public final then(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$$ExternalSyntheticLambda4;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
 
     check-cast p1, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;

@@ -52,7 +52,6 @@
 .method public static final TimeoutCancellationException(JLkotlinx/coroutines/Delay;Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/TimeoutCancellationException;
     .registers 6
 
-    .line 189
     instance-of v0, p2, Lkotlinx/coroutines/DelayWithTimeoutDiagnostics;
 
     if-eqz v0, :cond_7
@@ -81,7 +80,6 @@
 
     if-nez p2, :cond_2b
 
-    .line 190
     :cond_18
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -99,7 +97,6 @@
 
     move-result-object p2
 
-    .line 191
     :cond_2b
     new-instance p0, Lkotlinx/coroutines/TimeoutCancellationException;
 
@@ -129,15 +126,12 @@
         }
     .end annotation
 
-    .line 146
     iget-object v0, p0, Lkotlinx/coroutines/TimeoutCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 147
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
 
-    .line 148
     move-object v1, p0
 
     check-cast v1, Lkotlinx/coroutines/Job;
@@ -162,7 +156,6 @@
 
     invoke-static {v1, v0}, Lkotlinx/coroutines/JobKt;->disposeOnCompletion(Lkotlinx/coroutines/Job;Lkotlinx/coroutines/DisposableHandle;)Lkotlinx/coroutines/DisposableHandle;
 
-    .line 151
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/internal/ScopeCoroutine;
@@ -201,7 +194,6 @@
 
     if-lez v0, :cond_19
 
-    .line 46
     new-instance v0, Lkotlinx/coroutines/TimeoutCoroutine;
 
     invoke-direct {v0, p0, p1, p3}, Lkotlinx/coroutines/TimeoutCoroutine;-><init>(JLkotlin/coroutines/Continuation;)V
@@ -210,7 +202,6 @@
 
     move-result-object p0
 
-    .line 45
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1
@@ -222,7 +213,6 @@
     :cond_18
     return-object p0
 
-    .line 44
     :cond_19
     new-instance p0, Lkotlinx/coroutines/TimeoutCancellationException;
 
@@ -254,7 +244,6 @@
         }
     .end annotation
 
-    .line 74
     invoke-static {p0, p1}, Lkotlinx/coroutines/DelayKt;->toDelayMillis-LRDsOJo(J)J
 
     move-result-wide p0
@@ -323,7 +312,6 @@
 
     move-result-object v1
 
-    .line 99
     iget v2, v0, Lkotlinx/coroutines/TimeoutKt$withTimeoutOrNull$1;->label:I
 
     const/4 v3, 0x0
@@ -376,13 +364,11 @@
 
     return-object v3
 
-    .line 102
     :cond_49
     new-instance p3, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p3}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 104
     :try_start_4e
     iput-object p2, v0, Lkotlinx/coroutines/TimeoutKt$withTimeoutOrNull$1;->L$0:Ljava/lang/Object;
 
@@ -396,20 +382,16 @@
 
     check-cast v2, Lkotlin/coroutines/Continuation;
 
-    .line 105
     new-instance v4, Lkotlinx/coroutines/TimeoutCoroutine;
 
     invoke-direct {v4, p0, p1, v2}, Lkotlinx/coroutines/TimeoutCoroutine;-><init>(JLkotlin/coroutines/Continuation;)V
 
-    .line 106
     iput-object v4, p3, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 107
     invoke-static {v4, p2}, Lkotlinx/coroutines/TimeoutKt;->setupTimeout(Lkotlinx/coroutines/TimeoutCoroutine;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 104
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1
@@ -438,7 +420,6 @@
 
     move-object p0, p3
 
-    .line 111
     :goto_76
     iget-object p2, p1, Lkotlinx/coroutines/TimeoutCancellationException;->coroutine:Lkotlinx/coroutines/Job;
 
@@ -448,7 +429,6 @@
 
     return-object v3
 
-    .line 114
     :cond_7d
     throw p1
 .end method
@@ -474,7 +454,6 @@
         }
     .end annotation
 
-    .line 139
     invoke-static {p0, p1}, Lkotlinx/coroutines/DelayKt;->toDelayMillis-LRDsOJo(J)J
 
     move-result-wide p0

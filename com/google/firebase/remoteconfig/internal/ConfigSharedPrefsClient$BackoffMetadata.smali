@@ -24,13 +24,10 @@
 .method constructor <init>(ILjava/util/Date;)V
     .registers 3
 
-    .line 358
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 359
     iput p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$BackoffMetadata;->numFailedFetches:I
 
-    .line 360
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$BackoffMetadata;->backoffEndTime:Ljava/util/Date;
 
     return-void
@@ -41,7 +38,6 @@
 .method getBackoffEndTime()Ljava/util/Date;
     .registers 2
 
-    .line 368
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$BackoffMetadata;->backoffEndTime:Ljava/util/Date;
 
     return-object v0
@@ -50,7 +46,6 @@
 .method getNumFailedFetches()I
     .registers 2
 
-    .line 364
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$BackoffMetadata;->numFailedFetches:I
 
     return v0

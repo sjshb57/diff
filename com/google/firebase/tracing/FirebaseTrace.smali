@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +15,6 @@
 .method public static popTrace()V
     .registers 0
 
-    .line 33
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     return-void
@@ -25,7 +23,6 @@
 .method public static pushTrace(Ljava/lang/String;)V
     .registers 1
 
-    .line 27
     invoke-static {p0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     return-void

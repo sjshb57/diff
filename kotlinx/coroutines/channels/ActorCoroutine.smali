@@ -67,10 +67,8 @@
 
     const/4 v0, 0x0
 
-    .line 130
     invoke-direct {p0, p1, p2, v0, p3}, Lkotlinx/coroutines/channels/ChannelCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/channels/Channel;ZZ)V
 
-    .line 133
     sget-object p2, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Key;
@@ -91,7 +89,6 @@
 .method protected handleJobException(Ljava/lang/Throwable;)Z
     .registers 3
 
-    .line 143
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/ActorCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
@@ -106,7 +103,6 @@
 .method protected onCancelling(Ljava/lang/Throwable;)V
     .registers 5
 
-    .line 137
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/ActorCoroutine;->get_channel()Lkotlinx/coroutines/channels/Channel;
 
     move-result-object v0
@@ -115,7 +111,6 @@
 
     if-eqz p1, :cond_2a
 
-    .line 138
     instance-of v2, p1, Ljava/util/concurrent/CancellationException;
 
     if-eqz v2, :cond_e
@@ -151,7 +146,6 @@
 
     move-object v1, p1
 
-    .line 137
     :cond_2a
     invoke-interface {v0, v1}, Lkotlinx/coroutines/channels/Channel;->cancel(Ljava/util/concurrent/CancellationException;)V
 

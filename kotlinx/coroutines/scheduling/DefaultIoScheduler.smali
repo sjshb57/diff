@@ -65,12 +65,10 @@
 
     sput-object v0, Lkotlinx/coroutines/scheduling/DefaultIoScheduler;->INSTANCE:Lkotlinx/coroutines/scheduling/DefaultIoScheduler;
 
-    .line 61
     sget-object v0, Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;->INSTANCE:Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;
 
     const/16 v1, 0x40
 
-    .line 64
     invoke-static {}, Lkotlinx/coroutines/internal/SystemPropsKt;->getAVAILABLE_PROCESSORS()I
 
     move-result v2
@@ -83,7 +81,6 @@
 
     const/4 v8, 0x0
 
-    .line 62
     const-string v3, "kotlinx.coroutines.io.parallelism"
 
     const/4 v5, 0x0
@@ -94,7 +91,6 @@
 
     move-result v1
 
-    .line 61
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;->limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object v0
@@ -107,7 +103,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 59
     invoke-direct {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcher;-><init>()V
 
     return-void
@@ -120,7 +115,6 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 89
     const-string v1, "Cannot be invoked on Dispatchers.IO"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -135,7 +129,6 @@
 .method public dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 4
 
-    .line 80
     sget-object v0, Lkotlinx/coroutines/scheduling/DefaultIoScheduler;->default:Lkotlinx/coroutines/CoroutineDispatcher;
 
     invoke-virtual {v0, p1, p2}, Lkotlinx/coroutines/CoroutineDispatcher;->dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
@@ -146,7 +139,6 @@
 .method public dispatchYield(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 4
 
-    .line 85
     sget-object v0, Lkotlinx/coroutines/scheduling/DefaultIoScheduler;->default:Lkotlinx/coroutines/CoroutineDispatcher;
 
     invoke-virtual {v0, p1, p2}, Lkotlinx/coroutines/CoroutineDispatcher;->dispatchYield(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
@@ -157,7 +149,6 @@
 .method public execute(Ljava/lang/Runnable;)V
     .registers 3
 
-    .line 71
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext;
@@ -170,7 +161,6 @@
 .method public getExecutor()Ljava/util/concurrent/Executor;
     .registers 2
 
-    .line 69
     move-object v0, p0
 
     check-cast v0, Ljava/util/concurrent/Executor;
@@ -181,7 +171,6 @@
 .method public limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 3
 
-    .line 76
     sget-object v0, Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;->INSTANCE:Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;
 
     invoke-virtual {v0, p1}, Lkotlinx/coroutines/scheduling/UnlimitedIoScheduler;->limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
@@ -194,7 +183,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 92
     const-string v0, "Dispatchers.IO"
 
     return-object v0

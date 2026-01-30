@@ -66,7 +66,6 @@
 
     iput-object p1, p0, Lkotlin/io/LinesSequence$iterator$1;->this$0:Lkotlin/io/LinesSequence;
 
-    .line 73
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,7 +76,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 78
     iget-object v0, p0, Lkotlin/io/LinesSequence$iterator$1;->nextValue:Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -88,7 +86,6 @@
 
     if-nez v0, :cond_19
 
-    .line 79
     iget-object v0, p0, Lkotlin/io/LinesSequence$iterator$1;->this$0:Lkotlin/io/LinesSequence;
 
     invoke-static {v0}, Lkotlin/io/LinesSequence;->access$getReader$p(Lkotlin/io/LinesSequence;)Ljava/io/BufferedReader;
@@ -103,10 +100,8 @@
 
     if-nez v0, :cond_19
 
-    .line 80
     iput-boolean v1, p0, Lkotlin/io/LinesSequence$iterator$1;->done:Z
 
-    .line 82
     :cond_19
     iget-object v0, p0, Lkotlin/io/LinesSequence$iterator$1;->nextValue:Ljava/lang/String;
 
@@ -124,7 +119,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 73
     invoke-virtual {p0}, Lkotlin/io/LinesSequence$iterator$1;->next()Ljava/lang/String;
 
     move-result-object v0
@@ -135,27 +129,22 @@
 .method public next()Ljava/lang/String;
     .registers 3
 
-    .line 86
     invoke-virtual {p0}, Lkotlin/io/LinesSequence$iterator$1;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_f
 
-    .line 89
     iget-object v0, p0, Lkotlin/io/LinesSequence$iterator$1;->nextValue:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    .line 90
     iput-object v1, p0, Lkotlin/io/LinesSequence$iterator$1;->nextValue:Ljava/lang/String;
 
-    .line 91
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 87
     :cond_f
     new-instance v0, Ljava/util/NoSuchElementException;
 

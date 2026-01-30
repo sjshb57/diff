@@ -25,7 +25,6 @@
 .method constructor <init>(Lcom/google/firebase/messaging/EnhancedIntentService;)V
     .registers 2
 
-    .line 60
     iput-object p1, p0, Lcom/google/firebase/messaging/EnhancedIntentService$1;->this$0:Lcom/google/firebase/messaging/EnhancedIntentService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +47,6 @@
         }
     .end annotation
 
-    .line 64
     iget-object v0, p0, Lcom/google/firebase/messaging/EnhancedIntentService$1;->this$0:Lcom/google/firebase/messaging/EnhancedIntentService;
 
     invoke-static {v0, p1}, Lcom/google/firebase/messaging/EnhancedIntentService;->access$000(Lcom/google/firebase/messaging/EnhancedIntentService;Landroid/content/Intent;)Lcom/google/android/gms/tasks/Task;

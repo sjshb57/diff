@@ -185,7 +185,6 @@
 
     move-result-object v0
 
-    .line 158
     iget v1, p0, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl$creationStackTrace$1;->label:I
 
     const/4 v2, 0x1

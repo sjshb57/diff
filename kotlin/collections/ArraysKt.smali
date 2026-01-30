@@ -24,7 +24,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 1
     invoke-direct {p0}, Lkotlin/collections/ArraysKt___ArraysKt;-><init>()V
 
     return-void

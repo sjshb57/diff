@@ -98,7 +98,6 @@
 .method private constructor <init>()V
     .registers 2
 
-    .line 28
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -177,7 +176,6 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 135
     sget-object p1, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p1, Lkotlinx/coroutines/ChildHandle;
@@ -192,7 +190,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 27
     invoke-static {p0}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel(Lkotlinx/coroutines/Job;)V
 
     return-void
@@ -227,7 +224,6 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 91
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const/4 v1, 0x0
@@ -250,7 +246,6 @@
         }
     .end annotation
 
-    .line 128
     invoke-static {}, Lkotlin/sequences/SequencesKt;->emptySequence()Lkotlin/sequences/Sequence;
 
     move-result-object v0
@@ -261,7 +256,6 @@
 .method public getOnJoin()Lkotlinx/coroutines/selects/SelectClause0;
     .registers 3
 
-    .line 84
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "This job is always active"
@@ -298,7 +292,6 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 98
     sget-object p1, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p1, Lkotlinx/coroutines/DisposableHandle;
@@ -325,7 +318,6 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 106
     sget-object p1, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p1, Lkotlinx/coroutines/DisposableHandle;
@@ -375,7 +367,6 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 75
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "This job is always active"
@@ -392,7 +383,6 @@
         message = "Operator \'+\' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`."
     .end annotation
 
-    .line 27
     invoke-static {p0, p1}, Lkotlinx/coroutines/Job$DefaultImpls;->plus(Lkotlinx/coroutines/Job;Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/Job;
 
     move-result-object p1
@@ -415,7 +405,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 139
     const-string v0, "NonCancellable"
 
     return-object v0

@@ -59,7 +59,6 @@
 
     const/4 v0, 0x1
 
-    .line 99
     invoke-direct {p0, p1, v0, p2}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
     return-void
@@ -80,7 +79,6 @@
         }
     .end annotation
 
-    .line 101
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/DeferredCoroutine;->awaitInternal(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -118,7 +116,6 @@
         }
     .end annotation
 
-    .line 100
     invoke-virtual {p0}, Lkotlinx/coroutines/DeferredCoroutine;->getCompletedInternal$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object v0
@@ -136,7 +133,6 @@
         }
     .end annotation
 
-    .line 102
     invoke-virtual {p0}, Lkotlinx/coroutines/DeferredCoroutine;->getOnAwaitInternal()Lkotlinx/coroutines/selects/SelectClause1;
 
     move-result-object v0

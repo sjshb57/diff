@@ -200,7 +200,6 @@
 
     move-result-object v0
 
-    .line 139
     iget v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$shuffled$1;->label:I
 
     const/4 v2, 0x1
@@ -237,7 +236,6 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 140
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$shuffled$1;->$this_shuffled:Lkotlin/sequences/Sequence;
 
     invoke-static {v1}, Lkotlin/sequences/SequencesKt;->toMutableList(Lkotlin/sequences/Sequence;)Ljava/util/List;
@@ -246,7 +244,6 @@
 
     move-object v3, p1
 
-    .line 141
     :cond_2d
     :goto_2d
     move-object p1, v1
@@ -261,7 +258,6 @@
 
     if-eqz p1, :cond_5f
 
-    .line 142
     iget-object p1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$shuffled$1;->$random:Lkotlin/random/Random;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -272,12 +268,10 @@
 
     move-result p1
 
-    .line 143
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->removeLast(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 144
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v5
@@ -288,7 +282,6 @@
 
     move-result-object v4
 
-    .line 145
     :cond_4f
     move-object p1, p0
 
@@ -308,7 +301,6 @@
 
     return-object v0
 
-    .line 147
     :cond_5f
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

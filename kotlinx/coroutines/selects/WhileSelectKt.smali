@@ -91,7 +91,6 @@
 
     move-result-object v1
 
-    .line 30
     iget v2, v0, Lkotlinx/coroutines/selects/WhileSelectKt$whileSelect$1;->label:I
 
     const/4 v3, 0x1
@@ -120,7 +119,6 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 37
     :cond_39
     new-instance p1, Lkotlinx/coroutines/selects/SelectImplementation;
 
@@ -130,10 +128,8 @@
 
     invoke-direct {p1, v2}, Lkotlinx/coroutines/selects/SelectImplementation;-><init>(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 38
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 41
     iput-object p0, v0, Lkotlinx/coroutines/selects/WhileSelectKt$whileSelect$1;->L$0:Ljava/lang/Object;
 
     iput v3, v0, Lkotlinx/coroutines/selects/WhileSelectKt$whileSelect$1;->label:I
@@ -146,7 +142,6 @@
 
     return-object v1
 
-    .line 37
     :cond_50
     :goto_50
     check-cast p1, Ljava/lang/Boolean;
@@ -157,7 +152,6 @@
 
     if-nez p1, :cond_39
 
-    .line 32
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -184,7 +178,6 @@
         }
     .end annotation
 
-    .line 37
     new-instance p0, Lkotlinx/coroutines/selects/SelectImplementation;
 
     const/4 p0, 0x3

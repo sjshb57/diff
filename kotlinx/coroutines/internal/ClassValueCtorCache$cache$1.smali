@@ -54,7 +54,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 107
     invoke-direct {p0}, Ljava/lang/ClassValue;-><init>()V
 
     return-void
@@ -65,7 +64,6 @@
 .method public bridge synthetic computeValue(Ljava/lang/Class;)Ljava/lang/Object;
     .registers 2
 
-    .line 107
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ClassValueCtorCache$cache$1;->computeValue(Ljava/lang/Class;)Lkotlin/jvm/functions/Function1;
 
     move-result-object p1
@@ -87,7 +85,6 @@
         }
     .end annotation
 
-    .line 110
     const-string v0, "null cannot be cast to non-null type java.lang.Class<out kotlin.Throwable>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V

@@ -78,7 +78,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Lkotlin/collections/AbstractCollection;-><init>()V
 
     return-void
@@ -95,7 +94,6 @@
 
     return p1
 
-    .line 24
     :cond_4
     instance-of v0, p1, Ljava/util/Set;
 
@@ -105,7 +103,6 @@
 
     return p1
 
-    .line 25
     :cond_a
     sget-object v0, Lkotlin/collections/AbstractSet;->Companion:Lkotlin/collections/AbstractSet$Companion;
 
@@ -125,7 +122,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 31
     sget-object v0, Lkotlin/collections/AbstractSet;->Companion:Lkotlin/collections/AbstractSet$Companion;
 
     move-object v1, p0

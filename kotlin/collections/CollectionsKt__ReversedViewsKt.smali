@@ -45,7 +45,6 @@
 .method public static final synthetic access$reverseElementIndex(Ljava/util/List;I)I
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/collections/CollectionsKt__ReversedViewsKt;->reverseElementIndex$CollectionsKt__ReversedViewsKt(Ljava/util/List;I)I
 
     move-result p0
@@ -56,7 +55,6 @@
 .method public static final synthetic access$reversePositionIndex(Ljava/util/List;I)I
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/collections/CollectionsKt__ReversedViewsKt;->reversePositionIndex$CollectionsKt__ReversedViewsKt(Ljava/util/List;I)I
 
     move-result p0
@@ -82,7 +80,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
     new-instance v0, Lkotlin/collections/ReversedListReadOnly;
 
     invoke-direct {v0, p0}, Lkotlin/collections/ReversedListReadOnly;-><init>(Ljava/util/List;)V
@@ -110,7 +107,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 49
     new-instance v0, Lkotlin/collections/ReversedList;
 
     invoke-direct {v0, p0}, Lkotlin/collections/ReversedList;-><init>(Ljava/util/List;)V
@@ -130,7 +126,6 @@
         }
     .end annotation
 
-    .line 30
     new-instance v0, Lkotlin/ranges/IntRange;
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
@@ -203,7 +198,6 @@
         }
     .end annotation
 
-    .line 33
     new-instance v0, Lkotlin/ranges/IntRange;
 
     invoke-interface {p0}, Ljava/util/List;->size()I

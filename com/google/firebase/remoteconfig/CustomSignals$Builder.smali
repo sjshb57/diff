@@ -31,10 +31,8 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 31
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -47,7 +45,6 @@
 .method static synthetic access$000(Lcom/google/firebase/remoteconfig/CustomSignals$Builder;)Ljava/util/Map;
     .registers 1
 
-    .line 30
     iget-object p0, p0, Lcom/google/firebase/remoteconfig/CustomSignals$Builder;->customSignals:Ljava/util/Map;
 
     return-object p0
@@ -58,7 +55,6 @@
 .method public build()Lcom/google/firebase/remoteconfig/CustomSignals;
     .registers 2
 
-    .line 79
     new-instance v0, Lcom/google/firebase/remoteconfig/CustomSignals;
 
     invoke-direct {v0, p0}, Lcom/google/firebase/remoteconfig/CustomSignals;-><init>(Lcom/google/firebase/remoteconfig/CustomSignals$Builder;)V
@@ -69,7 +65,6 @@
 .method public put(Ljava/lang/String;D)Lcom/google/firebase/remoteconfig/CustomSignals$Builder;
     .registers 5
 
-    .line 68
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/CustomSignals$Builder;->customSignals:Ljava/util/Map;
 
     invoke-static {p2, p3}, Ljava/lang/Double;->toString(D)Ljava/lang/String;
@@ -84,7 +79,6 @@
 .method public put(Ljava/lang/String;J)Lcom/google/firebase/remoteconfig/CustomSignals$Builder;
     .registers 5
 
-    .line 55
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/CustomSignals$Builder;->customSignals:Ljava/util/Map;
 
     invoke-static {p2, p3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
@@ -99,7 +93,6 @@
 .method public put(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/CustomSignals$Builder;
     .registers 4
 
-    .line 42
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/CustomSignals$Builder;->customSignals:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

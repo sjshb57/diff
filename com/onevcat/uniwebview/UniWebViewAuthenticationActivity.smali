@@ -43,10 +43,8 @@
 
     new-instance v0, Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity$a;
 
-    .line 1
     invoke-direct {v0}, Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity$a;-><init>()V
 
-    .line 2
     sput-object v0, Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity;->Companion:Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity$a;
 
     return-void

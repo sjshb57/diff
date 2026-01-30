@@ -82,7 +82,6 @@
 
     const/4 v0, 0x1
 
-    .line 141
     new-array v0, v0, [Ljava/nio/file/LinkOption;
 
     sget-object v1, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
@@ -93,20 +92,16 @@
 
     sput-object v0, Lkotlin/io/path/LinkFollowing;->nofollowLinkOption:[Ljava/nio/file/LinkOption;
 
-    .line 178
     new-array v0, v2, [Ljava/nio/file/LinkOption;
 
-    .line 142
     sput-object v0, Lkotlin/io/path/LinkFollowing;->followLinkOption:[Ljava/nio/file/LinkOption;
 
-    .line 144
     invoke-static {}, Lkotlin/collections/SetsKt;->emptySet()Ljava/util/Set;
 
     move-result-object v0
 
     sput-object v0, Lkotlin/io/path/LinkFollowing;->nofollowVisitOption:Ljava/util/Set;
 
-    .line 145
     sget-object v0, Ljava/nio/file/FileVisitOption;->FOLLOW_LINKS:Ljava/nio/file/FileVisitOption;
 
     invoke-static {v0}, Lkotlin/collections/SetsKt;->setOf(Ljava/lang/Object;)Ljava/util/Set;
@@ -121,7 +116,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 140
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -134,7 +128,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 148
     sget-object p1, Lkotlin/io/path/LinkFollowing;->followLinkOption:[Ljava/nio/file/LinkOption;
 
     goto :goto_7
@@ -159,7 +152,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 151
     sget-object p1, Lkotlin/io/path/LinkFollowing;->followVisitOption:Ljava/util/Set;
 
     goto :goto_7

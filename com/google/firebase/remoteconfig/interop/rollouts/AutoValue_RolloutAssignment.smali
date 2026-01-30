@@ -27,22 +27,16 @@
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .registers 7
 
-    .line 23
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;-><init>()V
 
-    .line 24
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->rolloutId:Ljava/lang/String;
 
-    .line 25
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->variantId:Ljava/lang/String;
 
-    .line 26
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterKey:Ljava/lang/String;
 
-    .line 27
     iput-object p4, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterValue:Ljava/lang/String;
 
-    .line 28
     iput-wide p5, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->templateVersion:J
 
     return-void
@@ -51,7 +45,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$1;)V
     .registers 8
 
-    .line 6
     invoke-direct/range {p0 .. p6}, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
     return-void
@@ -68,7 +61,6 @@
 
     return v0
 
-    .line 76
     :cond_4
     instance-of v1, p1, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
 
@@ -76,10 +68,8 @@
 
     if-eqz v1, :cond_48
 
-    .line 77
     check-cast p1, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
 
-    .line 78
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->rolloutId:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->getRolloutId()Ljava/lang/String;
@@ -94,7 +84,6 @@
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->variantId:Ljava/lang/String;
 
-    .line 79
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->getVariantId()Ljava/lang/String;
 
     move-result-object v3
@@ -107,7 +96,6 @@
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterKey:Ljava/lang/String;
 
-    .line 80
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->getParameterKey()Ljava/lang/String;
 
     move-result-object v3
@@ -120,7 +108,6 @@
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterValue:Ljava/lang/String;
 
-    .line 81
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->getParameterValue()Ljava/lang/String;
 
     move-result-object v3
@@ -133,7 +120,6 @@
 
     iget-wide v3, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->templateVersion:J
 
-    .line 82
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->getTemplateVersion()J
 
     move-result-wide v5
@@ -157,7 +143,6 @@
 .method public getParameterKey()Ljava/lang/String;
     .registers 2
 
-    .line 46
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterKey:Ljava/lang/String;
 
     return-object v0
@@ -166,7 +151,6 @@
 .method public getParameterValue()Ljava/lang/String;
     .registers 2
 
-    .line 52
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterValue:Ljava/lang/String;
 
     return-object v0
@@ -175,7 +159,6 @@
 .method public getRolloutId()Ljava/lang/String;
     .registers 2
 
-    .line 34
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->rolloutId:Ljava/lang/String;
 
     return-object v0
@@ -184,7 +167,6 @@
 .method public getTemplateVersion()J
     .registers 3
 
-    .line 57
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->templateVersion:J
 
     return-wide v0
@@ -193,7 +175,6 @@
 .method public getVariantId()Ljava/lang/String;
     .registers 2
 
-    .line 40
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->variantId:Ljava/lang/String;
 
     return-object v0
@@ -202,7 +183,6 @@
 .method public hashCode()I
     .registers 6
 
-    .line 91
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->rolloutId:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -215,7 +195,6 @@
 
     mul-int/2addr v0, v1
 
-    .line 93
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->variantId:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
@@ -226,7 +205,6 @@
 
     mul-int/2addr v0, v1
 
-    .line 95
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterKey:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
@@ -237,7 +215,6 @@
 
     mul-int/2addr v0, v1
 
-    .line 97
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->parameterValue:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
@@ -248,7 +225,6 @@
 
     mul-int/2addr v0, v1
 
-    .line 99
     iget-wide v1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;->templateVersion:J
 
     const/16 v3, 0x20
@@ -267,7 +243,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 62
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "RolloutAssignment{rolloutId="

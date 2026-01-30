@@ -88,7 +88,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 309
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
@@ -101,7 +100,6 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 4
 
-    .line 314
     new-instance v0, Lkotlin/text/Regex;
 
     iget-object v1, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
@@ -126,7 +124,6 @@
 .method public final getFlags()I
     .registers 2
 
-    .line 309
     iget v0, p0, Lkotlin/text/Regex$Serialized;->flags:I
 
     return v0
@@ -135,7 +132,6 @@
 .method public final getPattern()Ljava/lang/String;
     .registers 2
 
-    .line 309
     iget-object v0, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
 
     return-object v0

@@ -35,7 +35,6 @@
 .method private static final toUByte(B)B
     .registers 1
 
-    .line 367
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -48,7 +47,6 @@
 
     int-to-byte p0, p0
 
-    .line 391
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -63,7 +61,6 @@
 
     int-to-byte p0, p0
 
-    .line 403
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -76,7 +73,6 @@
 
     int-to-byte p0, p0
 
-    .line 379
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0

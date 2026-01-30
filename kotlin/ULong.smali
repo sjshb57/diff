@@ -203,7 +203,6 @@
 .method private synthetic constructor <init>(J)V
     .registers 3
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lkotlin/ULong;->data:J
@@ -216,7 +215,6 @@
 
     and-long/2addr p0, p2
 
-    .line 270
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -243,7 +241,6 @@
 
     and-long/2addr v0, v2
 
-    .line 46
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -262,7 +259,6 @@
 
     move-result-wide v0
 
-    .line 71
     invoke-static {v0, v1, p1, p2}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p1
@@ -273,7 +269,6 @@
 .method private static compareTo-VKZWuLQ(JJ)I
     .registers 4
 
-    .line 71
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result p0
@@ -290,7 +285,6 @@
 
     and-long/2addr v0, v2
 
-    .line 62
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -311,7 +305,6 @@
 
     and-long/2addr v0, v2
 
-    .line 54
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -336,7 +329,6 @@
 
     add-long/2addr p0, v0
 
-    .line 234
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -353,7 +345,6 @@
 
     and-long/2addr v0, v2
 
-    .line 114
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -368,7 +359,6 @@
 .method private static final div-VKZWuLQ(JJ)J
     .registers 4
 
-    .line 123
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongDivide-eb3DHEI(JJ)J
 
     move-result-wide p0
@@ -385,7 +375,6 @@
 
     and-long/2addr v0, v2
 
-    .line 120
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -406,7 +395,6 @@
 
     and-long/2addr v0, v2
 
-    .line 117
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -475,7 +463,6 @@
 
     and-long/2addr v0, v2
 
-    .line 160
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -490,7 +477,6 @@
 .method private static final floorDiv-VKZWuLQ(JJ)J
     .registers 4
 
-    .line 181
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$1(JJ)J
 
     move-result-wide p0
@@ -507,7 +493,6 @@
 
     and-long/2addr v0, v2
 
-    .line 174
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -528,7 +513,6 @@
 
     and-long/2addr v0, v2
 
-    .line 167
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -563,7 +547,6 @@
 
     add-long/2addr p0, v0
 
-    .line 226
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -576,7 +559,6 @@
 
     not-long p0, p0
 
-    .line 279
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -593,7 +575,6 @@
 
     and-long/2addr v0, v2
 
-    .line 88
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -612,7 +593,6 @@
 
     sub-long/2addr p0, p2
 
-    .line 97
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -629,7 +609,6 @@
 
     and-long/2addr v0, v2
 
-    .line 94
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -652,7 +631,6 @@
 
     and-long/2addr v0, v2
 
-    .line 91
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -675,7 +653,6 @@
 
     and-long/2addr v0, v2
 
-    .line 191
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -698,7 +675,6 @@
 .method private static final mod-VKZWuLQ(JJ)J
     .registers 4
 
-    .line 218
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)J
 
     move-result-wide p0
@@ -715,7 +691,6 @@
 
     and-long/2addr v0, v2
 
-    .line 209
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -742,7 +717,6 @@
 
     and-long/2addr v0, v2
 
-    .line 200
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -767,7 +741,6 @@
 
     or-long/2addr p0, p2
 
-    .line 273
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -784,7 +757,6 @@
 
     and-long/2addr v0, v2
 
-    .line 75
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -803,7 +775,6 @@
 
     add-long/2addr p0, p2
 
-    .line 84
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -820,7 +791,6 @@
 
     and-long/2addr v0, v2
 
-    .line 81
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -843,7 +813,6 @@
 
     and-long/2addr v0, v2
 
-    .line 78
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -860,7 +829,6 @@
 .method private static final rangeTo-VKZWuLQ(JJ)Lkotlin/ranges/ULongRange;
     .registers 11
 
-    .line 238
     new-instance v6, Lkotlin/ranges/ULongRange;
 
     const/4 v5, 0x0
@@ -879,7 +847,6 @@
 .method private static final rangeUntil-VKZWuLQ(JJ)Lkotlin/ranges/ULongRange;
     .registers 4
 
-    .line 248
     invoke-static {p0, p1, p2, p3}, Lkotlin/ranges/URangesKt;->until-eb3DHEI(JJ)Lkotlin/ranges/ULongRange;
 
     move-result-object p0
@@ -896,7 +863,6 @@
 
     and-long/2addr v0, v2
 
-    .line 131
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -911,7 +877,6 @@
 .method private static final rem-VKZWuLQ(JJ)J
     .registers 4
 
-    .line 152
     invoke-static {p0, p1, p2, p3}, Lkotlin/UnsignedKt;->ulongRemainder-eb3DHEI(JJ)J
 
     move-result-wide p0
@@ -928,7 +893,6 @@
 
     and-long/2addr v0, v2
 
-    .line 145
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -949,7 +913,6 @@
 
     and-long/2addr v0, v2
 
-    .line 138
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -966,7 +929,6 @@
 
     shl-long/2addr p0, p2
 
-    .line 257
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -979,7 +941,6 @@
 
     ushr-long/2addr p0, p2
 
-    .line 266
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -996,7 +957,6 @@
 
     and-long/2addr v0, v2
 
-    .line 101
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -1015,7 +975,6 @@
 
     mul-long/2addr p0, p2
 
-    .line 110
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -1032,7 +991,6 @@
 
     and-long/2addr v0, v2
 
-    .line 107
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -1055,7 +1013,6 @@
 
     and-long/2addr v0, v2
 
-    .line 104
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -1082,7 +1039,6 @@
 .method private static final toDouble-impl(J)D
     .registers 2
 
-    .line 376
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
     move-result-wide p0
@@ -1093,7 +1049,6 @@
 .method private static final toFloat-impl(J)F
     .registers 2
 
-    .line 367
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
     move-result-wide p0
@@ -1130,7 +1085,6 @@
 .method public static toString-impl(J)Ljava/lang/String;
     .registers 2
 
-    .line 378
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->ulongToString(J)Ljava/lang/String;
 
     move-result-object p0
@@ -1145,7 +1099,6 @@
 
     int-to-byte p0, p0
 
-    .line 334
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -1158,7 +1111,6 @@
 
     long-to-int p0, p0
 
-    .line 354
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -1179,7 +1131,6 @@
 
     int-to-short p0, p0
 
-    .line 344
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -1192,7 +1143,6 @@
 
     xor-long/2addr p0, p2
 
-    .line 276
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -1205,7 +1155,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 6
 
-    .line 13
     check-cast p1, Lkotlin/ULong;
 
     invoke-virtual {p1}, Lkotlin/ULong;->unbox-impl()J
@@ -1250,7 +1199,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 378
     iget-wide v0, p0, Lkotlin/ULong;->data:J
 
     invoke-static {v0, v1}, Lkotlin/ULong;->toString-impl(J)Ljava/lang/String;

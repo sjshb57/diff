@@ -66,7 +66,6 @@
 
     iput p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$$inlined$unsafeFlow$1;->$count$inlined:I
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -125,7 +124,6 @@
 
     move-result-object v1
 
-    .line 105
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$$inlined$unsafeFlow$1$1;->label:I
 
     const/4 v3, 0x1
@@ -157,17 +155,14 @@
     :cond_36
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 113
     new-instance p2, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 115
     :try_start_41
     iget-object v2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$$inlined$unsafeFlow$1;->$this_take$inlined:Lkotlinx/coroutines/flow/Flow;
 
@@ -196,10 +191,8 @@
     :catch_57
     move-exception p2
 
-    .line 117
     invoke-static {p2, p1}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 108
     :cond_5b
     :goto_5b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

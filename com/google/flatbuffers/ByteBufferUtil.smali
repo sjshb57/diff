@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +15,6 @@
 .method public static getSizePrefix(Ljava/nio/ByteBuffer;)I
     .registers 2
 
-    .line 39
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v0
@@ -31,12 +29,10 @@
 .method public static removeSizePrefix(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
     .registers 2
 
-    .line 51
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 52
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v0

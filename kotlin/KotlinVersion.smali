@@ -93,7 +93,6 @@
 
     sput-object v0, Lkotlin/KotlinVersion;->Companion:Lkotlin/KotlinVersion$Companion;
 
-    .line 75
     invoke-static {}, Lkotlin/KotlinVersionCurrentValue;->get()Lkotlin/KotlinVersion;
 
     move-result-object v0
@@ -108,7 +107,6 @@
 
     const/4 v0, 0x0
 
-    .line 21
     invoke-direct {p0, p1, p2, v0}, Lkotlin/KotlinVersion;-><init>(III)V
 
     return-void
@@ -117,17 +115,14 @@
 .method public constructor <init>(III)V
     .registers 4
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
     iput p1, p0, Lkotlin/KotlinVersion;->major:I
 
     iput p2, p0, Lkotlin/KotlinVersion;->minor:I
 
     iput p3, p0, Lkotlin/KotlinVersion;->patch:I
 
-    .line 23
     invoke-direct {p0, p1, p2, p3}, Lkotlin/KotlinVersion;->versionOf(III)I
 
     move-result p1
@@ -140,7 +135,6 @@
 .method private final versionOf(III)I
     .registers 7
 
-    .line 26
     new-instance v0, Lkotlin/ranges/IntRange;
 
     const/4 v1, 0x0
@@ -185,7 +179,6 @@
 
     return p1
 
-    .line 27
     :cond_2b
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -209,7 +202,6 @@
 
     move-result-object p1
 
-    .line 26
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -226,7 +218,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 2
 
-    .line 16
     check-cast p1, Lkotlin/KotlinVersion;
 
     invoke-virtual {p0, p1}, Lkotlin/KotlinVersion;->compareTo(Lkotlin/KotlinVersion;)I
@@ -243,7 +234,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 45
     iget v0, p0, Lkotlin/KotlinVersion;->version:I
 
     iget p1, p1, Lkotlin/KotlinVersion;->version:I
@@ -262,7 +252,6 @@
 
     return v0
 
-    .line 39
     :cond_4
     instance-of v1, p1, Lkotlin/KotlinVersion;
 
@@ -282,7 +271,6 @@
 
     return v1
 
-    .line 40
     :cond_10
     iget v2, p0, Lkotlin/KotlinVersion;->version:I
 
@@ -302,7 +290,6 @@
 .method public final getMajor()I
     .registers 2
 
-    .line 17
     iget v0, p0, Lkotlin/KotlinVersion;->major:I
 
     return v0
@@ -311,7 +298,6 @@
 .method public final getMinor()I
     .registers 2
 
-    .line 17
     iget v0, p0, Lkotlin/KotlinVersion;->minor:I
 
     return v0
@@ -320,7 +306,6 @@
 .method public final getPatch()I
     .registers 2
 
-    .line 17
     iget v0, p0, Lkotlin/KotlinVersion;->patch:I
 
     return v0
@@ -329,7 +314,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 43
     iget v0, p0, Lkotlin/KotlinVersion;->version:I
 
     return v0
@@ -338,14 +322,12 @@
 .method public final isAtLeast(II)Z
     .registers 4
 
-    .line 52
     iget v0, p0, Lkotlin/KotlinVersion;->major:I
 
     if-gt v0, p1, :cond_d
 
     if-ne v0, p1, :cond_b
 
-    .line 53
     iget p1, p0, Lkotlin/KotlinVersion;->minor:I
 
     if-lt p1, p2, :cond_b
@@ -368,21 +350,18 @@
 .method public final isAtLeast(III)Z
     .registers 5
 
-    .line 60
     iget v0, p0, Lkotlin/KotlinVersion;->major:I
 
     if-gt v0, p1, :cond_13
 
     if-ne v0, p1, :cond_11
 
-    .line 61
     iget p1, p0, Lkotlin/KotlinVersion;->minor:I
 
     if-gt p1, p2, :cond_13
 
     if-ne p1, p2, :cond_11
 
-    .line 62
     iget p1, p0, Lkotlin/KotlinVersion;->patch:I
 
     if-lt p1, p3, :cond_11
@@ -405,7 +384,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 35
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

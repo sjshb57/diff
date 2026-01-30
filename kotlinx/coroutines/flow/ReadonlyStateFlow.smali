@@ -96,13 +96,10 @@
         }
     .end annotation
 
-    .line 379
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 381
     iput-object p2, p0, Lkotlinx/coroutines/flow/ReadonlyStateFlow;->job:Lkotlinx/coroutines/Job;
 
-    .line 383
     iput-object p1, p0, Lkotlinx/coroutines/flow/ReadonlyStateFlow;->$$delegate_0:Lkotlinx/coroutines/flow/StateFlow;
 
     return-void
@@ -146,7 +143,6 @@
         }
     .end annotation
 
-    .line 385
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/flow/StateFlow;

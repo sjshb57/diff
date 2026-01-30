@@ -26,10 +26,8 @@
 .method constructor <init>()V
     .registers 2
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
@@ -70,7 +68,6 @@
         }
     .end annotation
 
-    .line 20
     iget-object v0, p0, Lcom/google/games/bridge/SimpleUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
@@ -102,12 +99,10 @@
 
     const/4 p1, -0x3
 
-    .line 53
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SimpleUiRequest;->setResult(I)V
 
     goto :goto_34
 
-    .line 55
     :cond_13
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -131,7 +126,6 @@
 
     const/4 p1, -0x2
 
-    .line 56
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SimpleUiRequest;->setResult(I)V
 
     goto :goto_34
@@ -140,7 +134,6 @@
     :goto_30
     const/4 p1, 0x1
 
-    .line 51
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SimpleUiRequest;->setResult(I)V
 
     :cond_34
@@ -151,12 +144,10 @@
 .method public process(Lcom/google/games/bridge/HelperFragment;)V
     .registers 5
 
-    .line 28
     invoke-virtual {p1}, Lcom/google/games/bridge/HelperFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 29
     invoke-virtual {p0, v0}, Lcom/google/games/bridge/SimpleUiRequest;->getIntent(Landroid/app/Activity;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v1
@@ -165,7 +156,6 @@
 
     invoke-direct {v2, p0, p1}, Lcom/google/games/bridge/SimpleUiRequest$2;-><init>(Lcom/google/games/bridge/SimpleUiRequest;Lcom/google/games/bridge/HelperFragment;)V
 
-    .line 30
     invoke-virtual {v1, v0, v2}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Landroid/app/Activity;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -174,7 +164,6 @@
 
     invoke-direct {v1, p0}, Lcom/google/games/bridge/SimpleUiRequest$1;-><init>(Lcom/google/games/bridge/SimpleUiRequest;)V
 
-    .line 38
     invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/tasks/Task;->addOnFailureListener(Landroid/app/Activity;Lcom/google/android/gms/tasks/OnFailureListener;)Lcom/google/android/gms/tasks/Task;
 
     return-void
@@ -183,12 +172,10 @@
 .method setFailure(Ljava/lang/Exception;)V
     .registers 3
 
-    .line 67
     iget-object v0, p0, Lcom/google/games/bridge/SimpleUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
-    .line 68
     invoke-static {p0}, Lcom/google/games/bridge/HelperFragment;->finishRequest(Lcom/google/games/bridge/HelperFragment$Request;)V
 
     return-void
@@ -197,7 +184,6 @@
 .method setResult(I)V
     .registers 3
 
-    .line 62
     iget-object v0, p0, Lcom/google/games/bridge/SimpleUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -206,7 +192,6 @@
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
 
-    .line 63
     invoke-static {p0}, Lcom/google/games/bridge/HelperFragment;->finishRequest(Lcom/google/games/bridge/HelperFragment$Request;)V
 
     return-void

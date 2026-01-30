@@ -37,7 +37,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 16
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "NULL"
@@ -46,7 +45,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 23
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const/4 v1, 0x0
@@ -57,7 +55,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->UNINITIALIZED:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 30
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "DONE"

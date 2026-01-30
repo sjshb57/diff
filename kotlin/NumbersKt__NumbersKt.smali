@@ -47,7 +47,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 156
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -64,7 +63,6 @@
 
     and-int/2addr p0, v0
 
-    .line 230
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -79,7 +77,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 148
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result p0
@@ -94,7 +91,6 @@
 
     and-int/2addr p0, v0
 
-    .line 221
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result p0
@@ -107,7 +103,6 @@
 
     or-int/lit16 p0, p0, 0x100
 
-    .line 164
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -122,7 +117,6 @@
 
     or-int/2addr p0, v0
 
-    .line 238
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -219,7 +213,6 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 173
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -236,7 +229,6 @@
 
     and-int/2addr p0, v0
 
-    .line 247
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -249,7 +241,6 @@
 .method private static final takeLowestOneBit(B)B
     .registers 1
 
-    .line 182
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -262,7 +253,6 @@
 .method private static final takeLowestOneBit(S)S
     .registers 1
 
-    .line 256
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0

@@ -46,7 +46,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 128
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
@@ -65,7 +64,6 @@
 .method public static final synthetic access$getUNDEFINED_RESULT$p()Ljava/lang/Object;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlin/DeepRecursiveKt;->UNDEFINED_RESULT:Ljava/lang/Object;
 
     return-object v0
@@ -95,7 +93,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 86
     new-instance v0, Lkotlin/DeepRecursiveScopeImpl;
 
     invoke-virtual {p0}, Lkotlin/DeepRecursiveFunction;->getBlock$kotlin_stdlib()Lkotlin/jvm/functions/Function3;

@@ -54,7 +54,6 @@
 .method public static final doubleToUInt(D)I
     .registers 6
 
-    .line 66
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -65,7 +64,6 @@
 
     goto :goto_3d
 
-    .line 67
     :cond_8
     invoke-static {v1}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
@@ -80,7 +78,6 @@
     :cond_11
     const/4 v1, -0x1
 
-    .line 68
     invoke-static {v1}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
     move-result-wide v2
@@ -100,7 +97,6 @@
 
     double-to-int p0, p0
 
-    .line 69
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result v1
@@ -116,7 +112,6 @@
 
     double-to-int p0, p0
 
-    .line 70
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -138,7 +133,6 @@
 .method public static final doubleToULong(D)J
     .registers 7
 
-    .line 75
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -149,7 +143,6 @@
 
     goto :goto_36
 
-    .line 76
     :cond_9
     invoke-static {v1, v2}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
@@ -164,7 +157,6 @@
     :cond_12
     const-wide/16 v1, -0x1
 
-    .line 77
     invoke-static {v1, v2}, Lkotlin/UnsignedKt;->ulongToDouble(J)D
 
     move-result-wide v3
@@ -184,7 +176,6 @@
 
     double-to-long p0, p0
 
-    .line 78
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v1
@@ -196,7 +187,6 @@
 
     double-to-long p0, p0
 
-    .line 81
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -222,7 +212,6 @@
 
     xor-int/2addr p1, v0
 
-    .line 9
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
 
     move-result p0
@@ -243,7 +232,6 @@
 
     and-long/2addr p0, v2
 
-    .line 14
     div-long/2addr v0, p0
 
     long-to-int p0, v0
@@ -268,7 +256,6 @@
 
     and-long/2addr p0, v2
 
-    .line 16
     rem-long/2addr v0, p0
 
     long-to-int p0, v0
@@ -315,7 +302,6 @@
 
     xor-long/2addr p2, v0
 
-    .line 11
     invoke-static {p0, p1, p2, p3}, Lkotlin/jvm/internal/Intrinsics;->compare(JJ)I
 
     move-result p0
@@ -332,7 +318,6 @@
 
     if-gez v2, :cond_18
 
-    .line 26
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result p0
@@ -360,7 +345,6 @@
 
     if-ltz v0, :cond_22
 
-    .line 31
     div-long/2addr p0, p2
 
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
@@ -374,7 +358,6 @@
 
     ushr-long v1, p0, v0
 
-    .line 35
     div-long/2addr v1, p2
 
     shl-long/2addr v1, v0
@@ -383,7 +366,6 @@
 
     sub-long/2addr p0, v3
 
-    .line 37
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -424,7 +406,6 @@
 
     if-gez v2, :cond_13
 
-    .line 46
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result v0
@@ -436,7 +417,6 @@
     :cond_d
     sub-long/2addr p0, p2
 
-    .line 49
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -449,7 +429,6 @@
 
     if-ltz v2, :cond_1d
 
-    .line 55
     rem-long/2addr p0, p2
 
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
@@ -463,7 +442,6 @@
 
     ushr-long v3, p0, v2
 
-    .line 59
     div-long/2addr v3, p2
 
     shl-long v2, v3, v2
@@ -472,7 +450,6 @@
 
     sub-long/2addr p0, v2
 
-    .line 61
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v2
@@ -533,7 +510,6 @@
 
     const/16 v0, 0xa
 
-    .line 92
     invoke-static {p0, p1, v0}, Lkotlin/UnsignedKt;->ulongToString(JI)Ljava/lang/String;
 
     move-result-object p0
@@ -548,7 +524,6 @@
 
     cmp-long v0, p0, v0
 
-    .line 95
     const-string v1, "toString(this, checkRadix(radix))"
 
     if-ltz v0, :cond_14
@@ -572,7 +547,6 @@
 
     int-to-long v4, p2
 
-    .line 97
     div-long/2addr v2, v4
 
     shl-long/2addr v2, v0
@@ -591,7 +565,6 @@
 
     add-long/2addr v2, v4
 
-    .line 103
     :cond_25
     new-instance v0, Ljava/lang/StringBuilder;
 

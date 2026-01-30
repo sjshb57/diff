@@ -39,7 +39,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .registers 2
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/internal/Symbol;->symbol:Ljava/lang/String;
@@ -52,7 +51,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 15
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "<"

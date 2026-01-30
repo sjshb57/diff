@@ -90,7 +90,6 @@
         }
     .end annotation
 
-    .line 27
     iget-object v0, p0, Lkotlin/collections/AbstractCollection$toString$1;->this$0:Lkotlin/collections/AbstractCollection;
 
     if-ne p1, v0, :cond_7
@@ -113,7 +112,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 26
     invoke-virtual {p0, p1}, Lkotlin/collections/AbstractCollection$toString$1;->invoke(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object p1

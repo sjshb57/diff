@@ -243,7 +243,6 @@
 
     move-result-object v0
 
-    .line 128
     iget v1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$2$1$1;->label:I
 
     const/4 v2, 0x0
@@ -298,7 +297,6 @@
     :cond_30
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 129
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$2$1$1;->$second:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-object v1, p0
@@ -319,7 +317,6 @@
     :goto_41
     iget-object v1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$2$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 148
     instance-of v5, p1, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-eqz v5, :cond_55
@@ -330,7 +327,6 @@
 
     if-nez p1, :cond_54
 
-    .line 130
     new-instance p1, Lkotlinx/coroutines/flow/internal/AbortFlowException;
 
     invoke-direct {p1, v1}, Lkotlinx/coroutines/flow/internal/AbortFlowException;-><init>(Lkotlinx/coroutines/flow/FlowCollector;)V
@@ -340,7 +336,6 @@
     :cond_54
     throw p1
 
-    .line 132
     :cond_55
     iget-object v5, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$2$1$1;->$transform:Lkotlin/jvm/functions/Function3;
 
@@ -383,7 +378,6 @@
 
     return-object v0
 
-    .line 133
     :cond_77
     :goto_77
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

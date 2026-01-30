@@ -72,7 +72,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 270
     invoke-direct {p0}, Lkotlin/random/Random;-><init>()V
 
     return-void
@@ -89,7 +88,6 @@
 .method private final writeReplace()Ljava/lang/Object;
     .registers 2
 
-    .line 279
     sget-object v0, Lkotlin/random/Random$Default$Serialized;->INSTANCE:Lkotlin/random/Random$Default$Serialized;
 
     return-object v0
@@ -100,7 +98,6 @@
 .method public nextBits(I)I
     .registers 3
 
-    .line 281
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -115,7 +112,6 @@
 .method public nextBoolean()Z
     .registers 2
 
-    .line 290
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -130,7 +126,6 @@
 .method public nextBytes(I)[B
     .registers 3
 
-    .line 299
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -149,7 +144,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 298
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -168,7 +162,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 301
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -183,7 +176,6 @@
 .method public nextDouble()D
     .registers 3
 
-    .line 292
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -198,7 +190,6 @@
 .method public nextDouble(D)D
     .registers 4
 
-    .line 293
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -213,7 +204,6 @@
 .method public nextDouble(DD)D
     .registers 6
 
-    .line 294
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -228,7 +218,6 @@
 .method public nextFloat()F
     .registers 2
 
-    .line 296
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -243,7 +232,6 @@
 .method public nextInt()I
     .registers 2
 
-    .line 282
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -258,7 +246,6 @@
 .method public nextInt(I)I
     .registers 3
 
-    .line 283
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -273,7 +260,6 @@
 .method public nextInt(II)I
     .registers 4
 
-    .line 284
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -288,7 +274,6 @@
 .method public nextLong()J
     .registers 3
 
-    .line 286
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -303,7 +288,6 @@
 .method public nextLong(J)J
     .registers 4
 
-    .line 287
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0
@@ -318,7 +302,6 @@
 .method public nextLong(JJ)J
     .registers 6
 
-    .line 288
     invoke-static {}, Lkotlin/random/Random;->access$getDefaultRandom$cp()Lkotlin/random/Random;
 
     move-result-object v0

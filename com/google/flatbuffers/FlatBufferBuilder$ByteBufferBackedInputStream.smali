@@ -22,10 +22,8 @@
 .method public constructor <init>(Ljava/nio/ByteBuffer;)V
     .registers 2
 
-    .line 1041
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    .line 1042
     iput-object p1, p0, Lcom/google/flatbuffers/FlatBufferBuilder$ByteBufferBackedInputStream;->buf:Ljava/nio/ByteBuffer;
 
     return-void
@@ -41,7 +39,6 @@
         }
     .end annotation
 
-    .line 1047
     :try_start_0
     iget-object v0, p0, Lcom/google/flatbuffers/FlatBufferBuilder$ByteBufferBackedInputStream;->buf:Ljava/nio/ByteBuffer;
 

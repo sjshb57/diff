@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 35
     invoke-direct {p0}, Landroidx/core/app/JobIntentService;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method private static generateTokenByteBuffer(Ljava/lang/String;)[B
     .registers 3
 
-    .line 86
     new-instance v0, Lcom/google/flatbuffers/FlatBufferBuilder;
 
     const/4 v1, 0x0
@@ -41,7 +39,6 @@
 
     goto :goto_c
 
-    .line 88
     :cond_9
     const/4 p0, 0x0
 
@@ -52,36 +49,28 @@
 
     move-result p0
 
-    .line 90
     invoke-static {v0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->startSerializedTokenReceived(Lcom/google/flatbuffers/FlatBufferBuilder;)V
 
-    .line 91
     invoke-static {v0, p0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->addToken(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 92
     invoke-static {v0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->endSerializedTokenReceived(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result p0
 
-    .line 94
     invoke-static {v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->startSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)V
 
     const/4 v1, 0x2
 
-    .line 95
     invoke-static {v0, v1}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEventType(Lcom/google/flatbuffers/FlatBufferBuilder;B)V
 
-    .line 96
     invoke-static {v0, p0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEvent(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 97
     invoke-static {v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->endSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result p0
 
     invoke-virtual {v0, p0}, Lcom/google/flatbuffers/FlatBufferBuilder;->finish(I)V
 
-    .line 99
     invoke-virtual {v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->sizedByteArray()[B
 
     move-result-object p0
@@ -102,29 +91,24 @@
 .method public static writeTokenToInternalStorage(Landroid/content/Context;Ljava/lang/String;)V
     .registers 7
 
-    .line 64
     invoke-static {p1}, Lcom/google/firebase/messaging/cpp/RegistrationIntentService;->generateTokenByteBuffer(Ljava/lang/String;)[B
 
     move-result-object p1
 
     const/4 v0, 0x4
 
-    .line 65
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 67
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 68
     array-length v1, p1
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 70
     :try_start_12
     const-string v1, "FIREBASE_CLOUD_MESSAGING_LOCKFILE"
 
@@ -136,7 +120,6 @@
     :try_end_19
     .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_19} :catch_68
 
-    .line 73
     :try_start_19
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
@@ -148,20 +131,17 @@
     :try_end_21
     .catchall {:try_start_19 .. :try_end_21} :catchall_5c
 
-    .line 74
     :try_start_21
     const-string v3, "FIREBASE_CLOUD_MESSAGING_LOCAL_STORAGE"
 
     const v4, 0x8000
 
-    .line 75
     invoke-virtual {p0, v3, v4}, Landroid/content/Context;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
     move-result-object p0
     :try_end_2a
     .catchall {:try_start_21 .. :try_end_2a} :catchall_50
 
-    .line 78
     :try_start_2a
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
 
@@ -169,14 +149,12 @@
 
     invoke-virtual {p0, v0}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 79
     invoke-virtual {p0, p1}, Ljava/io/FileOutputStream;->write([B)V
     :try_end_34
     .catchall {:try_start_2a .. :try_end_34} :catchall_44
 
     if-eqz p0, :cond_39
 
-    .line 80
     :try_start_36
     invoke-virtual {p0}, Ljava/io/FileOutputStream;->close()V
     :try_end_39
@@ -205,7 +183,6 @@
 
     if-eqz p0, :cond_4f
 
-    .line 70
     :try_start_47
     invoke-virtual {p0}, Ljava/io/FileOutputStream;->close()V
     :try_end_4a
@@ -276,7 +253,6 @@
     :catch_68
     move-exception p0
 
-    .line 81
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_6c

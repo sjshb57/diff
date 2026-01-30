@@ -36,7 +36,6 @@
 .method static constructor <clinit>()V
     .registers 7
 
-    .line 51
     new-instance v0, Lorg/jetbrains/annotations/Nls$Capitalization;
 
     const-string v1, "NotSpecified"
@@ -47,7 +46,6 @@
 
     sput-object v0, Lorg/jetbrains/annotations/Nls$Capitalization;->NotSpecified:Lorg/jetbrains/annotations/Nls$Capitalization;
 
-    .line 55
     new-instance v1, Lorg/jetbrains/annotations/Nls$Capitalization;
 
     const-string v3, "Title"
@@ -58,7 +56,6 @@
 
     sput-object v1, Lorg/jetbrains/annotations/Nls$Capitalization;->Title:Lorg/jetbrains/annotations/Nls$Capitalization;
 
-    .line 59
     new-instance v3, Lorg/jetbrains/annotations/Nls$Capitalization;
 
     const-string v5, "Sentence"
@@ -71,7 +68,6 @@
 
     const/4 v5, 0x3
 
-    .line 49
     new-array v5, v5, [Lorg/jetbrains/annotations/Nls$Capitalization;
 
     aput-object v0, v5, v2
@@ -93,7 +89,6 @@
         }
     .end annotation
 
-    .line 49
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -102,7 +97,6 @@
 .method public static valueOf(Ljava/lang/String;)Lorg/jetbrains/annotations/Nls$Capitalization;
     .registers 2
 
-    .line 49
     const-class v0, Lorg/jetbrains/annotations/Nls$Capitalization;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -117,7 +111,6 @@
 .method public static values()[Lorg/jetbrains/annotations/Nls$Capitalization;
     .registers 1
 
-    .line 49
     sget-object v0, Lorg/jetbrains/annotations/Nls$Capitalization;->$VALUES:[Lorg/jetbrains/annotations/Nls$Capitalization;
 
     invoke-virtual {v0}, [Lorg/jetbrains/annotations/Nls$Capitalization;->clone()Ljava/lang/Object;

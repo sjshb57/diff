@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;
@@ -27,7 +26,6 @@
 .method public final run()V
     .registers 2
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;->lambda$arrangeTimeout$0$com-google-firebase-messaging-WithinAppServiceConnection$BindRequest()V

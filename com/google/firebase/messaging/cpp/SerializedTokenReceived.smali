@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Lcom/google/flatbuffers/Table;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method public static ValidateVersion()V
     .registers 0
 
-    .line 12
     invoke-static {}, Lcom/google/flatbuffers/Constants;->FLATBUFFERS_1_12_0()V
 
     return-void
@@ -33,7 +31,6 @@
 .method static synthetic access$000(ILjava/nio/ByteBuffer;)I
     .registers 2
 
-    .line 11
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__indirect(ILjava/nio/ByteBuffer;)I
 
     move-result p0
@@ -46,7 +43,6 @@
 
     const/4 v0, 0x0
 
-    .line 30
     invoke-virtual {p0, v0, p1, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->addOffset(III)V
 
     return-void
@@ -57,13 +53,10 @@
 
     const/4 v0, 0x1
 
-    .line 24
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->startTable(I)V
 
-    .line 25
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->addToken(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 26
     invoke-static {p0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->endSerializedTokenReceived(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result p0
@@ -74,7 +67,6 @@
 .method public static endSerializedTokenReceived(Lcom/google/flatbuffers/FlatBufferBuilder;)I
     .registers 1
 
-    .line 32
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlatBufferBuilder;->endTable()I
 
     move-result p0
@@ -85,7 +77,6 @@
 .method public static getRootAsSerializedTokenReceived(Ljava/nio/ByteBuffer;)Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;
     .registers 2
 
-    .line 13
     new-instance v0, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;-><init>()V
@@ -100,7 +91,6 @@
 .method public static getRootAsSerializedTokenReceived(Ljava/nio/ByteBuffer;Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;)Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;
     .registers 4
 
-    .line 14
     sget-object v0, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
@@ -131,7 +121,6 @@
 
     const/4 v0, 0x1
 
-    .line 29
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->startTable(I)V
 
     return-void
@@ -142,7 +131,6 @@
 .method public __assign(ILjava/nio/ByteBuffer;)Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;
     .registers 3
 
-    .line 16
     invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__init(ILjava/nio/ByteBuffer;)V
 
     return-object p0
@@ -151,7 +139,6 @@
 .method public __init(ILjava/nio/ByteBuffer;)V
     .registers 3
 
-    .line 15
     invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__reset(ILjava/nio/ByteBuffer;)V
 
     return-void
@@ -162,7 +149,6 @@
 
     const/4 v0, 0x4
 
-    .line 18
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__offset(I)I
 
     move-result v0
@@ -193,7 +179,6 @@
 
     const/4 v1, 0x1
 
-    .line 19
     invoke-virtual {p0, v0, v1}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__vector_as_bytebuffer(II)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -208,7 +193,6 @@
 
     const/4 v1, 0x1
 
-    .line 20
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/firebase/messaging/cpp/SerializedTokenReceived;->__vector_in_bytebuffer(Ljava/nio/ByteBuffer;II)Ljava/nio/ByteBuffer;
 
     move-result-object p1

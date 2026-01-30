@@ -54,7 +54,6 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -89,7 +88,6 @@
 
     float-to-int v2, v2
 
-    .line 2
     invoke-static {v3, v0, v1, v2}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v0
@@ -104,7 +102,6 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 3
     :cond_2d
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

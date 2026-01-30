@@ -107,7 +107,6 @@
 
     move-result-object v1
 
-    .line 90
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$1;->label:I
 
     const/4 v3, 0x1
@@ -148,7 +147,6 @@
     :cond_3c
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 91
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -157,12 +155,10 @@
 
     iput-object v2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 188
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$$inlined$collectWhile$1;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$$inlined$collectWhile$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
-    .line 198
     :try_start_4d
     move-object v4, v2
 
@@ -198,13 +194,11 @@
 
     move-object p0, v2
 
-    .line 200
     :goto_63
     check-cast p0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p1, p0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 96
     :goto_68
     iget-object p0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -212,12 +206,10 @@
 
     if-eq p0, p1, :cond_71
 
-    .line 97
     iget-object p0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
 
-    .line 96
     :cond_71
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -287,7 +279,6 @@
 
     move-result-object v1
 
-    .line 104
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$3;->label:I
 
     const/4 v3, 0x1
@@ -332,7 +323,6 @@
     :cond_40
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 105
     new-instance p2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -341,12 +331,10 @@
 
     iput-object v2, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 203
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$$inlined$collectWhile$2;
 
     invoke-direct {v2, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$first$$inlined$collectWhile$2;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
-    .line 213
     :try_start_51
     move-object v4, v2
 
@@ -388,13 +376,11 @@
 
     move-object p0, v2
 
-    .line 215
     :goto_6b
     check-cast p0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p2, p0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 114
     :goto_70
     iget-object p0, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -402,12 +388,10 @@
 
     if-eq p0, p2, :cond_79
 
-    .line 115
     iget-object p0, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
 
-    .line 114
     :cond_79
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -479,7 +463,6 @@
 
     move-result-object v1
 
-    .line 122
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$1;->label:I
 
     const/4 v3, 0x1
@@ -520,17 +503,14 @@
     :cond_3c
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 123
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 218
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$$inlined$collectWhile$1;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$$inlined$collectWhile$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
-    .line 228
     :try_start_49
     move-object v4, v2
 
@@ -566,13 +546,11 @@
 
     move-object p0, v2
 
-    .line 230
     :goto_5f
     check-cast p0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p1, p0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 128
     :goto_64
     iget-object p0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -638,7 +616,6 @@
 
     move-result-object v1
 
-    .line 135
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$3;->label:I
 
     const/4 v3, 0x1
@@ -679,17 +656,14 @@
     :cond_3c
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 136
     new-instance p2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 233
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$$inlined$collectWhile$2;
 
     invoke-direct {v2, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$firstOrNull$$inlined$collectWhile$2;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
-    .line 243
     :try_start_49
     move-object p1, v2
 
@@ -725,13 +699,11 @@
 
     move-object p0, v2
 
-    .line 245
     :goto_5f
     check-cast p0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p2, p0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 145
     :goto_64
     iget-object p0, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -797,7 +769,6 @@
 
     move-result-object v1
 
-    .line 39
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$fold$1;->label:I
 
     const/4 v3, 0x1
@@ -826,14 +797,12 @@
     :cond_36
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 43
     new-instance p3, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p3}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
     iput-object p1, p3, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 44
     new-instance p1, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$fold$2;
 
     invoke-direct {p1, p3, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$fold$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/functions/Function3;)V
@@ -855,7 +824,6 @@
     :cond_52
     move-object p0, p3
 
-    .line 47
     :goto_53
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -885,14 +853,12 @@
         }
     .end annotation
 
-    .line 43
     new-instance v0, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
     iput-object p1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 44
     new-instance p1, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$fold$2;
 
     invoke-direct {p1, v0, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$fold$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/functions/Function3;)V
@@ -909,7 +875,6 @@
 
     invoke-static {p0}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 47
     iget-object p0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
@@ -966,7 +931,6 @@
 
     move-result-object v1
 
-    .line 153
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$last$1;->label:I
 
     const/4 v3, 0x1
@@ -995,7 +959,6 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 154
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -1004,7 +967,6 @@
 
     iput-object v2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 155
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$last$2;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$last$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -1026,7 +988,6 @@
     :cond_54
     move-object p0, p1
 
-    .line 158
     :goto_55
     iget-object p1, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -1034,12 +995,10 @@
 
     if-eq p1, v0, :cond_5e
 
-    .line 159
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
 
-    .line 158
     :cond_5e
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -1101,7 +1060,6 @@
 
     move-result-object v1
 
-    .line 165
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$lastOrNull$1;->label:I
 
     const/4 v3, 0x1
@@ -1130,12 +1088,10 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 166
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 167
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$lastOrNull$2;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$lastOrNull$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -1157,7 +1113,6 @@
     :cond_50
     move-object p0, p1
 
-    .line 170
     :goto_51
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -1221,7 +1176,6 @@
 
     move-result-object v1
 
-    .line 19
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$reduce$1;->label:I
 
     const/4 v3, 0x1
@@ -1250,7 +1204,6 @@
     :cond_36
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 20
     new-instance p2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -1259,7 +1212,6 @@
 
     iput-object v2, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 22
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$reduce$2;
 
     invoke-direct {v2, p2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$reduce$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/functions/Function3;)V
@@ -1281,7 +1233,6 @@
     :cond_54
     move-object p0, p2
 
-    .line 31
     :goto_55
     iget-object p1, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -1289,12 +1240,10 @@
 
     if-eq p1, p2, :cond_5e
 
-    .line 33
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
 
-    .line 31
     :cond_5e
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -1356,7 +1305,6 @@
 
     move-result-object v1
 
-    .line 55
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$single$1;->label:I
 
     const/4 v3, 0x1
@@ -1385,7 +1333,6 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 56
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -1394,7 +1341,6 @@
 
     iput-object v2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 57
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$single$2;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$single$2;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -1416,7 +1362,6 @@
     :cond_54
     move-object p0, p1
 
-    .line 62
     :goto_55
     iget-object p1, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -1424,12 +1369,10 @@
 
     if-eq p1, v0, :cond_5e
 
-    .line 63
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     return-object p0
 
-    .line 62
     :cond_5e
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -1491,7 +1434,6 @@
 
     move-result-object v1
 
-    .line 70
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$singleOrNull$1;->label:I
 
     const/4 v3, 0x1
@@ -1532,7 +1474,6 @@
     :cond_3c
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 71
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -1541,12 +1482,10 @@
 
     iput-object v2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 173
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$singleOrNull$$inlined$collectWhile$1;
 
     invoke-direct {v2, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$singleOrNull$$inlined$collectWhile$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
-    .line 183
     :try_start_4d
     move-object v4, v2
 
@@ -1582,13 +1521,11 @@
 
     move-object p0, v2
 
-    .line 185
     :goto_63
     check-cast p0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p1, p0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 83
     :goto_68
     iget-object p0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 

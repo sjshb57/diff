@@ -22,10 +22,8 @@
 .method public constructor <init>(Lcom/google/firebase/messaging/SyncTask;)V
     .registers 2
 
-    .line 165
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 166
     iput-object p1, p0, Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;->task:Lcom/google/firebase/messaging/SyncTask;
 
     return-void
@@ -100,21 +98,18 @@
 .method public registerReceiver()V
     .registers 3
 
-    .line 170
     invoke-static {}, Lcom/google/firebase/messaging/SyncTask;->isDebugLogEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_d
 
-    .line 171
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "Connectivity change received registered"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 173
     :cond_d
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -122,7 +117,6 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 174
     iget-object v1, p0, Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;->task:Lcom/google/firebase/messaging/SyncTask;
 
     invoke-virtual {v1}, Lcom/google/firebase/messaging/SyncTask;->getContext()Landroid/content/Context;

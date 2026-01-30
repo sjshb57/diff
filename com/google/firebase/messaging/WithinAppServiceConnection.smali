@@ -40,7 +40,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .registers 4
 
-    .line 107
     invoke-static {}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->createScheduledThreadPoolExecutor()Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
     move-result-object v0
@@ -53,10 +52,8 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/util/concurrent/ScheduledExecutorService;)V
     .registers 5
 
-    .line 120
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 95
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
@@ -65,17 +62,14 @@
 
     const/4 v0, 0x0
 
-    .line 99
     iput-boolean v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionInProgress:Z
 
-    .line 121
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->context:Landroid/content/Context;
 
-    .line 122
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
@@ -90,7 +84,6 @@
 
     iput-object p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionIntent:Landroid/content/Intent;
 
-    .line 123
     iput-object p3, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
@@ -99,7 +92,6 @@
 .method private static createScheduledThreadPoolExecutor()Ljava/util/concurrent/ScheduledThreadPoolExecutor;
     .registers 5
 
-    .line 112
     new-instance v0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
     const/4 v1, 0x1
@@ -108,12 +100,10 @@
 
     const-wide/16 v2, 0x28
 
-    .line 113
     sget-object v4, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, v2, v3, v4}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->setKeepAliveTime(JLjava/util/concurrent/TimeUnit;)V
 
-    .line 114
     invoke-virtual {v0, v1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
 
     return-object v0
@@ -122,7 +112,6 @@
 .method private finishAllInQueue()V
     .registers 2
 
-    .line 190
     :goto_0
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->intentQueue:Ljava/util/Queue;
 
@@ -132,7 +121,6 @@
 
     if-nez v0, :cond_14
 
-    .line 191
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->intentQueue:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -154,7 +142,6 @@
 
     monitor-enter p0
 
-    .line 139
     :try_start_1
     const-string v0, "FirebaseMessaging"
 
@@ -166,14 +153,12 @@
 
     if-eqz v0, :cond_11
 
-    .line 140
     const-string v0, "FirebaseMessaging"
 
     const-string v2, "flush queue called"
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 142
     :cond_11
     :goto_11
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->intentQueue:Ljava/util/Queue;
@@ -184,7 +169,6 @@
 
     if-nez v0, :cond_54
 
-    .line 143
     const-string v0, "FirebaseMessaging"
 
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -193,14 +177,12 @@
 
     if-eqz v0, :cond_28
 
-    .line 144
     const-string v0, "FirebaseMessaging"
 
     const-string v2, "found intent to be delivered"
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 147
     :cond_28
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->binder:Lcom/google/firebase/messaging/WithinAppServiceBinder;
 
@@ -212,7 +194,6 @@
 
     if-eqz v0, :cond_4f
 
-    .line 148
     const-string v0, "FirebaseMessaging"
 
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -221,14 +202,12 @@
 
     if-eqz v0, :cond_41
 
-    .line 149
     const-string v0, "FirebaseMessaging"
 
     const-string v2, "binder is alive, sending the intent."
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 151
     :cond_41
     iget-object v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->intentQueue:Ljava/util/Queue;
 
@@ -238,25 +217,21 @@
 
     check-cast v0, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;
 
-    .line 152
     iget-object v2, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->binder:Lcom/google/firebase/messaging/WithinAppServiceBinder;
 
     invoke-virtual {v2, v0}, Lcom/google/firebase/messaging/WithinAppServiceBinder;->send(Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;)V
 
     goto :goto_11
 
-    .line 154
     :cond_4f
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->startConnectionIfNeeded()V
     :try_end_52
     .catchall {:try_start_1 .. :try_end_52} :catchall_56
 
-    .line 155
     monitor-exit p0
 
     return-void
 
-    .line 158
     :cond_54
     monitor-exit p0
 
@@ -275,7 +250,6 @@
 
     const/4 v0, 0x3
 
-    .line 162
     const-string v1, "FirebaseMessaging"
 
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -286,7 +260,6 @@
 
     if-eqz v0, :cond_1e
 
-    .line 163
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v3, "binder is dead. start connection? "
@@ -305,7 +278,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 165
     :cond_1e
     iget-boolean v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionInProgress:Z
 
@@ -313,11 +285,9 @@
 
     return-void
 
-    .line 169
     :cond_23
     iput-boolean v2, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionInProgress:Z
 
-    .line 171
     :try_start_25
     invoke-static {}, Lcom/google/android/gms/common/stats/ConnectionTracker;->getInstance()Lcom/google/android/gms/common/stats/ConnectionTracker;
 
@@ -329,7 +299,6 @@
 
     const/16 v4, 0x41
 
-    .line 172
     invoke-virtual {v0, v2, v3, p0, v4}, Lcom/google/android/gms/common/stats/ConnectionTracker;->bindService(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result v0
@@ -338,7 +307,6 @@
 
     return-void
 
-    .line 177
     :cond_36
     const-string v0, "binding to the service failed"
 
@@ -351,7 +319,6 @@
     :catch_3c
     move-exception v0
 
-    .line 180
     const/4 v2, 0x0
 
     sget-object v2, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->IMmx:Ljava/lang/String;
@@ -361,10 +328,8 @@
     :goto_43
     const/4 v0, 0x0
 
-    .line 184
     iput-boolean v0, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionInProgress:Z
 
-    .line 185
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->finishAllInQueue()V
 
     return-void
@@ -381,7 +346,6 @@
 
     monitor-enter p0
 
-    .line 197
     :try_start_5
     const-string v2, "FirebaseMessaging"
 
@@ -393,7 +357,6 @@
 
     if-eqz v2, :cond_1f
 
-    .line 198
     const-string v2, "FirebaseMessaging"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -411,15 +374,12 @@
     :cond_1f
     const/4 p1, 0x0
 
-    .line 200
     iput-boolean p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->connectionInProgress:Z
 
-    .line 202
     instance-of p1, p2, Lcom/google/firebase/messaging/WithinAppServiceBinder;
 
     if-nez p1, :cond_3c
 
-    .line 203
     const-string p1, "FirebaseMessaging"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -434,29 +394,24 @@
 
     invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 204
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->finishAllInQueue()V
     :try_end_3a
     .catchall {:try_start_5 .. :try_end_3a} :catchall_45
 
-    .line 205
     monitor-exit p0
 
     return-void
 
-    .line 208
     :cond_3c
     :try_start_3c
     check-cast p2, Lcom/google/firebase/messaging/WithinAppServiceBinder;
 
     iput-object p2, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->binder:Lcom/google/firebase/messaging/WithinAppServiceBinder;
 
-    .line 209
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->flushQueue()V
     :try_end_43
     .catchall {:try_start_3c .. :try_end_43} :catchall_45
 
-    .line 210
     monitor-exit p0
 
     return-void
@@ -474,7 +429,6 @@
 
     const/4 v0, 0x3
 
-    .line 214
     const-string v1, "FirebaseMessaging"
 
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -483,7 +437,6 @@
 
     if-eqz v0, :cond_1a
 
-    .line 215
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "onServiceDisconnected: "
@@ -498,7 +451,6 @@
 
     invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 217
     :cond_1a
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->flushQueue()V
 
@@ -520,7 +472,6 @@
 
     monitor-enter p0
 
-    .line 128
     :try_start_1
     const-string v0, "FirebaseMessaging"
 
@@ -532,33 +483,27 @@
 
     if-eqz v0, :cond_11
 
-    .line 129
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "new intent queued in the bind-strategy delivery"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 131
     :cond_11
     new-instance v0, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;
 
     invoke-direct {v0, p1}, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;-><init>(Landroid/content/Intent;)V
 
-    .line 132
     iget-object p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;->arrangeTimeout(Ljava/util/concurrent/ScheduledExecutorService;)V
 
-    .line 133
     iget-object p1, p0, Lcom/google/firebase/messaging/WithinAppServiceConnection;->intentQueue:Ljava/util/Queue;
 
     invoke-interface {p1, v0}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 134
     invoke-direct {p0}, Lcom/google/firebase/messaging/WithinAppServiceConnection;->flushQueue()V
 
-    .line 135
     invoke-virtual {v0}, Lcom/google/firebase/messaging/WithinAppServiceConnection$BindRequest;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1

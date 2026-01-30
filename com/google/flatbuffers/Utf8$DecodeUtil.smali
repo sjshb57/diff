@@ -18,7 +18,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 81
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,6 @@
         }
     .end annotation
 
-    .line 140
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
     move-result v0
@@ -49,14 +47,12 @@
 
     if-nez v0, :cond_41
 
-    .line 149
     invoke-static {p2}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
     move-result v0
 
     if-nez v0, :cond_41
 
-    .line 150
     invoke-static {p3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
     move-result v0
@@ -67,7 +63,6 @@
 
     shl-int/lit8 p0, p0, 0x12
 
-    .line 154
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->trailingByteValue(B)I
 
     move-result p1
@@ -76,7 +71,6 @@
 
     or-int/2addr p0, p1
 
-    .line 155
     invoke-static {p2}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->trailingByteValue(B)I
 
     move-result p1
@@ -85,14 +79,12 @@
 
     or-int/2addr p0, p1
 
-    .line 156
     invoke-static {p3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->trailingByteValue(B)I
 
     move-result p1
 
     or-int/2addr p0, p1
 
-    .line 157
     invoke-static {p0}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->highSurrogate(I)C
 
     move-result p1
@@ -101,7 +93,6 @@
 
     add-int/lit8 p5, p5, 0x1
 
-    .line 158
     invoke-static {p0}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->lowSurrogate(I)C
 
     move-result p0
@@ -110,7 +101,6 @@
 
     return-void
 
-    .line 151
     :cond_41
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -126,7 +116,6 @@
 
     int-to-char p0, p0
 
-    .line 105
     aput-char p0, p1, p2
 
     return-void
@@ -140,7 +129,6 @@
         }
     .end annotation
 
-    .line 125
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
     move-result v0
@@ -162,7 +150,6 @@
 
     if-ge p1, v1, :cond_2e
 
-    .line 130
     :cond_14
     invoke-static {p2}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
@@ -174,7 +161,6 @@
 
     shl-int/lit8 p0, p0, 0xc
 
-    .line 134
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->trailingByteValue(B)I
 
     move-result p1
@@ -195,7 +181,6 @@
 
     return-void
 
-    .line 131
     :cond_2e
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -218,7 +203,6 @@
 
     if-lt p0, v0, :cond_1f
 
-    .line 116
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isNotTrailingByte(B)Z
 
     move-result v0
@@ -229,7 +213,6 @@
 
     shl-int/lit8 p0, p0, 0x6
 
-    .line 119
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->trailingByteValue(B)I
 
     move-result p1
@@ -242,7 +225,6 @@
 
     return-void
 
-    .line 117
     :cond_17
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -252,7 +234,6 @@
 
     throw p0
 
-    .line 114
     :cond_1f
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

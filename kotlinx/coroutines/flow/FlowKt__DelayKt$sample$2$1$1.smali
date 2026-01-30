@@ -212,7 +212,6 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 285
     iget v0, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$1;->label:I
 
     if-nez v0, :cond_39
@@ -227,18 +226,14 @@
 
     move-result-object p1
 
-    .line 287
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$1;->$lastValue:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 410
     instance-of v1, p1, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v1, :cond_1a
 
-    .line 287
     iput-object p1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 288
     :cond_1a
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$1;->$ticker:Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -246,14 +241,12 @@
 
     if-eqz v1, :cond_36
 
-    .line 415
     invoke-static {p1}, Lkotlinx/coroutines/channels/ChannelResult;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     move-result-object p1
 
     if-nez p1, :cond_35
 
-    .line 290
     new-instance p1, Lkotlinx/coroutines/flow/internal/ChildCancelledException;
 
     invoke-direct {p1}, Lkotlinx/coroutines/flow/internal/ChildCancelledException;-><init>()V
@@ -262,25 +255,21 @@
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/ReceiveChannel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
-    .line 291
     sget-object p1, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->DONE:Lkotlinx/coroutines/internal/Symbol;
 
     iput-object p1, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     goto :goto_36
 
-    .line 289
     :cond_35
     throw p1
 
-    .line 293
     :cond_36
     :goto_36
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 285
     :cond_39
     new-instance p1, Ljava/lang/IllegalStateException;
 

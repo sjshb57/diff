@@ -199,7 +199,6 @@
 
     move-result-object v0
 
-    .line 953
     iget v1, p0, Lkotlinx/coroutines/JobSupport$children$1;->label:I
 
     const/4 v2, 0x2
@@ -249,14 +248,12 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 954
     iget-object v1, p0, Lkotlinx/coroutines/JobSupport$children$1;->this$0:Lkotlinx/coroutines/JobSupport;
 
     invoke-virtual {v1}, Lkotlinx/coroutines/JobSupport;->getState$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 955
     instance-of v4, v1, Lkotlinx/coroutines/ChildHandleNode;
 
     if-eqz v4, :cond_4b
@@ -279,7 +276,6 @@
 
     return-object v0
 
-    .line 956
     :cond_4b
     instance-of v3, v1, Lkotlinx/coroutines/Incomplete;
 
@@ -293,10 +289,8 @@
 
     if-eqz v1, :cond_8b
 
-    .line 957
     check-cast v1, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;
 
-    .line 1452
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v3
@@ -315,7 +309,6 @@
 
     move-object v1, v5
 
-    .line 1453
     :goto_68
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -323,7 +316,6 @@
 
     if-nez p1, :cond_8b
 
-    .line 1454
     instance-of p1, v1, Lkotlinx/coroutines/ChildHandleNode;
 
     if-eqz p1, :cond_86
@@ -332,7 +324,6 @@
 
     check-cast p1, Lkotlinx/coroutines/ChildHandleNode;
 
-    .line 957
     iget-object p1, p1, Lkotlinx/coroutines/ChildHandleNode;->childJob:Lkotlinx/coroutines/ChildJob;
 
     iput-object v4, p0, Lkotlinx/coroutines/JobSupport$children$1;->L$0:Ljava/lang/Object;
@@ -351,7 +342,6 @@
 
     return-object v0
 
-    .line 1455
     :cond_86
     :goto_86
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
@@ -360,7 +350,6 @@
 
     goto :goto_68
 
-    .line 960
     :cond_8b
     :goto_8b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

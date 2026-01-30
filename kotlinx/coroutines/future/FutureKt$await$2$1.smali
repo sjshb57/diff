@@ -97,7 +97,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 175
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/future/FutureKt$await$2$1;->invoke(Ljava/lang/Throwable;)V
@@ -110,14 +109,12 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .registers 3
 
-    .line 176
     iget-object p1, p0, Lkotlinx/coroutines/future/FutureKt$await$2$1;->$future:Ljava/util/concurrent/CompletableFuture;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/CompletableFuture;->cancel(Z)Z
 
-    .line 177
     iget-object p1, p0, Lkotlinx/coroutines/future/FutureKt$await$2$1;->$consumer:Lkotlinx/coroutines/future/ContinuationHandler;
 
     const/4 v0, 0x0

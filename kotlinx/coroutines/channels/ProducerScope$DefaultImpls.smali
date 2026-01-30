@@ -46,7 +46,6 @@
         .end subannotation
     .end annotation
 
-    .line 14
     check-cast p0, Lkotlinx/coroutines/channels/SendChannel;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/SendChannel$DefaultImpls;->offer(Lkotlinx/coroutines/channels/SendChannel;Ljava/lang/Object;)Z

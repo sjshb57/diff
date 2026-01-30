@@ -85,7 +85,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 246
     invoke-direct {p0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;-><init>()V
 
     return-void
@@ -94,7 +93,6 @@
 .method public static final synthetic access$get_state$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
     .registers 1
 
-    .line 246
     sget-object v0, Lkotlinx/coroutines/flow/StateFlowSlot;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-object v0
@@ -130,7 +128,6 @@
 .method public bridge synthetic allocateLocked(Ljava/lang/Object;)Z
     .registers 2
 
-    .line 246
     check-cast p1, Lkotlinx/coroutines/flow/StateFlowImpl;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/StateFlowSlot;->allocateLocked(Lkotlinx/coroutines/flow/StateFlowImpl;)Z
@@ -150,7 +147,6 @@
         }
     .end annotation
 
-    .line 262
     sget-object p1, Lkotlinx/coroutines/flow/StateFlowSlot;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -163,7 +159,6 @@
 
     return p1
 
-    .line 263
     :cond_a
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getNONE$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -189,7 +184,6 @@
         }
     .end annotation
 
-    .line 431
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     invoke-static {p1}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
@@ -200,27 +194,22 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 437
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 438
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 299
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v3
 
     if-eqz v3, :cond_2a
 
-    .line 429
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowSlot;->access$get_state$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     move-result-object v3
 
-    .line 299
     invoke-virtual {v3, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -240,7 +229,6 @@
 
     throw p1
 
-    .line 300
     :cond_2a
     :goto_2a
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowSlot;->access$get_state$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
@@ -257,19 +245,16 @@
 
     if-nez v2, :cond_60
 
-    .line 302
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v2
 
     if-eqz v2, :cond_53
 
-    .line 429
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowSlot;->access$get_state$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     move-result-object v2
 
-    .line 302
     invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -289,7 +274,6 @@
 
     throw p1
 
-    .line 303
     :cond_53
     :goto_53
     check-cast v1, Lkotlin/coroutines/Continuation;
@@ -304,13 +288,11 @@
 
     invoke-interface {v1, v2}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
-    .line 439
     :cond_60
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 430
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v1
@@ -328,7 +310,6 @@
 
     return-object v0
 
-    .line 440
     :cond_74
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -338,7 +319,6 @@
 .method public bridge synthetic freeLocked(Ljava/lang/Object;)[Lkotlin/coroutines/Continuation;
     .registers 2
 
-    .line 246
     check-cast p1, Lkotlinx/coroutines/flow/StateFlowImpl;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/StateFlowSlot;->freeLocked(Lkotlinx/coroutines/flow/StateFlowImpl;)[Lkotlin/coroutines/Continuation;
@@ -365,10 +345,8 @@
 
     const/4 v0, 0x0
 
-    .line 268
     invoke-virtual {p1, p0, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 269
     sget-object p1, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;
 
     return-object p1
@@ -388,7 +366,6 @@
 
     return-void
 
-    .line 277
     :cond_9
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getPENDING$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -398,7 +375,6 @@
 
     return-void
 
-    .line 278
     :cond_10
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getNONE$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -406,7 +382,6 @@
 
     if-ne v1, v2, :cond_23
 
-    .line 279
     sget-object v2, Lkotlinx/coroutines/flow/StateFlowSlot;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getPENDING$p()Lkotlinx/coroutines/internal/Symbol;
@@ -421,7 +396,6 @@
 
     return-void
 
-    .line 283
     :cond_23
     sget-object v2, Lkotlinx/coroutines/flow/StateFlowSlot;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
@@ -435,7 +409,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 284
     check-cast v1, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     check-cast v1, Lkotlin/coroutines/Continuation;
@@ -458,7 +431,6 @@
 
     sget-object v0, Lkotlinx/coroutines/flow/StateFlowSlot;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 292
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getNONE$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
@@ -469,7 +441,6 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 293
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v1
@@ -493,7 +464,6 @@
 
     throw v0
 
-    .line 294
     :cond_20
     :goto_20
     invoke-static {}, Lkotlinx/coroutines/flow/StateFlowKt;->access$getPENDING$p()Lkotlinx/coroutines/internal/Symbol;

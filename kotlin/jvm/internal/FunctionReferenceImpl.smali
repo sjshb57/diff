@@ -7,7 +7,6 @@
 .method public constructor <init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .registers 13
 
-    .line 24
     sget-object v2, Lkotlin/jvm/internal/FunctionReferenceImpl;->NO_RECEIVER:Ljava/lang/Object;
 
     move-object v0, p0
@@ -30,7 +29,6 @@
 .method public constructor <init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .registers 7
 
-    .line 29
     invoke-direct/range {p0 .. p6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
@@ -39,14 +37,12 @@
 .method public constructor <init>(ILkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
     .registers 12
 
-    .line 15
     sget-object v2, Lkotlin/jvm/internal/FunctionReferenceImpl;->NO_RECEIVER:Ljava/lang/Object;
 
     move-object v0, p2
 
     check-cast v0, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;
 
-    .line 17
     invoke-interface {v0}, Lkotlin/jvm/internal/ClassBasedDeclarationContainer;->getJClass()Ljava/lang/Class;
 
     move-result-object v3
@@ -63,7 +59,6 @@
 
     move-object v5, p4
 
-    .line 15
     invoke-direct/range {v0 .. v6}, Lkotlin/jvm/internal/FunctionReference;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void

@@ -223,7 +223,6 @@
 
     move-result-object v0
 
-    .line 117
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1;->label:I
 
     const/4 v2, 0x1
@@ -264,17 +263,14 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 119
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1;->$this_transformWhile:Lkotlinx/coroutines/flow/Flow;
 
     iget-object v3, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1;->$transform:Lkotlin/jvm/functions/Function3;
 
-    .line 142
     new-instance v4, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1;
 
     invoke-direct {v4, v3, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1;-><init>(Lkotlin/jvm/functions/Function3;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 152
     :try_start_2d
     move-object p1, v4
 
@@ -303,13 +299,11 @@
 
     move-object v0, v4
 
-    .line 154
     :goto_40
     check-cast v0, Lkotlinx/coroutines/flow/FlowCollector;
 
     invoke-static {p1, v0}, Lkotlinx/coroutines/flow/internal/FlowExceptions_commonKt;->checkOwnership(Lkotlinx/coroutines/flow/internal/AbortFlowException;Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 156
     :cond_45
     :goto_45
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

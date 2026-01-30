@@ -83,19 +83,16 @@
         }
     .end annotation
 
-    .line 75
     new-instance v0, Ljava/util/concurrent/CompletableFuture;
 
     invoke-direct {v0}, Ljava/util/concurrent/CompletableFuture;-><init>()V
 
-    .line 76
     move-object v1, p0
 
     check-cast v1, Lkotlinx/coroutines/Job;
 
     invoke-static {v1, v0}, Lkotlinx/coroutines/future/FutureKt;->setupCancellation(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CompletableFuture;)V
 
-    .line 77
     new-instance v1, Lkotlinx/coroutines/future/FutureKt$asCompletableFuture$1;
 
     invoke-direct {v1, v0, p0}, Lkotlinx/coroutines/future/FutureKt$asCompletableFuture$1;-><init>(Ljava/util/concurrent/CompletableFuture;Lkotlinx/coroutines/Deferred;)V
@@ -120,15 +117,12 @@
         }
     .end annotation
 
-    .line 92
     new-instance v0, Ljava/util/concurrent/CompletableFuture;
 
     invoke-direct {v0}, Ljava/util/concurrent/CompletableFuture;-><init>()V
 
-    .line 93
     invoke-static {p0, v0}, Lkotlinx/coroutines/future/FutureKt;->setupCancellation(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CompletableFuture;)V
 
-    .line 94
     new-instance v1, Lkotlinx/coroutines/future/FutureKt$asCompletableFuture$2;
 
     invoke-direct {v1, v0}, Lkotlinx/coroutines/future/FutureKt$asCompletableFuture$2;-><init>(Ljava/util/concurrent/CompletableFuture;)V
@@ -154,12 +148,10 @@
         }
     .end annotation
 
-    .line 117
     invoke-interface {p0}, Ljava/util/concurrent/CompletionStage;->toCompletableFuture()Ljava/util/concurrent/CompletableFuture;
 
     move-result-object v0
 
-    .line 119
     invoke-virtual {v0}, Ljava/util/concurrent/CompletableFuture;->isDone()Z
 
     move-result v1
@@ -170,7 +162,6 @@
 
     if-eqz v1, :cond_36
 
-    .line 122
     :try_start_c
     invoke-virtual {v0}, Ljava/util/concurrent/CompletableFuture;->get()Ljava/lang/Object;
 
@@ -189,7 +180,6 @@
     :catchall_17
     move-exception p0
 
-    .line 125
     instance-of v0, p0, Ljava/util/concurrent/ExecutionException;
 
     if-eqz v0, :cond_20
@@ -217,7 +207,6 @@
     :cond_2a
     move-object p0, v0
 
-    .line 126
     :cond_2b
     :goto_2b
     invoke-static {v3, v2, v3}, Lkotlinx/coroutines/CompletableDeferredKt;->CompletableDeferred$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;
@@ -233,13 +222,11 @@
     :goto_35
     return-object p0
 
-    .line 129
     :cond_36
     invoke-static {v3, v2, v3}, Lkotlinx/coroutines/CompletableDeferredKt;->CompletableDeferred$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;
 
     move-result-object v1
 
-    .line 130
     new-instance v2, Lkotlinx/coroutines/future/FutureKt$asDeferred$2;
 
     invoke-direct {v2, v1}, Lkotlinx/coroutines/future/FutureKt$asDeferred$2;-><init>(Lkotlinx/coroutines/CompletableDeferred;)V
@@ -252,7 +239,6 @@
 
     invoke-interface {p0, v3}, Ljava/util/concurrent/CompletionStage;->handle(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;
 
-    .line 145
     move-object p0, v1
 
     check-cast p0, Lkotlinx/coroutines/Job;
@@ -261,7 +247,6 @@
 
     invoke-static {p0, v0}, Lkotlinx/coroutines/JobKt;->cancelFutureOnCompletion(Lkotlinx/coroutines/Job;Ljava/util/concurrent/Future;)Lkotlinx/coroutines/DisposableHandle;
 
-    .line 146
     check-cast v1, Lkotlinx/coroutines/Deferred;
 
     return-object v1
@@ -270,7 +255,6 @@
 .method private static final asDeferred$lambda$4(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
     .registers 3
 
-    .line 130
     invoke-interface {p0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -293,19 +277,16 @@
         }
     .end annotation
 
-    .line 161
     invoke-interface {p0}, Ljava/util/concurrent/CompletionStage;->toCompletableFuture()Ljava/util/concurrent/CompletableFuture;
 
     move-result-object v0
 
-    .line 163
     invoke-virtual {v0}, Ljava/util/concurrent/CompletableFuture;->isDone()Z
 
     move-result v1
 
     if-eqz v1, :cond_1a
 
-    .line 166
     :try_start_a
     invoke-virtual {v0}, Ljava/util/concurrent/CompletableFuture;->get()Ljava/lang/Object;
 
@@ -318,7 +299,6 @@
     :catch_f
     move-exception p0
 
-    .line 168
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -332,7 +312,6 @@
     :cond_19
     throw p1
 
-    .line 200
     :cond_1a
     new-instance v1, Lkotlinx/coroutines/CancellableContinuationImpl;
 
@@ -344,15 +323,12 @@
 
     invoke-direct {v1, v2, v3}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 206
     invoke-virtual {v1}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 207
     move-object v2, v1
 
     check-cast v2, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 173
     new-instance v3, Lkotlinx/coroutines/future/ContinuationHandler;
 
     move-object v4, v2
@@ -361,14 +337,12 @@
 
     invoke-direct {v3, v4}, Lkotlinx/coroutines/future/ContinuationHandler;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 174
     move-object v4, v3
 
     check-cast v4, Ljava/util/function/BiFunction;
 
     invoke-interface {p0, v4}, Ljava/util/concurrent/CompletionStage;->handle(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;
 
-    .line 175
     new-instance p0, Lkotlinx/coroutines/future/FutureKt$await$2$1;
 
     invoke-direct {p0, v0, v3}, Lkotlinx/coroutines/future/FutureKt$await$2$1;-><init>(Ljava/util/concurrent/CompletableFuture;Lkotlinx/coroutines/future/ContinuationHandler;)V
@@ -377,12 +351,10 @@
 
     invoke-interface {v2, p0}, Lkotlinx/coroutines/CancellableContinuation;->invokeOnCancellation(Lkotlin/jvm/functions/Function1;)V
 
-    .line 208
     invoke-virtual {v1}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 199
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -418,7 +390,6 @@
         }
     .end annotation
 
-    .line 39
     invoke-virtual {p2}, Lkotlinx/coroutines/CoroutineStart;->isLazy()Z
 
     move-result v0
@@ -427,34 +398,28 @@
 
     if-eqz v0, :cond_20
 
-    .line 40
     invoke-static {p0, p1}, Lkotlinx/coroutines/CoroutineContextKt;->newCoroutineContext(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p0
 
-    .line 41
     new-instance p1, Ljava/util/concurrent/CompletableFuture;
 
     invoke-direct {p1}, Ljava/util/concurrent/CompletableFuture;-><init>()V
 
-    .line 42
     new-instance v0, Lkotlinx/coroutines/future/CompletableFutureCoroutine;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/future/CompletableFutureCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CompletableFuture;)V
 
-    .line 43
     move-object p0, v0
 
     check-cast p0, Ljava/util/function/BiFunction;
 
     invoke-virtual {p1, p0}, Ljava/util/concurrent/CompletableFuture;->handle(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletableFuture;
 
-    .line 44
     invoke-virtual {v0, p2, v0, p3}, Lkotlinx/coroutines/future/CompletableFutureCoroutine;->start(Lkotlinx/coroutines/CoroutineStart;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     return-object p1
 
-    .line 39
     :cond_20
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -488,7 +453,6 @@
 
     if-eqz p5, :cond_8
 
-    .line 35
     sget-object p1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
@@ -498,10 +462,8 @@
 
     if-eqz p4, :cond_e
 
-    .line 36
     sget-object p2, Lkotlinx/coroutines/CoroutineStart;->DEFAULT:Lkotlinx/coroutines/CoroutineStart;
 
-    .line 34
     :cond_e
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/future/FutureKt;->future(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;)Ljava/util/concurrent/CompletableFuture;
 
@@ -521,7 +483,6 @@
         }
     .end annotation
 
-    .line 102
     new-instance v0, Lkotlinx/coroutines/future/FutureKt$$ExternalSyntheticLambda1;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/future/FutureKt$$ExternalSyntheticLambda1;-><init>(Lkotlinx/coroutines/Job;)V
@@ -538,7 +499,6 @@
 
     if-eqz p2, :cond_12
 
-    .line 104
     instance-of v0, p2, Ljava/util/concurrent/CancellationException;
 
     if-eqz v0, :cond_a
@@ -556,11 +516,9 @@
 
     move-result-object p1
 
-    .line 103
     :cond_12
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
-    .line 106
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

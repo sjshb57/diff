@@ -57,7 +57,6 @@
 .method public static final synthetic access$invokeSafely$FlowKt__EmittersKt(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/jvm/functions/Function3;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 4
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->invokeSafely$FlowKt__EmittersKt(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/jvm/functions/Function3;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -75,7 +74,6 @@
         }
     .end annotation
 
-    .line 202
     instance-of v0, p0, Lkotlinx/coroutines/flow/ThrowingCollector;
 
     if-nez v0, :cond_5
@@ -156,7 +154,6 @@
 
     move-result-object v1
 
-    .line 211
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$invokeSafely$1;->label:I
 
     const/4 v3, 0x1
@@ -190,7 +187,6 @@
     :cond_37
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 216
     :try_start_3a
     iput-object p2, v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$invokeSafely$1;->L$0:Ljava/lang/Object;
 
@@ -206,7 +202,6 @@
 
     return-object v1
 
-    .line 221
     :cond_45
     :goto_45
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -220,10 +215,8 @@
 
     if-eq p2, p0, :cond_50
 
-    .line 227
     invoke-static {p0, p2}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    .line 219
     :cond_50
     throw p0
 .end method
@@ -254,7 +247,6 @@
         }
     .end annotation
 
-    .line 225
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1;-><init>(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)V
@@ -288,7 +280,6 @@
         }
     .end annotation
 
-    .line 226
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1;-><init>(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)V
@@ -322,7 +313,6 @@
         }
     .end annotation
 
-    .line 224
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onStart$$inlined$unsafeFlow$1;
 
     invoke-direct {v0, p1, p0}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onStart$$inlined$unsafeFlow$1;-><init>(Lkotlin/jvm/functions/Function2;Lkotlinx/coroutines/flow/Flow;)V
@@ -358,7 +348,6 @@
         }
     .end annotation
 
-    .line 39
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1;
 
     const/4 v1, 0x0
@@ -400,7 +389,6 @@
         }
     .end annotation
 
-    .line 223
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$unsafeTransform$$inlined$unsafeFlow$1;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$unsafeTransform$$inlined$unsafeFlow$1;-><init>(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)V

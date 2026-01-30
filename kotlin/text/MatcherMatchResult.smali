@@ -83,14 +83,12 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 351
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/text/MatcherMatchResult;->matcher:Ljava/util/regex/Matcher;
 
     iput-object p2, p0, Lkotlin/text/MatcherMatchResult;->input:Ljava/lang/CharSequence;
 
-    .line 358
     new-instance p1, Lkotlin/text/MatcherMatchResult$groups$1;
 
     invoke-direct {p1, p0}, Lkotlin/text/MatcherMatchResult$groups$1;-><init>(Lkotlin/text/MatcherMatchResult;)V
@@ -105,7 +103,6 @@
 .method public static final synthetic access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
     .registers 1
 
-    .line 351
     invoke-direct {p0}, Lkotlin/text/MatcherMatchResult;->getMatchResult()Ljava/util/regex/MatchResult;
 
     move-result-object p0
@@ -116,7 +113,6 @@
 .method private final getMatchResult()Ljava/util/regex/MatchResult;
     .registers 2
 
-    .line 352
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult;->matcher:Ljava/util/regex/Matcher;
 
     check-cast v0, Ljava/util/regex/MatchResult;
@@ -129,7 +125,6 @@
 .method public getDestructured()Lkotlin/text/MatchResult$Destructured;
     .registers 2
 
-    .line 351
     invoke-static {p0}, Lkotlin/text/MatchResult$DefaultImpls;->getDestructured(Lkotlin/text/MatchResult;)Lkotlin/text/MatchResult$Destructured;
 
     move-result-object v0
@@ -148,12 +143,10 @@
         }
     .end annotation
 
-    .line 380
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult;->groupValues_:Ljava/util/List;
 
     if-nez v0, :cond_d
 
-    .line 381
     new-instance v0, Lkotlin/text/MatcherMatchResult$groupValues$1;
 
     invoke-direct {v0, p0}, Lkotlin/text/MatcherMatchResult$groupValues$1;-><init>(Lkotlin/text/MatcherMatchResult;)V
@@ -162,7 +155,6 @@
 
     iput-object v0, p0, Lkotlin/text/MatcherMatchResult;->groupValues_:Ljava/util/List;
 
-    .line 386
     :cond_d
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult;->groupValues_:Ljava/util/List;
 
@@ -174,7 +166,6 @@
 .method public getGroups()Lkotlin/text/MatchGroupCollection;
     .registers 2
 
-    .line 358
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult;->groups:Lkotlin/text/MatchGroupCollection;
 
     return-object v0
@@ -183,7 +174,6 @@
 .method public getRange()Lkotlin/ranges/IntRange;
     .registers 2
 
-    .line 354
     invoke-direct {p0}, Lkotlin/text/MatcherMatchResult;->getMatchResult()Ljava/util/regex/MatchResult;
 
     move-result-object v0
@@ -198,7 +188,6 @@
 .method public getValue()Ljava/lang/String;
     .registers 3
 
-    .line 356
     invoke-direct {p0}, Lkotlin/text/MatcherMatchResult;->getMatchResult()Ljava/util/regex/MatchResult;
 
     move-result-object v0
@@ -217,7 +206,6 @@
 .method public next()Lkotlin/text/MatchResult;
     .registers 4
 
-    .line 390
     invoke-direct {p0}, Lkotlin/text/MatcherMatchResult;->getMatchResult()Ljava/util/regex/MatchResult;
 
     move-result-object v0
@@ -254,7 +242,6 @@
     :goto_1d
     add-int/2addr v0, v1
 
-    .line 391
     iget-object v1, p0, Lkotlin/text/MatcherMatchResult;->input:Ljava/lang/CharSequence;
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->length()I

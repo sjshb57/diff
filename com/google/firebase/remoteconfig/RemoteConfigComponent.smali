@@ -95,21 +95,18 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 82
     invoke-static {}, Lcom/google/android/gms/common/util/DefaultClock;->getInstance()Lcom/google/android/gms/common/util/Clock;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->DEFAULT_CLOCK:Lcom/google/android/gms/common/util/Clock;
 
-    .line 83
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
     sput-object v0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->DEFAULT_RANDOM:Ljava/util/Random;
 
-    .line 88
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -151,7 +148,6 @@
 
     move-object v6, p6
 
-    .line 111
     invoke-direct/range {v0 .. v7}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;-><init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/abt/FirebaseABTesting;Lcom/google/firebase/inject/Provider;Z)V
 
     return-void
@@ -173,42 +169,32 @@
         }
     .end annotation
 
-    .line 130
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 85
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstances:Ljava/util/Map;
 
-    .line 100
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->customHeaders:Ljava/util/Map;
 
-    .line 131
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->context:Landroid/content/Context;
 
-    .line 132
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 133
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 134
     iput-object p4, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
-    .line 135
     iput-object p5, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseAbt:Lcom/google/firebase/abt/FirebaseABTesting;
 
-    .line 136
     iput-object p6, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->analyticsConnector:Lcom/google/firebase/inject/Provider;
 
-    .line 138
     invoke-virtual {p3}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
     move-result-object p3
@@ -219,12 +205,10 @@
 
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->appId:Ljava/lang/String;
 
-    .line 139
     invoke-static {p1}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$GlobalBackgroundListener;->access$000(Landroid/content/Context;)V
 
     if-eqz p7, :cond_34
 
-    .line 146
     new-instance p1, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$$ExternalSyntheticLambda1;
 
     invoke-direct {p1, p0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$$ExternalSyntheticLambda1;-><init>(Lcom/google/firebase/remoteconfig/RemoteConfigComponent;)V
@@ -238,7 +222,6 @@
 .method static synthetic access$100(Z)V
     .registers 1
 
-    .line 64
     invoke-static {p0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->notifyRCInstances(Z)V
 
     return-void
@@ -247,7 +230,6 @@
 .method private getCacheClient(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
     .registers 7
 
-    .line 247
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->appId:Ljava/lang/String;
 
     const/4 v1, 0x4
@@ -274,24 +256,20 @@
 
     aput-object p2, v1, p1
 
-    .line 248
     const-string p1, "%s_%s_%s_%s.json"
 
     invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 251
     iget-object p2, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->context:Landroid/content/Context;
 
-    .line 252
     invoke-static {v0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;
 
     move-result-object p1
 
-    .line 251
     invoke-static {p2, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->getInstance(Ljava/util/concurrent/Executor;Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;)Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     move-result-object p1
@@ -302,7 +280,6 @@
 .method private getGetHandler(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;
     .registers 5
 
-    .line 306
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->executor:Ljava/util/concurrent/ScheduledExecutorService;
@@ -326,7 +303,6 @@
         }
     .end annotation
 
-    .line 323
     invoke-static {p0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->isPrimaryApp(Lcom/google/firebase/FirebaseApp;)Z
 
     move-result p0
@@ -341,7 +317,6 @@
 
     if-eqz p0, :cond_14
 
-    .line 324
     new-instance p0, Lcom/google/firebase/remoteconfig/internal/Personalization;
 
     invoke-direct {p0, p2}, Lcom/google/firebase/remoteconfig/internal/Personalization;-><init>(Lcom/google/firebase/inject/Provider;)V
@@ -357,12 +332,10 @@
 .method private getRolloutsStateSubscriptionsHandler(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;
     .registers 5
 
-    .line 332
     invoke-static {p1, p2}, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->create(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;
 
     move-result-object p2
 
-    .line 334
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->executor:Ljava/util/concurrent/ScheduledExecutorService;
@@ -377,7 +350,6 @@
 
     const/4 v0, 0x4
 
-    .line 312
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -400,19 +372,16 @@
 
     aput-object p1, v0, p2
 
-    .line 313
     const-string p1, "%s_%s_%s_%s"
 
     invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 316
     invoke-virtual {p0, p1, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
 
-    .line 317
     new-instance p1, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-direct {p1, p0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;-><init>(Landroid/content/SharedPreferences;)V
@@ -423,7 +392,6 @@
 .method private static isAbtSupported(Lcom/google/firebase/FirebaseApp;Ljava/lang/String;)Z
     .registers 3
 
-    .line 352
     const-string v0, "firebase"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -452,7 +420,6 @@
 .method private static isPrimaryApp(Lcom/google/firebase/FirebaseApp;)Z
     .registers 2
 
-    .line 362
     invoke-virtual {p0}, Lcom/google/firebase/FirebaseApp;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -481,7 +448,6 @@
 
     monitor-enter v0
 
-    .line 366
     :try_start_3
     sget-object v1, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstancesStatic:Ljava/util/Map;
 
@@ -506,14 +472,12 @@
 
     check-cast v2, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
-    .line 367
     invoke-virtual {v2, p0}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->setConfigUpdateBackgroundState(Z)V
     :try_end_1c
     .catchall {:try_start_3 .. :try_end_1c} :catchall_1f
 
     goto :goto_d
 
-    .line 369
     :cond_1d
     monitor-exit v0
 
@@ -538,7 +502,6 @@
 
     monitor-enter p0
 
-    .line 211
     :try_start_5
     iget-object v1, v9, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstances:Ljava/util/Map;
 
@@ -548,12 +511,10 @@
 
     if-nez v1, :cond_56
 
-    .line 212
     new-instance v15, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
     iget-object v11, v9, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->context:Landroid/content/Context;
 
-    .line 217
     invoke-static/range {p1 .. p2}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->isAbtSupported(Lcom/google/firebase/FirebaseApp;Ljava/lang/String;)Z
 
     move-result v1
@@ -586,7 +547,6 @@
 
     move-object/from16 v8, p11
 
-    .line 225
     invoke-virtual/range {v1 .. v8}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getRealtime(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Landroid/content/Context;Ljava/lang/String;Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;)Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;
 
     move-result-object v22
@@ -617,20 +577,16 @@
 
     invoke-direct/range {v10 .. v23}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;-><init>(Landroid/content/Context;Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/abt/FirebaseABTesting;Ljava/util/concurrent/Executor;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;)V
 
-    .line 234
     invoke-virtual {v1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->startLoadingConfigsFromDisk()V
 
-    .line 235
     iget-object v2, v9, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstances:Ljava/util/Map;
 
     invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 236
     sget-object v2, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstancesStatic:Ljava/util/Map;
 
     invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 238
     :cond_56
     iget-object v1, v9, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->frcNamespaceInstances:Ljava/util/Map;
 
@@ -659,7 +615,6 @@
 
     monitor-enter p0
 
-    .line 166
     :try_start_1
     const-string v0, "fetch"
 
@@ -667,21 +622,18 @@
 
     move-result-object v7
 
-    .line 167
     const-string v0, "activate"
 
     invoke-direct {p0, p1, v0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getCacheClient(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     move-result-object v8
 
-    .line 168
     const-string v0, "defaults"
 
     invoke-direct {p0, p1, v0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getCacheClient(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     move-result-object v9
 
-    .line 169
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->context:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->appId:Ljava/lang/String;
@@ -690,24 +642,20 @@
 
     move-result-object v12
 
-    .line 171
     invoke-direct {p0, v8, v9}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getGetHandler(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;
 
     move-result-object v11
 
-    .line 172
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->analyticsConnector:Lcom/google/firebase/inject/Provider;
 
-    .line 173
     invoke-static {v0, p1, v1}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getPersonalization(Lcom/google/firebase/FirebaseApp;Ljava/lang/String;Lcom/google/firebase/inject/Provider;)Lcom/google/firebase/remoteconfig/internal/Personalization;
 
     move-result-object v0
 
     if-eqz v0, :cond_34
 
-    .line 175
     invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     new-instance v1, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$$ExternalSyntheticLambda0;
@@ -716,13 +664,11 @@
 
     invoke-virtual {v11, v1}, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;->addListener(Lcom/google/android/gms/common/util/BiConsumer;)V
 
-    .line 179
     :cond_34
     invoke-direct {p0, v8, v9}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getRolloutsStateSubscriptionsHandler(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;
 
     move-result-object v13
 
-    .line 181
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     iget-object v4, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
@@ -731,7 +677,6 @@
 
     iget-object v6, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 190
     invoke-virtual {p0, p1, v7, v12}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->getFetchHandler(Ljava/lang/String;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     move-result-object v10
@@ -740,7 +685,6 @@
 
     move-object v3, p1
 
-    .line 181
     invoke-virtual/range {v1 .. v13}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->get(Lcom/google/firebase/FirebaseApp;Ljava/lang/String;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/abt/FirebaseABTesting;Ljava/util/concurrent/Executor;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;)Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
     move-result-object p1
@@ -762,7 +706,6 @@
 .method getDefault()Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
     .registers 2
 
-    .line 154
     const-string v0, "firebase"
 
     invoke-virtual {p0, v0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->get(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
@@ -777,13 +720,11 @@
 
     monitor-enter p0
 
-    .line 273
     :try_start_1
     new-instance v10, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
-    .line 275
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-static {v0}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->isPrimaryApp(Lcom/google/firebase/FirebaseApp;)Z
@@ -812,7 +753,6 @@
 
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 280
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
     move-result-object v0
@@ -837,7 +777,6 @@
     :try_end_32
     .catchall {:try_start_1 .. :try_end_32} :catchall_34
 
-    .line 273
     monitor-exit p0
 
     return-object v10
@@ -853,7 +792,6 @@
 .method getFrcBackendApiClient(Ljava/lang/String;Ljava/lang/String;Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHttpClient;
     .registers 14
 
-    .line 258
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
@@ -864,17 +802,14 @@
 
     move-result-object v3
 
-    .line 259
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHttpClient;
 
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->context:Landroid/content/Context;
 
-    .line 264
     invoke-virtual {p3}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getFetchTimeoutInSeconds()J
 
     move-result-wide v6
 
-    .line 265
     invoke-virtual {p3}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getFetchTimeoutInSeconds()J
 
     move-result-wide v8
@@ -897,7 +832,6 @@
 
     monitor-enter p0
 
-    .line 293
     :try_start_2
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;
 
@@ -938,17 +872,14 @@
 .method public registerRolloutsStateSubscriber(Ljava/lang/String;Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsStateSubscriber;)V
     .registers 3
 
-    .line 382
     invoke-virtual {p0, p1}, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->get(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
     move-result-object p1
 
-    .line 383
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->getRolloutsStateSubscriptionsHandler()Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;
 
     move-result-object p1
 
-    .line 384
     invoke-virtual {p1, p2}, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler;->registerRolloutsStateSubscriber(Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsStateSubscriber;)V
 
     return-void
@@ -968,13 +899,11 @@
 
     monitor-enter p0
 
-    .line 243
     :try_start_1
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent;->customHeaders:Ljava/util/Map;
     :try_end_3
     .catchall {:try_start_1 .. :try_end_3} :catchall_5
 
-    .line 244
     monitor-exit p0
 
     return-void

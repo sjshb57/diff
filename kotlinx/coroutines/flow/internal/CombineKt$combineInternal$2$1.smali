@@ -214,7 +214,6 @@
 
     move-result-object v0
 
-    .line 29
     iget v1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->label:I
 
     const/4 v2, 0x0
@@ -249,7 +248,6 @@
     :cond_1a
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 31
     :try_start_1d
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->$flows:[Lkotlinx/coroutines/flow/Flow;
 
@@ -281,7 +279,6 @@
 
     return-object v0
 
-    .line 37
     :cond_38
     :goto_38
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->$nonClosed:Ljava/util/concurrent/atomic/AtomicInteger;
@@ -292,20 +289,17 @@
 
     if-nez p1, :cond_47
 
-    .line 38
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->$resultChannel:Lkotlinx/coroutines/channels/Channel;
 
     check-cast p1, Lkotlinx/coroutines/channels/SendChannel;
 
     invoke-static {p1, v2, v3, v2}, Lkotlinx/coroutines/channels/SendChannel$DefaultImpls;->close$default(Lkotlinx/coroutines/channels/SendChannel;Ljava/lang/Throwable;ILjava/lang/Object;)Z
 
-    .line 41
     :cond_47
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 37
     :goto_4a
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->$nonClosed:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -315,7 +309,6 @@
 
     if-nez v0, :cond_59
 
-    .line 38
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;->$resultChannel:Lkotlinx/coroutines/channels/Channel;
 
     check-cast v0, Lkotlinx/coroutines/channels/SendChannel;

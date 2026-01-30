@@ -27,7 +27,6 @@
 .method public constructor <init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .registers 13
 
-    .line 39
     sget-object v2, Lkotlin/jvm/internal/CallableReference;->NO_RECEIVER:Ljava/lang/Object;
 
     move-object v0, p0
@@ -50,19 +49,14 @@
 .method public constructor <init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
     .registers 7
 
-    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
     iput-object p2, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->receiver:Ljava/lang/Object;
 
-    .line 44
     iput-object p3, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->owner:Ljava/lang/Class;
 
-    .line 45
     iput-object p4, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->name:Ljava/lang/String;
 
-    .line 46
     iput-object p5, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->signature:Ljava/lang/String;
 
     and-int/lit8 p2, p6, 0x1
@@ -78,16 +72,13 @@
     :cond_12
     const/4 p2, 0x0
 
-    .line 47
     :goto_13
     iput-boolean p2, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->isTopLevel:Z
 
-    .line 48
     iput p1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->arity:I
 
     shr-int/lit8 p1, p6, 0x1
 
-    .line 49
     iput p1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->flags:I
 
     return-void
@@ -104,7 +95,6 @@
 
     return v0
 
-    .line 65
     :cond_4
     instance-of v1, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;
 
@@ -114,11 +104,9 @@
 
     return v2
 
-    .line 66
     :cond_a
     check-cast p1, Lkotlin/jvm/internal/AdaptedFunctionReference;
 
-    .line 67
     iget-boolean v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->isTopLevel:Z
 
     iget-boolean v3, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;->isTopLevel:Z
@@ -141,7 +129,6 @@
 
     iget-object v3, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;->receiver:Ljava/lang/Object;
 
-    .line 70
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -152,7 +139,6 @@
 
     iget-object v3, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;->owner:Ljava/lang/Class;
 
-    .line 71
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -163,7 +149,6 @@
 
     iget-object v3, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;->name:Ljava/lang/String;
 
-    .line 72
     invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -174,7 +159,6 @@
 
     iget-object p1, p1, Lkotlin/jvm/internal/AdaptedFunctionReference;->signature:Ljava/lang/String;
 
-    .line 73
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -193,7 +177,6 @@
 .method public getArity()I
     .registers 2
 
-    .line 54
     iget v0, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->arity:I
 
     return v0
@@ -202,7 +185,6 @@
 .method public getOwner()Lkotlin/reflect/KDeclarationContainer;
     .registers 3
 
-    .line 58
     iget-object v0, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->owner:Ljava/lang/Class;
 
     if-nez v0, :cond_6
@@ -216,7 +198,6 @@
 
     if-eqz v1, :cond_f
 
-    .line 59
     invoke-static {v0}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinPackage(Ljava/lang/Class;)Lkotlin/reflect/KDeclarationContainer;
 
     move-result-object v0
@@ -235,7 +216,6 @@
 .method public hashCode()I
     .registers 4
 
-    .line 78
     iget-object v0, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->receiver:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -254,7 +234,6 @@
     :goto_b
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 79
     iget-object v2, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->owner:Ljava/lang/Class;
 
     if-eqz v2, :cond_15
@@ -268,7 +247,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 80
     iget-object v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->name:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
@@ -279,7 +257,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 81
     iget-object v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->signature:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
@@ -290,7 +267,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 82
     iget-boolean v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->isTopLevel:Z
 
     if-eqz v1, :cond_31
@@ -307,14 +283,12 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 83
     iget v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->arity:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 84
     iget v1, p0, Lkotlin/jvm/internal/AdaptedFunctionReference;->flags:I
 
     add-int/2addr v0, v1
@@ -325,7 +299,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 90
     invoke-static {p0}, Lkotlin/jvm/internal/Reflection;->renderLambdaToString(Lkotlin/jvm/internal/FunctionBase;)Ljava/lang/String;
 
     move-result-object v0

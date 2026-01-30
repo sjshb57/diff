@@ -86,10 +86,8 @@
 
     const/4 v0, 0x0
 
-    .line 187
     invoke-direct {p0, p1, p2, v0}, Lkotlinx/coroutines/channels/BroadcastCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/channels/BroadcastChannel;Z)V
 
-    .line 188
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -108,7 +106,6 @@
 .method protected onStart()V
     .registers 3
 
-    .line 199
     iget-object v0, p0, Lkotlinx/coroutines/channels/LazyBroadcastCoroutine;->continuation:Lkotlin/coroutines/Continuation;
 
     move-object v1, p0
@@ -130,7 +127,6 @@
         }
     .end annotation
 
-    .line 192
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyBroadcastCoroutine;->get_channel()Lkotlinx/coroutines/channels/BroadcastChannel;
 
     move-result-object v0
@@ -139,7 +135,6 @@
 
     move-result-object v0
 
-    .line 194
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyBroadcastCoroutine;->start()Z
 
     return-object v0

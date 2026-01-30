@@ -59,7 +59,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 99
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,7 +89,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 184
     invoke-virtual {p1}, Ljava/lang/Class;->isAnonymousClass()Z
 
     move-result v0
@@ -101,7 +99,6 @@
 
     goto :goto_60
 
-    .line 185
     :cond_d
     invoke-virtual {p1}, Ljava/lang/Class;->isLocalClass()Z
 
@@ -111,7 +108,6 @@
 
     goto :goto_60
 
-    .line 186
     :cond_14
     invoke-virtual {p1}, Ljava/lang/Class;->isArray()Z
 
@@ -119,12 +115,10 @@
 
     if-eqz v0, :cond_4b
 
-    .line 187
     invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 189
     invoke-virtual {p1}, Ljava/lang/Class;->isPrimitive()Z
 
     move-result v0
@@ -166,12 +160,10 @@
     :cond_46
     if-nez v1, :cond_60
 
-    .line 191
     const-string v1, "kotlin.Array"
 
     goto :goto_60
 
-    .line 193
     :cond_4b
     invoke-static {}, Lkotlin/jvm/internal/ClassReference;->access$getClassFqNames$cp()Ljava/util/HashMap;
 
@@ -215,7 +207,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 166
     invoke-virtual {p1}, Ljava/lang/Class;->isAnonymousClass()Z
 
     move-result v0
@@ -226,7 +217,6 @@
 
     goto/16 :goto_b6
 
-    .line 167
     :cond_e
     invoke-virtual {p1}, Ljava/lang/Class;->isLocalClass()Z
 
@@ -234,12 +224,10 @@
 
     if-eqz v0, :cond_6c
 
-    .line 168
     invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 169
     invoke-virtual {p1}, Ljava/lang/Class;->getEnclosingMethod()Ljava/lang/reflect/Method;
 
     move-result-object v2
@@ -284,7 +272,6 @@
 
     goto/16 :goto_b6
 
-    .line 170
     :cond_43
     :goto_43
     invoke-virtual {p1}, Ljava/lang/Class;->getEnclosingConstructor()Ljava/lang/reflect/Constructor;
@@ -317,7 +304,6 @@
 
     goto :goto_b6
 
-    .line 171
     :cond_64
     invoke-static {v0, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -327,7 +313,6 @@
 
     goto :goto_b6
 
-    .line 173
     :cond_6c
     invoke-virtual {p1}, Ljava/lang/Class;->isArray()Z
 
@@ -335,12 +320,10 @@
 
     if-eqz v0, :cond_a1
 
-    .line 174
     invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 176
     invoke-virtual {p1}, Ljava/lang/Class;->isPrimitive()Z
 
     move-result v0
@@ -384,7 +367,6 @@
 
     goto :goto_40
 
-    .line 180
     :cond_a1
     invoke-static {}, Lkotlin/jvm/internal/ClassReference;->access$getSimpleNames$cp()Ljava/util/Map;
 
@@ -428,7 +410,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 197
     invoke-static {}, Lkotlin/jvm/internal/ClassReference;->access$getFUNCTION_CLASSES$cp()Ljava/util/Map;
 
     move-result-object v0
@@ -451,14 +432,12 @@
 
     move-result p2
 
-    .line 198
     invoke-static {p1, p2}, Lkotlin/jvm/internal/TypeIntrinsics;->isFunctionOfArity(Ljava/lang/Object;I)Z
 
     move-result p1
 
     return p1
 
-    .line 200
     :cond_21
     invoke-virtual {p2}, Ljava/lang/Class;->isPrimitive()Z
 
@@ -474,7 +453,6 @@
 
     move-result-object p2
 
-    .line 201
     :cond_2f
     invoke-virtual {p2, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 

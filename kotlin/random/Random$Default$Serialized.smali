@@ -63,7 +63,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 273
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +71,6 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 2
 
-    .line 276
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     return-object v0

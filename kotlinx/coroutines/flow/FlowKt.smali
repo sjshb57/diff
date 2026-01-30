@@ -52,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Ljava/lang/Iterable;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -74,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Ljava/util/Iterator;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -96,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Lkotlin/jvm/functions/Function0;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -122,7 +119,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -143,7 +139,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Lkotlin/ranges/IntRange;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -164,7 +159,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Lkotlin/ranges/LongRange;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -186,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow(Lkotlin/sequences/Sequence;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -213,7 +206,6 @@
         message = "\'BroadcastChannel\' is obsolete and all corresponding operators are deprecated in the favour of StateFlow and SharedFlow"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->asFlow(Lkotlinx/coroutines/channels/BroadcastChannel;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -232,7 +224,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow([I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -251,7 +242,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow([J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -271,7 +261,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->asFlow([Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -293,7 +282,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->asSharedFlow(Lkotlinx/coroutines/flow/MutableSharedFlow;)Lkotlinx/coroutines/flow/SharedFlow;
 
     move-result-object p0
@@ -315,7 +303,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->asStateFlow(Lkotlinx/coroutines/flow/MutableStateFlow;)Lkotlinx/coroutines/flow/StateFlow;
 
     move-result-object p0
@@ -330,7 +317,6 @@
         message = "Since 1.4.0, binary compatibility with earlier versions"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->buffer(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -354,7 +340,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->buffer(Lkotlinx/coroutines/flow/Flow;ILkotlinx/coroutines/channels/BufferOverflow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -365,7 +350,6 @@
 .method public static synthetic buffer$default(Lkotlinx/coroutines/flow/Flow;IILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 4
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->buffer$default(Lkotlinx/coroutines/flow/Flow;IILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -376,7 +360,6 @@
 .method public static synthetic buffer$default(Lkotlinx/coroutines/flow/Flow;ILkotlinx/coroutines/channels/BufferOverflow;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->buffer$default(Lkotlinx/coroutines/flow/Flow;ILkotlinx/coroutines/channels/BufferOverflow;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -407,7 +390,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->cache(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -437,7 +419,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->callbackFlow(Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -459,7 +440,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->cancellable(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -493,7 +473,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt;->catch(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -520,7 +499,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt;->catchImpl(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -550,7 +528,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->channelFlow(Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -573,7 +550,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->collect(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -611,7 +587,6 @@
         message = "Backwards compatibility with JS and K/N"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->collect(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -646,7 +621,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->collectIndexed(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -679,7 +653,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->collectLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -712,7 +685,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->collectWhile(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -744,7 +716,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine(Ljava/lang/Iterable;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -778,7 +749,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -816,7 +786,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -858,7 +827,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function5;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -904,7 +872,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function6;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -934,7 +901,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combine([Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -977,7 +943,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->combineLatest(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1024,7 +989,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->combineLatest(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1075,7 +1039,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->combineLatest(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function5;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1130,7 +1093,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->combineLatest(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function6;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1166,7 +1128,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform(Ljava/lang/Iterable;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1204,7 +1165,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1246,7 +1206,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function5;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1292,7 +1251,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function6;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1342,7 +1300,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function7;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1376,7 +1333,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->combineTransform([Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1415,7 +1371,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->compose(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1452,7 +1407,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->concatMap(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1483,7 +1437,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->concatWith(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1516,7 +1469,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->concatWith(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1538,7 +1490,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->conflate(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1560,7 +1511,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->consumeAsFlow(Lkotlinx/coroutines/channels/ReceiveChannel;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1585,7 +1535,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__CountKt;->count(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1618,7 +1567,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CountKt;->count(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1640,7 +1588,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->debounce(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1666,7 +1613,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->debounce(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1688,7 +1634,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->debounce-HG0u8IE(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1714,7 +1659,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->debounceDuration(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1745,7 +1689,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->delayEach(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1776,7 +1719,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->delayFlow(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1798,7 +1740,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1824,7 +1765,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1850,7 +1790,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->distinctUntilChangedBy(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1872,7 +1811,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->drop(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1902,7 +1840,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->dropWhile(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -1929,7 +1866,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->emitAll(Lkotlinx/coroutines/flow/FlowCollector;Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1956,7 +1892,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->emitAll(Lkotlinx/coroutines/flow/FlowCollector;Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1976,7 +1911,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->emptyFlow()Lkotlinx/coroutines/flow/Flow;
 
     move-result-object v0
@@ -1994,7 +1928,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->ensureActive(Lkotlinx/coroutines/flow/FlowCollector;)V
 
     return-void
@@ -2022,7 +1955,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->filter(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2044,7 +1976,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->filterIsInstance(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2068,7 +1999,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->filterIsInstance(Lkotlinx/coroutines/flow/Flow;Lkotlin/reflect/KClass;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2098,7 +2028,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->filterNot(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2120,7 +2049,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->filterNotNull(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2143,7 +2071,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->first(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2174,7 +2101,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->first(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2197,7 +2123,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->firstOrNull(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2228,7 +2153,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->firstOrNull(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2249,7 +2173,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->fixedPeriodTicker(Lkotlinx/coroutines/CoroutineScope;JJ)Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -2260,7 +2183,6 @@
 .method public static synthetic fixedPeriodTicker$default(Lkotlinx/coroutines/CoroutineScope;JJILjava/lang/Object;)Lkotlinx/coroutines/channels/ReceiveChannel;
     .registers 7
 
-    .line 1
     invoke-static/range {p0 .. p6}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->fixedPeriodTicker$default(Lkotlinx/coroutines/CoroutineScope;JJILjava/lang/Object;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -2301,7 +2223,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->flatMap(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2333,7 +2254,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flatMapConcat(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2365,7 +2285,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flatMapLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2397,7 +2316,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flatMapMerge(Lkotlinx/coroutines/flow/Flow;ILkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2408,7 +2326,6 @@
 .method public static synthetic flatMapMerge$default(Lkotlinx/coroutines/flow/Flow;ILkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flatMapMerge$default(Lkotlinx/coroutines/flow/Flow;ILkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2441,7 +2358,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->flatten(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2465,7 +2381,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flattenConcat(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2489,7 +2404,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flattenMerge(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2500,7 +2414,6 @@
 .method public static synthetic flattenMerge$default(Lkotlinx/coroutines/flow/Flow;IILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 4
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->flattenMerge$default(Lkotlinx/coroutines/flow/Flow;IILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2530,7 +2443,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->flow(Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2564,7 +2476,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->flowCombine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2602,7 +2513,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->flowCombineTransform(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2622,7 +2532,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->flowOf(Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2642,7 +2551,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__BuildersKt;->flowOf([Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2666,7 +2574,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ContextKt;->flowOn(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2697,7 +2604,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->fold(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2734,7 +2640,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->forEach(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)V
 
     return-void
@@ -2743,7 +2648,6 @@
 .method public static final getDEFAULT_CONCURRENCY()I
     .registers 1
 
-    .line 1
     invoke-static {}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->getDEFAULT_CONCURRENCY()I
 
     move-result v0
@@ -2754,7 +2658,6 @@
 .method public static synthetic getDEFAULT_CONCURRENCY_PROPERTY_NAME$annotations()V
     .registers 0
 
-    .line 1
     invoke-static {}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->getDEFAULT_CONCURRENCY_PROPERTY_NAME$annotations()V
 
     return-void
@@ -2775,7 +2678,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->last(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2798,7 +2700,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->lastOrNull(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2821,7 +2722,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt;->launchIn(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;)Lkotlinx/coroutines/Job;
 
     move-result-object p0
@@ -2851,7 +2751,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->map(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2881,7 +2780,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->mapLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2911,7 +2809,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->mapNotNull(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2935,7 +2832,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->merge(Ljava/lang/Iterable;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2968,7 +2864,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->merge(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -2990,7 +2885,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->merge([Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3001,7 +2895,6 @@
 .method public static final noImpl()Ljava/lang/Void;
     .registers 1
 
-    .line 1
     invoke-static {}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->noImpl()Ljava/lang/Void;
 
     move-result-object v0
@@ -3030,7 +2923,6 @@
         message = "Collect flow in the desired context instead"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->observeOn(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3064,7 +2956,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->onCompletion(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3094,7 +2985,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->onEach(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3126,7 +3016,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->onEmpty(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3159,7 +3048,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->onErrorResume(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3192,7 +3080,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->onErrorResumeNext(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3223,7 +3110,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->onErrorReturn(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3259,7 +3145,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->onErrorReturn(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3270,7 +3155,6 @@
 .method public static synthetic onErrorReturn$default(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->onErrorReturn$default(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3302,7 +3186,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->onStart(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3334,7 +3217,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->onSubscription(Lkotlinx/coroutines/flow/SharedFlow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/SharedFlow;
 
     move-result-object p0
@@ -3358,7 +3240,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->produceIn(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -3389,7 +3270,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->publish(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3420,7 +3300,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->publish(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3449,7 +3328,6 @@
         message = "Collect flow in the desired context instead"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->publishOn(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3471,7 +3349,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->receiveAsFlow(Lkotlinx/coroutines/channels/ReceiveChannel;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3500,7 +3377,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->reduce(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -3531,7 +3407,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->replay(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3562,7 +3437,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->replay(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3594,7 +3468,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt;->retry(Lkotlinx/coroutines/flow/Flow;JLkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3605,7 +3478,6 @@
 .method public static synthetic retry$default(Lkotlinx/coroutines/flow/Flow;JLkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
     .registers 6
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt;->retry$default(Lkotlinx/coroutines/flow/Flow;JLkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3641,7 +3513,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ErrorsKt;->retryWhen(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3671,7 +3542,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->runningFold(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3699,7 +3569,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->runningReduce(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3721,7 +3590,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->sample(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3743,7 +3611,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->sample-HG0u8IE(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3773,7 +3640,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->scan(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3812,7 +3678,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->scanFold(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3849,7 +3714,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->scanReduce(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3874,7 +3738,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->shareIn(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;Lkotlinx/coroutines/flow/SharingStarted;I)Lkotlinx/coroutines/flow/SharedFlow;
 
     move-result-object p0
@@ -3885,7 +3748,6 @@
 .method public static synthetic shareIn$default(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;Lkotlinx/coroutines/flow/SharingStarted;IILjava/lang/Object;)Lkotlinx/coroutines/flow/SharedFlow;
     .registers 6
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->shareIn$default(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;Lkotlinx/coroutines/flow/SharingStarted;IILjava/lang/Object;)Lkotlinx/coroutines/flow/SharedFlow;
 
     move-result-object p0
@@ -3908,7 +3770,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->single(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -3931,7 +3792,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__ReduceKt;->singleOrNull(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -3962,7 +3822,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->skip(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -3993,7 +3852,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->startWith(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4026,7 +3884,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->startWith(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4052,7 +3909,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->stateIn(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4077,7 +3933,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ShareKt;->stateIn(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/CoroutineScope;Lkotlinx/coroutines/flow/SharingStarted;Ljava/lang/Object;)Lkotlinx/coroutines/flow/StateFlow;
 
     move-result-object p0
@@ -4102,7 +3957,6 @@
         message = "Use \'launchIn\' with \'onEach\', \'onCompletion\' and \'catch\' instead"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->subscribe(Lkotlinx/coroutines/flow/Flow;)V
 
     return-void
@@ -4133,7 +3987,6 @@
         message = "Use \'launchIn\' with \'onEach\', \'onCompletion\' and \'catch\' instead"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->subscribe(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)V
 
     return-void
@@ -4174,7 +4027,6 @@
         message = "Use \'launchIn\' with \'onEach\', \'onCompletion\' and \'catch\' instead"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->subscribe(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
 
     return-void
@@ -4201,7 +4053,6 @@
         message = "Use \'flowOn\' instead"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->subscribeOn(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4242,7 +4093,6 @@
         .end subannotation
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MigrationKt;->switchMap(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4264,7 +4114,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->take(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4294,7 +4143,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->takeWhile(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4316,7 +4164,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__DelayKt;->timeout-HG0u8IE(Lkotlinx/coroutines/flow/Flow;J)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4341,7 +4188,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt;->toCollection(Lkotlinx/coroutines/flow/Flow;Ljava/util/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4368,7 +4214,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt;->toList(Lkotlinx/coroutines/flow/Flow;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4379,7 +4224,6 @@
 .method public static synthetic toList$default(Lkotlinx/coroutines/flow/Flow;Ljava/util/List;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt;->toList$default(Lkotlinx/coroutines/flow/Flow;Ljava/util/List;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4406,7 +4250,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt;->toSet(Lkotlinx/coroutines/flow/Flow;Ljava/util/Set;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4417,7 +4260,6 @@
 .method public static synthetic toSet$default(Lkotlinx/coroutines/flow/Flow;Ljava/util/Set;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt;->toSet$default(Lkotlinx/coroutines/flow/Flow;Ljava/util/Set;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -4451,7 +4293,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->transform(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4485,7 +4326,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__MergeKt;->transformLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4519,7 +4359,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__LimitKt;->transformWhile(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4553,7 +4392,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt__EmittersKt;->unsafeTransform(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4576,7 +4414,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt__TransformKt;->withIndex(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -4610,7 +4447,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->zip(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0

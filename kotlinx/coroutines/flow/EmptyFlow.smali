@@ -53,7 +53,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -76,7 +75,6 @@
         }
     .end annotation
 
-    .line 145
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

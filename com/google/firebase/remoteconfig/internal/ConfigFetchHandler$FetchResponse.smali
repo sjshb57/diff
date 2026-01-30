@@ -34,19 +34,14 @@
 .method private constructor <init>(Ljava/util/Date;ILcom/google/firebase/remoteconfig/internal/ConfigContainer;Ljava/lang/String;)V
     .registers 5
 
-    .line 631
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 632
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->fetchTime:Ljava/util/Date;
 
-    .line 633
     iput p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->status:I
 
-    .line 634
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->fetchedConfigs:Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
-    .line 635
     iput-object p4, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->lastFetchETag:Ljava/lang/String;
 
     return-void
@@ -55,7 +50,6 @@
 .method public static forBackendHasNoUpdates(Ljava/util/Date;Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
     .registers 5
 
-    .line 651
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
 
     const/4 v1, 0x1
@@ -70,10 +64,8 @@
 .method public static forBackendUpdatesFetched(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
     .registers 5
 
-    .line 640
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
 
-    .line 641
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getFetchTime()Ljava/util/Date;
 
     move-result-object v1
@@ -88,7 +80,6 @@
 .method public static forLocalStorageUsed(Ljava/util/Date;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
     .registers 4
 
-    .line 659
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
 
     const/4 v1, 0x2
@@ -105,7 +96,6 @@
 .method getFetchTime()Ljava/util/Date;
     .registers 2
 
-    .line 667
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->fetchTime:Ljava/util/Date;
 
     return-object v0
@@ -114,7 +104,6 @@
 .method public getFetchedConfigs()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
     .registers 2
 
-    .line 685
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->fetchedConfigs:Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     return-object v0
@@ -123,7 +112,6 @@
 .method getLastFetchETag()Ljava/lang/String;
     .registers 2
 
-    .line 672
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->lastFetchETag:Ljava/lang/String;
 
     return-object v0
@@ -132,7 +120,6 @@
 .method getStatus()I
     .registers 2
 
-    .line 677
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->status:I
 
     return v0

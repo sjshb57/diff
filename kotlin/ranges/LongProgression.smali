@@ -96,7 +96,6 @@
 .method public constructor <init>(JJJ)V
     .registers 9
 
-    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
@@ -111,22 +110,18 @@
 
     if-eqz v0, :cond_1a
 
-    .line 154
     iput-wide p1, p0, Lkotlin/ranges/LongProgression;->first:J
 
-    .line 159
     invoke-static/range {p1 .. p6}, Lkotlin/internal/ProgressionUtilKt;->getProgressionLastElement(JJJ)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lkotlin/ranges/LongProgression;->last:J
 
-    .line 164
     iput-wide p5, p0, Lkotlin/ranges/LongProgression;->step:J
 
     return-void
 
-    .line 148
     :cond_1a
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -136,7 +131,6 @@
 
     throw p1
 
-    .line 147
     :cond_22
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -152,7 +146,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 177
     instance-of v0, p1, Lkotlin/ranges/LongProgression;
 
     if-eqz v0, :cond_2f
@@ -173,7 +166,6 @@
 
     if-nez v0, :cond_2d
 
-    .line 178
     :cond_13
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->first:J
 
@@ -216,7 +208,6 @@
 .method public final getFirst()J
     .registers 3
 
-    .line 154
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->first:J
 
     return-wide v0
@@ -225,7 +216,6 @@
 .method public final getLast()J
     .registers 3
 
-    .line 159
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->last:J
 
     return-wide v0
@@ -234,7 +224,6 @@
 .method public final getStep()J
     .registers 3
 
-    .line 164
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     return-wide v0
@@ -243,7 +232,6 @@
 .method public hashCode()I
     .registers 10
 
-    .line 181
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
@@ -296,7 +284,6 @@
 .method public isEmpty()Z
     .registers 8
 
-    .line 174
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     const-wide/16 v2, 0x0
@@ -336,7 +323,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .registers 2
 
-    .line 139
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->iterator()Lkotlin/collections/LongIterator;
 
     move-result-object v0
@@ -349,7 +335,6 @@
 .method public iterator()Lkotlin/collections/LongIterator;
     .registers 9
 
-    .line 166
     new-instance v7, Lkotlin/ranges/LongProgressionIterator;
 
     iget-wide v1, p0, Lkotlin/ranges/LongProgression;->first:J
@@ -370,7 +355,6 @@
 .method public toString()Ljava/lang/String;
     .registers 5
 
-    .line 183
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     const-wide/16 v2, 0x0

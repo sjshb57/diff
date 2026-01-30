@@ -58,7 +58,6 @@
 
     const/4 v0, 0x0
 
-    .line 34
     :try_start_8
     const-string v1, "android.os.Build$VERSION"
 
@@ -93,7 +92,6 @@
     :goto_20
     if-eqz v1, :cond_2c
 
-    .line 37
     move-object v2, v1
 
     check-cast v2, Ljava/lang/Number;
@@ -115,7 +113,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

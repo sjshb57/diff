@@ -65,7 +65,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -88,7 +87,6 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 62
     iget-object p1, p0, Lkotlin/properties/NotNullVar;->value:Ljava/lang/Object;
 
     if-eqz p1, :cond_a
@@ -144,7 +142,6 @@
 
     invoke-static {p3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 66
     iput-object p3, p0, Lkotlin/properties/NotNullVar;->value:Ljava/lang/Object;
 
     return-void

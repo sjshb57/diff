@@ -68,7 +68,6 @@
         }
     .end annotation
 
-    .line 271
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/CancellableFlowImpl;->flow:Lkotlinx/coroutines/flow/Flow;
@@ -93,7 +92,6 @@
         }
     .end annotation
 
-    .line 273
     iget-object v0, p0, Lkotlinx/coroutines/flow/CancellableFlowImpl;->flow:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v1, Lkotlinx/coroutines/flow/CancellableFlowImpl$collect$2;

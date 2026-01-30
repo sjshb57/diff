@@ -86,7 +86,6 @@
 
     iput-object p2, p0, Lkotlin/text/StringsKt___StringsKt$groupingBy$1;->$keySelector:Lkotlin/jvm/functions/Function1;
 
-    .line 957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -102,7 +101,6 @@
         }
     .end annotation
 
-    .line 959
     iget-object v0, p0, Lkotlin/text/StringsKt___StringsKt$groupingBy$1;->$keySelector:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
@@ -119,7 +117,6 @@
 .method public bridge synthetic keyOf(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 957
     check-cast p1, Ljava/lang/Character;
 
     invoke-virtual {p1}, Ljava/lang/Character;->charValue()C
@@ -144,7 +141,6 @@
         }
     .end annotation
 
-    .line 958
     iget-object v0, p0, Lkotlin/text/StringsKt___StringsKt$groupingBy$1;->$this_groupingBy:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Lkotlin/text/StringsKt;->iterator(Ljava/lang/CharSequence;)Lkotlin/collections/CharIterator;

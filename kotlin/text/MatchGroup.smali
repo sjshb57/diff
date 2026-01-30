@@ -59,7 +59,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 75
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/text/MatchGroup;->value:Ljava/lang/String;
@@ -182,7 +181,6 @@
 .method public final getRange()Lkotlin/ranges/IntRange;
     .registers 2
 
-    .line 75
     iget-object v0, p0, Lkotlin/text/MatchGroup;->range:Lkotlin/ranges/IntRange;
 
     return-object v0
@@ -191,7 +189,6 @@
 .method public final getValue()Ljava/lang/String;
     .registers 2
 
-    .line 75
     iget-object v0, p0, Lkotlin/text/MatchGroup;->value:Ljava/lang/String;
 
     return-object v0

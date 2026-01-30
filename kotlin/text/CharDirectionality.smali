@@ -259,7 +259,6 @@
 .method static constructor <clinit>()V
     .registers 4
 
-    .line 19
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const/4 v1, -0x1
@@ -272,7 +271,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->UNDEFINED:Lkotlin/text/CharDirectionality;
 
-    .line 24
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "LEFT_TO_RIGHT"
@@ -283,7 +281,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->LEFT_TO_RIGHT:Lkotlin/text/CharDirectionality;
 
-    .line 29
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "RIGHT_TO_LEFT"
@@ -294,7 +291,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->RIGHT_TO_LEFT:Lkotlin/text/CharDirectionality;
 
-    .line 34
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "RIGHT_TO_LEFT_ARABIC"
@@ -305,7 +301,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->RIGHT_TO_LEFT_ARABIC:Lkotlin/text/CharDirectionality;
 
-    .line 39
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "EUROPEAN_NUMBER"
@@ -316,7 +311,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->EUROPEAN_NUMBER:Lkotlin/text/CharDirectionality;
 
-    .line 44
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "EUROPEAN_NUMBER_SEPARATOR"
@@ -327,7 +321,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->EUROPEAN_NUMBER_SEPARATOR:Lkotlin/text/CharDirectionality;
 
-    .line 49
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "EUROPEAN_NUMBER_TERMINATOR"
@@ -338,7 +331,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->EUROPEAN_NUMBER_TERMINATOR:Lkotlin/text/CharDirectionality;
 
-    .line 54
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "ARABIC_NUMBER"
@@ -349,7 +341,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->ARABIC_NUMBER:Lkotlin/text/CharDirectionality;
 
-    .line 59
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "COMMON_NUMBER_SEPARATOR"
@@ -360,7 +351,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->COMMON_NUMBER_SEPARATOR:Lkotlin/text/CharDirectionality;
 
-    .line 64
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "NONSPACING_MARK"
@@ -371,7 +361,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->NONSPACING_MARK:Lkotlin/text/CharDirectionality;
 
-    .line 69
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "BOUNDARY_NEUTRAL"
@@ -382,7 +371,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->BOUNDARY_NEUTRAL:Lkotlin/text/CharDirectionality;
 
-    .line 74
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "PARAGRAPH_SEPARATOR"
@@ -393,7 +381,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->PARAGRAPH_SEPARATOR:Lkotlin/text/CharDirectionality;
 
-    .line 79
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "SEGMENT_SEPARATOR"
@@ -404,7 +391,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->SEGMENT_SEPARATOR:Lkotlin/text/CharDirectionality;
 
-    .line 84
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "WHITESPACE"
@@ -415,7 +401,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->WHITESPACE:Lkotlin/text/CharDirectionality;
 
-    .line 89
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "OTHER_NEUTRALS"
@@ -426,7 +411,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->OTHER_NEUTRALS:Lkotlin/text/CharDirectionality;
 
-    .line 94
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "LEFT_TO_RIGHT_EMBEDDING"
@@ -437,7 +421,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->LEFT_TO_RIGHT_EMBEDDING:Lkotlin/text/CharDirectionality;
 
-    .line 99
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "LEFT_TO_RIGHT_OVERRIDE"
@@ -448,7 +431,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->LEFT_TO_RIGHT_OVERRIDE:Lkotlin/text/CharDirectionality;
 
-    .line 104
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "RIGHT_TO_LEFT_EMBEDDING"
@@ -459,7 +441,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->RIGHT_TO_LEFT_EMBEDDING:Lkotlin/text/CharDirectionality;
 
-    .line 109
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "RIGHT_TO_LEFT_OVERRIDE"
@@ -470,7 +451,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->RIGHT_TO_LEFT_OVERRIDE:Lkotlin/text/CharDirectionality;
 
-    .line 114
     new-instance v0, Lkotlin/text/CharDirectionality;
 
     const-string v1, "POP_DIRECTIONAL_FORMAT"
@@ -495,7 +475,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->Companion:Lkotlin/text/CharDirectionality$Companion;
 
-    .line 118
     sget-object v0, Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;->INSTANCE:Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;
 
     check-cast v0, Lkotlin/jvm/functions/Function0;
@@ -517,7 +496,6 @@
         }
     .end annotation
 
-    .line 13
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput p3, p0, Lkotlin/text/CharDirectionality;->value:I
@@ -528,7 +506,6 @@
 .method public static final synthetic access$getDirectionalityMap$delegate$cp()Lkotlin/Lazy;
     .registers 1
 
-    .line 13
     sget-object v0, Lkotlin/text/CharDirectionality;->directionalityMap$delegate:Lkotlin/Lazy;
 
     return-object v0
@@ -567,7 +544,6 @@
 .method public final getValue()I
     .registers 2
 
-    .line 13
     iget v0, p0, Lkotlin/text/CharDirectionality;->value:I
 
     return v0

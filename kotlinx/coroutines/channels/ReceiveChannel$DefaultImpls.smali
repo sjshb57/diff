@@ -34,7 +34,6 @@
 
     const/4 v0, 0x0
 
-    .line 303
     invoke-interface {p0, v0}, Lkotlinx/coroutines/channels/ReceiveChannel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -51,7 +50,6 @@
 
     const/4 p1, 0x0
 
-    .line 297
     :cond_7
     invoke-interface {p0, p1}, Lkotlinx/coroutines/channels/ReceiveChannel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
@@ -78,7 +76,6 @@
 
     const/4 p1, 0x0
 
-    .line 309
     :cond_7
     invoke-interface {p0, p1}, Lkotlinx/coroutines/channels/ReceiveChannel;->cancel(Ljava/lang/Throwable;)Z
 
@@ -110,7 +107,6 @@
         }
     .end annotation
 
-    .line 387
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.channels.BufferedChannel<E of kotlinx.coroutines.channels.ReceiveChannel>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -171,12 +167,10 @@
         .end subannotation
     .end annotation
 
-    .line 341
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->tryReceive-PtdJZtk()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 342
     invoke-static {p0}, Lkotlinx/coroutines/channels/ChannelResult;->isSuccess-impl(Ljava/lang/Object;)Z
 
     move-result v0
@@ -189,7 +183,6 @@
 
     return-object p0
 
-    .line 343
     :cond_f
     invoke-static {p0}, Lkotlinx/coroutines/channels/ChannelResult;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
 
@@ -269,7 +262,6 @@
 
     move-result-object v1
 
-    .line 372
     iget v2, v0, Lkotlinx/coroutines/channels/ReceiveChannel$receiveOrNull$1;->label:I
 
     const/4 v3, 0x1

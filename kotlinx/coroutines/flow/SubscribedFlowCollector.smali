@@ -104,13 +104,10 @@
         }
     .end annotation
 
-    .line 412
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 413
     iput-object p1, p0, Lkotlinx/coroutines/flow/SubscribedFlowCollector;->collector:Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 414
     iput-object p2, p0, Lkotlinx/coroutines/flow/SubscribedFlowCollector;->action:Lkotlin/jvm/functions/Function2;
 
     return-void
@@ -189,7 +186,6 @@
 
     move-result-object v1
 
-    .line 416
     iget v2, v0, Lkotlinx/coroutines/flow/SubscribedFlowCollector$onSubscription$1;->label:I
 
     const/4 v3, 0x2
@@ -234,20 +230,16 @@
     :cond_41
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 417
     new-instance v2, Lkotlinx/coroutines/flow/internal/SafeCollector;
 
     iget-object p1, p0, Lkotlinx/coroutines/flow/SubscribedFlowCollector;->collector:Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 427
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v5
 
-    .line 417
     invoke-direct {v2, p1, v5}, Lkotlinx/coroutines/flow/internal/SafeCollector;-><init>(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 419
     :try_start_4f
     iget-object p1, p0, Lkotlinx/coroutines/flow/SubscribedFlowCollector;->action:Lkotlin/jvm/functions/Function2;
 
@@ -270,11 +262,9 @@
     :cond_5e
     move-object v4, p0
 
-    .line 421
     :goto_5f
     invoke-virtual {v2}, Lkotlinx/coroutines/flow/internal/SafeCollector;->releaseIntercepted()V
 
-    .line 423
     iget-object p1, v4, Lkotlinx/coroutines/flow/SubscribedFlowCollector;->collector:Lkotlinx/coroutines/flow/FlowCollector;
 
     instance-of v2, p1, Lkotlinx/coroutines/flow/SubscribedFlowCollector;
@@ -299,7 +289,6 @@
 
     return-object v1
 
-    .line 424
     :cond_78
     :goto_78
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -314,7 +303,6 @@
     :catchall_7e
     move-exception p1
 
-    .line 421
     invoke-virtual {v2}, Lkotlinx/coroutines/flow/internal/SafeCollector;->releaseIntercepted()V
 
     throw p1

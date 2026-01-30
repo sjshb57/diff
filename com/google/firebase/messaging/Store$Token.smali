@@ -36,7 +36,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 132
     sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x7
@@ -53,16 +52,12 @@
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;J)V
     .registers 5
 
-    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 140
     iput-object p1, p0, Lcom/google/firebase/messaging/Store$Token;->token:Ljava/lang/String;
 
-    .line 141
     iput-object p2, p0, Lcom/google/firebase/messaging/Store$Token;->appVersion:Ljava/lang/String;
 
-    .line 142
     iput-wide p3, p0, Lcom/google/firebase/messaging/Store$Token;->timestamp:J
 
     return-void
@@ -71,28 +66,23 @@
 .method static encode(Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
     .registers 6
 
-    .line 169
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 170
     const-string v1, "token"
 
     invoke-virtual {v0, v1, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 171
     const-string p0, "appVersion"
 
     invoke-virtual {v0, p0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 172
     const-string p0, "timestamp"
 
     invoke-virtual {v0, p0, p2, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 173
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -104,7 +94,6 @@
     :catch_19
     move-exception p0
 
-    .line 175
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string p2, "Failed to encode token: "
@@ -129,7 +118,6 @@
 .method static parse(Ljava/lang/String;)Lcom/google/firebase/messaging/Store$Token;
     .registers 7
 
-    .line 146
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -140,7 +128,6 @@
 
     return-object v1
 
-    .line 149
     :cond_8
     const-string v0, "{"
 
@@ -150,32 +137,27 @@
 
     if-eqz v0, :cond_42
 
-    .line 152
     :try_start_10
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 153
     new-instance p0, Lcom/google/firebase/messaging/Store$Token;
 
     const-string v2, "token"
 
-    .line 154
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "appVersion"
 
-    .line 155
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v4, "timestamp"
 
-    .line 156
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v4
@@ -189,7 +171,6 @@
     :catch_2d
     move-exception p0
 
-    .line 158
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Failed to parse token: "
@@ -208,7 +189,6 @@
 
     return-object v1
 
-    .line 163
     :cond_42
     new-instance v0, Lcom/google/firebase/messaging/Store$Token;
 
@@ -224,7 +204,6 @@
 .method needsRefresh(Ljava/lang/String;)Z
     .registers 8
 
-    .line 189
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -241,7 +220,6 @@
 
     iget-object v0, p0, Lcom/google/firebase/messaging/Store$Token;->appVersion:Ljava/lang/String;
 
-    .line 190
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1

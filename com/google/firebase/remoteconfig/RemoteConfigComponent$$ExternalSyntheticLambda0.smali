@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/Personalization;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/remoteconfig/internal/Personalization;
@@ -27,7 +26,6 @@
 .method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/RemoteConfigComponent$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/remoteconfig/internal/Personalization;
 
     check-cast p1, Ljava/lang/String;

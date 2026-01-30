@@ -62,10 +62,8 @@
 
     new-instance v0, Lcom/onevcat/uniwebview/UniWebViewProxyActivity$a;
 
-    .line 1
     invoke-direct {v0}, Lcom/onevcat/uniwebview/UniWebViewProxyActivity$a;-><init>()V
 
-    .line 2
     sput-object v0, Lcom/onevcat/uniwebview/UniWebViewProxyActivity;->Companion:Lcom/onevcat/uniwebview/UniWebViewProxyActivity$a;
 
     return-void
@@ -121,10 +119,8 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v0, La/p$a;->b:Ljava/util/LinkedHashMap;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -142,13 +138,10 @@
     :cond_22
     sget-object p1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object p1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v0, "message"
 
     const-string v1, "Failed to pass activity handler for this proxy. Please check implementation."
@@ -159,7 +152,6 @@
 
     invoke-virtual {p1, v0, v1}, La/i;->a(ILjava/lang/String;)V
 
-    .line 6
     new-instance p1, Ljava/lang/RuntimeException;
 
     const-string v0, "null activity handler found!"

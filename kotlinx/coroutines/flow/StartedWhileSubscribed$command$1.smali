@@ -182,7 +182,6 @@
 
     move-result-object v0
 
-    .line 176
     iget v1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$1;->label:I
 
     const/4 v2, 0x5
@@ -264,7 +263,6 @@
 
     if-lez p1, :cond_57
 
-    .line 178
     sget-object p1, Lkotlinx/coroutines/flow/SharingCommand;->START:Lkotlinx/coroutines/flow/SharingCommand;
 
     move-object v2, p0
@@ -281,7 +279,6 @@
 
     return-object v0
 
-    .line 180
     :cond_57
     iget-object p1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$1;->this$0:Lkotlinx/coroutines/flow/StartedWhileSubscribed;
 
@@ -305,7 +302,6 @@
 
     return-object v0
 
-    .line 181
     :cond_6b
     :goto_6b
     iget-object p1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$1;->this$0:Lkotlinx/coroutines/flow/StartedWhileSubscribed;
@@ -320,7 +316,6 @@
 
     if-lez p1, :cond_9b
 
-    .line 182
     sget-object p1, Lkotlinx/coroutines/flow/SharingCommand;->STOP:Lkotlinx/coroutines/flow/SharingCommand;
 
     move-object v5, p0
@@ -339,7 +334,6 @@
 
     return-object v0
 
-    .line 183
     :cond_87
     :goto_87
     iget-object p1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$1;->this$0:Lkotlinx/coroutines/flow/StartedWhileSubscribed;
@@ -364,7 +358,6 @@
 
     return-object v0
 
-    .line 185
     :cond_9b
     :goto_9b
     sget-object p1, Lkotlinx/coroutines/flow/SharingCommand;->STOP_AND_RESET_REPLAY_CACHE:Lkotlinx/coroutines/flow/SharingCommand;
@@ -387,7 +380,6 @@
 
     return-object v0
 
-    .line 187
     :cond_ac
     :goto_ac
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

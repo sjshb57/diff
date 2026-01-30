@@ -196,7 +196,6 @@
 
     move-result-object v0
 
-    .line 277
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2;->label:I
 
     const/4 v2, 0x1
@@ -247,7 +246,6 @@
 
     check-cast v1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 278
     new-instance v4, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$values$1;
 
     iget-object v5, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2;->$this_sample:Lkotlinx/coroutines/flow/Flow;
@@ -272,12 +270,10 @@
 
     move-result-object v11
 
-    .line 281
     new-instance v12, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v12}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 282
     iget-wide v5, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2;->$periodMillis:J
 
     const/4 v9, 0x2
@@ -298,7 +294,6 @@
 
     move-object v1, p1
 
-    .line 283
     :cond_59
     :goto_59
     iget-object p1, v4, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
@@ -307,7 +302,6 @@
 
     if-eq p1, v7, :cond_98
 
-    .line 409
     new-instance p1, Lkotlinx/coroutines/selects/SelectImplementation;
 
     invoke-interface {p0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -316,12 +310,10 @@
 
     invoke-direct {p1, v7}, Lkotlinx/coroutines/selects/SelectImplementation;-><init>(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 410
     move-object v7, p1
 
     check-cast v7, Lkotlinx/coroutines/selects/SelectBuilder;
 
-    .line 285
     invoke-interface {v5}, Lkotlinx/coroutines/channels/ReceiveChannel;->getOnReceiveCatching()Lkotlinx/coroutines/selects/SelectClause1;
 
     move-result-object v8
@@ -334,7 +326,6 @@
 
     invoke-interface {v7, v8, v9}, Lkotlinx/coroutines/selects/SelectBuilder;->invoke(Lkotlinx/coroutines/selects/SelectClause1;Lkotlin/jvm/functions/Function2;)V
 
-    .line 296
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ReceiveChannel;->getOnReceive()Lkotlinx/coroutines/selects/SelectClause1;
 
     move-result-object v8
@@ -347,7 +338,6 @@
 
     invoke-interface {v7, v8, v9}, Lkotlinx/coroutines/selects/SelectBuilder;->invoke(Lkotlinx/coroutines/selects/SelectClause1;Lkotlin/jvm/functions/Function2;)V
 
-    .line 413
     iput-object v6, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2;->L$0:Ljava/lang/Object;
 
     iput-object v5, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2;->L$1:Ljava/lang/Object;
@@ -366,7 +356,6 @@
 
     return-object v0
 
-    .line 303
     :cond_98
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

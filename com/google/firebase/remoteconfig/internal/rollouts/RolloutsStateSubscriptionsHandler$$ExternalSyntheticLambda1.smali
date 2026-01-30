@@ -16,7 +16,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsStateSubscriber;Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;)V
     .registers 3
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler$$ExternalSyntheticLambda1;->f$0:Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsStateSubscriber;
@@ -31,7 +30,6 @@
 .method public final run()V
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler$$ExternalSyntheticLambda1;->f$0:Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsStateSubscriber;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateSubscriptionsHandler$$ExternalSyntheticLambda1;->f$1:Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;

@@ -183,10 +183,8 @@
 .method public constructor <init>(II)V
     .registers 8
 
-    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 95
     iput p1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->permits:I
 
     if-lez p1, :cond_3d
@@ -195,7 +193,6 @@
 
     if-gt p2, p1, :cond_25
 
-    .line 139
     new-instance v0, Lkotlinx/coroutines/sync/SemaphoreSegment;
 
     const/4 v1, 0x0
@@ -206,18 +203,14 @@
 
     invoke-direct {v0, v3, v4, v1, v2}, Lkotlinx/coroutines/sync/SemaphoreSegment;-><init>(JLkotlinx/coroutines/sync/SemaphoreSegment;I)V
 
-    .line 140
     iput-object v0, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->head:Ljava/lang/Object;
 
-    .line 141
     iput-object v0, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->tail:Ljava/lang/Object;
 
     sub-int/2addr p1, p2
 
-    .line 151
     iput p1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits:I
 
-    .line 154
     new-instance p1, Lkotlinx/coroutines/sync/SemaphoreImpl$onCancellationRelease$1;
 
     invoke-direct {p1, p0}, Lkotlinx/coroutines/sync/SemaphoreImpl$onCancellationRelease$1;-><init>(Lkotlinx/coroutines/sync/SemaphoreImpl;)V
@@ -228,7 +221,6 @@
 
     return-void
 
-    .line 138
     :cond_25
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -252,7 +244,6 @@
 
     throw p2
 
-    .line 137
     :cond_3d
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -280,7 +271,6 @@
 .method public static final synthetic access$acquireSlowPath(Lkotlinx/coroutines/sync/SemaphoreImpl;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 2
 
-    .line 94
     invoke-direct {p0, p1}, Lkotlinx/coroutines/sync/SemaphoreImpl;->acquireSlowPath(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -291,7 +281,6 @@
 .method public static final synthetic access$addAcquireToQueue(Lkotlinx/coroutines/sync/SemaphoreImpl;Lkotlinx/coroutines/Waiter;)Z
     .registers 2
 
-    .line 94
     invoke-direct {p0, p1}, Lkotlinx/coroutines/sync/SemaphoreImpl;->addAcquireToQueue(Lkotlinx/coroutines/Waiter;)Z
 
     move-result p0
@@ -317,7 +306,6 @@
         }
     .end annotation
 
-    .line 207
     :cond_0
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->decPermits()I
 
@@ -325,12 +313,10 @@
 
     if-lez v0, :cond_a
 
-    .line 210
     invoke-interface {p3, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
-    .line 214
     :cond_a
     invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -361,19 +347,16 @@
         }
     .end annotation
 
-    .line 177
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->decPermits()I
 
     move-result v0
 
     if-lez v0, :cond_9
 
-    .line 179
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 184
     :cond_9
     invoke-direct {p0, p1}, Lkotlinx/coroutines/sync/SemaphoreImpl;->acquireSlowPath(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -406,7 +389,6 @@
         }
     .end annotation
 
-    .line 400
     invoke-static {p1}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object v0
@@ -415,7 +397,6 @@
 
     move-result-object v0
 
-    .line 189
     :try_start_8
     move-object v1, v0
 
@@ -427,7 +408,6 @@
 
     if-nez v1, :cond_17
 
-    .line 193
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
@@ -436,13 +416,11 @@
     :try_end_17
     .catchall {:try_start_8 .. :try_end_17} :catchall_2e
 
-    .line 409
     :cond_17
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 399
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v1
@@ -460,7 +438,6 @@
 
     return-object v0
 
-    .line 410
     :cond_2b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -469,10 +446,8 @@
     :catchall_2e
     move-exception p1
 
-    .line 406
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->releaseClaimedReusableContinuation$kotlinx_coroutines_core()V
 
-    .line 407
     throw p1
 .end method
 
@@ -481,7 +456,6 @@
 
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->tail$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 286
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -490,17 +464,14 @@
 
     sget-object v2, Lkotlinx/coroutines/sync/SemaphoreImpl;->enqIdx$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    .line 287
     invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->getAndIncrement(Ljava/lang/Object;)J
 
     move-result-wide v2
 
-    .line 288
     sget-object v4, Lkotlinx/coroutines/sync/SemaphoreImpl$addAcquireToQueue$createNewSegment$1;->INSTANCE:Lkotlinx/coroutines/sync/SemaphoreImpl$addAcquireToQueue$createNewSegment$1;
 
     check-cast v4, Lkotlin/reflect/KFunction;
 
-    .line 289
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getSEGMENT_SIZE$p()I
 
     move-result v5
@@ -509,7 +480,6 @@
 
     div-long v5, v2, v5
 
-    .line 432
     :goto_19
     move-object v7, v1
 
@@ -523,7 +493,6 @@
 
     move-result-object v7
 
-    .line 433
     invoke-static {v7}, Lkotlinx/coroutines/internal/SegmentOrClosed;->isClosed-impl(Ljava/lang/Object;)Z
 
     move-result v8
@@ -542,7 +511,6 @@
 
     check-cast v9, Lkotlinx/coroutines/internal/Segment;
 
-    .line 434
     iget-wide v10, v9, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v12, v8, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -553,7 +521,6 @@
 
     goto :goto_5d
 
-    .line 435
     :cond_3c
     invoke-virtual {v8}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -563,7 +530,6 @@
 
     goto :goto_19
 
-    .line 436
     :cond_43
     invoke-static {v0, p0, v9, v8}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -571,7 +537,6 @@
 
     if-eqz v10, :cond_53
 
-    .line 437
     invoke-virtual {v9}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -582,7 +547,6 @@
 
     goto :goto_5d
 
-    .line 440
     :cond_53
     invoke-virtual {v8}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
@@ -594,7 +558,6 @@
 
     goto :goto_2d
 
-    .line 290
     :cond_5d
     :goto_5d
     invoke-static {v7}, Lkotlinx/coroutines/internal/SegmentOrClosed;->getSegment-impl(Ljava/lang/Object;)Lkotlinx/coroutines/internal/Segment;
@@ -603,7 +566,6 @@
 
     check-cast v0, Lkotlinx/coroutines/sync/SemaphoreSegment;
 
-    .line 291
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getSEGMENT_SIZE$p()I
 
     move-result v1
@@ -616,7 +578,6 @@
 
     const/4 v2, 0x0
 
-    .line 442
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object v3
@@ -629,14 +590,12 @@
 
     if-eqz v2, :cond_7c
 
-    .line 294
     check-cast v0, Lkotlinx/coroutines/internal/Segment;
 
     invoke-interface {p1, v0, v1}, Lkotlinx/coroutines/Waiter;->invokeOnCancellation(Lkotlinx/coroutines/internal/Segment;I)V
 
     return v3
 
-    .line 299
     :cond_7c
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getPERMIT$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -646,7 +605,6 @@
 
     move-result-object v4
 
-    .line 443
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object v5
@@ -657,19 +615,16 @@
 
     if-eqz v2, :cond_c5
 
-    .line 302
     instance-of v0, p1, Lkotlinx/coroutines/CancellableContinuation;
 
     if-eqz v0, :cond_a1
 
-    .line 303
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 304
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     iget-object v1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->onCancellationRelease:Lkotlin/jvm/functions/Function1;
@@ -678,13 +633,11 @@
 
     goto :goto_ac
 
-    .line 306
     :cond_a1
     instance-of v0, p1, Lkotlinx/coroutines/selects/SelectInstance;
 
     if-eqz v0, :cond_ad
 
-    .line 307
     check-cast p1, Lkotlinx/coroutines/selects/SelectInstance;
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -697,7 +650,6 @@
     :cond_ad
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 309
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "unexpected: "
@@ -718,7 +670,6 @@
 
     throw v0
 
-    .line 313
     :cond_c5
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
@@ -726,7 +677,6 @@
 
     if-eqz p1, :cond_e0
 
-    .line 444
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object p1
@@ -735,7 +685,6 @@
 
     move-result-object p1
 
-    .line 313
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getBROKEN$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v0
@@ -761,21 +710,17 @@
 .method private final coerceAvailablePermitsAtMaximum()V
     .registers 4
 
-    .line 275
     :cond_0
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 276
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 277
     iget v2, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->permits:I
 
     if-le v1, v2, :cond_10
 
-    .line 278
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0
@@ -789,16 +734,13 @@
 .method private final decPermits()I
     .registers 3
 
-    .line 235
     :cond_0
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 237
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->getAndDecrement(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 241
     iget v1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->permits:I
 
     if-gt v0, v1, :cond_0
@@ -809,19 +751,16 @@
 .method private final tryResumeAcquire(Ljava/lang/Object;)Z
     .registers 5
 
-    .line 345
     instance-of v0, p1, Lkotlinx/coroutines/CancellableContinuation;
 
     if-eqz v0, :cond_1d
 
-    .line 346
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 347
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     const/4 v1, 0x0
@@ -834,7 +773,6 @@
 
     if-eqz v0, :cond_1b
 
-    .line 349
     invoke-interface {p1, v0}, Lkotlinx/coroutines/CancellableContinuation;->completeResume(Ljava/lang/Object;)V
 
     const/4 p1, 0x1
@@ -846,13 +784,11 @@
 
     goto :goto_29
 
-    .line 353
     :cond_1d
     instance-of v0, p1, Lkotlinx/coroutines/selects/SelectInstance;
 
     if-eqz v0, :cond_2a
 
-    .line 354
     check-cast p1, Lkotlinx/coroutines/selects/SelectInstance;
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -867,7 +803,6 @@
     :cond_2a
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 356
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "unexpected: "
@@ -894,7 +829,6 @@
 
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->head$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 319
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -903,12 +837,10 @@
 
     sget-object v2, Lkotlinx/coroutines/sync/SemaphoreImpl;->deqIdx$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    .line 320
     invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->getAndIncrement(Ljava/lang/Object;)J
 
     move-result-wide v2
 
-    .line 321
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getSEGMENT_SIZE$p()I
 
     move-result v4
@@ -917,12 +849,10 @@
 
     div-long v4, v2, v4
 
-    .line 322
     sget-object v6, Lkotlinx/coroutines/sync/SemaphoreImpl$tryResumeNextFromQueue$createNewSegment$1;->INSTANCE:Lkotlinx/coroutines/sync/SemaphoreImpl$tryResumeNextFromQueue$createNewSegment$1;
 
     check-cast v6, Lkotlin/reflect/KFunction;
 
-    .line 446
     :goto_19
     move-object v7, v1
 
@@ -936,7 +866,6 @@
 
     move-result-object v7
 
-    .line 447
     invoke-static {v7}, Lkotlinx/coroutines/internal/SegmentOrClosed;->isClosed-impl(Ljava/lang/Object;)Z
 
     move-result v8
@@ -955,7 +884,6 @@
 
     check-cast v9, Lkotlinx/coroutines/internal/Segment;
 
-    .line 448
     iget-wide v10, v9, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v12, v8, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -966,7 +894,6 @@
 
     goto :goto_5d
 
-    .line 449
     :cond_3c
     invoke-virtual {v8}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -976,7 +903,6 @@
 
     goto :goto_19
 
-    .line 450
     :cond_43
     invoke-static {v0, p0, v9, v8}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -984,7 +910,6 @@
 
     if-eqz v10, :cond_53
 
-    .line 451
     invoke-virtual {v9}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -995,7 +920,6 @@
 
     goto :goto_5d
 
-    .line 454
     :cond_53
     invoke-virtual {v8}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
@@ -1007,7 +931,6 @@
 
     goto :goto_2d
 
-    .line 324
     :cond_5d
     :goto_5d
     invoke-static {v7}, Lkotlinx/coroutines/internal/SegmentOrClosed;->getSegment-impl(Ljava/lang/Object;)Lkotlinx/coroutines/internal/Segment;
@@ -1016,10 +939,8 @@
 
     check-cast v0, Lkotlinx/coroutines/sync/SemaphoreSegment;
 
-    .line 325
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->cleanPrev()V
 
-    .line 326
     iget-wide v6, v0, Lkotlinx/coroutines/sync/SemaphoreSegment;->id:J
 
     cmp-long v1, v6, v4
@@ -1030,7 +951,6 @@
 
     return v4
 
-    .line 327
     :cond_6e
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getSEGMENT_SIZE$p()I
 
@@ -1042,12 +962,10 @@
 
     long-to-int v1, v2
 
-    .line 328
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getPERMIT$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v2
 
-    .line 456
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object v3
@@ -1058,7 +976,6 @@
 
     if-nez v2, :cond_ae
 
-    .line 333
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getMAX_SPIN_CYCLES$p()I
 
     move-result v2
@@ -1068,7 +985,6 @@
 
     if-ge v4, v2, :cond_9c
 
-    .line 457
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object v5
@@ -1077,7 +993,6 @@
 
     move-result-object v5
 
-    .line 334
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getTAKEN$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v6
@@ -1091,7 +1006,6 @@
 
     goto :goto_87
 
-    .line 337
     :cond_9c
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getPERMIT$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1101,7 +1015,6 @@
 
     move-result-object v4
 
-    .line 458
     invoke-virtual {v0}, Lkotlinx/coroutines/sync/SemaphoreSegment;->getAcquirers()Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     move-result-object v0
@@ -1114,7 +1027,6 @@
 
     return v0
 
-    .line 339
     :cond_ae
     invoke-static {}, Lkotlinx/coroutines/sync/SemaphoreKt;->access$getCANCELLED$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1124,7 +1036,6 @@
 
     return v4
 
-    .line 340
     :cond_b5
     invoke-direct {p0, v2}, Lkotlinx/coroutines/sync/SemaphoreImpl;->tryResumeAcquire(Ljava/lang/Object;)Z
 
@@ -1167,7 +1078,6 @@
         }
     .end annotation
 
-    .line 413
     :cond_0
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->decPermits()I
 
@@ -1175,7 +1085,6 @@
 
     if-lez v0, :cond_e
 
-    .line 200
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     iget-object v1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->onCancellationRelease:Lkotlin/jvm/functions/Function1;
@@ -1184,7 +1093,6 @@
 
     goto :goto_1c
 
-    .line 199
     :cond_e
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.Waiter"
 
@@ -1209,7 +1117,6 @@
 
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 152
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -1235,7 +1142,6 @@
         }
     .end annotation
 
-    .line 423
     :cond_0
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->decPermits()I
 
@@ -1243,14 +1149,12 @@
 
     if-lez p2, :cond_c
 
-    .line 224
     sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-interface {p1, p2}, Lkotlinx/coroutines/selects/SelectInstance;->selectInRegistrationPhase(Ljava/lang/Object;)V
 
     goto :goto_1a
 
-    .line 223
     :cond_c
     const-string p2, "null cannot be cast to non-null type kotlinx.coroutines.Waiter"
 
@@ -1273,16 +1177,13 @@
 .method public release()V
     .registers 4
 
-    .line 248
     :cond_0
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 250
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->getAndIncrement(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 253
     iget v1, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->permits:I
 
     if-ge v0, v1, :cond_14
@@ -1291,7 +1192,6 @@
 
     return-void
 
-    .line 265
     :cond_d
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->tryResumeNextFromQueue()Z
 
@@ -1301,13 +1201,11 @@
 
     return-void
 
-    .line 256
     :cond_14
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->coerceAvailablePermitsAtMaximum()V
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 257
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "The number of released permits cannot be greater than "
@@ -1334,22 +1232,18 @@
 .method public tryAcquire()Z
     .registers 4
 
-    .line 157
     :cond_0
     :goto_0
     sget-object v0, Lkotlinx/coroutines/sync/SemaphoreImpl;->_availablePermits$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 159
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 164
     iget v2, p0, Lkotlinx/coroutines/sync/SemaphoreImpl;->permits:I
 
     if-le v1, v2, :cond_e
 
-    .line 165
     invoke-direct {p0}, Lkotlinx/coroutines/sync/SemaphoreImpl;->coerceAvailablePermitsAtMaximum()V
 
     goto :goto_0
@@ -1364,7 +1258,6 @@
     :cond_12
     add-int/lit8 v2, v1, -0x1
 
-    .line 171
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0

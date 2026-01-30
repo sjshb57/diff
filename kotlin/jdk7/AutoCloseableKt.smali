@@ -41,12 +41,10 @@
 
     if-nez p1, :cond_8
 
-    .line 46
     invoke-interface {p0}, Ljava/lang/AutoCloseable;->close()V
 
     goto :goto_10
 
-    .line 49
     :cond_8
     :try_start_8
     invoke-interface {p0}, Ljava/lang/AutoCloseable;->close()V
@@ -58,7 +56,6 @@
     :catchall_c
     move-exception p0
 
-    .line 51
     invoke-static {p1, p0}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :cond_10
@@ -86,7 +83,6 @@
 
     const/4 v0, 0x1
 
-    .line 33
     :try_start_6
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -98,7 +94,6 @@
 
     const/4 v1, 0x0
 
-    .line 38
     invoke-static {p0, v1}, Lkotlin/jdk7/AutoCloseableKt;->closeFinally(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -108,7 +103,6 @@
     :catchall_15
     move-exception p1
 
-    .line 36
     :try_start_16
     throw p1
     :try_end_17
@@ -117,7 +111,6 @@
     :catchall_17
     move-exception v1
 
-    .line 38
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-static {p0, p1}, Lkotlin/jdk7/AutoCloseableKt;->closeFinally(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V

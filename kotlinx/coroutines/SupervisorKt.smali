@@ -39,7 +39,6 @@
 .method public static final SupervisorJob(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
     .registers 2
 
-    .line 33
     new-instance v0, Lkotlinx/coroutines/SupervisorJobImpl;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/SupervisorJobImpl;-><init>(Lkotlinx/coroutines/Job;)V
@@ -56,7 +55,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 39
     invoke-static {p0}, Lkotlinx/coroutines/SupervisorKt;->SupervisorJob(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
 
     move-result-object p0
@@ -75,7 +73,6 @@
 
     const/4 p0, 0x0
 
-    .line 33
     :cond_5
     invoke-static {p0}, Lkotlinx/coroutines/SupervisorKt;->SupervisorJob(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
 
@@ -93,7 +90,6 @@
 
     const/4 p0, 0x0
 
-    .line 39
     :cond_5
     invoke-static {p0}, Lkotlinx/coroutines/SupervisorKt;->SupervisorJob(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/Job;
 
@@ -123,7 +119,6 @@
         }
     .end annotation
 
-    .line 60
     new-instance v0, Lkotlinx/coroutines/SupervisorCoroutine;
 
     invoke-interface {p1}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -132,7 +127,6 @@
 
     invoke-direct {v0, v1, p1}, Lkotlinx/coroutines/SupervisorCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
-    .line 61
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/internal/ScopeCoroutine;
@@ -141,7 +135,6 @@
 
     move-result-object p0
 
-    .line 59
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0

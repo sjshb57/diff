@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +27,6 @@
 
     const/4 v1, 0x0
 
-    .line 57
     invoke-virtual {p0, v0, v1}, Lcom/google/flatbuffers/Struct;->__reset(ILjava/nio/ByteBuffer;)V
 
     return-void
@@ -37,12 +35,10 @@
 .method protected __reset(ILjava/nio/ByteBuffer;)V
     .registers 3
 
-    .line 39
     iput-object p2, p0, Lcom/google/flatbuffers/Struct;->bb:Ljava/nio/ByteBuffer;
 
     if-eqz p2, :cond_7
 
-    .line 41
     iput p1, p0, Lcom/google/flatbuffers/Struct;->bb_pos:I
 
     goto :goto_a
@@ -50,7 +46,6 @@
     :cond_7
     const/4 p1, 0x0
 
-    .line 43
     iput p1, p0, Lcom/google/flatbuffers/Struct;->bb_pos:I
 
     :goto_a

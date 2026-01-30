@@ -202,7 +202,6 @@
 
     move-result-object v0
 
-    .line 289
     iget v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$registerSelectForSend$2;->label:I
 
     const/4 v2, 0x1
@@ -235,7 +234,6 @@
     :cond_19
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 291
     :try_start_1c
     iget-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$registerSelectForSend$2;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
@@ -257,7 +255,6 @@
 
     return-object v0
 
-    .line 299
     :goto_2c
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$registerSelectForSend$2;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
@@ -282,7 +279,6 @@
     :cond_40
     const/4 v2, 0x0
 
-    .line 304
     :cond_41
     :goto_41
     iget-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$registerSelectForSend$2;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
@@ -295,12 +291,10 @@
 
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$registerSelectForSend$2;->$select:Lkotlinx/coroutines/selects/SelectInstance;
 
-    .line 415
     check-cast p1, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 306
     :try_start_50
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
@@ -327,7 +321,6 @@
 
     throw v0
 
-    .line 308
     :cond_67
     :goto_67
     invoke-static {v0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->access$getOnSendInternalResult$p(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)Ljava/util/HashMap;
@@ -350,7 +343,6 @@
     :goto_76
     invoke-interface {v3, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 310
     const-string v2, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -359,7 +351,6 @@
 
     check-cast v2, Lkotlinx/coroutines/selects/SelectImplementation;
 
-    .line 311
     move-object v2, v1
 
     check-cast v2, Lkotlinx/coroutines/selects/SelectImplementation;
@@ -370,28 +361,23 @@
 
     move-result-object v2
 
-    .line 312
     sget-object v3, Lkotlinx/coroutines/selects/TrySelectDetailedResult;->REREGISTER:Lkotlinx/coroutines/selects/TrySelectDetailedResult;
 
     if-eq v2, v3, :cond_95
 
-    .line 319
     invoke-static {v0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->access$getOnSendInternalResult$p(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)Ljava/util/HashMap;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 321
     :cond_95
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_97
     .catchall {:try_start_50 .. :try_end_97} :catchall_9d
 
-    .line 415
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 323
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
@@ -399,12 +385,10 @@
     :catchall_9d
     move-exception v0
 
-    .line 415
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     throw v0
 
-    .line 300
     :cond_a2
     throw p1
 .end method

@@ -46,7 +46,6 @@
 
     const/4 v0, 0x1
 
-    .line 192
     invoke-direct {p0, p1, v0, p2}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
     return-void
@@ -57,7 +56,6 @@
 .method protected handleJobException(Ljava/lang/Throwable;)Z
     .registers 3
 
-    .line 194
     invoke-virtual {p0}, Lkotlinx/coroutines/StandaloneCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0

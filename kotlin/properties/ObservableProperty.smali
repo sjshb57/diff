@@ -78,10 +78,8 @@
         }
     .end annotation
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     iput-object p1, p0, Lkotlin/properties/ObservableProperty;->value:Ljava/lang/Object;
 
     return-void
@@ -140,7 +138,6 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
     iget-object p1, p0, Lkotlin/properties/ObservableProperty;->value:Ljava/lang/Object;
 
     return-object p1
@@ -161,10 +158,8 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 36
     iget-object p1, p0, Lkotlin/properties/ObservableProperty;->value:Ljava/lang/Object;
 
-    .line 37
     invoke-virtual {p0, p2, p1, p3}, Lkotlin/properties/ObservableProperty;->beforeChange(Lkotlin/reflect/KProperty;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -173,11 +168,9 @@
 
     return-void
 
-    .line 40
     :cond_e
     iput-object p3, p0, Lkotlin/properties/ObservableProperty;->value:Ljava/lang/Object;
 
-    .line 41
     invoke-virtual {p0, p2, p1, p3}, Lkotlin/properties/ObservableProperty;->afterChange(Lkotlin/reflect/KProperty;Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void

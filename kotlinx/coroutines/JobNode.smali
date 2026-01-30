@@ -55,7 +55,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 1343
     invoke-direct {p0}, Lkotlinx/coroutines/CompletionHandlerBase;-><init>()V
 
     return-void
@@ -66,7 +65,6 @@
 .method public dispose()V
     .registers 2
 
-    .line 1350
     invoke-virtual {p0}, Lkotlinx/coroutines/JobNode;->getJob()Lkotlinx/coroutines/JobSupport;
 
     move-result-object v0
@@ -79,7 +77,6 @@
 .method public final getJob()Lkotlinx/coroutines/JobSupport;
     .registers 2
 
-    .line 1347
     iget-object v0, p0, Lkotlinx/coroutines/JobNode;->job:Lkotlinx/coroutines/JobSupport;
 
     if-eqz v0, :cond_5
@@ -115,7 +112,6 @@
 .method public final setJob(Lkotlinx/coroutines/JobSupport;)V
     .registers 2
 
-    .line 1347
     iput-object p1, p0, Lkotlinx/coroutines/JobNode;->job:Lkotlinx/coroutines/JobSupport;
 
     return-void
@@ -124,7 +120,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 1351
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

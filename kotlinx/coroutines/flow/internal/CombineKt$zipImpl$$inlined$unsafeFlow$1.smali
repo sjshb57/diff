@@ -70,7 +70,6 @@
 
     iput-object p3, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$$inlined$unsafeFlow$1;->$transform$inlined:Lkotlin/jvm/functions/Function3;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -93,7 +92,6 @@
         }
     .end annotation
 
-    .line 113
     new-instance v6, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1;
 
     iget-object v2, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$$inlined$unsafeFlow$1;->$flow2$inlined:Lkotlinx/coroutines/flow/Flow;
@@ -124,7 +122,6 @@
 
     return-object p1
 
-    .line 108
     :cond_1b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

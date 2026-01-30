@@ -95,14 +95,12 @@
         }
     .end annotation
 
-    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/stream/StreamFlow;->stream:Ljava/util/stream/Stream;
 
     const/4 p1, 0x0
 
-    .line 20
     iput p1, p0, Lkotlinx/coroutines/stream/StreamFlow;->consumed:I
 
     return-void
@@ -161,7 +159,6 @@
 
     move-result-object v1
 
-    .line 22
     iget v2, v0, Lkotlinx/coroutines/stream/StreamFlow$collect$1;->label:I
 
     const/4 v3, 0x1
@@ -208,7 +205,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 23
     sget-object p2, Lkotlinx/coroutines/stream/StreamFlow;->consumed$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     const/4 v2, 0x0
@@ -219,7 +215,6 @@
 
     if-eqz p2, :cond_80
 
-    .line 25
     :try_start_4d
     iget-object p2, p0, Lkotlinx/coroutines/stream/StreamFlow;->stream:Ljava/util/stream/Stream;
 
@@ -250,7 +245,6 @@
 
     move-result-object v2
 
-    .line 26
     iput-object v4, v0, Lkotlinx/coroutines/stream/StreamFlow$collect$1;->L$0:Ljava/lang/Object;
 
     iput-object p2, v0, Lkotlinx/coroutines/stream/StreamFlow$collect$1;->L$1:Ljava/lang/Object;
@@ -269,13 +263,11 @@
 
     return-object v1
 
-    .line 29
     :cond_70
     iget-object p1, v4, Lkotlinx/coroutines/stream/StreamFlow;->stream:Ljava/util/stream/Stream;
 
     invoke-interface {p1}, Ljava/util/stream/Stream;->close()V
 
-    .line 31
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
@@ -285,7 +277,6 @@
 
     move-object v4, p0
 
-    .line 29
     :goto_7a
     iget-object p2, v4, Lkotlinx/coroutines/stream/StreamFlow;->stream:Ljava/util/stream/Stream;
 
@@ -293,7 +284,6 @@
 
     throw p1
 
-    .line 23
     :cond_80
     new-instance p1, Ljava/lang/IllegalStateException;
 

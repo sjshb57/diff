@@ -38,15 +38,12 @@
         }
     .end annotation
 
-    .line 31
     invoke-interface {p0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
 
-    .line 32
     invoke-static {v0}, Lkotlinx/coroutines/JobKt;->ensureActive(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 33
     invoke-static {p0}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object v1
@@ -69,7 +66,6 @@
 
     goto :goto_4d
 
-    .line 34
     :cond_18
     iget-object v2, v1, Lkotlinx/coroutines/internal/DispatchedContinuation;->dispatcher:Lkotlinx/coroutines/CoroutineDispatcher;
 
@@ -79,20 +75,17 @@
 
     if-eqz v2, :cond_26
 
-    .line 36
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-virtual {v1, v0, v2}, Lkotlinx/coroutines/internal/DispatchedContinuation;->dispatchYield$kotlinx_coroutines_core(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
     goto :goto_49
 
-    .line 40
     :cond_26
     new-instance v2, Lkotlinx/coroutines/YieldContext;
 
     invoke-direct {v2}, Lkotlinx/coroutines/YieldContext;-><init>()V
 
-    .line 41
     move-object v3, v2
 
     check-cast v3, Lkotlin/coroutines/CoroutineContext;
@@ -105,12 +98,10 @@
 
     invoke-virtual {v1, v0, v3}, Lkotlinx/coroutines/internal/DispatchedContinuation;->dispatchYield$kotlinx_coroutines_core(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
-    .line 43
     iget-boolean v0, v2, Lkotlinx/coroutines/YieldContext;->dispatcherWasUnconfined:Z
 
     if-eqz v0, :cond_49
 
-    .line 46
     invoke-static {v1}, Lkotlinx/coroutines/internal/DispatchedContinuationKt;->yieldUndispatched(Lkotlinx/coroutines/internal/DispatchedContinuation;)Z
 
     move-result v0
@@ -128,14 +119,12 @@
 
     goto :goto_4d
 
-    .line 50
     :cond_49
     :goto_49
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 30
     :goto_4d
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 

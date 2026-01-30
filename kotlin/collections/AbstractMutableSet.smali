@@ -51,7 +51,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 16
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
@@ -73,7 +72,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 15
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableSet;->getSize()I
 
     move-result v0

@@ -22,7 +22,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 925
     new-instance v0, Lcom/google/flatbuffers/FlexBuffers$Vector;
 
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers;->access$000()Lcom/google/flatbuffers/ReadBuf;
@@ -41,7 +40,6 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;II)V
     .registers 4
 
-    .line 928
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffers$Sized;-><init>(Lcom/google/flatbuffers/ReadBuf;II)V
 
     return-void
@@ -50,7 +48,6 @@
 .method public static empty()Lcom/google/flatbuffers/FlexBuffers$Vector;
     .registers 1
 
-    .line 936
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$Vector;->EMPTY_VECTOR:Lcom/google/flatbuffers/FlexBuffers$Vector;
 
     return-object v0
@@ -61,7 +58,6 @@
 .method public get(I)Lcom/google/flatbuffers/FlexBuffers$Reference;
     .registers 11
 
-    .line 971
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$Vector;->size()I
 
     move-result v0
@@ -74,14 +70,12 @@
 
     if-ltz v4, :cond_f
 
-    .line 973
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers$Reference;->access$600()Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     move-result-object p1
 
     return-object p1
 
-    .line 975
     :cond_f
     iget-object v4, p0, Lcom/google/flatbuffers/FlexBuffers$Vector;->bb:Lcom/google/flatbuffers/ReadBuf;
 
@@ -109,7 +103,6 @@
 
     move-result v0
 
-    .line 976
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Vector;->end:I
 
     iget v2, p0, Lcom/google/flatbuffers/FlexBuffers$Vector;->byteWidth:I
@@ -118,7 +111,6 @@
 
     add-int/2addr v1, p1
 
-    .line 977
     new-instance p1, Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$Vector;->bb:Lcom/google/flatbuffers/ReadBuf;
@@ -133,7 +125,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 944
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$Vector;->EMPTY_VECTOR:Lcom/google/flatbuffers/FlexBuffers$Vector;
 
     if-ne p0, v0, :cond_6
@@ -152,7 +143,6 @@
 .method public bridge synthetic size()I
     .registers 2
 
-    .line 923
     invoke-super {p0}, Lcom/google/flatbuffers/FlexBuffers$Sized;->size()I
 
     move-result v0
@@ -163,7 +153,6 @@
 .method public bridge synthetic toString()Ljava/lang/String;
     .registers 2
 
-    .line 923
     invoke-super {p0}, Lcom/google/flatbuffers/FlexBuffers$Sized;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -174,12 +163,10 @@
 .method public toString(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
     .registers 5
 
-    .line 952
     const-string v0, "[ "
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 953
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$Vector;->size()I
 
     move-result v0
@@ -189,7 +176,6 @@
     :goto_a
     if-ge v1, v0, :cond_1f
 
-    .line 955
     invoke-virtual {p0, v1}, Lcom/google/flatbuffers/FlexBuffers$Vector;->get(I)Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     move-result-object v2
@@ -200,7 +186,6 @@
 
     if-eq v1, v2, :cond_1c
 
-    .line 957
     const-string v2, ", "
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -210,7 +195,6 @@
 
     goto :goto_a
 
-    .line 960
     :cond_1f
     const-string v0, " ]"
 

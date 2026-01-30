@@ -217,7 +217,6 @@
 
     move-result-object v0
 
-    .line 209
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->label:I
 
     const/4 v2, 0x4
@@ -263,7 +262,6 @@
     :cond_26
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 212
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$started:Lkotlinx/coroutines/flow/SharingStarted;
 
     sget-object v1, Lkotlinx/coroutines/flow/SharingStarted;->Companion:Lkotlinx/coroutines/flow/SharingStarted$Companion;
@@ -274,7 +272,6 @@
 
     if-ne p1, v1, :cond_45
 
-    .line 214
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$upstream:Lkotlinx/coroutines/flow/Flow;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$shared:Lkotlinx/coroutines/flow/MutableSharedFlow;
@@ -295,7 +292,6 @@
 
     return-object v0
 
-    .line 216
     :cond_45
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$started:Lkotlinx/coroutines/flow/SharingStarted;
 
@@ -309,7 +305,6 @@
 
     if-ne p1, v1, :cond_7d
 
-    .line 218
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$shared:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
     invoke-interface {p1}, Lkotlinx/coroutines/flow/MutableSharedFlow;->getSubscriptionCount()Lkotlinx/coroutines/flow/StateFlow;
@@ -338,7 +333,6 @@
 
     return-object v0
 
-    .line 219
     :cond_6b
     :goto_6b
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$upstream:Lkotlinx/coroutines/flow/Flow;
@@ -361,7 +355,6 @@
 
     return-object v0
 
-    .line 223
     :cond_7d
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$started:Lkotlinx/coroutines/flow/SharingStarted;
 
@@ -375,12 +368,10 @@
 
     move-result-object p1
 
-    .line 224
     invoke-static {p1}, Lkotlinx/coroutines/flow/FlowKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p1
 
-    .line 225
     new-instance v1, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;
 
     iget-object v3, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1;->$upstream:Lkotlinx/coroutines/flow/Flow;
@@ -407,7 +398,6 @@
 
     return-object v0
 
-    .line 240
     :cond_a6
     :goto_a6
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

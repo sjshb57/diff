@@ -75,7 +75,6 @@
 
     if-nez p2, :cond_1d
 
-    .line 63
     new-instance p2, Ljava/util/concurrent/CancellationException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -105,7 +104,6 @@
 
     const/4 p1, 0x0
 
-    .line 64
     iput p1, p0, Lkotlinx/coroutines/CancelledContinuation;->_resumed:I
 
     return-void
@@ -122,7 +120,6 @@
 
     const/4 v2, 0x1
 
-    .line 65
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0

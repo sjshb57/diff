@@ -149,16 +149,12 @@
 .method public constructor <init>(Lkotlinx/coroutines/NodeList;ZLjava/lang/Throwable;)V
     .registers 4
 
-    .line 1081
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1078
     iput-object p1, p0, Lkotlinx/coroutines/JobSupport$Finishing;->list:Lkotlinx/coroutines/NodeList;
 
-    .line 1082
     iput p2, p0, Lkotlinx/coroutines/JobSupport$Finishing;->_isCompleting:I
 
-    .line 1087
     iput-object p3, p0, Lkotlinx/coroutines/JobSupport$Finishing;->_rootCause:Ljava/lang/Object;
 
     return-void
@@ -175,7 +171,6 @@
         }
     .end annotation
 
-    .line 1141
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x4
@@ -190,7 +185,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_exceptionsHolder$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 1094
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -203,7 +197,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_exceptionsHolder$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 1095
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void
@@ -214,14 +207,12 @@
 .method public final addExceptionLocked(Ljava/lang/Throwable;)V
     .registers 5
 
-    .line 1120
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getRootCause()Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-nez v0, :cond_a
 
-    .line 1122
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/JobSupport$Finishing;->setRootCause(Ljava/lang/Throwable;)V
 
     return-void
@@ -231,7 +222,6 @@
 
     return-void
 
-    .line 1126
     :cond_d
     invoke-direct {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getExceptionsHolder()Ljava/lang/Object;
 
@@ -239,12 +229,10 @@
 
     if-nez v0, :cond_17
 
-    .line 1127
     invoke-direct {p0, p1}, Lkotlinx/coroutines/JobSupport$Finishing;->setExceptionsHolder(Ljava/lang/Object;)V
 
     goto :goto_35
 
-    .line 1128
     :cond_17
     instance-of v1, v0, Ljava/lang/Throwable;
 
@@ -254,24 +242,19 @@
 
     return-void
 
-    .line 1130
     :cond_1e
     invoke-direct {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->allocateList()Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 1131
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1132
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1130
     invoke-direct {p0, v1}, Lkotlinx/coroutines/JobSupport$Finishing;->setExceptionsHolder(Ljava/lang/Object;)V
 
     goto :goto_35
 
-    .line 1136
     :cond_2c
     instance-of v1, v0, Ljava/util/ArrayList;
 
@@ -287,7 +270,6 @@
     :cond_36
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 1137
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "State is "
@@ -312,7 +294,6 @@
 .method public getList()Lkotlinx/coroutines/NodeList;
     .registers 2
 
-    .line 1078
     iget-object v0, p0, Lkotlinx/coroutines/JobSupport$Finishing;->list:Lkotlinx/coroutines/NodeList;
 
     return-object v0
@@ -323,7 +304,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_rootCause$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 1089
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -336,7 +316,6 @@
 .method public isActive()Z
     .registers 2
 
-    .line 1100
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getRootCause()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -357,7 +336,6 @@
 .method public final isCancelling()Z
     .registers 2
 
-    .line 1099
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getRootCause()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -380,7 +358,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_isCompleting$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 1084
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -401,7 +378,6 @@
 .method public final isSealed()Z
     .registers 3
 
-    .line 1098
     invoke-direct {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getExceptionsHolder()Ljava/lang/Object;
 
     move-result-object v0
@@ -436,21 +412,18 @@
         }
     .end annotation
 
-    .line 1105
     invoke-direct {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getExceptionsHolder()Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_b
 
-    .line 1106
     invoke-direct {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->allocateList()Ljava/util/ArrayList;
 
     move-result-object v0
 
     goto :goto_1e
 
-    .line 1107
     :cond_b
     instance-of v1, v0, Ljava/lang/Throwable;
 
@@ -466,7 +439,6 @@
 
     goto :goto_1e
 
-    .line 1108
     :cond_18
     instance-of v1, v0, Ljava/util/ArrayList;
 
@@ -474,7 +446,6 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 1111
     :goto_1e
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport$Finishing;->getRootCause()Ljava/lang/Throwable;
 
@@ -484,13 +455,11 @@
 
     const/4 v2, 0x0
 
-    .line 1112
     invoke-virtual {v0, v2, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     :cond_28
     if-eqz p1, :cond_33
 
-    .line 1113
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -499,7 +468,6 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1114
     :cond_33
     invoke-static {}, Lkotlinx/coroutines/JobSupportKt;->access$getSEALED$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -507,16 +475,13 @@
 
     invoke-direct {p0, p1}, Lkotlinx/coroutines/JobSupport$Finishing;->setExceptionsHolder(Ljava/lang/Object;)V
 
-    .line 1115
     check-cast v0, Ljava/util/List;
 
     return-object v0
 
-    .line 1108
     :cond_3d
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 1109
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "State is "
@@ -543,7 +508,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_isCompleting$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 1085
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->set(Ljava/lang/Object;I)V
 
     return-void
@@ -554,7 +518,6 @@
 
     sget-object v0, Lkotlinx/coroutines/JobSupport$Finishing;->_rootCause$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 1090
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void
@@ -563,7 +526,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 1144
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Finishing[cancelling="

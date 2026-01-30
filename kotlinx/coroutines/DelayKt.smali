@@ -91,7 +91,6 @@
 
     move-result-object v1
 
-    .line 106
     iget v2, v0, Lkotlinx/coroutines/DelayKt$awaitCancellation$1;->label:I
 
     const/4 v3, 0x1
@@ -116,12 +115,10 @@
     :cond_32
     invoke-static {p0}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 163
     iput v3, v0, Lkotlinx/coroutines/DelayKt$awaitCancellation$1;->label:I
 
     check-cast v0, Lkotlin/coroutines/Continuation;
 
-    .line 164
     new-instance p0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     invoke-static {v0}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
@@ -130,20 +127,16 @@
 
     invoke-direct {p0, v2, v3}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 170
     invoke-virtual {p0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 171
     move-object v2, p0
 
     check-cast v2, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 172
     invoke-virtual {p0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 163
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v2
@@ -157,7 +150,6 @@
 
     return-object v1
 
-    .line 106
     :cond_58
     :goto_58
     new-instance p0, Lkotlin/KotlinNothingValueException;
@@ -186,12 +178,10 @@
 
     if-gtz v0, :cond_9
 
-    .line 126
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 175
     :cond_9
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
@@ -203,10 +193,8 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 181
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 182
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
@@ -217,7 +205,6 @@
 
     if-gez v2, :cond_2d
 
-    .line 130
     invoke-interface {v1}, Lkotlinx/coroutines/CancellableContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v2
@@ -228,13 +215,11 @@
 
     invoke-interface {v2, p0, p1, v1}, Lkotlinx/coroutines/Delay;->scheduleResumeAfterDelay(JLkotlinx/coroutines/CancellableContinuation;)V
 
-    .line 183
     :cond_2d
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 174
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1
@@ -252,7 +237,6 @@
 
     return-object p0
 
-    .line 184
     :cond_41
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -272,7 +256,6 @@
         }
     .end annotation
 
-    .line 151
     invoke-static {p0, p1}, Lkotlinx/coroutines/DelayKt;->toDelayMillis-LRDsOJo(J)J
 
     move-result-wide p0
@@ -298,7 +281,6 @@
 .method public static final getDelay(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/Delay;
     .registers 2
 
-    .line 154
     sget-object v0, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -332,7 +314,6 @@
 .method public static final toDelayMillis-LRDsOJo(J)J
     .registers 4
 
-    .line 161
     sget-object v0, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {v0}, Lkotlin/time/Duration$Companion;->getZERO-UwyO8pc()J

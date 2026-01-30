@@ -50,15 +50,12 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 3
     iget v0, p0, Lcom/onevcat/uniwebview/l0;->a:I
 
     iget v1, p0, Lcom/onevcat/uniwebview/l0;->b:I
@@ -67,7 +64,6 @@
 
     invoke-virtual {p1, v0, v1, v2}, La/o;->a(IIZ)V
 
-    .line 4
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

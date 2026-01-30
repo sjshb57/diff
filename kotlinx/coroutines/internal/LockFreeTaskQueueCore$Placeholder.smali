@@ -43,7 +43,6 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 268
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Placeholder;->index:I

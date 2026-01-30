@@ -66,7 +66,6 @@
 
     iput p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$drop$$inlined$unsafeFlow$1;->$count$inlined:I
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -89,12 +88,10 @@
         }
     .end annotation
 
-    .line 113
     new-instance v0, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 114
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$drop$$inlined$unsafeFlow$1;->$this_drop$inlined:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__LimitKt$drop$2$1;
@@ -117,7 +114,6 @@
 
     return-object p1
 
-    .line 108
     :cond_1b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

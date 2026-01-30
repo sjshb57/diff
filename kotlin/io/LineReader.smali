@@ -93,17 +93,14 @@
 
     const/16 v0, 0x20
 
-    .line 177
     new-array v1, v0, [B
 
     sput-object v1, Lkotlin/io/LineReader;->bytes:[B
 
-    .line 178
     new-array v0, v0, [C
 
     sput-object v0, Lkotlin/io/LineReader;->chars:[C
 
-    .line 179
     invoke-static {v1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v1
@@ -114,7 +111,6 @@
 
     sput-object v1, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
-    .line 180
     invoke-static {v0}, Ljava/nio/CharBuffer;->wrap([C)Ljava/nio/CharBuffer;
 
     move-result-object v0
@@ -125,7 +121,6 @@
 
     sput-object v0, Lkotlin/io/LineReader;->charBuf:Ljava/nio/CharBuffer;
 
-    .line 181
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -138,7 +133,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 173
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -147,13 +141,10 @@
 .method private final compactBytes()I
     .registers 4
 
-    .line 257
     sget-object v0, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
-    .line 258
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->compact()Ljava/nio/ByteBuffer;
 
-    .line 259
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v1
@@ -168,7 +159,6 @@
 .method private final decode(Z)I
     .registers 7
 
-    .line 241
     :goto_0
     sget-object v0, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
@@ -193,26 +183,21 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 242
     invoke-virtual {v0}, Ljava/nio/charset/CoderResult;->isError()Z
 
     move-result v1
 
     if-eqz v1, :cond_23
 
-    .line 243
     invoke-direct {p0}, Lkotlin/io/LineReader;->resetAll()V
 
-    .line 244
     invoke-virtual {v0}, Ljava/nio/charset/CoderResult;->throwException()V
 
-    .line 246
     :cond_23
     invoke-virtual {v2}, Ljava/nio/CharBuffer;->position()I
 
     move-result v1
 
-    .line 247
     invoke-virtual {v0}, Ljava/nio/charset/CoderResult;->isOverflow()Z
 
     move-result v0
@@ -221,7 +206,6 @@
 
     return v1
 
-    .line 249
     :cond_2e
     sget-object v0, Lkotlin/io/LineReader;->sb:Ljava/lang/StringBuilder;
 
@@ -233,15 +217,12 @@
 
     invoke-virtual {v0, v3, v4, v1}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 250
     invoke-virtual {v2, v4}, Ljava/nio/CharBuffer;->position(I)Ljava/nio/Buffer;
 
     const/16 v0, 0x20
 
-    .line 251
     invoke-virtual {v2, v0}, Ljava/nio/CharBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 252
     aget-char v0, v3, v1
 
     invoke-virtual {v2, v0}, Ljava/nio/CharBuffer;->put(C)Ljava/nio/CharBuffer;
@@ -252,24 +233,20 @@
 .method private final decodeEndOfInput(II)I
     .registers 4
 
-    .line 264
     sget-object v0, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 265
     sget-object p1, Lkotlin/io/LineReader;->charBuf:Ljava/nio/CharBuffer;
 
     invoke-virtual {p1, p2}, Ljava/nio/CharBuffer;->position(I)Ljava/nio/Buffer;
 
     const/4 p1, 0x1
 
-    .line 266
     invoke-direct {p0, p1}, Lkotlin/io/LineReader;->decode(Z)I
 
     move-result p1
 
-    .line 268
     sget-object p2, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
     if-nez p2, :cond_19
@@ -285,7 +262,6 @@
 
     const/4 p2, 0x0
 
-    .line 269
     invoke-virtual {v0, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return p1
@@ -294,7 +270,6 @@
 .method private final resetAll()V
     .registers 3
 
-    .line 288
     sget-object v0, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
     if-nez v0, :cond_a
@@ -308,14 +283,12 @@
     :cond_a
     invoke-virtual {v0}, Ljava/nio/charset/CharsetDecoder;->reset()Ljava/nio/charset/CharsetDecoder;
 
-    .line 289
     sget-object v0, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 290
     sget-object v0, Lkotlin/io/LineReader;->sb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->setLength(I)V
@@ -326,14 +299,12 @@
 .method private final trimStringBuilder()V
     .registers 3
 
-    .line 295
     sget-object v0, Lkotlin/io/LineReader;->sb:Ljava/lang/StringBuilder;
 
     const/16 v1, 0x20
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 296
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->trimToSize()V
 
     return-void
@@ -342,7 +313,6 @@
 .method private final updateCharset(Ljava/nio/charset/Charset;)V
     .registers 6
 
-    .line 275
     invoke-virtual {p1}, Ljava/nio/charset/Charset;->newDecoder()Ljava/nio/charset/CharsetDecoder;
 
     move-result-object p1
@@ -353,25 +323,20 @@
 
     sput-object p1, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
-    .line 277
     sget-object p1, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 278
     sget-object v0, Lkotlin/io/LineReader;->charBuf:Ljava/nio/CharBuffer;
 
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->clear()Ljava/nio/Buffer;
 
     const/16 v1, 0xa
 
-    .line 279
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
-    .line 280
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 281
     sget-object v2, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
     if-nez v2, :cond_27
@@ -387,7 +352,6 @@
 
     invoke-virtual {v2, p1, v0, v3}, Ljava/nio/charset/CharsetDecoder;->decode(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;Z)Ljava/nio/charset/CoderResult;
 
-    .line 282
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->position()I
 
     move-result p1
@@ -407,7 +371,6 @@
     :cond_39
     sput-boolean v3, Lkotlin/io/LineReader;->directEOL:Z
 
-    .line 283
     invoke-direct {p0}, Lkotlin/io/LineReader;->resetAll()V
 
     return-void
@@ -429,7 +392,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 191
     sget-object v0, Lkotlin/io/LineReader;->decoder:Ljava/nio/charset/CharsetDecoder;
 
     const/4 v1, 0x0
@@ -465,7 +427,6 @@
 
     move v2, v0
 
-    .line 195
     :goto_28
     invoke-virtual {p1}, Ljava/io/InputStream;->read()I
 
@@ -479,7 +440,6 @@
 
     if-ne v3, v5, :cond_48
 
-    .line 198
     sget-object p1, Lkotlin/io/LineReader;->sb:Ljava/lang/StringBuilder;
 
     check-cast p1, Ljava/lang/CharSequence;
@@ -496,12 +456,10 @@
 
     if-nez v2, :cond_43
 
-    .line 199
     monitor-exit p0
 
     return-object v1
 
-    .line 201
     :cond_43
     :try_start_43
     invoke-direct {p0, v0, v2}, Lkotlin/io/LineReader;->decodeEndOfInput(II)I
@@ -510,7 +468,6 @@
 
     goto :goto_76
 
-    .line 205
     :cond_48
     sget-object v5, Lkotlin/io/LineReader;->bytes:[B
 
@@ -524,7 +481,6 @@
 
     if-eq v7, v4, :cond_5a
 
-    .line 208
     sget-boolean v0, Lkotlin/io/LineReader;->directEOL:Z
 
     if-nez v0, :cond_58
@@ -536,26 +492,22 @@
 
     goto :goto_28
 
-    .line 210
     :cond_5a
     :goto_5a
     sget-object v0, Lkotlin/io/LineReader;->byteBuf:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, v7}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 211
     sget-object v3, Lkotlin/io/LineReader;->charBuf:Ljava/nio/CharBuffer;
 
     invoke-virtual {v3, v2}, Ljava/nio/CharBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 212
     invoke-direct {p0, p2}, Lkotlin/io/LineReader;->decode(Z)I
 
     move-result v2
 
     if-lez v2, :cond_c0
 
-    .line 214
     sget-object v3, Lkotlin/io/LineReader;->chars:[C
 
     add-int/lit8 v5, v2, -0x1
@@ -564,7 +516,6 @@
 
     if-ne v3, v6, :cond_c0
 
-    .line 215
     invoke-virtual {v0, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     move p1, v2
@@ -572,7 +523,6 @@
     :goto_76
     if-lez p1, :cond_90
 
-    .line 223
     sget-object v0, Lkotlin/io/LineReader;->chars:[C
 
     add-int/lit8 v1, p1, -0x1
@@ -587,7 +537,6 @@
 
     add-int/lit8 v2, p1, -0x2
 
-    .line 225
     aget-char v0, v0, v2
 
     const/16 v2, 0xd
@@ -601,7 +550,6 @@
     :cond_8f
     move p1, v1
 
-    .line 228
     :cond_90
     :goto_90
     sget-object v0, Lkotlin/io/LineReader;->sb:Ljava/lang/StringBuilder;
@@ -628,14 +576,12 @@
 
     return-object v0
 
-    .line 230
     :cond_a4
     :try_start_a4
     sget-object v1, Lkotlin/io/LineReader;->chars:[C
 
     invoke-virtual {v0, v1, p2, p1}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 232
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -644,7 +590,6 @@
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 233
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v1
@@ -653,18 +598,15 @@
 
     invoke-direct {p0}, Lkotlin/io/LineReader;->trimStringBuilder()V
 
-    .line 234
     :cond_bb
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->setLength(I)V
     :try_end_be
     .catchall {:try_start_a4 .. :try_end_be} :catchall_c6
 
-    .line 235
     monitor-exit p0
 
     return-object p1
 
-    .line 219
     :cond_c0
     :try_start_c0
     invoke-direct {p0}, Lkotlin/io/LineReader;->compactBytes()I

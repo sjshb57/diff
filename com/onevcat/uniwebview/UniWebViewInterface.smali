@@ -45,10 +45,8 @@
 
     new-instance v0, Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     invoke-direct {v0}, Lcom/onevcat/uniwebview/UniWebViewInterface$a;-><init>()V
 
-    .line 2
     sput-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
     return-void
@@ -71,7 +69,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -86,10 +83,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface addJavaScript to: "
@@ -120,20 +115,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "domain"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface addPermissionTrustDomain: "
@@ -170,7 +161,6 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->UUWhcSv:Ljava/lang/String;
@@ -179,13 +169,10 @@
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface addSslExceptionDomain: "
@@ -222,20 +209,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "scheme"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface addUrlScheme: "
@@ -274,7 +257,6 @@
 
     sget-object v1, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const/4 v2, 0x0
 
     sget-object v2, Lcom/saucesdk/android/HGf/BqwBVtsr;->swJKlUrFd:Ljava/lang/String;
@@ -285,13 +267,10 @@
 
     invoke-static {v1, p0, v2, v11, v3}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v2, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v2, La/i;->d:La/i;
 
-    .line 4
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "Interface animateTo: {"
@@ -372,7 +351,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -387,10 +365,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface authenticationInit: "
@@ -435,17 +411,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface authenticationSetPrivateMode: "
@@ -484,17 +457,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface authenticationStart: "
@@ -527,17 +497,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface canGoBack: "
@@ -584,17 +551,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface canGoForward: "
@@ -641,17 +605,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface captureSnapshot: "
@@ -690,17 +651,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface cleanCache: "
@@ -731,16 +689,12 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v0, La/i;->d:La/i;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const-string v1, "message"
 
     const-string v2, "Interface clearCookies"
@@ -751,7 +705,6 @@
 
     invoke-virtual {v0, v1, v2}, La/i;->a(ILjava/lang/String;)V
 
-    .line 5
     sget-object v0, La/w;->a:La/w$a;
 
     invoke-virtual {v0}, La/w$a;->a()V
@@ -766,20 +719,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "host"
 
     const-string v2, "realm"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface clearHttpAuthUsernamePassword. Host: "
@@ -818,17 +767,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface destroy web view: "
@@ -859,7 +805,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -876,10 +821,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface evaluateJavaScript in: "
@@ -910,20 +853,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "url"
 
     const-string v2, "key"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v0, La/i;->d:La/i;
 
-    .line 4
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "Interface getCookie from: "
@@ -944,7 +883,6 @@
 
     invoke-virtual {v0, v3}, La/i;->c(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -961,7 +899,6 @@
 
     if-nez v1, :cond_50
 
-    .line 6
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v1, "The content for given url \'"
@@ -1100,10 +1037,8 @@
 
     sget-object p0, La/i;->c:La/i$a;
 
-    .line 7
     sget-object p0, La/i;->d:La/i;
 
-    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Found cookie value: "
@@ -1129,10 +1064,8 @@
     :cond_e5
     sget-object p0, La/i;->c:La/i$a;
 
-    .line 9
     sget-object p0, La/i;->d:La/i;
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Did not find the key \'"
@@ -1164,7 +1097,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->tZdmfWYMdVZ:Ljava/lang/String;
@@ -1173,10 +1105,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface getUrl: "
@@ -1216,17 +1146,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface getUserAgent: "
@@ -1266,17 +1193,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface getWebViewAlpha: "
@@ -1323,7 +1247,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->pXqCTOGROkZ:Ljava/lang/String;
@@ -1332,10 +1255,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface goBack: "
@@ -1366,17 +1287,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface goForward: "
@@ -1405,23 +1323,18 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "identifier"
 
     invoke-static {v0, p0, v1, p4, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v2, "message"
 
     const-string v3, "Interface hide"
@@ -1432,7 +1345,6 @@
 
     invoke-virtual {v1, v2, v3}, La/i;->a(ILjava/lang/String;)V
 
-    .line 6
     new-instance v1, Lcom/onevcat/uniwebview/v;
 
     invoke-direct {v1, p1, p2, p3, p4}, Lcom/onevcat/uniwebview/v;-><init>(ZIFLjava/lang/String;)V
@@ -1465,23 +1377,18 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "identifier"
 
     invoke-static {v0, p0, v1, p4, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v2, "message"
 
     const-string v3, "Interface hideAsync"
@@ -1492,7 +1399,6 @@
 
     invoke-virtual {v1, v2, v3}, La/i;->a(ILjava/lang/String;)V
 
-    .line 6
     new-instance v1, Lcom/onevcat/uniwebview/w;
 
     invoke-direct {v1, p1, p2, p3, p4}, Lcom/onevcat/uniwebview/w;-><init>(ZIFLjava/lang/String;)V
@@ -1511,17 +1417,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface init: "
@@ -1580,7 +1483,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, Lcom/onevcat/uniwebview/y;->a:Lcom/onevcat/uniwebview/y;
 
     invoke-virtual {v0, v1}, Lcom/onevcat/uniwebview/UniWebViewInterface$a;->c(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
@@ -1613,7 +1515,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, Lcom/onevcat/uniwebview/z;->a:Lcom/onevcat/uniwebview/z;
 
     invoke-virtual {v0, v1}, Lcom/onevcat/uniwebview/UniWebViewInterface$a;->c(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
@@ -1646,17 +1547,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface load: "
@@ -1695,20 +1593,16 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const/4 v2, 0x0
 
     sget-object v2, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->nrSOCHy:Ljava/lang/String;
@@ -1721,7 +1615,6 @@
 
     invoke-virtual {v1, v2, v3}, La/i;->a(ILjava/lang/String;)V
 
-    .line 5
     new-instance v1, Lcom/onevcat/uniwebview/b0;
 
     invoke-direct {v1, p1, p2}, Lcom/onevcat/uniwebview/b0;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -1740,7 +1633,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, Lcom/onevcat/uniwebview/c0;->a:Lcom/onevcat/uniwebview/c0;
 
     invoke-virtual {v0, v1}, Lcom/onevcat/uniwebview/UniWebViewInterface$a;->c(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
@@ -1757,17 +1649,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface print: "
@@ -1798,17 +1687,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface reload: "
@@ -1837,7 +1723,6 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lcom/saucesdk/android/HGf/BqwBVtsr;->qqm:Ljava/lang/String;
@@ -1846,13 +1731,10 @@
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v0, La/i;->d:La/i;
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Interface removeCookie: "
@@ -1889,17 +1771,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v0, "url"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface remove cookies for: "
@@ -1916,7 +1795,6 @@
 
     sget-object v1, La/w;->a:La/w$a;
 
-    .line 4
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -1933,7 +1811,6 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const/4 v2, 0x0
@@ -1942,13 +1819,10 @@
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
@@ -1987,20 +1861,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "domain"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface removeSslExceptionDomain: "
@@ -2039,20 +1909,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "scheme"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface removeUrlScheme: "
@@ -2091,17 +1957,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface safeBrowsingInit: "
@@ -2140,17 +2003,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface safeBrowsingSetToolbarColor: "
@@ -2203,17 +2063,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface safeBrowsingShow: "
@@ -2246,7 +2103,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     const v1, 0x1020002
@@ -2273,7 +2129,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     const v1, 0x1020002
@@ -2300,17 +2155,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface scrollTo: "
@@ -2361,17 +2213,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAcceptThirdPartyCookies: "
@@ -2410,13 +2259,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowAutoPlay: "
@@ -2449,17 +2295,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowFileAccess: "
@@ -2498,17 +2341,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowFileAccessFromFileURLs: "
@@ -2547,17 +2387,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowHTTPAuthPopUpWindow: "
@@ -2596,13 +2433,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowJavaScriptOpenWindow: "
@@ -2635,13 +2469,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setAllowUniversalAccessFromFileURLs: "
@@ -2674,17 +2505,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setBackgroundColor rgba: {"
@@ -2735,17 +2563,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setBouncesEnabled: "
@@ -2784,17 +2609,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setCalloutEnabled: "
@@ -2831,20 +2653,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "url"
 
     const-string v2, "cookie"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v0, La/i;->d:La/i;
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Interface setCookie: "
@@ -2881,17 +2699,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setDefaultFontSize: "
@@ -2930,17 +2745,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface SetDownloadEventForContextMenuEnabled: "
@@ -2979,17 +2791,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarBackgroundColor: "
@@ -3046,17 +2855,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarButtonTextColor: "
@@ -3111,20 +2917,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "text"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarDoneButtonText: "
@@ -3161,20 +2963,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "text"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarGoBackButtonText: "
@@ -3211,7 +3009,6 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lcom/brotato/shooting/survivors/games/paid/android/ZVh/EBDotepEFW;->WIACxuaxLWKz:Ljava/lang/String;
@@ -3220,13 +3017,10 @@
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarGoForwardButtonText: "
@@ -3267,17 +3061,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarNavigationButtonsShow: "
@@ -3316,17 +3107,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarOnTop: "
@@ -3363,20 +3151,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "text"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarTitleText: "
@@ -3415,17 +3199,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEmbeddedToolbarTitleTextColor: "
@@ -3482,13 +3263,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setEnableKeyboardAvoidance: "
@@ -3521,7 +3299,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const/4 v1, 0x0
 
     sget-object v1, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->KWCPaDjdgSfSxZb:Ljava/lang/String;
@@ -3530,10 +3307,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setFrame: "
@@ -3588,20 +3363,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "key"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setHeaderField: "
@@ -3650,17 +3421,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setHorizontalScrollBarEnabled: "
@@ -3699,13 +3467,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setJavaScriptEnabled: "
@@ -3738,17 +3503,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setLoadWithOverviewMode: "
@@ -3787,13 +3549,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v0, La/i;->d:La/i;
 
-    .line 3
     iput p0, v0, La/i;->b:I
 
     return-void
@@ -3808,17 +3567,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setOpenLinksInExternalBrowser: "
@@ -3857,17 +3613,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setPosition: "
@@ -3916,17 +3669,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setShowEmbeddedToolbar: "
@@ -3965,17 +3715,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setShowSpinnerWhileLoading: "
@@ -4014,17 +3761,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setSize: "
@@ -4071,20 +3815,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "text"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setSpinnerText: "
@@ -4117,17 +3857,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setSupportMultipleWindows: "
@@ -4172,17 +3909,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setTextZoom: "
@@ -4221,17 +3955,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setTransparencyClickingThroughEnabled: "
@@ -4270,17 +4001,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setUseWideViewPort: "
@@ -4317,20 +4045,16 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "userAgent"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setUserAgent: "
@@ -4369,17 +4093,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setUserInteractionEnabled: "
@@ -4418,17 +4139,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setVerticalScrollBarEnabled: "
@@ -4467,13 +4185,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setWebContentsDebuggingEnabled: "
@@ -4506,17 +4221,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
@@ -4557,17 +4269,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface setZoomEnabled: "
@@ -4604,23 +4313,18 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "identifier"
 
     invoke-static {v0, p0, v1, p4, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v2, "message"
 
     const-string v3, "Interface show"
@@ -4631,7 +4335,6 @@
 
     invoke-virtual {v1, v2, v3}, La/i;->a(ILjava/lang/String;)V
 
-    .line 6
     new-instance v1, Lcom/onevcat/uniwebview/d2;
 
     invoke-direct {v1, p1, p2, p3, p4}, Lcom/onevcat/uniwebview/d2;-><init>(ZIFLjava/lang/String;)V
@@ -4664,23 +4367,18 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    .line 1
     const-string v1, "name"
 
     const-string v2, "identifier"
 
     invoke-static {v0, p0, v1, p4, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v2, "message"
 
     const-string v3, "Interface showAsync"
@@ -4691,7 +4389,6 @@
 
     invoke-virtual {v1, v2, v3}, La/i;->a(ILjava/lang/String;)V
 
-    .line 6
     new-instance v1, Lcom/onevcat/uniwebview/e2;
 
     invoke-direct {v1, p1, p2, p3, p4}, Lcom/onevcat/uniwebview/e2;-><init>(ZIFLjava/lang/String;)V
@@ -4710,17 +4407,14 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 2
     sget-object v1, La/i;->d:La/i;
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Interface stop: "

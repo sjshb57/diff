@@ -27,7 +27,6 @@
 .method public static final synthetic access$repr(Ljava/lang/String;)Ljava/lang/String;
     .registers 1
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImplKt;->repr(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -38,14 +37,12 @@
 .method private static final repr(Ljava/lang/String;)Ljava/lang/String;
     .registers 6
 
-    .line 594
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "\""
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 596
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -63,7 +60,6 @@
 
     if-ne v4, v3, :cond_1c
 
-    .line 598
     const-string v3, "\\\""
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -75,7 +71,6 @@
 
     if-ne v4, v3, :cond_26
 
-    .line 599
     const-string v3, "\\\\"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -87,7 +82,6 @@
 
     if-ne v4, v3, :cond_30
 
-    .line 600
     const-string v3, "\\b"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -99,7 +93,6 @@
 
     if-ne v4, v3, :cond_3a
 
-    .line 601
     const-string v3, "\\n"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -111,7 +104,6 @@
 
     if-ne v4, v3, :cond_44
 
-    .line 602
     const-string v3, "\\r"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -123,14 +115,12 @@
 
     if-ne v4, v3, :cond_4e
 
-    .line 603
     const-string v3, "\\t"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_51
 
-    .line 604
     :cond_4e
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -139,11 +129,9 @@
 
     goto :goto_c
 
-    .line 607
     :cond_54
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 594
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

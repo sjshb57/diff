@@ -70,7 +70,6 @@
 
     if-eqz p1, :cond_13
 
-    .line 137
     instance-of v1, p1, Ljava/util/concurrent/CancellationException;
 
     if-eqz v1, :cond_a
@@ -90,7 +89,6 @@
 
     move-object v0, p1
 
-    .line 136
     :cond_13
     invoke-interface {p0, v0}, Lkotlinx/coroutines/channels/ReceiveChannel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
@@ -120,7 +118,6 @@
         message = "BroadcastChannel is deprecated in the favour of SharedFlow and is no longer supported"
     .end annotation
 
-    .line 33
     invoke-interface {p0}, Lkotlinx/coroutines/channels/BroadcastChannel;->openSubscription()Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -129,7 +126,6 @@
 
     const/4 v1, 0x1
 
-    .line 35
     :try_start_6
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -139,7 +135,6 @@
 
     invoke-static {v1}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 37
     invoke-static {p0, v0, v1, v0}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel$default(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
     invoke-static {v1}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -178,7 +173,6 @@
 
     const/4 v0, 0x1
 
-    .line 87
     :try_start_1
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -190,7 +184,6 @@
 
     const/4 v1, 0x0
 
-    .line 92
     invoke-static {p0, v1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -200,7 +193,6 @@
     :catchall_10
     move-exception p1
 
-    .line 90
     :try_start_11
     throw p1
     :try_end_12
@@ -209,7 +201,6 @@
     :catchall_12
     move-exception v1
 
-    .line 92
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
@@ -281,7 +272,6 @@
 
     move-result-object v1
 
-    .line 128
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$consumeEach$3;->label:I
 
     const/4 v3, 0x0
@@ -337,12 +327,10 @@
     :cond_45
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 166
     invoke-interface {p0}, Lkotlinx/coroutines/channels/BroadcastChannel;->openSubscription()Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
 
-    .line 130
     :try_start_4c
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -407,16 +395,13 @@
 
     goto :goto_53
 
-    .line 131
     :cond_78
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_7a
     .catchall {:try_start_66 .. :try_end_7a} :catchall_86
 
-    .line 168
     invoke-static {v4}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 170
     invoke-static {v0, v3, v4, v3}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel$default(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
     invoke-static {v4}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -515,7 +500,6 @@
 
     move-result-object v1
 
-    .line 104
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$consumeEach$1;->label:I
 
     const/4 v3, 0x0
@@ -562,7 +546,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 106
     :try_start_44
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -622,16 +605,13 @@
 
     goto :goto_4c
 
-    .line 107
     :cond_6f
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_71
     .catchall {:try_start_4c .. :try_end_71} :catchall_37
 
-    .line 147
     invoke-static {v4}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 152
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     invoke-static {v4}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -649,7 +629,6 @@
 
     move-object p0, v5
 
-    .line 150
     :goto_81
     :try_start_81
     throw p0
@@ -659,7 +638,6 @@
     :catchall_82
     move-exception p2
 
-    .line 152
     invoke-static {v4}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
@@ -695,7 +673,6 @@
         message = "BroadcastChannel is deprecated in the favour of SharedFlow and is no longer supported"
     .end annotation
 
-    .line 166
     invoke-interface {p0}, Lkotlinx/coroutines/channels/BroadcastChannel;->openSubscription()Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -704,13 +681,11 @@
 
     const/4 v0, 0x1
 
-    .line 168
     :try_start_6
     move-object v1, p0
 
     check-cast v1, Lkotlinx/coroutines/channels/ReceiveChannel;
 
-    .line 130
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object v1
@@ -746,16 +721,13 @@
 
     goto :goto_d
 
-    .line 131
     :cond_2c
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2e
     .catchall {:try_start_6 .. :try_end_2e} :catchall_3a
 
-    .line 168
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 170
     invoke-static {p0, p2, v0, p2}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel$default(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -799,13 +771,11 @@
 
     const/4 p2, 0x1
 
-    .line 147
     :try_start_1
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/channels/ReceiveChannel;
 
-    .line 106
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object v0
@@ -843,16 +813,13 @@
 
     goto :goto_8
 
-    .line 107
     :cond_28
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2a
     .catchall {:try_start_1 .. :try_end_2a} :catchall_36
 
-    .line 147
     invoke-static {p2}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 152
     invoke-static {p0, v1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     invoke-static {p2}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
@@ -864,7 +831,6 @@
     :catchall_36
     move-exception p1
 
-    .line 150
     :try_start_37
     throw p1
     :try_end_38
@@ -873,7 +839,6 @@
     :catchall_38
     move-exception v0
 
-    .line 152
     invoke-static {p2}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
@@ -890,7 +855,6 @@
         message = "Deprecated in the favour of \'onReceiveCatching\'"
     .end annotation
 
-    .line 72
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.channels.ReceiveChannel<E of kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt.onReceiveOrNull?>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -913,7 +877,6 @@
         .end subannotation
     .end annotation
 
-    .line 60
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.channels.ReceiveChannel<E of kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt.receiveOrNull?>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -978,7 +941,6 @@
 
     move-result-object v1
 
-    .line 115
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__Channels_commonKt$toList$1;->label:I
 
     const/4 v3, 0x0
@@ -1035,7 +997,6 @@
 
     move-result-object p1
 
-    .line 160
     :try_start_4d
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -1094,23 +1055,19 @@
 
     move-result-object p1
 
-    .line 117
     invoke-interface {v5, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     move-object p1, v2
 
     goto :goto_55
 
-    .line 161
     :cond_7a
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_7c
     .catchall {:try_start_69 .. :try_end_7c} :catchall_3b
 
-    .line 162
     invoke-static {v2, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
-    .line 115
     invoke-static {v6}, Lkotlin/collections/CollectionsKt;->build(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
@@ -1131,7 +1088,6 @@
 
     move-object p0, v7
 
-    .line 165
     :goto_8a
     :try_start_8a
     throw p0
@@ -1141,7 +1097,6 @@
     :catchall_8b
     move-exception v0
 
-    .line 162
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw v0

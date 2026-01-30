@@ -70,7 +70,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 89
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$2;->invoke(Ljava/lang/Throwable;)V
@@ -83,7 +82,6 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 90
     iget-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$2;->$cancellationTokenSource:Lcom/google/android/gms/tasks/CancellationTokenSource;
 
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/CancellationTokenSource;->cancel()V

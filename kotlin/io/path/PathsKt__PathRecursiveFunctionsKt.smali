@@ -99,7 +99,6 @@
 .method public static final synthetic access$copyToRecursively$copy(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
     .registers 6
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$copy$PathsKt__PathRecursiveFunctionsKt(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
@@ -110,7 +109,6 @@
 .method public static final synthetic access$copyToRecursively$error(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
     .registers 5
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$error$PathsKt__PathRecursiveFunctionsKt(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
@@ -130,7 +128,6 @@
         }
     .end annotation
 
-    .line 337
     :try_start_0
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
     :try_end_3
@@ -141,7 +138,6 @@
     :catch_4
     move-exception p1
 
-    .line 339
     invoke-virtual {p0, p1}, Lkotlin/io/path/ExceptionsCollector;->collect(Ljava/lang/Exception;)V
 
     :goto_8
@@ -195,7 +191,6 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 149
     sget-object v0, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     invoke-virtual {v0, p3}, Lkotlin/io/path/LinkFollowing;->toLinkOptions(Z)[Ljava/nio/file/LinkOption;
@@ -226,7 +221,6 @@
 
     const/4 v0, 0x0
 
-    .line 152
     new-array v1, v0, [Ljava/nio/file/LinkOption;
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -249,7 +243,6 @@
 
     if-nez v1, :cond_bf
 
-    .line 158
     :cond_45
     new-array v1, v0, [Ljava/nio/file/LinkOption;
 
@@ -281,14 +274,12 @@
     :goto_5c
     if-eqz v1, :cond_64
 
-    .line 160
     invoke-static {p0, p1}, Ljava/nio/file/Files;->isSameFile(Ljava/nio/file/Path;Ljava/nio/file/Path;)Z
 
     move-result v2
 
     if-nez v2, :cond_bf
 
-    .line 165
     :cond_64
     invoke-interface {p0}, Ljava/nio/file/Path;->getFileSystem()Ljava/nio/file/FileSystem;
 
@@ -309,7 +300,6 @@
     :cond_73
     if-eqz v1, :cond_88
 
-    .line 168
     new-array v1, v0, [Ljava/nio/file/LinkOption;
 
     invoke-interface {p1, v1}, Ljava/nio/file/Path;->toRealPath([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;
@@ -330,7 +320,6 @@
 
     goto :goto_bf
 
-    .line 170
     :cond_88
     invoke-interface {p1}, Ljava/nio/file/Path;->getParent()Ljava/nio/file/Path;
 
@@ -372,29 +361,23 @@
 
     goto :goto_bf
 
-    .line 173
     :cond_af
     new-instance p2, Ljava/nio/file/FileSystemException;
 
-    .line 174
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 175
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 176
     const-string p3, "Recursively copying a directory into its subdirectory is prohibited."
 
-    .line 173
     invoke-direct {p2, p0, p1, p3}, Ljava/nio/file/FileSystemException;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     throw p2
 
-    .line 199
     :cond_bf
     :goto_bf
     new-instance v0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5;
@@ -419,7 +402,6 @@
 
     return-object p1
 
-    .line 150
     :cond_d0
     new-instance p2, Ljava/nio/file/NoSuchFileException;
 
@@ -473,7 +455,6 @@
 
     if-eqz p4, :cond_1d
 
-    .line 72
     new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;
 
     invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;-><init>(Z)V
@@ -501,7 +482,6 @@
 
     move v3, p3
 
-    .line 87
     invoke-static/range {v0 .. v6}, Lkotlin/io/path/PathsKt;->copyToRecursively$default(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZLkotlin/jvm/functions/Function3;ILjava/lang/Object;)Ljava/nio/file/Path;
 
     move-result-object p0
@@ -544,7 +524,6 @@
         }
     .end annotation
 
-    .line 193
     :try_start_0
     sget-object p5, Lkotlin/io/path/DefaultCopyActionContext;->INSTANCE:Lkotlin/io/path/DefaultCopyActionContext;
 
@@ -569,7 +548,6 @@
     :catch_11
     move-exception p0
 
-    .line 195
     invoke-static {p3, p1, p2, p4, p0}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$error$PathsKt__PathRecursiveFunctionsKt(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
@@ -585,7 +563,6 @@
 
     if-eqz p6, :cond_8
 
-    .line 143
     sget-object p2, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$3;->INSTANCE:Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$3;
 
     check-cast p2, Lkotlin/jvm/functions/Function3;
@@ -595,14 +572,12 @@
 
     if-eqz p5, :cond_13
 
-    .line 145
     new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$4;
 
     invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$4;-><init>(Z)V
 
     check-cast p4, Lkotlin/jvm/functions/Function3;
 
-    .line 141
     :cond_13
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZLkotlin/jvm/functions/Function3;)Ljava/nio/file/Path;
 
@@ -618,12 +593,10 @@
 
     if-eqz p5, :cond_8
 
-    .line 67
     sget-object p2, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$1;->INSTANCE:Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$1;
 
     check-cast p2, Lkotlin/jvm/functions/Function3;
 
-    .line 65
     :cond_8
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZZ)Ljava/nio/file/Path;
 
@@ -635,12 +608,10 @@
 .method private static final copyToRecursively$destination$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/nio/file/Path;
     .registers 3
 
-    .line 182
     invoke-static {p2, p0}, Lkotlin/io/path/PathsKt;->relativeTo(Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/nio/file/Path;
 
     move-result-object p0
 
-    .line 183
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -680,7 +651,6 @@
         }
     .end annotation
 
-    .line 187
     invoke-static {p1, p2, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$destination$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/nio/file/Path;
 
     move-result-object p1
@@ -705,12 +675,10 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 270
     invoke-static {p0}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->deleteRecursivelyImpl$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 272
     move-object v0, p0
 
     check-cast v0, Ljava/util/Collection;
@@ -723,17 +691,14 @@
 
     if-eqz v0, :cond_39
 
-    .line 273
     new-instance v0, Ljava/nio/file/FileSystemException;
 
     const-string v1, "Failed to delete one or more files. See suppressed exceptions for details."
 
     invoke-direct {v0, v1}, Ljava/nio/file/FileSystemException;-><init>(Ljava/lang/String;)V
 
-    .line 274
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 422
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -751,7 +716,6 @@
 
     check-cast v1, Ljava/lang/Exception;
 
-    .line 274
     move-object v2, v0
 
     check-cast v2, Ljava/lang/Throwable;
@@ -762,7 +726,6 @@
 
     goto :goto_21
 
-    .line 273
     :cond_36
     check-cast v0, Ljava/lang/Throwable;
 
@@ -785,7 +748,6 @@
         }
     .end annotation
 
-    .line 313
     new-instance v0, Lkotlin/io/path/ExceptionsCollector;
 
     const/4 v1, 0x0
@@ -796,14 +758,12 @@
 
     invoke-direct {v0, v1, v2, v3}, Lkotlin/io/path/ExceptionsCollector;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 317
     invoke-interface {p0}, Ljava/nio/file/Path;->getParent()Ljava/nio/file/Path;
 
     move-result-object v4
 
     if-eqz v4, :cond_41
 
-    .line 318
     :try_start_e
     invoke-static {v4}, Ljava/nio/file/Files;->newDirectoryStream(Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream;
 
@@ -819,7 +779,6 @@
     :goto_14
     if-eqz v5, :cond_41
 
-    .line 319
     check-cast v5, Ljava/io/Closeable;
 
     :try_start_18
@@ -827,15 +786,12 @@
 
     check-cast v6, Ljava/nio/file/DirectoryStream;
 
-    .line 320
     instance-of v7, v6, Ljava/nio/file/SecureDirectoryStream;
 
     if-eqz v7, :cond_31
 
-    .line 322
     invoke-virtual {v0, v4}, Lkotlin/io/path/ExceptionsCollector;->setPath(Ljava/nio/file/Path;)V
 
-    .line 323
     check-cast v6, Ljava/nio/file/SecureDirectoryStream;
 
     invoke-interface {p0}, Ljava/nio/file/Path;->getFileName()Ljava/nio/file/Path;
@@ -853,13 +809,11 @@
     :cond_31
     move v1, v2
 
-    .line 325
     :goto_32
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_34
     .catchall {:try_start_18 .. :try_end_34} :catchall_3a
 
-    .line 319
     invoke-static {v5, v3}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     if-eqz v1, :cond_44
@@ -881,12 +835,10 @@
 
     throw v0
 
-    .line 329
     :cond_41
     :goto_41
     invoke-static {p0, v0}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->insecureHandleEntry$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;Lkotlin/io/path/ExceptionsCollector;)V
 
-    .line 332
     :cond_44
     invoke-virtual {v0}, Lkotlin/io/path/ExceptionsCollector;->getCollectedExceptions()Ljava/util/List;
 
@@ -913,7 +865,6 @@
 
     const/4 v1, 0x0
 
-    .line 374
     :try_start_2
     new-array v0, v0, [Ljava/nio/file/LinkOption;
 
@@ -943,19 +894,16 @@
     :goto_11
     if-eqz p0, :cond_45
 
-    .line 373
     :try_start_13
     check-cast p0, Ljava/io/Closeable;
     :try_end_15
     .catch Ljava/lang/Exception; {:try_start_13 .. :try_end_15} :catch_e
 
-    .line 375
     :try_start_15
     move-object p1, p0
 
     check-cast p1, Ljava/nio/file/SecureDirectoryStream;
 
-    .line 376
     invoke-interface {p1}, Ljava/nio/file/SecureDirectoryStream;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -973,7 +921,6 @@
 
     check-cast v2, Ljava/nio/file/Path;
 
-    .line 377
     invoke-interface {v2}, Ljava/nio/file/Path;->getFileName()Ljava/nio/file/Path;
 
     move-result-object v2
@@ -986,13 +933,11 @@
 
     goto :goto_1c
 
-    .line 379
     :cond_35
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_37
     .catchall {:try_start_15 .. :try_end_37} :catchall_3b
 
-    .line 375
     :try_start_37
     invoke-static {p0, v1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_3a
@@ -1018,7 +963,6 @@
     :try_end_42
     .catch Ljava/lang/Exception; {:try_start_3e .. :try_end_42} :catch_e
 
-    .line 436
     :goto_42
     invoke-virtual {p2, p0}, Lkotlin/io/path/ExceptionsCollector;->collect(Ljava/lang/Exception;)V
 
@@ -1041,12 +985,10 @@
         }
     .end annotation
 
-    .line 350
     invoke-virtual {p2, p1}, Lkotlin/io/path/ExceptionsCollector;->enterEntry(Ljava/nio/file/Path;)V
 
     const/4 v0, 0x1
 
-    .line 353
     :try_start_4
     new-array v0, v0, [Ljava/nio/file/LinkOption;
 
@@ -1062,15 +1004,12 @@
 
     if-eqz v0, :cond_24
 
-    .line 354
     invoke-virtual {p2}, Lkotlin/io/path/ExceptionsCollector;->getTotalExceptions()I
 
     move-result v0
 
-    .line 356
     invoke-static {p0, p1, p2}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->enterDirectory$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/SecureDirectoryStream;Ljava/nio/file/Path;Lkotlin/io/path/ExceptionsCollector;)V
 
-    .line 360
     invoke-virtual {p2}, Lkotlin/io/path/ExceptionsCollector;->getTotalExceptions()I
 
     move-result v1
@@ -1079,7 +1018,6 @@
 
     if-ne v0, v1, :cond_2e
 
-    .line 361
     :try_start_1e
     invoke-interface {p0, p1}, Ljava/nio/file/SecureDirectoryStream;->deleteDirectory(Ljava/lang/Object;)V
 
@@ -1087,7 +1025,6 @@
 
     goto :goto_2e
 
-    .line 364
     :cond_24
     invoke-interface {p0, p1}, Ljava/nio/file/SecureDirectoryStream;->deleteFile(Ljava/lang/Object;)V
 
@@ -1101,10 +1038,8 @@
     :catch_2a
     move-exception p0
 
-    .line 429
     invoke-virtual {p2, p0}, Lkotlin/io/path/ExceptionsCollector;->collect(Ljava/lang/Exception;)V
 
-    .line 368
     :catch_2e
     :cond_2e
     :goto_2e
@@ -1118,7 +1053,6 @@
 
     const/4 v0, 0x0
 
-    .line 412
     :try_start_1
     invoke-static {p0}, Ljava/nio/file/Files;->newDirectoryStream(Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream;
 
@@ -1140,19 +1074,16 @@
     :goto_9
     if-eqz p0, :cond_39
 
-    .line 411
     :try_start_b
     check-cast p0, Ljava/io/Closeable;
     :try_end_d
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_d} :catch_6
 
-    .line 413
     :try_start_d
     move-object v1, p0
 
     check-cast v1, Ljava/nio/file/DirectoryStream;
 
-    .line 414
     invoke-interface {v1}, Ljava/nio/file/DirectoryStream;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1170,7 +1101,6 @@
 
     check-cast v2, Ljava/nio/file/Path;
 
-    .line 415
     const-string v3, "entry"
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1179,13 +1109,11 @@
 
     goto :goto_14
 
-    .line 417
     :cond_29
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2b
     .catchall {:try_start_d .. :try_end_2b} :catchall_2f
 
-    .line 413
     :try_start_2b
     invoke-static {p0, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_2e
@@ -1211,7 +1139,6 @@
     :try_end_36
     .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_36} :catch_6
 
-    .line 450
     :goto_36
     invoke-virtual {p1, p0}, Lkotlin/io/path/ExceptionsCollector;->collect(Ljava/lang/Exception;)V
 
@@ -1225,7 +1152,6 @@
 
     const/4 v0, 0x1
 
-    .line 393
     :try_start_1
     new-array v1, v0, [Ljava/nio/file/LinkOption;
 
@@ -1247,27 +1173,22 @@
 
     if-eqz v0, :cond_25
 
-    .line 394
     invoke-virtual {p1}, Lkotlin/io/path/ExceptionsCollector;->getTotalExceptions()I
 
     move-result v0
 
-    .line 396
     invoke-static {p0, p1}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->insecureEnterDirectory$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;Lkotlin/io/path/ExceptionsCollector;)V
 
-    .line 400
     invoke-virtual {p1}, Lkotlin/io/path/ExceptionsCollector;->getTotalExceptions()I
 
     move-result v1
 
     if-ne v0, v1, :cond_2d
 
-    .line 401
     invoke-static {p0}, Ljava/nio/file/Files;->deleteIfExists(Ljava/nio/file/Path;)Z
 
     goto :goto_2d
 
-    .line 404
     :cond_25
     invoke-static {p0}, Ljava/nio/file/Files;->deleteIfExists(Ljava/nio/file/Path;)Z
     :try_end_28
@@ -1278,7 +1199,6 @@
     :catch_29
     move-exception p0
 
-    .line 443
     invoke-virtual {p1, p0}, Lkotlin/io/path/ExceptionsCollector;->collect(Ljava/lang/Exception;)V
 
     :cond_2d
@@ -1301,7 +1221,6 @@
         }
     .end annotation
 
-    .line 385
     :try_start_0
     const-class v0, Ljava/nio/file/attribute/BasicFileAttributeView;
 
@@ -1341,7 +1260,6 @@
     :goto_1d
     if-eqz p0, :cond_24
 
-    .line 384
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -1358,7 +1276,6 @@
 .method private static final toFileVisitResult$PathsKt__PathRecursiveFunctionsKt(Lkotlin/io/path/CopyActionResult;)Ljava/nio/file/FileVisitResult;
     .registers 2
 
-    .line 231
     sget-object v0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Lkotlin/io/path/CopyActionResult;->ordinal()I
@@ -1379,7 +1296,6 @@
 
     if-ne p0, v0, :cond_14
 
-    .line 234
     sget-object p0, Ljava/nio/file/FileVisitResult;->SKIP_SUBTREE:Ljava/nio/file/FileVisitResult;
 
     goto :goto_1f
@@ -1391,13 +1307,11 @@
 
     throw p0
 
-    .line 233
     :cond_1a
     sget-object p0, Ljava/nio/file/FileVisitResult;->TERMINATE:Ljava/nio/file/FileVisitResult;
 
     goto :goto_1f
 
-    .line 232
     :cond_1d
     sget-object p0, Ljava/nio/file/FileVisitResult;->CONTINUE:Ljava/nio/file/FileVisitResult;
 
@@ -1408,7 +1322,6 @@
 .method private static final toFileVisitResult$PathsKt__PathRecursiveFunctionsKt(Lkotlin/io/path/OnErrorResult;)Ljava/nio/file/FileVisitResult;
     .registers 2
 
-    .line 238
     sget-object v0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$WhenMappings;->$EnumSwitchMapping$1:[I
 
     invoke-virtual {p0}, Lkotlin/io/path/OnErrorResult;->ordinal()I
@@ -1425,7 +1338,6 @@
 
     if-ne p0, v0, :cond_11
 
-    .line 240
     sget-object p0, Ljava/nio/file/FileVisitResult;->SKIP_SUBTREE:Ljava/nio/file/FileVisitResult;
 
     goto :goto_19
@@ -1437,7 +1349,6 @@
 
     throw p0
 
-    .line 239
     :cond_17
     sget-object p0, Ljava/nio/file/FileVisitResult;->TERMINATE:Ljava/nio/file/FileVisitResult;
 
@@ -1457,7 +1368,6 @@
         }
     .end annotation
 
-    .line 344
     :try_start_0
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 

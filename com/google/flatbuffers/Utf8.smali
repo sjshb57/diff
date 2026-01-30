@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,19 +28,16 @@
 .method public static getDefault()Lcom/google/flatbuffers/Utf8;
     .registers 1
 
-    .line 62
     sget-object v0, Lcom/google/flatbuffers/Utf8;->DEFAULT:Lcom/google/flatbuffers/Utf8;
 
     if-nez v0, :cond_b
 
-    .line 63
     new-instance v0, Lcom/google/flatbuffers/Utf8Safe;
 
     invoke-direct {v0}, Lcom/google/flatbuffers/Utf8Safe;-><init>()V
 
     sput-object v0, Lcom/google/flatbuffers/Utf8;->DEFAULT:Lcom/google/flatbuffers/Utf8;
 
-    .line 65
     :cond_b
     sget-object v0, Lcom/google/flatbuffers/Utf8;->DEFAULT:Lcom/google/flatbuffers/Utf8;
 
@@ -51,7 +47,6 @@
 .method public static setDefault(Lcom/google/flatbuffers/Utf8;)V
     .registers 1
 
-    .line 73
     sput-object p0, Lcom/google/flatbuffers/Utf8;->DEFAULT:Lcom/google/flatbuffers/Utf8;
 
     return-void

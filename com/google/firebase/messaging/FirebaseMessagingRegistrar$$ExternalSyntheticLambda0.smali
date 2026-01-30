@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/components/Qualified;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/components/Qualified;
@@ -27,7 +26,6 @@
 .method public final create(Lcom/google/firebase/components/ComponentContainer;)Ljava/lang/Object;
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/components/Qualified;
 
     invoke-static {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar;->lambda$getComponents$0(Lcom/google/firebase/components/Qualified;Lcom/google/firebase/components/ComponentContainer;)Lcom/google/firebase/messaging/FirebaseMessaging;

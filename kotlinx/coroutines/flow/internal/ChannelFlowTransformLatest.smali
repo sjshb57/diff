@@ -109,10 +109,8 @@
         }
     .end annotation
 
-    .line 19
     invoke-direct {p0, p2, p3, p4, p5}, Lkotlinx/coroutines/flow/internal/ChannelFlowOperator;-><init>(Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
-    .line 14
     iput-object p1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;->transform:Lkotlin/jvm/functions/Function3;
 
     return-void
@@ -125,7 +123,6 @@
 
     if-eqz p7, :cond_8
 
-    .line 16
     sget-object p3, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p3, Lkotlin/coroutines/CoroutineContext;
@@ -146,7 +143,6 @@
 
     if-eqz p3, :cond_15
 
-    .line 18
     sget-object p5, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     :cond_15
@@ -158,7 +154,6 @@
 
     move-object v2, p2
 
-    .line 13
     invoke-direct/range {v0 .. v5}, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;-><init>(Lkotlin/jvm/functions/Function3;Lkotlinx/coroutines/flow/Flow;Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
     return-void
@@ -167,7 +162,6 @@
 .method public static final synthetic access$getTransform$p(Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;)Lkotlin/jvm/functions/Function3;
     .registers 1
 
-    .line 13
     iget-object p0, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;->transform:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -189,7 +183,6 @@
         }
     .end annotation
 
-    .line 21
     new-instance v6, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;->transform:Lkotlin/jvm/functions/Function3;
@@ -226,7 +219,6 @@
         }
     .end annotation
 
-    .line 24
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -246,7 +238,6 @@
 
     throw p1
 
-    .line 25
     :cond_11
     :goto_11
     new-instance v0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest$flowCollect$3;

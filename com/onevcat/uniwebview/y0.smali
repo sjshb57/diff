@@ -54,15 +54,12 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p1, La/v;->n:La/x;
 
-    .line 3
     iget v0, p0, Lcom/onevcat/uniwebview/y0;->a:F
 
     iget v1, p0, Lcom/onevcat/uniwebview/y0;->b:F
@@ -93,14 +90,12 @@
 
     float-to-int v2, v2
 
-    .line 4
     invoke-static {v3, v0, v1, v2}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 5
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

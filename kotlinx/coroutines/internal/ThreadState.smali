@@ -63,18 +63,14 @@
 .method public constructor <init>(Lkotlin/coroutines/CoroutineContext;I)V
     .registers 3
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     iput-object p1, p0, Lkotlinx/coroutines/internal/ThreadState;->context:Lkotlin/coroutines/CoroutineContext;
 
-    .line 16
     new-array p1, p2, [Ljava/lang/Object;
 
     iput-object p1, p0, Lkotlinx/coroutines/internal/ThreadState;->values:[Ljava/lang/Object;
 
-    .line 17
     new-array p1, p2, [Lkotlinx/coroutines/ThreadContextElement;
 
     iput-object p1, p0, Lkotlinx/coroutines/internal/ThreadState;->elements:[Lkotlinx/coroutines/ThreadContextElement;
@@ -96,14 +92,12 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadState;->values:[Ljava/lang/Object;
 
     iget v1, p0, Lkotlinx/coroutines/internal/ThreadState;->i:I
 
     aput-object p2, v0, v1
 
-    .line 22
     iget-object p2, p0, Lkotlinx/coroutines/internal/ThreadState;->elements:[Lkotlinx/coroutines/ThreadContextElement;
 
     add-int/lit8 v0, v1, 0x1
@@ -122,7 +116,6 @@
 .method public final restore(Lkotlin/coroutines/CoroutineContext;)V
     .registers 6
 
-    .line 26
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadState;->elements:[Lkotlinx/coroutines/ThreadContextElement;
 
     array-length v0, v0
@@ -134,7 +127,6 @@
     :goto_7
     add-int/lit8 v1, v0, -0x1
 
-    .line 27
     iget-object v2, p0, Lkotlinx/coroutines/internal/ThreadState;->elements:[Lkotlinx/coroutines/ThreadContextElement;
 
     aget-object v2, v2, v0

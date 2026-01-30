@@ -17,7 +17,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,7 +55,6 @@
 
     return-void
 
-    .line 217
     :cond_3
     div-int v0, p2, p3
 
@@ -69,12 +67,10 @@
     :cond_b
     move v6, v0
 
-    .line 222
     invoke-static {p0, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 223
     invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([JI)[J
 
     move-result-object v2
@@ -91,7 +87,6 @@
 
     move-object v9, p4
 
-    .line 225
     invoke-static/range {v1 .. v9}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->blockyTandemMergeSortRecursion([Ljava/lang/Object;[J[Ljava/lang/Object;[JIIIILjava/util/Comparator;)V
 
     return-void
@@ -144,7 +139,6 @@
 
     return-void
 
-    .line 255
     :cond_8
     div-int/lit8 v10, v0, 0x2
 
@@ -170,14 +164,12 @@
 
     move-object/from16 v8, p8
 
-    .line 264
     invoke-static/range {v0 .. v8}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->blockyTandemMergeSortRecursion([Ljava/lang/Object;[J[Ljava/lang/Object;[JIIIILjava/util/Comparator;)V
 
     move v4, v12
 
     move v5, v11
 
-    .line 269
     invoke-static/range {v0 .. v8}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->blockyTandemMergeSortRecursion([Ljava/lang/Object;[J[Ljava/lang/Object;[JIIIILjava/util/Comparator;)V
 
     mul-int v8, p4, p6
@@ -214,7 +206,6 @@
 
     move-object/from16 v9, p8
 
-    .line 284
     invoke-static/range {v0 .. v9}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->tandemMerge([Ljava/lang/Object;[JIIII[Ljava/lang/Object;[JILjava/util/Comparator;)V
 
     return-void
@@ -247,45 +238,36 @@
 
     move-object/from16 v7, p1
 
-    .line 123
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v8
 
-    .line 124
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v9
 
-    .line 126
     rem-int v0, v9, v8
 
     if-nez v0, :cond_bf
 
-    .line 131
     div-int v10, v9, v8
 
-    .line 132
     const-string v0, "source.getK()/target.getK() ratio"
 
     invoke-static {v10, v0}, Lcom/yahoo/sketches/Util;->checkIfPowerOf2(ILjava/lang/String;)V
 
-    .line 133
     invoke-static {v10}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result v11
 
-    .line 135
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v12
 
-    .line 136
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 138
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v1
@@ -300,7 +282,6 @@
 
     move v2, v1
 
-    .line 140
     :goto_2d
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBaseBufferCount()I
 
@@ -308,7 +289,6 @@
 
     if-ge v2, v3, :cond_3b
 
-    .line 141
     aget-object v3, v0, v2
 
     invoke-virtual {v7, v3}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->update(Ljava/lang/Object;)V
@@ -317,19 +297,15 @@
 
     goto :goto_2d
 
-    .line 144
     :cond_3b
     invoke-static {v7, v13, v14}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->maybeGrowLevels(Lcom/yahoo/sketches/quantiles/ItemsSketch;J)V
 
     mul-int/lit8 v0, v8, 0x2
 
-    .line 146
     new-array v15, v0, [Ljava/lang/Object;
 
-    .line 147
     new-array v6, v8, [Ljava/lang/Object;
 
-    .line 149
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v2
@@ -367,7 +343,6 @@
 
     move v5, v10
 
-    .line 152
     invoke-static/range {v0 .. v5}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->justZipWithStride([Ljava/lang/Object;I[Ljava/lang/Object;III)V
 
     add-int v0, v16, v11
@@ -386,7 +361,6 @@
 
     move-object/from16 v6, p1
 
-    .line 157
     invoke-static/range {v0 .. v6}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->inPlacePropagateCarry(I[Ljava/lang/Object;I[Ljava/lang/Object;IZLcom/yahoo/sketches/quantiles/ItemsSketch;)V
 
     goto :goto_77
@@ -405,26 +379,21 @@
 
     goto :goto_4c
 
-    .line 165
     :cond_7f
     iput-wide v13, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->n_:J
 
-    .line 169
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMaxValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 170
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMinValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 171
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMaxValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 172
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMinValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -433,7 +402,6 @@
 
     if-eqz v2, :cond_a4
 
-    .line 175
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v4
@@ -457,7 +425,6 @@
     :cond_a4
     if-nez v2, :cond_a8
 
-    .line 178
     iput-object v0, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->maxValue_:Ljava/lang/Object;
 
     :cond_a8
@@ -466,7 +433,6 @@
 
     if-eqz v3, :cond_ba
 
-    .line 182
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v0
@@ -487,14 +453,12 @@
     :cond_ba
     if-nez v3, :cond_be
 
-    .line 185
     iput-object v1, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->minValue_:Ljava/lang/Object;
 
     :cond_be
     :goto_be
     return-void
 
-    .line 127
     :cond_bf
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -534,7 +498,6 @@
         }
     .end annotation
 
-    .line 194
     sget-object v0, Lcom/yahoo/sketches/quantiles/ItemsSketch;->rand:Ljava/util/Random;
 
     invoke-virtual {v0, p5}, Ljava/util/Random;->nextInt(I)I
@@ -548,7 +511,6 @@
     :goto_8
     if-ge p3, p4, :cond_12
 
-    .line 197
     aget-object v0, p0, p1
 
     aput-object v0, p2, p3
@@ -590,34 +552,28 @@
 
     move-object/from16 v7, p1
 
-    .line 52
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v0
 
-    .line 53
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v8
 
-    .line 54
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v1
 
-    .line 55
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v3
 
     if-eq v0, v8, :cond_18
 
-    .line 58
     invoke-static/range {p0 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsMergeImpl;->downSamplingMergeInto(Lcom/yahoo/sketches/quantiles/ItemsSketch;Lcom/yahoo/sketches/quantiles/ItemsSketch;)V
 
     return-void
 
-    .line 63
     :cond_18
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
@@ -629,7 +585,6 @@
 
     move v1, v0
 
-    .line 66
     :goto_20
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBaseBufferCount()I
 
@@ -637,7 +592,6 @@
 
     if-ge v1, v2, :cond_2e
 
-    .line 67
     aget-object v2, v9, v1
 
     invoke-virtual {v7, v2}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->update(Ljava/lang/Object;)V
@@ -646,16 +600,13 @@
 
     goto :goto_20
 
-    .line 70
     :cond_2e
     invoke-static {v7, v10, v11}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->maybeGrowLevels(Lcom/yahoo/sketches/quantiles/ItemsSketch;J)V
 
     mul-int/lit8 v1, v8, 0x2
 
-    .line 72
     new-array v12, v1, [Ljava/lang/Object;
 
-    .line 74
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v1
@@ -695,7 +646,6 @@
 
     move-object/from16 v6, p1
 
-    .line 79
     invoke-static/range {v0 .. v6}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->inPlacePropagateCarry(I[Ljava/lang/Object;I[Ljava/lang/Object;IZLcom/yahoo/sketches/quantiles/ItemsSketch;)V
 
     :cond_56
@@ -707,26 +657,21 @@
 
     goto :goto_3b
 
-    .line 88
     :cond_5b
     iput-wide v10, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->n_:J
 
-    .line 92
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMaxValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 93
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMinValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 94
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMaxValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 95
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getMinValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -735,7 +680,6 @@
 
     if-eqz v2, :cond_80
 
-    .line 98
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v4
@@ -759,7 +703,6 @@
     :cond_80
     if-nez v2, :cond_84
 
-    .line 101
     iput-object v0, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->maxValue_:Ljava/lang/Object;
 
     :cond_84
@@ -768,7 +711,6 @@
 
     if-eqz v3, :cond_96
 
-    .line 105
     invoke-virtual/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v0
@@ -789,7 +731,6 @@
     :cond_96
     if-nez v3, :cond_9a
 
-    .line 108
     iput-object v1, v7, Lcom/yahoo/sketches/quantiles/ItemsSketch;->minValue_:Ljava/lang/Object;
 
     :cond_9a
@@ -845,7 +786,6 @@
 
     if-ge p4, p5, :cond_2a
 
-    .line 318
     aget-object v0, p0, p4
 
     aget-object v1, p0, p2
@@ -856,12 +796,10 @@
 
     if-gez v0, :cond_1d
 
-    .line 319
     aget-object v0, p0, p4
 
     aput-object v0, p6, p8
 
-    .line 320
     aget-wide v0, p1, p4
 
     aput-wide v0, p7, p8
@@ -872,13 +810,11 @@
 
     goto :goto_2
 
-    .line 323
     :cond_1d
     aget-object v0, p0, p2
 
     aput-object v0, p6, p8
 
-    .line 324
     aget-wide v0, p1, p2
 
     aput-wide v0, p7, p8
@@ -894,10 +830,8 @@
 
     sub-int/2addr p3, p2
 
-    .line 330
     invoke-static {p0, p2, p6, p8, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 331
     invoke-static {p1, p2, p7, p8, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_3b
@@ -905,10 +839,8 @@
     :cond_34
     sub-int/2addr p5, p4
 
-    .line 334
     invoke-static {p0, p4, p6, p8, p5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 335
     invoke-static {p1, p4, p7, p8, p5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :goto_3b

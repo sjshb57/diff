@@ -142,7 +142,6 @@
 
     move-object v3, p2
 
-    .line 46
     invoke-direct/range {v1 .. v9}, Lkotlin/io/FileTreeWalk;-><init>(Ljava/io/File;Lkotlin/io/FileWalkDirection;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -155,7 +154,6 @@
 
     if-eqz p3, :cond_6
 
-    .line 46
     sget-object p2, Lkotlin/io/FileWalkDirection;->TOP_DOWN:Lkotlin/io/FileWalkDirection;
 
     :cond_6
@@ -191,25 +189,18 @@
         }
     .end annotation
 
-    .line 37
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
     iput-object p1, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;
 
-    .line 39
     iput-object p2, p0, Lkotlin/io/FileTreeWalk;->direction:Lkotlin/io/FileWalkDirection;
 
-    .line 40
     iput-object p3, p0, Lkotlin/io/FileTreeWalk;->onEnter:Lkotlin/jvm/functions/Function1;
 
-    .line 41
     iput-object p4, p0, Lkotlin/io/FileTreeWalk;->onLeave:Lkotlin/jvm/functions/Function1;
 
-    .line 42
     iput-object p5, p0, Lkotlin/io/FileTreeWalk;->onFail:Lkotlin/jvm/functions/Function2;
 
-    .line 43
     iput p6, p0, Lkotlin/io/FileTreeWalk;->maxDepth:I
 
     return-void
@@ -222,7 +213,6 @@
 
     if-eqz p8, :cond_6
 
-    .line 39
     sget-object p2, Lkotlin/io/FileWalkDirection;->TOP_DOWN:Lkotlin/io/FileWalkDirection;
 
     :cond_6
@@ -247,7 +237,6 @@
 
     move-object v5, p5
 
-    .line 37
     invoke-direct/range {v0 .. v6}, Lkotlin/io/FileTreeWalk;-><init>(Ljava/io/File;Lkotlin/io/FileWalkDirection;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;I)V
 
     return-void
@@ -256,7 +245,6 @@
 .method public static final synthetic access$getDirection$p(Lkotlin/io/FileTreeWalk;)Lkotlin/io/FileWalkDirection;
     .registers 1
 
-    .line 37
     iget-object p0, p0, Lkotlin/io/FileTreeWalk;->direction:Lkotlin/io/FileWalkDirection;
 
     return-object p0
@@ -265,7 +253,6 @@
 .method public static final synthetic access$getMaxDepth$p(Lkotlin/io/FileTreeWalk;)I
     .registers 1
 
-    .line 37
     iget p0, p0, Lkotlin/io/FileTreeWalk;->maxDepth:I
 
     return p0
@@ -274,7 +261,6 @@
 .method public static final synthetic access$getOnEnter$p(Lkotlin/io/FileTreeWalk;)Lkotlin/jvm/functions/Function1;
     .registers 1
 
-    .line 37
     iget-object p0, p0, Lkotlin/io/FileTreeWalk;->onEnter:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -283,7 +269,6 @@
 .method public static final synthetic access$getOnFail$p(Lkotlin/io/FileTreeWalk;)Lkotlin/jvm/functions/Function2;
     .registers 1
 
-    .line 37
     iget-object p0, p0, Lkotlin/io/FileTreeWalk;->onFail:Lkotlin/jvm/functions/Function2;
 
     return-object p0
@@ -292,7 +277,6 @@
 .method public static final synthetic access$getOnLeave$p(Lkotlin/io/FileTreeWalk;)Lkotlin/jvm/functions/Function1;
     .registers 1
 
-    .line 37
     iget-object p0, p0, Lkotlin/io/FileTreeWalk;->onLeave:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -301,7 +285,6 @@
 .method public static final synthetic access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
     .registers 1
 
-    .line 37
     iget-object p0, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;
 
     return-object p0
@@ -320,7 +303,6 @@
         }
     .end annotation
 
-    .line 50
     new-instance v0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;
 
     invoke-direct {v0, p0}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;-><init>(Lkotlin/io/FileTreeWalk;)V
@@ -335,7 +317,6 @@
 
     if-lez p1, :cond_14
 
-    .line 250
     new-instance v7, Lkotlin/io/FileTreeWalk;
 
     iget-object v1, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;
@@ -356,7 +337,6 @@
 
     return-object v7
 
-    .line 249
     :cond_14
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -399,7 +379,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 220
     new-instance v0, Lkotlin/io/FileTreeWalk;
 
     iget-object v2, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;
@@ -441,7 +420,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 236
     new-instance v0, Lkotlin/io/FileTreeWalk;
 
     iget-object v2, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;
@@ -481,7 +459,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 227
     new-instance v0, Lkotlin/io/FileTreeWalk;
 
     iget-object v2, p0, Lkotlin/io/FileTreeWalk;->start:Ljava/io/File;

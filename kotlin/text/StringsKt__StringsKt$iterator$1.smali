@@ -50,7 +50,6 @@
 
     iput-object p1, p0, Lkotlin/text/StringsKt__StringsKt$iterator$1;->$this_iterator:Ljava/lang/CharSequence;
 
-    .line 335
     invoke-direct {p0}, Lkotlin/collections/CharIterator;-><init>()V
 
     return-void
@@ -61,7 +60,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 340
     iget v0, p0, Lkotlin/text/StringsKt__StringsKt$iterator$1;->index:I
 
     iget-object v1, p0, Lkotlin/text/StringsKt__StringsKt$iterator$1;->$this_iterator:Ljava/lang/CharSequence;
@@ -86,7 +84,6 @@
 .method public nextChar()C
     .registers 4
 
-    .line 338
     iget-object v0, p0, Lkotlin/text/StringsKt__StringsKt$iterator$1;->$this_iterator:Ljava/lang/CharSequence;
 
     iget v1, p0, Lkotlin/text/StringsKt__StringsKt$iterator$1;->index:I

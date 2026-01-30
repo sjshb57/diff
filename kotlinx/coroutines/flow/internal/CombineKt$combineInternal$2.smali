@@ -306,7 +306,6 @@
 
     move-result-object v1
 
-    .line 19
     iget v2, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->label:I
 
     const/4 v3, 0x3
@@ -406,23 +405,19 @@
 
     check-cast v2, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 20
     iget-object v6, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$flows:[Lkotlinx/coroutines/flow/Flow;
 
     array-length v12, v6
 
     if-nez v12, :cond_67
 
-    .line 21
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v1
 
-    .line 22
     :cond_67
     new-array v13, v12, [Ljava/lang/Object;
 
-    .line 23
     sget-object v7, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->UNINITIALIZED:Lkotlinx/coroutines/internal/Symbol;
 
     const/4 v10, 0x6
@@ -441,12 +436,10 @@
 
     const/4 v7, 0x0
 
-    .line 24
     invoke-static {v12, v7, v7, v6, v7}, Lkotlinx/coroutines/channels/ChannelKt;->Channel$default(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/channels/Channel;
 
     move-result-object v20
 
-    .line 25
     new-instance v11, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v11, v12}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
@@ -458,7 +451,6 @@
     :goto_82
     if-ge v10, v12, :cond_a6
 
-    .line 29
     new-instance v6, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1;
 
     iget-object v15, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$flows:[Lkotlinx/coroutines/flow/Flow;
@@ -503,7 +495,6 @@
 
     goto :goto_82
 
-    .line 48
     :cond_a6
     new-array v2, v12, [B
 
@@ -516,7 +507,6 @@
 
     int-to-byte v8, v8
 
-    .line 54
     move-object v9, v0
 
     check-cast v9, Lkotlin/coroutines/Continuation;
@@ -553,35 +543,29 @@
 
     if-nez v10, :cond_d0
 
-    .line 83
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v1
 
-    .line 56
     :cond_d0
     invoke-virtual {v10}, Lkotlin/collections/IndexedValue;->getIndex()I
 
     move-result v11
 
-    .line 58
     aget-object v12, v9, v11
 
-    .line 59
     invoke-virtual {v10}, Lkotlin/collections/IndexedValue;->getValue()Ljava/lang/Object;
 
     move-result-object v10
 
     aput-object v10, v9, v11
 
-    .line 60
     sget-object v10, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->UNINITIALIZED:Lkotlinx/coroutines/internal/Symbol;
 
     if-ne v12, v10, :cond_e2
 
     add-int/lit8 v6, v6, -0x1
 
-    .line 63
     :cond_e2
     aget-byte v10, v2, v11
 
@@ -589,10 +573,8 @@
 
     int-to-byte v10, v8
 
-    .line 64
     aput-byte v10, v2, v11
 
-    .line 65
     invoke-interface {v7}, Lkotlinx/coroutines/channels/Channel;->tryReceive-PtdJZtk()Ljava/lang/Object;
 
     move-result-object v10
@@ -608,7 +590,6 @@
     :cond_f5
     if-nez v6, :cond_13b
 
-    .line 74
     iget-object v10, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$arrayFactory:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v10}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -619,7 +600,6 @@
 
     if-nez v10, :cond_118
 
-    .line 76
     iget-object v10, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$transform:Lkotlin/jvm/functions/Function3;
 
     iget-object v11, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$this_combineInternal:Lkotlinx/coroutines/flow/FlowCollector;
@@ -659,10 +639,8 @@
 
     move-object v12, v10
 
-    .line 78
     invoke-static/range {v11 .. v17}, Lkotlin/collections/ArraysKt;->copyInto$default([Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/lang/Object;)[Ljava/lang/Object;
 
-    .line 79
     iget-object v11, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$transform:Lkotlin/jvm/functions/Function3;
 
     iget-object v12, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;->$this_combineInternal:Lkotlinx/coroutines/flow/FlowCollector;

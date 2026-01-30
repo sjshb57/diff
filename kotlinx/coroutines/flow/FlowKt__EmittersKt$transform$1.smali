@@ -217,7 +217,6 @@
 
     move-result-object v0
 
-    .line 39
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1;->label:I
 
     const/4 v2, 0x1
@@ -246,7 +245,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 40
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1;->$this_transform:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v3, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1$1;
@@ -271,7 +269,6 @@
 
     return-object v0
 
-    .line 44
     :cond_35
     :goto_35
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -286,7 +283,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 40
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1;->$this_transform:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v1, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$transform$1$1;
@@ -311,7 +307,6 @@
 
     invoke-static {p1}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 44
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

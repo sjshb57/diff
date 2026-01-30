@@ -51,7 +51,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 627
     invoke-direct {p0}, Lkotlin/collections/AbstractMutableSet;-><init>()V
 
     return-void
@@ -62,7 +61,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 627
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-nez v0, :cond_6
@@ -93,7 +91,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 628
     invoke-virtual {p0, p1}, Lkotlin/collections/builders/AbstractMapBuilderEntrySet;->containsEntry(Ljava/util/Map$Entry;)Z
 
     move-result p1
@@ -114,7 +111,6 @@
 .method public final bridge remove(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 627
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-nez v0, :cond_6
@@ -143,7 +139,6 @@
         }
     .end annotation
 
-    .line 627
     invoke-super {p0, p1}, Lkotlin/collections/AbstractMutableSet;->remove(Ljava/lang/Object;)Z
 
     move-result p1

@@ -42,15 +42,12 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p1, La/v;->m:La/o;
 
-    .line 3
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
@@ -59,20 +56,16 @@
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
 
-    .line 4
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 5
     invoke-virtual {p1}, La/o;->get_webChromeClient$uniwebview_release()La/r;
 
     move-result-object p1
 
     iget-boolean v0, p0, Lcom/onevcat/uniwebview/t1;->a:Z
 
-    .line 6
     iput-boolean v0, p1, La/r;->i:Z
 
-    .line 7
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

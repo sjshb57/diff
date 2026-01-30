@@ -97,7 +97,6 @@
 .method private constructor <init>(III)V
     .registers 5
 
-    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p3, :cond_1c
@@ -106,22 +105,18 @@
 
     if-eq p3, v0, :cond_14
 
-    .line 75
     iput p1, p0, Lkotlin/ranges/UIntProgression;->first:I
 
-    .line 80
     invoke-static {p1, p2, p3}, Lkotlin/internal/UProgressionUtilKt;->getProgressionLastElement-Nkh28Cs(III)I
 
     move-result p1
 
     iput p1, p0, Lkotlin/ranges/UIntProgression;->last:I
 
-    .line 85
     iput p3, p0, Lkotlin/ranges/UIntProgression;->step:I
 
     return-void
 
-    .line 69
     :cond_14
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -131,7 +126,6 @@
 
     throw p1
 
-    .line 68
     :cond_1c
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -155,7 +149,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 98
     instance-of v0, p1, Lkotlin/ranges/UIntProgression;
 
     if-eqz v0, :cond_29
@@ -176,7 +169,6 @@
 
     if-nez v0, :cond_27
 
-    .line 99
     :cond_13
     iget v0, p0, Lkotlin/ranges/UIntProgression;->first:I
 
@@ -213,7 +205,6 @@
 .method public final getFirst-pVg5ArA()I
     .registers 2
 
-    .line 75
     iget v0, p0, Lkotlin/ranges/UIntProgression;->first:I
 
     return v0
@@ -222,7 +213,6 @@
 .method public final getLast-pVg5ArA()I
     .registers 2
 
-    .line 80
     iget v0, p0, Lkotlin/ranges/UIntProgression;->last:I
 
     return v0
@@ -231,7 +221,6 @@
 .method public final getStep()I
     .registers 2
 
-    .line 85
     iget v0, p0, Lkotlin/ranges/UIntProgression;->step:I
 
     return v0
@@ -240,7 +229,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 102
     invoke-virtual {p0}, Lkotlin/ranges/UIntProgression;->isEmpty()Z
 
     move-result v0
@@ -273,7 +261,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 95
     iget v0, p0, Lkotlin/ranges/UIntProgression;->step:I
 
     const/4 v1, 0x1
@@ -325,7 +312,6 @@
         }
     .end annotation
 
-    .line 87
     new-instance v0, Lkotlin/ranges/UIntProgressionIterator;
 
     iget v1, p0, Lkotlin/ranges/UIntProgression;->first:I
@@ -346,7 +332,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 104
     iget v0, p0, Lkotlin/ranges/UIntProgression;->step:I
 
     const-string v1, " step "

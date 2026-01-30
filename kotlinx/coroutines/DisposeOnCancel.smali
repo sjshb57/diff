@@ -40,7 +40,6 @@
 .method public constructor <init>(Lkotlinx/coroutines/DisposableHandle;)V
     .registers 2
 
-    .line 382
     invoke-direct {p0}, Lkotlinx/coroutines/CancelHandler;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/DisposeOnCancel;->handle:Lkotlinx/coroutines/DisposableHandle;
@@ -53,7 +52,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 382
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/DisposeOnCancel;->invoke(Ljava/lang/Throwable;)V
@@ -66,7 +64,6 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 383
     iget-object p1, p0, Lkotlinx/coroutines/DisposeOnCancel;->handle:Lkotlinx/coroutines/DisposableHandle;
 
     invoke-interface {p1}, Lkotlinx/coroutines/DisposableHandle;->dispose()V
@@ -77,7 +74,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 384
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0

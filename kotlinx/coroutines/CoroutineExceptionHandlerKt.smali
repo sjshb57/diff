@@ -55,7 +55,6 @@
         }
     .end annotation
 
-    .line 48
     sget-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->Key:Lkotlinx/coroutines/CoroutineExceptionHandler$Key;
 
     new-instance v1, Lkotlinx/coroutines/CoroutineExceptionHandlerKt$CoroutineExceptionHandler$1;
@@ -70,7 +69,6 @@
 .method public static final handleCoroutineException(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
     .registers 3
 
-    .line 23
     :try_start_0
     sget-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->Key:Lkotlinx/coroutines/CoroutineExceptionHandler$Key;
 
@@ -84,14 +82,12 @@
 
     if-eqz v0, :cond_10
 
-    .line 24
     invoke-interface {v0, p0, p1}, Lkotlinx/coroutines/CoroutineExceptionHandler;->handleException(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
     :try_end_f
     .catchall {:try_start_0 .. :try_end_f} :catchall_14
 
     return-void
 
-    .line 32
     :cond_10
     invoke-static {p0, p1}, Lkotlinx/coroutines/internal/CoroutineExceptionHandlerImpl_commonKt;->handleUncaughtCoroutineException(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
 
@@ -100,7 +96,6 @@
     :catchall_14
     move-exception v0
 
-    .line 28
     invoke-static {p1, v0}, Lkotlinx/coroutines/CoroutineExceptionHandlerKt;->handlerException(Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     move-result-object p1
@@ -117,7 +112,6 @@
 
     return-object p0
 
-    .line 37
     :cond_3
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -125,10 +119,8 @@
 
     invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 38
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 111
     invoke-static {v0, p0}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     return-object v0

@@ -17,7 +17,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 40
     new-instance v0, Lcom/google/firebase/messaging/cpp/MessageWriter;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/cpp/MessageWriter;-><init>()V
@@ -30,7 +29,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
 .method public static defaultInstance()Lcom/google/firebase/messaging/cpp/MessageWriter;
     .registers 1
 
-    .line 43
     sget-object v0, Lcom/google/firebase/messaging/cpp/MessageWriter;->DEFAULT_INSTANCE:Lcom/google/firebase/messaging/cpp/MessageWriter;
 
     return-object v0
@@ -52,7 +49,6 @@
 
     goto :goto_5
 
-    .line 131
     :cond_3
     const-string p0, ""
 
@@ -84,14 +80,12 @@
 
     move-object/from16 v0, p6
 
-    .line 149
     new-instance v1, Lcom/google/flatbuffers/FlatBufferBuilder;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v2}, Lcom/google/flatbuffers/FlatBufferBuilder;-><init>(I)V
 
-    .line 150
     invoke-static/range {p0 .. p0}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -100,7 +94,6 @@
 
     move-result v3
 
-    .line 151
     invoke-static/range {p1 .. p1}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -109,7 +102,6 @@
 
     move-result v4
 
-    .line 152
     invoke-static/range {p2 .. p2}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -118,7 +110,6 @@
 
     move-result v5
 
-    .line 153
     invoke-static/range {p3 .. p3}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -127,7 +118,6 @@
 
     move-result v6
 
-    .line 154
     invoke-static/range {p4 .. p4}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
@@ -136,7 +126,6 @@
 
     move-result v7
 
-    .line 155
     invoke-static/range {p9 .. p9}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
@@ -145,7 +134,6 @@
 
     move-result v8
 
-    .line 156
     invoke-static/range {p10 .. p10}, Lcom/google/firebase/messaging/cpp/MessageWriter;->emptyIfNull(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
@@ -154,7 +142,6 @@
 
     move-result v9
 
-    .line 157
     invoke-static/range {p11 .. p11}, Lcom/google/firebase/messaging/cpp/MessageWriter;->priorityToString(I)Ljava/lang/String;
 
     move-result-object v10
@@ -163,7 +150,6 @@
 
     move-result v10
 
-    .line 158
     invoke-static/range {p12 .. p12}, Lcom/google/firebase/messaging/cpp/MessageWriter;->priorityToString(I)Ljava/lang/String;
 
     move-result-object v11
@@ -174,14 +160,12 @@
 
     if-eqz p5, :cond_94
 
-    .line 161
     invoke-interface/range {p5 .. p5}, Ljava/util/Map;->size()I
 
     move-result v12
 
     new-array v12, v12, [I
 
-    .line 163
     invoke-interface/range {p5 .. p5}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v13
@@ -205,7 +189,6 @@
 
     check-cast v15, Ljava/util/Map$Entry;
 
-    .line 164
     invoke-interface {v15}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v16
@@ -218,7 +201,6 @@
 
     move-result v2
 
-    .line 165
     invoke-interface {v15}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v15
@@ -231,7 +213,6 @@
 
     add-int/lit8 v16, v14, 0x1
 
-    .line 166
     invoke-static {v1, v2, v15}, Lcom/google/firebase/messaging/cpp/DataPair;->createDataPair(Lcom/google/flatbuffers/FlatBufferBuilder;II)I
 
     move-result v2
@@ -244,7 +225,6 @@
 
     goto :goto_61
 
-    .line 168
     :cond_8f
     invoke-static {v1, v12}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->createDataVector(Lcom/google/flatbuffers/FlatBufferBuilder;[I)I
 
@@ -258,7 +238,6 @@
     :goto_95
     if-eqz v0, :cond_9c
 
-    .line 172
     invoke-virtual {v1, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->createByteVector([B)I
 
     move-result v12
@@ -271,7 +250,6 @@
     :goto_9d
     if-eqz p7, :cond_1c0
 
-    .line 176
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getTitle()Ljava/lang/String;
 
     move-result-object v13
@@ -284,7 +262,6 @@
 
     move-result v13
 
-    .line 177
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getBody()Ljava/lang/String;
 
     move-result-object v14
@@ -297,7 +274,6 @@
 
     move-result v14
 
-    .line 178
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getIcon()Ljava/lang/String;
 
     move-result-object v15
@@ -310,7 +286,6 @@
 
     move-result v15
 
-    .line 179
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getSound()Ljava/lang/String;
 
     move-result-object v16
@@ -327,14 +302,12 @@
 
     move/from16 v16, v12
 
-    .line 180
     const-string v12, ""
 
     invoke-virtual {v1, v12}, Lcom/google/flatbuffers/FlatBufferBuilder;->createString(Ljava/lang/CharSequence;)I
 
     move-result v12
 
-    .line 181
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getTag()Ljava/lang/String;
 
     move-result-object v18
@@ -347,7 +320,6 @@
 
     move-result v0
 
-    .line 182
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getColor()Ljava/lang/String;
 
     move-result-object v18
@@ -362,7 +334,6 @@
 
     move-result v2
 
-    .line 183
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getClickAction()Ljava/lang/String;
 
     move-result-object v18
@@ -377,7 +348,6 @@
 
     move-result v9
 
-    .line 184
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getChannelId()Ljava/lang/String;
 
     move-result-object v18
@@ -392,7 +362,6 @@
 
     move-result v7
 
-    .line 186
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getBodyLocalizationKey()Ljava/lang/String;
 
     move-result-object v18
@@ -409,7 +378,6 @@
 
     move/from16 p9, v10
 
-    .line 188
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getBodyLocalizationArgs()[Ljava/lang/String;
 
     move-result-object v10
@@ -418,14 +386,12 @@
 
     move/from16 v18, v6
 
-    .line 191
     array-length v6, v10
 
     new-array v6, v6, [I
 
     move/from16 v19, v5
 
-    .line 192
     array-length v5, v10
 
     move/from16 v20, v4
@@ -443,7 +409,6 @@
 
     add-int/lit8 v22, v21, 0x1
 
-    .line 193
     invoke-virtual {v1, v5}, Lcom/google/flatbuffers/FlatBufferBuilder;->createString(Ljava/lang/CharSequence;)I
 
     move-result v5
@@ -458,7 +423,6 @@
 
     goto :goto_132
 
-    .line 196
     :cond_147
     invoke-static {v1, v6}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->createBodyLocArgsVector(Lcom/google/flatbuffers/FlatBufferBuilder;[I)I
 
@@ -475,7 +439,6 @@
 
     const/4 v4, 0x0
 
-    .line 199
     :goto_153
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getTitleLocalizationKey()Ljava/lang/String;
 
@@ -489,21 +452,18 @@
 
     move-result v5
 
-    .line 201
     invoke-virtual/range {p7 .. p7}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getTitleLocalizationArgs()[Ljava/lang/String;
 
     move-result-object v6
 
     if-eqz v6, :cond_18a
 
-    .line 204
     array-length v10, v6
 
     new-array v10, v10, [I
 
     move/from16 v21, v3
 
-    .line 205
     array-length v3, v6
 
     move/from16 p10, v5
@@ -521,7 +481,6 @@
 
     add-int/lit8 v23, v17, 0x1
 
-    .line 206
     invoke-virtual {v1, v3}, Lcom/google/flatbuffers/FlatBufferBuilder;->createString(Ljava/lang/CharSequence;)I
 
     move-result v3
@@ -536,7 +495,6 @@
 
     goto :goto_170
 
-    .line 209
     :cond_185
     invoke-static {v1, v10}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->createTitleLocArgsVector(Lcom/google/flatbuffers/FlatBufferBuilder;[I)I
 
@@ -551,52 +509,37 @@
 
     const/4 v3, 0x0
 
-    .line 211
     :goto_18f
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->startSerializedNotification(Lcom/google/flatbuffers/FlatBufferBuilder;)V
 
-    .line 212
     invoke-static {v1, v13}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addTitle(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 213
     invoke-static {v1, v14}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addBody(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 214
     invoke-static {v1, v15}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addIcon(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 215
     invoke-static {v1, v8}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addSound(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 216
     invoke-static {v1, v12}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addBadge(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 217
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addTag(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 218
     invoke-static {v1, v2}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addColor(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 219
     invoke-static {v1, v9}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addClickAction(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 220
     invoke-static {v1, v7}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addAndroidChannelId(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 221
     invoke-static {v1, v11}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addBodyLocKey(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 222
     invoke-static {v1, v4}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addBodyLocArgs(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, p10
 
-    .line 223
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addTitleLocKey(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 224
     invoke-static {v1, v3}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->addTitleLocArgs(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 225
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedNotification;->endSerializedNotification(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result v2
@@ -628,65 +571,53 @@
 
     const/4 v2, 0x0
 
-    .line 227
     :goto_1d7
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->startSerializedMessage(Lcom/google/flatbuffers/FlatBufferBuilder;)V
 
     move/from16 v0, v21
 
-    .line 228
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addFrom(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, v20
 
-    .line 229
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addTo(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, v19
 
-    .line 230
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addMessageId(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, v18
 
-    .line 231
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addMessageType(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, p9
 
-    .line 232
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addPriority(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, p4
 
-    .line 233
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addOriginalPriority(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move-wide/from16 v3, p13
 
-    .line 234
     invoke-static {v1, v3, v4}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addSentTime(Lcom/google/flatbuffers/FlatBufferBuilder;J)V
 
     move/from16 v0, p15
 
-    .line 235
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addTimeToLive(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, p3
 
-    .line 236
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addError(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     move/from16 v0, p2
 
-    .line 237
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addCollapseKey(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     if-eqz p5, :cond_213
 
     move/from16 v0, p1
 
-    .line 239
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addData(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     :cond_213
@@ -694,50 +625,40 @@
 
     move/from16 v12, v16
 
-    .line 242
     invoke-static {v1, v12}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addRawData(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     :cond_21a
     if-eqz p7, :cond_21f
 
-    .line 245
     invoke-static {v1, v2}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addNotification(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
     :cond_21f
     move/from16 v0, p8
 
-    .line 247
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addNotificationOpened(Lcom/google/flatbuffers/FlatBufferBuilder;Z)V
 
     move/from16 v0, p0
 
-    .line 248
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->addLink(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 249
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedMessage;->endSerializedMessage(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result v0
 
-    .line 250
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->startSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)V
 
     const/4 v2, 0x1
 
-    .line 251
     invoke-static {v1, v2}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEventType(Lcom/google/flatbuffers/FlatBufferBuilder;B)V
 
-    .line 252
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEvent(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 253
     invoke-static {v1}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->endSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result v0
 
     invoke-virtual {v1, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->finish(I)V
 
-    .line 254
     invoke-virtual {v1}, Lcom/google/flatbuffers/FlatBufferBuilder;->sizedByteArray()[B
 
     move-result-object v0
@@ -756,18 +677,15 @@
 
     if-eq p0, v0, :cond_9
 
-    .line 141
     const-string p0, ""
 
     return-object p0
 
-    .line 139
     :cond_9
     const-string p0, "normal"
 
     return-object p0
 
-    .line 137
     :cond_c
     const-string p0, "high"
 
@@ -779,62 +697,50 @@
 .method public writeMessage(Landroid/content/Context;Lcom/google/firebase/messaging/RemoteMessage;ZLandroid/net/Uri;)V
     .registers 23
 
-    .line 49
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getFrom()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 50
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getTo()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 51
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getMessageId()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 52
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getMessageType()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 53
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getData()Ljava/util/Map;
 
     move-result-object v7
 
-    .line 54
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getRawData()[B
 
     move-result-object v8
 
-    .line 55
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getNotification()Lcom/google/firebase/messaging/RemoteMessage$Notification;
 
     move-result-object v9
 
-    .line 56
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getCollapseKey()Ljava/lang/String;
 
     move-result-object v12
 
-    .line 57
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getPriority()I
 
     move-result v13
 
-    .line 58
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getOriginalPriority()I
 
     move-result v14
 
-    .line 59
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getSentTime()J
 
     move-result-wide v15
 
-    .line 60
     invoke-virtual/range {p2 .. p2}, Lcom/google/firebase/messaging/RemoteMessage;->getTtl()I
 
     move-result v17
@@ -843,7 +749,6 @@
 
     if-eqz v9, :cond_39
 
-    .line 64
     invoke-virtual {v9}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getLink()Landroid/net/Uri;
 
     move-result-object v0
@@ -856,7 +761,6 @@
     :goto_3b
     if-eqz v0, :cond_42
 
-    .line 66
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -871,7 +775,6 @@
 
     const/4 v0, 0x4
 
-    .line 67
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -882,7 +785,6 @@
 
     aput-object v4, v0, v1
 
-    .line 69
     const-string v1, "(null)"
 
     if-nez v7, :cond_53
@@ -905,7 +807,6 @@
 
     goto :goto_61
 
-    .line 70
     :cond_5d
     invoke-virtual {v9}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -916,14 +817,12 @@
 
     aput-object v1, v0, v6
 
-    .line 68
     const-string v1, "onMessageReceived from=%s message_id=%s, data=%s, notification=%s"
 
     invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 67
     const-string v1, "FIREBASE_MESSAGE_WRITER"
 
     invoke-static {v1, v0}, Lcom/google/firebase/messaging/cpp/DebugLogging;->log(Ljava/lang/String;Ljava/lang/String;)V
@@ -936,7 +835,6 @@
 
     move/from16 v10, p3
 
-    .line 71
     invoke-virtual/range {v0 .. v17}, Lcom/google/firebase/messaging/cpp/MessageWriter;->writeMessageToInternalStorage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;[BLcom/google/firebase/messaging/RemoteMessage$Notification;ZLjava/lang/String;Ljava/lang/String;IIJI)V
 
     return-void
@@ -979,7 +877,6 @@
 
     const/4 v14, 0x0
 
-    .line 79
     invoke-virtual/range {v0 .. v17}, Lcom/google/firebase/messaging/cpp/MessageWriter;->writeMessageToInternalStorage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;[BLcom/google/firebase/messaging/RemoteMessage$Notification;ZLjava/lang/String;Ljava/lang/String;IIJI)V
 
     return-void
@@ -1010,31 +907,26 @@
 
     move-object v0, p1
 
-    .line 96
     invoke-static/range {p2 .. p17}, Lcom/google/firebase/messaging/cpp/MessageWriter;->generateMessageByteBuffer(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;[BLcom/google/firebase/messaging/RemoteMessage$Notification;ZLjava/lang/String;Ljava/lang/String;IIJI)[B
 
     move-result-object v1
 
     const/4 v2, 0x4
 
-    .line 99
     invoke-static {v2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
-    .line 101
     sget-object v3, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v2, v3}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 102
     array-length v3, v1
 
     invoke-virtual {v2, v3}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
     const/4 v3, 0x0
 
-    .line 107
     :try_start_14
     const-string v4, "FIREBASE_CLOUD_MESSAGING_LOCKFILE"
 
@@ -1044,7 +936,6 @@
 
     move-result-object v4
 
-    .line 108
     invoke-virtual {v4}, Ljava/io/FileOutputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object v4
@@ -1053,7 +944,6 @@
 
     move-result-object v3
 
-    .line 110
     const-string v4, "FIREBASE_CLOUD_MESSAGING_LOCAL_STORAGE"
 
     const v5, 0x8000
@@ -1062,17 +952,14 @@
 
     move-result-object v0
 
-    .line 113
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 114
     invoke-virtual {v0, v1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 115
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_39
     .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_39} :catch_42
@@ -1080,7 +967,6 @@
 
     if-eqz v3, :cond_51
 
-    .line 122
     :try_start_3b
     invoke-virtual {v3}, Ljava/nio/channels/FileLock;->release()V
     :try_end_3e
@@ -1098,7 +984,6 @@
     :catch_42
     move-exception v0
 
-    .line 117
     :try_start_43
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_46
@@ -1106,7 +991,6 @@
 
     if-eqz v3, :cond_51
 
-    .line 122
     :try_start_48
     invoke-virtual {v3}, Ljava/nio/channels/FileLock;->release()V
     :try_end_4b
@@ -1119,7 +1003,6 @@
 
     move-object v1, v0
 
-    .line 125
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_51
@@ -1129,7 +1012,6 @@
     :goto_52
     if-eqz v3, :cond_5d
 
-    .line 122
     :try_start_54
     invoke-virtual {v3}, Ljava/nio/channels/FileLock;->release()V
     :try_end_57
@@ -1142,10 +1024,8 @@
 
     move-object v2, v0
 
-    .line 125
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 127
     :cond_5d
     :goto_5d
     throw v1

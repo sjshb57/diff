@@ -66,7 +66,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/io/path/PathNode;->path:Ljava/nio/file/Path;
@@ -91,7 +90,6 @@
         }
     .end annotation
 
-    .line 116
     iget-object v0, p0, Lkotlin/io/path/PathNode;->contentIterator:Ljava/util/Iterator;
 
     return-object v0
@@ -100,7 +98,6 @@
 .method public final getKey()Ljava/lang/Object;
     .registers 2
 
-    .line 115
     iget-object v0, p0, Lkotlin/io/path/PathNode;->key:Ljava/lang/Object;
 
     return-object v0
@@ -109,7 +106,6 @@
 .method public final getParent()Lkotlin/io/path/PathNode;
     .registers 2
 
-    .line 115
     iget-object v0, p0, Lkotlin/io/path/PathNode;->parent:Lkotlin/io/path/PathNode;
 
     return-object v0
@@ -118,7 +114,6 @@
 .method public final getPath()Ljava/nio/file/Path;
     .registers 2
 
-    .line 115
     iget-object v0, p0, Lkotlin/io/path/PathNode;->path:Ljava/nio/file/Path;
 
     return-object v0
@@ -135,7 +130,6 @@
         }
     .end annotation
 
-    .line 116
     iput-object p1, p0, Lkotlin/io/path/PathNode;->contentIterator:Ljava/util/Iterator;
 
     return-void

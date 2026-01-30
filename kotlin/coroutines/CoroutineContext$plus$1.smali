@@ -81,7 +81,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 32
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Element;
@@ -104,7 +103,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 33
     invoke-interface {p2}, Lkotlin/coroutines/CoroutineContext$Element;->getKey()Lkotlin/coroutines/CoroutineContext$Key;
 
     move-result-object v0
@@ -113,7 +111,6 @@
 
     move-result-object p1
 
-    .line 34
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     if-ne p1, v0, :cond_19
@@ -122,7 +119,6 @@
 
     goto :goto_54
 
-    .line 36
     :cond_19
     sget-object v0, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
@@ -136,14 +132,12 @@
 
     if-nez v0, :cond_2b
 
-    .line 37
     new-instance v0, Lkotlin/coroutines/CombinedContext;
 
     invoke-direct {v0, p1, p2}, Lkotlin/coroutines/CombinedContext;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)V
 
     goto :goto_51
 
-    .line 38
     :cond_2b
     sget-object v1, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
@@ -153,7 +147,6 @@
 
     move-result-object p1
 
-    .line 39
     sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     if-ne p1, v1, :cond_42
@@ -170,7 +163,6 @@
 
     goto :goto_51
 
-    .line 40
     :cond_42
     new-instance v1, Lkotlin/coroutines/CombinedContext;
 

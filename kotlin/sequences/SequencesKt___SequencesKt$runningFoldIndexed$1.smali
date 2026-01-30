@@ -235,7 +235,6 @@
 
     move-result-object v0
 
-    .line 2317
     iget v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFoldIndexed$1;->label:I
 
     const/4 v2, 0x2
@@ -295,7 +294,6 @@
 
     check-cast v1, Lkotlin/sequences/SequenceScope;
 
-    .line 2318
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFoldIndexed$1;->$initial:Ljava/lang/Object;
 
     move-object v4, p0
@@ -314,12 +312,10 @@
 
     return-object v0
 
-    .line 2320
     :cond_48
     :goto_48
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFoldIndexed$1;->$initial:Ljava/lang/Object;
 
-    .line 2321
     iget-object v3, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFoldIndexed$1;->$this_runningFoldIndexed:Lkotlin/sequences/Sequence;
 
     invoke-interface {v3}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
@@ -341,7 +337,6 @@
 
     move-result-object v1
 
-    .line 2322
     iget-object v6, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFoldIndexed$1;->$operation:Lkotlin/jvm/functions/Function3;
 
     add-int/lit8 v7, v4, 0x1
@@ -359,7 +354,6 @@
 
     move-result-object v4
 
-    .line 2323
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -389,7 +383,6 @@
 
     goto :goto_52
 
-    .line 2325
     :cond_84
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

@@ -215,7 +215,6 @@
 
     sput-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
-    .line 22
     new-instance v1, L_COROUTINE/ArtificialStackFrames;
 
     invoke-direct {v1}, L_COROUTINE/ArtificialStackFrames;-><init>()V
@@ -226,7 +225,6 @@
 
     sput-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->ARTIFICIAL_FRAME:Ljava/lang/StackTraceElement;
 
-    .line 23
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     const-string v2, "yyyy/MM/dd HH:mm:ss"
@@ -235,7 +233,6 @@
 
     sput-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dateFormat:Ljava/text/SimpleDateFormat;
 
-    .line 28
     new-instance v1, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     const/4 v2, 0x0
@@ -248,20 +245,16 @@
 
     sput-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
-    .line 42
     sput-boolean v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->sanitizeStackTraces:Z
 
-    .line 43
     sput-boolean v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->enableCreationStackTraces:Z
 
-    .line 49
     invoke-direct {v0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getDynamicAttach()Lkotlin/jvm/functions/Function1;
 
     move-result-object v0
 
     sput-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dynamicAttach:Lkotlin/jvm/functions/Function1;
 
-    .line 69
     new-instance v0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-direct {v0, v3}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;-><init>(Z)V
@@ -286,7 +279,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -295,7 +287,6 @@
 .method public static final synthetic access$getCallerInfoCache$p()Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
     .registers 1
 
-    .line 21
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->callerInfoCache:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     return-object v0
@@ -304,7 +295,6 @@
 .method public static final synthetic access$isFinished(Lkotlinx/coroutines/debug/internal/DebugProbesImpl;Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;)Z
     .registers 2
 
-    .line 21
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isFinished(Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;)Z
 
     move-result p0
@@ -315,7 +305,6 @@
 .method public static final synthetic access$probeCoroutineCompleted(Lkotlinx/coroutines/debug/internal/DebugProbesImpl;Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;)V
     .registers 2
 
-    .line 21
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->probeCoroutineCompleted(Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;)V
 
     return-void
@@ -337,7 +326,6 @@
         }
     .end annotation
 
-    .line 112
     invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -350,12 +338,10 @@
 
     if-nez v0, :cond_39
 
-    .line 117
     instance-of v0, p1, Lkotlinx/coroutines/internal/ScopeCoroutine;
 
     if-nez v0, :cond_7f
 
-    .line 118
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -376,7 +362,6 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 119
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -391,7 +376,6 @@
 
     goto :goto_7f
 
-    .line 125
     :cond_39
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->lastObservedStackTrace()Ljava/util/List;
 
@@ -403,12 +387,10 @@
 
     check-cast v3, Ljava/lang/StackTraceElement;
 
-    .line 126
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getState()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 127
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -441,7 +423,6 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 128
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -454,7 +435,6 @@
 
     move-result-object p4
 
-    .line 131
     :cond_7f
     :goto_7f
     invoke-interface {p1}, Lkotlinx/coroutines/Job;->getChildren()Lkotlin/sequences/Sequence;
@@ -478,7 +458,6 @@
 
     check-cast v0, Lkotlinx/coroutines/Job;
 
-    .line 132
     invoke-direct {p0, v0, p2, p3, p4}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->build(Lkotlinx/coroutines/Job;Ljava/util/Map;Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
     goto :goto_87
@@ -503,7 +482,6 @@
         }
     .end annotation
 
-    .line 502
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -512,7 +490,6 @@
 
     return-object p1
 
-    .line 503
     :cond_7
     new-instance v0, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
@@ -532,12 +509,10 @@
 
     invoke-direct {v0, v1, p2, v2, v3}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/debug/internal/StackTraceFrame;J)V
 
-    .line 504
     new-instance p2, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
     invoke-direct {p2, p1, v0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;-><init>(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;)V
 
-    .line 505
     sget-object p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     move-object v0, p1
@@ -552,7 +527,6 @@
 
     invoke-interface {v0, p2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 506
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -561,7 +535,6 @@
 
     invoke-virtual {p1}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->clear()V
 
-    .line 507
     :cond_35
     check-cast p2, Lkotlin/coroutines/Continuation;
 
@@ -586,26 +559,22 @@
         }
     .end annotation
 
-    .line 144
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_2b
 
-    .line 145
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getCapturedCoroutines()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 146
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 620
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;-><init>()V
@@ -616,7 +585,6 @@
 
     move-result-object v0
 
-    .line 150
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$3;
 
     invoke-direct {v1, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$3;-><init>(Lkotlin/jvm/functions/Function2;)V
@@ -627,14 +595,12 @@
 
     move-result-object p1
 
-    .line 154
     invoke-static {p1}, Lkotlin/sequences/SequencesKt;->toList(Lkotlin/sequences/Sequence;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 
-    .line 144
     :cond_2b
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -654,14 +620,12 @@
 .method private final dumpCoroutinesSynchronized(Ljava/io/PrintStream;)V
     .registers 11
 
-    .line 274
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_d0
 
-    .line 275
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
@@ -692,19 +656,16 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintStream;->print(Ljava/lang/String;)V
 
-    .line 276
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getCapturedCoroutines()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 277
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 278
     sget-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesSynchronized$2;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesSynchronized$2;
 
     check-cast v1, Lkotlin/jvm/functions/Function1;
@@ -713,7 +674,6 @@
 
     move-result-object v0
 
-    .line 651
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesSynchronized$$inlined$sortedBy$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesSynchronized$$inlined$sortedBy$1;-><init>()V
@@ -724,7 +684,6 @@
 
     move-result-object v0
 
-    .line 652
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -742,15 +701,12 @@
 
     check-cast v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
-    .line 281
     iget-object v2, v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
-    .line 282
     invoke-virtual {v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->lastObservedStackTrace()Ljava/util/List;
 
     move-result-object v3
 
-    .line 283
     sget-object v4, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     invoke-virtual {v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getState()Ljava/lang/String;
@@ -763,7 +719,6 @@
 
     move-result-object v5
 
-    .line 284
     invoke-virtual {v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getState()Ljava/lang/String;
 
     move-result-object v6
@@ -778,7 +733,6 @@
 
     if-ne v5, v3, :cond_89
 
-    .line 285
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -799,13 +753,11 @@
 
     goto :goto_8d
 
-    .line 287
     :cond_89
     invoke-virtual {v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getState()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 288
     :goto_8d
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -829,14 +781,12 @@
 
     invoke-virtual {p1, v1}, Ljava/io/PrintStream;->print(Ljava/lang/String;)V
 
-    .line 289
     invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_ca
 
-    .line 290
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "\n\tat "
@@ -853,7 +803,6 @@
 
     invoke-virtual {p1, v1}, Ljava/io/PrintStream;->print(Ljava/lang/String;)V
 
-    .line 291
     invoke-virtual {v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getCreationStackTrace()Ljava/util/List;
 
     move-result-object v1
@@ -862,7 +811,6 @@
 
     goto/16 :goto_47
 
-    .line 293
     :cond_ca
     invoke-direct {v4, p1, v5}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->printStackTrace(Ljava/io/PrintStream;Ljava/util/List;)V
 
@@ -871,7 +819,6 @@
     :cond_cf
     return-void
 
-    .line 274
     :cond_d0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -902,7 +849,6 @@
         }
     .end annotation
 
-    .line 326
     const-string v0, "RUNNING"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -915,7 +861,6 @@
 
     goto/16 :goto_b1
 
-    .line 328
     :cond_c
     :try_start_c
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
@@ -965,7 +910,6 @@
 
     return-object p3
 
-    .line 656
     :cond_31
     array-length p2, p1
 
@@ -978,10 +922,8 @@
 
     if-ge v1, p2, :cond_61
 
-    .line 657
     aget-object v3, p1, v1
 
-    .line 348
     invoke-virtual {v3}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v4
@@ -994,7 +936,6 @@
 
     if-eqz v4, :cond_5e
 
-    .line 349
     invoke-virtual {v3}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
 
     move-result-object v4
@@ -1007,7 +948,6 @@
 
     if-eqz v4, :cond_5e
 
-    .line 350
     invoke-virtual {v3}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
     move-result-object v3
@@ -1030,7 +970,6 @@
     :cond_61
     move v1, v2
 
-    .line 353
     :goto_62
     invoke-direct {p0, v1, p1, p3}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->findContinuationStartIndex(I[Ljava/lang/StackTraceElement;Ljava/util/List;)Lkotlin/Pair;
 
@@ -1060,7 +999,6 @@
 
     return-object p3
 
-    .line 361
     :cond_7d
     invoke-interface {p3}, Ljava/util/List;->size()I
 
@@ -1074,7 +1012,6 @@
 
     sub-int/2addr v2, p2
 
-    .line 362
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4, v2}, Ljava/util/ArrayList;-><init>(I)V
@@ -1084,7 +1021,6 @@
     :goto_8c
     if-ge v0, v1, :cond_99
 
-    .line 364
     move-object p2, v4
 
     check-cast p2, Ljava/util/Collection;
@@ -1100,7 +1036,6 @@
     :cond_99
     add-int/lit8 v3, v3, 0x1
 
-    .line 367
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result p1
@@ -1108,7 +1043,6 @@
     :goto_9f
     if-ge v3, p1, :cond_ae
 
-    .line 368
     move-object p2, v4
 
     check-cast p2, Ljava/util/Collection;
@@ -1123,7 +1057,6 @@
 
     goto :goto_9f
 
-    .line 371
     :cond_ae
     check-cast v4, Ljava/util/List;
 
@@ -1161,7 +1094,6 @@
 
     if-ge v1, v3, :cond_21
 
-    .line 394
     sget-object v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     add-int/lit8 v4, p1, -0x1
@@ -1174,7 +1106,6 @@
 
     if-eq v3, v2, :cond_1e
 
-    .line 395
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -1194,7 +1125,6 @@
 
     goto :goto_2
 
-    .line 397
     :cond_21
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1223,7 +1153,6 @@
         }
     .end annotation
 
-    .line 405
     invoke-static {p2, p1}, Lkotlin/collections/ArraysKt;->getOrNull([Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1236,7 +1165,6 @@
 
     return p2
 
-    .line 663
     :cond_a
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1255,10 +1183,8 @@
 
     move-result-object v1
 
-    .line 664
     check-cast v1, Ljava/lang/StackTraceElement;
 
-    .line 409
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
     move-result-object v2
@@ -1273,7 +1199,6 @@
 
     if-eqz v2, :cond_47
 
-    .line 410
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v2
@@ -1288,7 +1213,6 @@
 
     if-eqz v2, :cond_47
 
-    .line 411
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
 
     move-result-object v1
@@ -1328,7 +1252,6 @@
         }
     .end annotation
 
-    .line 29
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->keySet()Ljava/util/Set;
@@ -1341,7 +1264,6 @@
 .method private final getDebugString(Lkotlinx/coroutines/Job;)Ljava/lang/String;
     .registers 3
 
-    .line 137
     instance-of v0, p1, Lkotlinx/coroutines/JobSupport;
 
     if-eqz v0, :cond_b
@@ -1381,7 +1303,6 @@
         }
     .end annotation
 
-    .line 52
     :try_start_0
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
@@ -1389,14 +1310,12 @@
 
     check-cast v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
-    .line 53
     const-string v0, "kotlinx.coroutines.debug.internal.ByteBuddyDynamicAttach"
 
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 54
     invoke-virtual {v0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
     move-result-object v0
@@ -1405,7 +1324,6 @@
 
     aget-object v0, v0, v1
 
-    .line 55
     new-array v1, v1, [Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
@@ -1424,7 +1342,6 @@
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    .line 52
     invoke-static {v0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1446,7 +1363,6 @@
 
     move-result-object v0
 
-    .line 56
     :goto_34
     invoke-static {v0}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
 
@@ -1472,7 +1388,6 @@
         }
     .end annotation
 
-    .line 267
     iget-object v0, p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -1497,7 +1412,6 @@
 
     goto :goto_24
 
-    .line 268
     :cond_16
     invoke-interface {v0}, Lkotlinx/coroutines/Job;->isCompleted()Z
 
@@ -1507,7 +1421,6 @@
 
     return v1
 
-    .line 269
     :cond_1d
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
@@ -1525,7 +1438,6 @@
 .method private final isInternalMethod(Ljava/lang/StackTraceElement;)Z
     .registers 6
 
-    .line 591
     invoke-virtual {p1}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object p1
@@ -1559,7 +1471,6 @@
         }
     .end annotation
 
-    .line 466
     instance-of v0, p1, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     const/4 v1, 0x0
@@ -1596,7 +1507,6 @@
         }
     .end annotation
 
-    .line 469
     :goto_0
     instance-of v0, p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
@@ -1634,10 +1544,8 @@
         }
     .end annotation
 
-    .line 299
     check-cast p2, Ljava/lang/Iterable;
 
-    .line 654
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -1655,7 +1563,6 @@
 
     check-cast v0, Ljava/lang/StackTraceElement;
 
-    .line 300
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "\n\tat "
@@ -1686,12 +1593,10 @@
         }
     .end annotation
 
-    .line 512
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0, p1}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 517
     iget-object p1, p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     invoke-virtual {p1}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getLastObservedFrame$kotlinx_coroutines_core()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
@@ -1708,7 +1613,6 @@
 
     goto :goto_19
 
-    .line 518
     :cond_14
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->callerInfoCache:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
@@ -1722,7 +1626,6 @@
 .method private final realCaller(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;)Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
     .registers 3
 
-    .line 457
     :cond_0
     invoke-interface {p1}, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;->getCallerFrame()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -1734,7 +1637,6 @@
 
     return-object p1
 
-    .line 458
     :cond_8
     invoke-interface {p1}, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;->getStackTraceElement()Ljava/lang/StackTraceElement;
 
@@ -1758,15 +1660,12 @@
         }
     .end annotation
 
-    .line 545
     invoke-virtual {p1}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object p1
 
-    .line 546
     array-length v0, p1
 
-    .line 677
     array-length v1, p1
 
     const/4 v2, -0x1
@@ -1778,10 +1677,8 @@
     :goto_a
     add-int/lit8 v3, v1, -0x1
 
-    .line 678
     aget-object v4, p1, v1
 
-    .line 547
     invoke-virtual {v4}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v4
@@ -1814,14 +1711,12 @@
 
     add-int/2addr v2, v1
 
-    .line 549
     sget-boolean v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->sanitizeStackTraces:Z
 
     if-nez v3, :cond_3d
 
     sub-int/2addr v0, v2
 
-    .line 550
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
@@ -1846,7 +1741,6 @@
 
     return-object v1
 
-    .line 561
     :cond_3d
     new-instance v3, Ljava/util/ArrayList;
 
@@ -1859,7 +1753,6 @@
     :goto_45
     if-ge v2, v0, :cond_91
 
-    .line 564
     aget-object v1, p1, v2
 
     invoke-direct {p0, v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInternalMethod(Ljava/lang/StackTraceElement;)Z
@@ -1868,7 +1761,6 @@
 
     if-eqz v1, :cond_86
 
-    .line 565
     move-object v1, v3
 
     check-cast v1, Ljava/util/Collection;
@@ -1882,7 +1774,6 @@
     :goto_59
     if-ge v4, v0, :cond_66
 
-    .line 568
     aget-object v5, p1, v4
 
     invoke-direct {p0, v5}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInternalMethod(Ljava/lang/StackTraceElement;)Z
@@ -1903,7 +1794,6 @@
     :goto_69
     if-le v6, v2, :cond_76
 
-    .line 573
     aget-object v7, p1, v6
 
     invoke-virtual {v7}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
@@ -1921,12 +1811,10 @@
 
     if-ge v6, v5, :cond_7f
 
-    .line 579
     aget-object v2, p1, v6
 
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 581
     :cond_7f
     aget-object v2, p1, v5
 
@@ -1936,7 +1824,6 @@
 
     goto :goto_45
 
-    .line 584
     :cond_86
     move-object v1, v3
 
@@ -1950,7 +1837,6 @@
 
     goto :goto_45
 
-    .line 588
     :cond_91
     check-cast v3, Ljava/util/List;
 
@@ -1960,7 +1846,6 @@
 .method private final startWeakRefCleanerThread()V
     .registers 10
 
-    .line 89
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$startWeakRefCleanerThread$1;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl$startWeakRefCleanerThread$1;
 
     move-object v6, v0
@@ -1995,7 +1880,6 @@
 .method private final stopWeakRefCleanerThread()V
     .registers 3
 
-    .line 95
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->weakRefCleanerThread:Ljava/lang/Thread;
 
     if-nez v0, :cond_5
@@ -2005,13 +1889,10 @@
     :cond_5
     const/4 v1, 0x0
 
-    .line 96
     sput-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->weakRefCleanerThread:Ljava/lang/Thread;
 
-    .line 97
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
 
-    .line 98
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
 
     return-void
@@ -2029,7 +1910,6 @@
         }
     .end annotation
 
-    .line 670
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -2038,7 +1918,6 @@
 
     if-nez v0, :cond_24
 
-    .line 671
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -2047,7 +1926,6 @@
 
     move-result-object p1
 
-    .line 672
     :goto_f
     invoke-interface {p1}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -2055,14 +1933,12 @@
 
     if-eqz v0, :cond_24
 
-    .line 673
     invoke-interface {p1}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/StackTraceElement;
 
-    .line 497
     new-instance v2, Lkotlinx/coroutines/debug/internal/StackTraceFrame;
 
     check-cast v1, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
@@ -2073,14 +1949,11 @@
 
     goto :goto_f
 
-    .line 676
     :cond_24
     check-cast v1, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
-    .line 498
     sget-object p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->ARTIFICIAL_FRAME:Ljava/lang/StackTraceElement;
 
-    .line 495
     new-instance v0, Lkotlinx/coroutines/debug/internal/StackTraceFrame;
 
     invoke-direct {v0, v1, p1}, Lkotlinx/coroutines/debug/internal/StackTraceFrame;-><init>(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;Ljava/lang/StackTraceElement;)V
@@ -2091,7 +1964,6 @@
 .method private final toStringRepr(Ljava/lang/Object;)Ljava/lang/String;
     .registers 2
 
-    .line 232
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -2106,7 +1978,6 @@
 .method private final updateRunningState(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;Ljava/lang/String;)V
     .registers 7
 
-    .line 435
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -2115,7 +1986,6 @@
 
     return-void
 
-    .line 438
     :cond_7
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->callerInfoCache:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
@@ -2131,7 +2001,6 @@
 
     goto :goto_30
 
-    .line 444
     :cond_13
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->owner(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;)Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
@@ -2145,7 +2014,6 @@
 
     goto :goto_47
 
-    .line 447
     :cond_1e
     invoke-virtual {v1}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getLastObservedFrame$kotlinx_coroutines_core()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -2165,13 +2033,11 @@
     :goto_2a
     if-eqz v2, :cond_2f
 
-    .line 448
     invoke-virtual {v0, v2}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2f
     const/4 v2, 0x1
 
-    .line 450
     :goto_30
     const-string v3, "null cannot be cast to non-null type kotlin.coroutines.Continuation<*>"
 
@@ -2183,7 +2049,6 @@
 
     invoke-virtual {v1, p2, v3, v2}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->updateState$kotlinx_coroutines_core(Ljava/lang/String;Lkotlin/coroutines/Continuation;Z)V
 
-    .line 452
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->realCaller(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;)Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     move-result-object p1
@@ -2192,7 +2057,6 @@
 
     return-void
 
-    .line 453
     :cond_42
     check-cast v0, Ljava/util/Map;
 
@@ -2215,7 +2079,6 @@
         }
     .end annotation
 
-    .line 420
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -2224,7 +2087,6 @@
 
     return-void
 
-    .line 422
     :cond_7
     const-string v0, "RUNNING"
 
@@ -2248,7 +2110,6 @@
 
     if-eqz v0, :cond_2a
 
-    .line 423
     instance-of v0, p1, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     if-eqz v0, :cond_22
@@ -2265,13 +2126,11 @@
 
     return-void
 
-    .line 424
     :cond_26
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->updateRunningState(Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;Ljava/lang/String;)V
 
     return-void
 
-    .line 429
     :cond_2a
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->owner(Lkotlin/coroutines/Continuation;)Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
@@ -2281,7 +2140,6 @@
 
     return-void
 
-    .line 430
     :cond_31
     invoke-direct {p0, v0, p1, p2}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->updateState(Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;Lkotlin/coroutines/Continuation;Ljava/lang/String;)V
 
@@ -2302,7 +2160,6 @@
         }
     .end annotation
 
-    .line 462
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -2311,7 +2168,6 @@
 
     return-void
 
-    .line 463
     :cond_7
     iget-object p1, p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
@@ -2327,21 +2183,17 @@
 .method public final dumpCoroutines(Ljava/io/PrintStream;)V
     .registers 3
 
-    .line 247
     monitor-enter p1
 
-    .line 255
     :try_start_1
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dumpCoroutinesSynchronized(Ljava/io/PrintStream;)V
 
-    .line 256
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_8
     .catchall {:try_start_1 .. :try_end_8} :catchall_a
 
-    .line 247
     monitor-exit p1
 
     return-void
@@ -2365,26 +2217,22 @@
         }
     .end annotation
 
-    .line 627
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_2b
 
-    .line 629
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getCapturedCoroutines()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 630
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 633
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;-><init>()V
@@ -2395,7 +2243,6 @@
 
     move-result-object v0
 
-    .line 634
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfo$$inlined$dumpCoroutinesInfoImpl$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfo$$inlined$dumpCoroutinesInfoImpl$1;-><init>()V
@@ -2406,14 +2253,12 @@
 
     move-result-object v0
 
-    .line 638
     invoke-static {v0}, Lkotlin/sequences/SequencesKt;->toList(Lkotlin/sequences/Sequence;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 
-    .line 627
     :cond_2b
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -2431,32 +2276,26 @@
 .method public final dumpCoroutinesInfoAsJsonAndReferences()[Ljava/lang/Object;
     .registers 16
 
-    .line 178
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dumpCoroutinesInfo()Ljava/util/List;
 
     move-result-object v0
 
-    .line 179
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
 
-    .line 180
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 181
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 182
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 183
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2474,12 +2313,10 @@
 
     check-cast v5, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;
 
-    .line 184
     invoke-virtual {v5}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v6
 
-    .line 185
     sget-object v7, Lkotlinx/coroutines/CoroutineName;->Key:Lkotlinx/coroutines/CoroutineName$Key;
 
     check-cast v7, Lkotlin/coroutines/CoroutineContext$Key;
@@ -2509,7 +2346,6 @@
     :cond_43
     move-object v7, v8
 
-    .line 186
     :goto_44
     sget-object v9, Lkotlinx/coroutines/CoroutineDispatcher;->Key:Lkotlinx/coroutines/CoroutineDispatcher$Key;
 
@@ -2532,7 +2368,6 @@
     :cond_55
     move-object v9, v8
 
-    .line 188
     :goto_56
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -2542,13 +2377,10 @@
 
     invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 190
     const-string v7, ",\n                    \"id\": "
 
-    .line 188
     invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 191
     sget-object v7, Lkotlinx/coroutines/CoroutineId;->Key:Lkotlinx/coroutines/CoroutineId$Key;
 
     check-cast v7, Lkotlin/coroutines/CoroutineContext$Key;
@@ -2569,74 +2401,57 @@
 
     move-result-object v8
 
-    .line 188
     :cond_79
     invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 191
     const-string v6, ",\n                    \"dispatcher\": "
 
-    .line 188
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 192
     const-string v6, ",\n                    \"sequenceNumber\": "
 
-    .line 188
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 193
     invoke-virtual {v5}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getSequenceNumber()J
 
     move-result-wide v6
 
-    .line 188
     invoke-virtual {v10, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 193
     const-string v6, ",\n                    \"state\": \""
 
-    .line 188
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 194
     invoke-virtual {v5}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getState()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 188
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 194
     const/4 v6, 0x0
 
     sget-object v6, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->dlk:Ljava/lang/String;
 
-    .line 188
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 196
     invoke-static {v6}, Lkotlin/text/StringsKt;->trimIndent(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 187
     invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 198
     invoke-virtual {v5}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getLastObservedFrame()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     move-result-object v6
 
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 199
     invoke-virtual {v5}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getLastObservedThread()Ljava/lang/Thread;
 
     move-result-object v5
@@ -2645,7 +2460,6 @@
 
     goto/16 :goto_1b
 
-    .line 203
     :cond_bd
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2689,32 +2503,26 @@
 
     move-result-object v1
 
-    .line 204
     check-cast v2, Ljava/util/Collection;
 
     const/4 v4, 0x0
 
-    .line 622
     new-array v5, v4, [Ljava/lang/Thread;
 
     invoke-interface {v2, v5}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 205
     check-cast v3, Ljava/util/Collection;
 
-    .line 624
     new-array v5, v4, [Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     invoke-interface {v3, v5}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 206
     check-cast v0, Ljava/util/Collection;
 
-    .line 626
     new-array v5, v4, [Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;
 
     invoke-interface {v0, v5}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2753,26 +2561,22 @@
         }
     .end annotation
 
-    .line 639
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_2b
 
-    .line 641
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getCapturedCoroutines()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 642
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->asSequence(Ljava/lang/Iterable;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 645
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpCoroutinesInfoImpl$$inlined$sortedBy$1;-><init>()V
@@ -2783,7 +2587,6 @@
 
     move-result-object v0
 
-    .line 646
     new-instance v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpDebuggerInfo$$inlined$dumpCoroutinesInfoImpl$1;
 
     invoke-direct {v1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$dumpDebuggerInfo$$inlined$dumpCoroutinesInfoImpl$1;-><init>()V
@@ -2794,14 +2597,12 @@
 
     move-result-object v0
 
-    .line 650
     invoke-static {v0}, Lkotlin/sequences/SequencesKt;->toList(Lkotlin/sequences/Sequence;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 
-    .line 639
     :cond_2b
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -2831,7 +2632,6 @@
         }
     .end annotation
 
-    .line 313
     invoke-virtual {p1}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->getState()Ljava/lang/String;
 
     move-result-object v0
@@ -2850,7 +2650,6 @@
 .method public final enhanceStackTraceWithThreadDumpAsJson(Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;)Ljava/lang/String;
     .registers 13
 
-    .line 214
     invoke-virtual {p1}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfo;->lastObservedStackTrace()Ljava/util/List;
 
     move-result-object v0
@@ -2859,14 +2658,12 @@
 
     move-result-object p1
 
-    .line 215
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 216
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -2884,7 +2681,6 @@
 
     check-cast v1, Ljava/lang/StackTraceElement;
 
-    .line 218
     new-instance v2, Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
@@ -2893,35 +2689,26 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 220
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 218
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 220
     const-string v3, "\",\n                    \"methodName\": \""
 
-    .line 218
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 221
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 218
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 221
     const-string v3, "\",\n                    \"fileName\": "
 
-    .line 218
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 222
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getFileName()Ljava/lang/String;
 
     move-result-object v3
@@ -2937,45 +2724,35 @@
     :cond_4a
     const/4 v3, 0x0
 
-    .line 218
     :goto_4b
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 222
     const-string v3, ",\n                    \"lineNumber\": "
 
-    .line 218
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 223
     invoke-virtual {v1}, Ljava/lang/StackTraceElement;->getLineNumber()I
 
     move-result v1
 
-    .line 218
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 223
     const-string v1, "\n                }\n                "
 
-    .line 218
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 225
     invoke-static {v1}, Lkotlin/text/StringsKt;->trimIndent(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 217
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_13
 
-    .line 229
     :cond_6b
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -3023,7 +2800,6 @@
 .method public final getEnableCreationStackTraces()Z
     .registers 2
 
-    .line 43
     sget-boolean v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->enableCreationStackTraces:Z
 
     return v0
@@ -3032,7 +2808,6 @@
 .method public final getSanitizeStackTraces()Z
     .registers 2
 
-    .line 42
     sget-boolean v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->sanitizeStackTraces:Z
 
     return v0
@@ -3041,28 +2816,24 @@
 .method public final hierarchyToString(Lkotlinx/coroutines/Job;)Ljava/lang/String;
     .registers 7
 
-    .line 102
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_89
 
-    .line 103
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->getCapturedCoroutines()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 611
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 612
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -3083,7 +2854,6 @@
 
     check-cast v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
-    .line 104
     iget-object v3, v3, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-interface {v3}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -3100,21 +2870,17 @@
 
     if-eqz v3, :cond_17
 
-    .line 612
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_17
 
-    .line 613
     :cond_38
     check-cast v1, Ljava/util/List;
 
-    .line 611
     check-cast v1, Ljava/lang/Iterable;
 
     const/16 v0, 0xa
 
-    .line 614
     invoke-static {v1, v0}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
 
     move-result v0
@@ -3129,14 +2895,12 @@
 
     move-result v0
 
-    .line 615
     new-instance v2, Ljava/util/LinkedHashMap;
 
     invoke-direct {v2, v0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     check-cast v2, Ljava/util/Map;
 
-    .line 616
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -3152,10 +2916,8 @@
 
     move-result-object v1
 
-    .line 617
     check-cast v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
-    .line 105
     iget-object v3, v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-interface {v3}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -3168,25 +2930,21 @@
 
     iget-object v1, v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
-    .line 617
     invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_57
 
-    .line 106
     :cond_73
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 107
     sget-object v1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     const-string v3, ""
 
     invoke-direct {v1, p1, v2, v0, v3}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->build(Lkotlinx/coroutines/Job;Ljava/util/Map;Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 106
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -3197,7 +2955,6 @@
 
     return-object p1
 
-    .line 102
     :cond_89
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3215,7 +2972,6 @@
 .method public final install()V
     .registers 3
 
-    .line 72
     invoke-static {}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$Installations$kotlinx$VolatileWrapper;->access$getInstallations$FU$p()Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     move-result-object v0
@@ -3232,11 +2988,9 @@
 
     return-void
 
-    .line 73
     :cond_e
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->startWeakRefCleanerThread()V
 
-    .line 74
     sget-object v0, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->INSTANCE:Lkotlinx/coroutines/debug/internal/AgentInstallationType;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->isInstalledStatically$kotlinx_coroutines_core()Z
@@ -3247,7 +3001,6 @@
 
     return-void
 
-    .line 75
     :cond_1a
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dynamicAttach:Lkotlin/jvm/functions/Function1;
 
@@ -3303,7 +3056,6 @@
         }
     .end annotation
 
-    .line 473
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
@@ -3312,7 +3064,6 @@
 
     return-object p1
 
-    .line 478
     :cond_7
     invoke-direct {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->owner(Lkotlin/coroutines/Continuation;)Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
@@ -3322,13 +3073,11 @@
 
     return-object p1
 
-    .line 486
     :cond_e
     sget-boolean v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->enableCreationStackTraces:Z
 
     if-eqz v0, :cond_22
 
-    .line 487
     new-instance v0, Ljava/lang/Exception;
 
     invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
@@ -3348,7 +3097,6 @@
     :cond_22
     const/4 v0, 0x0
 
-    .line 491
     :goto_23
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->createOwner(Lkotlin/coroutines/Continuation;Lkotlinx/coroutines/debug/internal/StackTraceFrame;)Lkotlin/coroutines/Continuation;
 
@@ -3367,7 +3115,6 @@
         }
     .end annotation
 
-    .line 415
     const-string v0, "RUNNING"
 
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->updateState(Lkotlin/coroutines/Continuation;Ljava/lang/String;)V
@@ -3385,7 +3132,6 @@
         }
     .end annotation
 
-    .line 417
     const-string v0, "SUSPENDED"
 
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->updateState(Lkotlin/coroutines/Continuation;Ljava/lang/String;)V
@@ -3396,7 +3142,6 @@
 .method public final setEnableCreationStackTraces(Z)V
     .registers 2
 
-    .line 43
     sput-boolean p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->enableCreationStackTraces:Z
 
     return-void
@@ -3405,7 +3150,6 @@
 .method public final setSanitizeStackTraces(Z)V
     .registers 2
 
-    .line 42
     sput-boolean p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->sanitizeStackTraces:Z
 
     return-void
@@ -3414,14 +3158,12 @@
 .method public final uninstall()V
     .registers 3
 
-    .line 79
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
 
     move-result v0
 
     if-eqz v0, :cond_36
 
-    .line 80
     invoke-static {}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$Installations$kotlinx$VolatileWrapper;->access$getInstallations$FU$p()Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     move-result-object v0
@@ -3436,21 +3178,17 @@
 
     return-void
 
-    .line 81
     :cond_13
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->stopWeakRefCleanerThread()V
 
-    .line 82
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->capturedCoroutinesMap:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->clear()V
 
-    .line 83
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->callerInfoCache:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->clear()V
 
-    .line 84
     sget-object v0, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->INSTANCE:Lkotlinx/coroutines/debug/internal/AgentInstallationType;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->isInstalledStatically$kotlinx_coroutines_core()Z
@@ -3461,7 +3199,6 @@
 
     return-void
 
-    .line 85
     :cond_29
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->dynamicAttach:Lkotlin/jvm/functions/Function1;
 
@@ -3478,7 +3215,6 @@
     :cond_35
     return-void
 
-    .line 79
     :cond_36
     new-instance v0, Ljava/lang/IllegalStateException;
 

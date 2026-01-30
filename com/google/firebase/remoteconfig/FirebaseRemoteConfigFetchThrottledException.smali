@@ -11,7 +11,6 @@
 .method public constructor <init>(J)V
     .registers 4
 
-    .line 29
     const-string v0, "Fetch was throttled."
 
     invoke-direct {p0, v0, p1, p2}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigFetchThrottledException;-><init>(Ljava/lang/String;J)V
@@ -22,10 +21,8 @@
 .method public constructor <init>(Ljava/lang/String;J)V
     .registers 4
 
-    .line 43
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;-><init>(Ljava/lang/String;)V
 
-    .line 44
     iput-wide p2, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigFetchThrottledException;->throttleEndTimeMillis:J
 
     return-void
@@ -36,7 +33,6 @@
 .method public getThrottleEndTimeMillis()J
     .registers 3
 
-    .line 49
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigFetchThrottledException;->throttleEndTimeMillis:J
 
     return-wide v0

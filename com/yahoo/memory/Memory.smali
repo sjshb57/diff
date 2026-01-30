@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
         }
     .end annotation
 
-    .line 334
     invoke-static {p0, p1, p2, p3, p4}, Lcom/yahoo/memory/WritableMemoryImpl;->toHex(Ljava/lang/String;JILcom/yahoo/memory/Memory;)Ljava/lang/String;
 
     move-result-object p0
@@ -51,19 +49,16 @@
 
     if-eqz p0, :cond_b
 
-    .line 30
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
 
     if-nez v0, :cond_b
 
-    .line 31
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 33
     :cond_b
     new-instance v0, Lcom/yahoo/memory/WritableMemoryImpl;
 
@@ -87,7 +82,6 @@
         }
     .end annotation
 
-    .line 52
     array-length v0, p0
 
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
@@ -120,17 +114,14 @@
         }
     .end annotation
 
-    .line 78
     invoke-static {p0}, Lcom/yahoo/memory/Util;->nullCheck(Ljava/lang/Object;)V
 
-    .line 79
     invoke-static {p3}, Lcom/yahoo/memory/Util;->nullCheck(Ljava/lang/Object;)V
 
     int-to-long v0, p1
 
     int-to-long v2, p2
 
-    .line 80
     array-length p1, p0
 
     int-to-long v4, p1
@@ -139,18 +130,15 @@
 
     if-nez p2, :cond_12
 
-    .line 82
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 84
     :cond_12
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 85
     new-instance p1, Lcom/yahoo/memory/WritableMemoryImpl;
 
     invoke-direct {p1, p0, p3}, Lcom/yahoo/memory/WritableMemoryImpl;-><init>(Ljava/nio/ByteBuffer;Ljava/nio/ByteOrder;)V
@@ -173,7 +161,6 @@
 
     const/4 v0, 0x0
 
-    .line 64
     array-length v1, p0
 
     invoke-static {p0, v0, v1, p1}, Lcom/yahoo/memory/Memory;->wrap([BIILjava/nio/ByteOrder;)Lcom/yahoo/memory/Memory;

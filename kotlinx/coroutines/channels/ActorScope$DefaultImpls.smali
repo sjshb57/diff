@@ -32,7 +32,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 20
     check-cast p0, Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-static {p0}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel(Lkotlinx/coroutines/channels/ReceiveChannel;)V
@@ -54,7 +53,6 @@
         }
     .end annotation
 
-    .line 20
     check-cast p0, Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-static {p0}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->getOnReceiveOrNull(Lkotlinx/coroutines/channels/ReceiveChannel;)Lkotlinx/coroutines/selects/SelectClause1;
@@ -85,7 +83,6 @@
         .end subannotation
     .end annotation
 
-    .line 20
     check-cast p0, Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-static {p0}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->poll(Lkotlinx/coroutines/channels/ReceiveChannel;)Ljava/lang/Object;
@@ -119,7 +116,6 @@
         .end subannotation
     .end annotation
 
-    .line 20
     check-cast p0, Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->receiveOrNull(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

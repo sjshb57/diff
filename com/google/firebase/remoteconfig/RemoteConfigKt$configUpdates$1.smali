@@ -178,7 +178,6 @@
 
     move-result-object v0
 
-    .line 63
     iget v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1;->label:I
 
     const/4 v2, 0x1
@@ -207,17 +206,14 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 65
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1;->$this_configUpdates:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
-    .line 66
     new-instance v3, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1$registration$1;
 
     invoke-direct {v3, v1, p1}, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1$registration$1;-><init>(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;Lkotlinx/coroutines/channels/ProducerScope;)V
 
     check-cast v3, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
-    .line 65
     invoke-virtual {v1, v3}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->addOnConfigUpdateListener(Lcom/google/firebase/remoteconfig/ConfigUpdateListener;)Lcom/google/firebase/remoteconfig/ConfigUpdateListenerRegistration;
 
     move-result-object v1
@@ -226,7 +222,6 @@
 
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
     new-instance v3, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1$1;
 
     invoke-direct {v3, v1}, Lcom/google/firebase/remoteconfig/RemoteConfigKt$configUpdates$1$1;-><init>(Lcom/google/firebase/remoteconfig/ConfigUpdateListenerRegistration;)V
@@ -247,7 +242,6 @@
 
     return-object v0
 
-    .line 77
     :cond_43
     :goto_43
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

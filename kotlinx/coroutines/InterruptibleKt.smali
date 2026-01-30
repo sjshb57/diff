@@ -50,7 +50,6 @@
 .method public static final synthetic access$runInterruptibleInExpectedContext(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/InterruptibleKt;->runInterruptibleInExpectedContext(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 
     move-result-object p0
@@ -74,7 +73,6 @@
         }
     .end annotation
 
-    .line 43
     new-instance v0, Lkotlinx/coroutines/InterruptibleKt$runInterruptible$2;
 
     const/4 v1, 0x0
@@ -97,12 +95,10 @@
 
     if-eqz p3, :cond_8
 
-    .line 41
     sget-object p0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p0, Lkotlin/coroutines/CoroutineContext;
 
-    .line 40
     :cond_8
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/InterruptibleKt;->runInterruptible(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -124,7 +120,6 @@
         }
     .end annotation
 
-    .line 49
     :try_start_0
     new-instance v0, Lkotlinx/coroutines/ThreadState;
 
@@ -134,12 +129,10 @@
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/ThreadState;-><init>(Lkotlinx/coroutines/Job;)V
 
-    .line 50
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadState;->setup()V
     :try_end_c
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_c} :catch_19
 
-    .line 52
     :try_start_c
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -147,7 +140,6 @@
     :try_end_10
     .catchall {:try_start_c .. :try_end_10} :catchall_14
 
-    .line 54
     :try_start_10
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadState;->clearInterrupt()V
 
@@ -165,7 +157,6 @@
     :catch_19
     move-exception p0
 
-    .line 57
     new-instance p1, Ljava/util/concurrent/CancellationException;
 
     const-string v0, "Blocking call was interrupted due to parent cancellation"

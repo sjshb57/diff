@@ -26,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .registers 4
 
-    .line 14
     iput-object p1, p0, Lcom/saucesdk/android/getgaid/GAIDHelper$1;->val$context:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/saucesdk/android/getgaid/GAIDHelper$1;->val$objName:Ljava/lang/String;
@@ -45,7 +44,6 @@
 
     const-string v0, "GetGAID Finish:"
 
-    .line 18
     :try_start_2
     iget-object v1, p0, Lcom/saucesdk/android/getgaid/GAIDHelper$1;->val$context:Landroid/content/Context;
 
@@ -55,7 +53,6 @@
 
     if-eqz v1, :cond_f
 
-    .line 19
     invoke-virtual {v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->getId()Ljava/lang/String;
 
     move-result-object v1
@@ -65,7 +62,6 @@
     :cond_f
     const-string v1, ""
 
-    .line 20
     :goto_11
     const-string v2, "GAIDHelper"
 
@@ -81,7 +77,6 @@
 
     invoke-static {v2, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 21
     iget-object v0, p0, Lcom/saucesdk/android/getgaid/GAIDHelper$1;->val$objName:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/saucesdk/android/getgaid/GAIDHelper$1;->val$methodName:Ljava/lang/String;
@@ -95,7 +90,6 @@
     :catch_2a
     move-exception v0
 
-    .line 23
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_2e

@@ -82,17 +82,14 @@
         }
     .end annotation
 
-    .line 409
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 410
     invoke-static {p1}, Lkotlin/sequences/TakeSequence;->access$getCount$p(Lkotlin/sequences/TakeSequence;)I
 
     move-result v0
 
     iput v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
-    .line 411
     invoke-static {p1}, Lkotlin/sequences/TakeSequence;->access$getSequence$p(Lkotlin/sequences/TakeSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -118,7 +115,6 @@
         }
     .end annotation
 
-    .line 411
     iget-object v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -127,7 +123,6 @@
 .method public final getLeft()I
     .registers 2
 
-    .line 410
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     return v0
@@ -136,7 +131,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 421
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     if-lez v0, :cond_e
@@ -168,17 +162,14 @@
         }
     .end annotation
 
-    .line 414
     iget v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     if-eqz v0, :cond_f
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 416
     iput v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
-    .line 417
     iget-object v0, p0, Lkotlin/sequences/TakeSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -187,7 +178,6 @@
 
     return-object v0
 
-    .line 415
     :cond_f
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -211,7 +201,6 @@
 .method public final setLeft(I)V
     .registers 2
 
-    .line 410
     iput p1, p0, Lkotlin/sequences/TakeSequence$iterator$1;->left:I
 
     return-void

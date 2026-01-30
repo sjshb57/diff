@@ -50,7 +50,6 @@
         }
     .end annotation
 
-    .line 74
     new-instance v0, Lkotlinx/coroutines/CompletableDeferredImpl;
 
     const/4 v1, 0x0
@@ -78,7 +77,6 @@
         }
     .end annotation
 
-    .line 68
     new-instance v0, Lkotlinx/coroutines/CompletableDeferredImpl;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/CompletableDeferredImpl;-><init>(Lkotlinx/coroutines/Job;)V
@@ -97,7 +95,6 @@
 
     const/4 p0, 0x0
 
-    .line 68
     :cond_5
     invoke-static {p0}, Lkotlinx/coroutines/CompletableDeferredKt;->CompletableDeferred(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableDeferred;
 
@@ -120,7 +117,6 @@
         }
     .end annotation
 
-    .line 61
     invoke-static {p1}, Lkotlin/Result;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     move-result-object v0

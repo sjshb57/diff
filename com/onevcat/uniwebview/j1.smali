@@ -46,24 +46,20 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const/4 v0, 0x0
 
     sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->sfMyUdkmA:Ljava/lang/String;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 3
     iget-object v0, p0, Lcom/onevcat/uniwebview/j1;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/onevcat/uniwebview/j1;->b:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const-string v2, "key"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -76,13 +72,10 @@
 
     sget-object p1, La/i;->c:La/i$a;
 
-    .line 5
     sget-object p1, La/i;->d:La/i;
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 7
     const-string v0, "message"
 
     const-string v1, "Trying to set null or empty key for header field. Please check you have set correct key."
@@ -98,13 +91,10 @@
     :cond_2f
     if-nez v1, :cond_39
 
-    .line 8
     iget-object p1, p1, La/o;->e:La/s;
 
-    .line 9
     iget-object p1, p1, La/s;->g:Ljava/util/LinkedHashMap;
 
-    .line 10
     invoke-interface {p1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_40
@@ -112,13 +102,10 @@
     :cond_39
     iget-object p1, p1, La/o;->e:La/s;
 
-    .line 11
     iget-object p1, p1, La/s;->g:Ljava/util/LinkedHashMap;
 
-    .line 12
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 13
     :goto_40
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

@@ -28,18 +28,14 @@
 .method constructor <init>()V
     .registers 2
 
-    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 36
     iput-object v0, p0, Lcom/google/flatbuffers/Utf8Old$Cache;->lastInput:Ljava/lang/CharSequence;
 
-    .line 37
     iput-object v0, p0, Lcom/google/flatbuffers/Utf8Old$Cache;->lastOutput:Ljava/nio/ByteBuffer;
 
-    .line 40
     sget-object v0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {v0}, Ljava/nio/charset/Charset;->newEncoder()Ljava/nio/charset/CharsetEncoder;
@@ -48,7 +44,6 @@
 
     iput-object v0, p0, Lcom/google/flatbuffers/Utf8Old$Cache;->encoder:Ljava/nio/charset/CharsetEncoder;
 
-    .line 41
     sget-object v0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {v0}, Ljava/nio/charset/Charset;->newDecoder()Ljava/nio/charset/CharsetDecoder;

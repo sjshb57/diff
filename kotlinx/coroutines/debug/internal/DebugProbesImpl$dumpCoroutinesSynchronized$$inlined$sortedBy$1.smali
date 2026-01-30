@@ -74,10 +74,8 @@
         }
     .end annotation
 
-    .line 102
     check-cast p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
-    .line 329
     iget-object p1, p1, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     iget-wide v0, p1, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->sequenceNumber:J
@@ -86,12 +84,10 @@
 
     move-result-object p1
 
-    .line 102
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p2, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;
 
-    .line 329
     iget-object p2, p2, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     iget-wide v0, p2, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->sequenceNumber:J
@@ -100,7 +96,6 @@
 
     move-result-object p2
 
-    .line 102
     check-cast p2, Ljava/lang/Comparable;
 
     invoke-static {p1, p2}, Lkotlin/comparisons/ComparisonsKt;->compareValues(Ljava/lang/Comparable;Ljava/lang/Comparable;)I

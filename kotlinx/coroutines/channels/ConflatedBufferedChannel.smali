@@ -93,16 +93,12 @@
         }
     .end annotation
 
-    .line 26
     invoke-direct {p0, p1, p3}, Lkotlinx/coroutines/channels/BufferedChannel;-><init>(ILkotlin/jvm/functions/Function1;)V
 
-    .line 23
     iput p1, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->capacity:I
 
-    .line 24
     iput-object p2, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->onBufferOverflow:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 28
     sget-object p3, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-eq p2, p3, :cond_2c
@@ -113,7 +109,6 @@
 
     return-void
 
-    .line 32
     :cond_f
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -131,7 +126,6 @@
 
     move-result-object p1
 
-    .line 31
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -142,7 +136,6 @@
 
     throw p2
 
-    .line 29
     :cond_2c
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -170,7 +163,6 @@
 
     move-result-object p1
 
-    .line 28
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -191,7 +183,6 @@
 
     const/4 p3, 0x0
 
-    .line 22
     :cond_5
     invoke-direct {p0, p1, p2, p3}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;-><init>(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;)V
 
@@ -217,19 +208,16 @@
 
     const/4 p2, 0x1
 
-    .line 41
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->trySendImpl-Mj0NB7M(Ljava/lang/Object;Z)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 123
     instance-of v0, p2, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     if-eqz v0, :cond_28
 
     invoke-static {p2}, Lkotlinx/coroutines/channels/ChannelResult;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
 
-    .line 42
     iget-object p2, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->onUndeliveredElement:Lkotlin/jvm/functions/Function1;
 
     if-eqz p2, :cond_23
@@ -244,7 +232,6 @@
 
     if-eqz p1, :cond_23
 
-    .line 43
     move-object p2, p1
 
     check-cast p2, Ljava/lang/Throwable;
@@ -255,10 +242,8 @@
 
     invoke-static {p2, p0}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    .line 44
     throw p1
 
-    .line 46
     :cond_23
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->getSendException()Ljava/lang/Throwable;
 
@@ -266,7 +251,6 @@
 
     throw p0
 
-    .line 48
     :cond_28
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -292,19 +276,16 @@
 
     const/4 p2, 0x1
 
-    .line 52
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->trySendImpl-Mj0NB7M(Ljava/lang/Object;Z)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 129
     instance-of p1, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez p1, :cond_10
 
     check-cast p0, Lkotlin/Unit;
 
-    .line 53
     invoke-static {p2}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -314,7 +295,6 @@
     :cond_10
     const/4 p0, 0x0
 
-    .line 54
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -331,12 +311,10 @@
         }
     .end annotation
 
-    .line 65
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 67
     invoke-static {v0}, Lkotlinx/coroutines/channels/ChannelResult;->isSuccess-impl(Ljava/lang/Object;)Z
 
     move-result v1
@@ -354,7 +332,6 @@
     :cond_11
     if-eqz p2, :cond_21
 
-    .line 72
     iget-object p2, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->onUndeliveredElement:Lkotlin/jvm/functions/Function1;
 
     if-eqz p2, :cond_21
@@ -371,11 +348,9 @@
 
     goto :goto_21
 
-    .line 73
     :cond_20
     throw p1
 
-    .line 76
     :cond_21
     :goto_21
     sget-object p1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
@@ -404,15 +379,12 @@
 
     move-object/from16 v0, p0
 
-    .line 85
     sget-object v9, Lkotlinx/coroutines/channels/BufferedChannelKt;->BUFFERED:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 131
     invoke-static {}, Lkotlinx/coroutines/channels/BufferedChannel;->access$getSendSegment$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     move-result-object v1
 
-    .line 136
     move-object v10, v0
 
     check-cast v10, Lkotlinx/coroutines/channels/BufferedChannel;
@@ -423,14 +395,12 @@
 
     check-cast v1, Lkotlinx/coroutines/channels/ChannelSegment;
 
-    .line 137
     :cond_11
     :goto_11
     invoke-static {}, Lkotlinx/coroutines/channels/BufferedChannel;->access$getSendersAndCloseStatus$FU$p()Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     move-result-object v2
 
-    .line 140
     invoke-virtual {v2, v10}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->getAndIncrement(Ljava/lang/Object;)J
 
     move-result-wide v2
@@ -439,19 +409,16 @@
 
     and-long v11, v2, v4
 
-    .line 143
     invoke-static {v10, v2, v3}, Lkotlinx/coroutines/channels/BufferedChannel;->access$isClosedForSend0(Lkotlinx/coroutines/channels/BufferedChannel;J)Z
 
     move-result v13
 
-    .line 145
     sget v2, Lkotlinx/coroutines/channels/BufferedChannelKt;->SEGMENT_SIZE:I
 
     int-to-long v2, v2
 
     div-long v2, v11, v2
 
-    .line 146
     sget v4, Lkotlinx/coroutines/channels/BufferedChannelKt;->SEGMENT_SIZE:I
 
     int-to-long v4, v4
@@ -460,14 +427,12 @@
 
     long-to-int v14, v4
 
-    .line 149
     iget-wide v4, v1, Lkotlinx/coroutines/channels/ChannelSegment;->id:J
 
     cmp-long v4, v4, v2
 
     if-eqz v4, :cond_4a
 
-    .line 151
     invoke-static {v10, v2, v3, v1}, Lkotlinx/coroutines/channels/BufferedChannel;->access$findSegmentSend(Lkotlinx/coroutines/channels/BufferedChannel;JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;
 
     move-result-object v2
@@ -476,7 +441,6 @@
 
     if-eqz v13, :cond_11
 
-    .line 97
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     invoke-virtual/range {p0 .. p0}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->getSendException()Ljava/lang/Throwable;
@@ -512,7 +476,6 @@
 
     move v8, v13
 
-    .line 167
     invoke-static/range {v1 .. v8}, Lkotlinx/coroutines/channels/BufferedChannel;->access$updateCellSend(Lkotlinx/coroutines/channels/BufferedChannel;Lkotlinx/coroutines/channels/ChannelSegment;ILjava/lang/Object;JLjava/lang/Object;Z)I
 
     move-result v1
@@ -541,7 +504,6 @@
 
     goto :goto_6c
 
-    .line 204
     :cond_69
     invoke-virtual {v15}, Lkotlinx/coroutines/channels/ChannelSegment;->cleanPrev()V
 
@@ -550,7 +512,6 @@
 
     goto :goto_11
 
-    .line 197
     :cond_6e
     invoke-virtual {v10}, Lkotlinx/coroutines/channels/BufferedChannel;->getReceiversCounter$kotlinx_coroutines_core()J
 
@@ -562,7 +523,6 @@
 
     invoke-virtual {v15}, Lkotlinx/coroutines/channels/ChannelSegment;->cleanPrev()V
 
-    .line 97
     :cond_79
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
@@ -576,11 +536,9 @@
 
     return-object v1
 
-    .line 210
     :cond_84
     new-instance v1, Ljava/lang/IllegalStateException;
 
-    .line 211
     const-string v2, "unexpected"
 
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -594,10 +552,8 @@
     :cond_90
     if-eqz v13, :cond_a0
 
-    .line 186
     invoke-virtual {v15}, Lkotlinx/coroutines/channels/ChannelSegment;->onSlotCleaned()V
 
-    .line 97
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     invoke-virtual/range {p0 .. p0}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->getSendException()Ljava/lang/Throwable;
@@ -610,7 +566,6 @@
 
     return-object v1
 
-    .line 189
     :cond_a0
     instance-of v1, v9, Lkotlinx/coroutines/Waiter;
 
@@ -628,7 +583,6 @@
 
     invoke-static {v10, v9, v15, v14}, Lkotlinx/coroutines/channels/BufferedChannel;->access$prepareSenderForSuspension(Lkotlinx/coroutines/channels/BufferedChannel;Lkotlinx/coroutines/Waiter;Lkotlinx/coroutines/channels/ChannelSegment;I)V
 
-    .line 93
     :cond_ad
     iget-wide v1, v15, Lkotlinx/coroutines/channels/ChannelSegment;->id:J
 
@@ -644,7 +598,6 @@
 
     invoke-virtual {v0, v1, v2}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->dropFirstElementUntilTheSpecifiedCellIsInTheBuffer(J)V
 
-    .line 94
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -655,7 +608,6 @@
 
     return-object v1
 
-    .line 88
     :cond_c1
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
@@ -667,11 +619,9 @@
 
     return-object v1
 
-    .line 173
     :cond_ca
     invoke-virtual {v15}, Lkotlinx/coroutines/channels/ChannelSegment;->cleanPrev()V
 
-    .line 88
     sget-object v1, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -692,7 +642,6 @@
         }
     .end annotation
 
-    .line 60
     iget-object v0, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->onBufferOverflow:Lkotlinx/coroutines/channels/BufferOverflow;
 
     sget-object v1, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_LATEST:Lkotlinx/coroutines/channels/BufferOverflow;
@@ -705,7 +654,6 @@
 
     goto :goto_f
 
-    .line 61
     :cond_b
     invoke-direct {p0, p1}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->trySendDropOldest-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -720,7 +668,6 @@
 .method protected isConflatedDropOldest()Z
     .registers 3
 
-    .line 37
     iget-object v0, p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->onBufferOverflow:Lkotlinx/coroutines/channels/BufferOverflow;
 
     sget-object v1, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
@@ -750,26 +697,22 @@
         }
     .end annotation
 
-    .line 105
     invoke-virtual {p0, p2}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 216
     instance-of v0, p2, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v0, :cond_10
 
     check-cast p2, Lkotlin/Unit;
 
-    .line 107
     sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-interface {p1, p2}, Lkotlinx/coroutines/selects/SelectInstance;->selectInRegistrationPhase(Ljava/lang/Object;)V
 
     return-void
 
-    .line 221
     :cond_10
     instance-of v0, p2, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
@@ -777,7 +720,6 @@
 
     invoke-static {p2}, Lkotlinx/coroutines/channels/ChannelResult;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
 
-    .line 110
     invoke-static {}, Lkotlinx/coroutines/channels/BufferedChannelKt;->getCHANNEL_CLOSED()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object p2
@@ -786,11 +728,9 @@
 
     return-void
 
-    .line 105
     :cond_1f
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 114
     const-string p2, "unreachable"
 
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -861,7 +801,6 @@
 
     const/4 v0, 0x0
 
-    .line 57
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->trySendImpl-Mj0NB7M(Ljava/lang/Object;Z)Ljava/lang/Object;
 
     move-result-object p1

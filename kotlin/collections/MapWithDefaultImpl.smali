@@ -126,7 +126,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/MapWithDefaultImpl;->map:Ljava/util/Map;
@@ -153,7 +152,6 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 73
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -168,7 +166,6 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 74
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -191,7 +188,6 @@
         }
     .end annotation
 
-    .line 67
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getEntries()Ljava/util/Set;
 
     move-result-object v0
@@ -202,7 +198,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 68
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -224,7 +219,6 @@
         }
     .end annotation
 
-    .line 75
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -247,7 +241,6 @@
         }
     .end annotation
 
-    .line 78
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -269,7 +262,6 @@
         }
     .end annotation
 
-    .line 76
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -291,7 +283,6 @@
         }
     .end annotation
 
-    .line 67
     iget-object v0, p0, Lkotlin/collections/MapWithDefaultImpl;->map:Ljava/util/Map;
 
     return-object v0
@@ -305,26 +296,22 @@
         }
     .end annotation
 
-    .line 80
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 105
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v1, :cond_16
 
-    .line 106
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_16
 
-    .line 80
     iget-object v0, p0, Lkotlin/collections/MapWithDefaultImpl;->default:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -338,7 +325,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 71
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -360,7 +346,6 @@
         }
     .end annotation
 
-    .line 77
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -375,7 +360,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 69
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -390,7 +374,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 72
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -412,7 +395,6 @@
         }
     .end annotation
 
-    .line 67
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getKeys()Ljava/util/Set;
 
     move-result-object v0
@@ -478,7 +460,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 67
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getSize()I
 
     move-result v0
@@ -489,7 +470,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 70
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -511,7 +491,6 @@
         }
     .end annotation
 
-    .line 67
     invoke-virtual {p0}, Lkotlin/collections/MapWithDefaultImpl;->getValues()Ljava/util/Collection;
 
     move-result-object v0

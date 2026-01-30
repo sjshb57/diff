@@ -43,7 +43,6 @@
 
     return p0
 
-    .line 23
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

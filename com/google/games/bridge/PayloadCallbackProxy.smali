@@ -19,10 +19,8 @@
 .method public constructor <init>(Lcom/google/games/bridge/PayloadCallbackProxy$Callback;)V
     .registers 2
 
-    .line 10
     invoke-direct {p0}, Lcom/google/android/gms/nearby/connection/PayloadCallback;-><init>()V
 
-    .line 11
     iput-object p1, p0, Lcom/google/games/bridge/PayloadCallbackProxy;->callback:Lcom/google/games/bridge/PayloadCallbackProxy$Callback;
 
     return-void
@@ -33,7 +31,6 @@
 .method public onPayloadReceived(Ljava/lang/String;Lcom/google/android/gms/nearby/connection/Payload;)V
     .registers 4
 
-    .line 15
     iget-object v0, p0, Lcom/google/games/bridge/PayloadCallbackProxy;->callback:Lcom/google/games/bridge/PayloadCallbackProxy$Callback;
 
     invoke-interface {v0, p1, p2}, Lcom/google/games/bridge/PayloadCallbackProxy$Callback;->onPayloadReceived(Ljava/lang/String;Lcom/google/android/gms/nearby/connection/Payload;)V

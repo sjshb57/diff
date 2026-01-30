@@ -47,17 +47,14 @@
 
     move-object v0, p0
 
-    .line 53
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 55
     new-instance v8, Ljava/util/LinkedHashSet;
 
     invoke-direct {v8}, Ljava/util/LinkedHashSet;-><init>()V
 
     iput-object v8, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->listeners:Ljava/util/Set;
 
-    .line 56
     new-instance v11, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     move-object v1, v11
@@ -84,42 +81,34 @@
 
     move-object v1, p1
 
-    .line 68
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     move-object v1, p3
 
-    .line 69
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     move-object v1, p2
 
-    .line 70
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
     move-object/from16 v1, p4
 
-    .line 71
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->activatedCacheClient:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     move-object/from16 v1, p5
 
-    .line 72
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->context:Landroid/content/Context;
 
     move-object/from16 v1, p6
 
-    .line 73
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->namespace:Ljava/lang/String;
 
     move-object/from16 v1, p7
 
-    .line 74
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     move-object/from16 v1, p8
 
-    .line 75
     iput-object v1, v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
@@ -128,7 +117,6 @@
 .method static synthetic access$000(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;Lcom/google/firebase/remoteconfig/ConfigUpdateListener;)V
     .registers 2
 
-    .line 28
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->removeRealtimeConfigUpdateListener(Lcom/google/firebase/remoteconfig/ConfigUpdateListener;)V
 
     return-void
@@ -139,7 +127,6 @@
 
     monitor-enter p0
 
-    .line 80
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->listeners:Ljava/util/Set;
 
@@ -149,14 +136,12 @@
 
     if-nez v0, :cond_e
 
-    .line 81
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->configRealtimeHttpClient:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->startHttpConnection()V
     :try_end_e
     .catchall {:try_start_1 .. :try_end_e} :catchall_10
 
-    .line 83
     :cond_e
     monitor-exit p0
 
@@ -175,7 +160,6 @@
 
     monitor-enter p0
 
-    .line 101
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->listeners:Ljava/util/Set;
 
@@ -183,7 +167,6 @@
     :try_end_6
     .catchall {:try_start_1 .. :try_end_6} :catchall_8
 
-    .line 102
     monitor-exit p0
 
     return-void
@@ -203,16 +186,13 @@
 
     monitor-enter p0
 
-    .line 88
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->listeners:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 89
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->beginRealtime()V
 
-    .line 90
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler$ConfigUpdateListenerRegistrationInternal;
 
     invoke-direct {v0, p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler$ConfigUpdateListenerRegistrationInternal;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;Lcom/google/firebase/remoteconfig/ConfigUpdateListener;)V
@@ -236,7 +216,6 @@
 
     monitor-enter p0
 
-    .line 94
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->configRealtimeHttpClient:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
@@ -244,12 +223,10 @@
 
     if-nez p1, :cond_b
 
-    .line 96
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHandler;->beginRealtime()V
     :try_end_b
     .catchall {:try_start_1 .. :try_end_b} :catchall_d
 
-    .line 98
     :cond_b
     monitor-exit p0
 

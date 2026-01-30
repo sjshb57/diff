@@ -87,13 +87,10 @@
         }
     .end annotation
 
-    .line 243
     iput-object p1, p0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap$KeyValueSet;->this$0:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
-    .line 245
     invoke-direct {p0}, Lkotlin/collections/AbstractMutableSet;-><init>()V
 
-    .line 244
     iput-object p2, p0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap$KeyValueSet;->factory:Lkotlin/jvm/functions/Function2;
 
     return-void
@@ -109,7 +106,6 @@
         }
     .end annotation
 
-    .line 247
     invoke-static {}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->access$noImpl()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -122,7 +118,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 246
     iget-object v0, p0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap$KeyValueSet;->this$0:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;->size()I
@@ -146,7 +141,6 @@
 
     move-result-object v0
 
-    .line 248
     iget-object v1, p0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap$KeyValueSet;->this$0:Lkotlinx/coroutines/debug/internal/ConcurrentWeakMap;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;

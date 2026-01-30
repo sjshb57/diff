@@ -102,7 +102,6 @@
 .method private static final IEEErem(DD)D
     .registers 4
 
-    .line 524
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->IEEEremainder(DD)D
 
     move-result-wide p0
@@ -117,7 +116,6 @@
 
     float-to-double p0, p1
 
-    .line 1070
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->IEEEremainder(DD)D
 
     move-result-wide p0
@@ -130,7 +128,6 @@
 .method private static final abs(D)D
     .registers 2
 
-    .line 431
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide p0
@@ -141,7 +138,6 @@
 .method private static final abs(F)F
     .registers 1
 
-    .line 978
     invoke-static {p0}, Ljava/lang/Math;->abs(F)F
 
     move-result p0
@@ -152,7 +148,6 @@
 .method private static final abs(I)I
     .registers 1
 
-    .line 1196
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0
@@ -163,7 +158,6 @@
 .method private static final abs(J)J
     .registers 2
 
-    .line 1249
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide p0
@@ -174,7 +168,6 @@
 .method private static final acos(D)D
     .registers 2
 
-    .line 88
     invoke-static {p0, p1}, Ljava/lang/Math;->acos(D)D
 
     move-result-wide p0
@@ -187,7 +180,6 @@
 
     float-to-double v0, p0
 
-    .line 692
     invoke-static {v0, v1}, Ljava/lang/Math;->acos(D)D
 
     move-result-wide v0
@@ -210,7 +202,6 @@
 
     goto :goto_47
 
-    .line 213
     :cond_9
     sget-wide v0, Lkotlin/math/Constants;->upper_taylor_2_bound:D
 
@@ -218,7 +209,6 @@
 
     if-lez v0, :cond_17
 
-    .line 215
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -236,7 +226,6 @@
 
     sub-double v2, p0, v0
 
-    .line 217
     sget-wide v4, Lkotlin/math/Constants;->taylor_n_bound:D
 
     cmpl-double v4, v2, v4
@@ -247,7 +236,6 @@
 
     sub-double/2addr v2, v0
 
-    .line 218
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -260,13 +248,11 @@
 
     goto :goto_47
 
-    .line 221
     :cond_2e
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
 
-    .line 224
     sget-wide v0, Lkotlin/math/Constants;->taylor_2_bound:D
 
     cmpl-double v0, p0, v0
@@ -288,7 +274,6 @@
     :cond_40
     const-wide/high16 v0, 0x4000000000000000L  # 2.0
 
-    .line 229
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -304,7 +289,6 @@
 
     float-to-double v0, p0
 
-    .line 786
     invoke-static {v0, v1}, Lkotlin/math/MathKt;->acosh(D)D
 
     move-result-wide v0
@@ -317,7 +301,6 @@
 .method private static final asin(D)D
     .registers 2
 
-    .line 77
     invoke-static {p0, p1}, Ljava/lang/Math;->asin(D)D
 
     move-result-wide p0
@@ -330,7 +313,6 @@
 
     float-to-double v0, p0
 
-    .line 681
     invoke-static {v0, v1}, Ljava/lang/Math;->asin(D)D
 
     move-result-wide v0
@@ -343,14 +325,12 @@
 .method public static final asinh(D)D
     .registers 6
 
-    .line 173
     sget-wide v0, Lkotlin/math/Constants;->taylor_n_bound:D
 
     cmpl-double v0, p0, v0
 
     if-ltz v0, :cond_34
 
-    .line 174
     sget-wide v0, Lkotlin/math/Constants;->upper_taylor_n_bound:D
 
     cmpl-double v0, p0, v0
@@ -359,14 +339,12 @@
 
     if-lez v0, :cond_26
 
-    .line 175
     sget-wide v2, Lkotlin/math/Constants;->upper_taylor_2_bound:D
 
     cmpl-double v0, p0, v2
 
     if-lez v0, :cond_1b
 
-    .line 177
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -390,7 +368,6 @@
 
     add-double/2addr p0, v0
 
-    .line 180
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -404,7 +381,6 @@
 
     add-double/2addr v2, v0
 
-    .line 183
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -417,7 +393,6 @@
 
     goto :goto_53
 
-    .line 185
     :cond_34
     sget-wide v0, Lkotlin/math/Constants;->taylor_n_bound:D
 
@@ -437,7 +412,6 @@
 
     goto :goto_53
 
-    .line 189
     :cond_42
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(D)D
 
@@ -471,7 +445,6 @@
 
     float-to-double v0, p0
 
-    .line 772
     invoke-static {v0, v1}, Lkotlin/math/MathKt;->asinh(D)D
 
     move-result-wide v0
@@ -484,7 +457,6 @@
 .method private static final atan(D)D
     .registers 2
 
-    .line 99
     invoke-static {p0, p1}, Ljava/lang/Math;->atan(D)D
 
     move-result-wide p0
@@ -497,7 +469,6 @@
 
     float-to-double v0, p0
 
-    .line 703
     invoke-static {v0, v1}, Ljava/lang/Math;->atan(D)D
 
     move-result-wide v0
@@ -510,7 +481,6 @@
 .method private static final atan2(DD)D
     .registers 4
 
-    .line 119
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide p0
@@ -525,7 +495,6 @@
 
     float-to-double p0, p1
 
-    .line 723
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide p0
@@ -538,7 +507,6 @@
 .method public static final atanh(D)D
     .registers 6
 
-    .line 246
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v0
@@ -549,7 +517,6 @@
 
     if-gez v0, :cond_1c
 
-    .line 248
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v0
@@ -586,7 +553,6 @@
 
     div-double/2addr v2, v0
 
-    .line 253
     invoke-static {v2, v3}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -605,7 +571,6 @@
 
     float-to-double v0, p0
 
-    .line 801
     invoke-static {v0, v1}, Lkotlin/math/MathKt;->atanh(D)D
 
     move-result-wide v0
@@ -618,7 +583,6 @@
 .method private static final cbrt(D)D
     .registers 2
 
-    .line 480
     invoke-static {p0, p1}, Ljava/lang/Math;->cbrt(D)D
 
     move-result-wide p0
@@ -631,7 +595,6 @@
 
     float-to-double v0, p0
 
-    .line 1027
     invoke-static {v0, v1}, Ljava/lang/Math;->cbrt(D)D
 
     move-result-wide v0
@@ -644,7 +607,6 @@
 .method private static final ceil(D)D
     .registers 2
 
-    .line 381
     invoke-static {p0, p1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide p0
@@ -657,7 +619,6 @@
 
     float-to-double v0, p0
 
-    .line 928
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
@@ -670,7 +631,6 @@
 .method private static final cos(D)D
     .registers 2
 
-    .line 57
     invoke-static {p0, p1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide p0
@@ -683,7 +643,6 @@
 
     float-to-double v0, p0
 
-    .line 661
     invoke-static {v0, v1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v0
@@ -696,7 +655,6 @@
 .method private static final cosh(D)D
     .registers 2
 
-    .line 142
     invoke-static {p0, p1}, Ljava/lang/Math;->cosh(D)D
 
     move-result-wide p0
@@ -709,7 +667,6 @@
 
     float-to-double v0, p0
 
-    .line 746
     invoke-static {v0, v1}, Ljava/lang/Math;->cosh(D)D
 
     move-result-wide v0
@@ -722,7 +679,6 @@
 .method private static final exp(D)D
     .registers 2
 
-    .line 287
     invoke-static {p0, p1}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide p0
@@ -735,7 +691,6 @@
 
     float-to-double v0, p0
 
-    .line 834
     invoke-static {v0, v1}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide v0
@@ -748,7 +703,6 @@
 .method private static final expm1(D)D
     .registers 2
 
-    .line 303
     invoke-static {p0, p1}, Ljava/lang/Math;->expm1(D)D
 
     move-result-wide p0
@@ -761,7 +715,6 @@
 
     float-to-double v0, p0
 
-    .line 850
     invoke-static {v0, v1}, Ljava/lang/Math;->expm1(D)D
 
     move-result-wide v0
@@ -774,7 +727,6 @@
 .method private static final floor(D)D
     .registers 2
 
-    .line 393
     invoke-static {p0, p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p0
@@ -787,7 +739,6 @@
 
     float-to-double v0, p0
 
-    .line 940
     invoke-static {v0, v1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v0
@@ -800,7 +751,6 @@
 .method private static final getAbsoluteValue(D)D
     .registers 2
 
-    .line 536
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide p0
@@ -811,7 +761,6 @@
 .method private static final getAbsoluteValue(F)F
     .registers 1
 
-    .line 1082
     invoke-static {p0}, Ljava/lang/Math;->abs(F)F
 
     move-result p0
@@ -822,7 +771,6 @@
 .method private static final getAbsoluteValue(I)I
     .registers 1
 
-    .line 1222
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0
@@ -833,7 +781,6 @@
 .method private static final getAbsoluteValue(J)J
     .registers 2
 
-    .line 1275
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide p0
@@ -868,7 +815,6 @@
 .method private static final getSign(D)D
     .registers 2
 
-    .line 549
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
     move-result-wide p0
@@ -879,7 +825,6 @@
 .method private static final getSign(F)F
     .registers 1
 
-    .line 1095
     invoke-static {p0}, Ljava/lang/Math;->signum(F)F
 
     move-result p0
@@ -964,7 +909,6 @@
 .method private static final getUlp(D)D
     .registers 2
 
-    .line 579
     invoke-static {p0, p1}, Ljava/lang/Math;->ulp(D)D
 
     move-result-wide p0
@@ -975,7 +919,6 @@
 .method private static final getUlp(F)F
     .registers 1
 
-    .line 1125
     invoke-static {p0}, Ljava/lang/Math;->ulp(F)F
 
     move-result p0
@@ -998,7 +941,6 @@
 .method private static final hypot(DD)D
     .registers 4
 
-    .line 265
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide p0
@@ -1013,7 +955,6 @@
 
     float-to-double p0, p1
 
-    .line 812
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide p0
@@ -1026,7 +967,6 @@
 .method private static final ln(D)D
     .registers 2
 
-    .line 334
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -1039,7 +979,6 @@
 
     float-to-double v0, p0
 
-    .line 881
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -1052,7 +991,6 @@
 .method private static final ln1p(D)D
     .registers 2
 
-    .line 369
     invoke-static {p0, p1}, Ljava/lang/Math;->log1p(D)D
 
     move-result-wide p0
@@ -1065,7 +1003,6 @@
 
     float-to-double v0, p0
 
-    .line 916
     invoke-static {v0, v1}, Ljava/lang/Math;->log1p(D)D
 
     move-result-wide v0
@@ -1092,7 +1029,6 @@
 
     goto :goto_17
 
-    .line 320
     :cond_d
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
@@ -1133,7 +1069,6 @@
     :cond_c
     float-to-double v0, p0
 
-    .line 867
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -1160,7 +1095,6 @@
 .method private static final log10(D)D
     .registers 2
 
-    .line 343
     invoke-static {p0, p1}, Ljava/lang/Math;->log10(D)D
 
     move-result-wide p0
@@ -1173,7 +1107,6 @@
 
     float-to-double v0, p0
 
-    .line 890
     invoke-static {v0, v1}, Ljava/lang/Math;->log10(D)D
 
     move-result-wide v0
@@ -1186,7 +1119,6 @@
 .method public static final log2(D)D
     .registers 4
 
-    .line 351
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -1203,7 +1135,6 @@
 
     float-to-double v0, p0
 
-    .line 898
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -1220,7 +1151,6 @@
 .method private static final max(DD)D
     .registers 4
 
-    .line 464
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p0
@@ -1231,7 +1161,6 @@
 .method private static final max(FF)F
     .registers 2
 
-    .line 1011
     invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
 
     move-result p0
@@ -1242,7 +1171,6 @@
 .method private static final max(II)I
     .registers 2
 
-    .line 1210
     invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
 
     move-result p0
@@ -1253,7 +1181,6 @@
 .method private static final max(JJ)J
     .registers 4
 
-    .line 1263
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide p0
@@ -1264,7 +1191,6 @@
 .method private static final min(DD)D
     .registers 4
 
-    .line 455
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide p0
@@ -1275,7 +1201,6 @@
 .method private static final min(FF)F
     .registers 2
 
-    .line 1002
     invoke-static {p0, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p0
@@ -1286,7 +1211,6 @@
 .method private static final min(II)I
     .registers 2
 
-    .line 1203
     invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p0
@@ -1297,7 +1221,6 @@
 .method private static final min(JJ)J
     .registers 4
 
-    .line 1256
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide p0
@@ -1310,7 +1233,6 @@
 
     const-wide/high16 v0, -0x10000000000000L  # Double.NEGATIVE_INFINITY
 
-    .line 593
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->nextAfter(DD)D
 
     move-result-wide p0
@@ -1323,7 +1245,6 @@
 
     const-wide/high16 v0, -0x10000000000000L  # Double.NEGATIVE_INFINITY
 
-    .line 1139
     invoke-static {p0, v0, v1}, Ljava/lang/Math;->nextAfter(FD)F
 
     move-result p0
@@ -1334,7 +1255,6 @@
 .method private static final nextTowards(DD)D
     .registers 4
 
-    .line 605
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->nextAfter(DD)D
 
     move-result-wide p0
@@ -1347,7 +1267,6 @@
 
     float-to-double v0, p1
 
-    .line 1151
     invoke-static {p0, v0, v1}, Ljava/lang/Math;->nextAfter(FD)F
 
     move-result p0
@@ -1358,7 +1277,6 @@
 .method private static final nextUp(D)D
     .registers 2
 
-    .line 586
     invoke-static {p0, p1}, Ljava/lang/Math;->nextUp(D)D
 
     move-result-wide p0
@@ -1369,7 +1287,6 @@
 .method private static final nextUp(F)F
     .registers 1
 
-    .line 1132
     invoke-static {p0}, Ljava/lang/Math;->nextUp(F)F
 
     move-result p0
@@ -1380,7 +1297,6 @@
 .method private static final pow(DD)D
     .registers 4
 
-    .line 499
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -1393,7 +1309,6 @@
 
     int-to-double v0, p2
 
-    .line 508
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -1408,7 +1323,6 @@
 
     float-to-double p0, p1
 
-    .line 1045
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -1425,7 +1339,6 @@
 
     int-to-double p0, p1
 
-    .line 1054
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -1438,7 +1351,6 @@
 .method private static final round(D)D
     .registers 2
 
-    .line 418
     invoke-static {p0, p1}, Ljava/lang/Math;->rint(D)D
 
     move-result-wide p0
@@ -1451,7 +1363,6 @@
 
     float-to-double v0, p0
 
-    .line 965
     invoke-static {v0, v1}, Ljava/lang/Math;->rint(D)D
 
     move-result-wide v0
@@ -1464,7 +1375,6 @@
 .method public static final roundToInt(D)I
     .registers 4
 
-    .line 619
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -1492,7 +1402,6 @@
 
     goto :goto_21
 
-    .line 622
     :cond_1c
     invoke-static {p0, p1}, Ljava/lang/Math;->round(D)J
 
@@ -1503,7 +1412,6 @@
     :goto_21
     return p0
 
-    .line 619
     :cond_22
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1517,7 +1425,6 @@
 .method public static final roundToInt(F)I
     .registers 2
 
-    .line 1165
     invoke-static {p0}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v0
@@ -1543,7 +1450,6 @@
 .method public static final roundToLong(D)J
     .registers 3
 
-    .line 637
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -1571,7 +1477,6 @@
 
     float-to-double v0, p0
 
-    .line 1178
     invoke-static {v0, v1}, Lkotlin/math/MathKt;->roundToLong(D)J
 
     move-result-wide v0
@@ -1582,7 +1487,6 @@
 .method private static final sign(D)D
     .registers 2
 
-    .line 444
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
     move-result-wide p0
@@ -1593,7 +1497,6 @@
 .method private static final sign(F)F
     .registers 1
 
-    .line 991
     invoke-static {p0}, Ljava/lang/Math;->signum(F)F
 
     move-result p0
@@ -1604,7 +1507,6 @@
 .method private static final sin(D)D
     .registers 2
 
-    .line 48
     invoke-static {p0, p1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide p0
@@ -1617,7 +1519,6 @@
 
     float-to-double v0, p0
 
-    .line 652
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v0
@@ -1630,7 +1531,6 @@
 .method private static final sinh(D)D
     .registers 2
 
-    .line 131
     invoke-static {p0, p1}, Ljava/lang/Math;->sinh(D)D
 
     move-result-wide p0
@@ -1643,7 +1543,6 @@
 
     float-to-double v0, p0
 
-    .line 735
     invoke-static {v0, v1}, Ljava/lang/Math;->sinh(D)D
 
     move-result-wide v0
@@ -1656,7 +1555,6 @@
 .method private static final sqrt(D)D
     .registers 2
 
-    .line 275
     invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -1669,7 +1567,6 @@
 
     float-to-double v0, p0
 
-    .line 822
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -1682,7 +1579,6 @@
 .method private static final tan(D)D
     .registers 2
 
-    .line 66
     invoke-static {p0, p1}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide p0
@@ -1695,7 +1591,6 @@
 
     float-to-double v0, p0
 
-    .line 670
     invoke-static {v0, v1}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide v0
@@ -1708,7 +1603,6 @@
 .method private static final tanh(D)D
     .registers 2
 
-    .line 154
     invoke-static {p0, p1}, Ljava/lang/Math;->tanh(D)D
 
     move-result-wide p0
@@ -1721,7 +1615,6 @@
 
     float-to-double v0, p0
 
-    .line 758
     invoke-static {v0, v1}, Ljava/lang/Math;->tanh(D)D
 
     move-result-wide v0
@@ -1734,7 +1627,6 @@
 .method public static final truncate(D)D
     .registers 4
 
-    .line 405
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -1756,14 +1648,12 @@
 
     if-lez v0, :cond_18
 
-    .line 406
     invoke-static {p0, p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p0
 
     goto :goto_1c
 
-    .line 407
     :cond_18
     invoke-static {p0, p1}, Ljava/lang/Math;->ceil(D)D
 
@@ -1777,7 +1667,6 @@
 .method public static final truncate(F)F
     .registers 3
 
-    .line 952
     invoke-static {p0}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v0
@@ -1801,7 +1690,6 @@
 
     float-to-double v0, p0
 
-    .line 953
     invoke-static {v0, v1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v0
@@ -1811,7 +1699,6 @@
     :cond_18
     float-to-double v0, p0
 
-    .line 954
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
@@ -1827,7 +1714,6 @@
 .method private static final withSign(DD)D
     .registers 4
 
-    .line 558
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->copySign(DD)D
 
     move-result-wide p0
@@ -1840,7 +1726,6 @@
 
     int-to-double v0, p2
 
-    .line 565
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->copySign(DD)D
 
     move-result-wide p0
@@ -1851,7 +1736,6 @@
 .method private static final withSign(FF)F
     .registers 2
 
-    .line 1104
     invoke-static {p0, p1}, Ljava/lang/Math;->copySign(FF)F
 
     move-result p0
@@ -1864,7 +1748,6 @@
 
     int-to-float p1, p1
 
-    .line 1111
     invoke-static {p0, p1}, Ljava/lang/Math;->copySign(FF)F
 
     move-result p0

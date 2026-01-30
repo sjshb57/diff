@@ -50,7 +50,6 @@
 .method public static final synthetic access$emitAllImpl$FlowKt__ChannelsKt(Lkotlinx/coroutines/flow/FlowCollector;Lkotlinx/coroutines/channels/ReceiveChannel;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 4
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->emitAllImpl$FlowKt__ChannelsKt(Lkotlinx/coroutines/flow/FlowCollector;Lkotlinx/coroutines/channels/ReceiveChannel;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -77,7 +76,6 @@
         message = "\'BroadcastChannel\' is obsolete and all corresponding operators are deprecated in the favour of StateFlow and SharedFlow"
     .end annotation
 
-    .line 177
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt$asFlow$$inlined$unsafeFlow$1;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt$asFlow$$inlined$unsafeFlow$1;-><init>(Lkotlinx/coroutines/channels/BroadcastChannel;)V
@@ -101,7 +99,6 @@
         }
     .end annotation
 
-    .line 86
     new-instance v8, Lkotlinx/coroutines/flow/ChannelAsFlow;
 
     const/16 v6, 0x1c
@@ -148,7 +145,6 @@
 
     const/4 v0, 0x1
 
-    .line 30
     invoke-static {p0, p1, v0, p2}, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt;->emitAllImpl$FlowKt__ChannelsKt(Lkotlinx/coroutines/flow/FlowCollector;Lkotlinx/coroutines/channels/ReceiveChannel;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -222,7 +218,6 @@
 
     move-result-object v1
 
-    .line 32
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt$emitAllImpl$1;->label:I
 
     const/4 v3, 0x2
@@ -297,10 +292,8 @@
     :cond_58
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 33
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt;->ensureActive(Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 36
     :try_start_5e
     invoke-interface {p1}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -347,7 +340,6 @@
 
     move-result-object p3
 
-    .line 37
     iput-object v2, v0, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt$emitAllImpl$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/flow/FlowKt__ChannelsKt$emitAllImpl$1;->L$1:Ljava/lang/Object;
@@ -371,10 +363,8 @@
     :cond_94
     if-eqz p2, :cond_99
 
-    .line 43
     invoke-static {p1, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
-    .line 45
     :cond_99
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -383,7 +373,6 @@
     :catchall_9c
     move-exception p0
 
-    .line 41
     :try_start_9d
     throw p0
     :try_end_9e
@@ -394,7 +383,6 @@
 
     if-eqz p2, :cond_a4
 
-    .line 43
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     :cond_a4
@@ -417,7 +405,6 @@
         }
     .end annotation
 
-    .line 175
     invoke-static {p0}, Lkotlinx/coroutines/flow/internal/ChannelFlowKt;->asChannelFlow(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/internal/ChannelFlow;
 
     move-result-object p0
@@ -443,7 +430,6 @@
         }
     .end annotation
 
-    .line 65
     new-instance v8, Lkotlinx/coroutines/flow/ChannelAsFlow;
 
     const/16 v6, 0x1c

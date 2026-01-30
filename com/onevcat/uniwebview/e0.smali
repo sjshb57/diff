@@ -52,18 +52,14 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 3
     invoke-virtual {p1}, Landroid/webkit/WebView;->reload()V
 
-    .line 4
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

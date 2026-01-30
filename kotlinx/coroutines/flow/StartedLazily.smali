@@ -39,7 +39,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 152
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +60,6 @@
         }
     .end annotation
 
-    .line 153
     new-instance v0, Lkotlinx/coroutines/flow/StartedLazily$command$1;
 
     const/4 v1, 0x0
@@ -80,7 +78,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 163
     const-string v0, "SharingStarted.Lazily"
 
     return-object v0

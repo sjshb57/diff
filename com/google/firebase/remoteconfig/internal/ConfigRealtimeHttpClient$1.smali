@@ -25,7 +25,6 @@
 .method constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;)V
     .registers 2
 
-    .line 378
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$1;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public run()V
     .registers 2
 
-    .line 381
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$1;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->beginRealtimeHttpStream()V

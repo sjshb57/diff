@@ -37,7 +37,6 @@
 
     return p0
 
-    .line 33
     :cond_3
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -59,7 +58,6 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/AbortFlowException;->owner:Lkotlinx/coroutines/flow/FlowCollector;
 
     if-ne v0, p1, :cond_5

@@ -87,7 +87,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$collectWhile$collector$1;->$predicate:Lkotlin/jvm/functions/Function2;
 
-    .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -144,7 +143,6 @@
 
     move-result-object v1
 
-    .line 127
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$collectWhile$collector$1$emit$1;->label:I
 
     const/4 v3, 0x1
@@ -173,7 +171,6 @@
     :cond_36
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 130
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$collectWhile$collector$1;->$predicate:Lkotlin/jvm/functions/Function2;
 
     iput-object p0, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$collectWhile$collector$1$emit$1;->L$0:Ljava/lang/Object;
@@ -200,12 +197,10 @@
 
     if-eqz p2, :cond_52
 
-    .line 133
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 131
     :cond_52
     new-instance p2, Lkotlinx/coroutines/flow/internal/AbortFlowException;
 
@@ -241,7 +236,6 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 130
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$collectWhile$collector$1;->$predicate:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -256,12 +250,10 @@
 
     if-eqz p1, :cond_1e
 
-    .line 133
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 131
     :cond_1e
     new-instance p1, Lkotlinx/coroutines/flow/internal/AbortFlowException;
 

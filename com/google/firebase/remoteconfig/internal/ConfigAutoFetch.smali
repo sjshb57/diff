@@ -53,28 +53,20 @@
         }
     .end annotation
 
-    .line 64
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 65
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->httpURLConnection:Ljava/net/HttpURLConnection;
 
-    .line 66
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
-    .line 67
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->activatedCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
-    .line 68
     iput-object p4, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->eventListeners:Ljava/util/Set;
 
-    .line 69
     iput-object p5, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->retryCallback:Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
-    .line 70
     iput-object p6, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 71
     new-instance p1, Ljava/util/Random;
 
     invoke-direct {p1}, Ljava/util/Random;-><init>()V
@@ -89,7 +81,6 @@
 
     if-nez p1, :cond_f
 
-    .line 194
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;
 
     const-string p2, "Unable to fetch the latest version of the template."
@@ -102,7 +93,6 @@
 
     return-void
 
-    .line 202
     :cond_f
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->random:Ljava/util/Random;
 
@@ -112,7 +102,6 @@
 
     move-result v0
 
-    .line 203
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v2, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$1;
@@ -133,7 +122,6 @@
 
     monitor-enter p0
 
-    .line 81
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->eventListeners:Ljava/util/Set;
 
@@ -154,14 +142,12 @@
 
     check-cast v1, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
-    .line 82
     invoke-interface {v1, p1}, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;->onUpdate(Lcom/google/firebase/remoteconfig/ConfigUpdate;)V
     :try_end_16
     .catchall {:try_start_1 .. :try_end_16} :catchall_19
 
     goto :goto_7
 
-    .line 84
     :cond_17
     monitor-exit p0
 
@@ -178,7 +164,6 @@
 .method private static fetchResponseIsUpToDate(Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;J)Ljava/lang/Boolean;
     .registers 8
 
-    .line 281
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->getFetchedConfigs()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     move-result-object v0
@@ -189,7 +174,6 @@
 
     if-eqz v0, :cond_1a
 
-    .line 282
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->getFetchedConfigs()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     move-result-object p0
@@ -211,7 +195,6 @@
 
     return-object p0
 
-    .line 287
     :cond_1a
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->getStatus()I
 
@@ -237,7 +220,6 @@
         }
     .end annotation
 
-    .line 122
     const-string v0, "latestTemplateVersionNumber"
 
     const-string v1, "featureDisabled"
@@ -252,14 +234,12 @@
 
     invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
 
-    .line 124
     const-string v3, ""
 
     :cond_12
     :goto_12
     move-object v4, v3
 
-    .line 129
     :cond_13
     :goto_13
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -268,7 +248,6 @@
 
     if-eqz v5, :cond_95
 
-    .line 131
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -281,7 +260,6 @@
 
     move-result-object v4
 
-    .line 134
     const-string v6, "}"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -290,12 +268,10 @@
 
     if-eqz v5, :cond_13
 
-    .line 138
     invoke-direct {p0, v4}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->parseAndValidateConfigUpdateMessage(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 139
     invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
 
     move-result v5
@@ -304,28 +280,24 @@
 
     goto :goto_13
 
-    .line 144
     :cond_3b
     :try_start_3b
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5, v4}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 146
     invoke-virtual {v5, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_5b
 
-    .line 147
     invoke-virtual {v5, v1}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_5b
 
-    .line 148
     iget-object v4, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->retryCallback:Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
     new-instance v5, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;
@@ -340,7 +312,6 @@
 
     goto :goto_95
 
-    .line 162
     :cond_5b
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->isEventListenersEmpty()Z
 
@@ -350,7 +321,6 @@
 
     goto :goto_95
 
-    .line 166
     :cond_62
     invoke-virtual {v5, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -358,14 +328,12 @@
 
     if-eqz v4, :cond_12
 
-    .line 167
     iget-object v4, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     invoke-virtual {v4}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;->getTemplateVersionNumber()J
 
     move-result-wide v6
 
-    .line 168
     invoke-virtual {v5, v0}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v4
@@ -376,7 +344,6 @@
 
     const/4 v6, 0x3
 
-    .line 170
     invoke-direct {p0, v6, v4, v5}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->autoFetch(IJ)V
     :try_end_7a
     .catch Lorg/json/JSONException; {:try_start_3b .. :try_end_7a} :catch_7b
@@ -386,10 +353,8 @@
     :catch_7b
     move-exception v4
 
-    .line 176
     new-instance v5, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
-    .line 179
     invoke-virtual {v4}, Lorg/json/JSONException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v6
@@ -400,10 +365,8 @@
 
     invoke-direct {v5, v8, v6, v7}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException$Code;)V
 
-    .line 176
     invoke-direct {p0, v5}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->propagateErrors(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
 
-    .line 181
     const-string v5, "FirebaseRemoteConfig"
 
     const-string v6, "Unable to parse latest config update message."
@@ -412,12 +375,10 @@
 
     goto/16 :goto_12
 
-    .line 188
     :cond_95
     :goto_95
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
 
-    .line 189
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
     return-void
@@ -428,7 +389,6 @@
 
     monitor-enter p0
 
-    .line 87
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->eventListeners:Ljava/util/Set;
 
@@ -455,19 +415,16 @@
 
     const/16 v0, 0x7b
 
-    .line 91
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
 
     const/16 v1, 0x7d
 
-    .line 92
     invoke-virtual {p1, v1}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v1
 
-    .line 94
     const-string v2, ""
 
     if-ltz v0, :cond_1c
@@ -484,7 +441,6 @@
     :cond_16
     add-int/lit8 v1, v1, 0x1
 
-    .line 98
     invoke-virtual {p1, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -499,7 +455,6 @@
 
     monitor-enter p0
 
-    .line 75
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->eventListeners:Ljava/util/Set;
 
@@ -520,14 +475,12 @@
 
     check-cast v1, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
-    .line 76
     invoke-interface {v1, p1}, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;->onError(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
     :try_end_16
     .catchall {:try_start_1 .. :try_end_16} :catchall_19
 
     goto :goto_7
 
-    .line 78
     :cond_17
     monitor-exit p0
 
@@ -562,18 +515,15 @@
 
     rsub-int/lit8 p1, v7, 0x3
 
-    .line 219
     :try_start_6
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     sget-object v2, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->REALTIME:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
-    .line 220
     invoke-virtual {v1, v2, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;->fetchNowWithTypeAndAttemptNumber(Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;I)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v3
 
-    .line 222
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->activatedCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->get()Lcom/google/android/gms/tasks/Task;
@@ -582,7 +532,6 @@
 
     const/4 p1, 0x2
 
-    .line 224
     new-array p1, p1, [Lcom/google/android/gms/tasks/Task;
 
     const/4 v1, 0x0
@@ -607,14 +556,12 @@
 
     invoke-direct/range {v1 .. v7}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$$ExternalSyntheticLambda0;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/Task;JI)V
 
-    .line 225
     invoke-virtual {p1, v0, v8}, Lcom/google/android/gms/tasks/Task;->continueWithTask(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/Continuation;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
     :try_end_2e
     .catchall {:try_start_6 .. :try_end_2e} :catchall_30
 
-    .line 224
     monitor-exit p0
 
     return-object p1
@@ -635,33 +582,28 @@
         }
     .end annotation
 
-    .line 228
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
     move-result p6
 
     if-nez p6, :cond_16
 
-    .line 229
     new-instance p2, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p3, "Failed to auto-fetch config update."
 
-    .line 231
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object p1
 
     invoke-direct {p2, p3, p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 229
     invoke-static {p2}, Lcom/google/android/gms/tasks/Tasks;->forException(Ljava/lang/Exception;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 234
     :cond_16
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
@@ -669,26 +611,22 @@
 
     if-nez p6, :cond_2c
 
-    .line 235
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p3, "Failed to get activated config for auto-fetch"
 
-    .line 238
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object p2
 
     invoke-direct {p1, p3, p2}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 235
     invoke-static {p1}, Lcom/google/android/gms/tasks/Tasks;->forException(Ljava/lang/Exception;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 241
     :cond_2c
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
@@ -696,14 +634,12 @@
 
     check-cast p1, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;
 
-    .line 242
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
-    .line 244
     invoke-static {p1, p3, p4}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->fetchResponseIsUpToDate(Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;J)Ljava/lang/Boolean;
 
     move-result-object p6
@@ -718,22 +654,18 @@
 
     if-nez p6, :cond_52
 
-    .line 245
     const-string p1, "Fetched template version is the same as SDK\'s current version. Retrying fetch."
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 250
     invoke-direct {p0, p5, p3, p4}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->autoFetch(IJ)V
 
-    .line 251
     invoke-static {v1}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 254
     :cond_52
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->getFetchedConfigs()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
@@ -741,12 +673,10 @@
 
     if-nez p3, :cond_62
 
-    .line 255
     const-string p1, "The fetch succeeded, but the backend had no updates."
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 256
     invoke-static {v1}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -756,7 +686,6 @@
     :cond_62
     if-nez p2, :cond_6c
 
-    .line 262
     invoke-static {}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->newBuilder()Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
 
     move-result-object p2
@@ -765,7 +694,6 @@
 
     move-result-object p2
 
-    .line 266
     :cond_6c
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchResponse;->getFetchedConfigs()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
@@ -775,35 +703,29 @@
 
     move-result-object p1
 
-    .line 267
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
     move-result p2
 
     if-eqz p2, :cond_84
 
-    .line 268
     const-string p1, "Config was fetched, but no params changed."
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 269
     invoke-static {v1}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 272
     :cond_84
     invoke-static {p1}, Lcom/google/firebase/remoteconfig/ConfigUpdate;->create(Ljava/util/Set;)Lcom/google/firebase/remoteconfig/ConfigUpdate;
 
     move-result-object p1
 
-    .line 273
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->executeAllListenerCallbacks(Lcom/google/firebase/remoteconfig/ConfigUpdate;)V
 
-    .line 274
     invoke-static {v1}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -814,30 +736,25 @@
 .method public listenForNotifications()V
     .registers 4
 
-    .line 104
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->httpURLConnection:Ljava/net/HttpURLConnection;
 
     if-nez v0, :cond_5
 
     return-void
 
-    .line 109
     :cond_5
     :try_start_5
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
-    .line 110
     invoke-direct {p0, v0}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->handleNotifications(Ljava/io/InputStream;)V
 
-    .line 111
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_f
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_f} :catch_17
     .catchall {:try_start_5 .. :try_end_f} :catchall_15
 
-    .line 116
     :goto_f
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->httpURLConnection:Ljava/net/HttpURLConnection;
 
@@ -853,7 +770,6 @@
     :catch_17
     move-exception v0
 
-    .line 114
     :try_start_18
     const-string v1, "FirebaseRemoteConfig"
 
@@ -868,12 +784,10 @@
     :goto_20
     return-void
 
-    .line 116
     :goto_21
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->httpURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 117
     throw v0
 .end method

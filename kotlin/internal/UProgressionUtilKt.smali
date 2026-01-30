@@ -43,17 +43,14 @@
 .method private static final differenceModulo-WZ9TVnA(III)I
     .registers 4
 
-    .line 10
     invoke-static {p0, p2}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$1(II)I
 
     move-result p0
 
-    .line 11
     invoke-static {p1, p2}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$1(II)I
 
     move-result p1
 
-    .line 12
     invoke-static {p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$2(II)I
 
     move-result v0
@@ -82,17 +79,14 @@
 .method private static final differenceModulo-sambcqE(JJJ)J
     .registers 7
 
-    .line 16
     invoke-static {p0, p1, p4, p5}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)J
 
     move-result-wide p0
 
-    .line 17
     invoke-static {p2, p3, p4, p5}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)J
 
     move-result-wide p2
 
-    .line 18
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result v0
@@ -127,7 +121,6 @@
 
     if-lez v0, :cond_1d
 
-    .line 64
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result v0
@@ -160,7 +153,6 @@
     :cond_1d
     if-gez v0, :cond_37
 
-    .line 65
     invoke-static {p0, p1, p2, p3}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(JJ)I
 
     move-result v0
@@ -193,7 +185,6 @@
     :goto_36
     return-wide p2
 
-    .line 66
     :cond_37
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -209,7 +200,6 @@
 
     if-lez p2, :cond_17
 
-    .line 40
     invoke-static {p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$2(II)I
 
     move-result v0
@@ -238,7 +228,6 @@
     :cond_17
     if-gez p2, :cond_2f
 
-    .line 41
     invoke-static {p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$2(II)I
 
     move-result v0
@@ -267,7 +256,6 @@
     :goto_2e
     return p1
 
-    .line 42
     :cond_2f
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

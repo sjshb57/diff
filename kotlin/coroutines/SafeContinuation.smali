@@ -111,13 +111,10 @@
 
     sput-object v0, Lkotlin/coroutines/SafeContinuation;->Companion:Lkotlin/coroutines/SafeContinuation$Companion;
 
-    .line 30
     const-class v0, Ljava/lang/Object;
 
-    .line 31
     const-string v1, "result"
 
-    .line 30
     const-class v2, Lkotlin/coroutines/SafeContinuation;
 
     invoke-static {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
@@ -143,7 +140,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->UNDECIDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     invoke-direct {p0, p1, v0}, Lkotlin/coroutines/SafeContinuation;-><init>(Lkotlin/coroutines/Continuation;Ljava/lang/Object;)V
@@ -167,13 +163,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
     iput-object p1, p0, Lkotlin/coroutines/SafeContinuation;->delegate:Lkotlin/coroutines/Continuation;
 
-    .line 26
     iput-object p2, p0, Lkotlin/coroutines/SafeContinuation;->result:Ljava/lang/Object;
 
     return-void
@@ -184,7 +177,6 @@
 .method public getCallerFrame()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
     .registers 3
 
-    .line 66
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->delegate:Lkotlin/coroutines/Continuation;
 
     instance-of v1, v0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
@@ -205,7 +197,6 @@
 .method public getContext()Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 23
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -218,15 +209,12 @@
 .method public final getOrThrow()Ljava/lang/Object;
     .registers 4
 
-    .line 51
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->result:Ljava/lang/Object;
 
-    .line 52
     sget-object v1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->UNDECIDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     if-ne v0, v1, :cond_1b
 
-    .line 53
     sget-object v0, Lkotlin/coroutines/SafeContinuation;->RESULT:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     sget-object v1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->UNDECIDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
@@ -247,11 +235,9 @@
 
     return-object v0
 
-    .line 54
     :cond_19
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->result:Ljava/lang/Object;
 
-    .line 57
     :cond_1b
     sget-object v1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->RESUMED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
@@ -263,7 +249,6 @@
 
     goto :goto_28
 
-    .line 58
     :cond_24
     instance-of v1, v0, Lkotlin/Result$Failure;
 
@@ -291,11 +276,9 @@
 .method public resumeWith(Ljava/lang/Object;)V
     .registers 5
 
-    .line 37
     :cond_0
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->result:Ljava/lang/Object;
 
-    .line 39
     sget-object v1, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->UNDECIDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     if-ne v0, v1, :cond_11
@@ -312,7 +295,6 @@
 
     return-void
 
-    .line 40
     :cond_11
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
@@ -334,14 +316,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 41
     iget-object v0, p0, Lkotlin/coroutines/SafeContinuation;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-interface {v0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
     return-void
 
-    .line 44
     :cond_2b
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -355,7 +335,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 72
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "SafeContinuation for "

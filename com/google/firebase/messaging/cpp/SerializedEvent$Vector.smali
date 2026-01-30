@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 40
     invoke-direct {p0}, Lcom/google/flatbuffers/BaseVector;-><init>()V
 
     return-void
@@ -29,7 +28,6 @@
 .method public __assign(IILjava/nio/ByteBuffer;)Lcom/google/firebase/messaging/cpp/SerializedEvent$Vector;
     .registers 4
 
-    .line 41
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/firebase/messaging/cpp/SerializedEvent$Vector;->__reset(IILjava/nio/ByteBuffer;)V
 
     return-object p0
@@ -38,7 +36,6 @@
 .method public get(I)Lcom/google/firebase/messaging/cpp/SerializedEvent;
     .registers 3
 
-    .line 43
     new-instance v0, Lcom/google/firebase/messaging/cpp/SerializedEvent;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;-><init>()V
@@ -53,7 +50,6 @@
 .method public get(Lcom/google/firebase/messaging/cpp/SerializedEvent;I)Lcom/google/firebase/messaging/cpp/SerializedEvent;
     .registers 4
 
-    .line 44
     invoke-virtual {p0, p2}, Lcom/google/firebase/messaging/cpp/SerializedEvent$Vector;->__element(I)I
 
     move-result p2

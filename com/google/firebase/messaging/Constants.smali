@@ -30,7 +30,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 34
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x3
@@ -47,7 +46,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 331
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

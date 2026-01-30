@@ -63,7 +63,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Lkotlinx/coroutines/CoroutineDispatcher;-><init>()V
 
     return-void

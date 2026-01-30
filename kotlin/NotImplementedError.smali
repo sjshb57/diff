@@ -47,7 +47,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 15
     invoke-direct {p0, p1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -60,7 +59,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 15
     const-string p1, "An operation is not implemented."
 
     :cond_6

@@ -43,12 +43,10 @@
         }
     .end annotation
 
-    .line 83
     invoke-direct {p0, p1}, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
     if-eqz p1, :cond_1a
 
-    .line 86
     invoke-interface {p1}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -82,7 +80,6 @@
 .method public getContext()Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 93
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext;

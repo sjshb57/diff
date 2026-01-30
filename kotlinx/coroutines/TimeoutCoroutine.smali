@@ -66,14 +66,12 @@
         }
     .end annotation
 
-    .line 157
     invoke-interface {p3}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
 
     invoke-direct {p0, v0, p3}, Lkotlinx/coroutines/internal/ScopeCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
-    .line 155
     iput-wide p1, p0, Lkotlinx/coroutines/TimeoutCoroutine;->time:J
 
     return-void
@@ -84,7 +82,6 @@
 .method public nameString$kotlinx_coroutines_core()Ljava/lang/String;
     .registers 4
 
-    .line 163
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -117,7 +114,6 @@
 .method public run()V
     .registers 5
 
-    .line 159
     iget-wide v0, p0, Lkotlinx/coroutines/TimeoutCoroutine;->time:J
 
     invoke-virtual {p0}, Lkotlinx/coroutines/TimeoutCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;

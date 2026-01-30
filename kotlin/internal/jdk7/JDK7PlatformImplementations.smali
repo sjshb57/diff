@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Lkotlin/internal/PlatformImplementations;-><init>()V
 
     return-void
@@ -55,7 +54,6 @@
 .method private final sdkIsNullOrAtLeast(I)Z
     .registers 3
 
-    .line 22
     sget-object v0, Lkotlin/internal/jdk7/JDK7PlatformImplementations$ReflectSdkVersion;->sdkVersion:Ljava/lang/Integer;
 
     if-eqz v0, :cond_f
@@ -98,19 +96,16 @@
 
     const/16 v0, 0x13
 
-    .line 27
     invoke-direct {p0, v0}, Lkotlin/internal/jdk7/JDK7PlatformImplementations;->sdkIsNullOrAtLeast(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_16
 
-    .line 28
     invoke-virtual {p1, p2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     goto :goto_19
 
-    .line 30
     :cond_16
     invoke-super {p0, p1, p2}, Lkotlin/internal/PlatformImplementations;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -137,14 +132,12 @@
 
     const/16 v0, 0x13
 
-    .line 33
     invoke-direct {p0, v0}, Lkotlin/internal/jdk7/JDK7PlatformImplementations;->sdkIsNullOrAtLeast(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_1d
 
-    .line 34
     invoke-virtual {p1}, Ljava/lang/Throwable;->getSuppressed()[Ljava/lang/Throwable;
 
     move-result-object p1
@@ -161,7 +154,6 @@
 
     goto :goto_21
 
-    .line 36
     :cond_1d
     invoke-super {p0, p1}, Lkotlin/internal/PlatformImplementations;->getSuppressed(Ljava/lang/Throwable;)Ljava/util/List;
 

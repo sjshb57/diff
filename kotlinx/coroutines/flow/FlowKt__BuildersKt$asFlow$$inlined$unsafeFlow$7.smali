@@ -63,7 +63,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7;->$this_asFlow$inlined:[I
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -124,7 +123,6 @@
 
     move-result-object v1
 
-    .line 105
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7$1;->label:I
 
     const/4 v3, 0x1
@@ -163,15 +161,12 @@
     :cond_3f
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 113
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$7;->$this_asFlow$inlined:[I
 
-    .line 114
     array-length v2, p2
 
     const/4 v4, 0x0
@@ -191,7 +186,6 @@
 
     aget v5, v4, v2
 
-    .line 115
     invoke-static {v5}, Lkotlin/coroutines/jvm/internal/Boxing;->boxInt(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -220,7 +214,6 @@
 
     goto :goto_4e
 
-    .line 108
     :cond_69
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

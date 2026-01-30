@@ -179,7 +179,6 @@
 
     sput-object v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    .line 288
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "REMOVE_FROZEN"
@@ -194,30 +193,24 @@
 .method public constructor <init>(IZ)V
     .registers 5
 
-    .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 77
     iput p1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->capacity:I
 
-    .line 78
     iput-boolean p2, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->singleConsumer:Z
 
     add-int/lit8 p2, p1, -0x1
 
-    .line 80
     iput p2, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
 
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-    .line 83
     invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
 
     iput-object v0, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     const v0, 0x3fffffff  # 1.9999999f
 
-    .line 86
     const-string v1, "Check failed."
 
     if-gt p2, v0, :cond_27
@@ -228,7 +221,6 @@
 
     return-void
 
-    .line 87
     :cond_1d
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -240,7 +232,6 @@
 
     throw p1
 
-    .line 86
     :cond_27
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -263,7 +254,6 @@
         }
     .end annotation
 
-    .line 230
     new-instance v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;
 
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->capacity:I
@@ -290,7 +280,6 @@
 
     long-to-int v2, v2
 
-    .line 233
     :goto_1a
     iget v3, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
 
@@ -300,7 +289,6 @@
 
     if-eq v4, v5, :cond_3b
 
-    .line 235
     iget-object v4, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     and-int/2addr v3, v1
@@ -315,7 +303,6 @@
 
     invoke-direct {v3, v1}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Placeholder;-><init>(I)V
 
-    .line 236
     :cond_30
     iget-object v4, v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -329,11 +316,9 @@
 
     goto :goto_1a
 
-    .line 237
     :cond_3b
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    .line 239
     sget-object v2, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->Companion:Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;
 
     const-wide/high16 v3, 0x1000000000000000L
@@ -370,13 +355,11 @@
 
     return-object v1
 
-    .line 224
     :cond_b
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_next$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const/4 v2, 0x0
 
-    .line 225
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->allocateNextCopy(J)Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;
 
     move-result-object v3
@@ -396,7 +379,6 @@
         }
     .end annotation
 
-    .line 143
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
@@ -407,7 +389,6 @@
 
     move-result-object v0
 
-    .line 154
     instance-of v1, v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Placeholder;
 
     if-eqz v1, :cond_1c
@@ -418,7 +399,6 @@
 
     if-ne v0, p1, :cond_1c
 
-    .line 155
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
@@ -521,7 +501,6 @@
 
     move-wide v4, v7
 
-    .line 219
     invoke-virtual/range {v0 .. v5}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->compareAndSet(Ljava/lang/Object;JJ)Z
 
     move-result v0
@@ -548,7 +527,6 @@
 
     move-result-wide v3
 
-    .line 200
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->Companion:Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;
 
     const-wide/32 v5, 0x3fffffff
@@ -557,7 +535,6 @@
 
     long-to-int v7, v5
 
-    .line 201
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v2
@@ -587,14 +564,12 @@
 
     if-eqz v2, :cond_2a
 
-    .line 204
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->next()Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;
 
     move-result-object p1
 
     return-object p1
 
-    .line 206
     :cond_2a
     sget-object v2, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
@@ -612,7 +587,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 207
     iget-object p1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget p2, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
@@ -755,7 +729,6 @@
 
     if-eqz v1, :cond_16
 
-    .line 106
     sget-object p1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->Companion:Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;
 
     invoke-virtual {p1, v3, v4}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;->addFailReason(J)I
@@ -764,7 +737,6 @@
 
     return p1
 
-    .line 107
     :cond_16
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->Companion:Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;
 
@@ -784,7 +756,6 @@
 
     long-to-int v9, v5
 
-    .line 108
     iget v10, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
 
     add-int/lit8 v5, v9, 0x2
@@ -799,7 +770,6 @@
 
     return v11
 
-    .line 114
     :cond_32
     iget-boolean v5, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->singleConsumer:Z
 
@@ -817,7 +787,6 @@
 
     if-eqz v5, :cond_51
 
-    .line 120
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->capacity:I
 
     const/16 v3, 0x400
@@ -840,7 +809,6 @@
 
     and-int/2addr v2, v6
 
-    .line 127
     sget-object v5, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v1, v3, v4, v2}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;->updateTail(JI)J
@@ -859,7 +827,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 129
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     and-int v1, v9, v10
@@ -868,7 +835,6 @@
 
     move-object v0, p0
 
-    .line 133
     :cond_6b
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
@@ -884,7 +850,6 @@
 
     if-eqz v1, :cond_82
 
-    .line 134
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->next()Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;
 
     move-result-object v0
@@ -945,7 +910,6 @@
 
     move-object v1, p0
 
-    .line 98
     invoke-virtual/range {v0 .. v5}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->compareAndSet(Ljava/lang/Object;JJ)Z
 
     move-result v0
@@ -958,7 +922,6 @@
 .method public final getSize()I
     .registers 6
 
-    .line 92
     sget-object v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->get(Ljava/lang/Object;)J
@@ -995,7 +958,6 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    .line 261
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->get(Ljava/lang/Object;)J
 
     move-result-wide v0
@@ -1024,7 +986,6 @@
 .method public final isEmpty()Z
     .registers 6
 
-    .line 91
     sget-object v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->get(Ljava/lang/Object;)J
@@ -1074,14 +1035,12 @@
         }
     .end annotation
 
-    .line 246
     new-instance v0, Ljava/util/ArrayList;
 
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->capacity:I
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 247
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->get(Ljava/lang/Object;)J
@@ -1104,7 +1063,6 @@
 
     long-to-int v1, v1
 
-    .line 249
     :goto_1c
     iget v2, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
 
@@ -1114,7 +1072,6 @@
 
     if-eq v4, v5, :cond_3b
 
-    .line 251
     iget-object v4, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     and-int/2addr v2, v3
@@ -1125,7 +1082,6 @@
 
     if-eqz v2, :cond_38
 
-    .line 253
     instance-of v4, v2, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Placeholder;
 
     if-nez v4, :cond_38
@@ -1141,7 +1097,6 @@
 
     goto :goto_1c
 
-    .line 257
     :cond_3b
     check-cast v0, Ljava/util/List;
 
@@ -1158,7 +1113,6 @@
         }
     .end annotation
 
-    .line 214
     invoke-direct {p0}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->markFrozen()J
 
     move-result-wide v0
@@ -1190,12 +1144,10 @@
 
     if-eqz v1, :cond_12
 
-    .line 166
     sget-object v0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->REMOVE_FROZEN:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
 
-    .line 167
     :cond_12
     sget-object v1, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->Companion:Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;
 
@@ -1215,7 +1167,6 @@
 
     long-to-int v2, v5
 
-    .line 168
     iget v5, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
 
     and-int/2addr v2, v5
@@ -1228,7 +1179,6 @@
 
     return-object v8
 
-    .line 169
     :cond_2c
     iget-object v2, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -1240,14 +1190,12 @@
 
     if-nez v9, :cond_3a
 
-    .line 172
     iget-boolean v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->singleConsumer:Z
 
     if-eqz v1, :cond_2
 
     return-object v8
 
-    .line 177
     :cond_3a
     instance-of v2, v9, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Placeholder;
 
@@ -1262,7 +1210,6 @@
 
     and-int v10, v2, v5
 
-    .line 180
     sget-object v2, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->_state$FU:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v1, v3, v4, v10}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;->updateHead(JI)J
@@ -1279,7 +1226,6 @@
 
     if-eqz v1, :cond_5d
 
-    .line 183
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->mask:I
@@ -1290,7 +1236,6 @@
 
     return-object v9
 
-    .line 187
     :cond_5d
     iget-boolean v1, p0, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->singleConsumer:Z
 
@@ -1298,7 +1243,6 @@
 
     move-object v0, p0
 
-    .line 192
     :cond_62
     invoke-direct {v0, v7, v10}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;->removeSlowPath(II)Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;
 

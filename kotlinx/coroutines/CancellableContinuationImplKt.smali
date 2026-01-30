@@ -56,7 +56,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 27
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "RESUME_TOKEN"

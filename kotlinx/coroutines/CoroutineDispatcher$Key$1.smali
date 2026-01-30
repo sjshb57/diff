@@ -79,7 +79,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 38
     check-cast p1, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CoroutineDispatcher$Key$1;->invoke(Lkotlin/coroutines/CoroutineContext$Element;)Lkotlinx/coroutines/CoroutineDispatcher;
@@ -92,7 +91,6 @@
 .method public final invoke(Lkotlin/coroutines/CoroutineContext$Element;)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 3
 
-    .line 38
     instance-of v0, p1, Lkotlinx/coroutines/CoroutineDispatcher;
 
     if-eqz v0, :cond_7

@@ -87,13 +87,10 @@
         }
     .end annotation
 
-    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
     iput-object p1, p0, Lkotlin/Pair;->first:Ljava/lang/Object;
 
-    .line 28
     iput-object p2, p0, Lkotlin/Pair;->second:Ljava/lang/Object;
 
     return-void
@@ -226,7 +223,6 @@
         }
     .end annotation
 
-    .line 27
     iget-object v0, p0, Lkotlin/Pair;->first:Ljava/lang/Object;
 
     return-object v0
@@ -240,7 +236,6 @@
         }
     .end annotation
 
-    .line 28
     iget-object v0, p0, Lkotlin/Pair;->second:Ljava/lang/Object;
 
     return-object v0
@@ -287,7 +282,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 34
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("

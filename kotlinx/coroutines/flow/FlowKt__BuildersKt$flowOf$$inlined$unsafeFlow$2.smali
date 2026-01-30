@@ -62,7 +62,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$2;->$value$inlined:Ljava/lang/Object;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +84,6 @@
         }
     .end annotation
 
-    .line 113
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$2;->$value$inlined:Ljava/lang/Object;
 
     invoke-interface {p1, v0, p2}, Lkotlinx/coroutines/flow/FlowCollector;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -100,7 +98,6 @@
 
     return-object p1
 
-    .line 108
     :cond_d
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

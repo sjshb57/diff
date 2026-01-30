@@ -86,7 +86,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 10
     new-instance v0, Lkotlin/collections/State;
 
     const-string v1, "Ready"
@@ -97,7 +96,6 @@
 
     sput-object v0, Lkotlin/collections/State;->Ready:Lkotlin/collections/State;
 
-    .line 11
     new-instance v0, Lkotlin/collections/State;
 
     const-string v1, "NotReady"
@@ -108,7 +106,6 @@
 
     sput-object v0, Lkotlin/collections/State;->NotReady:Lkotlin/collections/State;
 
-    .line 12
     new-instance v0, Lkotlin/collections/State;
 
     const-string v1, "Done"
@@ -119,7 +116,6 @@
 
     sput-object v0, Lkotlin/collections/State;->Done:Lkotlin/collections/State;
 
-    .line 13
     new-instance v0, Lkotlin/collections/State;
 
     const-string v1, "Failed"
@@ -147,7 +143,6 @@
         }
     .end annotation
 
-    .line 9
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

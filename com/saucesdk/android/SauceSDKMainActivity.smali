@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 9
     invoke-direct {p0}, Lcom/unity3d/player/UnityPlayerActivity;-><init>()V
 
     return-void
@@ -16,7 +15,6 @@
 .method private onPauseForDobestAnalytics()V
     .registers 7
 
-    .line 35
     :try_start_0
     const-string v0, "com.dobest.analyticssdk.BaseSdk"
 
@@ -24,7 +22,6 @@
 
     move-result-object v0
 
-    .line 36
     const-string v1, "onPause"
 
     const/4 v2, 0x1
@@ -41,7 +38,6 @@
 
     move-result-object v0
 
-    .line 37
     new-array v1, v2, [Ljava/lang/Object;
 
     sget-object v2, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
@@ -61,7 +57,6 @@
 .method private onRequestPermissionsResultForDobestAnalytics(I[Ljava/lang/String;[I)V
     .registers 13
 
-    .line 53
     :try_start_0
     const-string v0, "com.dobest.analyticssdk.BaseSdk"
 
@@ -69,7 +64,6 @@
 
     move-result-object v0
 
-    .line 54
     const-string v1, "onRequestPermissionsResult"
 
     const/4 v2, 0x4
@@ -104,7 +98,6 @@
 
     move-result-object v0
 
-    .line 55
     new-array v1, v2, [Ljava/lang/Object;
 
     sget-object v2, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
@@ -134,7 +127,6 @@
 .method private onResumeForDobestAnalytics()V
     .registers 7
 
-    .line 44
     :try_start_0
     const-string v0, "com.dobest.analyticssdk.BaseSdk"
 
@@ -142,7 +134,6 @@
 
     move-result-object v0
 
-    .line 45
     const-string v1, "onResume"
 
     const/4 v2, 0x1
@@ -159,7 +150,6 @@
 
     move-result-object v0
 
-    .line 46
     new-array v1, v2, [Ljava/lang/Object;
 
     sget-object v2, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
@@ -181,7 +171,6 @@
 .method protected onPause()V
     .registers 1
 
-    .line 13
     invoke-super {p0}, Lcom/unity3d/player/UnityPlayerActivity;->onPause()V
 
     return-void
@@ -190,10 +179,8 @@
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .registers 4
 
-    .line 27
     invoke-super {p0, p1, p2, p3}, Lcom/unity3d/player/UnityPlayerActivity;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
-    .line 29
     invoke-direct {p0, p1, p2, p3}, Lcom/saucesdk/android/SauceSDKMainActivity;->onRequestPermissionsResultForDobestAnalytics(I[Ljava/lang/String;[I)V
 
     return-void
@@ -202,7 +189,6 @@
 .method protected onResume()V
     .registers 1
 
-    .line 20
     invoke-super {p0}, Lcom/unity3d/player/UnityPlayerActivity;->onResume()V
 
     return-void

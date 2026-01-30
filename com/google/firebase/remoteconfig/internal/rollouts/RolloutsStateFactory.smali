@@ -13,13 +13,10 @@
 .method constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)V
     .registers 3
 
-    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->activatedConfigsCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
-    .line 47
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->defaultConfigsCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     return-void
@@ -28,7 +25,6 @@
 .method public static create(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;
     .registers 3
 
-    .line 146
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;
 
     invoke-direct {v0, p0, p1}, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;)V
@@ -39,7 +35,6 @@
 .method private getParameterValue(Ljava/lang/String;)Ljava/lang/String;
     .registers 3
 
-    .line 104
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->activatedConfigsCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     invoke-static {v0, p1}, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->getStringFromCache(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Ljava/lang/String;)Ljava/lang/String;
@@ -50,7 +45,6 @@
 
     return-object v0
 
-    .line 109
     :cond_9
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->defaultConfigsCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
@@ -62,7 +56,6 @@
 
     return-object p1
 
-    .line 114
     :cond_12
     const-string p1, ""
 
@@ -72,7 +65,6 @@
 .method private static getStringFromCache(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;Ljava/lang/String;)Ljava/lang/String;
     .registers 3
 
-    .line 130
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->getBlocking()Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     move-result-object p0
@@ -83,7 +75,6 @@
 
     return-object v0
 
-    .line 136
     :cond_8
     :try_start_8
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getConfigs()Lorg/json/JSONObject;
@@ -112,17 +103,14 @@
         }
     .end annotation
 
-    .line 53
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getRolloutMetadata()Lorg/json/JSONArray;
 
     move-result-object v0
 
-    .line 54
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getTemplateVersionNumber()J
 
     move-result-wide v1
 
-    .line 56
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
@@ -131,7 +119,6 @@
 
     move v4, v3
 
-    .line 57
     :goto_f
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
@@ -139,13 +126,11 @@
 
     if-ge v4, v5, :cond_7b
 
-    .line 59
     :try_start_15
     invoke-virtual {v0, v4}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v5
 
-    .line 60
     const/4 v6, 0x0
 
     sget-object v6, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->QqFKsJjpDpbrnuT:Ljava/lang/String;
@@ -154,7 +139,6 @@
 
     move-result-object v6
 
-    .line 61
     const/4 v7, 0x0
 
     sget-object v7, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->QuJCmm:Ljava/lang/String;
@@ -163,7 +147,6 @@
 
     move-result-object v7
 
-    .line 63
     invoke-virtual {v7}, Lorg/json/JSONArray;->length()I
 
     move-result v8
@@ -172,7 +155,6 @@
 
     if-le v8, v9, :cond_40
 
-    .line 64
     const-string v8, "FirebaseRemoteConfig"
 
     const-string v10, "Rollout has multiple affected parameter keys.Only the first key will be included in RolloutsState. rolloutId: %s, affectedParameterKeys: %s"
@@ -185,15 +167,12 @@
 
     aput-object v7, v11, v9
 
-    .line 66
     invoke-static {v10, v11}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v9
 
-    .line 64
     invoke-static {v8, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 74
     :cond_40
     const-string v8, ""
 
@@ -201,24 +180,20 @@
 
     move-result-object v7
 
-    .line 75
     invoke-direct {p0, v7}, Lcom/google/firebase/remoteconfig/internal/rollouts/RolloutsStateFactory;->getParameterValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 78
     invoke-static {}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->builder()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v9
 
-    .line 79
     invoke-virtual {v9, v6}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->setRolloutId(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v6
 
     const-string v9, "variantId"
 
-    .line 80
     invoke-virtual {v5, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -227,27 +202,22 @@
 
     move-result-object v5
 
-    .line 81
     invoke-virtual {v5, v7}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->setParameterKey(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v5
 
-    .line 82
     invoke-virtual {v5, v8}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->setParameterValue(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v5
 
-    .line 83
     invoke-virtual {v5, v1, v2}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->setTemplateVersion(J)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v5
 
-    .line 84
     invoke-virtual {v5}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->build()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
 
     move-result-object v5
 
-    .line 77
     invoke-interface {p1, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
     :try_end_6f
     .catch Lorg/json/JSONException; {:try_start_15 .. :try_end_6f} :catch_72
@@ -259,7 +229,6 @@
     :catch_72
     move-exception p1
 
-    .line 86
     new-instance v0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string v1, "Exception parsing rollouts metadata to create RolloutsState."
@@ -268,7 +237,6 @@
 
     throw v0
 
-    .line 91
     :cond_7b
     invoke-static {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;->create(Ljava/util/Set;)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;
 

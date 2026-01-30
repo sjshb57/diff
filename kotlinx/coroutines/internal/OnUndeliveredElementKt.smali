@@ -63,7 +63,6 @@
         }
     .end annotation
 
-    .line 37
     new-instance v0, Lkotlinx/coroutines/internal/OnUndeliveredElementKt$bindCancellationFun$1;
 
     invoke-direct {v0, p0, p1, p2}, Lkotlinx/coroutines/internal/OnUndeliveredElementKt$bindCancellationFun$1;-><init>(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;Lkotlin/coroutines/CoroutineContext;)V
@@ -91,14 +90,12 @@
 
     const/4 v0, 0x0
 
-    .line 31
     invoke-static {p0, p1, v0}, Lkotlinx/coroutines/internal/OnUndeliveredElementKt;->callUndeliveredElementCatchingException(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;Lkotlinx/coroutines/internal/UndeliveredElementException;)Lkotlinx/coroutines/internal/UndeliveredElementException;
 
     move-result-object p0
 
     if-eqz p0, :cond_c
 
-    .line 32
     check-cast p0, Ljava/lang/Throwable;
 
     invoke-static {p2, p0}, Lkotlinx/coroutines/CoroutineExceptionHandlerKt;->handleCoroutineException(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
@@ -124,7 +121,6 @@
         }
     .end annotation
 
-    .line 17
     :try_start_0
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_3
@@ -137,25 +133,21 @@
 
     if-eqz p2, :cond_14
 
-    .line 21
     invoke-virtual {p2}, Lkotlinx/coroutines/internal/UndeliveredElementException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-eq v0, p0, :cond_14
 
-    .line 22
     move-object p1, p2
 
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 45
     invoke-static {p1, p0}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :goto_13
     return-object p2
 
-    .line 24
     :cond_14
     new-instance p2, Lkotlinx/coroutines/internal/UndeliveredElementException;
 
@@ -185,7 +177,6 @@
 
     const/4 p2, 0x0
 
-    .line 12
     :cond_5
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/internal/OnUndeliveredElementKt;->callUndeliveredElementCatchingException(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;Lkotlinx/coroutines/internal/UndeliveredElementException;)Lkotlinx/coroutines/internal/UndeliveredElementException;
 

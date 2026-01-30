@@ -70,12 +70,10 @@
         }
     .end annotation
 
-    .line 142
     invoke-static {p1}, Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineCreated(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object v0
 
-    .line 30
     :try_start_4
     invoke-interface {p1}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -83,7 +81,6 @@
 
     const/4 v1, 0x0
 
-    .line 145
     invoke-static {p1, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -92,7 +89,6 @@
 
     const/4 v2, 0x1
 
-    .line 31
     :try_start_e
     invoke-static {p0, v2}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -106,20 +102,17 @@
     :try_end_18
     .catchall {:try_start_e .. :try_end_18} :catchall_2b
 
-    .line 149
     :try_start_18
     invoke-static {p1, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
     :try_end_1b
     .catchall {:try_start_18 .. :try_end_1b} :catchall_30
 
-    .line 154
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1
 
     if-eq p0, p1, :cond_3e
 
-    .line 156
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -133,7 +126,6 @@
     :catchall_2b
     move-exception p0
 
-    .line 149
     :try_start_2c
     invoke-static {p1, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
@@ -144,7 +136,6 @@
     :catchall_30
     move-exception p0
 
-    .line 151
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -182,12 +173,10 @@
         }
     .end annotation
 
-    .line 160
     invoke-static {p2}, Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineCreated(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object v0
 
-    .line 43
     :try_start_4
     invoke-interface {p2}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -195,7 +184,6 @@
 
     const/4 v1, 0x0
 
-    .line 163
     invoke-static {p2, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -204,7 +192,6 @@
 
     const/4 v2, 0x2
 
-    .line 44
     :try_start_e
     invoke-static {p0, v2}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -218,20 +205,17 @@
     :try_end_18
     .catchall {:try_start_e .. :try_end_18} :catchall_2b
 
-    .line 167
     :try_start_18
     invoke-static {p2, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
     :try_end_1b
     .catchall {:try_start_18 .. :try_end_1b} :catchall_30
 
-    .line 172
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p1
 
     if-eq p0, p1, :cond_3e
 
-    .line 174
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -245,7 +229,6 @@
     :catchall_2b
     move-exception p0
 
-    .line 167
     :try_start_2c
     invoke-static {p2, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
@@ -256,7 +239,6 @@
     :catchall_30
     move-exception p0
 
-    .line 169
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -292,14 +274,12 @@
         }
     .end annotation
 
-    .line 129
     invoke-static {p1}, Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineCreated(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object p1
 
     const/4 v0, 0x1
 
-    .line 19
     :try_start_5
     invoke-static {p0, v0}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -313,14 +293,12 @@
     :try_end_f
     .catchall {:try_start_5 .. :try_end_f} :catchall_1f
 
-    .line 136
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eq p0, v0, :cond_2d
 
-    .line 138
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -334,7 +312,6 @@
     :catchall_1f
     move-exception p0
 
-    .line 133
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p0}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -370,12 +347,10 @@
         }
     .end annotation
 
-    .line 177
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineCreated(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object p0
 
-    .line 57
     :try_start_4
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -383,14 +358,12 @@
     :try_end_8
     .catchall {:try_start_4 .. :try_end_8} :catchall_18
 
-    .line 62
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eq p1, v0, :cond_17
 
-    .line 64
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p1}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -405,7 +378,6 @@
     :catchall_18
     move-exception p1
 
-    .line 59
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
     invoke-static {p1}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -444,7 +416,6 @@
 
     const/4 v0, 0x2
 
-    .line 78
     :try_start_1
     invoke-static {p2, v0}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -467,7 +438,6 @@
     :catchall_f
     move-exception p1
 
-    .line 181
     new-instance p2, Lkotlinx/coroutines/CompletedExceptionally;
 
     const/4 v1, 0x0
@@ -478,7 +448,6 @@
 
     move-object p1, p2
 
-    .line 182
     :goto_18
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
@@ -492,13 +461,11 @@
 
     goto :goto_52
 
-    .line 183
     :cond_23
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ScopeCoroutine;->makeCompletingOnce$kotlinx_coroutines_core(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 184
     sget-object p2, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_WAITING_CHILDREN:Lkotlinx/coroutines/internal/Symbol;
 
     if-ne p1, p2, :cond_30
@@ -509,13 +476,11 @@
 
     goto :goto_52
 
-    .line 185
     :cond_30
     instance-of p2, p1, Lkotlinx/coroutines/CompletedExceptionally;
 
     if-eqz p2, :cond_4e
 
-    .line 187
     check-cast p1, Lkotlinx/coroutines/CompletedExceptionally;
 
     iget-object p2, p1, Lkotlinx/coroutines/CompletedExceptionally;->cause:Ljava/lang/Throwable;
@@ -524,7 +489,6 @@
 
     iget-object p0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 188
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result p2
@@ -537,7 +501,6 @@
 
     goto :goto_4d
 
-    .line 189
     :cond_47
     check-cast p0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -549,7 +512,6 @@
     :goto_4d
     throw p1
 
-    .line 194
     :cond_4e
     invoke-static {p1}, Lkotlinx/coroutines/JobSupportKt;->unboxState(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -582,7 +544,6 @@
 
     const/4 v0, 0x2
 
-    .line 89
     :try_start_1
     invoke-static {p2, v0}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -605,7 +566,6 @@
     :catchall_f
     move-exception p1
 
-    .line 198
     new-instance p2, Lkotlinx/coroutines/CompletedExceptionally;
 
     const/4 v1, 0x0
@@ -616,7 +576,6 @@
 
     move-object p1, p2
 
-    .line 199
     :goto_18
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
@@ -630,13 +589,11 @@
 
     goto :goto_7a
 
-    .line 200
     :cond_23
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ScopeCoroutine;->makeCompletingOnce$kotlinx_coroutines_core(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 201
     sget-object v0, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_WAITING_CHILDREN:Lkotlinx/coroutines/internal/Symbol;
 
     if-ne p2, v0, :cond_30
@@ -647,18 +604,15 @@
 
     goto :goto_7a
 
-    .line 202
     :cond_30
     instance-of v0, p2, Lkotlinx/coroutines/CompletedExceptionally;
 
     if-eqz v0, :cond_75
 
-    .line 204
     check-cast p2, Lkotlinx/coroutines/CompletedExceptionally;
 
     iget-object v0, p2, Lkotlinx/coroutines/CompletedExceptionally;->cause:Ljava/lang/Throwable;
 
-    .line 88
     instance-of v1, v0, Lkotlinx/coroutines/TimeoutCancellationException;
 
     if-eqz v1, :cond_5f
@@ -671,7 +625,6 @@
 
     goto :goto_5f
 
-    .line 207
     :cond_43
     instance-of p2, p1, Lkotlinx/coroutines/CompletedExceptionally;
 
@@ -683,7 +636,6 @@
 
     iget-object p0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 205
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result p2
@@ -696,7 +648,6 @@
 
     goto :goto_5e
 
-    .line 206
     :cond_58
     check-cast p0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -708,14 +659,12 @@
     :goto_5e
     throw p1
 
-    .line 204
     :cond_5f
     :goto_5f
     iget-object p1, p2, Lkotlinx/coroutines/CompletedExceptionally;->cause:Ljava/lang/Throwable;
 
     iget-object p0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 205
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result p2
@@ -728,7 +677,6 @@
 
     goto :goto_74
 
-    .line 206
     :cond_6e
     check-cast p0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -740,7 +688,6 @@
     :goto_74
     throw p1
 
-    .line 211
     :cond_75
     invoke-static {p2}, Lkotlinx/coroutines/JobSupportKt;->unboxState(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -775,7 +722,6 @@
         }
     .end annotation
 
-    .line 98
     :try_start_0
     invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -788,7 +734,6 @@
     :catchall_5
     move-exception p2
 
-    .line 100
     new-instance v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     const/4 v1, 0x2
@@ -801,7 +746,6 @@
 
     move-object p2, v0
 
-    .line 114
     :goto_f
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
@@ -815,13 +759,11 @@
 
     return-object p0
 
-    .line 115
     :cond_1a
     invoke-virtual {p0, p2}, Lkotlinx/coroutines/internal/ScopeCoroutine;->makeCompletingOnce$kotlinx_coroutines_core(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 116
     sget-object v1, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_WAITING_CHILDREN:Lkotlinx/coroutines/internal/Symbol;
 
     if-ne v0, v1, :cond_27
@@ -832,13 +774,11 @@
 
     return-object p0
 
-    .line 117
     :cond_27
     instance-of v1, v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     if-eqz v1, :cond_6d
 
-    .line 119
     check-cast v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     iget-object v1, v0, Lkotlinx/coroutines/CompletedExceptionally;->cause:Ljava/lang/Throwable;
@@ -859,7 +799,6 @@
 
     iget-object p0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 212
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result p2
@@ -872,7 +811,6 @@
 
     goto :goto_50
 
-    .line 213
     :cond_4a
     check-cast p0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -884,7 +822,6 @@
     :goto_50
     throw p1
 
-    .line 120
     :cond_51
     instance-of p1, p2, Lkotlinx/coroutines/CompletedExceptionally;
 
@@ -896,7 +833,6 @@
 
     iget-object p0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;->uCont:Lkotlin/coroutines/Continuation;
 
-    .line 214
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result p2
@@ -909,7 +845,6 @@
 
     goto :goto_6c
 
-    .line 215
     :cond_66
     check-cast p0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -921,7 +856,6 @@
     :goto_6c
     throw p1
 
-    .line 124
     :cond_6d
     invoke-static {v0}, Lkotlinx/coroutines/JobSupportKt;->unboxState(Ljava/lang/Object;)Ljava/lang/Object;
 

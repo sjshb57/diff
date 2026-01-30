@@ -64,7 +64,6 @@
         }
     .end annotation
 
-    .line 369
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberConflated;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
     sget-object v2, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
@@ -89,7 +88,6 @@
 .method public cancelImpl(Ljava/lang/Throwable;)Z
     .registers 4
 
-    .line 372
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberConflated;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
     move-object v1, p0
@@ -98,7 +96,6 @@
 
     invoke-static {v0, v1}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->access$removeSubscriber(Lkotlinx/coroutines/channels/BroadcastChannelImpl;Lkotlinx/coroutines/channels/ReceiveChannel;)V
 
-    .line 373
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;->cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
 
     move-result p1
@@ -109,7 +106,6 @@
 .method public bridge synthetic cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
     .registers 2
 
-    .line 369
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberConflated;->cancelImpl(Ljava/lang/Throwable;)Z
 
     move-result p1

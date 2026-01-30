@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Lkotlinx/coroutines/CoroutineDispatcher;-><init>()V
 
     return-void
@@ -51,10 +50,8 @@
 .method public limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 2
 
-    .line 57
     invoke-static {p1}, Lkotlinx/coroutines/internal/LimitedDispatcherKt;->checkParallelism(I)V
 
-    .line 59
     move-object p1, p0
 
     check-cast p1, Lkotlinx/coroutines/CoroutineDispatcher;
@@ -65,7 +62,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 54
     invoke-virtual {p0}, Lkotlinx/coroutines/MainCoroutineDispatcher;->toStringInternalImpl()Ljava/lang/String;
 
     move-result-object v0
@@ -103,14 +99,12 @@
 .method protected final toStringInternalImpl()Ljava/lang/String;
     .registers 3
 
-    .line 69
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getMain()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
     move-result-object v0
 
     if-ne p0, v0, :cond_9
 
-    .line 70
     const-string v0, "Dispatchers.Main"
 
     return-object v0
@@ -118,7 +112,6 @@
     :cond_9
     const/4 v1, 0x0
 
-    .line 72
     :try_start_a
     invoke-virtual {v0}, Lkotlinx/coroutines/MainCoroutineDispatcher;->getImmediate()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
@@ -134,7 +127,6 @@
     :goto_10
     if-ne p0, v0, :cond_15
 
-    .line 74
     const-string v0, "Dispatchers.Main.immediate"
 
     return-object v0

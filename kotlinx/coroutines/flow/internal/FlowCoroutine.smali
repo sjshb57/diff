@@ -55,7 +55,6 @@
         }
     .end annotation
 
-    .line 57
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/internal/ScopeCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
     return-void
@@ -66,7 +65,6 @@
 .method public childCancelled(Ljava/lang/Throwable;)Z
     .registers 3
 
-    .line 59
     instance-of v0, p1, Lkotlinx/coroutines/flow/internal/ChildCancelledException;
 
     if-eqz v0, :cond_6
@@ -75,7 +73,6 @@
 
     return p1
 
-    .line 60
     :cond_6
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/internal/FlowCoroutine;->cancelImpl$kotlinx_coroutines_core(Ljava/lang/Object;)Z
 

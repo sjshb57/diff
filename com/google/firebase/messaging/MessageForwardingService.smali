@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 28
     invoke-direct {p0}, Landroidx/core/app/JobIntentService;-><init>()V
 
     return-void
@@ -22,7 +21,6 @@
 .method public static enqueueWork(Landroid/content/Context;Landroid/content/Intent;)V
     .registers 4
 
-    .line 37
     const-class v0, Lcom/google/firebase/messaging/MessageForwardingService;
 
     const/16 v1, 0x3e8
@@ -35,14 +33,12 @@
 .method static handleIntent(Landroid/content/Context;Landroid/content/Intent;Lcom/google/firebase/messaging/cpp/MessageWriter;)V
     .registers 8
 
-    .line 49
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "onHandleIntent "
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 51
     const-string v1, "(null)"
 
     if-nez p1, :cond_e
@@ -51,7 +47,6 @@
 
     goto :goto_1a
 
-    .line 52
     :cond_e
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -75,21 +70,18 @@
 
     move-result-object v0
 
-    .line 49
     const-string v2, "FIREBASE_MSG_FWDR"
 
     invoke-static {v2, v0}, Lcom/google/firebase/messaging/cpp/DebugLogging;->log(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p1, :cond_86
 
-    .line 53
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_86
 
-    .line 54
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
@@ -102,12 +94,10 @@
 
     if-eqz v0, :cond_86
 
-    .line 55
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 56
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "extras: "
@@ -134,12 +124,10 @@
 
     if-eqz v0, :cond_86
 
-    .line 58
     new-instance v1, Lcom/google/firebase/messaging/RemoteMessage;
 
     invoke-direct {v1, v0}, Lcom/google/firebase/messaging/RemoteMessage;-><init>(Landroid/os/Bundle;)V
 
-    .line 60
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v3, "message: "
@@ -158,7 +146,6 @@
 
     invoke-static {v2, v0}, Lcom/google/firebase/messaging/cpp/DebugLogging;->log(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 62
     invoke-virtual {v1}, Lcom/google/firebase/messaging/RemoteMessage;->getFrom()Ljava/lang/String;
 
     move-result-object v0
@@ -173,7 +160,6 @@
 
     const/4 v0, 0x1
 
-    .line 63
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object p1

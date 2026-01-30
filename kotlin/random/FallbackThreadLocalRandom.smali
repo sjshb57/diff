@@ -39,10 +39,8 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 50
     invoke-direct {p0}, Lkotlin/random/AbstractPlatformRandom;-><init>()V
 
-    .line 51
     new-instance v0, Lkotlin/random/FallbackThreadLocalRandom$implStorage$1;
 
     invoke-direct {v0}, Lkotlin/random/FallbackThreadLocalRandom$implStorage$1;-><init>()V
@@ -57,7 +55,6 @@
 .method public getImpl()Ljava/util/Random;
     .registers 3
 
-    .line 56
     iget-object v0, p0, Lkotlin/random/FallbackThreadLocalRandom;->implStorage:Lkotlin/random/FallbackThreadLocalRandom$implStorage$1;
 
     invoke-virtual {v0}, Lkotlin/random/FallbackThreadLocalRandom$implStorage$1;->get()Ljava/lang/Object;

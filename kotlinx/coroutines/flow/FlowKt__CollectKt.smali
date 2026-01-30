@@ -65,7 +65,6 @@
         }
     .end annotation
 
-    .line 30
     sget-object v0, Lkotlinx/coroutines/flow/internal/NopCollector;->INSTANCE:Lkotlinx/coroutines/flow/internal/NopCollector;
 
     check-cast v0, Lkotlinx/coroutines/flow/FlowCollector;
@@ -118,7 +117,6 @@
         message = "Backwards compatibility with JS and K/N"
     .end annotation
 
-    .line 115
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collect$3;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collect$3;-><init>(Lkotlin/jvm/functions/Function2;)V
@@ -173,7 +171,6 @@
         message = "Backwards compatibility with JS and K/N"
     .end annotation
 
-    .line 115
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collect$3;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collect$3;-><init>(Lkotlin/jvm/functions/Function2;)V
@@ -222,7 +219,6 @@
         }
     .end annotation
 
-    .line 60
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collectIndexed$2;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collectIndexed$2;-><init>(Lkotlin/jvm/functions/Function3;)V
@@ -274,7 +270,6 @@
         }
     .end annotation
 
-    .line 60
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collectIndexed$2;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectKt$collectIndexed$2;-><init>(Lkotlin/jvm/functions/Function3;)V
@@ -321,7 +316,6 @@
         }
     .end annotation
 
-    .line 100
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/FlowKt;->mapLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p0
@@ -373,10 +367,8 @@
         }
     .end annotation
 
-    .line 108
     invoke-static {p0}, Lkotlinx/coroutines/flow/FlowKt;->ensureActive(Lkotlinx/coroutines/flow/FlowCollector;)V
 
-    .line 109
     invoke-interface {p1, p0, p2}, Lkotlinx/coroutines/flow/Flow;->collect(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -410,7 +402,6 @@
         }
     .end annotation
 
-    .line 49
     new-instance v0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$launchIn$1;
 
     const/4 v1, 0x0

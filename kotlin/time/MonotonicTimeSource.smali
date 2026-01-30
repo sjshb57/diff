@@ -65,7 +65,6 @@
 
     sput-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
-    .line 13
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -78,7 +77,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -87,7 +85,6 @@
 .method private final read()J
     .registers 5
 
-    .line 14
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -104,7 +101,6 @@
 .method public final adjustReading-6QKq23U(JJ)J
     .registers 5
 
-    .line 25
     invoke-static {p1, p2, p3, p4}, Lkotlin/time/LongSaturatedMathKt;->saturatingAdd-pTJri5U(JJ)J
 
     move-result-wide p1
@@ -119,7 +115,6 @@
 .method public final differenceBetween-fRLX17w(JJ)J
     .registers 5
 
-    .line 22
     invoke-static {p1, p2, p3, p4}, Lkotlin/time/LongSaturatedMathKt;->saturatingOriginsDiff(JJ)J
 
     move-result-wide p1
@@ -130,7 +125,6 @@
 .method public final elapsedFrom-6eNON_k(J)J
     .registers 5
 
-    .line 19
     invoke-direct {p0}, Lkotlin/time/MonotonicTimeSource;->read()J
 
     move-result-wide v0
@@ -145,7 +139,6 @@
 .method public bridge synthetic markNow()Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 10
     invoke-virtual {p0}, Lkotlin/time/MonotonicTimeSource;->markNow-z9LOYto()J
 
     move-result-wide v0
@@ -160,7 +153,6 @@
 .method public bridge synthetic markNow()Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 10
     invoke-virtual {p0}, Lkotlin/time/MonotonicTimeSource;->markNow-z9LOYto()J
 
     move-result-wide v0
@@ -175,7 +167,6 @@
 .method public markNow-z9LOYto()J
     .registers 3
 
-    .line 17
     invoke-direct {p0}, Lkotlin/time/MonotonicTimeSource;->read()J
 
     move-result-wide v0
@@ -190,7 +181,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 15
     const-string v0, "TimeSource(System.nanoTime())"
 
     return-object v0

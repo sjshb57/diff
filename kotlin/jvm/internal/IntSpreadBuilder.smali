@@ -48,10 +48,8 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 96
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;-><init>(I)V
 
-    .line 97
     new-array p1, p1, [I
 
     iput-object p1, p0, Lkotlin/jvm/internal/IntSpreadBuilder;->values:[I
@@ -64,7 +62,6 @@
 .method public final add(I)V
     .registers 5
 
-    .line 101
     iget-object v0, p0, Lkotlin/jvm/internal/IntSpreadBuilder;->values:[I
 
     invoke-virtual {p0}, Lkotlin/jvm/internal/IntSpreadBuilder;->getPosition()I
@@ -83,7 +80,6 @@
 .method public bridge synthetic getSize(Ljava/lang/Object;)I
     .registers 2
 
-    .line 96
     check-cast p1, [I
 
     invoke-virtual {p0, p1}, Lkotlin/jvm/internal/IntSpreadBuilder;->getSize([I)I
@@ -100,7 +96,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 98
     array-length p1, p1
 
     return p1
@@ -109,7 +104,6 @@
 .method public final toArray()[I
     .registers 3
 
-    .line 104
     iget-object v0, p0, Lkotlin/jvm/internal/IntSpreadBuilder;->values:[I
 
     invoke-virtual {p0}, Lkotlin/jvm/internal/IntSpreadBuilder;->size()I

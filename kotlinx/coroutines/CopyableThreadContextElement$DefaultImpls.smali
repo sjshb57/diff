@@ -43,7 +43,6 @@
         }
     .end annotation
 
-    .line 169
     check-cast p0, Lkotlinx/coroutines/ThreadContextElement;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->fold(Lkotlinx/coroutines/ThreadContextElement;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -69,7 +68,6 @@
         }
     .end annotation
 
-    .line 169
     check-cast p0, Lkotlinx/coroutines/ThreadContextElement;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->get(Lkotlinx/coroutines/ThreadContextElement;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
@@ -94,7 +92,6 @@
         }
     .end annotation
 
-    .line 169
     check-cast p0, Lkotlinx/coroutines/ThreadContextElement;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->minusKey(Lkotlinx/coroutines/ThreadContextElement;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
@@ -119,7 +116,6 @@
         }
     .end annotation
 
-    .line 169
     check-cast p0, Lkotlinx/coroutines/ThreadContextElement;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->plus(Lkotlinx/coroutines/ThreadContextElement;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;

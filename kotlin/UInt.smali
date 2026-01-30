@@ -200,7 +200,6 @@
 .method private synthetic constructor <init>(I)V
     .registers 2
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlin/UInt;->data:I
@@ -213,7 +212,6 @@
 
     and-int/2addr p0, p1
 
-    .line 270
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -236,7 +234,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 46
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -257,7 +254,6 @@
 
     and-long/2addr v0, v2
 
-    .line 71
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -276,7 +272,6 @@
 
     move-result v0
 
-    .line 63
     invoke-static {v0, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result p1
@@ -287,7 +282,6 @@
 .method private static compareTo-WZ4Q5Ns(II)I
     .registers 2
 
-    .line 63
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result p0
@@ -302,7 +296,6 @@
 
     and-int/2addr p1, v0
 
-    .line 54
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -325,7 +318,6 @@
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 234
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -338,7 +330,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 114
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -359,7 +350,6 @@
 
     and-long/2addr v0, v2
 
-    .line 123
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -374,7 +364,6 @@
 .method private static final div-WZ4Q5Ns(II)I
     .registers 2
 
-    .line 120
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintDivide-J1ME1BU(II)I
 
     move-result p0
@@ -389,7 +378,6 @@
 
     and-int/2addr p1, v0
 
-    .line 117
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -450,7 +438,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 160
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -471,7 +458,6 @@
 
     and-long/2addr v0, v2
 
-    .line 181
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -486,7 +472,6 @@
 .method private static final floorDiv-WZ4Q5Ns(II)I
     .registers 2
 
-    .line 174
     invoke-static {p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(II)I
 
     move-result p0
@@ -501,7 +486,6 @@
 
     and-int/2addr p1, v0
 
-    .line 167
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -530,7 +514,6 @@
 
     add-int/lit8 p0, p0, 0x1
 
-    .line 226
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -543,7 +526,6 @@
 
     not-int p0, p0
 
-    .line 279
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -556,7 +538,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 88
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -579,7 +560,6 @@
 
     and-long/2addr v0, v2
 
-    .line 97
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -598,7 +578,6 @@
 
     sub-int/2addr p0, p1
 
-    .line 94
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -613,7 +592,6 @@
 
     and-int/2addr p1, v0
 
-    .line 91
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -632,7 +610,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 191
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -659,7 +636,6 @@
 
     and-long/2addr v0, v2
 
-    .line 218
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -674,7 +650,6 @@
 .method private static final mod-WZ4Q5Ns(II)I
     .registers 2
 
-    .line 209
     invoke-static {p0, p1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$1(II)I
 
     move-result p0
@@ -689,7 +664,6 @@
 
     and-int/2addr p1, v0
 
-    .line 200
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -712,7 +686,6 @@
 
     or-int/2addr p0, p1
 
-    .line 273
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -725,7 +698,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 75
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -748,7 +720,6 @@
 
     and-long/2addr v0, v2
 
-    .line 84
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -767,7 +738,6 @@
 
     add-int/2addr p0, p1
 
-    .line 81
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -782,7 +752,6 @@
 
     and-int/2addr p1, v0
 
-    .line 78
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -799,7 +768,6 @@
 .method private static final rangeTo-WZ4Q5Ns(II)Lkotlin/ranges/UIntRange;
     .registers 4
 
-    .line 238
     new-instance v0, Lkotlin/ranges/UIntRange;
 
     const/4 v1, 0x0
@@ -812,7 +780,6 @@
 .method private static final rangeUntil-WZ4Q5Ns(II)Lkotlin/ranges/UIntRange;
     .registers 2
 
-    .line 248
     invoke-static {p0, p1}, Lkotlin/ranges/URangesKt;->until-J1ME1BU(II)Lkotlin/ranges/UIntRange;
 
     move-result-object p0
@@ -825,7 +792,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 131
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -846,7 +812,6 @@
 
     and-long/2addr v0, v2
 
-    .line 152
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -861,7 +826,6 @@
 .method private static final rem-WZ4Q5Ns(II)I
     .registers 2
 
-    .line 145
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->uintRemainder-J1ME1BU(II)I
 
     move-result p0
@@ -876,7 +840,6 @@
 
     and-int/2addr p1, v0
 
-    .line 138
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -893,7 +856,6 @@
 
     shl-int/2addr p0, p1
 
-    .line 257
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -906,7 +868,6 @@
 
     ushr-int/2addr p0, p1
 
-    .line 266
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -919,7 +880,6 @@
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 101
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -942,7 +902,6 @@
 
     and-long/2addr v0, v2
 
-    .line 110
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -961,7 +920,6 @@
 
     mul-int/2addr p0, p1
 
-    .line 107
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -976,7 +934,6 @@
 
     and-int/2addr p1, v0
 
-    .line 104
     invoke-static {p1}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p1
@@ -1001,7 +958,6 @@
 .method private static final toDouble-impl(I)D
     .registers 3
 
-    .line 373
     invoke-static {p0}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
     move-result-wide v0
@@ -1012,7 +968,6 @@
 .method private static final toFloat-impl(I)F
     .registers 3
 
-    .line 366
     invoke-static {p0}, Lkotlin/UnsignedKt;->uintToDouble(I)D
 
     move-result-wide v0
@@ -1057,7 +1012,6 @@
 
     and-long/2addr v0, v2
 
-    .line 375
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object p0
@@ -1070,7 +1024,6 @@
 
     int-to-byte p0, p0
 
-    .line 333
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
 
     move-result p0
@@ -1093,7 +1046,6 @@
 
     and-long/2addr v0, v2
 
-    .line 356
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -1106,7 +1058,6 @@
 
     int-to-short p0, p0
 
-    .line 343
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -1119,7 +1070,6 @@
 
     xor-int/2addr p0, p1
 
-    .line 276
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -1132,7 +1082,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 3
 
-    .line 13
     check-cast p1, Lkotlin/UInt;
 
     invoke-virtual {p1}, Lkotlin/UInt;->unbox-impl()I
@@ -1177,7 +1126,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 375
     iget v0, p0, Lkotlin/UInt;->data:I
 
     invoke-static {v0}, Lkotlin/UInt;->toString-impl(I)Ljava/lang/String;

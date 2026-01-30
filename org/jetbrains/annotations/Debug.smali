@@ -15,10 +15,8 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 34
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "Debug should not be instantiated"

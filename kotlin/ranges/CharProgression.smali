@@ -97,7 +97,6 @@
 .method public constructor <init>(CCI)V
     .registers 5
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p3, :cond_1d
@@ -106,10 +105,8 @@
 
     if-eq p3, v0, :cond_15
 
-    .line 30
     iput-char p1, p0, Lkotlin/ranges/CharProgression;->first:C
 
-    .line 35
     invoke-static {p1, p2, p3}, Lkotlin/internal/ProgressionUtilKt;->getProgressionLastElement(III)I
 
     move-result p1
@@ -118,12 +115,10 @@
 
     iput-char p1, p0, Lkotlin/ranges/CharProgression;->last:C
 
-    .line 40
     iput p3, p0, Lkotlin/ranges/CharProgression;->step:I
 
     return-void
 
-    .line 24
     :cond_15
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -133,7 +128,6 @@
 
     throw p1
 
-    .line 23
     :cond_1d
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -149,7 +143,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 53
     instance-of v0, p1, Lkotlin/ranges/CharProgression;
 
     if-eqz v0, :cond_29
@@ -170,7 +163,6 @@
 
     if-nez v0, :cond_27
 
-    .line 54
     :cond_13
     iget-char v0, p0, Lkotlin/ranges/CharProgression;->first:C
 
@@ -207,7 +199,6 @@
 .method public final getFirst()C
     .registers 2
 
-    .line 30
     iget-char v0, p0, Lkotlin/ranges/CharProgression;->first:C
 
     return v0
@@ -216,7 +207,6 @@
 .method public final getLast()C
     .registers 2
 
-    .line 35
     iget-char v0, p0, Lkotlin/ranges/CharProgression;->last:C
 
     return v0
@@ -225,7 +215,6 @@
 .method public final getStep()I
     .registers 2
 
-    .line 40
     iget v0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     return v0
@@ -234,7 +223,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 57
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
@@ -267,7 +255,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 50
     iget v0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     const/4 v1, 0x1
@@ -311,7 +298,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .registers 2
 
-    .line 15
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->iterator()Lkotlin/collections/CharIterator;
 
     move-result-object v0
@@ -324,7 +310,6 @@
 .method public iterator()Lkotlin/collections/CharIterator;
     .registers 5
 
-    .line 42
     new-instance v0, Lkotlin/ranges/CharProgressionIterator;
 
     iget-char v1, p0, Lkotlin/ranges/CharProgression;->first:C
@@ -343,7 +328,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 59
     iget v0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     const-string v1, " step "

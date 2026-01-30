@@ -41,7 +41,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +59,6 @@
 .method public final getEMPTY()Lkotlin/ranges/UIntRange;
     .registers 2
 
-    .line 52
     invoke-static {}, Lkotlin/ranges/UIntRange;->access$getEMPTY$cp()Lkotlin/ranges/UIntRange;
 
     move-result-object v0

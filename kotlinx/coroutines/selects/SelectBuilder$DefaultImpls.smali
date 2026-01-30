@@ -51,7 +51,6 @@
 
     const/4 v0, 0x0
 
-    .line 97
     invoke-interface {p0, p1, v0, p2}, Lkotlinx/coroutines/selects/SelectBuilder;->invoke(Lkotlinx/coroutines/selects/SelectClause2;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     return-void
@@ -86,7 +85,6 @@
         .end subannotation
     .end annotation
 
-    .line 114
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/selects/OnTimeoutKt;->onTimeout(Lkotlinx/coroutines/selects/SelectBuilder;JLkotlin/jvm/functions/Function1;)V
 
     return-void

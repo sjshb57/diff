@@ -88,7 +88,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 17
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumesAll$1;->invoke(Ljava/lang/Throwable;)V
@@ -101,7 +100,6 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .registers 7
 
-    .line 19
     iget-object v0, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumesAll$1;->$channels:[Lkotlinx/coroutines/channels/ReceiveChannel;
 
     array-length v1, v0
@@ -115,7 +113,6 @@
 
     aget-object v4, v0, v3
 
-    .line 21
     :try_start_9
     invoke-static {v4, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
     :try_end_c
@@ -132,7 +129,6 @@
 
     goto :goto_15
 
-    .line 480
     :cond_12
     invoke-static {v2, v4}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -146,7 +142,6 @@
 
     return-void
 
-    .line 29
     :cond_1b
     throw v2
 .end method

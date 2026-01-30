@@ -60,7 +60,6 @@
 
     const/4 v1, 0x6
 
-    .line 803
     invoke-static {p0, v0, v0, v1, v0}, Lkotlinx/coroutines/channels/ChannelKt;->Channel$default(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/channels/Channel;
 
     move-result-object p0
@@ -101,7 +100,6 @@
 
     if-eq p0, v0, :cond_23
 
-    .line 797
     sget-object v0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p1, v0, :cond_18
@@ -112,7 +110,6 @@
 
     goto :goto_20
 
-    .line 798
     :cond_18
     new-instance v0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;
 
@@ -127,7 +124,6 @@
 
     goto :goto_77
 
-    .line 791
     :cond_23
     new-instance p0, Lkotlinx/coroutines/channels/BufferedChannel;
 
@@ -139,13 +135,11 @@
 
     goto :goto_77
 
-    .line 780
     :cond_2c
     sget-object p0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p1, p0, :cond_37
 
-    .line 781
     new-instance p0, Lkotlinx/coroutines/channels/BufferedChannel;
 
     const/4 p1, 0x0
@@ -154,7 +148,6 @@
 
     goto :goto_3e
 
-    .line 783
     :cond_37
     new-instance p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;
 
@@ -169,13 +162,11 @@
 
     goto :goto_77
 
-    .line 786
     :cond_42
     sget-object p0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p1, p0, :cond_51
 
-    .line 789
     new-instance p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;
 
     sget-object p1, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
@@ -188,7 +179,6 @@
 
     goto :goto_77
 
-    .line 786
     :cond_51
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -202,7 +192,6 @@
 
     throw p0
 
-    .line 793
     :cond_5d
     sget-object p0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
@@ -220,7 +209,6 @@
 
     goto :goto_74
 
-    .line 794
     :cond_6d
     new-instance p0, Lkotlinx/coroutines/channels/ConflatedBufferedChannel;
 
@@ -246,7 +234,6 @@
 
     const/4 p0, 0x0
 
-    .line 803
     :cond_5
     invoke-static {p0}, Lkotlinx/coroutines/channels/ChannelKt;->Channel(I)Lkotlinx/coroutines/channels/Channel;
 
@@ -269,7 +256,6 @@
 
     if-eqz p4, :cond_b
 
-    .line 775
     sget-object p1, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     :cond_b
@@ -279,7 +265,6 @@
 
     const/4 p2, 0x0
 
-    .line 773
     :cond_10
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelKt;->Channel(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/channels/Channel;
 
@@ -303,7 +288,6 @@
         }
     .end annotation
 
-    .line 505
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-eqz v0, :cond_c
@@ -337,7 +321,6 @@
         }
     .end annotation
 
-    .line 551
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     if-eqz v0, :cond_b
@@ -369,7 +352,6 @@
         }
     .end annotation
 
-    .line 533
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-eqz v0, :cond_b
@@ -400,7 +382,6 @@
         }
     .end annotation
 
-    .line 518
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v0, :cond_7

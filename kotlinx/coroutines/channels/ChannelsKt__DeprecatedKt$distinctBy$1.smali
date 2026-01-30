@@ -241,7 +241,6 @@
 
     move-result-object v0
 
-    .line 385
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$distinctBy$1;->label:I
 
     const/4 v2, 0x3
@@ -336,12 +335,10 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 386
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    .line 387
     iget-object v5, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$distinctBy$1;->$this_distinctBy:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-interface {v5}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -395,7 +392,6 @@
 
     move-result-object p1
 
-    .line 388
     iget-object v7, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$distinctBy$1;->$selector:Lkotlin/jvm/functions/Function2;
 
     iput-object v6, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$distinctBy$1;->L$0:Ljava/lang/Object;
@@ -427,7 +423,6 @@
 
     move-object v6, v9
 
-    .line 389
     :goto_a1
     invoke-virtual {v6, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -435,7 +430,6 @@
 
     if-nez v8, :cond_c4
 
-    .line 390
     move-object v8, p0
 
     check-cast v8, Lkotlin/coroutines/Continuation;
@@ -463,7 +457,6 @@
 
     move-object v1, p1
 
-    .line 391
     :goto_bd
     move-object p1, v6
 
@@ -480,7 +473,6 @@
 
     goto :goto_68
 
-    .line 394
     :cond_c7
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

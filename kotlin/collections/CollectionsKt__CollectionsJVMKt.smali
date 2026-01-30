@@ -92,7 +92,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
     check-cast p0, Lkotlin/collections/builders/ListBuilder;
 
     invoke-virtual {p0}, Lkotlin/collections/builders/ListBuilder;->build()Ljava/util/List;
@@ -124,7 +123,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 33
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->createListBuilder(I)Ljava/util/List;
 
     move-result-object p0
@@ -160,7 +158,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 26
     invoke-static {}, Lkotlin/collections/CollectionsKt;->createListBuilder()Ljava/util/List;
 
     move-result-object v0
@@ -185,19 +182,16 @@
 
     const/4 v2, 0x1
 
-    .line 113
     invoke-static {v2, v0, v1}, Lkotlin/internal/PlatformImplementationsKt;->apiVersionIsAtLeast(III)Z
 
     move-result v0
 
     if-eqz v0, :cond_f
 
-    .line 114
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwCountOverflow()V
 
     goto :goto_17
 
-    .line 116
     :cond_f
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -223,19 +217,16 @@
 
     const/4 v2, 0x1
 
-    .line 100
     invoke-static {v2, v0, v1}, Lkotlin/internal/PlatformImplementationsKt;->apiVersionIsAtLeast(III)Z
 
     move-result v0
 
     if-eqz v0, :cond_f
 
-    .line 101
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     goto :goto_17
 
-    .line 103
     :cond_f
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -265,7 +256,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
     invoke-static {p0}, Lkotlin/jvm/internal/CollectionToArray;->toArray(Ljava/util/Collection;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -293,7 +283,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
     invoke-static {p0, p1}, Lkotlin/jvm/internal/CollectionToArray;->toArray(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -318,7 +307,6 @@
 
     if-eqz p1, :cond_14
 
-    .line 88
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -333,7 +321,6 @@
 
     goto :goto_20
 
-    .line 92
     :cond_14
     array-length p1, p0
 
@@ -363,7 +350,6 @@
         }
     .end annotation
 
-    .line 39
     new-instance v0, Lkotlin/collections/builders/ListBuilder;
 
     invoke-direct {v0}, Lkotlin/collections/builders/ListBuilder;-><init>()V
@@ -385,7 +371,6 @@
         }
     .end annotation
 
-    .line 45
     new-instance v0, Lkotlin/collections/builders/ListBuilder;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/ListBuilder;-><init>(I)V
@@ -407,7 +392,6 @@
         }
     .end annotation
 
-    .line 20
     invoke-static {p0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -437,7 +421,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->toMutableList(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
@@ -471,7 +454,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->toMutableList(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
@@ -501,7 +483,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 60
     invoke-static {p0}, Ljava/util/Collections;->list(Ljava/util/Enumeration;)Ljava/util/ArrayList;
 
     move-result-object p0

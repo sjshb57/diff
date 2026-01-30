@@ -59,7 +59,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 713
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "NO_VALUE"
@@ -93,14 +92,12 @@
 
     if-gtz p1, :cond_25
 
-    .line 270
     sget-object v0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p2, v0, :cond_d
 
     goto :goto_25
 
-    .line 271
     :cond_d
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -114,7 +111,6 @@
 
     move-result-object p0
 
-    .line 270
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -133,7 +129,6 @@
 
     const p1, 0x7fffffff
 
-    .line 275
     :cond_2b
     new-instance v0, Lkotlinx/coroutines/flow/SharedFlowImpl;
 
@@ -143,7 +138,6 @@
 
     return-object v0
 
-    .line 269
     :cond_33
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -167,7 +161,6 @@
 
     throw p1
 
-    .line 268
     :cond_4b
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -215,10 +208,8 @@
 
     if-eqz p3, :cond_11
 
-    .line 266
     sget-object p2, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 263
     :cond_11
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/SharedFlowKt;->MutableSharedFlow(IILkotlinx/coroutines/channels/BufferOverflow;)Lkotlinx/coroutines/flow/MutableSharedFlow;
 
@@ -230,7 +221,6 @@
 .method public static final synthetic access$getBufferAt([Ljava/lang/Object;J)Ljava/lang/Object;
     .registers 3
 
-    .line 1
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/SharedFlowKt;->getBufferAt([Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object p0
@@ -241,7 +231,6 @@
 .method public static final synthetic access$setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
     .registers 4
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/flow/SharedFlowKt;->setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
 
     return-void
@@ -271,18 +260,15 @@
 
     if-ne p2, v0, :cond_c
 
-    .line 725
     :cond_5
     sget-object v0, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     if-ne p3, v0, :cond_c
 
-    .line 726
     check-cast p0, Lkotlinx/coroutines/flow/Flow;
 
     return-object p0
 
-    .line 729
     :cond_c
     new-instance v0, Lkotlinx/coroutines/flow/internal/ChannelFlowOperatorImpl;
 
@@ -300,7 +286,6 @@
 
     long-to-int p1, p1
 
-    .line 715
     array-length p2, p0
 
     add-int/lit8 p2, p2, -0x1
@@ -317,7 +302,6 @@
 
     long-to-int p1, p1
 
-    .line 716
     array-length p2, p0
 
     add-int/lit8 p2, p2, -0x1

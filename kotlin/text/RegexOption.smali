@@ -130,7 +130,6 @@
 .method static constructor <clinit>()V
     .registers 15
 
-    .line 33
     new-instance v7, Lkotlin/text/RegexOption;
 
     const/4 v5, 0x2
@@ -151,7 +150,6 @@
 
     sput-object v7, Lkotlin/text/RegexOption;->IGNORE_CASE:Lkotlin/text/RegexOption;
 
-    .line 39
     new-instance v0, Lkotlin/text/RegexOption;
 
     const/4 v13, 0x2
@@ -172,7 +170,6 @@
 
     sput-object v0, Lkotlin/text/RegexOption;->MULTILINE:Lkotlin/text/RegexOption;
 
-    .line 47
     new-instance v0, Lkotlin/text/RegexOption;
 
     const/4 v6, 0x2
@@ -191,7 +188,6 @@
 
     sput-object v0, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
 
-    .line 54
     new-instance v0, Lkotlin/text/RegexOption;
 
     const-string v9, "UNIX_LINES"
@@ -206,7 +202,6 @@
 
     sput-object v0, Lkotlin/text/RegexOption;->UNIX_LINES:Lkotlin/text/RegexOption;
 
-    .line 57
     new-instance v0, Lkotlin/text/RegexOption;
 
     const-string v2, "COMMENTS"
@@ -221,7 +216,6 @@
 
     sput-object v0, Lkotlin/text/RegexOption;->COMMENTS:Lkotlin/text/RegexOption;
 
-    .line 60
     new-instance v0, Lkotlin/text/RegexOption;
 
     const-string v9, "DOT_MATCHES_ALL"
@@ -236,7 +230,6 @@
 
     sput-object v0, Lkotlin/text/RegexOption;->DOT_MATCHES_ALL:Lkotlin/text/RegexOption;
 
-    .line 63
     new-instance v0, Lkotlin/text/RegexOption;
 
     const-string v2, "CANON_EQ"
@@ -268,7 +261,6 @@
         }
     .end annotation
 
-    .line 29
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput p3, p0, Lkotlin/text/RegexOption;->value:I
@@ -287,7 +279,6 @@
 
     move p4, p3
 
-    .line 29
     :cond_5
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlin/text/RegexOption;-><init>(Ljava/lang/String;III)V
 
@@ -327,7 +318,6 @@
 .method public getMask()I
     .registers 2
 
-    .line 29
     iget v0, p0, Lkotlin/text/RegexOption;->mask:I
 
     return v0
@@ -336,7 +326,6 @@
 .method public getValue()I
     .registers 2
 
-    .line 29
     iget v0, p0, Lkotlin/text/RegexOption;->value:I
 
     return v0

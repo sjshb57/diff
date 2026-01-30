@@ -69,14 +69,12 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 46
     sget-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt$defaultKeySelector$1;->INSTANCE:Lkotlinx/coroutines/flow/FlowKt__DistinctKt$defaultKeySelector$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
     sput-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->defaultKeySelector:Lkotlin/jvm/functions/Function1;
 
-    .line 48
     sget-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt$defaultAreEquivalent$1;->INSTANCE:Lkotlinx/coroutines/flow/FlowKt__DistinctKt$defaultAreEquivalent$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -100,14 +98,12 @@
         }
     .end annotation
 
-    .line 23
     instance-of v0, p0, Lkotlinx/coroutines/flow/StateFlow;
 
     if-eqz v0, :cond_5
 
     goto :goto_d
 
-    .line 24
     :cond_5
     sget-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->defaultKeySelector:Lkotlin/jvm/functions/Function1;
 
@@ -139,7 +135,6 @@
         }
     .end annotation
 
-    .line 35
     sget-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->defaultKeySelector:Lkotlin/jvm/functions/Function1;
 
     const-string v1, "null cannot be cast to non-null type kotlin.Function2<kotlin.Any?, kotlin.Any?, kotlin.Boolean>"
@@ -179,7 +174,6 @@
         }
     .end annotation
 
-    .line 44
     sget-object v0, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->defaultAreEquivalent:Lkotlin/jvm/functions/Function2;
 
     invoke-static {p0, p1, v0}, Lkotlinx/coroutines/flow/FlowKt__DistinctKt;->distinctUntilChangedBy$FlowKt__DistinctKt(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;
@@ -212,7 +206,6 @@
         }
     .end annotation
 
-    .line 61
     instance-of v0, p0, Lkotlinx/coroutines/flow/DistinctFlowImpl;
 
     if-eqz v0, :cond_10
@@ -231,7 +224,6 @@
 
     goto :goto_18
 
-    .line 62
     :cond_10
     new-instance v0, Lkotlinx/coroutines/flow/DistinctFlowImpl;
 

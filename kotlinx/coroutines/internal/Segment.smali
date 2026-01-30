@@ -107,17 +107,14 @@
         }
     .end annotation
 
-    .line 198
     check-cast p3, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;
 
     invoke-direct {p0, p3}, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;-><init>(Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;)V
 
-    .line 197
     iput-wide p1, p0, Lkotlinx/coroutines/internal/Segment;->id:J
 
     shl-int/lit8 p1, p4, 0x10
 
-    .line 216
     iput p1, p0, Lkotlinx/coroutines/internal/Segment;->cleanedAndPointers:I
 
     return-void
@@ -132,7 +129,6 @@
 
     const/high16 v1, -0x10000
 
-    .line 228
     invoke-virtual {v0, p0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->addAndGet(Ljava/lang/Object;I)I
 
     move-result v0
@@ -168,7 +164,6 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/Segment;->cleanedAndPointers$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 222
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -202,7 +197,6 @@
 .method public final onSlotCleaned()V
     .registers 3
 
-    .line 247
     sget-object v0, Lkotlinx/coroutines/internal/Segment;->cleanedAndPointers$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->incrementAndGet(Ljava/lang/Object;)I
@@ -226,13 +220,11 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/Segment;->cleanedAndPointers$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 270
     :cond_2
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 225
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/Segment;->getNumberOfSlots()I
 
     move-result v2
@@ -258,7 +250,6 @@
 
     add-int/2addr v2, v1
 
-    .line 273
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v1

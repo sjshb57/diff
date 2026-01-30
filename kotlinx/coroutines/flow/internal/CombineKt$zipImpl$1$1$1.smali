@@ -91,7 +91,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 106
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$1;->invoke(Ljava/lang/Throwable;)V
@@ -104,7 +103,6 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .registers 4
 
-    .line 108
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$1;->$collectJob:Lkotlinx/coroutines/CompletableJob;
 
     invoke-interface {p1}, Lkotlinx/coroutines/CompletableJob;->isActive()Z

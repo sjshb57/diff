@@ -79,7 +79,6 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 30
     invoke-virtual {p0}, Lkotlin/enums/EnumEntriesKt$enumEntries$1;->invoke()[Ljava/lang/Enum;
 
     move-result-object v0
@@ -95,7 +94,6 @@
         }
     .end annotation
 
-    .line 30
     iget-object v0, p0, Lkotlin/enums/EnumEntriesKt$enumEntries$1;->$entries:[Ljava/lang/Enum;
 
     return-object v0

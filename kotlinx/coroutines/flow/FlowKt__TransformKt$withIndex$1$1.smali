@@ -141,7 +141,6 @@
 
     move-result-object v1
 
-    .line 70
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$withIndex$1$1$emit$1;->label:I
 
     const/4 v3, 0x1
@@ -166,7 +165,6 @@
     :cond_32
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 71
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$withIndex$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     new-instance v2, Lkotlin/collections/IndexedValue;
@@ -195,14 +193,12 @@
 
     return-object v1
 
-    .line 72
     :cond_51
     :goto_51
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 138
     :cond_54
     new-instance p1, Ljava/lang/ArithmeticException;
 

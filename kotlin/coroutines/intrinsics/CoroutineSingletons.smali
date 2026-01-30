@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 64
     new-instance v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     const-string v1, "COROUTINE_SUSPENDED"
@@ -125,7 +124,6 @@
         }
     .end annotation
 
-    .line 62
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

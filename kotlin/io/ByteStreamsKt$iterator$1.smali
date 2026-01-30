@@ -67,12 +67,10 @@
 
     iput-object p1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->$this_iterator:Ljava/io/BufferedInputStream;
 
-    .line 16
     invoke-direct {p0}, Lkotlin/collections/ByteIterator;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 18
     iput p1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextByte:I
 
     return-void
@@ -81,7 +79,6 @@
 .method private final prepareNext()V
     .registers 4
 
-    .line 25
     iget-boolean v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextPrepared:Z
 
     if-nez v0, :cond_1a
@@ -90,7 +87,6 @@
 
     if-nez v0, :cond_1a
 
-    .line 26
     iget-object v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->$this_iterator:Ljava/io/BufferedInputStream;
 
     invoke-virtual {v0}, Ljava/io/BufferedInputStream;->read()I
@@ -101,7 +97,6 @@
 
     const/4 v1, 0x1
 
-    .line 27
     iput-boolean v1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextPrepared:Z
 
     const/4 v2, -0x1
@@ -113,7 +108,6 @@
     :cond_17
     const/4 v1, 0x0
 
-    .line 28
     :goto_18
     iput-boolean v1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->finished:Z
 
@@ -126,7 +120,6 @@
 .method public final getFinished()Z
     .registers 2
 
-    .line 22
     iget-boolean v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->finished:Z
 
     return v0
@@ -135,7 +128,6 @@
 .method public final getNextByte()I
     .registers 2
 
-    .line 18
     iget v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextByte:I
 
     return v0
@@ -144,7 +136,6 @@
 .method public final getNextPrepared()Z
     .registers 2
 
-    .line 20
     iget-boolean v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextPrepared:Z
 
     return v0
@@ -153,10 +144,8 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 33
     invoke-direct {p0}, Lkotlin/io/ByteStreamsKt$iterator$1;->prepareNext()V
 
-    .line 34
     iget-boolean v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->finished:Z
 
     xor-int/lit8 v0, v0, 0x1
@@ -167,27 +156,22 @@
 .method public nextByte()B
     .registers 3
 
-    .line 38
     invoke-direct {p0}, Lkotlin/io/ByteStreamsKt$iterator$1;->prepareNext()V
 
-    .line 39
     iget-boolean v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->finished:Z
 
     if-nez v0, :cond_e
 
-    .line 41
     iget v0, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextByte:I
 
     int-to-byte v0, v0
 
     const/4 v1, 0x0
 
-    .line 42
     iput-boolean v1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextPrepared:Z
 
     return v0
 
-    .line 40
     :cond_e
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -201,7 +185,6 @@
 .method public final setFinished(Z)V
     .registers 2
 
-    .line 22
     iput-boolean p1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->finished:Z
 
     return-void
@@ -210,7 +193,6 @@
 .method public final setNextByte(I)V
     .registers 2
 
-    .line 18
     iput p1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextByte:I
 
     return-void
@@ -219,7 +201,6 @@
 .method public final setNextPrepared(Z)V
     .registers 2
 
-    .line 20
     iput-boolean p1, p0, Lkotlin/io/ByteStreamsKt$iterator$1;->nextPrepared:Z
 
     return-void

@@ -52,7 +52,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -88,7 +87,6 @@
         }
     .end annotation
 
-    .line 80
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_10
@@ -107,7 +105,6 @@
 
     return-object p1
 
-    .line 81
     :cond_10
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -161,7 +158,6 @@
         }
     .end annotation
 
-    .line 92
     invoke-interface {p1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p1

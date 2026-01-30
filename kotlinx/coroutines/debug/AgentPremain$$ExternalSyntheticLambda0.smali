@@ -10,7 +10,6 @@
 .method public synthetic constructor <init>()V
     .registers 1
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public final handle(Lsun/misc/Signal;)V
     .registers 2
 
-    .line 0
     invoke-static {p1}, Lkotlinx/coroutines/debug/AgentPremain;->$r8$lambda$qtwhjy3HAlNEjQH7oAL6W8vp2zY(Lsun/misc/Signal;)V
 
     return-void

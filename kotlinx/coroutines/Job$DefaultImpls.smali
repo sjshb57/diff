@@ -34,7 +34,6 @@
 
     const/4 v0, 0x0
 
-    .line 205
     invoke-interface {p0, v0}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -51,7 +50,6 @@
 
     const/4 p1, 0x0
 
-    .line 199
     :cond_7
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
@@ -78,7 +76,6 @@
 
     const/4 p1, 0x0
 
-    .line 211
     :cond_7
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/lang/Throwable;)Z
 
@@ -112,7 +109,6 @@
         }
     .end annotation
 
-    .line 112
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1, p2}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->fold(Lkotlin/coroutines/CoroutineContext$Element;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -135,7 +131,6 @@
         }
     .end annotation
 
-    .line 112
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->get(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
@@ -169,7 +164,6 @@
 
     const/4 p2, 0x1
 
-    .line 357
     :cond_c
     invoke-interface {p0, p1, p2, p3}, Lkotlinx/coroutines/Job;->invokeOnCompletion(ZZLkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
 
@@ -199,7 +193,6 @@
         }
     .end annotation
 
-    .line 112
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->minusKey(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
@@ -212,7 +205,6 @@
 .method public static plus(Lkotlinx/coroutines/Job;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 112
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->plus(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;

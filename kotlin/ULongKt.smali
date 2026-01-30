@@ -41,7 +41,6 @@
 
     int-to-long v0, p0
 
-    .line 393
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -52,7 +51,6 @@
 .method private static final toULong(D)J
     .registers 2
 
-    .line 449
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->doubleToULong(D)J
 
     move-result-wide p0
@@ -65,7 +63,6 @@
 
     float-to-double v0, p0
 
-    .line 439
     invoke-static {v0, v1}, Lkotlin/UnsignedKt;->doubleToULong(D)J
 
     move-result-wide v0
@@ -78,7 +75,6 @@
 
     int-to-long v0, p0
 
-    .line 417
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0
@@ -89,7 +85,6 @@
 .method private static final toULong(J)J
     .registers 2
 
-    .line 428
     invoke-static {p0, p1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide p0
@@ -102,7 +97,6 @@
 
     int-to-long v0, p0
 
-    .line 405
     invoke-static {v0, v1}, Lkotlin/ULong;->constructor-impl(J)J
 
     move-result-wide v0

@@ -86,7 +86,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 34
     new-instance v0, Lkotlin/reflect/KVisibility;
 
     const-string v1, "PUBLIC"
@@ -97,7 +96,6 @@
 
     sput-object v0, Lkotlin/reflect/KVisibility;->PUBLIC:Lkotlin/reflect/KVisibility;
 
-    .line 39
     new-instance v0, Lkotlin/reflect/KVisibility;
 
     const-string v1, "PROTECTED"
@@ -108,7 +106,6 @@
 
     sput-object v0, Lkotlin/reflect/KVisibility;->PROTECTED:Lkotlin/reflect/KVisibility;
 
-    .line 44
     new-instance v0, Lkotlin/reflect/KVisibility;
 
     const-string v1, "INTERNAL"
@@ -119,7 +116,6 @@
 
     sput-object v0, Lkotlin/reflect/KVisibility;->INTERNAL:Lkotlin/reflect/KVisibility;
 
-    .line 49
     new-instance v0, Lkotlin/reflect/KVisibility;
 
     const-string v1, "PRIVATE"
@@ -147,7 +143,6 @@
         }
     .end annotation
 
-    .line 29
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -54,7 +54,6 @@
 .method public static final digitToChar(I)C
     .registers 4
 
-    .line 93
     new-instance v0, Lkotlin/ranges/IntRange;
 
     const/4 v1, 0x0
@@ -75,7 +74,6 @@
 
     return p0
 
-    .line 96
     :cond_12
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -103,7 +101,6 @@
 .method public static final digitToChar(II)C
     .registers 5
 
-    .line 111
     new-instance v0, Lkotlin/ranges/IntRange;
 
     const/4 v1, 0x2
@@ -142,7 +139,6 @@
 
     return p0
 
-    .line 115
     :cond_1f
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -168,7 +164,6 @@
 
     throw v0
 
-    .line 112
     :cond_3b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -198,7 +193,6 @@
 
     const/16 v0, 0xa
 
-    .line 23
     invoke-static {p0, v0}, Lkotlin/text/CharsKt;->digitOf(CI)I
 
     move-result v0
@@ -207,7 +201,6 @@
 
     return v0
 
-    .line 24
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -235,7 +228,6 @@
 .method public static final digitToInt(CI)I
     .registers 5
 
-    .line 44
     invoke-static {p0, p1}, Lkotlin/text/CharsKt;->digitToIntOrNull(CI)Ljava/lang/Integer;
 
     move-result-object v0
@@ -279,7 +271,6 @@
 
     const/16 v0, 0xa
 
-    .line 59
     invoke-static {p0, v0}, Lkotlin/text/CharsKt;->digitOf(CI)I
 
     move-result p0
@@ -310,10 +301,8 @@
 .method public static final digitToIntOrNull(CI)Ljava/lang/Integer;
     .registers 2
 
-    .line 78
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
-    .line 79
     invoke-static {p0, p1}, Lkotlin/text/CharsKt;->digitOf(CI)I
 
     move-result p0
@@ -357,20 +346,17 @@
 
     return v1
 
-    .line 237
     :cond_8
     invoke-static {p0}, Ljava/lang/Character;->toUpperCase(C)C
 
     move-result p0
 
-    .line 238
     invoke-static {p1}, Ljava/lang/Character;->toUpperCase(C)C
 
     move-result p1
 
     if-eq p0, p1, :cond_1e
 
-    .line 240
     invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
 
     move-result p0
@@ -400,7 +386,6 @@
 
     const/4 p2, 0x0
 
-    .line 233
     :cond_5
     invoke-static {p0, p1, p2}, Lkotlin/text/CharsKt;->equals(CCZ)Z
 
@@ -412,7 +397,6 @@
 .method public static final isSurrogate(C)Z
     .registers 4
 
-    .line 246
     new-instance v0, Lkotlin/ranges/CharRange;
 
     const v1, 0xd800
@@ -435,7 +419,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -454,7 +437,6 @@
 .method public static final titlecase(C)Ljava/lang/String;
     .registers 1
 
-    .line 215
     invoke-static {p0}, Lkotlin/text/_OneToManyTitlecaseMappingsKt;->titlecaseImpl(C)Ljava/lang/String;
 
     move-result-object p0

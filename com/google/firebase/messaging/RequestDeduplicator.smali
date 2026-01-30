@@ -31,17 +31,14 @@
 .method constructor <init>(Ljava/util/concurrent/Executor;)V
     .registers 3
 
-    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
     new-instance v0, Landroidx/collection/ArrayMap;
 
     invoke-direct {v0}, Landroidx/collection/ArrayMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RequestDeduplicator;->getTokenRequests:Ljava/util/Map;
 
-    .line 40
     iput-object p1, p0, Lcom/google/firebase/messaging/RequestDeduplicator;->executor:Ljava/util/concurrent/Executor;
 
     return-void
@@ -69,7 +66,6 @@
 
     monitor-enter p0
 
-    .line 49
     :try_start_5
     iget-object v2, p0, Lcom/google/firebase/messaging/RequestDeduplicator;->getTokenRequests:Ljava/util/Map;
 
@@ -83,7 +79,6 @@
 
     if-eqz v2, :cond_2b
 
-    .line 53
     const-string p2, "FirebaseMessaging"
 
     invoke-static {p2, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -92,7 +87,6 @@
 
     if-eqz p2, :cond_29
 
-    .line 54
     const-string p2, "FirebaseMessaging"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -109,13 +103,11 @@
     :try_end_29
     .catchall {:try_start_5 .. :try_end_29} :catchall_5a
 
-    .line 56
     :cond_29
     monitor-exit p0
 
     return-object v2
 
-    .line 60
     :cond_2b
     :try_start_2b
     const-string v0, "FirebaseMessaging"
@@ -126,7 +118,6 @@
 
     if-eqz v0, :cond_44
 
-    .line 61
     const-string v0, "FirebaseMessaging"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -141,7 +132,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 67
     :cond_44
     invoke-interface {p2}, Lcom/google/firebase/messaging/RequestDeduplicator$GetTokenRequest;->start()Lcom/google/android/gms/tasks/Task;
 
@@ -153,19 +143,16 @@
 
     invoke-direct {v1, p0, p1}, Lcom/google/firebase/messaging/RequestDeduplicator$$ExternalSyntheticLambda0;-><init>(Lcom/google/firebase/messaging/RequestDeduplicator;Ljava/lang/String;)V
 
-    .line 68
     invoke-virtual {p2, v0, v1}, Lcom/google/android/gms/tasks/Task;->continueWithTask(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/Continuation;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p2
 
-    .line 76
     iget-object v0, p0, Lcom/google/firebase/messaging/RequestDeduplicator;->getTokenRequests:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_58
     .catchall {:try_start_2b .. :try_end_58} :catchall_5a
 
-    .line 77
     monitor-exit p0
 
     return-object p2
@@ -186,16 +173,13 @@
         }
     .end annotation
 
-    .line 71
     monitor-enter p0
 
-    .line 72
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/RequestDeduplicator;->getTokenRequests:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 73
     monitor-exit p0
 
     return-object p2

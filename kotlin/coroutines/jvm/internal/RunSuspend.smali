@@ -66,7 +66,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,17 +76,14 @@
 .method public final await()V
     .registers 2
 
-    .line 34
     monitor-enter p0
 
-    .line 36
     :goto_1
     :try_start_1
     iget-object v0, p0, Lkotlin/coroutines/jvm/internal/RunSuspend;->result:Lkotlin/Result;
 
     if-nez v0, :cond_11
 
-    .line 37
     const-string v0, "null cannot be cast to non-null type java.lang.Object"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -100,7 +96,6 @@
 
     goto :goto_1
 
-    .line 39
     :cond_11
     invoke-virtual {v0}, Lkotlin/Result;->unbox-impl()Ljava/lang/Object;
 
@@ -110,7 +105,6 @@
     :try_end_18
     .catchall {:try_start_1 .. :try_end_18} :catchall_1a
 
-    .line 40
     monitor-exit p0
 
     return-void
@@ -126,7 +120,6 @@
 .method public getContext()Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 25
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext;
@@ -145,7 +138,6 @@
         }
     .end annotation
 
-    .line 27
     iget-object v0, p0, Lkotlin/coroutines/jvm/internal/RunSuspend;->result:Lkotlin/Result;
 
     return-object v0
@@ -154,10 +146,8 @@
 .method public resumeWith(Ljava/lang/Object;)V
     .registers 2
 
-    .line 29
     monitor-enter p0
 
-    .line 30
     :try_start_1
     invoke-static {p1}, Lkotlin/Result;->box-impl(Ljava/lang/Object;)Lkotlin/Result;
 
@@ -165,7 +155,6 @@
 
     iput-object p1, p0, Lkotlin/coroutines/jvm/internal/RunSuspend;->result:Lkotlin/Result;
 
-    .line 31
     const-string p1, "null cannot be cast to non-null type java.lang.Object"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -176,12 +165,10 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 32
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_14
     .catchall {:try_start_1 .. :try_end_14} :catchall_16
 
-    .line 29
     monitor-exit p0
 
     return-void
@@ -205,7 +192,6 @@
         }
     .end annotation
 
-    .line 27
     iput-object p1, p0, Lkotlin/coroutines/jvm/internal/RunSuspend;->result:Lkotlin/Result;
 
     return-void

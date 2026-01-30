@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 23
     new-instance v0, Lkotlin/reflect/KVariance;
 
     const-string v1, "INVARIANT"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/reflect/KVariance;->INVARIANT:Lkotlin/reflect/KVariance;
 
-    .line 28
     new-instance v0, Lkotlin/reflect/KVariance;
 
     const-string v1, "IN"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/reflect/KVariance;->IN:Lkotlin/reflect/KVariance;
 
-    .line 33
     new-instance v0, Lkotlin/reflect/KVariance;
 
     const-string v1, "OUT"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

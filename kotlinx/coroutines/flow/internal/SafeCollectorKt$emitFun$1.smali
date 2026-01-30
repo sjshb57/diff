@@ -89,7 +89,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 4
 
-    .line 15
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
@@ -118,7 +117,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-interface {p1, p2, p3}, Lkotlinx/coroutines/flow/FlowCollector;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1

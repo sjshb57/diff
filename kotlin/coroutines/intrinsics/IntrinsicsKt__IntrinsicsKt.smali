@@ -46,7 +46,6 @@
 .method public static final getCOROUTINE_SUSPENDED()Ljava/lang/Object;
     .registers 1
 
-    .line 57
     sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
 
     return-object v0
@@ -77,7 +76,6 @@
         }
     .end annotation
 
-    .line 43
     new-instance p0, Lkotlin/NotImplementedError;
 
     const-string p1, "Implementation of suspendCoroutineUninterceptedOrReturn is intrinsic"

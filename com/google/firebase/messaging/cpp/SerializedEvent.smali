@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Lcom/google/flatbuffers/Table;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method public static ValidateVersion()V
     .registers 0
 
-    .line 12
     invoke-static {}, Lcom/google/flatbuffers/Constants;->FLATBUFFERS_1_12_0()V
 
     return-void
@@ -33,7 +31,6 @@
 .method static synthetic access$000(ILjava/nio/ByteBuffer;)I
     .registers 2
 
-    .line 11
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->__indirect(ILjava/nio/ByteBuffer;)I
 
     move-result p0
@@ -48,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    .line 32
     invoke-virtual {p0, v0, p1, v1}, Lcom/google/flatbuffers/FlatBufferBuilder;->addOffset(III)V
 
     return-void
@@ -59,7 +55,6 @@
 
     const/4 v0, 0x0
 
-    .line 31
     invoke-virtual {p0, v0, p1, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->addByte(IBI)V
 
     return-void
@@ -70,16 +65,12 @@
 
     const/4 v0, 0x2
 
-    .line 24
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->startTable(I)V
 
-    .line 25
     invoke-static {p0, p2}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEvent(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
 
-    .line 26
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->addEventType(Lcom/google/flatbuffers/FlatBufferBuilder;B)V
 
-    .line 27
     invoke-static {p0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->endSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)I
 
     move-result p0
@@ -90,7 +81,6 @@
 .method public static endSerializedEvent(Lcom/google/flatbuffers/FlatBufferBuilder;)I
     .registers 1
 
-    .line 34
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlatBufferBuilder;->endTable()I
 
     move-result p0
@@ -101,7 +91,6 @@
 .method public static finishSerializedEventBuffer(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
     .registers 2
 
-    .line 37
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/FlatBufferBuilder;->finish(I)V
 
     return-void
@@ -110,7 +99,6 @@
 .method public static finishSizePrefixedSerializedEventBuffer(Lcom/google/flatbuffers/FlatBufferBuilder;I)V
     .registers 2
 
-    .line 38
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/FlatBufferBuilder;->finishSizePrefixed(I)V
 
     return-void
@@ -119,7 +107,6 @@
 .method public static getRootAsSerializedEvent(Ljava/nio/ByteBuffer;)Lcom/google/firebase/messaging/cpp/SerializedEvent;
     .registers 2
 
-    .line 13
     new-instance v0, Lcom/google/firebase/messaging/cpp/SerializedEvent;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;-><init>()V
@@ -134,7 +121,6 @@
 .method public static getRootAsSerializedEvent(Ljava/nio/ByteBuffer;Lcom/google/firebase/messaging/cpp/SerializedEvent;)Lcom/google/firebase/messaging/cpp/SerializedEvent;
     .registers 4
 
-    .line 14
     sget-object v0, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
@@ -165,7 +151,6 @@
 
     const/4 v0, 0x2
 
-    .line 30
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/FlatBufferBuilder;->startTable(I)V
 
     return-void
@@ -176,7 +161,6 @@
 .method public __assign(ILjava/nio/ByteBuffer;)Lcom/google/firebase/messaging/cpp/SerializedEvent;
     .registers 3
 
-    .line 16
     invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->__init(ILjava/nio/ByteBuffer;)V
 
     return-object p0
@@ -185,7 +169,6 @@
 .method public __init(ILjava/nio/ByteBuffer;)V
     .registers 3
 
-    .line 15
     invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->__reset(ILjava/nio/ByteBuffer;)V
 
     return-void
@@ -196,7 +179,6 @@
 
     const/4 v0, 0x6
 
-    .line 19
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->__offset(I)I
 
     move-result v0
@@ -225,7 +207,6 @@
 
     const/4 v0, 0x4
 
-    .line 18
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/cpp/SerializedEvent;->__offset(I)I
 
     move-result v0

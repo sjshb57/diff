@@ -212,7 +212,6 @@
 
     move-result-object v0
 
-    .line 250
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$take$1;->label:I
 
     const/4 v2, 0x2
@@ -273,7 +272,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 251
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$take$1;->$n:I
 
     if-nez v1, :cond_41
@@ -295,7 +293,6 @@
     :goto_46
     if-eqz v4, :cond_8b
 
-    .line 254
     iget-object v4, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$take$1;->$this_take:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-interface {v4}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -343,7 +340,6 @@
 
     move-result-object p1
 
-    .line 255
     move-object v6, p0
 
     check-cast v6, Lkotlin/coroutines/Continuation;
@@ -369,18 +365,15 @@
 
     if-nez v1, :cond_4e
 
-    .line 258
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 260
     :cond_88
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 252
     :cond_8b
     new-instance p1, Ljava/lang/StringBuilder;
 

@@ -48,7 +48,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -79,7 +78,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
     new-instance v0, Lkotlin/reflect/KTypeProjection;
 
     sget-object v1, Lkotlin/reflect/KVariance;->IN:Lkotlin/reflect/KVariance;
@@ -100,7 +98,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 87
     new-instance v0, Lkotlin/reflect/KTypeProjection;
 
     sget-object v1, Lkotlin/reflect/KVariance;->OUT:Lkotlin/reflect/KVariance;
@@ -113,7 +110,6 @@
 .method public final getSTAR()Lkotlin/reflect/KTypeProjection;
     .registers 2
 
-    .line 62
     sget-object v0, Lkotlin/reflect/KTypeProjection;->star:Lkotlin/reflect/KTypeProjection;
 
     return-object v0
@@ -128,7 +124,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 71
     new-instance v0, Lkotlin/reflect/KTypeProjection;
 
     sget-object v1, Lkotlin/reflect/KVariance;->INVARIANT:Lkotlin/reflect/KVariance;

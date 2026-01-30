@@ -62,7 +62,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1;->$elements$inlined:[Ljava/lang/Object;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -121,7 +120,6 @@
 
     move-result-object v1
 
-    .line 105
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1$1;->label:I
 
     const/4 v3, 0x1
@@ -160,12 +158,10 @@
     :cond_3f
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 113
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1;->$elements$inlined:[Ljava/lang/Object;
 
     array-length p2, p2
@@ -187,7 +183,6 @@
 
     aget-object v4, v4, v2
 
-    .line 114
     iput-object v5, v0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1$1;->L$0:Ljava/lang/Object;
 
     iput-object p2, v0, Lkotlinx/coroutines/flow/FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1$1;->L$1:Ljava/lang/Object;
@@ -212,7 +207,6 @@
 
     goto :goto_4d
 
-    .line 108
     :cond_66
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

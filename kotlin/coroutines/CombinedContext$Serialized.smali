@@ -88,7 +88,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 188
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/coroutines/CombinedContext$Serialized;->elements:[Lkotlin/coroutines/CoroutineContext;
@@ -99,12 +98,10 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 6
 
-    .line 193
     iget-object v0, p0, Lkotlin/coroutines/CombinedContext$Serialized;->elements:[Lkotlin/coroutines/CoroutineContext;
 
     sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
-    .line 198
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -116,7 +113,6 @@
 
     check-cast v1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 193
     invoke-interface {v1, v4}, Lkotlin/coroutines/CoroutineContext;->plus(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v1
@@ -134,7 +130,6 @@
 .method public final getElements()[Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 188
     iget-object v0, p0, Lkotlin/coroutines/CombinedContext$Serialized;->elements:[Lkotlin/coroutines/CoroutineContext;
 
     return-object v0

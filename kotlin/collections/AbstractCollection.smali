@@ -71,7 +71,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -135,12 +134,10 @@
         }
     .end annotation
 
-    .line 19
     move-object v0, p0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 43
     instance-of v1, v0, Ljava/util/Collection;
 
     const/4 v2, 0x0
@@ -159,7 +156,6 @@
 
     goto :goto_27
 
-    .line 44
     :cond_12
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -176,7 +172,6 @@
 
     move-result-object v1
 
-    .line 19
     invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -206,10 +201,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 22
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 46
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -224,7 +217,6 @@
 
     goto :goto_27
 
-    .line 47
     :cond_12
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -241,7 +233,6 @@
 
     move-result-object v0
 
-    .line 22
     invoke-virtual {p0, v0}, Lkotlin/collections/AbstractCollection;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -261,7 +252,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 24
     invoke-virtual {p0}, Lkotlin/collections/AbstractCollection;->size()I
 
     move-result v0
@@ -346,7 +336,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/AbstractCollection;->getSize()I
 
     move-result v0
@@ -357,7 +346,6 @@
 .method public toArray()[Ljava/lang/Object;
     .registers 2
 
-    .line 34
     move-object v0, p0
 
     check-cast v0, Ljava/util/Collection;
@@ -383,7 +371,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 40
     move-object v0, p0
 
     check-cast v0, Ljava/util/Collection;
@@ -398,7 +385,6 @@
 .method public toString()Ljava/lang/String;
     .registers 10
 
-    .line 26
     move-object v0, p0
 
     check-cast v0, Ljava/lang/Iterable;

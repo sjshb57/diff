@@ -26,16 +26,12 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;II)V
     .registers 4
 
-    .line 637
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 638
     iput-object p1, p0, Lcom/google/flatbuffers/FlexBuffers$Object;->bb:Lcom/google/flatbuffers/ReadBuf;
 
-    .line 639
     iput p2, p0, Lcom/google/flatbuffers/FlexBuffers$Object;->end:I
 
-    .line 640
     iput p3, p0, Lcom/google/flatbuffers/FlexBuffers$Object;->byteWidth:I
 
     return-void
@@ -46,7 +42,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 645
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x80

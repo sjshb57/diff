@@ -52,23 +52,18 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 3
     iget-object v0, p1, La/o;->d:La/r;
 
-    .line 4
     iget-object v0, v0, La/r;->h:La/o;
 
     if-nez v0, :cond_18
 
-    .line 5
     invoke-virtual {p1}, Landroid/webkit/WebView;->canGoBack()Z
 
     move-result p1
@@ -86,7 +81,6 @@
     :goto_18
     const/4 p1, 0x1
 
-    .line 6
     :goto_19
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

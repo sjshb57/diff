@@ -23,7 +23,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 1
     invoke-direct {p0}, Lkotlin/io/path/PathsKt__PathUtilsKt;-><init>()V
 
     return-void

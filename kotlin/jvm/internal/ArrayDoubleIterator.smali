@@ -46,7 +46,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 46
     invoke-direct {p0}, Lkotlin/collections/DoubleIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayDoubleIterator;->array:[D
@@ -59,7 +58,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 48
     iget v0, p0, Lkotlin/jvm/internal/ArrayDoubleIterator;->index:I
 
     iget-object v1, p0, Lkotlin/jvm/internal/ArrayDoubleIterator;->array:[D
@@ -82,7 +80,6 @@
 .method public nextDouble()D
     .registers 4
 
-    .line 49
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayDoubleIterator;->array:[D
 

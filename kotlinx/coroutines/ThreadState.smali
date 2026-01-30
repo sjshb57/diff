@@ -96,12 +96,10 @@
 .method public constructor <init>(Lkotlinx/coroutines/Job;)V
     .registers 2
 
-    .line 66
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/ThreadState;->job:Lkotlinx/coroutines/Job;
 
-    .line 97
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -116,7 +114,6 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 161
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Illegal state "
@@ -190,12 +187,10 @@
 
     if-ne v1, v0, :cond_12
 
-    .line 134
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     return-void
 
-    .line 137
     :cond_12
     invoke-direct {p0, v1}, Lkotlinx/coroutines/ThreadState;->invalidState(I)Ljava/lang/Void;
 
@@ -205,7 +200,6 @@
 
     throw v0
 
-    .line 122
     :cond_1b
     sget-object v2, Lkotlinx/coroutines/ThreadState;->_state$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -217,7 +211,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 123
     iget-object v0, p0, Lkotlinx/coroutines/ThreadState;->cancelHandle:Lkotlinx/coroutines/DisposableHandle;
 
     if-eqz v0, :cond_2b
@@ -231,7 +224,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 66
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/ThreadState;->invoke(Ljava/lang/Throwable;)V
@@ -267,7 +259,6 @@
 
     goto :goto_1b
 
-    .line 156
     :cond_12
     invoke-direct {p0, v0}, Lkotlinx/coroutines/ThreadState;->invalidState(I)Ljava/lang/Void;
 
@@ -281,7 +272,6 @@
     :goto_1b
     return-void
 
-    .line 148
     :cond_1c
     sget-object v3, Lkotlinx/coroutines/ThreadState;->_state$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -291,12 +281,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 149
     iget-object p1, p0, Lkotlinx/coroutines/ThreadState;->targetThread:Ljava/lang/Thread;
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 150
     invoke-virtual {v3, p0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->set(Ljava/lang/Object;I)V
 
     return-void
@@ -305,7 +293,6 @@
 .method public final setup()V
     .registers 5
 
-    .line 103
     iget-object v0, p0, Lkotlinx/coroutines/ThreadState;->job:Lkotlinx/coroutines/Job;
 
     const/4 v1, 0x1
@@ -339,7 +326,6 @@
 
     goto :goto_24
 
-    .line 111
     :cond_1b
     invoke-direct {p0, v1}, Lkotlinx/coroutines/ThreadState;->invalidState(I)Ljava/lang/Void;
 
@@ -353,7 +339,6 @@
     :goto_24
     return-void
 
-    .line 108
     :cond_25
     sget-object v2, Lkotlinx/coroutines/ThreadState;->_state$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 

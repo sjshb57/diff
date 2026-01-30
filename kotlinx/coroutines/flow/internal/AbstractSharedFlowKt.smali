@@ -45,7 +45,6 @@
 
     const/4 v0, 0x0
 
-    .line 14
     new-array v0, v0, [Lkotlin/coroutines/Continuation;
 
     sput-object v0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;

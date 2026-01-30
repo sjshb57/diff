@@ -40,7 +40,6 @@
 
     const/4 v0, 0x2
 
-    .line 702
     new-array v0, v0, [Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     sget-object v1, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->BASE:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
@@ -61,7 +60,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 703
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     const-string v1, "BASE"
@@ -72,7 +70,6 @@
 
     sput-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->BASE:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
-    .line 704
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     const-string v1, "REALTIME"
@@ -83,7 +80,6 @@
 
     sput-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->REALTIME:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
-    .line 702
     invoke-static {}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->$values()[Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     move-result-object v0
@@ -103,10 +99,8 @@
         }
     .end annotation
 
-    .line 708
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 709
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->value:Ljava/lang/String;
 
     return-void
@@ -115,7 +109,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
     .registers 2
 
-    .line 702
     const-class v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -130,7 +123,6 @@
 .method public static values()[Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
     .registers 1
 
-    .line 702
     sget-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->$VALUES:[Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;
 
     invoke-virtual {v0}, [Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->clone()Ljava/lang/Object;
@@ -147,7 +139,6 @@
 .method getValue()Ljava/lang/String;
     .registers 2
 
-    .line 713
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$FetchType;->value:Ljava/lang/String;
 
     return-object v0

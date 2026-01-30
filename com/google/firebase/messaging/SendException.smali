@@ -23,10 +23,8 @@
 .method constructor <init>(Ljava/lang/String;)V
     .registers 2
 
-    .line 44
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 45
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/SendException;->parseErrorCode(Ljava/lang/String;)I
 
     move-result p1
@@ -45,7 +43,6 @@
 
     return v0
 
-    .line 56
     :cond_4
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -192,7 +189,6 @@
 .method public getErrorCode()I
     .registers 2
 
-    .line 49
     iget v0, p0, Lcom/google/firebase/messaging/SendException;->errorCode:I
 
     return v0

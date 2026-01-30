@@ -55,7 +55,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -76,7 +75,6 @@
         }
     .end annotation
 
-    .line 131
     new-instance p1, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;
 
     const/4 v0, 0x0
@@ -101,7 +99,6 @@
 .method public hintOnError()Ljava/lang/String;
     .registers 2
 
-    .line 125
     invoke-static {p0}, Lkotlinx/coroutines/internal/MainDispatcherFactory$DefaultImpls;->hintOnError(Lkotlinx/coroutines/internal/MainDispatcherFactory;)Ljava/lang/String;
 
     move-result-object v0

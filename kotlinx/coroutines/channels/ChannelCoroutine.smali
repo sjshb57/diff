@@ -129,10 +129,8 @@
         }
     .end annotation
 
-    .line 15
     invoke-direct {p0, p1, p3, p4}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
-    .line 12
     iput-object p2, p0, Lkotlinx/coroutines/channels/ChannelCoroutine;->_channel:Lkotlinx/coroutines/channels/Channel;
 
     return-void
@@ -147,7 +145,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 43
     new-instance v0, Lkotlinx/coroutines/JobCancellationException;
 
     move-object v1, p0
@@ -166,7 +163,6 @@
 
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 21
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/channels/ChannelCoroutine;->cancelInternal(Ljava/lang/Throwable;)V
 
     return-void
@@ -175,7 +171,6 @@
 .method public final cancel(Ljava/util/concurrent/CancellationException;)V
     .registers 5
 
-    .line 31
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/ChannelCoroutine;->isCancelled()Z
 
     move-result v0
@@ -187,7 +182,6 @@
     :cond_7
     if-nez p1, :cond_1a
 
-    .line 47
     new-instance p1, Lkotlinx/coroutines/JobCancellationException;
 
     move-object v0, p0
@@ -209,7 +203,6 @@
     :cond_1a
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 32
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/ChannelCoroutine;->cancelInternal(Ljava/lang/Throwable;)V
 
     return-void
@@ -222,7 +215,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 45
     new-instance p1, Lkotlinx/coroutines/JobCancellationException;
 
     move-object v0, p0
@@ -241,7 +233,6 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 26
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/ChannelCoroutine;->cancelInternal(Ljava/lang/Throwable;)V
 
     const/4 p1, 0x1
@@ -252,7 +243,6 @@
 .method public cancelInternal(Ljava/lang/Throwable;)V
     .registers 5
 
-    .line 36
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/JobSupport;
@@ -265,12 +255,10 @@
 
     move-result-object p1
 
-    .line 37
     iget-object v0, p0, Lkotlinx/coroutines/channels/ChannelCoroutine;->_channel:Lkotlinx/coroutines/channels/Channel;
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/Channel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
-    .line 38
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/ChannelCoroutine;->cancelCoroutine(Ljava/lang/Throwable;)Z
@@ -300,7 +288,6 @@
         }
     .end annotation
 
-    .line 17
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/channels/Channel;
@@ -397,7 +384,6 @@
         }
     .end annotation
 
-    .line 12
     iget-object v0, p0, Lkotlinx/coroutines/channels/ChannelCoroutine;->_channel:Lkotlinx/coroutines/channels/Channel;
 
     return-object v0

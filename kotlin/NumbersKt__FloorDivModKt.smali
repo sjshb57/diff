@@ -43,7 +43,6 @@
 .method private static final floorDiv(BB)I
     .registers 4
 
-    .line 19
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -63,7 +62,6 @@
 .method private static final floorDiv(BI)I
     .registers 4
 
-    .line 55
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -83,7 +81,6 @@
 .method private static final floorDiv(BS)I
     .registers 4
 
-    .line 37
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -103,7 +100,6 @@
 .method private static final floorDiv(IB)I
     .registers 4
 
-    .line 163
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -123,7 +119,6 @@
 .method private static final floorDiv(II)I
     .registers 4
 
-    .line 199
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -143,7 +138,6 @@
 .method private static final floorDiv(IS)I
     .registers 4
 
-    .line 181
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -163,7 +157,6 @@
 .method private static final floorDiv(SB)I
     .registers 4
 
-    .line 91
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -183,7 +176,6 @@
 .method private static final floorDiv(SI)I
     .registers 4
 
-    .line 127
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -203,7 +195,6 @@
 .method private static final floorDiv(SS)I
     .registers 4
 
-    .line 109
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -225,7 +216,6 @@
 
     int-to-long v0, p0
 
-    .line 73
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -255,7 +245,6 @@
 
     int-to-long v0, p0
 
-    .line 222
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -285,7 +274,6 @@
 
     int-to-long v0, p2
 
-    .line 240
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -315,7 +303,6 @@
 
     int-to-long v0, p2
 
-    .line 276
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -343,7 +330,6 @@
 .method private static final floorDiv(JJ)J
     .registers 10
 
-    .line 294
     div-long v0, p0, p2
 
     xor-long v2, p0, p2
@@ -373,7 +359,6 @@
 
     int-to-long v0, p2
 
-    .line 258
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -403,7 +388,6 @@
 
     int-to-long v0, p0
 
-    .line 145
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -431,7 +415,6 @@
 .method private static final mod(BB)B
     .registers 4
 
-    .line 30
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -456,7 +439,6 @@
 .method private static final mod(IB)B
     .registers 4
 
-    .line 174
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -483,7 +465,6 @@
 
     int-to-long v0, p2
 
-    .line 251
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -512,7 +493,6 @@
 .method private static final mod(SB)B
     .registers 4
 
-    .line 102
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -547,7 +527,6 @@
 
     goto :goto_16
 
-    .line 365
     :cond_8
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
@@ -585,7 +564,6 @@
 
     goto :goto_17
 
-    .line 351
     :cond_9
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
@@ -623,7 +601,6 @@
 
     goto :goto_17
 
-    .line 338
     :cond_9
     invoke-static {v0, v1}, Ljava/lang/Math;->signum(D)D
 
@@ -659,7 +636,6 @@
 
     goto :goto_15
 
-    .line 324
     :cond_7
     invoke-static {p0}, Ljava/lang/Math;->signum(F)F
 
@@ -685,7 +661,6 @@
 .method private static final mod(BI)I
     .registers 4
 
-    .line 66
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -708,7 +683,6 @@
 .method private static final mod(II)I
     .registers 4
 
-    .line 213
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -733,7 +707,6 @@
 
     int-to-long v0, p2
 
-    .line 287
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -760,7 +733,6 @@
 .method private static final mod(SI)I
     .registers 4
 
-    .line 138
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -785,7 +757,6 @@
 
     int-to-long v0, p0
 
-    .line 84
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -812,7 +783,6 @@
 
     int-to-long v0, p0
 
-    .line 233
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -837,7 +807,6 @@
 .method private static final mod(JJ)J
     .registers 8
 
-    .line 308
     rem-long/2addr p0, p2
 
     xor-long v0, p0, p2
@@ -864,7 +833,6 @@
 
     int-to-long v0, p0
 
-    .line 156
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -889,7 +857,6 @@
 .method private static final mod(BS)S
     .registers 4
 
-    .line 48
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -914,7 +881,6 @@
 .method private static final mod(IS)S
     .registers 4
 
-    .line 192
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -941,7 +907,6 @@
 
     int-to-long v0, p2
 
-    .line 269
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -970,7 +935,6 @@
 .method private static final mod(SS)S
     .registers 4
 
-    .line 120
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1

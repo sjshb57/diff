@@ -72,7 +72,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
     invoke-direct {p0}, Lkotlin/random/AbstractPlatformRandom;-><init>()V
 
     iput-object p1, p0, Lkotlin/random/PlatformRandom;->impl:Ljava/util/Random;
@@ -85,7 +84,6 @@
 .method public getImpl()Ljava/util/Random;
     .registers 2
 
-    .line 59
     iget-object v0, p0, Lkotlin/random/PlatformRandom;->impl:Ljava/util/Random;
 
     return-object v0

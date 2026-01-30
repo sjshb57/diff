@@ -66,10 +66,8 @@
         }
     .end annotation
 
-    .line 1395
     invoke-direct {p0}, Lkotlinx/coroutines/JobNode;-><init>()V
 
-    .line 1394
     iput-object p1, p0, Lkotlinx/coroutines/ResumeAwaitOnCompletion;->continuation:Lkotlinx/coroutines/CancellableContinuationImpl;
 
     return-void
@@ -80,7 +78,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 1393
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/ResumeAwaitOnCompletion;->invoke(Ljava/lang/Throwable;)V
@@ -93,7 +90,6 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .registers 4
 
-    .line 1397
     invoke-virtual {p0}, Lkotlinx/coroutines/ResumeAwaitOnCompletion;->getJob()Lkotlinx/coroutines/JobSupport;
 
     move-result-object p1
@@ -102,7 +98,6 @@
 
     move-result-object p1
 
-    .line 1398
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -124,14 +119,12 @@
 
     throw p1
 
-    .line 1399
     :cond_1b
     :goto_1b
     instance-of v0, p1, Lkotlinx/coroutines/CompletedExceptionally;
 
     if-eqz v0, :cond_35
 
-    .line 1401
     iget-object v0, p0, Lkotlinx/coroutines/ResumeAwaitOnCompletion;->continuation:Lkotlinx/coroutines/CancellableContinuationImpl;
 
     check-cast v0, Lkotlin/coroutines/Continuation;
@@ -154,7 +147,6 @@
 
     goto :goto_46
 
-    .line 1405
     :cond_35
     iget-object v0, p0, Lkotlinx/coroutines/ResumeAwaitOnCompletion;->continuation:Lkotlinx/coroutines/CancellableContinuationImpl;
 

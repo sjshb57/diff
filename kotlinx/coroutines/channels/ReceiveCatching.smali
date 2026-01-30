@@ -72,10 +72,8 @@
         }
     .end annotation
 
-    .line 2968
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2969
     iput-object p1, p0, Lkotlinx/coroutines/channels/ReceiveCatching;->cont:Lkotlinx/coroutines/CancellableContinuationImpl;
 
     return-void

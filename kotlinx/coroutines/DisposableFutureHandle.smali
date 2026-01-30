@@ -55,7 +55,6 @@
         }
     .end annotation
 
-    .line 201
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/DisposableFutureHandle;->future:Ljava/util/concurrent/Future;
@@ -68,7 +67,6 @@
 .method public dispose()V
     .registers 3
 
-    .line 203
     iget-object v0, p0, Lkotlinx/coroutines/DisposableFutureHandle;->future:Ljava/util/concurrent/Future;
 
     const/4 v1, 0x0
@@ -81,7 +79,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 205
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DisposableFutureHandle["

@@ -37,7 +37,6 @@
 .method private static final toJavaDuration-LRDsOJo(J)Ljava/time/Duration;
     .registers 4
 
-    .line 35
     invoke-static {p0, p1}, Lkotlin/time/Duration;->getInWholeSeconds-impl(J)J
 
     move-result-wide v0
@@ -48,7 +47,6 @@
 
     int-to-long p0, p0
 
-    .line 33
     invoke-static {v0, v1, p0, p1}, Ljava/time/Duration;->ofSeconds(JJ)Ljava/time/Duration;
 
     move-result-object p0
@@ -67,7 +65,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 21
     invoke-virtual {p0}, Ljava/time/Duration;->getSeconds()J
 
     move-result-wide v0

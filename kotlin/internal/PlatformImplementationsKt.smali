@@ -42,7 +42,6 @@
 .method static constructor <clinit>()V
     .registers 9
 
-    .line 50
     const-string v0, ", base type classloader: "
 
     const-string v1, "null cannot be cast to non-null type kotlin.internal.PlatformImplementations"
@@ -51,7 +50,6 @@
 
     const-string v3, "Instance class was loaded from a different classloader: "
 
-    .line 52
     :try_start_8
     const-string v4, "kotlin.internal.jdk8.JDK8PlatformImplementations"
 
@@ -138,7 +136,6 @@
     :try_end_52
     .catch Ljava/lang/ClassNotFoundException; {:try_start_23 .. :try_end_52} :catch_52
 
-    .line 55
     :catch_52
     :try_start_52
     const-string v4, "kotlin.internal.JRE8PlatformImplementations"
@@ -226,7 +223,6 @@
     :try_end_9c
     .catch Ljava/lang/ClassNotFoundException; {:try_start_6d .. :try_end_9c} :catch_9c
 
-    .line 58
     :catch_9c
     :try_start_9c
     const-string v4, "kotlin.internal.jdk7.JDK7PlatformImplementations"
@@ -314,7 +310,6 @@
     :try_end_e6
     .catch Ljava/lang/ClassNotFoundException; {:try_start_b7 .. :try_end_e6} :catch_e6
 
-    .line 61
     :catch_e6
     :try_start_e6
     const-string v4, "kotlin.internal.JRE7PlatformImplementations"
@@ -402,13 +397,11 @@
     :try_end_12f
     .catch Ljava/lang/ClassNotFoundException; {:try_start_100 .. :try_end_12f} :catch_12f
 
-    .line 64
     :catch_12f
     new-instance v4, Lkotlin/internal/PlatformImplementations;
 
     invoke-direct {v4}, Lkotlin/internal/PlatformImplementations;-><init>()V
 
-    .line 50
     :goto_134
     sput-object v4, Lkotlin/internal/PlatformImplementationsKt;->IMPLEMENTATIONS:Lkotlin/internal/PlatformImplementations;
 
@@ -418,7 +411,6 @@
 .method public static final apiVersionIsAtLeast(III)Z
     .registers 4
 
-    .line 92
     sget-object v0, Lkotlin/KotlinVersion;->CURRENT:Lkotlin/KotlinVersion;
 
     invoke-virtual {v0, p0, p1, p2}, Lkotlin/KotlinVersion;->isAtLeast(III)Z
@@ -440,12 +432,10 @@
         }
     .end annotation
 
-    .line 69
     const-string v0, "T"
 
     const/4 v1, 0x1
 
-    .line 70
     :try_start_3
     invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
 
@@ -460,7 +450,6 @@
     :catch_a
     move-exception v1
 
-    .line 72
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -479,19 +468,16 @@
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 73
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
 
-    .line 74
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_44
 
-    .line 75
     new-instance v2, Ljava/lang/ClassNotFoundException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -518,7 +504,6 @@
 
     throw v2
 
-    .line 77
     :cond_44
     throw v1
 .end method

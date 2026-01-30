@@ -60,7 +60,6 @@
 .method private static final currentTimeMillis()J
     .registers 2
 
-    .line 31
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -85,7 +84,6 @@
 .method public static final getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
     .registers 1
 
-    .line 27
     sget-object v0, Lkotlinx/coroutines/AbstractTimeSourceKt;->timeSource:Lkotlinx/coroutines/AbstractTimeSource;
 
     return-object v0
@@ -94,7 +92,6 @@
 .method private static final nanoTime()J
     .registers 2
 
-    .line 35
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -119,7 +116,6 @@
 .method private static final parkNanos(Ljava/lang/Object;J)V
     .registers 4
 
-    .line 63
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -147,7 +143,6 @@
 .method private static final registerTimeLoopThread()V
     .registers 1
 
-    .line 53
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -163,7 +158,6 @@
 .method public static final setTimeSource(Lkotlinx/coroutines/AbstractTimeSource;)V
     .registers 1
 
-    .line 27
     sput-object p0, Lkotlinx/coroutines/AbstractTimeSourceKt;->timeSource:Lkotlinx/coroutines/AbstractTimeSource;
 
     return-void
@@ -172,7 +166,6 @@
 .method private static final trackTask()V
     .registers 1
 
-    .line 43
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -188,7 +181,6 @@
 .method private static final unTrackTask()V
     .registers 1
 
-    .line 48
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -204,7 +196,6 @@
 .method private static final unpark(Ljava/lang/Thread;)V
     .registers 2
 
-    .line 68
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -232,7 +223,6 @@
 .method private static final unregisterTimeLoopThread()V
     .registers 1
 
-    .line 58
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -248,7 +238,6 @@
 .method private static final wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .registers 2
 
-    .line 39
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0

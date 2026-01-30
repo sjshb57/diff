@@ -54,48 +54,38 @@
 
     move-object/from16 v0, p0
 
-    .line 27
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v12
 
-    .line 29
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v13
 
-    .line 30
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v4
 
-    .line 31
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 32
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBaseBufferCount()I
 
     move-result v7
 
-    .line 33
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getRetainedItems()I
 
     move-result v15
 
-    .line 35
     new-array v11, v15, [Ljava/lang/Object;
 
     add-int/lit8 v10, v15, 0x1
 
-    .line 36
     new-array v9, v10, [J
 
-    .line 41
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v16
@@ -120,10 +110,8 @@
 
     move-object/from16 v11, v16
 
-    .line 40
     invoke-static/range {v1 .. v11}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->populateFromItemsSketch(IJJ[Ljava/lang/Object;II[Ljava/lang/Object;[JLjava/util/Comparator;)V
 
-    .line 45
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v1
@@ -139,12 +127,10 @@
     :goto_44
     if-ge v1, v0, :cond_4f
 
-    .line 50
     aget-wide v5, v2, v1
 
     add-long/2addr v5, v3
 
-    .line 51
     aput-wide v3, v2, v1
 
     add-int/lit8 v1, v1, 0x1
@@ -158,13 +144,10 @@
 
     move-wide/from16 v3, v18
 
-    .line 57
     iput-wide v3, v0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxN_:J
 
-    .line 58
     iput-object v13, v0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxSamplesArr_:[Ljava/lang/Object;
 
-    .line 59
     iput-object v2, v0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxCumWtsArr_:[J
 
     return-void
@@ -187,14 +170,12 @@
         }
     .end annotation
 
-    .line 103
     iget-object v0, p0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxCumWtsArr_:[J
 
     invoke-static {v0, p1, p2}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->chunkContainingPos([JJ)I
 
     move-result p1
 
-    .line 104
     iget-object p2, p0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxSamplesArr_:[Ljava/lang/Object;
 
     aget-object p1, p2, p1
@@ -215,17 +196,14 @@
         }
     .end annotation
 
-    .line 163
     array-length v0, p0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 165
     aget-wide v1, p0, v0
 
     const/4 v1, 0x0
 
-    .line 175
     invoke-static {p0, p1, p2, v1, v0}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->searchForChunkContainingPos([JJII)I
 
     move-result p0
@@ -318,12 +296,10 @@
 
     add-int v14, v13, v12
 
-    .line 131
     aget-object v14, p5, v14
 
     aput-object v14, v2, v8
 
-    .line 132
     aput-wide v9, p9, v8
 
     add-int/lit8 v8, v8, 0x1
@@ -347,12 +323,10 @@
     :goto_39
     if-ge v5, v0, :cond_45
 
-    .line 143
     aget-object v7, p5, v5
 
     aput-object v7, v2, v6
 
-    .line 144
     aput-wide v3, p9, v6
 
     add-int/2addr v6, v15
@@ -364,10 +338,8 @@
     :cond_45
     move-object/from16 v5, p10
 
-    .line 151
     invoke-static {v2, v8, v1, v5}, Ljava/util/Arrays;->sort([Ljava/lang/Object;IILjava/util/Comparator;)V
 
-    .line 152
     aput-wide v12, p9, v1
 
     return-void
@@ -390,7 +362,6 @@
 
     mul-double/2addr p0, v0
 
-    .line 83
     invoke-static {p0, p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p0
@@ -435,26 +406,22 @@
     :cond_5
     sub-int v0, p4, p3
 
-    .line 201
     div-int/lit8 v0, v0, 0x2
 
     add-int/2addr v0, p3
 
-    .line 202
     aget-wide v1, p0, v0
 
     cmp-long v1, v1, p1
 
     if-gtz v1, :cond_15
 
-    .line 203
     invoke-static {p0, p1, p2, v0, p4}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->searchForChunkContainingPos([JJII)I
 
     move-result p0
 
     return p0
 
-    .line 206
     :cond_15
     invoke-static {p0, p1, p2, p3, v0}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->searchForChunkContainingPos([JJII)I
 
@@ -482,7 +449,6 @@
         }
     .end annotation
 
-    .line 70
     iget-wide v0, p0, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->auxN_:J
 
     const-wide/16 v2, 0x0
@@ -495,13 +461,11 @@
 
     return-object p1
 
-    .line 71
     :cond_a
     invoke-static {p1, p2, v0, v1}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->posOfPhi(DJ)J
 
     move-result-wide p1
 
-    .line 72
     invoke-direct {p0, p1, p2}, Lcom/yahoo/sketches/quantiles/ItemsAuxiliary;->approximatelyAnswerPositionalQuery(J)Ljava/lang/Object;
 
     move-result-object p1

@@ -68,13 +68,10 @@
 .method public constructor <init>(Ljava/lang/Throwable;Z)V
     .registers 3
 
-    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
     iput-object p1, p0, Lkotlinx/coroutines/CompletedExceptionally;->cause:Ljava/lang/Throwable;
 
-    .line 46
     iput p2, p0, Lkotlinx/coroutines/CompletedExceptionally;->_handled:I
 
     return-void
@@ -89,7 +86,6 @@
 
     const/4 p2, 0x0
 
-    .line 42
     :cond_5
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/CompletedExceptionally;-><init>(Ljava/lang/Throwable;Z)V
 
@@ -103,7 +99,6 @@
 
     sget-object v0, Lkotlinx/coroutines/CompletedExceptionally;->_handled$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 47
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -130,7 +125,6 @@
 
     const/4 v2, 0x1
 
-    .line 48
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0
@@ -141,7 +135,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 49
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

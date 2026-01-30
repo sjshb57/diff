@@ -49,7 +49,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
     new-instance v0, Lkotlin/enums/EnumEntriesList;
 
     invoke-direct {v0, p0}, Lkotlin/enums/EnumEntriesList;-><init>(Lkotlin/jvm/functions/Function0;)V
@@ -75,7 +74,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
     new-instance v0, Lkotlin/enums/EnumEntriesList;
 
     new-instance v1, Lkotlin/enums/EnumEntriesKt$enumEntries$1;
@@ -86,10 +84,8 @@
 
     invoke-direct {v0, v1}, Lkotlin/enums/EnumEntriesList;-><init>(Lkotlin/jvm/functions/Function0;)V
 
-    .line 40
     invoke-virtual {v0}, Lkotlin/enums/EnumEntriesList;->size()I
 
-    .line 30
     check-cast v0, Lkotlin/enums/EnumEntries;
 
     return-object v0

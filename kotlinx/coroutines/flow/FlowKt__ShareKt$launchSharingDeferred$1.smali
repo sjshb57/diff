@@ -197,7 +197,6 @@
 
     move-result-object v0
 
-    .line 337
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1;->label:I
 
     const/4 v2, 0x1
@@ -234,13 +233,11 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 339
     :try_start_20
     new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 340
     iget-object v3, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1;->$upstream:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v4, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1$1;
@@ -267,19 +264,16 @@
 
     return-object v0
 
-    .line 353
     :cond_3c
     :goto_3c
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 349
     :goto_3f
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharingDeferred$1;->$result:Lkotlinx/coroutines/CompletableDeferred;
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/CompletableDeferred;->completeExceptionally(Ljava/lang/Throwable;)Z
 
-    .line 351
     throw p1
 .end method

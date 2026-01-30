@@ -16,7 +16,6 @@
 .method public synthetic constructor <init>(Ljava/lang/String;Lcom/google/firebase/components/Component;)V
     .registers 3
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/tracing/ComponentMonitor$$ExternalSyntheticLambda0;->f$0:Ljava/lang/String;
@@ -31,7 +30,6 @@
 .method public final create(Lcom/google/firebase/components/ComponentContainer;)Ljava/lang/Object;
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/tracing/ComponentMonitor$$ExternalSyntheticLambda0;->f$0:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/firebase/tracing/ComponentMonitor$$ExternalSyntheticLambda0;->f$1:Lcom/google/firebase/components/Component;

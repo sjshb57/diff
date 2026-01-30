@@ -42,7 +42,6 @@
 .method public static final synthetic access$resumeUndispatched(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Object;)V
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/selects/SelectOldKt;->resumeUndispatched(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Object;)V
 
     return-void
@@ -51,7 +50,6 @@
 .method public static final synthetic access$resumeUndispatchedWithException(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/selects/SelectOldKt;->resumeUndispatchedWithException(Lkotlinx/coroutines/CancellableContinuation;Ljava/lang/Throwable;)V
 
     return-void
@@ -69,7 +67,6 @@
         }
     .end annotation
 
-    .line 131
     invoke-interface {p0}, Lkotlinx/coroutines/CancellableContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
@@ -86,12 +83,10 @@
 
     if-eqz v0, :cond_14
 
-    .line 133
     invoke-interface {p0, v0, p1}, Lkotlinx/coroutines/CancellableContinuation;->resumeUndispatched(Lkotlinx/coroutines/CoroutineDispatcher;Ljava/lang/Object;)V
 
     goto :goto_1f
 
-    .line 135
     :cond_14
     check-cast p0, Lkotlin/coroutines/Continuation;
 
@@ -119,7 +114,6 @@
         }
     .end annotation
 
-    .line 141
     invoke-interface {p0}, Lkotlinx/coroutines/CancellableContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
@@ -136,12 +130,10 @@
 
     if-eqz v0, :cond_14
 
-    .line 143
     invoke-interface {p0, v0, p1}, Lkotlinx/coroutines/CancellableContinuation;->resumeUndispatchedWithException(Lkotlinx/coroutines/CoroutineDispatcher;Ljava/lang/Throwable;)V
 
     goto :goto_23
 
-    .line 145
     :cond_14
     check-cast p0, Lkotlin/coroutines/Continuation;
 
@@ -180,12 +172,10 @@
         }
     .end annotation
 
-    .line 106
     new-instance v0, Lkotlinx/coroutines/selects/SelectBuilderImpl;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/selects/SelectBuilderImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 108
     :try_start_5
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_8
@@ -196,16 +186,13 @@
     :catchall_9
     move-exception p0
 
-    .line 110
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/selects/SelectBuilderImpl;->handleBuilderException(Ljava/lang/Throwable;)V
 
-    .line 112
     :goto_d
     invoke-virtual {v0}, Lkotlinx/coroutines/selects/SelectBuilderImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 105
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -239,19 +226,16 @@
 
     const/4 v0, 0x0
 
-    .line 105
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     move-object v0, p1
 
     check-cast v0, Lkotlin/coroutines/Continuation;
 
-    .line 106
     new-instance v0, Lkotlinx/coroutines/selects/SelectBuilderImpl;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/selects/SelectBuilderImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 108
     :try_start_c
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_f
@@ -262,16 +246,13 @@
     :catchall_10
     move-exception p0
 
-    .line 110
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/selects/SelectBuilderImpl;->handleBuilderException(Ljava/lang/Throwable;)V
 
-    .line 112
     :goto_14
     invoke-virtual {v0}, Lkotlinx/coroutines/selects/SelectBuilderImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 105
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -307,12 +288,10 @@
         }
     .end annotation
 
-    .line 120
     new-instance v0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 122
     :try_start_5
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_8
@@ -323,16 +302,13 @@
     :catchall_9
     move-exception p0
 
-    .line 124
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;->handleBuilderException(Ljava/lang/Throwable;)V
 
-    .line 126
     :goto_d
     invoke-virtual {v0}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;->initSelectResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 119
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -366,19 +342,16 @@
 
     const/4 v0, 0x0
 
-    .line 119
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     move-object v0, p1
 
     check-cast v0, Lkotlin/coroutines/Continuation;
 
-    .line 120
     new-instance v0, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 122
     :try_start_c
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_f
@@ -389,16 +362,13 @@
     :catchall_10
     move-exception p0
 
-    .line 124
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;->handleBuilderException(Ljava/lang/Throwable;)V
 
-    .line 126
     :goto_14
     invoke-virtual {v0}, Lkotlinx/coroutines/selects/UnbiasedSelectBuilderImpl;->initSelectResult()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 119
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0

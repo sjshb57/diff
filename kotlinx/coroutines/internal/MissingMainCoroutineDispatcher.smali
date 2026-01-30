@@ -72,13 +72,10 @@
 .method public constructor <init>(Ljava/lang/Throwable;Ljava/lang/String;)V
     .registers 3
 
-    .line 91
     invoke-direct {p0}, Lkotlinx/coroutines/MainCoroutineDispatcher;-><init>()V
 
-    .line 89
     iput-object p1, p0, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->cause:Ljava/lang/Throwable;
 
-    .line 90
     iput-object p2, p0, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->errorHint:Ljava/lang/String;
 
     return-void
@@ -93,7 +90,6 @@
 
     const/4 p2, 0x0
 
-    .line 88
     :cond_5
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;-><init>(Ljava/lang/Throwable;Ljava/lang/String;)V
 
@@ -103,12 +99,10 @@
 .method private final missing()Ljava/lang/Void;
     .registers 5
 
-    .line 111
     iget-object v0, p0, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->cause:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_30
 
-    .line 114
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Module with the Main dispatcher had failed to initialize"
@@ -143,7 +137,6 @@
 
     move-result-object v0
 
-    .line 115
     new-instance v1, Ljava/lang/IllegalStateException;
 
     iget-object v2, p0, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->cause:Ljava/lang/Throwable;
@@ -152,7 +145,6 @@
 
     throw v1
 
-    .line 112
     :cond_30
     invoke-static {}, Lkotlinx/coroutines/internal/MainDispatchersKt;->throwMissingMainDispatcherException()Ljava/lang/Void;
 
@@ -183,7 +175,6 @@
         message = "Deprecated without replacement as an internal method never intended for public use"
     .end annotation
 
-    .line 88
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/Delay$DefaultImpls;->delay(Lkotlinx/coroutines/Delay;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
@@ -194,7 +185,6 @@
 .method public dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)Ljava/lang/Void;
     .registers 3
 
-    .line 105
     invoke-direct {p0}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->missing()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -207,7 +197,6 @@
 .method public bridge synthetic dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 3
 
-    .line 88
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)Ljava/lang/Void;
 
     return-void
@@ -216,7 +205,6 @@
 .method public getImmediate()Lkotlinx/coroutines/MainCoroutineDispatcher;
     .registers 2
 
-    .line 93
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/MainCoroutineDispatcher;
@@ -227,7 +215,6 @@
 .method public invokeOnTimeout(JLjava/lang/Runnable;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/DisposableHandle;
     .registers 5
 
-    .line 102
     invoke-direct {p0}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->missing()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -240,7 +227,6 @@
 .method public isDispatchNeeded(Lkotlin/coroutines/CoroutineContext;)Z
     .registers 2
 
-    .line 96
     invoke-direct {p0}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->missing()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -253,7 +239,6 @@
 .method public limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 2
 
-    .line 99
     invoke-direct {p0}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->missing()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -276,7 +261,6 @@
         }
     .end annotation
 
-    .line 108
     invoke-direct {p0}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->missing()Ljava/lang/Void;
 
     new-instance p1, Lkotlin/KotlinNothingValueException;
@@ -289,7 +273,6 @@
 .method public bridge synthetic scheduleResumeAfterDelay(JLkotlinx/coroutines/CancellableContinuation;)V
     .registers 4
 
-    .line 88
     invoke-virtual {p0, p1, p2, p3}, Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;->scheduleResumeAfterDelay(JLkotlinx/coroutines/CancellableContinuation;)Ljava/lang/Void;
 
     return-void
@@ -298,7 +281,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 119
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Dispatchers.Main[missing"

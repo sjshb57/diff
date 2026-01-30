@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +56,6 @@
 .method public final next()Ljava/lang/Double;
     .registers 3
 
-    .line 60
     invoke-virtual {p0}, Lkotlin/collections/DoubleIterator;->nextDouble()D
 
     move-result-wide v0
@@ -72,7 +70,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 3
 
-    .line 59
     invoke-virtual {p0}, Lkotlin/collections/DoubleIterator;->nextDouble()D
 
     move-result-wide v0

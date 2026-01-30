@@ -55,12 +55,10 @@
         }
     .end annotation
 
-    .line 264
     invoke-direct {p0, p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
     if-eqz p1, :cond_a
 
-    .line 266
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1

@@ -32,7 +32,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 17
     invoke-direct {p0}, Lkotlin/jvm/internal/PropertyReference0;-><init>()V
 
     return-void
@@ -43,7 +42,6 @@
 .method public get()Ljava/lang/Object;
     .registers 2
 
-    .line 20
     invoke-static {}, Lkotlin/jvm/internal/LocalVariableReferencesKt;->access$notSupportedError()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -56,7 +54,6 @@
 .method public getOwner()Lkotlin/reflect/KDeclarationContainer;
     .registers 2
 
-    .line 18
     invoke-static {}, Lkotlin/jvm/internal/LocalVariableReferencesKt;->access$notSupportedError()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;

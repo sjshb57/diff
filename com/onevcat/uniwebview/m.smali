@@ -43,7 +43,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 5
 
-    .line 1
     sget-object v0, La/o;->i:La/o$a;
 
     sget-object v1, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
@@ -58,7 +57,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, La/o$a;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

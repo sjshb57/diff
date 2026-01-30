@@ -59,10 +59,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 106
     iput-object p1, p0, Lkotlin/Result$Failure;->exception:Ljava/lang/Throwable;
 
     return-void
@@ -73,7 +71,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 109
     instance-of v0, p1, Lkotlin/Result$Failure;
 
     if-eqz v0, :cond_12
@@ -104,7 +101,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 110
     iget-object v0, p0, Lkotlin/Result$Failure;->exception:Ljava/lang/Throwable;
 
     invoke-virtual {v0}, Ljava/lang/Throwable;->hashCode()I
@@ -117,7 +113,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 111
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Failure("

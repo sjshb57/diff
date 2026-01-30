@@ -78,7 +78,6 @@
         }
     .end annotation
 
-    .line 18
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__CountKt$count$2;->$i:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget p2, p1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -91,7 +90,6 @@
 
     iget p1, p1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 19
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

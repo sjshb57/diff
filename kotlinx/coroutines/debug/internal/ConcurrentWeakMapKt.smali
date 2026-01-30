@@ -49,7 +49,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 254
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "REHASH"
@@ -58,7 +57,6 @@
 
     sput-object v0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->REHASH:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 255
     new-instance v0, Lkotlinx/coroutines/debug/internal/Marked;
 
     const/4 v1, 0x0
@@ -67,7 +65,6 @@
 
     sput-object v0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->MARKED_NULL:Lkotlinx/coroutines/debug/internal/Marked;
 
-    .line 256
     new-instance v0, Lkotlinx/coroutines/debug/internal/Marked;
 
     const/4 v1, 0x1
@@ -86,7 +83,6 @@
 .method public static final synthetic access$getREHASH$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->REHASH:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
@@ -95,7 +91,6 @@
 .method public static final synthetic access$mark(Ljava/lang/Object;)Lkotlinx/coroutines/debug/internal/Marked;
     .registers 1
 
-    .line 1
     invoke-static {p0}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->mark(Ljava/lang/Object;)Lkotlinx/coroutines/debug/internal/Marked;
 
     move-result-object p0
@@ -106,7 +101,6 @@
 .method public static final synthetic access$noImpl()Ljava/lang/Void;
     .registers 1
 
-    .line 1
     invoke-static {}, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->noImpl()Ljava/lang/Void;
 
     move-result-object v0
@@ -119,7 +113,6 @@
 
     if-nez p0, :cond_5
 
-    .line 276
     sget-object p0, Lkotlinx/coroutines/debug/internal/ConcurrentWeakMapKt;->MARKED_NULL:Lkotlinx/coroutines/debug/internal/Marked;
 
     goto :goto_19
@@ -127,7 +120,6 @@
     :cond_5
     const/4 v0, 0x1
 
-    .line 277
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -142,7 +134,6 @@
 
     goto :goto_19
 
-    .line 278
     :cond_13
     new-instance v0, Lkotlinx/coroutines/debug/internal/Marked;
 
@@ -157,7 +148,6 @@
 .method private static final noImpl()Ljava/lang/Void;
     .registers 2
 
-    .line 282
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "not implemented"

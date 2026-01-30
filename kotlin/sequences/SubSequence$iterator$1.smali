@@ -95,10 +95,8 @@
 
     iput-object p1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
 
-    .line 365
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 367
     invoke-static {p1}, Lkotlin/sequences/SubSequence;->access$getSequence$p(Lkotlin/sequences/SubSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -115,7 +113,6 @@
 .method private final drop()V
     .registers 3
 
-    .line 372
     :goto_0
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
@@ -135,12 +132,10 @@
 
     if-eqz v0, :cond_1e
 
-    .line 373
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 374
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     add-int/lit8 v0, v0, 0x1
@@ -165,7 +160,6 @@
         }
     .end annotation
 
-    .line 367
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -174,7 +168,6 @@
 .method public final getPosition()I
     .registers 2
 
-    .line 368
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     return v0
@@ -183,10 +176,8 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 379
     invoke-direct {p0}, Lkotlin/sequences/SubSequence$iterator$1;->drop()V
 
-    .line 380
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     iget-object v1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
@@ -224,10 +215,8 @@
         }
     .end annotation
 
-    .line 384
     invoke-direct {p0}, Lkotlin/sequences/SubSequence$iterator$1;->drop()V
 
-    .line 385
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     iget-object v1, p0, Lkotlin/sequences/SubSequence$iterator$1;->this$0:Lkotlin/sequences/SubSequence;
@@ -238,14 +227,12 @@
 
     if-ge v0, v1, :cond_1a
 
-    .line 387
     iget v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
-    .line 388
     iget-object v0, p0, Lkotlin/sequences/SubSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -254,7 +241,6 @@
 
     return-object v0
 
-    .line 386
     :cond_1a
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -278,7 +264,6 @@
 .method public final setPosition(I)V
     .registers 2
 
-    .line 368
     iput p1, p0, Lkotlin/sequences/SubSequence$iterator$1;->position:I
 
     return-void

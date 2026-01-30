@@ -52,10 +52,8 @@
 .method public constructor <init>(J)V
     .registers 3
 
-    .line 522
     invoke-direct {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;-><init>()V
 
-    .line 521
     iput-wide p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->timeNow:J
 
     return-void

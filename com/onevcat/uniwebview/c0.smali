@@ -49,7 +49,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 4
 
-    .line 1
     :try_start_0
     sget-object v0, La/o;->i:La/o$a;
 
@@ -57,7 +56,6 @@
 
     invoke-static {v0}, Landroid/webkit/WebSettings;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
 
-    .line 2
     sget-object v0, La/o;->i:La/o$a;
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_9} :catch_a
@@ -67,13 +65,10 @@
     :catch_a
     move-exception v0
 
-    .line 3
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 4
     sget-object v1, La/i;->d:La/i;
 
-    .line 5
     const/4 v2, 0x0
 
     sget-object v2, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->ZvrPhcfhPCzJ:Ljava/lang/String;
@@ -82,7 +77,6 @@
 
     move-result-object v2
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -95,7 +89,6 @@
 
     invoke-virtual {v1, v0}, La/i;->a(Ljava/lang/String;)V
 
-    .line 7
     :goto_24
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

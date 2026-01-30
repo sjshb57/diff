@@ -224,7 +224,6 @@
 
     move-result-object v0
 
-    .line 2344
     iget v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->label:I
 
     const/4 v2, 0x2
@@ -273,26 +272,22 @@
 
     check-cast v4, Lkotlin/sequences/SequenceScope;
 
-    .line 2345
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->$this_runningReduce:Lkotlin/sequences/Sequence;
 
     invoke-interface {p1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2346
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_72
 
-    .line 2347
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2348
     move-object v5, p0
 
     check-cast v5, Lkotlin/coroutines/Continuation;
@@ -316,7 +311,6 @@
     :cond_4f
     move-object v3, p1
 
-    .line 2349
     :cond_50
     :goto_50
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
@@ -325,7 +319,6 @@
 
     if-eqz p1, :cond_72
 
-    .line 2350
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->$operation:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -336,7 +329,6 @@
 
     move-result-object v1
 
-    .line 2351
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -357,7 +349,6 @@
 
     return-object v0
 
-    .line 2354
     :cond_72
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

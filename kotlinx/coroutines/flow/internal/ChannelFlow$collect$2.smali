@@ -195,7 +195,6 @@
 
     move-result-object v0
 
-    .line 122
     iget v1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlow$collect$2;->label:I
 
     const/4 v2, 0x1
@@ -224,7 +223,6 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 123
     iget-object v1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlow$collect$2;->$collector:Lkotlinx/coroutines/flow/FlowCollector;
 
     iget-object v3, p0, Lkotlinx/coroutines/flow/internal/ChannelFlow$collect$2;->this$0:Lkotlinx/coroutines/flow/internal/ChannelFlow;
@@ -247,7 +245,6 @@
 
     return-object v0
 
-    .line 124
     :cond_32
     :goto_32
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

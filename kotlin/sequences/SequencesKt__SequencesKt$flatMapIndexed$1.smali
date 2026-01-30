@@ -234,7 +234,6 @@
 
     move-result-object v0
 
-    .line 328
     iget v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;->label:I
 
     const/4 v2, 0x1
@@ -275,7 +274,6 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 330
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;->$source:Lkotlin/sequences/Sequence;
 
     invoke-interface {v1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
@@ -301,7 +299,6 @@
 
     move-result-object v1
 
-    .line 331
     iget-object v5, p0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;->$transform:Lkotlin/jvm/functions/Function2;
 
     add-int/lit8 v6, p1, 0x1
@@ -319,7 +316,6 @@
 
     move-result-object p1
 
-    .line 332
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;->$iterator:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v1, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -353,7 +349,6 @@
 
     goto :goto_33
 
-    .line 334
     :cond_6a
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

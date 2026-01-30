@@ -172,20 +172,16 @@
 .method public constructor <init>(Lkotlin/coroutines/CoroutineContext;)V
     .registers 3
 
-    .line 246
     invoke-direct {p0}, Lkotlinx/coroutines/CancelHandler;-><init>()V
 
-    .line 245
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->context:Lkotlin/coroutines/CoroutineContext;
 
-    .line 352
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_REG$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object p1
 
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->state:Ljava/lang/Object;
 
-    .line 376
     new-instance p1, Ljava/util/ArrayList;
 
     const/4 v0, 0x2
@@ -198,10 +194,8 @@
 
     const/4 p1, -0x1
 
-    .line 396
     iput p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->indexInSegment:I
 
-    .line 411
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getNO_RESULT$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object p1
@@ -214,7 +208,6 @@
 .method public static final synthetic access$complete(Lkotlinx/coroutines/selects/SelectImplementation;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 2
 
-    .line 243
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->complete(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -225,7 +218,6 @@
 .method public static final synthetic access$doSelectSuspend(Lkotlinx/coroutines/selects/SelectImplementation;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 2
 
-    .line 243
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->doSelectSuspend(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -236,7 +228,6 @@
 .method public static final synthetic access$getInRegistrationPhase(Lkotlinx/coroutines/selects/SelectImplementation;)Z
     .registers 1
 
-    .line 243
     invoke-direct {p0}, Lkotlinx/coroutines/selects/SelectImplementation;->getInRegistrationPhase()Z
 
     move-result p0
@@ -247,7 +238,6 @@
 .method public static final synthetic access$getInternalResult$p(Lkotlinx/coroutines/selects/SelectImplementation;)Ljava/lang/Object;
     .registers 1
 
-    .line 243
     iget-object p0, p0, Lkotlinx/coroutines/selects/SelectImplementation;->internalResult:Ljava/lang/Object;
 
     return-object p0
@@ -256,7 +246,6 @@
 .method public static final synthetic access$getState$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
     .registers 1
 
-    .line 243
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-object v0
@@ -265,7 +254,6 @@
 .method public static final synthetic access$isCancelled(Lkotlinx/coroutines/selects/SelectImplementation;)Z
     .registers 1
 
-    .line 243
     invoke-direct {p0}, Lkotlinx/coroutines/selects/SelectImplementation;->isCancelled()Z
 
     move-result p0
@@ -276,7 +264,6 @@
 .method public static final synthetic access$processResultAndInvokeBlockRecoveringException(Lkotlinx/coroutines/selects/SelectImplementation;Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 4
 
-    .line 243
     invoke-direct {p0, p1, p2, p3}, Lkotlinx/coroutines/selects/SelectImplementation;->processResultAndInvokeBlockRecoveringException(Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -287,7 +274,6 @@
 .method public static final synthetic access$reregisterClause(Lkotlinx/coroutines/selects/SelectImplementation;Ljava/lang/Object;)V
     .registers 2
 
-    .line 243
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->reregisterClause(Ljava/lang/Object;)V
 
     return-void
@@ -296,7 +282,6 @@
 .method public static final synthetic access$waitUntilSelected(Lkotlinx/coroutines/selects/SelectImplementation;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 2
 
-    .line 243
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->waitUntilSelected(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -307,15 +292,12 @@
 .method private final checkClauseObject(Ljava/lang/Object;)V
     .registers 4
 
-    .line 503
     iget-object v0, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 505
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 875
     instance-of v1, v0, Ljava/util/Collection;
 
     if-eqz v1, :cond_15
@@ -332,7 +314,6 @@
 
     goto :goto_42
 
-    .line 876
     :cond_15
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -351,14 +332,12 @@
 
     check-cast v1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
-    .line 505
     iget-object v1, v1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->clauseObject:Ljava/lang/Object;
 
     if-eq v1, p1, :cond_2a
 
     goto :goto_19
 
-    .line 506
     :cond_2a
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -372,7 +351,6 @@
 
     move-result-object p1
 
-    .line 505
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -398,17 +376,14 @@
         }
     .end annotation
 
-    .line 720
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
 
     if-eqz v0, :cond_19
 
-    .line 874
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 720
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -428,7 +403,6 @@
 
     throw p1
 
-    .line 723
     :cond_19
     :goto_19
     iget-object v0, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
@@ -437,11 +411,9 @@
 
     return-void
 
-    .line 726
     :cond_1e
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 896
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -462,23 +434,19 @@
 
     if-eq v1, p1, :cond_24
 
-    .line 727
     invoke-virtual {v1}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->dispose()V
 
     goto :goto_24
 
-    .line 897
     :cond_36
     sget-object p1, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 730
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_COMPLETED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v0
 
     invoke-virtual {p1, p0, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 731
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getNO_RESULT$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object p1
@@ -487,7 +455,6 @@
 
     const/4 p1, 0x0
 
-    .line 732
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     return-void
@@ -504,7 +471,6 @@
         }
     .end annotation
 
-    .line 678
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -530,7 +496,6 @@
     :goto_13
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 681
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -541,32 +506,26 @@
 
     check-cast v0, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
-    .line 685
     iget-object v1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->internalResult:Ljava/lang/Object;
 
-    .line 686
     invoke-direct {p0, v0}, Lkotlinx/coroutines/selects/SelectImplementation;->cleanup(Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;)V
 
-    .line 688
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
     move-result v2
 
     if-nez v2, :cond_34
 
-    .line 691
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->processResult(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 692
     invoke-virtual {v0, v1, p1}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->invokeBlock(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 
-    .line 699
     :cond_34
     invoke-direct {p0, v0, v1, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->processResultAndInvokeBlockRecoveringException(Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -590,7 +549,6 @@
         }
     .end annotation
 
-    .line 422
     invoke-direct {p0}, Lkotlinx/coroutines/selects/SelectImplementation;->isSelected()Z
 
     move-result v0
@@ -603,7 +561,6 @@
 
     return-object p0
 
-    .line 423
     :cond_b
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->doSelectSuspend(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -659,7 +616,6 @@
 
     move-result-object v1
 
-    .line 428
     iget v2, v0, Lkotlinx/coroutines/selects/SelectImplementation$doSelectSuspend$1;->label:I
 
     const/4 v3, 0x2
@@ -697,7 +653,6 @@
     :cond_3d
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 431
     iput-object p0, v0, Lkotlinx/coroutines/selects/SelectImplementation$doSelectSuspend$1;->L$0:Ljava/lang/Object;
 
     iput v4, v0, Lkotlinx/coroutines/selects/SelectImplementation$doSelectSuspend$1;->label:I
@@ -716,7 +671,6 @@
     :goto_4c
     const/4 p1, 0x0
 
-    .line 434
     iput-object p1, v0, Lkotlinx/coroutines/selects/SelectImplementation$doSelectSuspend$1;->L$0:Ljava/lang/Object;
 
     iput v3, v0, Lkotlinx/coroutines/selects/SelectImplementation$doSelectSuspend$1;->label:I
@@ -746,7 +700,6 @@
         }
     .end annotation
 
-    .line 656
     iget-object v0, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -755,7 +708,6 @@
 
     return-object v1
 
-    .line 658
     :cond_6
     check-cast v0, Ljava/lang/Iterable;
 
@@ -794,7 +746,6 @@
     :cond_23
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 659
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Clause with object "
@@ -825,12 +776,10 @@
 
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 358
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 359
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_REG$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
@@ -861,7 +810,6 @@
 
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 371
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -888,7 +836,6 @@
 
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 366
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -973,7 +920,6 @@
 
     move-result-object v1
 
-    .line 703
     iget v2, v0, Lkotlinx/coroutines/selects/SelectImplementation$processResultAndInvokeBlockRecoveringException$1;->label:I
 
     const/4 v3, 0x1
@@ -1006,13 +952,11 @@
     :cond_34
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 705
     :try_start_37
     invoke-virtual {p1, p2}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->processResult(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 706
     iput v3, v0, Lkotlinx/coroutines/selects/SelectImplementation$processResultAndInvokeBlockRecoveringException$1;->label:I
 
     invoke-virtual {p1, p2, v0}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->invokeBlock(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -1029,7 +973,6 @@
     :goto_44
     return-object p3
 
-    .line 892
     :goto_45
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getRECOVER_STACK_TRACES()Z
 
@@ -1037,14 +980,12 @@
 
     if-eqz p2, :cond_57
 
-    .line 894
     instance-of p2, v0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
     if-nez p2, :cond_50
 
     throw p1
 
-    .line 895
     :cond_50
     check-cast v0, Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
 
@@ -1054,7 +995,6 @@
 
     throw p1
 
-    .line 892
     :cond_57
     throw p1
 .end method
@@ -1070,7 +1010,6 @@
 
     const/4 p2, 0x0
 
-    .line 464
     :cond_7
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/selects/SelectImplementation;->register(Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;Z)V
 
@@ -1089,7 +1028,6 @@
 .method private final reregisterClause(Ljava/lang/Object;)V
     .registers 3
 
-    .line 589
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->findClause(Ljava/lang/Object;)Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     move-result-object p1
@@ -1098,17 +1036,14 @@
 
     const/4 v0, 0x0
 
-    .line 590
     iput-object v0, p1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->disposableHandleOrSegment:Ljava/lang/Object;
 
     const/4 v0, -0x1
 
-    .line 591
     iput v0, p1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->indexInSegment:I
 
     const/4 v0, 0x1
 
-    .line 592
     invoke-virtual {p0, p1, v0}, Lkotlinx/coroutines/selects/SelectImplementation;->register(Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;Z)V
 
     return-void
@@ -1117,24 +1052,20 @@
 .method private final trySelectInternal(Ljava/lang/Object;Ljava/lang/Object;)I
     .registers 8
 
-    .line 611
     :cond_0
     :goto_0
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 612
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 614
     instance-of v2, v1, Lkotlinx/coroutines/CancellableContinuation;
 
     const/4 v3, 0x2
 
     if-eqz v2, :cond_2f
 
-    .line 615
     invoke-direct {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->findClause(Ljava/lang/Object;)Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     move-result-object v2
@@ -1143,7 +1074,6 @@
 
     goto :goto_0
 
-    .line 616
     :cond_12
     move-object v4, p0
 
@@ -1153,20 +1083,16 @@
 
     move-result-object v4
 
-    .line 617
     invoke-static {v0, p0, v1, v2}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 619
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 622
     iput-object p2, p0, Lkotlinx/coroutines/selects/SelectImplementation;->internalResult:Ljava/lang/Object;
 
-    .line 623
     invoke-static {v1, v4}, Lkotlinx/coroutines/selects/SelectKt;->access$tryResume(Lkotlinx/coroutines/CancellableContinuation;Lkotlin/jvm/functions/Function1;)Z
 
     move-result p1
@@ -1180,12 +1106,10 @@
     :cond_2b
     const/4 p1, 0x0
 
-    .line 626
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->internalResult:Ljava/lang/Object;
 
     return v3
 
-    .line 631
     :cond_2f
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_COMPLETED$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1209,7 +1133,6 @@
 
     return p1
 
-    .line 633
     :cond_40
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_CANCELLED$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1223,7 +1146,6 @@
 
     return v3
 
-    .line 637
     :cond_4b
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_REG$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1249,7 +1171,6 @@
 
     return v3
 
-    .line 641
     :cond_61
     instance-of v2, v1, Ljava/util/List;
 
@@ -1274,7 +1195,6 @@
     :cond_73
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 643
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v0, "Unexpected state: "
@@ -1343,7 +1263,6 @@
         }
     .end annotation
 
-    .line 879
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     invoke-static {p1}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
@@ -1354,10 +1273,8 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 885
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 886
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
@@ -1371,7 +1288,6 @@
 
     move-result-object v3
 
-    .line 551
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_REG$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v4
@@ -1388,20 +1304,16 @@
 
     if-eqz v3, :cond_14
 
-    .line 561
     move-object v2, p0
 
     check-cast v2, Lkotlinx/coroutines/CancelHandlerBase;
 
-    .line 887
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 561
     invoke-interface {v1, v2}, Lkotlinx/coroutines/CancellableContinuation;->invokeOnCancellation(Lkotlin/jvm/functions/Function1;)V
 
     goto :goto_70
 
-    .line 566
     :cond_31
     instance-of v4, v3, Ljava/util/List;
 
@@ -1421,15 +1333,12 @@
 
     if-eqz v4, :cond_14
 
-    .line 568
     move-object v4, v3
 
     check-cast v4, Ljava/util/List;
 
-    .line 569
     check-cast v3, Ljava/lang/Iterable;
 
-    .line 888
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1445,18 +1354,15 @@
 
     move-result-object v4
 
-    .line 569
     invoke-static {p0, v4}, Lkotlinx/coroutines/selects/SelectImplementation;->access$reregisterClause(Lkotlinx/coroutines/selects/SelectImplementation;Ljava/lang/Object;)V
 
     goto :goto_4c
 
-    .line 572
     :cond_5a
     instance-of v2, v3, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     if-eqz v2, :cond_87
 
-    .line 573
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     check-cast v3, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
@@ -1475,13 +1381,11 @@
 
     invoke-interface {v1, v2, v3}, Lkotlinx/coroutines/CancellableContinuation;->resume(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
 
-    .line 890
     :goto_70
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 878
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v1
@@ -1499,17 +1403,14 @@
 
     return-object v0
 
-    .line 891
     :cond_84
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 574
     :cond_87
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 577
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "unexpected state: "
@@ -1536,7 +1437,6 @@
 .method public disposeOnCompletion(Lkotlinx/coroutines/DisposableHandle;)V
     .registers 2
 
-    .line 511
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->disposableHandleOrSegment:Ljava/lang/Object;
 
     return-void
@@ -1563,7 +1463,6 @@
 .method public getContext()Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 245
     iget-object v0, p0, Lkotlinx/coroutines/selects/SelectImplementation;->context:Lkotlin/coroutines/CoroutineContext;
 
     return-object v0
@@ -1572,7 +1471,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 243
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/selects/SelectImplementation;->invoke(Ljava/lang/Throwable;)V
@@ -1592,7 +1490,6 @@
 
     move-result-object v0
 
-    .line 744
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_COMPLETED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
@@ -1601,7 +1498,6 @@
 
     return-void
 
-    .line 745
     :cond_d
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getSTATE_CANCELLED$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1613,18 +1509,15 @@
 
     if-eqz v0, :cond_2
 
-    .line 749
     iget-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     if-nez p1, :cond_1c
 
     return-void
 
-    .line 751
     :cond_1c
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 898
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1642,12 +1535,10 @@
 
     check-cast v0, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
-    .line 751
     invoke-virtual {v0}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->dispose()V
 
     goto :goto_22
 
-    .line 753
     :cond_32
     invoke-static {}, Lkotlinx/coroutines/selects/SelectKt;->access$getNO_RESULT$p()Lkotlinx/coroutines/internal/Symbol;
 
@@ -1657,7 +1548,6 @@
 
     const/4 p1, 0x0
 
-    .line 754
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     return-void
@@ -1678,7 +1568,6 @@
         }
     .end annotation
 
-    .line 442
     new-instance v8, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     invoke-interface {p1}, Lkotlinx/coroutines/selects/SelectClause0;->getClauseObject()Ljava/lang/Object;
@@ -1738,7 +1627,6 @@
         }
     .end annotation
 
-    .line 444
     new-instance v8, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     invoke-interface {p1}, Lkotlinx/coroutines/selects/SelectClause1;->getClauseObject()Ljava/lang/Object;
@@ -1798,7 +1686,6 @@
         }
     .end annotation
 
-    .line 446
     new-instance v8, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;
 
     invoke-interface {p1}, Lkotlinx/coroutines/selects/SelectClause2;->getClauseObject()Ljava/lang/Object;
@@ -1858,7 +1745,6 @@
         }
     .end annotation
 
-    .line 243
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/selects/SelectBuilder$DefaultImpls;->invoke(Lkotlinx/coroutines/selects/SelectBuilder;Lkotlinx/coroutines/selects/SelectClause2;Lkotlin/jvm/functions/Function2;)V
 
     return-void
@@ -1874,10 +1760,8 @@
         }
     .end annotation
 
-    .line 526
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->disposableHandleOrSegment:Ljava/lang/Object;
 
-    .line 527
     iput p2, p0, Lkotlinx/coroutines/selects/SelectImplementation;->indexInSegment:I
 
     return-void
@@ -1908,7 +1792,6 @@
         .end subannotation
     .end annotation
 
-    .line 243
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/selects/SelectBuilder$DefaultImpls;->onTimeout(Lkotlinx/coroutines/selects/SelectBuilder;JLkotlin/jvm/functions/Function1;)V
 
     return-void
@@ -1924,17 +1807,14 @@
         }
     .end annotation
 
-    .line 465
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
 
     if-eqz v0, :cond_19
 
-    .line 874
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 465
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1954,7 +1834,6 @@
 
     throw p1
 
-    .line 467
     :cond_19
     :goto_19
     sget-object v0, Lkotlinx/coroutines/selects/SelectImplementation;->state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
@@ -1972,12 +1851,10 @@
     :cond_24
     if-nez p2, :cond_2b
 
-    .line 470
     iget-object v1, p1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->clauseObject:Ljava/lang/Object;
 
     invoke-direct {p0, v1}, Lkotlinx/coroutines/selects/SelectImplementation;->checkClauseObject(Ljava/lang/Object;)V
 
-    .line 472
     :cond_2b
     invoke-virtual {p1, p0}, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->tryRegisterAsWaiter(Lkotlinx/coroutines/selects/SelectImplementation;)Z
 
@@ -1987,7 +1864,6 @@
 
     if-nez p2, :cond_3d
 
-    .line 484
     iget-object p2, p0, Lkotlinx/coroutines/selects/SelectImplementation;->clauses:Ljava/util/List;
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -1996,30 +1872,25 @@
 
     invoke-interface {p2, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 485
     :cond_3d
     iget-object p2, p0, Lkotlinx/coroutines/selects/SelectImplementation;->disposableHandleOrSegment:Ljava/lang/Object;
 
     iput-object p2, p1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->disposableHandleOrSegment:Ljava/lang/Object;
 
-    .line 486
     iget p2, p0, Lkotlinx/coroutines/selects/SelectImplementation;->indexInSegment:I
 
     iput p2, p1, Lkotlinx/coroutines/selects/SelectImplementation$ClauseData;->indexInSegment:I
 
     const/4 p1, 0x0
 
-    .line 487
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->disposableHandleOrSegment:Ljava/lang/Object;
 
     const/4 p1, -0x1
 
-    .line 488
     iput p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->indexInSegment:I
 
     goto :goto_4f
 
-    .line 492
     :cond_4c
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -2030,7 +1901,6 @@
 .method public selectInRegistrationPhase(Ljava/lang/Object;)V
     .registers 2
 
-    .line 531
     iput-object p1, p0, Lkotlinx/coroutines/selects/SelectImplementation;->internalResult:Ljava/lang/Object;
 
     return-void
@@ -2039,7 +1909,6 @@
 .method public trySelect(Ljava/lang/Object;Ljava/lang/Object;)Z
     .registers 3
 
-    .line 600
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/selects/SelectImplementation;->trySelectInternal(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
@@ -2060,7 +1929,6 @@
 .method public final trySelectDetailed(Ljava/lang/Object;Ljava/lang/Object;)Lkotlinx/coroutines/selects/TrySelectDetailedResult;
     .registers 3
 
-    .line 608
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/selects/SelectImplementation;->trySelectInternal(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1

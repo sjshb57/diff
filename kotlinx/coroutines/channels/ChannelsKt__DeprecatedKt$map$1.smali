@@ -241,7 +241,6 @@
 
     move-result-object v0
 
-    .line 331
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$map$1;->label:I
 
     const/4 v2, 0x3
@@ -366,12 +365,10 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 332
     iget-object v6, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$map$1;->$this_map:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     iget-object v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$map$1;->$transform:Lkotlin/jvm/functions/Function2;
 
-    .line 487
     :try_start_6e
     invoke-interface {v6}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -426,7 +423,6 @@
 
     move-result-object p1
 
-    .line 333
     iput-object v8, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$map$1;->L$0:Ljava/lang/Object;
 
     iput-object v7, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$map$1;->L$1:Ljava/lang/Object;
@@ -499,17 +495,14 @@
 
     goto :goto_76
 
-    .line 488
     :cond_c9
     :try_start_c9
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_cb
     .catchall {:try_start_c9 .. :try_end_cb} :catchall_d1
 
-    .line 489
     invoke-static {v6, v9}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
-    .line 335
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
@@ -517,7 +510,6 @@
     :catchall_d1
     move-exception p1
 
-    .line 492
     :goto_d2
     :try_start_d2
     throw p1
@@ -527,7 +519,6 @@
     :catchall_d3
     move-exception v0
 
-    .line 489
     invoke-static {v6, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw v0

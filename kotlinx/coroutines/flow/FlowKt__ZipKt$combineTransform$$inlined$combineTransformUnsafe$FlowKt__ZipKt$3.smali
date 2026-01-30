@@ -176,7 +176,6 @@
 
     move-result-object v0
 
-    .line 269
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransform$$inlined$combineTransformUnsafe$FlowKt__ZipKt$3;->label:I
 
     const/4 v2, 0x1
@@ -205,7 +204,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 273
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransform$$inlined$combineTransformUnsafe$FlowKt__ZipKt$3;->$flows:[Lkotlinx/coroutines/flow/Flow;
 
     invoke-static {}, Lkotlinx/coroutines/flow/FlowKt__ZipKt;->access$nullArrayFactory()Lkotlin/jvm/functions/Function0;
@@ -236,7 +234,6 @@
 
     return-object v0
 
-    .line 274
     :cond_3a
     :goto_3a
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

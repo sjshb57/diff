@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 118
     invoke-direct {p0}, Lkotlinx/coroutines/scheduling/SchedulerTimeSource;-><init>()V
 
     return-void
@@ -57,7 +56,6 @@
 .method public nanoTime()J
     .registers 3
 
-    .line 119
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0

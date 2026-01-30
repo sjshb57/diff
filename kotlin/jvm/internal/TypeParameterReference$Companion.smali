@@ -47,7 +47,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,12 +69,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 46
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 47
     invoke-interface {p1}, Lkotlin/reflect/KTypeParameter;->getVariance()Lkotlin/reflect/KVariance;
 
     move-result-object v1
@@ -98,7 +95,6 @@
 
     goto :goto_28
 
-    .line 51
     :cond_1d
     const-string v1, "out "
 
@@ -106,13 +102,11 @@
 
     goto :goto_28
 
-    .line 50
     :cond_23
     const-string v1, "in "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 54
     :goto_28
     invoke-interface {p1}, Lkotlin/reflect/KTypeParameter;->getName()Ljava/lang/String;
 
@@ -120,7 +114,6 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 46
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1

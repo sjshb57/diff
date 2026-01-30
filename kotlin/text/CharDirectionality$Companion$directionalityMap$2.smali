@@ -85,7 +85,6 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 118
     invoke-virtual {p0}, Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;->invoke()Ljava/util/Map;
 
     move-result-object v0
@@ -105,12 +104,10 @@
         }
     .end annotation
 
-    .line 118
     invoke-static {}, Lkotlin/text/CharDirectionality;->values()[Lkotlin/text/CharDirectionality;
 
     move-result-object v0
 
-    .line 124
     array-length v1, v0
 
     invoke-static {v1}, Lkotlin/collections/MapsKt;->mapCapacity(I)I
@@ -123,14 +120,12 @@
 
     move-result v1
 
-    .line 125
     new-instance v2, Ljava/util/LinkedHashMap;
 
     invoke-direct {v2, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     check-cast v2, Ljava/util/Map;
 
-    .line 126
     array-length v1, v0
 
     const/4 v3, 0x0
@@ -140,7 +135,6 @@
 
     aget-object v4, v0, v3
 
-    .line 118
     invoke-virtual {v4}, Lkotlin/text/CharDirectionality;->getValue()I
 
     move-result v5
@@ -149,7 +143,6 @@
 
     move-result-object v5
 
-    .line 127
     invoke-interface {v2, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v3, v3, 0x1

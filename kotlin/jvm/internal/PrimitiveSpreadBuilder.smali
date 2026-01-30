@@ -73,12 +73,10 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->size:I
 
-    .line 14
     new-array p1, p1, [Ljava/lang/Object;
 
     iput-object p1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->spreads:[Ljava/lang/Object;
@@ -106,7 +104,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 17
     iget-object v0, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->spreads:[Ljava/lang/Object;
 
     iget v1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->position:I
@@ -123,7 +120,6 @@
 .method protected final getPosition()I
     .registers 2
 
-    .line 11
     iget v0, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->position:I
 
     return v0
@@ -140,7 +136,6 @@
 .method protected final setPosition(I)V
     .registers 2
 
-    .line 11
     iput p1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->position:I
 
     return-void
@@ -149,7 +144,6 @@
 .method protected final size()I
     .registers 6
 
-    .line 22
     new-instance v0, Lkotlin/ranges/IntRange;
 
     iget v1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->size:I
@@ -177,7 +171,6 @@
 
     move-result v1
 
-    .line 23
     iget-object v4, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->spreads:[Ljava/lang/Object;
 
     aget-object v1, v4, v1
@@ -220,7 +213,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
     new-instance v0, Lkotlin/ranges/IntRange;
 
     iget v1, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->size:I
@@ -251,7 +243,6 @@
 
     move-result v4
 
-    .line 32
     iget-object v5, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->spreads:[Ljava/lang/Object;
 
     aget-object v5, v5, v4
@@ -262,18 +253,15 @@
 
     sub-int v6, v4, v1
 
-    .line 35
     invoke-static {p1, v1, p2, v3, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v3, v6
 
-    .line 38
     :cond_33
     invoke-virtual {p0, v5}, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->getSize(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 39
     invoke-static {v5, v2, p2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v3, v1
@@ -282,7 +270,6 @@
 
     goto :goto_1b
 
-    .line 44
     :cond_3e
     iget v0, p0, Lkotlin/jvm/internal/PrimitiveSpreadBuilder;->size:I
 
@@ -290,7 +277,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 45
     invoke-static {p1, v1, p2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_46

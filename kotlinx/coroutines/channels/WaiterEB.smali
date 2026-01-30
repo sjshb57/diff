@@ -36,7 +36,6 @@
 .method public constructor <init>(Lkotlinx/coroutines/Waiter;)V
     .registers 2
 
-    .line 2957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/WaiterEB;->waiter:Lkotlinx/coroutines/Waiter;
@@ -49,7 +48,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 2958
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "WaiterEB("

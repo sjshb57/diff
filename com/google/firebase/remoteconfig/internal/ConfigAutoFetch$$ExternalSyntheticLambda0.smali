@@ -22,7 +22,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/Task;JI)V
     .registers 7
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
@@ -43,7 +42,6 @@
 .method public final then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
     .registers 9
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$$ExternalSyntheticLambda0;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$$ExternalSyntheticLambda0;->f$1:Lcom/google/android/gms/tasks/Task;

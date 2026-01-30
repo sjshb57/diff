@@ -54,11 +54,9 @@
 
     return-void
 
-    .line 102
     :cond_3
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 103
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Debug metadata version mismatch. Expected: "
@@ -93,7 +91,6 @@
 .method private static final getDebugMetadataAnnotation(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Lkotlin/coroutines/jvm/internal/DebugMetadata;
     .registers 2
 
-    .line 90
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -112,7 +109,6 @@
 .method private static final getLabel(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)I
     .registers 3
 
-    .line 94
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -126,10 +122,8 @@
 
     const/4 v1, 0x1
 
-    .line 95
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 96
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -178,7 +172,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->getDebugMetadataAnnotation(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Lkotlin/coroutines/jvm/internal/DebugMetadata;
 
     move-result-object v0
@@ -189,7 +182,6 @@
 
     return-object p0
 
-    .line 122
     :cond_d
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->v()I
 
@@ -199,17 +191,14 @@
 
     invoke-static {v2, v1}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->checkDebugMetadataVersion(II)V
 
-    .line 123
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 124
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->getLabel(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)I
 
     move-result p0
 
-    .line 125
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->i()[I
 
     move-result-object v2
@@ -227,7 +216,6 @@
 
     if-ne v6, p0, :cond_3d
 
-    .line 127
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->s()[Ljava/lang/String;
 
     move-result-object v6
@@ -236,7 +224,6 @@
 
     invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 128
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->n()[Ljava/lang/String;
 
     move-result-object v6
@@ -250,11 +237,9 @@
 
     goto :goto_25
 
-    .line 131
     :cond_40
     check-cast v1, Ljava/util/Collection;
 
-    .line 136
     new-array p0, v4, [Ljava/lang/String;
 
     invoke-interface {v1, p0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -273,7 +258,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 42
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->getDebugMetadataAnnotation(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Lkotlin/coroutines/jvm/internal/DebugMetadata;
 
     move-result-object v0
@@ -287,14 +271,12 @@
     :cond_d
     const/4 v1, 0x1
 
-    .line 43
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->v()I
 
     move-result v2
 
     invoke-static {v1, v2}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->checkDebugMetadataVersion(II)V
 
-    .line 44
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/DebugMetadataKt;->getLabel(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)I
 
     move-result v1
@@ -305,7 +287,6 @@
 
     goto :goto_23
 
-    .line 45
     :cond_1d
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->l()[I
 
@@ -313,7 +294,6 @@
 
     aget v1, v2, v1
 
-    .line 46
     :goto_23
     sget-object v2, Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;->INSTANCE:Lkotlin/coroutines/jvm/internal/ModuleNameRetriever;
 
@@ -323,7 +303,6 @@
 
     if-nez p0, :cond_30
 
-    .line 47
     invoke-interface {v0}, Lkotlin/coroutines/jvm/internal/DebugMetadata;->c()Ljava/lang/String;
 
     move-result-object p0
@@ -351,7 +330,6 @@
 
     move-result-object p0
 
-    .line 48
     :goto_48
     new-instance v2, Ljava/lang/StackTraceElement;
 

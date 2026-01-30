@@ -17,7 +17,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 21
     const-string v0, "line.separator"
 
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -28,7 +27,6 @@
 
     const-wide/high16 v0, 0x4000000000000000L  # 2.0
 
-    .line 31
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -41,7 +39,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +64,6 @@
 
     if-ge v0, v2, :cond_10
 
-    .line 45
     aget-byte v2, p0, v0
 
     and-int/lit16 v2, v2, 0xff
@@ -106,7 +102,6 @@
 
     if-ge v2, v3, :cond_14
 
-    .line 58
     aget-byte v3, p0, v2
 
     int-to-long v3, v3
@@ -146,7 +141,6 @@
         }
     .end annotation
 
-    .line 118
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -160,7 +154,6 @@
     :cond_9
     const/16 p1, 0xff
 
-    .line 120
     :goto_b
     array-length v1, p0
 
@@ -175,7 +168,6 @@
 
     if-ge v2, p2, :cond_20
 
-    .line 123
     aget-byte p2, p0, v2
 
     and-int/2addr p2, p1
@@ -188,7 +180,6 @@
 
     goto :goto_10
 
-    .line 125
     :cond_20
     aget-byte p0, p0, p2
 
@@ -204,7 +195,6 @@
 
     if-le v1, v3, :cond_36
 
-    .line 128
     aget-byte v1, p0, p2
 
     and-int/2addr v1, p1
@@ -217,7 +207,6 @@
 
     goto :goto_27
 
-    .line 130
     :cond_36
     aget-byte p0, p0, v2
 
@@ -225,7 +214,6 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 132
     :goto_3c
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -263,7 +251,6 @@
 
     shl-int/2addr p0, v0
 
-    .line 314
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v1
@@ -289,17 +276,14 @@
         }
     .end annotation
 
-    .line 191
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
 
-    .line 192
     array-length v1, v0
 
     if-ge v1, p1, :cond_35
 
-    .line 194
     new-array p0, p1, [C
 
     sub-int v2, p1, v1
@@ -311,7 +295,6 @@
     :goto_e
     if-ge v3, v1, :cond_17
 
-    .line 199
     aget-char p3, v0, v3
 
     aput-char p3, p0, v3
@@ -324,7 +307,6 @@
     :goto_17
     if-ge v1, p1, :cond_31
 
-    .line 202
     aput-char p2, p0, v1
 
     add-int/lit8 v1, v1, 0x1
@@ -335,7 +317,6 @@
     :goto_1e
     if-ge v3, v2, :cond_25
 
-    .line 206
     aput-char p2, p0, v3
 
     add-int/lit8 v3, v3, 0x1
@@ -350,7 +331,6 @@
 
     sub-int p3, p2, v2
 
-    .line 209
     aget-char p3, v0, p3
 
     aput-char p3, p0, p2
@@ -359,7 +339,6 @@
 
     goto :goto_26
 
-    .line 213
     :cond_31
     invoke-static {p0}, Ljava/lang/String;->valueOf([C)Ljava/lang/String;
 
@@ -398,7 +377,6 @@
 
     return-void
 
-    .line 245
     :cond_e
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -450,7 +428,6 @@
 
     return-void
 
-    .line 281
     :cond_8
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -504,7 +481,6 @@
 
     return-void
 
-    .line 486
     :cond_d
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -548,7 +524,6 @@
 
     return p0
 
-    .line 228
     :cond_3
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -596,7 +571,6 @@
 
     if-ltz p0, :cond_2f
 
-    .line 361
     new-array v0, p2, [I
 
     const/4 v1, 0x0
@@ -605,7 +579,6 @@
 
     shl-int v3, v2, p0
 
-    .line 362
     aput v3, v0, v1
 
     if-ne p2, v2, :cond_11
@@ -638,7 +611,6 @@
 
     const-wide/high16 v7, 0x4000000000000000L  # 2.0
 
-    .line 367
     invoke-static {v7, v8, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
@@ -658,7 +630,6 @@
     :cond_2e
     return-object v0
 
-    .line 359
     :cond_2f
     new-instance p0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -668,7 +639,6 @@
 
     throw p0
 
-    .line 356
     :cond_37
     new-instance p0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -696,7 +666,6 @@
 
     return v0
 
-    .line 333
     :cond_4
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
@@ -729,7 +698,6 @@
 
     int-to-byte v1, v1
 
-    .line 71
     aput-byte v1, p1, v0
 
     ushr-int/lit8 p0, p0, 0x8
@@ -763,7 +731,6 @@
 
     shl-long/2addr v0, p0
 
-    .line 343
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
     move-result-wide v0
@@ -916,7 +883,6 @@
         }
     .end annotation
 
-    .line 442
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -956,7 +922,6 @@
 
     int-to-byte v2, v2
 
-    .line 85
     aput-byte v2, p2, v0
 
     ushr-long/2addr p0, v1
@@ -980,7 +945,6 @@
         }
     .end annotation
 
-    .line 100
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1000,14 +964,12 @@
 
     and-long/2addr v3, v5
 
-    .line 102
     invoke-static {v3, v4}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v3, 0x2
 
-    .line 103
     invoke-static {v1, v3}, Lcom/yahoo/sketches/Util;->zeroPad(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
@@ -1022,7 +984,6 @@
 
     goto :goto_7
 
-    .line 105
     :cond_25
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1072,7 +1033,6 @@
 
     double-to-long p0, p0
 
-    .line 161
     invoke-static {v2, v3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v2
@@ -1083,7 +1043,6 @@
 
     move-result-object v2
 
-    .line 162
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v0
@@ -1094,7 +1053,6 @@
 
     move-result-object v0
 
-    .line 163
     invoke-static {v4, v5}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v4
@@ -1103,7 +1061,6 @@
 
     move-result-object v4
 
-    .line 164
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -1172,7 +1129,6 @@
 
     double-to-long p0, p0
 
-    .line 145
     invoke-static {v2, v3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v2
@@ -1183,7 +1139,6 @@
 
     move-result-object v2
 
-    .line 146
     invoke-static {v4, v5}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v4
@@ -1192,7 +1147,6 @@
 
     move-result-object v4
 
-    .line 147
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v0
@@ -1201,7 +1155,6 @@
 
     move-result-object v0
 
-    .line 148
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -1260,7 +1213,6 @@
     :goto_6
     int-to-double v1, v1
 
-    .line 395
     invoke-static {v1, v2}, Lcom/yahoo/sketches/Util;->log2(D)D
 
     move-result-wide v1
@@ -1284,7 +1236,6 @@
 
     const-wide/high16 v5, 0x4000000000000000L  # 2.0
 
-    .line 398
     invoke-static {v5, v6, v1, v2}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v1
@@ -1324,7 +1275,6 @@
     :cond_5
     int-to-double v1, p1
 
-    .line 427
     invoke-static {v1, v2}, Lcom/yahoo/sketches/Util;->log2(D)D
 
     move-result-wide v1
@@ -1348,7 +1298,6 @@
 
     const-wide/high16 v5, 0x4000000000000000L  # 2.0
 
-    .line 430
     invoke-static {v5, v6, v1, v2}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v1
@@ -1378,7 +1327,6 @@
         }
     .end annotation
 
-    .line 452
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -1401,7 +1349,6 @@
         }
     .end annotation
 
-    .line 468
     invoke-virtual {p1}, Lcom/yahoo/sketches/ResizeFactor;->lg()I
 
     move-result p1
@@ -1420,7 +1367,6 @@
     :cond_b
     sub-int/2addr p0, p2
 
-    .line 469
     rem-int/2addr p0, p1
 
     add-int/2addr p0, p2
@@ -1442,10 +1388,8 @@
         }
     .end annotation
 
-    .line 293
     invoke-static {p0, p1}, Lcom/yahoo/sketches/Util;->checkIfPowerOf2(ILjava/lang/String;)V
 
-    .line 294
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -1470,7 +1414,6 @@
 
     const/4 v1, 0x0
 
-    .line 175
     invoke-static {p0, p1, v0, v1}, Lcom/yahoo/sketches/Util;->characterPad(Ljava/lang/String;ICZ)Ljava/lang/String;
 
     move-result-object p0

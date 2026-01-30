@@ -77,10 +77,8 @@
 
     const/4 v0, 0x1
 
-    .line 1165
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 1164
     iput-object p2, p0, Lkotlinx/coroutines/JobSupport$AwaitContinuation;->job:Lkotlinx/coroutines/JobSupport;
 
     return-void
@@ -91,14 +89,12 @@
 .method public getContinuationCancellationCause(Lkotlinx/coroutines/Job;)Ljava/lang/Throwable;
     .registers 4
 
-    .line 1167
     iget-object v0, p0, Lkotlinx/coroutines/JobSupport$AwaitContinuation;->job:Lkotlinx/coroutines/JobSupport;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/JobSupport;->getState$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1172
     instance-of v1, v0, Lkotlinx/coroutines/JobSupport$Finishing;
 
     if-eqz v1, :cond_14
@@ -115,7 +111,6 @@
 
     return-object v1
 
-    .line 1173
     :cond_14
     instance-of v1, v0, Lkotlinx/coroutines/CompletedExceptionally;
 
@@ -127,7 +122,6 @@
 
     return-object p1
 
-    .line 1174
     :cond_1d
     invoke-interface {p1}, Lkotlinx/coroutines/Job;->getCancellationException()Ljava/util/concurrent/CancellationException;
 
@@ -141,7 +135,6 @@
 .method protected nameString()Ljava/lang/String;
     .registers 2
 
-    .line 1178
     const-string v0, "AwaitContinuation"
 
     return-object v0

@@ -48,11 +48,9 @@
 .method static constructor <clinit>()V
     .registers 5
 
-    .line 21
     :try_start_0
     const-class v0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
-    .line 22
     const-string v1, "setRemoveOnCancelPolicy"
 
     const/4 v2, 0x1
@@ -76,7 +74,6 @@
     :catchall_11
     const/4 v0, 0x0
 
-    .line 21
     :goto_12
     sput-object v0, Lkotlinx/coroutines/internal/ConcurrentKt;->REMOVE_FUTURE_ON_CANCEL:Ljava/lang/reflect/Method;
 
@@ -101,7 +98,6 @@
         }
     .end annotation
 
-    .line 19
     new-instance v0, Ljava/util/IdentityHashMap;
 
     invoke-direct {v0, p0}, Ljava/util/IdentityHashMap;-><init>(I)V
@@ -120,7 +116,6 @@
 
     const/4 v0, 0x0
 
-    .line 30
     :try_start_1
     instance-of v1, p0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
@@ -138,7 +133,6 @@
 
     return v0
 
-    .line 31
     :cond_c
     sget-object v1, Lkotlinx/coroutines/internal/ConcurrentKt;->REMOVE_FUTURE_ON_CANCEL:Ljava/lang/reflect/Method;
 
@@ -180,7 +174,6 @@
         }
     .end annotation
 
-    .line 15
     check-cast p0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->lock()V

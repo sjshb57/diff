@@ -198,7 +198,6 @@
 
     move-result-object v0
 
-    .line 67
     iget v1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowMerge$collectTo$2$1;->label:I
 
     const/4 v2, 0x1
@@ -231,7 +230,6 @@
     :cond_19
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 69
     :try_start_1c
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowMerge$collectTo$2$1;->$inner:Lkotlinx/coroutines/flow/Flow;
 
@@ -255,19 +253,16 @@
 
     return-object v0
 
-    .line 71
     :cond_2e
     :goto_2e
     iget-object p1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowMerge$collectTo$2$1;->$semaphore:Lkotlinx/coroutines/sync/Semaphore;
 
     invoke-interface {p1}, Lkotlinx/coroutines/sync/Semaphore;->release()V
 
-    .line 73
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 71
     :goto_36
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowMerge$collectTo$2$1;->$semaphore:Lkotlinx/coroutines/sync/Semaphore;
 

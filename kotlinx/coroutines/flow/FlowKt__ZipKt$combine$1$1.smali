@@ -179,7 +179,6 @@
 
     move-result-object v0
 
-    .line 33
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combine$1$1;->label:I
 
     const/4 v2, 0x2

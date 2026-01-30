@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/future/FutureKt$$ExternalSyntheticLambda0;->f$0:Lkotlin/jvm/functions/Function2;
@@ -27,7 +26,6 @@
 .method public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lkotlinx/coroutines/future/FutureKt$$ExternalSyntheticLambda0;->f$0:Lkotlin/jvm/functions/Function2;
 
     check-cast p2, Ljava/lang/Throwable;

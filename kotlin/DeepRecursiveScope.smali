@@ -51,7 +51,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 95
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -121,7 +120,6 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Should not be called from DeepRecursiveScope"

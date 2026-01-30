@@ -32,14 +32,12 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 57
     new-instance v0, Lcom/google/firebase/encoders/json/JsonDataEncoderBuilder;
 
     invoke-direct {v0}, Lcom/google/firebase/encoders/json/JsonDataEncoderBuilder;-><init>()V
 
     sget-object v1, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoRolloutAssignmentEncoder;->CONFIG:Lcom/google/firebase/encoders/config/Configurator;
 
-    .line 58
     invoke-virtual {v0, v1}, Lcom/google/firebase/encoders/json/JsonDataEncoderBuilder;->configureWith(Lcom/google/firebase/encoders/config/Configurator;)Lcom/google/firebase/encoders/json/JsonDataEncoderBuilder;
 
     move-result-object v0
@@ -56,7 +54,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +62,6 @@
 .method public static builder()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
     .registers 1
 
-    .line 80
     new-instance v0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;
 
     invoke-direct {v0}, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;-><init>()V
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 75
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -101,14 +96,12 @@
         }
     .end annotation
 
-    .line 63
     invoke-static {}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;->builder()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
 
     move-result-object v0
 
     const-string v1, "rolloutId"
 
-    .line 64
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -119,7 +112,6 @@
 
     const-string v1, "variantId"
 
-    .line 65
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -130,7 +122,6 @@
 
     const-string v1, "parameterKey"
 
-    .line 66
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -141,7 +132,6 @@
 
     const-string v1, "parameterValue"
 
-    .line 67
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -152,7 +142,6 @@
 
     const-string v1, "templateVersion"
 
-    .line 68
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v1
@@ -161,7 +150,6 @@
 
     move-result-object p0
 
-    .line 69
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;->build()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
 
     move-result-object p0

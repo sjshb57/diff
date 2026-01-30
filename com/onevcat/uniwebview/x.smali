@@ -55,7 +55,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 8
 
-    .line 1
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     new-instance v1, La/v;
@@ -72,10 +71,8 @@
 
     const/4 v5, 0x0
 
-    .line 2
     invoke-direct {v1, v0, v3, v4, v5}, La/v;-><init>(Landroid/app/Activity;Ljava/lang/String;La/i0;La/e0;)V
 
-    .line 3
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v3, -0x1
@@ -114,15 +111,12 @@
 
     sget-object v0, La/e;->b:La/e$a;
 
-    .line 4
     sget-object v0, La/e;->c:La/e;
 
-    .line 5
     iget-object v3, v1, La/v;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 6
     const-string v4, "container"
 
     invoke-static {v1, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -133,10 +127,8 @@
 
     sget-object v4, La/i;->c:La/i$a;
 
-    .line 7
     sget-object v4, La/i;->d:La/i;
 
-    .line 8
     new-instance v5, Ljava/lang/StringBuilder;
 
     const-string v6, "Adding web view container to manager: "
@@ -155,17 +147,14 @@
 
     invoke-virtual {v0, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     sget-boolean v0, La/o$b;->e:Z
 
     if-eqz v0, :cond_81
 
-    .line 10
     iget-object v0, v1, La/v;->d:La/b0;
 
     iget-object v3, v1, La/v;->a:Landroid/app/Activity;
 
-    .line 11
     const-string v4, "frameLayout"
 
     invoke-static {v0, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -174,13 +163,10 @@
 
     new-instance v2, La/b;
 
-    .line 12
     invoke-direct {v2, v0, v3}, La/b;-><init>(Landroid/widget/FrameLayout;Landroid/app/Activity;)V
 
-    .line 13
     iput-object v2, v1, La/v;->l:La/b;
 
-    .line 14
     :cond_81
     iget v0, p0, Lcom/onevcat/uniwebview/x;->b:I
 
@@ -192,7 +178,6 @@
 
     invoke-virtual {v1, v0, v2, v3, v4}, La/v;->a(IIII)V
 
-    .line 15
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

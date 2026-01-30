@@ -106,7 +106,6 @@
 .method private synthetic constructor <init>(Ljava/lang/Object;)V
     .registers 2
 
-    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/Result;->value:Ljava/lang/Object;
@@ -185,7 +184,6 @@
 .method public static final exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
     .registers 2
 
-    .line 64
     instance-of v0, p0, Lkotlin/Result$Failure;
 
     if-eqz v0, :cond_9
@@ -213,7 +211,6 @@
         }
     .end annotation
 
-    .line 52
     invoke-static {p0}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
 
     move-result v0
@@ -253,7 +250,6 @@
 .method public static final isFailure-impl(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 38
     instance-of p0, p0, Lkotlin/Result$Failure;
 
     return p0
@@ -262,7 +258,6 @@
 .method public static final isSuccess-impl(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 32
     instance-of p0, p0, Lkotlin/Result$Failure;
 
     xor-int/lit8 p0, p0, 0x1
@@ -273,7 +268,6 @@
 .method public static toString-impl(Ljava/lang/Object;)Ljava/lang/String;
     .registers 3
 
-    .line 75
     instance-of v0, p0, Lkotlin/Result$Failure;
 
     if-eqz v0, :cond_b
@@ -286,7 +280,6 @@
 
     goto :goto_1e
 
-    .line 76
     :cond_b
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -337,7 +330,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 73
     iget-object v0, p0, Lkotlin/Result;->value:Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/Result;->toString-impl(Ljava/lang/Object;)Ljava/lang/String;

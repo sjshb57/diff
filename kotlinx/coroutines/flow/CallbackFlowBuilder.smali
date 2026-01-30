@@ -95,10 +95,8 @@
         }
     .end annotation
 
-    .line 331
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/ChannelFlowBuilder;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
-    .line 327
     iput-object p1, p0, Lkotlinx/coroutines/flow/CallbackFlowBuilder;->block:Lkotlin/jvm/functions/Function2;
 
     return-void
@@ -111,7 +109,6 @@
 
     if-eqz p6, :cond_8
 
-    .line 328
     sget-object p2, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext;
@@ -128,10 +125,8 @@
 
     if-eqz p5, :cond_13
 
-    .line 330
     sget-object p4, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
-    .line 326
     :cond_13
     invoke-direct {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/CallbackFlowBuilder;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
@@ -191,7 +186,6 @@
 
     move-result-object v1
 
-    .line 333
     iget v2, v0, Lkotlinx/coroutines/flow/CallbackFlowBuilder$collectTo$1;->label:I
 
     const/4 v3, 0x1
@@ -220,7 +214,6 @@
     :cond_36
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 334
     iput-object p1, v0, Lkotlinx/coroutines/flow/CallbackFlowBuilder$collectTo$1;->L$0:Ljava/lang/Object;
 
     iput v3, v0, Lkotlinx/coroutines/flow/CallbackFlowBuilder$collectTo$1;->label:I
@@ -233,7 +226,6 @@
 
     return-object v1
 
-    .line 340
     :cond_44
     :goto_44
     invoke-interface {p1}, Lkotlinx/coroutines/channels/ProducerScope;->isClosedForSend()Z
@@ -242,19 +234,15 @@
 
     if-eqz p1, :cond_4d
 
-    .line 349
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 341
     :cond_4d
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 346
     const-string p2, "\'awaitClose { yourCallbackOrListener.cancel() }\' should be used in the end of callbackFlow block.\nOtherwise, a callback/listener may leak in case of external cancellation.\nSee callbackFlow API documentation for the details."
 
-    .line 341
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -274,7 +262,6 @@
         }
     .end annotation
 
-    .line 352
     new-instance v0, Lkotlinx/coroutines/flow/CallbackFlowBuilder;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/CallbackFlowBuilder;->block:Lkotlin/jvm/functions/Function2;

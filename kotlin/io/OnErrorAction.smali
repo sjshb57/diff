@@ -68,7 +68,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 251
     new-instance v0, Lkotlin/io/OnErrorAction;
 
     const-string v1, "SKIP"
@@ -79,7 +78,6 @@
 
     sput-object v0, Lkotlin/io/OnErrorAction;->SKIP:Lkotlin/io/OnErrorAction;
 
-    .line 254
     new-instance v0, Lkotlin/io/OnErrorAction;
 
     const-string v1, "TERMINATE"
@@ -107,7 +105,6 @@
         }
     .end annotation
 
-    .line 249
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

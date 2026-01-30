@@ -33,13 +33,10 @@
 .method private constructor <init>(Landroid/content/SharedPreferences;Ljava/util/concurrent/Executor;)V
     .registers 3
 
-    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 50
     iput-object p2, p0, Lcom/google/firebase/messaging/TopicsStore;->syncExecutor:Ljava/util/concurrent/Executor;
 
-    .line 51
     iput-object p1, p0, Lcom/google/firebase/messaging/TopicsStore;->sharedPreferences:Landroid/content/SharedPreferences;
 
     return-void
@@ -52,18 +49,15 @@
 
     monitor-enter v0
 
-    .line 88
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/TopicsStore;->topicsStoreWeakReference:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_a
 
-    .line 89
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->clear()V
     :try_end_a
     .catchall {:try_start_3 .. :try_end_a} :catchall_c
 
-    .line 91
     :cond_a
     monitor-exit v0
 
@@ -84,13 +78,11 @@
 
     monitor-enter v0
 
-    .line 71
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/TopicsStore;->topicsStoreWeakReference:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_e
 
-    .line 72
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
@@ -105,25 +97,20 @@
     :goto_f
     if-nez v1, :cond_27
 
-    .line 76
     const-string v1, "com.google.android.gms.appid"
 
     const/4 v2, 0x0
 
-    .line 77
     invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
 
-    .line 78
     new-instance v1, Lcom/google/firebase/messaging/TopicsStore;
 
     invoke-direct {v1, p0, p1}, Lcom/google/firebase/messaging/TopicsStore;-><init>(Landroid/content/SharedPreferences;Ljava/util/concurrent/Executor;)V
 
-    .line 79
     invoke-direct {v1}, Lcom/google/firebase/messaging/TopicsStore;->initStore()V
 
-    .line 80
     new-instance p0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -132,7 +119,6 @@
     :try_end_27
     .catchall {:try_start_3 .. :try_end_27} :catchall_29
 
-    .line 82
     :cond_27
     monitor-exit v0
 
@@ -151,7 +137,6 @@
 
     monitor-enter p0
 
-    .line 56
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->sharedPreferences:Landroid/content/SharedPreferences;
 
@@ -161,7 +146,6 @@
 
     iget-object v3, p0, Lcom/google/firebase/messaging/TopicsStore;->syncExecutor:Ljava/util/concurrent/Executor;
 
-    .line 57
     invoke-static {v0, v1, v2, v3}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->createInstance(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;)Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
     move-result-object v0
@@ -170,7 +154,6 @@
     :try_end_f
     .catchall {:try_start_1 .. :try_end_f} :catchall_11
 
-    .line 59
     monitor-exit p0
 
     return-void
@@ -190,7 +173,6 @@
 
     monitor-enter p0
 
-    .line 107
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
@@ -221,7 +203,6 @@
 
     monitor-enter p0
 
-    .line 152
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
@@ -229,7 +210,6 @@
     :try_end_6
     .catchall {:try_start_1 .. :try_end_6} :catchall_8
 
-    .line 153
     monitor-exit p0
 
     return-void
@@ -247,7 +227,6 @@
 
     monitor-enter p0
 
-    .line 96
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
@@ -255,7 +234,6 @@
 
     move-result-object v0
 
-    .line 97
     invoke-static {v0}, Lcom/google/firebase/messaging/TopicOperation;->from(Ljava/lang/String;)Lcom/google/firebase/messaging/TopicOperation;
 
     move-result-object v0
@@ -287,7 +265,6 @@
 
     monitor-enter p0
 
-    .line 142
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
@@ -295,7 +272,6 @@
 
     move-result-object v0
 
-    .line 143
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -304,7 +280,6 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 144
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -322,7 +297,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 145
     invoke-static {v2}, Lcom/google/firebase/messaging/TopicOperation;->from(Ljava/lang/String;)Lcom/google/firebase/messaging/TopicOperation;
 
     move-result-object v2
@@ -333,7 +307,6 @@
 
     goto :goto_14
 
-    .line 147
     :cond_28
     monitor-exit p0
 
@@ -352,7 +325,6 @@
 
     monitor-enter p0
 
-    .line 128
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
@@ -376,7 +348,6 @@
 
     goto :goto_19
 
-    .line 130
     :catch_f
     :try_start_f
     const-string v0, "FirebaseMessaging"
@@ -387,7 +358,6 @@
     :try_end_16
     .catchall {:try_start_f .. :try_end_16} :catchall_d
 
-    .line 132
     monitor-exit p0
 
     const/4 v0, 0x0
@@ -405,7 +375,6 @@
 
     monitor-enter p0
 
-    .line 117
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsStore;->topicOperationsQueue:Lcom/google/firebase/messaging/SharedPreferencesQueue;
 

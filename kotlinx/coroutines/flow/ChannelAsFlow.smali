@@ -121,18 +121,14 @@
         }
     .end annotation
 
-    .line 100
     invoke-direct {p0, p3, p4, p5}, Lkotlinx/coroutines/flow/internal/ChannelFlow;-><init>(Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
-    .line 95
     iput-object p1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->channel:Lkotlinx/coroutines/channels/ReceiveChannel;
 
-    .line 96
     iput-boolean p2, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->consume:Z
 
     const/4 p1, 0x0
 
-    .line 101
     iput p1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->consumed:I
 
     return-void
@@ -145,7 +141,6 @@
 
     if-eqz p7, :cond_8
 
-    .line 97
     sget-object p3, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p3, Lkotlin/coroutines/CoroutineContext;
@@ -166,7 +161,6 @@
 
     if-eqz p3, :cond_15
 
-    .line 99
     sget-object p5, Lkotlinx/coroutines/channels/BufferOverflow;->SUSPEND:Lkotlinx/coroutines/channels/BufferOverflow;
 
     :cond_15
@@ -178,7 +172,6 @@
 
     move v2, p2
 
-    .line 94
     invoke-direct/range {v0 .. v5}, Lkotlinx/coroutines/flow/ChannelAsFlow;-><init>(Lkotlinx/coroutines/channels/ReceiveChannel;ZLkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V
 
     return-void
@@ -187,7 +180,6 @@
 .method private final markConsumed()V
     .registers 3
 
-    .line 104
     iget-boolean v0, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->consume:Z
 
     if-eqz v0, :cond_1a
@@ -196,7 +188,6 @@
 
     const/4 v1, 0x1
 
-    .line 105
     invoke-virtual {v0, p0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->getAndSet(Ljava/lang/Object;I)I
 
     move-result v0
@@ -228,7 +219,6 @@
 .method protected additionalToStringProps()Ljava/lang/String;
     .registers 3
 
-    .line 135
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
@@ -263,17 +253,14 @@
         }
     .end annotation
 
-    .line 127
     iget v0, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->capacity:I
 
     const/4 v1, -0x3
 
     if-ne v0, v1, :cond_1a
 
-    .line 128
     invoke-direct {p0}, Lkotlinx/coroutines/flow/ChannelAsFlow;->markConsumed()V
 
-    .line 129
     iget-object v0, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->channel:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     iget-boolean v1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->consume:Z
@@ -295,7 +282,6 @@
 
     return-object p1
 
-    .line 131
     :cond_1a
     invoke-super {p0, p1, p2}, Lkotlinx/coroutines/flow/internal/ChannelFlow;->collect(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -330,7 +316,6 @@
         }
     .end annotation
 
-    .line 116
     new-instance v0, Lkotlinx/coroutines/flow/internal/SendingCollector;
 
     check-cast p1, Lkotlinx/coroutines/channels/SendChannel;
@@ -375,7 +360,6 @@
         }
     .end annotation
 
-    .line 110
     new-instance v6, Lkotlinx/coroutines/flow/ChannelAsFlow;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->channel:Lkotlinx/coroutines/channels/ReceiveChannel;
@@ -407,7 +391,6 @@
         }
     .end annotation
 
-    .line 113
     new-instance v8, Lkotlinx/coroutines/flow/ChannelAsFlow;
 
     iget-object v1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->channel:Lkotlinx/coroutines/channels/ReceiveChannel;
@@ -445,22 +428,18 @@
         }
     .end annotation
 
-    .line 119
     invoke-direct {p0}, Lkotlinx/coroutines/flow/ChannelAsFlow;->markConsumed()V
 
-    .line 120
     iget v0, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->capacity:I
 
     const/4 v1, -0x3
 
     if-ne v0, v1, :cond_b
 
-    .line 121
     iget-object p1, p0, Lkotlinx/coroutines/flow/ChannelAsFlow;->channel:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     goto :goto_f
 
-    .line 123
     :cond_b
     invoke-super {p0, p1}, Lkotlinx/coroutines/flow/internal/ChannelFlow;->produceImpl(Lkotlinx/coroutines/CoroutineScope;)Lkotlinx/coroutines/channels/ReceiveChannel;
 

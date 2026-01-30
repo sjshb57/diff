@@ -159,10 +159,8 @@
 .method public constructor <init>()V
     .registers 3
 
-    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 65
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     const/16 v1, 0x80
@@ -183,7 +181,6 @@
 
     const/4 p2, 0x0
 
-    .line 83
     :cond_5
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/scheduling/WorkQueue;->add(Lkotlinx/coroutines/scheduling/Task;Z)Lkotlinx/coroutines/scheduling/Task;
 
@@ -195,7 +192,6 @@
 .method private final addLast(Lkotlinx/coroutines/scheduling/Task;)Lkotlinx/coroutines/scheduling/Task;
     .registers 5
 
-    .line 94
     invoke-direct {p0}, Lkotlinx/coroutines/scheduling/WorkQueue;->getBufferSize()I
 
     move-result v0
@@ -206,7 +202,6 @@
 
     return-object p1
 
-    .line 256
     :cond_9
     iget-object v0, p1, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
@@ -218,7 +213,6 @@
 
     if-ne v0, v2, :cond_17
 
-    .line 95
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->blockingTasksInBuffer$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->incrementAndGet(Ljava/lang/Object;)I
@@ -226,14 +220,12 @@
     :cond_17
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 96
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
 
     and-int/2addr v0, v1
 
-    .line 105
     :goto_1e
     iget-object v1, p0, Lkotlinx/coroutines/scheduling/WorkQueue;->buffer:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -243,12 +235,10 @@
 
     if-eqz v1, :cond_2a
 
-    .line 106
     invoke-static {}, Ljava/lang/Thread;->yield()V
 
     goto :goto_1e
 
-    .line 108
     :cond_2a
     iget-object v1, p0, Lkotlinx/coroutines/scheduling/WorkQueue;->buffer:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -256,7 +246,6 @@
 
     sget-object p1, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 109
     invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->incrementAndGet(Ljava/lang/Object;)I
 
     const/4 p1, 0x0
@@ -269,7 +258,6 @@
 
     if-eqz p1, :cond_20
 
-    .line 262
     iget-object p1, p1, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
     invoke-interface {p1}, Lkotlinx/coroutines/scheduling/TaskContext;->getTaskMode()I
@@ -280,15 +268,12 @@
 
     if-ne p1, v0, :cond_20
 
-    .line 249
     sget-object p1, Lkotlinx/coroutines/scheduling/WorkQueue;->blockingTasksInBuffer$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 250
     invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->decrementAndGet(Ljava/lang/Object;)I
 
     move-result p1
 
-    .line 251
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -316,7 +301,6 @@
 
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 63
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -335,17 +319,14 @@
 .method private final pollBuffer()Lkotlinx/coroutines/scheduling/Task;
     .registers 6
 
-    .line 235
     :cond_0
     :goto_0
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->consumerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 236
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 237
     sget-object v2, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
@@ -365,14 +346,12 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    .line 239
     invoke-virtual {v0, p0, v1, v4}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 241
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/WorkQueue;->buffer:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->getAndSet(ILjava/lang/Object;)Ljava/lang/Object;
@@ -385,7 +364,6 @@
 
     goto :goto_0
 
-    .line 242
     :cond_27
     invoke-direct {p0, v0}, Lkotlinx/coroutines/scheduling/WorkQueue;->decrementIfBlocking(Lkotlinx/coroutines/scheduling/Task;)V
 
@@ -395,7 +373,6 @@
 .method private final pollTo(Lkotlinx/coroutines/scheduling/GlobalQueue;)Z
     .registers 3
 
-    .line 229
     invoke-direct {p0}, Lkotlinx/coroutines/scheduling/WorkQueue;->pollBuffer()Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v0
@@ -406,7 +383,6 @@
 
     return p1
 
-    .line 230
     :cond_8
     invoke-virtual {p1, v0}, Lkotlinx/coroutines/scheduling/GlobalQueue;->addLast(Ljava/lang/Object;)Z
 
@@ -418,7 +394,6 @@
 .method private final pollWithExclusiveMode(Z)Lkotlinx/coroutines/scheduling/Task;
     .registers 7
 
-    .line 161
     :cond_0
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
@@ -434,7 +409,6 @@
 
     goto :goto_20
 
-    .line 257
     :cond_c
     iget-object v3, v1, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
@@ -454,7 +428,6 @@
     :goto_17
     if-ne v4, p1, :cond_20
 
-    .line 163
     invoke-static {v0, p0, v1, v2}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -463,19 +436,16 @@
 
     return-object v1
 
-    .line 164
     :cond_20
     :goto_20
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->consumerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 169
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
 
     sget-object v1, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 170
     invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
@@ -485,7 +455,6 @@
 
     if-eqz p1, :cond_39
 
-    .line 173
     sget-object v3, Lkotlinx/coroutines/scheduling/WorkQueue;->blockingTasksInBuffer$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v3, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
@@ -499,7 +468,6 @@
     :cond_39
     add-int/lit8 v1, v1, -0x1
 
-    .line 174
     invoke-direct {p0, v1, p1}, Lkotlinx/coroutines/scheduling/WorkQueue;->tryExtractFromTheMiddle(IZ)Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v3
@@ -517,14 +485,12 @@
 
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->consumerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 139
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
 
     sget-object v1, Lkotlinx/coroutines/scheduling/WorkQueue;->producerIndex$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 140
     invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v1
@@ -545,7 +511,6 @@
 
     if-eqz v2, :cond_1f
 
-    .line 144
     sget-object v3, Lkotlinx/coroutines/scheduling/WorkQueue;->blockingTasksInBuffer$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v3, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
@@ -559,7 +524,6 @@
     :cond_1f
     add-int/lit8 p1, v0, 0x1
 
-    .line 145
     invoke-direct {p0, v0, v2}, Lkotlinx/coroutines/scheduling/WorkQueue;->tryExtractFromTheMiddle(IZ)Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v0
@@ -582,7 +546,6 @@
 
     and-int/lit8 p1, p1, 0x7f
 
-    .line 184
     iget-object v0, p0, Lkotlinx/coroutines/scheduling/WorkQueue;->buffer:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
@@ -595,7 +558,6 @@
 
     if-eqz v0, :cond_2a
 
-    .line 258
     iget-object v2, v0, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
     invoke-interface {v2}, Lkotlinx/coroutines/scheduling/TaskContext;->getTaskMode()I
@@ -614,7 +576,6 @@
     :goto_18
     if-ne v3, p2, :cond_2a
 
-    .line 185
     iget-object v2, p0, Lkotlinx/coroutines/scheduling/WorkQueue;->buffer:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-static {v2, p1, v0, v1}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceArray;ILjava/lang/Object;Ljava/lang/Object;)Z
@@ -625,7 +586,6 @@
 
     if-eqz p2, :cond_29
 
-    .line 186
     sget-object p1, Lkotlinx/coroutines/scheduling/WorkQueue;->blockingTasksInBuffer$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->decrementAndGet(Ljava/lang/Object;)I
@@ -648,7 +608,6 @@
         }
     .end annotation
 
-    .line 204
     :cond_0
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
@@ -664,7 +623,6 @@
 
     return-wide v2
 
-    .line 261
     :cond_d
     iget-object v4, v1, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
@@ -688,7 +646,6 @@
 
     return-wide v2
 
-    .line 210
     :cond_1d
     sget-object v2, Lkotlinx/coroutines/scheduling/TasksKt;->schedulerTimeSource:Lkotlinx/coroutines/scheduling/SchedulerTimeSource;
 
@@ -696,19 +653,16 @@
 
     move-result-wide v2
 
-    .line 211
     iget-wide v4, v1, Lkotlinx/coroutines/scheduling/Task;->submissionTime:J
 
     sub-long/2addr v2, v4
 
-    .line 212
     sget-wide v4, Lkotlinx/coroutines/scheduling/TasksKt;->WORK_STEALING_TIME_RESOLUTION_NS:J
 
     cmp-long v4, v2, v4
 
     if-gez v4, :cond_30
 
-    .line 213
     sget-wide p1, Lkotlinx/coroutines/scheduling/TasksKt;->WORK_STEALING_TIME_RESOLUTION_NS:J
 
     sub-long/2addr p1, v2
@@ -718,14 +672,12 @@
     :cond_30
     const/4 v2, 0x0
 
-    .line 220
     invoke-static {v0, p0, v1, v2}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 221
     iput-object v1, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     const-wide/16 p1, -0x1
@@ -740,14 +692,12 @@
 
     if-eqz p2, :cond_7
 
-    .line 84
     invoke-direct {p0, p1}, Lkotlinx/coroutines/scheduling/WorkQueue;->addLast(Lkotlinx/coroutines/scheduling/Task;)Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 85
     :cond_7
     sget-object p2, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
@@ -763,7 +713,6 @@
 
     return-object p1
 
-    .line 86
     :cond_13
     invoke-direct {p0, p1}, Lkotlinx/coroutines/scheduling/WorkQueue;->addLast(Lkotlinx/coroutines/scheduling/Task;)Lkotlinx/coroutines/scheduling/Task;
 
@@ -775,7 +724,6 @@
 .method public final getSize$kotlinx_coroutines_core()I
     .registers 2
 
-    .line 64
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -804,7 +752,6 @@
 .method public final offloadAllWorkTo(Lkotlinx/coroutines/scheduling/GlobalQueue;)V
     .registers 4
 
-    .line 193
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const/4 v1, 0x0
@@ -819,7 +766,6 @@
 
     invoke-virtual {p1, v0}, Lkotlinx/coroutines/scheduling/GlobalQueue;->addLast(Ljava/lang/Object;)Z
 
-    .line 194
     :cond_e
     invoke-direct {p0, p1}, Lkotlinx/coroutines/scheduling/WorkQueue;->pollTo(Lkotlinx/coroutines/scheduling/GlobalQueue;)Z
 
@@ -833,7 +779,6 @@
 .method public final poll()Lkotlinx/coroutines/scheduling/Task;
     .registers 3
 
-    .line 77
     sget-object v0, Lkotlinx/coroutines/scheduling/WorkQueue;->lastScheduledTask$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const/4 v1, 0x0
@@ -859,7 +804,6 @@
 
     const/4 v0, 0x1
 
-    .line 153
     invoke-direct {p0, v0}, Lkotlinx/coroutines/scheduling/WorkQueue;->pollWithExclusiveMode(Z)Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v0
@@ -872,7 +816,6 @@
 
     const/4 v0, 0x0
 
-    .line 157
     invoke-direct {p0, v0}, Lkotlinx/coroutines/scheduling/WorkQueue;->pollWithExclusiveMode(Z)Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v0
@@ -895,14 +838,12 @@
 
     if-ne p1, v0, :cond_8
 
-    .line 126
     invoke-direct {p0}, Lkotlinx/coroutines/scheduling/WorkQueue;->pollBuffer()Lkotlinx/coroutines/scheduling/Task;
 
     move-result-object v0
 
     goto :goto_c
 
-    .line 127
     :cond_8
     invoke-direct {p0, p1}, Lkotlinx/coroutines/scheduling/WorkQueue;->stealWithExclusiveMode(I)Lkotlinx/coroutines/scheduling/Task;
 
@@ -911,14 +852,12 @@
     :goto_c
     if-eqz v0, :cond_13
 
-    .line 131
     iput-object v0, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     const-wide/16 p1, -0x1
 
     return-wide p1
 
-    .line 134
     :cond_13
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/scheduling/WorkQueue;->tryStealLastScheduled(ILkotlin/jvm/internal/Ref$ObjectRef;)J
 

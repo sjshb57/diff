@@ -13,22 +13,18 @@
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .registers 3
 
-    .line 14
     invoke-direct {p0}, Lcom/google/firebase/platforminfo/LibraryVersion;-><init>()V
 
     if-eqz p1, :cond_14
 
-    .line 18
     iput-object p1, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->libraryName:Ljava/lang/String;
 
     if-eqz p2, :cond_c
 
-    .line 22
     iput-object p2, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->version:Ljava/lang/String;
 
     return-void
 
-    .line 20
     :cond_c
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -38,7 +34,6 @@
 
     throw p1
 
-    .line 16
     :cond_14
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -60,7 +55,6 @@
 
     return v0
 
-    .line 50
     :cond_4
     instance-of v1, p1, Lcom/google/firebase/platforminfo/LibraryVersion;
 
@@ -68,10 +62,8 @@
 
     if-eqz v1, :cond_26
 
-    .line 51
     check-cast p1, Lcom/google/firebase/platforminfo/LibraryVersion;
 
-    .line 52
     iget-object v1, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->libraryName:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/firebase/platforminfo/LibraryVersion;->getLibraryName()Ljava/lang/String;
@@ -86,7 +78,6 @@
 
     iget-object v1, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->version:Ljava/lang/String;
 
-    .line 53
     invoke-virtual {p1}, Lcom/google/firebase/platforminfo/LibraryVersion;->getVersion()Ljava/lang/String;
 
     move-result-object p1
@@ -114,7 +105,6 @@
     .annotation runtime Ljavax/annotation/Nonnull;
     .end annotation
 
-    .line 28
     iget-object v0, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->libraryName:Ljava/lang/String;
 
     return-object v0
@@ -125,7 +115,6 @@
     .annotation runtime Ljavax/annotation/Nonnull;
     .end annotation
 
-    .line 34
     iget-object v0, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->version:Ljava/lang/String;
 
     return-object v0
@@ -134,7 +123,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 62
     iget-object v0, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->libraryName:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -147,7 +135,6 @@
 
     mul-int/2addr v0, v1
 
-    .line 64
     iget-object v1, p0, Lcom/google/firebase/platforminfo/AutoValue_LibraryVersion;->version:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
@@ -162,7 +149,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 39
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LibraryVersion{libraryName="

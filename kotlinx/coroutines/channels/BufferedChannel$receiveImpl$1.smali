@@ -79,7 +79,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 6
 
-    .line 882
     check-cast p1, Lkotlinx/coroutines/channels/ChannelSegment;
 
     check-cast p2, Ljava/lang/Number;
@@ -114,7 +113,6 @@
 
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 882
     const-string p2, "unexpected"
 
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;

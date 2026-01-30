@@ -181,16 +181,12 @@
 .method public constructor <init>(IILkotlinx/coroutines/channels/BufferOverflow;)V
     .registers 4
 
-    .line 306
     invoke-direct {p0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;-><init>()V
 
-    .line 303
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replay:I
 
-    .line 304
     iput p2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
-    .line 305
     iput-object p3, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->onBufferOverflow:Lkotlinx/coroutines/channels/BufferOverflow;
 
     return-void
@@ -199,7 +195,6 @@
 .method public static final synthetic access$awaitValue(Lkotlinx/coroutines/flow/SharedFlowImpl;Lkotlinx/coroutines/flow/SharedFlowSlot;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 3
 
-    .line 302
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/flow/SharedFlowImpl;->awaitValue(Lkotlinx/coroutines/flow/SharedFlowSlot;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -210,7 +205,6 @@
 .method public static final synthetic access$cancelEmitter(Lkotlinx/coroutines/flow/SharedFlowImpl;Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;)V
     .registers 2
 
-    .line 302
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->cancelEmitter(Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;)V
 
     return-void
@@ -219,7 +213,6 @@
 .method public static final synthetic access$emitSuspend(Lkotlinx/coroutines/flow/SharedFlowImpl;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .registers 3
 
-    .line 302
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/flow/SharedFlowImpl;->emitSuspend(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -230,7 +223,6 @@
 .method public static final synthetic access$enqueueLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Ljava/lang/Object;)V
     .registers 2
 
-    .line 302
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->enqueueLocked(Ljava/lang/Object;)V
 
     return-void
@@ -239,7 +231,6 @@
 .method public static final synthetic access$findSlotsToResumeLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;[Lkotlin/coroutines/Continuation;)[Lkotlin/coroutines/Continuation;
     .registers 2
 
-    .line 302
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->findSlotsToResumeLocked([Lkotlin/coroutines/Continuation;)[Lkotlin/coroutines/Continuation;
 
     move-result-object p0
@@ -250,7 +241,6 @@
 .method public static final synthetic access$getBufferCapacity$p(Lkotlinx/coroutines/flow/SharedFlowImpl;)I
     .registers 1
 
-    .line 302
     iget p0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
     return p0
@@ -259,7 +249,6 @@
 .method public static final synthetic access$getHead(Lkotlinx/coroutines/flow/SharedFlowImpl;)J
     .registers 3
 
-    .line 302
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
@@ -270,7 +259,6 @@
 .method public static final synthetic access$getQueueSize$p(Lkotlinx/coroutines/flow/SharedFlowImpl;)I
     .registers 1
 
-    .line 302
     iget p0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
     return p0
@@ -279,7 +267,6 @@
 .method public static final synthetic access$getTotalSize(Lkotlinx/coroutines/flow/SharedFlowImpl;)I
     .registers 1
 
-    .line 302
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getTotalSize()I
 
     move-result p0
@@ -290,7 +277,6 @@
 .method public static final synthetic access$setQueueSize$p(Lkotlinx/coroutines/flow/SharedFlowImpl;I)V
     .registers 2
 
-    .line 302
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
     return-void
@@ -299,7 +285,6 @@
 .method public static final synthetic access$tryEmitLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Ljava/lang/Object;)Z
     .registers 2
 
-    .line 302
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryEmitLocked(Ljava/lang/Object;)Z
 
     move-result p0
@@ -310,7 +295,6 @@
 .method public static final synthetic access$tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Lkotlinx/coroutines/flow/SharedFlowSlot;)J
     .registers 2
 
-    .line 302
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowSlot;)J
 
     move-result-wide p0
@@ -332,7 +316,6 @@
         }
     .end annotation
 
-    .line 785
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     invoke-static {p2}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
@@ -343,18 +326,14 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 791
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 792
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 797
     monitor-enter p0
 
-    .line 662
     :try_start_11
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Lkotlinx/coroutines/flow/SharedFlowSlot;)J
 
@@ -366,21 +345,18 @@
 
     if-gez v2, :cond_25
 
-    .line 664
     move-object v2, v1
 
     check-cast v2, Lkotlin/coroutines/Continuation;
 
     iput-object v2, p1, Lkotlinx/coroutines/flow/SharedFlowSlot;->cont:Lkotlin/coroutines/Continuation;
 
-    .line 669
     check-cast v1, Lkotlin/coroutines/Continuation;
 
     iput-object v1, p1, Lkotlinx/coroutines/flow/SharedFlowSlot;->cont:Lkotlin/coroutines/Continuation;
 
     goto :goto_32
 
-    .line 666
     :cond_25
     check-cast v1, Lkotlin/coroutines/Continuation;
 
@@ -394,21 +370,17 @@
 
     invoke-interface {v1, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
-    .line 670
     :goto_32
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_34
     .catchall {:try_start_11 .. :try_end_34} :catchall_4c
 
-    .line 797
     monitor-exit p0
 
-    .line 798
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 784
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -426,7 +398,6 @@
 
     return-object p1
 
-    .line 799
     :cond_49
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -435,7 +406,6 @@
     :catchall_4c
     move-exception p1
 
-    .line 797
     monitor-exit p0
 
     throw p1
@@ -444,10 +414,8 @@
 .method private final cancelEmitter(Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;)V
     .registers 6
 
-    .line 771
     monitor-enter p0
 
-    .line 507
     :try_start_1
     iget-wide v0, p1, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;->index:J
 
@@ -465,14 +433,12 @@
 
     return-void
 
-    .line 508
     :cond_d
     :try_start_d
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 509
     iget-wide v1, p1, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;->index:J
 
     invoke-static {v0, v1, v2}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$getBufferAt([Ljava/lang/Object;J)Ljava/lang/Object;
@@ -487,7 +453,6 @@
 
     return-void
 
-    .line 510
     :cond_1c
     :try_start_1c
     iget-wide v1, p1, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;->index:J
@@ -496,15 +461,12 @@
 
     invoke-static {v0, v1, v2, p1}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
 
-    .line 511
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->cleanupTailLocked()V
 
-    .line 512
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_28
     .catchall {:try_start_1c .. :try_end_28} :catchall_2a
 
-    .line 771
     monitor-exit p0
 
     return-void
@@ -520,7 +482,6 @@
 .method private final cleanupTailLocked()V
     .registers 6
 
-    .line 615
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
     if-nez v0, :cond_a
@@ -533,13 +494,11 @@
 
     return-void
 
-    .line 616
     :cond_a
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 617
     :goto_f
     iget v1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
@@ -569,14 +528,12 @@
 
     if-ne v1, v2, :cond_3d
 
-    .line 618
     iget v1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
     add-int/lit8 v1, v1, -0x1
 
     iput v1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
-    .line 619
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v1
@@ -652,7 +609,6 @@
 
     move-result-object v1
 
-    .line 369
     iget v2, v0, Lkotlinx/coroutines/flow/SharedFlowImpl$collect$1;->label:I
 
     const/4 v3, 0x3
@@ -768,14 +724,12 @@
     :cond_76
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 370
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->allocateSlot()Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object p2
 
     check-cast p2, Lkotlinx/coroutines/flow/SharedFlowSlot;
 
-    .line 372
     :try_start_7f
     instance-of v2, p1, Lkotlinx/coroutines/flow/SubscribedFlowCollector;
 
@@ -810,14 +764,12 @@
 
     move-object p1, v7
 
-    .line 737
     :goto_98
     :try_start_98
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v2
 
-    .line 373
     sget-object v5, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v5, Lkotlin/coroutines/CoroutineContext$Key;
@@ -828,19 +780,16 @@
 
     check-cast v2, Lkotlinx/coroutines/Job;
 
-    .line 377
     :cond_a6
     :goto_a6
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryTakeValue(Lkotlinx/coroutines/flow/SharedFlowSlot;)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 378
     sget-object v6, Lkotlinx/coroutines/flow/SharedFlowKt;->NO_VALUE:Lkotlinx/coroutines/internal/Symbol;
 
     if-ne v5, v6, :cond_bf
 
-    .line 379
     iput-object p0, v0, Lkotlinx/coroutines/flow/SharedFlowImpl$collect$1;->L$0:Ljava/lang/Object;
 
     iput-object p2, v0, Lkotlinx/coroutines/flow/SharedFlowImpl$collect$1;->L$1:Ljava/lang/Object;
@@ -862,10 +811,8 @@
     :cond_bf
     if-eqz v2, :cond_c4
 
-    .line 381
     invoke-static {v2}, Lkotlinx/coroutines/JobKt;->ensureActive(Lkotlinx/coroutines/Job;)V
 
-    .line 382
     :cond_c4
     iput-object p0, v0, Lkotlinx/coroutines/flow/SharedFlowImpl$collect$1;->L$0:Ljava/lang/Object;
 
@@ -905,7 +852,6 @@
 
     move-object p1, p2
 
-    .line 385
     :goto_dd
     check-cast p1, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
@@ -917,26 +863,22 @@
 .method private final correctCollectorIndexesOnDropOldest(J)V
     .registers 11
 
-    .line 453
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;
 
-    .line 744
     invoke-static {v0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getNCollectors(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)I
 
     move-result v1
 
     if-eqz v1, :cond_2c
 
-    .line 745
     invoke-static {v0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getSlots(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object v0
 
     if-eqz v0, :cond_2c
 
-    .line 746
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -948,10 +890,8 @@
 
     if-eqz v3, :cond_29
 
-    .line 747
     check-cast v3, Lkotlinx/coroutines/flow/SharedFlowSlot;
 
-    .line 455
     iget-wide v4, v3, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
     const-wide/16 v6, 0x0
@@ -966,7 +906,6 @@
 
     if-gez v4, :cond_29
 
-    .line 456
     iput-wide p1, v3, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
     :cond_29
@@ -974,7 +913,6 @@
 
     goto :goto_11
 
-    .line 459
     :cond_2c
     iput-wide p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
@@ -984,7 +922,6 @@
 .method private final dropOldestLocked()V
     .registers 5
 
-    .line 444
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -997,14 +934,12 @@
 
     invoke-static {v0, v1, v2, v3}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
 
-    .line 445
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
-    .line 446
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
@@ -1013,7 +948,6 @@
 
     add-long/2addr v0, v2
 
-    .line 447
     iget-wide v2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
     cmp-long v2, v2, v0
@@ -1022,7 +956,6 @@
 
     iput-wide v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
-    .line 448
     :cond_22
     iget-wide v2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
@@ -1032,7 +965,6 @@
 
     invoke-direct {p0, v0, v1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->correctCollectorIndexesOnDropOldest(J)V
 
-    .line 449
     :cond_2b
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
@@ -1079,7 +1011,6 @@
         }
     .end annotation
 
-    .line 404
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryEmit(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1090,7 +1021,6 @@
 
     return-object p0
 
-    .line 405
     :cond_9
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/flow/SharedFlowImpl;->emitSuspend(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -1123,7 +1053,6 @@
         }
     .end annotation
 
-    .line 752
     new-instance v0, Lkotlinx/coroutines/CancellableContinuationImpl;
 
     invoke-static {p2}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
@@ -1134,21 +1063,16 @@
 
     invoke-direct {v0, v1, v2}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 758
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V
 
-    .line 759
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 484
     sget-object v3, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;
 
-    .line 764
     monitor-enter p0
 
-    .line 487
     :try_start_13
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$tryEmitLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Ljava/lang/Object;)Z
 
@@ -1156,7 +1080,6 @@
 
     if-eqz v4, :cond_2d
 
-    .line 488
     move-object p1, v1
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -1171,7 +1094,6 @@
 
     invoke-interface {p1, v2}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
-    .line 489
     invoke-static {p0, v3}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$findSlotsToResumeLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;[Lkotlin/coroutines/Continuation;)[Lkotlin/coroutines/Continuation;
 
     move-result-object p1
@@ -1180,7 +1102,6 @@
 
     goto :goto_59
 
-    .line 493
     :cond_2d
     new-instance v10, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;
 
@@ -1208,10 +1129,8 @@
 
     invoke-direct/range {v4 .. v9}, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;-><init>(Lkotlinx/coroutines/flow/SharedFlowImpl;JLjava/lang/Object;Lkotlin/coroutines/Continuation;)V
 
-    .line 494
     invoke-static {p0, v10}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$enqueueLocked(Lkotlinx/coroutines/flow/SharedFlowImpl;Ljava/lang/Object;)V
 
-    .line 495
     invoke-static {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$getQueueSize$p(Lkotlinx/coroutines/flow/SharedFlowImpl;)I
 
     move-result p1
@@ -1220,7 +1139,6 @@
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$setQueueSize$p(Lkotlinx/coroutines/flow/SharedFlowImpl;I)V
 
-    .line 497
     invoke-static {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->access$getBufferCapacity$p(Lkotlinx/coroutines/flow/SharedFlowImpl;)I
 
     move-result p1
@@ -1238,18 +1156,15 @@
 
     move-object v2, v10
 
-    .line 764
     :goto_59
     monitor-exit p0
 
     if-eqz v2, :cond_61
 
-    .line 501
     check-cast v2, Lkotlinx/coroutines/DisposableHandle;
 
     invoke-static {v1, v2}, Lkotlinx/coroutines/CancellableContinuationKt;->disposeOnCancellation(Lkotlinx/coroutines/CancellableContinuation;Lkotlinx/coroutines/DisposableHandle;)V
 
-    .line 503
     :cond_61
     array-length v1, p1
 
@@ -1277,13 +1192,11 @@
 
     goto :goto_63
 
-    .line 765
     :cond_77
     invoke-virtual {v0}, Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 751
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
@@ -1301,7 +1214,6 @@
 
     return-object p1
 
-    .line 766
     :cond_8b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1310,7 +1222,6 @@
     :catchall_8e
     move-exception p1
 
-    .line 764
     monitor-exit p0
 
     throw p1
@@ -1319,12 +1230,10 @@
 .method private final enqueueLocked(Ljava/lang/Object;)V
     .registers 8
 
-    .line 464
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getTotalSize()I
 
     move-result v0
 
-    .line 465
     iget-object v1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     const/4 v2, 0x2
@@ -1335,14 +1244,12 @@
 
     const/4 v3, 0x0
 
-    .line 466
     invoke-direct {p0, v1, v3, v2}, Lkotlinx/coroutines/flow/SharedFlowImpl;->growBuffer([Ljava/lang/Object;II)[Ljava/lang/Object;
 
     move-result-object v1
 
     goto :goto_19
 
-    .line 467
     :cond_10
     array-length v3, v1
 
@@ -1356,7 +1263,6 @@
 
     move-result-object v1
 
-    .line 469
     :cond_19
     :goto_19
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
@@ -1386,29 +1292,24 @@
         }
     .end annotation
 
-    .line 675
     array-length v0, p1
 
-    .line 676
     move-object v1, p0
 
     check-cast v1, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;
 
-    .line 800
     invoke-static {v1}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getNCollectors(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)I
 
     move-result v2
 
     if-eqz v2, :cond_4a
 
-    .line 801
     invoke-static {v1}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getSlots(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object v1
 
     if-eqz v1, :cond_4a
 
-    .line 802
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -1420,17 +1321,14 @@
 
     if-eqz v4, :cond_47
 
-    .line 803
     check-cast v4, Lkotlinx/coroutines/flow/SharedFlowSlot;
 
-    .line 677
     iget-object v5, v4, Lkotlinx/coroutines/flow/SharedFlowSlot;->cont:Lkotlin/coroutines/Continuation;
 
     if-nez v5, :cond_1f
 
     goto :goto_47
 
-    .line 678
     :cond_1f
     invoke-direct {p0, v4}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowSlot;)J
 
@@ -1442,7 +1340,6 @@
 
     if-ltz v6, :cond_47
 
-    .line 679
     array-length v6, p1
 
     if-lt v0, v6, :cond_3c
@@ -1465,7 +1362,6 @@
 
     invoke-static {p1, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 680
     :cond_3c
     move-object v6, p1
 
@@ -1477,7 +1373,6 @@
 
     const/4 v0, 0x0
 
-    .line 681
     iput-object v0, v4, Lkotlinx/coroutines/flow/SharedFlowSlot;->cont:Lkotlin/coroutines/Continuation;
 
     move v0, v7
@@ -1488,7 +1383,6 @@
 
     goto :goto_12
 
-    .line 683
     :cond_4a
     check-cast p1, [Lkotlin/coroutines/Continuation;
 
@@ -1498,7 +1392,6 @@
 .method private final getBufferEndIndex()J
     .registers 5
 
-    .line 347
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
@@ -1515,7 +1408,6 @@
 .method private final getHead()J
     .registers 5
 
-    .line 344
     iget-wide v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
     iget-wide v2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
@@ -1536,7 +1428,6 @@
 .method private final getPeekedValueLockedAt(J)Ljava/lang/Object;
     .registers 4
 
-    .line 655
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -1545,7 +1436,6 @@
 
     move-result-object p1
 
-    .line 656
     instance-of p2, p1, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;
 
     if-eqz p2, :cond_11
@@ -1561,7 +1451,6 @@
 .method private final getQueueEndIndex()J
     .registers 5
 
-    .line 348
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
@@ -1584,7 +1473,6 @@
 .method private final getReplaySize()I
     .registers 5
 
-    .line 345
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
@@ -1607,7 +1495,6 @@
 .method private final getTotalSize()I
     .registers 3
 
-    .line 346
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     iget v1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
@@ -1622,7 +1509,6 @@
 
     if-lez p3, :cond_1d
 
-    .line 474
     new-array p3, p3, [Ljava/lang/Object;
 
     iput-object p3, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
@@ -1631,7 +1517,6 @@
 
     return-object p3
 
-    .line 476
     :cond_9
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
@@ -1646,7 +1531,6 @@
 
     add-long/2addr v3, v0
 
-    .line 478
     invoke-static {p1, v3, v4}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$getBufferAt([Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object v5
@@ -1660,7 +1544,6 @@
     :cond_1c
     return-object p3
 
-    .line 473
     :cond_1d
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -1683,7 +1566,6 @@
         }
     .end annotation
 
-    .line 411
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getNCollectors()I
 
     move-result v0
@@ -1696,7 +1578,6 @@
 
     return p1
 
-    .line 414
     :cond_b
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
@@ -1714,7 +1595,6 @@
 
     if-gtz v0, :cond_2d
 
-    .line 415
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->onBufferOverflow:Lkotlinx/coroutines/channels/BufferOverflow;
 
     sget-object v1, Lkotlinx/coroutines/flow/SharedFlowImpl$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -1741,26 +1621,22 @@
 
     return p1
 
-    .line 421
     :cond_2d
     :goto_2d
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->enqueueLocked(Ljava/lang/Object;)V
 
-    .line 422
     iget p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     add-int/2addr p1, v2
 
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
-    .line 424
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
     if-le p1, v0, :cond_3c
 
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->dropOldestLocked()V
 
-    .line 426
     :cond_3c
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getReplaySize()I
 
@@ -1770,7 +1646,6 @@
 
     if-le p1, v0, :cond_58
 
-    .line 427
     iget-wide v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
     const-wide/16 v3, 0x1
@@ -1803,7 +1678,6 @@
         }
     .end annotation
 
-    .line 433
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -1825,7 +1699,6 @@
 
     throw p1
 
-    .line 434
     :cond_13
     :goto_13
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replay:I
@@ -1836,25 +1709,21 @@
 
     return v1
 
-    .line 435
     :cond_19
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->enqueueLocked(Ljava/lang/Object;)V
 
-    .line 436
     iget p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     add-int/2addr p1, v1
 
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
-    .line 438
     iget v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replay:I
 
     if-le p1, v0, :cond_28
 
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->dropOldestLocked()V
 
-    .line 439
     :cond_28
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
@@ -1874,10 +1743,8 @@
 .method private final tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowSlot;)J
     .registers 8
 
-    .line 645
     iget-wide v0, p1, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
-    .line 646
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getBufferEndIndex()J
 
     move-result-wide v2
@@ -1888,7 +1755,6 @@
 
     return-wide v0
 
-    .line 647
     :cond_b
     iget p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
@@ -1898,7 +1764,6 @@
 
     return-wide v2
 
-    .line 649
     :cond_12
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
@@ -1910,7 +1775,6 @@
 
     return-wide v2
 
-    .line 650
     :cond_1b
     iget p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
@@ -1925,13 +1789,10 @@
 .method private final tryTakeValue(Lkotlinx/coroutines/flow/SharedFlowSlot;)Ljava/lang/Object;
     .registers 10
 
-    .line 625
     sget-object v0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;
 
-    .line 783
     monitor-enter p0
 
-    .line 627
     :try_start_3
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryPeekLocked(Lkotlinx/coroutines/flow/SharedFlowSlot;)J
 
@@ -1943,16 +1804,13 @@
 
     if-gez v3, :cond_10
 
-    .line 629
     sget-object p1, Lkotlinx/coroutines/flow/SharedFlowKt;->NO_VALUE:Lkotlinx/coroutines/internal/Symbol;
 
     goto :goto_22
 
-    .line 631
     :cond_10
     iget-wide v3, p1, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
-    .line 632
     invoke-direct {p0, v1, v2}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getPeekedValueLockedAt(J)Ljava/lang/Object;
 
     move-result-object v0
@@ -1961,10 +1819,8 @@
 
     add-long/2addr v1, v5
 
-    .line 633
     iput-wide v1, p1, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
-    .line 634
     invoke-virtual {p0, v3, v4}, Lkotlinx/coroutines/flow/SharedFlowImpl;->updateCollectorIndexLocked$kotlinx_coroutines_core(J)[Lkotlin/coroutines/Continuation;
 
     move-result-object p1
@@ -1977,11 +1833,9 @@
 
     move-object p1, v7
 
-    .line 783
     :goto_22
     monitor-exit p0
 
-    .line 638
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -2014,7 +1868,6 @@
     :catchall_3a
     move-exception p1
 
-    .line 783
     monitor-exit p0
 
     throw p1
@@ -2023,12 +1876,10 @@
 .method private final updateBufferLocked(JJJJ)V
     .registers 15
 
-    .line 597
     invoke-static {p3, p4, p1, p2}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v0
 
-    .line 598
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v2
@@ -2052,7 +1903,6 @@
 
     throw p1
 
-    .line 600
     :cond_19
     :goto_19
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
@@ -2078,28 +1928,23 @@
 
     goto :goto_1d
 
-    .line 602
     :cond_2e
     iput-wide p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
-    .line 603
     iput-wide p3, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
     sub-long p1, p5, v0
 
     long-to-int p1, p1
 
-    .line 604
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     sub-long/2addr p7, p5
 
     long-to-int p1, p7
 
-    .line 605
     iput p1, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
-    .line 607
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result p1
@@ -2119,7 +1964,6 @@
 
     throw p1
 
-    .line 608
     :cond_4c
     :goto_4c
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
@@ -2141,7 +1985,6 @@
 
     throw p1
 
-    .line 609
     :cond_5d
     :goto_5d
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
@@ -2205,7 +2048,6 @@
 .method protected createSlot()Lkotlinx/coroutines/flow/SharedFlowSlot;
     .registers 2
 
-    .line 686
     new-instance v0, Lkotlinx/coroutines/flow/SharedFlowSlot;
 
     invoke-direct {v0}, Lkotlinx/coroutines/flow/SharedFlowSlot;-><init>()V
@@ -2216,7 +2058,6 @@
 .method public bridge synthetic createSlot()Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
     .registers 2
 
-    .line 302
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->createSlot()Lkotlinx/coroutines/flow/SharedFlowSlot;
 
     move-result-object v0
@@ -2229,7 +2070,6 @@
 .method protected createSlotArray(I)[Lkotlinx/coroutines/flow/SharedFlowSlot;
     .registers 2
 
-    .line 687
     new-array p1, p1, [Lkotlinx/coroutines/flow/SharedFlowSlot;
 
     return-object p1
@@ -2238,7 +2078,6 @@
 .method public bridge synthetic createSlotArray(I)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
     .registers 2
 
-    .line 302
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->createSlotArray(I)[Lkotlinx/coroutines/flow/SharedFlowSlot;
 
     move-result-object p1
@@ -2282,7 +2121,6 @@
         }
     .end annotation
 
-    .line 700
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/flow/SharedFlow;
@@ -2302,7 +2140,6 @@
         }
     .end annotation
 
-    .line 366
     iget-object v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2338,10 +2175,8 @@
         }
     .end annotation
 
-    .line 736
     monitor-enter p0
 
-    .line 352
     :try_start_1
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getReplaySize()I
 
@@ -2349,7 +2184,6 @@
 
     if-nez v0, :cond_d
 
-    .line 353
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -2360,14 +2194,12 @@
 
     return-object v0
 
-    .line 354
     :cond_d
     :try_start_d
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 355
     iget-object v2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2377,7 +2209,6 @@
     :goto_18
     if-ge v3, v0, :cond_2b
 
-    .line 357
     move-object v4, v1
 
     check-cast v4, Ljava/util/Collection;
@@ -2400,11 +2231,9 @@
 
     goto :goto_18
 
-    .line 736
     :cond_2b
     monitor-exit p0
 
-    .line 735
     check-cast v1, Ljava/util/List;
 
     return-object v1
@@ -2412,7 +2241,6 @@
     :catchall_2f
     move-exception v0
 
-    .line 736
     monitor-exit p0
 
     throw v0
@@ -2421,39 +2249,31 @@
 .method public resetReplayCache()V
     .registers 10
 
-    .line 811
     monitor-enter p0
 
-    .line 692
     :try_start_1
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getBufferEndIndex()J
 
     move-result-wide v1
 
-    .line 693
     iget-wide v3, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
-    .line 694
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getBufferEndIndex()J
 
     move-result-wide v5
 
-    .line 695
     invoke-direct {p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getQueueEndIndex()J
 
     move-result-wide v7
 
     move-object v0, p0
 
-    .line 691
     invoke-direct/range {v0 .. v8}, Lkotlinx/coroutines/flow/SharedFlowImpl;->updateBufferLocked(JJJJ)V
 
-    .line 697
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_15
     .catchall {:try_start_1 .. :try_end_15} :catchall_17
 
-    .line 811
     monitor-exit p0
 
     return-void
@@ -2474,13 +2294,10 @@
         }
     .end annotation
 
-    .line 390
     sget-object v0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;
 
-    .line 742
     monitor-enter p0
 
-    .line 392
     :try_start_3
     invoke-direct {p0, p1}, Lkotlinx/coroutines/flow/SharedFlowImpl;->tryEmitLocked(Ljava/lang/Object;)Z
 
@@ -2490,7 +2307,6 @@
 
     if-eqz p1, :cond_10
 
-    .line 393
     invoke-direct {p0, v0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->findSlotsToResumeLocked([Lkotlin/coroutines/Continuation;)[Lkotlin/coroutines/Continuation;
 
     move-result-object v0
@@ -2504,11 +2320,9 @@
     :cond_10
     move p1, v1
 
-    .line 742
     :goto_11
     monitor-exit p0
 
-    .line 399
     array-length v2, v0
 
     :goto_13
@@ -2539,7 +2353,6 @@
     :catchall_28
     move-exception p1
 
-    .line 742
     monitor-exit p0
 
     throw p1
@@ -2558,7 +2371,6 @@
 
     move-object/from16 v9, p0
 
-    .line 522
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -2580,7 +2392,6 @@
 
     throw v0
 
-    .line 523
     :cond_15
     :goto_15
     iget-wide v0, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
@@ -2593,20 +2404,17 @@
 
     return-object v0
 
-    .line 525
     :cond_1e
     invoke-direct/range {p0 .. p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getHead()J
 
     move-result-wide v0
 
-    .line 526
     iget v2, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferSize:I
 
     int-to-long v2, v2
 
     add-long/2addr v2, v0
 
-    .line 528
     iget v4, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
     const-wide/16 v5, 0x1
@@ -2619,27 +2427,23 @@
 
     add-long/2addr v2, v5
 
-    .line 529
     :cond_31
     move-object v4, v9
 
     check-cast v4, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;
 
-    .line 772
     invoke-static {v4}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getNCollectors(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)I
 
     move-result v7
 
     if-eqz v7, :cond_5d
 
-    .line 773
     invoke-static {v4}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getSlots(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object v4
 
     if-eqz v4, :cond_5d
 
-    .line 774
     array-length v7, v4
 
     const/4 v8, 0x0
@@ -2651,10 +2455,8 @@
 
     if-eqz v11, :cond_5a
 
-    .line 775
     check-cast v11, Lkotlinx/coroutines/flow/SharedFlowSlot;
 
-    .line 531
     iget-wide v12, v11, Lkotlinx/coroutines/flow/SharedFlowSlot;->index:J
 
     const-wide/16 v14, 0x0
@@ -2676,7 +2478,6 @@
 
     goto :goto_42
 
-    .line 533
     :cond_5d
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
@@ -2699,7 +2500,6 @@
 
     throw v0
 
-    .line 534
     :cond_70
     :goto_70
     iget-wide v7, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
@@ -2712,13 +2512,11 @@
 
     return-object v0
 
-    .line 537
     :cond_79
     invoke-direct/range {p0 .. p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getBufferEndIndex()J
 
     move-result-wide v7
 
-    .line 538
     invoke-virtual/range {p0 .. p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getNCollectors()I
 
     move-result v4
@@ -2729,7 +2527,6 @@
 
     long-to-int v4, v11
 
-    .line 543
     iget v11, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
     iget v12, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
@@ -2742,15 +2539,12 @@
 
     goto :goto_92
 
-    .line 546
     :cond_90
     iget v4, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
-    .line 548
     :goto_92
     sget-object v11, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowKt;->EMPTY_RESUMES:[Lkotlin/coroutines/Continuation;
 
-    .line 549
     iget v12, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->queueSize:I
 
     int-to-long v12, v12
@@ -2759,10 +2553,8 @@
 
     if-lez v4, :cond_db
 
-    .line 551
     new-array v11, v4, [Lkotlin/coroutines/Continuation;
 
-    .line 553
     iget-object v14, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->buffer:[Ljava/lang/Object;
 
     invoke-static {v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2776,19 +2568,16 @@
 
     if-gez v16, :cond_d7
 
-    .line 555
     invoke-static {v14, v7, v8}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$getBufferAt([Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object v10
 
     move-wide/from16 v17, v2
 
-    .line 556
     sget-object v2, Lkotlinx/coroutines/flow/SharedFlowKt;->NO_VALUE:Lkotlinx/coroutines/internal/Symbol;
 
     if-eq v10, v2, :cond_d0
 
-    .line 557
     const-string v2, "null cannot be cast to non-null type kotlinx.coroutines.flow.SharedFlowImpl.Emitter"
 
     invoke-static {v10, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -2797,17 +2586,14 @@
 
     add-int/lit8 v2, v15, 0x1
 
-    .line 558
     iget-object v3, v10, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;->cont:Lkotlin/coroutines/Continuation;
 
     aput-object v3, v11, v15
 
-    .line 559
     sget-object v3, Lkotlinx/coroutines/flow/SharedFlowKt;->NO_VALUE:Lkotlinx/coroutines/internal/Symbol;
 
     invoke-static {v14, v7, v8, v3}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
 
-    .line 560
     iget-object v3, v10, Lkotlinx/coroutines/flow/SharedFlowImpl$Emitter;->value:Ljava/lang/Object;
 
     invoke-static {v14, v5, v6, v3}, Lkotlinx/coroutines/flow/SharedFlowKt;->access$setBufferAt([Ljava/lang/Object;JLjava/lang/Object;)V
@@ -2848,7 +2634,6 @@
 
     long-to-int v0, v0
 
-    .line 573
     invoke-virtual/range {p0 .. p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->getNCollectors()I
 
     move-result v1
@@ -2862,7 +2647,6 @@
     :cond_e8
     move-wide/from16 v3, v17
 
-    .line 575
     :goto_ea
     iget-wide v1, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
@@ -2880,7 +2664,6 @@
 
     move-result-wide v0
 
-    .line 577
     iget v2, v9, Lkotlinx/coroutines/flow/SharedFlowImpl;->bufferCapacity:I
 
     if-nez v2, :cond_116
@@ -2920,13 +2703,10 @@
 
     move-wide v7, v12
 
-    .line 582
     invoke-direct/range {v0 .. v8}, Lkotlinx/coroutines/flow/SharedFlowImpl;->updateBufferLocked(JJJJ)V
 
-    .line 584
     invoke-direct/range {p0 .. p0}, Lkotlinx/coroutines/flow/SharedFlowImpl;->cleanupTailLocked()V
 
-    .line 586
     array-length v0, v11
 
     const/4 v1, 0x1
@@ -2956,10 +2736,8 @@
 .method public final updateNewCollectorIndexLocked$kotlinx_coroutines_core()J
     .registers 5
 
-    .line 515
     iget-wide v0, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->replayIndex:J
 
-    .line 516
     iget-wide v2, p0, Lkotlinx/coroutines/flow/SharedFlowImpl;->minCollectorIndex:J
 
     cmp-long v2, v0, v2

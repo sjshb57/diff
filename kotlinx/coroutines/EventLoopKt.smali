@@ -37,7 +37,6 @@
 .method public static final createEventLoop()Lkotlinx/coroutines/EventLoop;
     .registers 2
 
-    .line 29
     new-instance v0, Lkotlinx/coroutines/BlockingEventLoop;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -54,7 +53,6 @@
 .method public static final isIoDispatcherThread(Ljava/lang/Thread;)Z
     .registers 2
 
-    .line 125
     instance-of v0, p0, Lkotlinx/coroutines/scheduling/CoroutineScheduler$Worker;
 
     if-nez v0, :cond_6
@@ -63,7 +61,6 @@
 
     return p0
 
-    .line 126
     :cond_6
     check-cast p0, Lkotlinx/coroutines/scheduling/CoroutineScheduler$Worker;
 
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 56
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     return-void
@@ -94,7 +90,6 @@
 .method public static final processNextEventInCurrentThread()J
     .registers 2
 
-    .line 54
     sget-object v0, Lkotlinx/coroutines/ThreadLocalEventLoop;->INSTANCE:Lkotlinx/coroutines/ThreadLocalEventLoop;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadLocalEventLoop;->currentOrNull$kotlinx_coroutines_core()Lkotlinx/coroutines/EventLoop;
@@ -119,17 +114,14 @@
 .method public static final runSingleTaskFromCurrentSystemDispatcher()J
     .registers 4
 
-    .line 108
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    .line 109
     instance-of v1, v0, Lkotlinx/coroutines/scheduling/CoroutineScheduler$Worker;
 
     if-eqz v1, :cond_f
 
-    .line 110
     check-cast v0, Lkotlinx/coroutines/scheduling/CoroutineScheduler$Worker;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/scheduling/CoroutineScheduler$Worker;->runSingleTask()J
@@ -138,7 +130,6 @@
 
     return-wide v0
 
-    .line 109
     :cond_f
     new-instance v1, Ljava/lang/IllegalStateException;
 

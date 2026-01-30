@@ -39,7 +39,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Lkotlinx/coroutines/EventLoop;-><init>()V
 
     return-void
@@ -53,7 +52,6 @@
 .method protected reschedule(JLkotlinx/coroutines/EventLoopImplBase$DelayedTask;)V
     .registers 5
 
-    .line 21
     sget-object v0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
     invoke-virtual {v0, p1, p2, p3}, Lkotlinx/coroutines/DefaultExecutor;->schedule(JLkotlinx/coroutines/EventLoopImplBase$DelayedTask;)V
@@ -64,19 +62,16 @@
 .method protected final unpark()V
     .registers 3
 
-    .line 15
     invoke-virtual {p0}, Lkotlinx/coroutines/EventLoopImplPlatform;->getThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    .line 16
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
 
     if-eq v1, v0, :cond_1c
 
-    .line 17
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v1

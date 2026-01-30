@@ -36,13 +36,10 @@
 
     sget-object v0, La/e;->b:La/e$a;
 
-    .line 1
     sget-object v0, La/e;->c:La/e;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
     const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -57,7 +54,6 @@
 
     if-eqz v0, :cond_24
 
-    .line 4
     invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_3e
@@ -65,10 +61,8 @@
     :cond_24
     sget-object p1, La/i;->c:La/i$a;
 
-    .line 5
     sget-object p1, La/i;->d:La/i;
 
-    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Did not find the correct web view container for name: "
@@ -159,13 +153,10 @@
 
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 1
     sget-object v0, La/i;->d:La/i;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
     const-string v1, "message"
 
     const-string v2, "Interface authenticationIsSupported."
@@ -176,7 +167,6 @@
 
     invoke-virtual {v0, v1, v2}, La/i;->a(ILjava/lang/String;)V
 
-    .line 4
     sget-object v0, Lcom/onevcat/uniwebview/y;->a:Lcom/onevcat/uniwebview/y;
 
     invoke-virtual {p0, v0}, Lcom/onevcat/uniwebview/UniWebViewInterface$a;->c(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
@@ -247,17 +237,14 @@
 
     sget-object p2, La/i;->c:La/i$a;
 
-    .line 1
     sget-object p2, La/i;->d:La/i;
 
-    .line 2
     const-string v0, "Exception detected: "
 
     invoke-static {v0}, La/g;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -320,17 +307,14 @@
 
     sget-object v0, La/i;->c:La/i$a;
 
-    .line 7
     sget-object v0, La/i;->d:La/i;
 
-    .line 8
     const-string v2, "Exception detected: "
 
     invoke-static {v2}, La/g;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1

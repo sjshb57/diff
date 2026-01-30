@@ -102,7 +102,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 23
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->invoke(Ljava/lang/Throwable;)V
@@ -115,19 +114,16 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .registers 4
 
-    .line 24
     instance-of p1, p1, Ljava/util/concurrent/CancellationException;
 
     if-eqz p1, :cond_a
 
-    .line 25
     iget-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->$cancellation:Lcom/google/android/gms/tasks/CancellationTokenSource;
 
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/CancellationTokenSource;->cancel()V
 
     return-void
 
-    .line 29
     :cond_a
     iget-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->$this_asTask:Lkotlinx/coroutines/Deferred;
 
@@ -137,7 +133,6 @@
 
     if-nez p1, :cond_1e
 
-    .line 31
     iget-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->$source:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     iget-object v0, p0, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->$this_asTask:Lkotlinx/coroutines/Deferred;
@@ -150,7 +145,6 @@
 
     goto :goto_35
 
-    .line 33
     :cond_1e
     iget-object v0, p0, Lkotlinx/coroutines/tasks/TasksKt$asTask$1;->$source:Lcom/google/android/gms/tasks/TaskCompletionSource;
 

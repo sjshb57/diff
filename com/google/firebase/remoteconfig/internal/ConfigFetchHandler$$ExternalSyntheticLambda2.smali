@@ -16,7 +16,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;Ljava/util/Date;)V
     .registers 3
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$$ExternalSyntheticLambda2;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
@@ -31,7 +30,6 @@
 .method public final then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$$ExternalSyntheticLambda2;->f$0:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler$$ExternalSyntheticLambda2;->f$1:Ljava/util/Date;

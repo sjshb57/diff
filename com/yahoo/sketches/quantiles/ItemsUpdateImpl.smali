@@ -17,7 +17,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,22 +61,18 @@
 
     move/from16 v10, p4
 
-    .line 44
     invoke-virtual/range {p6 .. p6}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v11
 
-    .line 45
     invoke-virtual/range {p6 .. p6}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v12
 
-    .line 46
     invoke-virtual/range {p6 .. p6}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v14
 
-    .line 48
     invoke-static {v12, v13, v0}, Lcom/yahoo/sketches/quantiles/Util;->lowestZeroBitStartingAt(JI)I
 
     move-result v15
@@ -88,7 +83,6 @@
 
     mul-int/2addr v1, v14
 
-    .line 52
     invoke-static {v9, v10, v11, v1, v14}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->zipSize2KBuffer([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     goto :goto_29
@@ -102,7 +96,6 @@
 
     move/from16 v3, p2
 
-    .line 57
     invoke-static {v2, v3, v11, v1, v14}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :goto_29
@@ -119,7 +112,6 @@
 
     mul-int v6, v1, v14
 
-    .line 69
     invoke-virtual/range {p6 .. p6}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v16
@@ -150,10 +142,8 @@
 
     move-object/from16 v8, v16
 
-    .line 65
     invoke-static/range {v1 .. v8}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->mergeTwoSizeKBuffers([Ljava/lang/Object;I[Ljava/lang/Object;I[Ljava/lang/Object;IILjava/util/Comparator;)V
 
-    .line 70
     invoke-static {v9, v10, v11, v15, v14}, Lcom/yahoo/sketches/quantiles/ItemsUpdateImpl;->zipSize2KBuffer([Ljava/lang/Object;I[Ljava/lang/Object;II)V
 
     add-int/lit8 v8, v13, 0x3
@@ -162,7 +152,6 @@
 
     const/4 v1, 0x0
 
-    .line 75
     invoke-static {v11, v12, v8, v1}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
     add-int/lit8 v8, v13, 0x1
@@ -184,7 +173,6 @@
 
     move-object/from16 v0, p6
 
-    .line 79
     iput-wide v12, v0, Lcom/yahoo/sketches/quantiles/ItemsSketch;->bitPattern_:J
 
     return-void
@@ -213,12 +201,10 @@
         }
     .end annotation
 
-    .line 19
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v0
 
-    .line 20
     invoke-static {v0, p1, p2}, Lcom/yahoo/sketches/quantiles/Util;->computeNumLevelsNeeded(IJ)I
 
     move-result p1
@@ -232,7 +218,6 @@
 
     mul-int/2addr p1, v0
 
-    .line 29
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBufferAllocatedCount()I
 
     move-result p2
@@ -241,7 +226,6 @@
 
     return-void
 
-    .line 33
     :cond_15
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
@@ -253,7 +237,6 @@
 
     iput-object p2, p0, Lcom/yahoo/sketches/quantiles/ItemsSketch;->combinedBuffer_:[Ljava/lang/Object;
 
-    .line 34
     iput p1, p0, Lcom/yahoo/sketches/quantiles/ItemsSketch;->combinedBufferItemCapacity_:I
 
     return-void
@@ -303,7 +286,6 @@
 
     if-ge p3, p6, :cond_27
 
-    .line 107
     aget-object v1, p2, p3
 
     aget-object v2, p0, p1
@@ -318,7 +300,6 @@
 
     add-int/lit8 v2, p3, 0x1
 
-    .line 108
     aget-object p3, p2, p3
 
     aput-object p3, p4, p5
@@ -334,7 +315,6 @@
 
     add-int/lit8 v2, p1, 0x1
 
-    .line 110
     aget-object p1, p0, p1
 
     aput-object p1, p4, p5
@@ -350,7 +330,6 @@
 
     sub-int/2addr v0, p1
 
-    .line 115
     invoke-static {p0, p1, p4, p5, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_32
@@ -358,7 +337,6 @@
     :cond_2e
     sub-int/2addr p6, p3
 
-    .line 118
     invoke-static {p0, p3, p4, p5, p6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :goto_32
@@ -384,7 +362,6 @@
         }
     .end annotation
 
-    .line 87
     sget-object v0, Lcom/yahoo/sketches/quantiles/ItemsSketch;->rand:Ljava/util/Random;
 
     invoke-virtual {v0}, Ljava/util/Random;->nextBoolean()Z
@@ -398,7 +375,6 @@
     :goto_8
     if-ge p3, p4, :cond_13
 
-    .line 90
     aget-object v0, p0, p1
 
     aput-object v0, p2, p3

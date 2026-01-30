@@ -214,7 +214,6 @@
 
     move-result-object v0
 
-    .line 225
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;->label:I
 
     const/4 v2, 0x1
@@ -243,7 +242,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/SharingCommand;
 
-    .line 226
     sget-object v1, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Lkotlinx/coroutines/flow/SharingCommand;->ordinal()I
@@ -260,7 +258,6 @@
 
     goto :goto_52
 
-    .line 230
     :cond_2c
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;->$initialValue:Ljava/lang/Object;
 
@@ -268,14 +265,12 @@
 
     if-ne p1, v0, :cond_38
 
-    .line 231
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;->$shared:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
     invoke-interface {p1}, Lkotlinx/coroutines/flow/MutableSharedFlow;->resetReplayCache()V
 
     goto :goto_52
 
-    .line 233
     :cond_38
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;->$shared:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
@@ -285,7 +280,6 @@
 
     goto :goto_52
 
-    .line 227
     :cond_40
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__ShareKt$launchSharing$1$2;->$upstream:Lkotlinx/coroutines/flow/Flow;
 
@@ -307,7 +301,6 @@
 
     return-object v0
 
-    .line 237
     :cond_52
     :goto_52
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

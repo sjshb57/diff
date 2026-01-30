@@ -187,7 +187,6 @@
 
     move-result-object v0
 
-    .line 273
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransformUnsafe$1$1;->label:I
 
     const/4 v2, 0x1
@@ -254,7 +253,6 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    .line 273
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransformUnsafe$1$1;->$transform:Lkotlin/jvm/functions/Function3;
 
     invoke-interface {v1, p1, v0, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

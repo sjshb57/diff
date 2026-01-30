@@ -51,19 +51,16 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 18
     new-instance v0, Lkotlin/coroutines/jvm/internal/RunSuspend;
 
     invoke-direct {v0}, Lkotlin/coroutines/jvm/internal/RunSuspend;-><init>()V
 
-    .line 19
     move-object v1, v0
 
     check-cast v1, Lkotlin/coroutines/Continuation;
 
     invoke-static {p0, v1}, Lkotlin/coroutines/ContinuationKt;->startCoroutine(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
 
-    .line 20
     invoke-virtual {v0}, Lkotlin/coroutines/jvm/internal/RunSuspend;->await()V
 
     return-void

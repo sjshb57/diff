@@ -43,7 +43,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 6
 
-    .line 1
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/onevcat/uniwebview/i0;->a:Ljava/lang/String;
@@ -69,7 +68,6 @@
 
     invoke-direct {v2, v0, v3, v1, v4}, La/g0;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;La/i0;)V
 
-    .line 2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

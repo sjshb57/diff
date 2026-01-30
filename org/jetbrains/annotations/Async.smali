@@ -16,10 +16,8 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
     new-instance v0, Ljava/lang/AssertionError;
 
     const/4 v1, 0x0

@@ -43,7 +43,6 @@
 .method private static final print(B)V
     .registers 2
 
-    .line 38
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -58,7 +57,6 @@
 .method private static final print(C)V
     .registers 2
 
-    .line 50
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print(C)V
@@ -69,7 +67,6 @@
 .method private static final print(D)V
     .registers 3
 
-    .line 68
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0, p1}, Ljava/io/PrintStream;->print(D)V
@@ -80,7 +77,6 @@
 .method private static final print(F)V
     .registers 2
 
-    .line 62
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print(F)V
@@ -91,7 +87,6 @@
 .method private static final print(I)V
     .registers 2
 
-    .line 26
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print(I)V
@@ -102,7 +97,6 @@
 .method private static final print(J)V
     .registers 3
 
-    .line 32
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0, p1}, Ljava/io/PrintStream;->print(J)V
@@ -113,7 +107,6 @@
 .method private static final print(Ljava/lang/Object;)V
     .registers 2
 
-    .line 20
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print(Ljava/lang/Object;)V
@@ -124,7 +117,6 @@
 .method private static final print(S)V
     .registers 2
 
-    .line 44
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
@@ -139,7 +131,6 @@
 .method private static final print(Z)V
     .registers 2
 
-    .line 56
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print(Z)V
@@ -154,7 +145,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->print([C)V
@@ -165,7 +155,6 @@
 .method private static final println()V
     .registers 1
 
-    .line 140
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0}, Ljava/io/PrintStream;->println()V
@@ -176,7 +165,6 @@
 .method private static final println(B)V
     .registers 2
 
-    .line 98
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -191,7 +179,6 @@
 .method private static final println(C)V
     .registers 2
 
-    .line 110
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(C)V
@@ -202,7 +189,6 @@
 .method private static final println(D)V
     .registers 3
 
-    .line 128
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0, p1}, Ljava/io/PrintStream;->println(D)V
@@ -213,7 +199,6 @@
 .method private static final println(F)V
     .registers 2
 
-    .line 122
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(F)V
@@ -224,7 +209,6 @@
 .method private static final println(I)V
     .registers 2
 
-    .line 86
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(I)V
@@ -235,7 +219,6 @@
 .method private static final println(J)V
     .registers 3
 
-    .line 92
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0, p1}, Ljava/io/PrintStream;->println(J)V
@@ -246,7 +229,6 @@
 .method private static final println(Ljava/lang/Object;)V
     .registers 2
 
-    .line 80
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(Ljava/lang/Object;)V
@@ -257,7 +239,6 @@
 .method private static final println(S)V
     .registers 2
 
-    .line 104
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
@@ -272,7 +253,6 @@
 .method private static final println(Z)V
     .registers 2
 
-    .line 116
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(Z)V
@@ -287,7 +267,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 134
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println([C)V
@@ -298,7 +277,6 @@
 .method public static final readLine()Ljava/lang/String;
     .registers 4
 
-    .line 170
     sget-object v0, Lkotlin/io/LineReader;->INSTANCE:Lkotlin/io/LineReader;
 
     sget-object v1, Ljava/lang/System;->in:Ljava/io/InputStream;
@@ -325,7 +303,6 @@
 .method public static final readln()Ljava/lang/String;
     .registers 2
 
-    .line 152
     invoke-static {}, Lkotlin/io/ConsoleKt;->readlnOrNull()Ljava/lang/String;
 
     move-result-object v0
@@ -347,7 +324,6 @@
 .method public static final readlnOrNull()Ljava/lang/String;
     .registers 1
 
-    .line 163
     invoke-static {}, Lkotlin/io/ConsoleKt;->readLine()Ljava/lang/String;
 
     move-result-object v0

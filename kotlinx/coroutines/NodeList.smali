@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 1354
     invoke-direct {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;-><init>()V
 
     return-void
@@ -63,27 +62,22 @@
 .method public final getString(Ljava/lang/String;)Ljava/lang/String;
     .registers 7
 
-    .line 1358
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "List{"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1360
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1361
     const-string p1, "}["
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1363
     move-object p1, p0
 
     check-cast p1, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;
 
-    .line 1452
     invoke-virtual {p1}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v1
@@ -96,7 +90,6 @@
 
     const/4 v2, 0x1
 
-    .line 1453
     :goto_1e
     invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -104,7 +97,6 @@
 
     if-nez v3, :cond_3c
 
-    .line 1454
     instance-of v3, v1, Lkotlinx/coroutines/JobNode;
 
     if-eqz v3, :cond_37
@@ -119,17 +111,14 @@
 
     goto :goto_34
 
-    .line 1364
     :cond_2f
     const-string v4, ", "
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1365
     :goto_34
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 1455
     :cond_37
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
@@ -137,13 +126,11 @@
 
     goto :goto_1e
 
-    .line 1367
     :cond_3c
     const-string p1, "]"
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1358
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -166,7 +153,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 1371
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getDEBUG()Z
 
     move-result v0

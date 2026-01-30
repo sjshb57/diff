@@ -81,7 +81,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 661
     invoke-static {}, Lkotlin/collections/MapsKt;->emptyMap()Ljava/util/Map;
 
     move-result-object v0
@@ -105,10 +104,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 657
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 658
     iput-object p1, p0, Lkotlin/collections/builders/SerializedMap;->map:Ljava/util/Map;
 
     return-void
@@ -117,7 +114,6 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 2
 
-    .line 688
     iget-object v0, p0, Lkotlin/collections/builders/SerializedMap;->map:Ljava/util/Map;
 
     return-object v0
@@ -132,21 +128,18 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 673
     invoke-interface {p1}, Ljava/io/ObjectInput;->readByte()B
 
     move-result v0
 
     if-nez v0, :cond_46
 
-    .line 677
     invoke-interface {p1}, Ljava/io/ObjectInput;->readInt()I
 
     move-result v0
 
     if-ltz v0, :cond_2d
 
-    .line 679
     invoke-static {v0}, Lkotlin/collections/MapsKt;->createMapBuilder(I)Ljava/util/Map;
 
     move-result-object v1
@@ -156,24 +149,20 @@
     :goto_16
     if-ge v2, v0, :cond_26
 
-    .line 681
     invoke-interface {p1}, Ljava/io/ObjectInput;->readObject()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 682
     invoke-interface {p1}, Ljava/io/ObjectInput;->readObject()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 683
     invoke-interface {v1, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_16
 
-    .line 679
     :cond_26
     invoke-static {v1}, Lkotlin/collections/MapsKt;->build(Ljava/util/Map;)Ljava/util/Map;
 
@@ -183,7 +172,6 @@
 
     return-void
 
-    .line 678
     :cond_2d
     new-instance p1, Ljava/io/InvalidObjectException;
 
@@ -207,7 +195,6 @@
 
     throw p1
 
-    .line 675
     :cond_46
     new-instance p1, Ljava/io/InvalidObjectException;
 
@@ -237,10 +224,8 @@
 
     const/4 v0, 0x0
 
-    .line 664
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeByte(I)V
 
-    .line 665
     iget-object v0, p0, Lkotlin/collections/builders/SerializedMap;->map:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -249,7 +234,6 @@
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeInt(I)V
 
-    .line 666
     iget-object v0, p0, Lkotlin/collections/builders/SerializedMap;->map:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -273,14 +257,12 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 667
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-interface {p1, v2}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
 
-    .line 668
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1

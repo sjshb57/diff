@@ -87,7 +87,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 60
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ExceptionsConstructorKt$createConstructor$1$4;->invoke(Ljava/lang/Throwable;)Ljava/lang/Throwable;
@@ -100,7 +99,6 @@
 .method public final invoke(Ljava/lang/Throwable;)Ljava/lang/Throwable;
     .registers 4
 
-    .line 60
     iget-object v0, p0, Lkotlinx/coroutines/internal/ExceptionsConstructorKt$createConstructor$1$4;->$constructor:Ljava/lang/reflect/Constructor;
 
     const/4 v1, 0x0

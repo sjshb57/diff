@@ -60,7 +60,6 @@
 
     const/4 v0, 0x0
 
-    .line 160
     invoke-direct {p0, p1, v0}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
     return-void
@@ -77,10 +76,8 @@
         }
     .end annotation
 
-    .line 159
     invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
 
-    .line 157
     iput p1, p0, Lkotlin/coroutines/jvm/internal/SuspendLambda;->arity:I
 
     return-void
@@ -91,7 +88,6 @@
 .method public getArity()I
     .registers 2
 
-    .line 157
     iget v0, p0, Lkotlin/coroutines/jvm/internal/SuspendLambda;->arity:I
 
     return v0
@@ -100,14 +96,12 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 163
     invoke-virtual {p0}, Lkotlin/coroutines/jvm/internal/SuspendLambda;->getCompletion()Lkotlin/coroutines/Continuation;
 
     move-result-object v0
 
     if-nez v0, :cond_13
 
-    .line 164
     move-object v0, p0
 
     check-cast v0, Lkotlin/jvm/internal/FunctionBase;
@@ -122,7 +116,6 @@
 
     goto :goto_17
 
-    .line 166
     :cond_13
     invoke-super {p0}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;->toString()Ljava/lang/String;
 

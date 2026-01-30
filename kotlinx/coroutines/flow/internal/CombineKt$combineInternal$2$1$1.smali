@@ -137,7 +137,6 @@
 
     move-result-object v1
 
-    .line 31
     iget v2, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1$1$emit$1;->label:I
 
     const/4 v3, 0x2
@@ -171,7 +170,6 @@
     :cond_39
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 32
     iget-object p2, p0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1$1;->$resultChannel:Lkotlinx/coroutines/channels/Channel;
 
     new-instance v2, Lkotlin/collections/IndexedValue;
@@ -190,7 +188,6 @@
 
     return-object v1
 
-    .line 33
     :cond_4e
     :goto_4e
     iput v3, v0, Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1$1$emit$1;->label:I
@@ -203,7 +200,6 @@
 
     return-object v1
 
-    .line 34
     :cond_57
     :goto_57
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

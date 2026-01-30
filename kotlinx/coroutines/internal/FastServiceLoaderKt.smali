@@ -37,7 +37,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 17
     :try_start_0
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
@@ -81,7 +80,6 @@
 .method public static final getANDROID_DETECTED()Z
     .registers 1
 
-    .line 17
     sget-boolean v0, Lkotlinx/coroutines/internal/FastServiceLoaderKt;->ANDROID_DETECTED:Z
 
     return v0

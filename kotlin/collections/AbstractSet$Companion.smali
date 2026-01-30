@@ -47,7 +47,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -83,7 +82,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 43
     invoke-interface {p1}, Ljava/util/Set;->size()I
 
     move-result v0
@@ -98,7 +96,6 @@
 
     return p1
 
-    .line 44
     :cond_16
     check-cast p1, Ljava/util/Collection;
 
@@ -125,7 +122,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 36
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -147,7 +143,6 @@
 
     if-eqz v2, :cond_1c
 
-    .line 37
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     move-result v2

@@ -200,7 +200,6 @@
 
     move-result-object v0
 
-    .line 38
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__ChannelsKt$trySendBlocking$2;->label:I
 
     const/4 v2, 0x1
@@ -232,7 +231,6 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 39
     iget-object p1, p0, Lkotlinx/coroutines/channels/ChannelsKt__ChannelsKt$trySendBlocking$2;->$this_trySendBlocking:Lkotlinx/coroutines/channels/SendChannel;
 
     iget-object v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__ChannelsKt$trySendBlocking$2;->$element:Ljava/lang/Object;
@@ -275,7 +273,6 @@
 
     move-result-object p1
 
-    .line 40
     :goto_3f
     invoke-static {p1}, Lkotlin/Result;->isSuccess-impl(Ljava/lang/Object;)Z
 
@@ -293,7 +290,6 @@
 
     goto :goto_58
 
-    .line 41
     :cond_4e
     sget-object v0, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 

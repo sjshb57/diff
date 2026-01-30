@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,11 +18,9 @@
 .method static synthetic lambda$processRegistrar$0(Ljava/lang/String;Lcom/google/firebase/components/Component;Lcom/google/firebase/components/ComponentContainer;)Ljava/lang/Object;
     .registers 3
 
-    .line 37
     :try_start_0
     invoke-static {p0}, Lcom/google/firebase/tracing/FirebaseTrace;->pushTrace(Ljava/lang/String;)V
 
-    .line 38
     invoke-virtual {p1}, Lcom/google/firebase/components/Component;->getFactory()Lcom/google/firebase/components/ComponentFactory;
 
     move-result-object p0
@@ -34,7 +31,6 @@
     :try_end_b
     .catchall {:try_start_0 .. :try_end_b} :catchall_f
 
-    .line 40
     invoke-static {}, Lcom/google/firebase/tracing/FirebaseTrace;->popTrace()V
 
     return-object p0
@@ -44,7 +40,6 @@
 
     invoke-static {}, Lcom/google/firebase/tracing/FirebaseTrace;->popTrace()V
 
-    .line 41
     throw p0
 .end method
 
@@ -63,12 +58,10 @@
         }
     .end annotation
 
-    .line 27
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 28
     invoke-interface {p1}, Lcom/google/firebase/components/ComponentRegistrar;->getComponents()Ljava/util/List;
 
     move-result-object p1
@@ -90,24 +83,20 @@
 
     check-cast v1, Lcom/google/firebase/components/Component;
 
-    .line 29
     invoke-virtual {v1}, Lcom/google/firebase/components/Component;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_28
 
-    .line 33
     new-instance v3, Lcom/google/firebase/tracing/ComponentMonitor$$ExternalSyntheticLambda0;
 
     invoke-direct {v3, v2, v1}, Lcom/google/firebase/tracing/ComponentMonitor$$ExternalSyntheticLambda0;-><init>(Ljava/lang/String;Lcom/google/firebase/components/Component;)V
 
-    .line 34
     invoke-virtual {v1, v3}, Lcom/google/firebase/components/Component;->withFactory(Lcom/google/firebase/components/ComponentFactory;)Lcom/google/firebase/components/Component;
 
     move-result-object v1
 
-    .line 44
     :cond_28
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

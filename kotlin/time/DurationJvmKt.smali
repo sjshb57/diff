@@ -61,7 +61,6 @@
 .method static constructor <clinit>()V
     .registers 4
 
-    .line 12
     const-class v0, Lkotlin/time/Duration;
 
     const/4 v0, 0x0
@@ -70,7 +69,6 @@
 
     const/4 v1, 0x4
 
-    .line 14
     new-array v2, v1, [Ljava/lang/ThreadLocal;
 
     :goto_8
@@ -95,7 +93,6 @@
 .method private static final createFormatForDecimals(I)Ljava/text/DecimalFormat;
     .registers 3
 
-    .line 16
     new-instance v0, Ljava/text/DecimalFormat;
 
     const-string v1, "0"
@@ -104,10 +101,8 @@
 
     if-lez p0, :cond_c
 
-    .line 17
     invoke-virtual {v0, p0}, Ljava/text/DecimalFormat;->setMinimumFractionDigits(I)V
 
-    .line 18
     :cond_c
     sget-object p0, Ljava/math/RoundingMode;->HALF_UP:Ljava/math/RoundingMode;
 
@@ -119,14 +114,12 @@
 .method public static final formatToExactDecimals(DI)Ljava/lang/String;
     .registers 5
 
-    .line 22
     sget-object v0, Lkotlin/time/DurationJvmKt;->precisionFormats:[Ljava/lang/ThreadLocal;
 
     array-length v1, v0
 
     if-ge p2, v1, :cond_1d
 
-    .line 23
     aget-object v0, v0, p2
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -153,13 +146,11 @@
 
     goto :goto_21
 
-    .line 25
     :cond_1d
     invoke-static {p2}, Lkotlin/time/DurationJvmKt;->createFormatForDecimals(I)Ljava/text/DecimalFormat;
 
     move-result-object v1
 
-    .line 26
     :goto_21
     invoke-virtual {v1, p0, p1}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
 
@@ -177,15 +168,12 @@
 
     const/4 v0, 0x0
 
-    .line 30
     invoke-static {v0}, Lkotlin/time/DurationJvmKt;->createFormatForDecimals(I)Ljava/text/DecimalFormat;
 
     move-result-object v0
 
-    .line 31
     invoke-virtual {v0, p2}, Ljava/text/DecimalFormat;->setMaximumFractionDigits(I)V
 
-    .line 32
     invoke-virtual {v0, p0, p1}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
 
     move-result-object p0
@@ -200,7 +188,6 @@
 .method public static final getDurationAssertionsEnabled()Z
     .registers 1
 
-    .line 12
     sget-boolean v0, Lkotlin/time/DurationJvmKt;->durationAssertionsEnabled:Z
 
     return v0

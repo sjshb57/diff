@@ -91,7 +91,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 14
     new-instance v0, Lkotlin/collections/builders/MapBuilder;
 
     invoke-direct {v0}, Lkotlin/collections/builders/MapBuilder;-><init>()V
@@ -104,7 +103,6 @@
 .method public constructor <init>(I)V
     .registers 3
 
-    .line 16
     new-instance v0, Lkotlin/collections/builders/MapBuilder;
 
     invoke-direct {v0, p1}, Lkotlin/collections/builders/MapBuilder;-><init>(I)V
@@ -128,10 +126,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 12
     invoke-direct {p0}, Lkotlin/collections/AbstractMutableSet;-><init>()V
 
-    .line 11
     iput-object p1, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     return-void
@@ -140,7 +136,6 @@
 .method private final writeReplace()Ljava/lang/Object;
     .registers 4
 
-    .line 24
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->isReadOnly$kotlin_stdlib()Z
@@ -149,7 +144,6 @@
 
     if-eqz v0, :cond_12
 
-    .line 25
     new-instance v0, Lkotlin/collections/builders/SerializedCollection;
 
     move-object v1, p0
@@ -162,7 +156,6 @@
 
     return-object v0
 
-    .line 27
     :cond_12
     new-instance v0, Ljava/io/NotSerializableException;
 
@@ -183,7 +176,6 @@
         }
     .end annotation
 
-    .line 33
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0, p1}, Lkotlin/collections/builders/MapBuilder;->addKey$kotlin_stdlib(Ljava/lang/Object;)I
@@ -217,12 +209,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 38
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 39
     invoke-super {p0, p1}, Lkotlin/collections/AbstractMutableSet;->addAll(Ljava/util/Collection;)Z
 
     move-result p1
@@ -240,12 +230,10 @@
         }
     .end annotation
 
-    .line 19
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->build()Ljava/util/Map;
 
-    .line 20
     move-object v0, p0
 
     check-cast v0, Ljava/util/Set;
@@ -256,7 +244,6 @@
 .method public clear()V
     .registers 2
 
-    .line 32
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->clear()V
@@ -267,7 +254,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 31
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0, p1}, Lkotlin/collections/builders/MapBuilder;->containsKey(Ljava/lang/Object;)Z
@@ -280,7 +266,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 29
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->size()I
@@ -293,7 +278,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 30
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->isEmpty()Z
@@ -313,7 +297,6 @@
         }
     .end annotation
 
-    .line 35
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->keysIterator$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder$KeysItr;
@@ -328,7 +311,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 34
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0, p1}, Lkotlin/collections/builders/MapBuilder;->removeKey$kotlin_stdlib(Ljava/lang/Object;)I
@@ -364,12 +346,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 43
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 44
     invoke-super {p0, p1}, Lkotlin/collections/AbstractMutableSet;->removeAll(Ljava/util/Collection;)Z
 
     move-result p1
@@ -393,12 +373,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 48
     iget-object v0, p0, Lkotlin/collections/builders/SetBuilder;->backing:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 49
     invoke-super {p0, p1}, Lkotlin/collections/AbstractMutableSet;->retainAll(Ljava/util/Collection;)Z
 
     move-result p1

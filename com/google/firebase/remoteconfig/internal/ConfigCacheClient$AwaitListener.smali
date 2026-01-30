@@ -40,10 +40,8 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 248
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 250
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v1, 0x1
@@ -58,7 +56,6 @@
 .method synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$1;)V
     .registers 2
 
-    .line 248
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;-><init>()V
 
     return-void
@@ -74,7 +71,6 @@
         }
     .end annotation
 
-    .line 268
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
@@ -90,7 +86,6 @@
         }
     .end annotation
 
-    .line 272
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
@@ -103,7 +98,6 @@
 .method public onCanceled()V
     .registers 2
 
-    .line 264
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -114,7 +108,6 @@
 .method public onFailure(Ljava/lang/Exception;)V
     .registers 2
 
-    .line 259
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -130,7 +123,6 @@
         }
     .end annotation
 
-    .line 254
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V

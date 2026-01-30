@@ -93,10 +93,8 @@
 
     iput-object p1, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->this$0:Lkotlin/sequences/TransformingIndexedSequence;
 
-    .line 230
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 231
     invoke-static {p1}, Lkotlin/sequences/TransformingIndexedSequence;->access$getSequence$p(Lkotlin/sequences/TransformingIndexedSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -115,7 +113,6 @@
 .method public final getIndex()I
     .registers 2
 
-    .line 232
     iget v0, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->index:I
 
     return v0
@@ -131,7 +128,6 @@
         }
     .end annotation
 
-    .line 231
     iget-object v0, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -140,7 +136,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 238
     iget-object v0, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -158,7 +153,6 @@
         }
     .end annotation
 
-    .line 234
     iget-object v0, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->this$0:Lkotlin/sequences/TransformingIndexedSequence;
 
     invoke-static {v0}, Lkotlin/sequences/TransformingIndexedSequence;->access$getTransformer$p(Lkotlin/sequences/TransformingIndexedSequence;)Lkotlin/jvm/functions/Function2;
@@ -208,7 +202,6 @@
 .method public final setIndex(I)V
     .registers 2
 
-    .line 232
     iput p1, p0, Lkotlin/sequences/TransformingIndexedSequence$iterator$1;->index:I
 
     return-void

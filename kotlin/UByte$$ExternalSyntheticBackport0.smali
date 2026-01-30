@@ -7,7 +7,6 @@
 .method public static synthetic m(D)I
     .registers 4
 
-    .line 0
     invoke-static {p0, p1}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide p0
@@ -26,7 +25,6 @@
 .method public static synthetic m(II)I
     .registers 6
 
-    .line 0
     int-to-long v0, p0
 
     const-wide v2, 0xffffffffL
@@ -47,7 +45,6 @@
 .method public static synthetic m(J)I
     .registers 4
 
-    .line 0
     const/16 v0, 0x20
 
     ushr-long v0, p0, v0
@@ -62,7 +59,6 @@
 .method public static synthetic m(JJ)I
     .registers 6
 
-    .line 0
     const-wide/high16 v0, -0x8000000000000000L
 
     xor-long/2addr p0, v0
@@ -79,7 +75,6 @@
 .method public static synthetic m(Z)I
     .registers 1
 
-    .line 0
     if-eqz p0, :cond_5
 
     const/16 p0, 0x4cf
@@ -96,7 +91,6 @@
 .method public static synthetic m(JJ)J
     .registers 11
 
-    .line 0
     const-wide/16 v0, 0x0
 
     cmp-long v2, p2, v0
@@ -164,7 +158,6 @@
 .method public static synthetic m(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 0
     if-nez p0, :cond_4
 
     const/4 p0, 0x1
@@ -181,7 +174,6 @@
 .method public static synthetic m$1(II)I
     .registers 6
 
-    .line 0
     int-to-long v0, p0
 
     const-wide v2, 0xffffffffL
@@ -202,7 +194,6 @@
 .method public static synthetic m$1(JJ)J
     .registers 11
 
-    .line 0
     const-wide/16 v0, 0x0
 
     cmp-long v2, p2, v0
@@ -272,7 +263,6 @@
 .method public static synthetic m$2(II)I
     .registers 3
 
-    .line 0
     const/high16 v0, -0x80000000
 
     xor-int/2addr p0, v0

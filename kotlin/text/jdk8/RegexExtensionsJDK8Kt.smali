@@ -39,7 +39,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
     instance-of v0, p0, Lkotlin/text/MatchNamedGroupCollection;
 
     if-eqz v0, :cond_11
@@ -54,14 +53,12 @@
     :goto_12
     if-eqz p0, :cond_19
 
-    .line 35
     invoke-interface {p0, p1}, Lkotlin/text/MatchNamedGroupCollection;->get(Ljava/lang/String;)Lkotlin/text/MatchGroup;
 
     move-result-object p0
 
     return-object p0
 
-    .line 33
     :cond_19
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 

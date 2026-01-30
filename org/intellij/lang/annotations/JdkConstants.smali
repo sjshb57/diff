@@ -34,10 +34,8 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 39
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "JdkConstants should not be instantiated"

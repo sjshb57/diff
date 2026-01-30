@@ -17,7 +17,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,21 +64,17 @@
 
     add-int v2, v1, p1
 
-    .line 98
     aget-object v2, p0, v2
 
     move v3, v0
 
-    .line 100
     :goto_9
     array-length v4, p5
 
     if-ge v3, v4, :cond_18
 
-    .line 101
     aget-object v4, p5, v3
 
-    .line 102
     invoke-interface {p7, v2, v4}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v4
@@ -93,7 +88,6 @@
 
     goto :goto_9
 
-    .line 107
     :cond_18
     :goto_18
     aget-wide v4, p6, v3
@@ -135,18 +129,14 @@
         }
     .end annotation
 
-    .line 15
     invoke-static {p1, p0}, Lcom/yahoo/sketches/quantiles/ItemsPmfCdfImpl;->internalBuildHistogram([Ljava/lang/Object;Lcom/yahoo/sketches/quantiles/ItemsSketch;)[J
 
     move-result-object p1
 
-    .line 16
     array-length v0, p1
 
-    .line 17
     new-array v1, v0, [D
 
-    .line 18
     invoke-virtual {p0}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getN()J
 
     move-result-wide v2
@@ -162,7 +152,6 @@
     :goto_11
     if-ge p0, v0, :cond_28
 
-    .line 22
     aget-wide v6, p1, p0
 
     add-long/2addr v4, v6
@@ -171,7 +160,6 @@
 
     div-double/2addr v6, v2
 
-    .line 24
     aput-wide v6, v1, p0
 
     add-int/lit8 p0, p0, 0x1
@@ -182,14 +170,12 @@
     :goto_1d
     if-ge p0, v0, :cond_28
 
-    .line 28
     aget-wide v4, p1, p0
 
     long-to-double v4, v4
 
     div-double/2addr v4, v2
 
-    .line 30
     aput-wide v4, v1, p0
 
     add-int/lit8 p0, p0, 0x1
@@ -225,29 +211,24 @@
 
     move-object/from16 v8, p0
 
-    .line 47
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getCombinedBuffer()[Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 49
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBaseBufferCount()I
 
     move-result v2
 
-    .line 50
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v0
 
     invoke-static {v8, v0}, Lcom/yahoo/sketches/quantiles/ItemsUtil;->validateValues([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 52
     array-length v0, v8
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 54
     new-array v10, v1, [J
 
     const/16 v1, 0x32
@@ -260,7 +241,6 @@
 
     const/4 v1, 0x0
 
-    .line 60
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v7
@@ -273,18 +253,15 @@
 
     move-object v6, v10
 
-    .line 59
     invoke-static/range {v0 .. v7}, Lcom/yahoo/sketches/quantiles/ItemsPmfCdfImpl;->bilinearTimeIncrementHistogramCounters([Ljava/lang/Object;IIJ[Ljava/lang/Object;[JLjava/util/Comparator;)V
 
     goto :goto_3b
 
-    .line 62
     :cond_2b
     invoke-static {v9, v11, v2}, Ljava/util/Arrays;->sort([Ljava/lang/Object;II)V
 
     const/4 v1, 0x0
 
-    .line 65
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v7
@@ -297,16 +274,13 @@
 
     move-object v6, v10
 
-    .line 64
     invoke-static/range {v0 .. v7}, Lcom/yahoo/sketches/quantiles/ItemsPmfCdfImpl;->linearTimeIncrementHistogramCounters([Ljava/lang/Object;IIJ[Ljava/lang/Object;[JLjava/util/Comparator;)V
 
-    .line 69
     :goto_3b
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getBitPattern()J
 
     move-result-wide v0
 
-    .line 70
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getK()I
 
     move-result v14
@@ -340,7 +314,6 @@
 
     mul-int v1, v0, v14
 
-    .line 77
     invoke-virtual/range {p1 .. p1}, Lcom/yahoo/sketches/quantiles/ItemsSketch;->getComparator()Ljava/util/Comparator;
 
     move-result-object v7
@@ -355,7 +328,6 @@
 
     move-object v6, v10
 
-    .line 76
     invoke-static/range {v0 .. v7}, Lcom/yahoo/sketches/quantiles/ItemsPmfCdfImpl;->linearTimeIncrementHistogramCounters([Ljava/lang/Object;IIJ[Ljava/lang/Object;[JLjava/util/Comparator;)V
 
     :cond_69
@@ -413,14 +385,12 @@
     :goto_2
     if-ge v0, p2, :cond_1e
 
-    .line 131
     array-length v2, p5
 
     if-ge v1, v2, :cond_1e
 
     add-int v2, v0, p1
 
-    .line 132
     aget-object v2, p0, v2
 
     aget-object v3, p5, v1
@@ -431,7 +401,6 @@
 
     if-gez v2, :cond_1b
 
-    .line 133
     aget-wide v2, p6, v1
 
     add-long/2addr v2, p3
@@ -447,13 +416,11 @@
 
     goto :goto_2
 
-    .line 143
     :cond_1e
     array-length p0, p5
 
     if-ne v1, p0, :cond_29
 
-    .line 144
     aget-wide p0, p6, v1
 
     sub-int/2addr p2, v0

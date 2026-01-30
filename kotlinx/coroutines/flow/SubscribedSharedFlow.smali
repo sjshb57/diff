@@ -104,13 +104,10 @@
         }
     .end annotation
 
-    .line 404
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 405
     iput-object p1, p0, Lkotlinx/coroutines/flow/SubscribedSharedFlow;->sharedFlow:Lkotlinx/coroutines/flow/SharedFlow;
 
-    .line 406
     iput-object p2, p0, Lkotlinx/coroutines/flow/SubscribedSharedFlow;->action:Lkotlin/jvm/functions/Function2;
 
     return-void
@@ -167,7 +164,6 @@
 
     move-result-object v1
 
-    .line 408
     iget v2, v0, Lkotlinx/coroutines/flow/SubscribedSharedFlow$collect$1;->label:I
 
     const/4 v3, 0x1
@@ -192,7 +188,6 @@
     :cond_32
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 409
     iget-object p2, p0, Lkotlinx/coroutines/flow/SubscribedSharedFlow;->sharedFlow:Lkotlinx/coroutines/flow/SharedFlow;
 
     new-instance v2, Lkotlinx/coroutines/flow/SubscribedFlowCollector;

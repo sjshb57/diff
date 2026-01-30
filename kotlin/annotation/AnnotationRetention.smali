@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 65
     new-instance v0, Lkotlin/annotation/AnnotationRetention;
 
     const-string v1, "SOURCE"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationRetention;->SOURCE:Lkotlin/annotation/AnnotationRetention;
 
-    .line 67
     new-instance v0, Lkotlin/annotation/AnnotationRetention;
 
     const-string v1, "BINARY"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationRetention;->BINARY:Lkotlin/annotation/AnnotationRetention;
 
-    .line 69
     new-instance v0, Lkotlin/annotation/AnnotationRetention;
 
     const-string v1, "RUNTIME"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 63
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

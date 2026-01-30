@@ -56,17 +56,14 @@
 
     const/16 v0, 0x40
 
-    .line 574
     new-array v0, v0, [B
 
     fill-array-data v0, :array_5a
 
-    .line 570
     sput-object v0, Lkotlin/io/encoding/Base64Kt;->base64EncodeMap:[B
 
     const/16 v1, 0x100
 
-    .line 579
     new-array v1, v1, [I
 
     const/4 v6, 0x6
@@ -81,17 +78,14 @@
 
     move-object v2, v1
 
-    .line 580
     invoke-static/range {v2 .. v7}, Lkotlin/collections/ArraysKt;->fill$default([IIIIILjava/lang/Object;)V
 
     const/16 v2, 0x3d
 
     const/4 v3, -0x2
 
-    .line 581
     aput v3, v1, v2
 
-    .line 649
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -107,7 +101,6 @@
 
     add-int/lit8 v7, v5, 0x1
 
-    .line 583
     aput v5, v1, v6
 
     add-int/lit8 v4, v4, 0x1
@@ -116,23 +109,19 @@
 
     goto :goto_1f
 
-    .line 579
     :cond_2b
     sput-object v1, Lkotlin/io/encoding/Base64Kt;->base64DecodeMap:[I
 
     const/16 v0, 0x40
 
-    .line 593
     new-array v0, v0, [B
 
     fill-array-data v0, :array_7e
 
-    .line 589
     sput-object v0, Lkotlin/io/encoding/Base64Kt;->base64UrlEncodeMap:[B
 
     const/16 v1, 0x100
 
-    .line 598
     new-array v1, v1, [I
 
     const/4 v8, 0x6
@@ -147,17 +136,14 @@
 
     move-object v4, v1
 
-    .line 599
     invoke-static/range {v4 .. v9}, Lkotlin/collections/ArraysKt;->fill$default([IIIIILjava/lang/Object;)V
 
     const/16 v2, 0x3d
 
     const/4 v4, -0x2
 
-    .line 600
     aput v4, v1, v2
 
-    .line 652
     array-length v2, v0
 
     move v4, v3
@@ -169,7 +155,6 @@
 
     add-int/lit8 v6, v4, 0x1
 
-    .line 602
     aput v4, v1, v5
 
     add-int/lit8 v3, v3, 0x1
@@ -178,7 +163,6 @@
 
     goto :goto_4a
 
-    .line 598
     :cond_56
     sput-object v1, Lkotlin/io/encoding/Base64Kt;->base64UrlDecodeMap:[I
 
@@ -326,7 +310,6 @@
 .method public static final synthetic access$getBase64DecodeMap$p()[I
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64DecodeMap:[I
 
     return-object v0
@@ -335,7 +318,6 @@
 .method public static final synthetic access$getBase64EncodeMap$p()[B
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64EncodeMap:[B
 
     return-object v0
@@ -344,7 +326,6 @@
 .method public static final synthetic access$getBase64UrlDecodeMap$p()[I
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64UrlDecodeMap:[I
 
     return-object v0
@@ -353,7 +334,6 @@
 .method public static final synthetic access$getBase64UrlEncodeMap$p()[B
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64UrlEncodeMap:[B
 
     return-object v0
@@ -388,7 +368,6 @@
 
     if-ltz p0, :cond_e
 
-    .line 610
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64DecodeMap:[I
 
     array-length v1, v0

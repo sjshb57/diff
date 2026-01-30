@@ -68,13 +68,10 @@
 .method public constructor <init>(FF)V
     .registers 3
 
-    .line 177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 181
     iput p1, p0, Lkotlin/ranges/ClosedFloatRange;->_start:F
 
-    .line 182
     iput p2, p0, Lkotlin/ranges/ClosedFloatRange;->_endInclusive:F
 
     return-void
@@ -85,7 +82,6 @@
 .method public contains(F)Z
     .registers 3
 
-    .line 188
     iget v0, p0, Lkotlin/ranges/ClosedFloatRange;->_start:F
 
     cmpl-float v0, p1, v0
@@ -112,7 +108,6 @@
 .method public bridge synthetic contains(Ljava/lang/Comparable;)Z
     .registers 2
 
-    .line 177
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -129,7 +124,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 192
     instance-of v0, p1, Lkotlin/ranges/ClosedFloatRange;
 
     if-eqz v0, :cond_27
@@ -150,7 +144,6 @@
 
     if-nez v0, :cond_25
 
-    .line 193
     :cond_13
     iget v0, p0, Lkotlin/ranges/ClosedFloatRange;->_start:F
 
@@ -185,7 +178,6 @@
 .method public bridge synthetic getEndInclusive()Ljava/lang/Comparable;
     .registers 2
 
-    .line 177
     invoke-virtual {p0}, Lkotlin/ranges/ClosedFloatRange;->getEndInclusive()Ljava/lang/Float;
 
     move-result-object v0
@@ -198,7 +190,6 @@
 .method public getEndInclusive()Ljava/lang/Float;
     .registers 2
 
-    .line 184
     iget v0, p0, Lkotlin/ranges/ClosedFloatRange;->_endInclusive:F
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -211,7 +202,6 @@
 .method public bridge synthetic getStart()Ljava/lang/Comparable;
     .registers 2
 
-    .line 177
     invoke-virtual {p0}, Lkotlin/ranges/ClosedFloatRange;->getStart()Ljava/lang/Float;
 
     move-result-object v0
@@ -224,7 +214,6 @@
 .method public getStart()Ljava/lang/Float;
     .registers 2
 
-    .line 183
     iget v0, p0, Lkotlin/ranges/ClosedFloatRange;->_start:F
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -237,7 +226,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 197
     invoke-virtual {p0}, Lkotlin/ranges/ClosedFloatRange;->isEmpty()Z
 
     move-result v0
@@ -272,7 +260,6 @@
 .method public isEmpty()Z
     .registers 3
 
-    .line 189
     iget v0, p0, Lkotlin/ranges/ClosedFloatRange;->_start:F
 
     iget v1, p0, Lkotlin/ranges/ClosedFloatRange;->_endInclusive:F
@@ -313,7 +300,6 @@
 .method public bridge synthetic lessThanOrEquals(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
     .registers 3
 
-    .line 177
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -336,7 +322,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 200
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

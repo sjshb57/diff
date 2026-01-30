@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lkotlinx/coroutines/CompletableDeferred;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$$ExternalSyntheticLambda0;->f$0:Lkotlinx/coroutines/CompletableDeferred;
@@ -27,7 +26,6 @@
 .method public final onComplete(Lcom/google/android/gms/tasks/Task;)V
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lkotlinx/coroutines/tasks/TasksKt$$ExternalSyntheticLambda0;->f$0:Lkotlinx/coroutines/CompletableDeferred;
 
     invoke-static {v0, p1}, Lkotlinx/coroutines/tasks/TasksKt;->$r8$lambda$epYkKO3YUebkIFWW0wImisRdi6w(Lkotlinx/coroutines/CompletableDeferred;Lcom/google/android/gms/tasks/Task;)V

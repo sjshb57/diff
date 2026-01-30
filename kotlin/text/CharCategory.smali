@@ -347,7 +347,6 @@
 .method static constructor <clinit>()V
     .registers 5
 
-    .line 12
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x0
@@ -360,7 +359,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->UNASSIGNED:Lkotlin/text/CharCategory;
 
-    .line 17
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x1
@@ -373,7 +371,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->UPPERCASE_LETTER:Lkotlin/text/CharCategory;
 
-    .line 22
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x2
@@ -386,7 +383,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->LOWERCASE_LETTER:Lkotlin/text/CharCategory;
 
-    .line 27
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x3
@@ -399,7 +395,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->TITLECASE_LETTER:Lkotlin/text/CharCategory;
 
-    .line 32
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x4
@@ -412,7 +407,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->MODIFIER_LETTER:Lkotlin/text/CharCategory;
 
-    .line 37
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x5
@@ -425,7 +419,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->OTHER_LETTER:Lkotlin/text/CharCategory;
 
-    .line 42
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x6
@@ -438,7 +431,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->NON_SPACING_MARK:Lkotlin/text/CharCategory;
 
-    .line 47
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/4 v1, 0x7
@@ -451,7 +443,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->ENCLOSING_MARK:Lkotlin/text/CharCategory;
 
-    .line 52
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x8
@@ -464,7 +455,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->COMBINING_SPACING_MARK:Lkotlin/text/CharCategory;
 
-    .line 57
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x9
@@ -477,7 +467,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->DECIMAL_DIGIT_NUMBER:Lkotlin/text/CharCategory;
 
-    .line 62
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xa
@@ -492,7 +481,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->LETTER_NUMBER:Lkotlin/text/CharCategory;
 
-    .line 67
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xb
@@ -505,7 +493,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->OTHER_NUMBER:Lkotlin/text/CharCategory;
 
-    .line 72
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xc
@@ -518,7 +505,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->SPACE_SEPARATOR:Lkotlin/text/CharCategory;
 
-    .line 77
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xd
@@ -531,7 +517,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->LINE_SEPARATOR:Lkotlin/text/CharCategory;
 
-    .line 82
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xe
@@ -544,7 +529,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->PARAGRAPH_SEPARATOR:Lkotlin/text/CharCategory;
 
-    .line 87
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0xf
@@ -557,7 +541,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->CONTROL:Lkotlin/text/CharCategory;
 
-    .line 92
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x10
@@ -570,7 +553,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->FORMAT:Lkotlin/text/CharCategory;
 
-    .line 97
     new-instance v0, Lkotlin/text/CharCategory;
 
     const-string v1, "Co"
@@ -585,7 +567,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->PRIVATE_USE:Lkotlin/text/CharCategory;
 
-    .line 102
     new-instance v0, Lkotlin/text/CharCategory;
 
     const-string v1, "Cs"
@@ -598,7 +579,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->SURROGATE:Lkotlin/text/CharCategory;
 
-    .line 107
     new-instance v0, Lkotlin/text/CharCategory;
 
     const-string v1, "Pd"
@@ -611,7 +591,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->DASH_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 112
     new-instance v0, Lkotlin/text/CharCategory;
 
     const-string v1, "Ps"
@@ -624,7 +603,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->START_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 117
     new-instance v0, Lkotlin/text/CharCategory;
 
     const-string v1, "Pe"
@@ -637,7 +615,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->END_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 122
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x17
@@ -650,7 +627,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->CONNECTOR_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 127
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x18
@@ -665,7 +641,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->OTHER_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 132
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x19
@@ -680,7 +655,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->MATH_SYMBOL:Lkotlin/text/CharCategory;
 
-    .line 137
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x1a
@@ -695,7 +669,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->CURRENCY_SYMBOL:Lkotlin/text/CharCategory;
 
-    .line 142
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x1b
@@ -710,7 +683,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->MODIFIER_SYMBOL:Lkotlin/text/CharCategory;
 
-    .line 147
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x1c
@@ -725,7 +697,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->OTHER_SYMBOL:Lkotlin/text/CharCategory;
 
-    .line 152
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x1d
@@ -740,7 +711,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->INITIAL_QUOTE_PUNCTUATION:Lkotlin/text/CharCategory;
 
-    .line 157
     new-instance v0, Lkotlin/text/CharCategory;
 
     const/16 v1, 0x1e
@@ -782,7 +752,6 @@
         }
     .end annotation
 
-    .line 8
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput p3, p0, Lkotlin/text/CharCategory;->value:I
@@ -825,7 +794,6 @@
 .method public final contains(C)Z
     .registers 3
 
-    .line 162
     invoke-static {p1}, Ljava/lang/Character;->getType(C)I
 
     move-result p1
@@ -848,7 +816,6 @@
 .method public final getCode()Ljava/lang/String;
     .registers 2
 
-    .line 8
     iget-object v0, p0, Lkotlin/text/CharCategory;->code:Ljava/lang/String;
 
     return-object v0
@@ -857,7 +824,6 @@
 .method public final getValue()I
     .registers 2
 
-    .line 8
     iget v0, p0, Lkotlin/text/CharCategory;->value:I
 
     return v0

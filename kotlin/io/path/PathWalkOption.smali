@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 20
     new-instance v0, Lkotlin/io/path/PathWalkOption;
 
     const-string v1, "INCLUDE_DIRECTORIES"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/io/path/PathWalkOption;->INCLUDE_DIRECTORIES:Lkotlin/io/path/PathWalkOption;
 
-    .line 23
     new-instance v0, Lkotlin/io/path/PathWalkOption;
 
     const-string v1, "BREADTH_FIRST"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/io/path/PathWalkOption;->BREADTH_FIRST:Lkotlin/io/path/PathWalkOption;
 
-    .line 26
     new-instance v0, Lkotlin/io/path/PathWalkOption;
 
     const-string v1, "FOLLOW_LINKS"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 16
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

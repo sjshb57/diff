@@ -92,7 +92,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
@@ -155,7 +154,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 60
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -181,10 +179,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 61
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 472
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -199,7 +195,6 @@
 
     goto :goto_27
 
-    .line 473
     :cond_12
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -216,7 +211,6 @@
 
     move-result-object v0
 
-    .line 61
     invoke-virtual {p0, v0}, Lkotlin/collections/ArrayAsCollection;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -233,7 +227,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 58
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -249,7 +242,6 @@
         }
     .end annotation
 
-    .line 57
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     return-object v0
@@ -258,7 +250,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 59
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -279,7 +270,6 @@
 .method public final isVarargs()Z
     .registers 2
 
-    .line 57
     iget-boolean v0, p0, Lkotlin/collections/ArrayAsCollection;->isVarargs:Z
 
     return v0
@@ -295,7 +285,6 @@
         }
     .end annotation
 
-    .line 62
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/ArrayIteratorKt;->iterator([Ljava/lang/Object;)Ljava/util/Iterator;
@@ -364,7 +353,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 57
     invoke-virtual {p0}, Lkotlin/collections/ArrayAsCollection;->getSize()I
 
     move-result v0
@@ -375,7 +363,6 @@
 .method public final toArray()[Ljava/lang/Object;
     .registers 3
 
-    .line 64
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     iget-boolean v1, p0, Lkotlin/collections/ArrayAsCollection;->isVarargs:Z

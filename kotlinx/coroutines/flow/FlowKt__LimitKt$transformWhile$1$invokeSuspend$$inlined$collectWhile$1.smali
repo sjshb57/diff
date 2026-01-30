@@ -65,7 +65,6 @@
 
     iput-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1;->$$this$flow$inlined:Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -122,7 +121,6 @@
 
     move-result-object v1
 
-    .line 0
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1$1;->label:I
 
     const/4 v3, 0x1
@@ -151,12 +149,10 @@
     :cond_36
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 130
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 142
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1;->$transform$inlined:Lkotlin/jvm/functions/Function3;
 
     iget-object v2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1;->$$this$flow$inlined:Lkotlinx/coroutines/flow/FlowCollector;
@@ -184,7 +180,6 @@
     :cond_53
     move-object p1, p0
 
-    .line 130
     :goto_54
     check-cast p2, Ljava/lang/Boolean;
 
@@ -194,12 +189,10 @@
 
     if-eqz p2, :cond_5f
 
-    .line 133
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 131
     :cond_5f
     new-instance p2, Lkotlinx/coroutines/flow/internal/AbortFlowException;
 

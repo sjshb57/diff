@@ -61,10 +61,8 @@
 .method public constructor <init>(I)V
     .registers 3
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
@@ -79,7 +77,6 @@
 .method public final currentLength()I
     .registers 2
 
-    .line 18
     iget-object v0, p0, Lkotlinx/coroutines/internal/ResizableAtomicArray;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
@@ -97,10 +94,8 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lkotlinx/coroutines/internal/ResizableAtomicArray;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-    .line 22
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v1
@@ -128,22 +123,18 @@
         }
     .end annotation
 
-    .line 27
     iget-object v0, p0, Lkotlinx/coroutines/internal/ResizableAtomicArray;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-    .line 28
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v1
 
     if-ge p1, v1, :cond_c
 
-    .line 30
     invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
 
     return-void
 
-    .line 34
     :cond_c
     new-instance v2, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -162,7 +153,6 @@
     :goto_1a
     if-ge v3, v1, :cond_26
 
-    .line 35
     invoke-virtual {v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -173,11 +163,9 @@
 
     goto :goto_1a
 
-    .line 36
     :cond_26
     invoke-virtual {v2, p1, p2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
 
-    .line 37
     iput-object v2, p0, Lkotlinx/coroutines/internal/ResizableAtomicArray;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     return-void

@@ -138,7 +138,6 @@
 
     move-result-object v1
 
-    .line 55
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$2$1$emit$1;->label:I
 
     const/4 v3, 0x2
@@ -172,7 +171,6 @@
     :cond_39
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 60
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$2$1;->$consumed:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget v2, p2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -189,7 +187,6 @@
 
     if-ge p2, v2, :cond_59
 
-    .line 61
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$2$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     iput v4, v0, Lkotlinx/coroutines/flow/FlowKt__LimitKt$take$2$1$emit$1;->label:I
@@ -202,7 +199,6 @@
 
     return-object v1
 
-    .line 63
     :cond_56
     :goto_56
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

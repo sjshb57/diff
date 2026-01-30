@@ -22,7 +22,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 1
     invoke-direct {p0}, Lkotlin/io/encoding/StreamEncodingKt__Base64IOStreamKt;-><init>()V
 
     return-void

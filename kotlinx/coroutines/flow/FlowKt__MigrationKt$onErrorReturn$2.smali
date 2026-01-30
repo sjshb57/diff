@@ -184,7 +184,6 @@
 
     move-result-object v0
 
-    .line 303
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__MigrationKt$onErrorReturn$2;->label:I
 
     const/4 v2, 0x1
@@ -217,7 +216,6 @@
 
     check-cast v1, Ljava/lang/Throwable;
 
-    .line 305
     iget-object v3, p0, Lkotlinx/coroutines/flow/FlowKt__MigrationKt$onErrorReturn$2;->$predicate:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v3, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -232,7 +230,6 @@
 
     if-eqz v3, :cond_44
 
-    .line 306
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__MigrationKt$onErrorReturn$2;->$fallback:Ljava/lang/Object;
 
     move-object v3, p0
@@ -253,14 +250,12 @@
 
     return-object v0
 
-    .line 307
     :cond_41
     :goto_41
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 305
     :cond_44
     throw v1
 .end method

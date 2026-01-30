@@ -57,7 +57,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 16
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     return-void
@@ -84,7 +83,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-virtual {p0, p1}, Lkotlin/collections/AbstractMutableList;->removeAt(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -111,7 +109,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 15
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableList;->getSize()I
 
     move-result v0

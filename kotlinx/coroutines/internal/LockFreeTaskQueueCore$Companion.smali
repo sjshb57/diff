@@ -72,7 +72,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 270
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -117,7 +116,6 @@
 
     const-wide/32 v0, 0x3fffffff
 
-    .line 295
     invoke-virtual {p0, p1, p2, v0, v1}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;->wo(JJ)J
 
     move-result-wide p1
@@ -134,7 +132,6 @@
 
     const-wide v0, 0xfffffffc0000000L
 
-    .line 296
     invoke-virtual {p0, p1, p2, v0, v1}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion;->wo(JJ)J
 
     move-result-wide p1
@@ -182,7 +179,6 @@
 
     long-to-int p1, p1
 
-    .line 301
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2

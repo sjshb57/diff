@@ -47,7 +47,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 7
 
-    .line 1
     sget-object v1, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     new-instance v0, La/q;
@@ -68,7 +67,6 @@
 
     invoke-direct/range {v0 .. v5}, La/q;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;La/i0;)V
 
-    .line 2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

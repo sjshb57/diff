@@ -35,15 +35,12 @@
 .method constructor <init>(Landroid/content/Context;)V
     .registers 3
 
-    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 68
     iput v0, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
 
-    .line 73
     iput-object p1, p0, Lcom/google/firebase/messaging/Metadata;->context:Landroid/content/Context;
 
     return-void
@@ -52,7 +49,6 @@
 .method static getDefaultSenderId(Lcom/google/firebase/FirebaseApp;)Ljava/lang/String;
     .registers 4
 
-    .line 142
     invoke-virtual {p0}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
     move-result-object v0
@@ -65,7 +61,6 @@
 
     return-object v0
 
-    .line 146
     :cond_b
     invoke-virtual {p0}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
@@ -75,7 +70,6 @@
 
     move-result-object p0
 
-    .line 147
     const-string v0, "1:"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -86,7 +80,6 @@
 
     return-object p0
 
-    .line 152
     :cond_1c
     const-string v0, ":"
 
@@ -94,7 +87,6 @@
 
     move-result-object p0
 
-    .line 153
     array-length v0, p0
 
     const/4 v1, 0x2
@@ -108,10 +100,8 @@
     :cond_28
     const/4 v0, 0x1
 
-    .line 156
     aget-object p0, p0, v0
 
-    .line 157
     invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v0
@@ -127,7 +117,6 @@
 .method private getPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .registers 4
 
-    .line 201
     :try_start_0
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->context:Landroid/content/Context;
 
@@ -148,7 +137,6 @@
     :catch_c
     move-exception p1
 
-    .line 203
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Failed to find package "
@@ -175,7 +163,6 @@
 
     monitor-enter p0
 
-    .line 192
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->context:Landroid/content/Context;
 
@@ -189,7 +176,6 @@
 
     if-eqz v0, :cond_19
 
-    .line 194
     iget v1, v0, Landroid/content/pm/PackageInfo;->versionCode:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -198,14 +184,12 @@
 
     iput-object v1, p0, Lcom/google/firebase/messaging/Metadata;->appVersionCode:Ljava/lang/String;
 
-    .line 195
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/google/firebase/messaging/Metadata;->appVersionName:Ljava/lang/String;
     :try_end_19
     .catchall {:try_start_1 .. :try_end_19} :catchall_1b
 
-    .line 197
     :cond_19
     monitor-exit p0
 
@@ -226,16 +210,13 @@
 
     monitor-enter p0
 
-    .line 166
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->appVersionCode:Ljava/lang/String;
 
     if-nez v0, :cond_8
 
-    .line 167
     invoke-direct {p0}, Lcom/google/firebase/messaging/Metadata;->populateAppVersionInfo()V
 
-    .line 169
     :cond_8
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->appVersionCode:Ljava/lang/String;
     :try_end_a
@@ -258,16 +239,13 @@
 
     monitor-enter p0
 
-    .line 174
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->appVersionName:Ljava/lang/String;
 
     if-nez v0, :cond_8
 
-    .line 175
     invoke-direct {p0}, Lcom/google/firebase/messaging/Metadata;->populateAppVersionInfo()V
 
-    .line 177
     :cond_8
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->appVersionName:Ljava/lang/String;
     :try_end_a
@@ -290,13 +268,11 @@
 
     monitor-enter p0
 
-    .line 182
     :try_start_1
     iget v0, p0, Lcom/google/firebase/messaging/Metadata;->gmsVersionCode:I
 
     if-nez v0, :cond_11
 
-    .line 183
     const-string v0, "com.google.android.gms"
 
     invoke-direct {p0, v0}, Lcom/google/firebase/messaging/Metadata;->getPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
@@ -305,12 +281,10 @@
 
     if-eqz v0, :cond_11
 
-    .line 185
     iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
 
     iput v0, p0, Lcom/google/firebase/messaging/Metadata;->gmsVersionCode:I
 
-    .line 188
     :cond_11
     iget v0, p0, Lcom/google/firebase/messaging/Metadata;->gmsVersionCode:I
     :try_end_13
@@ -333,7 +307,6 @@
 
     monitor-enter p0
 
-    .line 96
     :try_start_1
     iget v0, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
     :try_end_3
@@ -341,12 +314,10 @@
 
     if-eqz v0, :cond_7
 
-    .line 97
     monitor-exit p0
 
     return v0
 
-    .line 100
     :cond_7
     :try_start_7
     iget-object v0, p0, Lcom/google/firebase/messaging/Metadata;->context:Landroid/content/Context;
@@ -355,7 +326,6 @@
 
     move-result-object v0
 
-    .line 102
     const/4 v1, 0x0
 
     sget-object v1, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->UfgyRxqfhyreQ:Ljava/lang/String;
@@ -372,7 +342,6 @@
 
     if-ne v1, v2, :cond_23
 
-    .line 104
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "Google Play services missing or without correct permission."
@@ -381,12 +350,10 @@
     :try_end_21
     .catchall {:try_start_7 .. :try_end_21} :catchall_79
 
-    .line 105
     monitor-exit p0
 
     return v3
 
-    .line 112
     :cond_23
     :try_start_23
     invoke-static {}, Lcom/google/android/gms/common/util/PlatformVersion;->isAtLeastO()Z
@@ -397,43 +364,36 @@
 
     if-nez v1, :cond_46
 
-    .line 113
     new-instance v1, Landroid/content/Intent;
 
     const-string v4, "com.google.android.c2dm.intent.REGISTER"
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 114
     const-string v4, "com.google.android.gms"
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 115
     invoke-virtual {v0, v1, v3}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
 
     move-result-object v1
 
     if-eqz v1, :cond_46
 
-    .line 116
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
     if-lez v1, :cond_46
 
-    .line 117
     iput v2, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
     :try_end_44
     .catchall {:try_start_23 .. :try_end_44} :catchall_79
 
-    .line 118
     monitor-exit p0
 
     return v2
 
-    .line 122
     :cond_46
     :try_start_46
     new-instance v1, Landroid/content/Intent;
@@ -442,12 +402,10 @@
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 123
     const-string v4, "com.google.android.gms"
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 124
     invoke-virtual {v0, v1, v3}, Landroid/content/pm/PackageManager;->queryBroadcastReceivers(Landroid/content/Intent;I)Ljava/util/List;
 
     move-result-object v0
@@ -456,24 +414,20 @@
 
     if-eqz v0, :cond_63
 
-    .line 125
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
     if-lez v0, :cond_63
 
-    .line 126
     iput v1, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
     :try_end_61
     .catchall {:try_start_46 .. :try_end_61} :catchall_79
 
-    .line 127
     monitor-exit p0
 
     return v1
 
-    .line 130
     :cond_63
     :try_start_63
     const-string v0, "FirebaseMessaging"
@@ -482,23 +436,19 @@
 
     invoke-static {v0, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 132
     invoke-static {}, Lcom/google/android/gms/common/util/PlatformVersion;->isAtLeastO()Z
 
     move-result v0
 
     if-eqz v0, :cond_73
 
-    .line 133
     iput v1, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
 
     goto :goto_75
 
-    .line 135
     :cond_73
     iput v2, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
 
-    .line 137
     :goto_75
     iget v0, p0, Lcom/google/firebase/messaging/Metadata;->iidImplementation:I
     :try_end_77
@@ -519,7 +469,6 @@
 .method isGmscorePresent()Z
     .registers 2
 
-    .line 77
     invoke-virtual {p0}, Lcom/google/firebase/messaging/Metadata;->getIidImplementation()I
 
     move-result v0

@@ -39,7 +39,6 @@
 .method private static final CancellationException(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/util/concurrent/CancellationException;
     .registers 3
 
-    .line 16
     new-instance v0, Ljava/util/concurrent/CancellationException;
 
     invoke-direct {v0, p0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
@@ -52,7 +51,6 @@
 .method private static final CancellationException(Ljava/lang/Throwable;)Ljava/util/concurrent/CancellationException;
     .registers 3
 
-    .line 21
     new-instance v0, Ljava/util/concurrent/CancellationException;
 
     if-eqz p0, :cond_9

@@ -36,7 +36,6 @@
 .method constructor <init>(Lcom/google/flatbuffers/Table;Ljava/nio/ByteBuffer;)V
     .registers 3
 
-    .line 232
     iput-object p1, p0, Lcom/google/flatbuffers/Table$1;->this$0:Lcom/google/flatbuffers/Table;
 
     iput-object p2, p0, Lcom/google/flatbuffers/Table$1;->val$bb:Ljava/nio/ByteBuffer;
@@ -51,7 +50,6 @@
 .method public compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
     .registers 5
 
-    .line 234
     iget-object v0, p0, Lcom/google/flatbuffers/Table$1;->this$0:Lcom/google/flatbuffers/Table;
 
     iget-object v1, p0, Lcom/google/flatbuffers/Table$1;->val$bb:Ljava/nio/ByteBuffer;
@@ -66,7 +64,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .registers 3
 
-    .line 232
     check-cast p1, Ljava/lang/Integer;
 
     check-cast p2, Ljava/lang/Integer;

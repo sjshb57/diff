@@ -117,19 +117,14 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     iput-object p1, p0, Lkotlin/jvm/internal/TypeParameterReference;->container:Ljava/lang/Object;
 
-    .line 16
     iput-object p2, p0, Lkotlin/jvm/internal/TypeParameterReference;->name:Ljava/lang/String;
 
-    .line 17
     iput-object p3, p0, Lkotlin/jvm/internal/TypeParameterReference;->variance:Lkotlin/reflect/KVariance;
 
-    .line 18
     iput-boolean p4, p0, Lkotlin/jvm/internal/TypeParameterReference;->isReified:Z
 
     return-void
@@ -146,7 +141,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 37
     instance-of v0, p1, Lkotlin/jvm/internal/TypeParameterReference;
 
     if-eqz v0, :cond_20
@@ -191,7 +185,6 @@
 .method public getName()Ljava/lang/String;
     .registers 2
 
-    .line 16
     iget-object v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->name:Ljava/lang/String;
 
     return-object v0
@@ -208,7 +201,6 @@
         }
     .end annotation
 
-    .line 25
     iget-object v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->bounds:Ljava/util/List;
 
     if-nez v0, :cond_10
@@ -232,7 +224,6 @@
 .method public getVariance()Lkotlin/reflect/KVariance;
     .registers 2
 
-    .line 17
     iget-object v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->variance:Lkotlin/reflect/KVariance;
 
     return-object v0
@@ -241,7 +232,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 40
     iget-object v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->container:Ljava/lang/Object;
 
     if-eqz v0, :cond_9
@@ -274,7 +264,6 @@
 .method public isReified()Z
     .registers 2
 
-    .line 18
     iget-boolean v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->isReified:Z
 
     return v0
@@ -296,21 +285,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
     iget-object v0, p0, Lkotlin/jvm/internal/TypeParameterReference;->bounds:Ljava/util/List;
 
     if-nez v0, :cond_c
 
-    .line 33
     iput-object p1, p0, Lkotlin/jvm/internal/TypeParameterReference;->bounds:Ljava/util/List;
 
     return-void
 
-    .line 30
     :cond_c
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 31
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Upper bounds of type parameter \'"
@@ -339,7 +324,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 42
     sget-object v0, Lkotlin/jvm/internal/TypeParameterReference;->Companion:Lkotlin/jvm/internal/TypeParameterReference$Companion;
 
     move-object v1, p0

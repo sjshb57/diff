@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 317
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +62,6 @@
 .method public static final synthetic access$ensureUnicodeCase(Lkotlin/text/Regex$Companion;I)I
     .registers 2
 
-    .line 317
     invoke-direct {p0, p1}, Lkotlin/text/Regex$Companion;->ensureUnicodeCase(I)I
 
     move-result p0
@@ -93,7 +91,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 328
     invoke-static {p1}, Ljava/util/regex/Pattern;->quote(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -112,7 +109,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 334
     invoke-static {p1}, Ljava/util/regex/Matcher;->quoteReplacement(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -133,7 +129,6 @@
 
     new-instance v0, Lkotlin/text/Regex;
 
-    .line 322
     sget-object v1, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
 
     invoke-direct {v0, p1, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lkotlin/text/RegexOption;)V

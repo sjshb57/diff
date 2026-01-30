@@ -24,12 +24,10 @@
 .method public constructor <init>(Lcom/google/firebase/messaging/TopicsSyncTask;Lcom/google/firebase/messaging/TopicsSyncTask;)V
     .registers 3
 
-    .line 185
     iput-object p1, p0, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->this$0:Lcom/google/firebase/messaging/TopicsSyncTask;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 186
     iput-object p2, p0, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->task:Lcom/google/firebase/messaging/TopicsSyncTask;
 
     return-void
@@ -84,21 +82,18 @@
 .method public registerReceiver()V
     .registers 4
 
-    .line 212
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSyncTask;->access$100()Z
 
     move-result v0
 
     if-eqz v0, :cond_d
 
-    .line 213
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "Connectivity change received registered"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 215
     :cond_d
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->this$0:Lcom/google/firebase/messaging/TopicsSyncTask;
 

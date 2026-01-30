@@ -18,7 +18,6 @@
 .method public synthetic constructor <init>(Lcom/google/android/gms/common/util/BiConsumer;Ljava/lang/String;Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)V
     .registers 4
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/gms/common/util/BiConsumer;
@@ -35,7 +34,6 @@
 .method public final run()V
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/gms/common/util/BiConsumer;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler$$ExternalSyntheticLambda0;->f$1:Ljava/lang/String;

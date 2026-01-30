@@ -47,7 +47,6 @@
         }
     .end annotation
 
-    .line 34
     monitor-enter p0
 
     const/4 v0, 0x1

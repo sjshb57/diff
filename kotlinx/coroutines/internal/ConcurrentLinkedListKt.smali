@@ -67,7 +67,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 268
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "CLOSED"
@@ -82,7 +81,6 @@
 .method public static final synthetic access$getCLOSED$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->CLOSED:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
@@ -104,13 +102,11 @@
         }
     .end annotation
 
-    .line 252
     :cond_0
     invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 254
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -134,7 +130,6 @@
     :cond_16
     add-int v1, v0, p2
 
-    .line 255
     invoke-virtual {p1, p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result v0
@@ -162,13 +157,11 @@
         }
     .end annotation
 
-    .line 252
     :cond_0
     invoke-virtual {p1, p2}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->get(I)I
 
     move-result p0
 
-    .line 254
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -192,7 +185,6 @@
     :cond_16
     add-int v0, p0, p3
 
-    .line 255
     invoke-virtual {p1, p2, p0, v0}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->compareAndSet(III)Z
 
     move-result p0
@@ -214,14 +206,12 @@
         }
     .end annotation
 
-    .line 277
     :cond_0
     :goto_0
     invoke-static {p0}, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;->access$getNextOrClosed(Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 278
     invoke-static {}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->access$getCLOSED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
@@ -230,13 +220,11 @@
 
     return-object p0
 
-    .line 281
     :cond_b
     check-cast v0, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;
 
     if-nez v0, :cond_16
 
-    .line 87
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;->markAsClosed()Z
 
     move-result v0
@@ -267,13 +255,11 @@
         }
     .end annotation
 
-    .line 73
     :goto_0
     invoke-static {p4, p2, p3, p5}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->findSegmentInternal(Lkotlinx/coroutines/internal/Segment;JLkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 74
     invoke-static {v0}, Lkotlinx/coroutines/internal/SegmentOrClosed;->isClosed-impl(Ljava/lang/Object;)Z
 
     move-result v1
@@ -292,7 +278,6 @@
 
     check-cast v2, Lkotlinx/coroutines/internal/Segment;
 
-    .line 284
     iget-wide v3, v2, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v5, v1, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -303,7 +288,6 @@
 
     goto :goto_3e
 
-    .line 285
     :cond_1d
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -313,7 +297,6 @@
 
     goto :goto_0
 
-    .line 286
     :cond_24
     invoke-static {p1, p0, v2, v1}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -321,7 +304,6 @@
 
     if-eqz v3, :cond_34
 
-    .line 287
     invoke-virtual {v2}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result p0
@@ -332,7 +314,6 @@
 
     goto :goto_3e
 
-    .line 290
     :cond_34
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
@@ -365,13 +346,11 @@
         }
     .end annotation
 
-    .line 73
     :goto_0
     invoke-static {p5, p3, p4, p6}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->findSegmentInternal(Lkotlinx/coroutines/internal/Segment;JLkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 74
     invoke-static {p0}, Lkotlinx/coroutines/internal/SegmentOrClosed;->isClosed-impl(Ljava/lang/Object;)Z
 
     move-result v0
@@ -390,7 +369,6 @@
 
     check-cast v1, Lkotlinx/coroutines/internal/Segment;
 
-    .line 284
     iget-wide v2, v1, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v4, v0, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -401,7 +379,6 @@
 
     goto :goto_3e
 
-    .line 285
     :cond_1d
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -411,7 +388,6 @@
 
     goto :goto_0
 
-    .line 286
     :cond_24
     invoke-static {p1, p2, v1, v0}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceArray;ILjava/lang/Object;Ljava/lang/Object;)Z
 
@@ -419,7 +395,6 @@
 
     if-eqz v2, :cond_34
 
-    .line 287
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result p1
@@ -430,7 +405,6 @@
 
     goto :goto_3e
 
-    .line 290
     :cond_34
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
@@ -462,7 +436,6 @@
         }
     .end annotation
 
-    .line 26
     :cond_0
     :goto_0
     iget-wide v0, p0, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -479,7 +452,6 @@
 
     goto :goto_12
 
-    .line 38
     :cond_d
     invoke-static {p0}, Lkotlinx/coroutines/internal/SegmentOrClosed;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -487,26 +459,22 @@
 
     return-object p0
 
-    .line 27
     :cond_12
     :goto_12
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;
 
-    .line 270
     invoke-static {v0}, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;->access$getNextOrClosed(Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 271
     invoke-static {}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->access$getCLOSED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
 
     if-ne v0, v1, :cond_26
 
-    .line 27
     sget-object p0, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->CLOSED:Lkotlinx/coroutines/internal/Symbol;
 
     invoke-static {p0}, Lkotlinx/coroutines/internal/SegmentOrClosed;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -515,11 +483,9 @@
 
     return-object p0
 
-    .line 274
     :cond_26
     check-cast v0, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;
 
-    .line 27
     check-cast v0, Lkotlinx/coroutines/internal/Segment;
 
     if-eqz v0, :cond_2e
@@ -530,7 +496,6 @@
 
     goto :goto_0
 
-    .line 32
     :cond_2e
     iget-wide v0, p0, Lkotlinx/coroutines/internal/Segment;->id:J
 
@@ -548,7 +513,6 @@
 
     check-cast v0, Lkotlinx/coroutines/internal/Segment;
 
-    .line 33
     move-object v1, v0
 
     check-cast v1, Lkotlinx/coroutines/internal/ConcurrentLinkedListNode;
@@ -559,7 +523,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 34
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/Segment;->isRemoved()Z
 
     move-result v1
@@ -639,7 +602,6 @@
 
     check-cast v0, Lkotlinx/coroutines/internal/Segment;
 
-    .line 46
     iget-wide v1, v0, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v3, p2, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -652,7 +614,6 @@
 
     return v2
 
-    .line 47
     :cond_10
     invoke-virtual {p2}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -664,7 +625,6 @@
 
     return p0
 
-    .line 48
     :cond_18
     invoke-static {p1, p0, v0, p2}, Landroidx/concurrent/futures/AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -672,7 +632,6 @@
 
     if-eqz v1, :cond_28
 
-    .line 49
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result p0
@@ -684,7 +643,6 @@
     :cond_27
     return v2
 
-    .line 52
     :cond_28
     invoke-virtual {p2}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
@@ -716,7 +674,6 @@
 
     check-cast p0, Lkotlinx/coroutines/internal/Segment;
 
-    .line 46
     iget-wide v0, p0, Lkotlinx/coroutines/internal/Segment;->id:J
 
     iget-wide v2, p3, Lkotlinx/coroutines/internal/Segment;->id:J
@@ -729,7 +686,6 @@
 
     return v1
 
-    .line 47
     :cond_10
     invoke-virtual {p3}, Lkotlinx/coroutines/internal/Segment;->tryIncPointers$kotlinx_coroutines_core()Z
 
@@ -741,7 +697,6 @@
 
     return p0
 
-    .line 48
     :cond_18
     invoke-static {p1, p2, p0, p3}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReferenceArray;ILjava/lang/Object;Ljava/lang/Object;)Z
 
@@ -749,7 +704,6 @@
 
     if-eqz v0, :cond_28
 
-    .line 49
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 
     move-result p1
@@ -761,7 +715,6 @@
     :cond_27
     return v1
 
-    .line 52
     :cond_28
     invoke-virtual {p3}, Lkotlinx/coroutines/internal/Segment;->decPointers$kotlinx_coroutines_core()Z
 

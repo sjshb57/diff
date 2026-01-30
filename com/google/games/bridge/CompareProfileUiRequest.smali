@@ -19,16 +19,12 @@
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .registers 4
 
-    .line 17
     invoke-direct {p0}, Lcom/google/games/bridge/SimpleUiRequest;-><init>()V
 
-    .line 18
     iput-object p1, p0, Lcom/google/games/bridge/CompareProfileUiRequest;->playerId:Ljava/lang/String;
 
-    .line 19
     iput-object p2, p0, Lcom/google/games/bridge/CompareProfileUiRequest;->otherPlayerInGameName:Ljava/lang/String;
 
-    .line 20
     iput-object p3, p0, Lcom/google/games/bridge/CompareProfileUiRequest;->currentPlayerInGameName:Ljava/lang/String;
 
     return-void
@@ -49,12 +45,10 @@
         }
     .end annotation
 
-    .line 25
     invoke-static {p1}, Lcom/google/android/gms/games/PlayGames;->getPlayersClient(Landroid/app/Activity;)Lcom/google/android/gms/games/PlayersClient;
 
     move-result-object p1
 
-    .line 26
     iget-object v0, p0, Lcom/google/games/bridge/CompareProfileUiRequest;->playerId:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/games/bridge/CompareProfileUiRequest;->otherPlayerInGameName:Ljava/lang/String;

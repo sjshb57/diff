@@ -43,7 +43,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 185
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +61,6 @@
 .method public final fromClosedRange(JJJ)Lkotlin/ranges/LongProgression;
     .registers 15
 
-    .line 194
     new-instance v7, Lkotlin/ranges/LongProgression;
 
     move-object v0, v7

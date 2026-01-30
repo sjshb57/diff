@@ -21,7 +21,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 39
     new-instance v0, Lcom/google/firebase/messaging/threads/PoolableExecutors$DefaultExecutorFactory;
 
     const/4 v1, 0x0
@@ -30,7 +29,6 @@
 
     sput-object v0, Lcom/google/firebase/messaging/threads/PoolableExecutors;->DEFAULT_INSTANCE:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
-    .line 40
     sput-object v0, Lcom/google/firebase/messaging/threads/PoolableExecutors;->instance:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
     return-void
@@ -39,7 +37,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +45,6 @@
 .method public static factory()Lcom/google/firebase/messaging/threads/ExecutorFactory;
     .registers 1
 
-    .line 45
     sget-object v0, Lcom/google/firebase/messaging/threads/PoolableExecutors;->instance:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
     return-object v0
@@ -57,19 +53,16 @@
 .method static installExecutorFactory(Lcom/google/firebase/messaging/threads/ExecutorFactory;)V
     .registers 3
 
-    .line 183
     sget-object v0, Lcom/google/firebase/messaging/threads/PoolableExecutors;->instance:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
     sget-object v1, Lcom/google/firebase/messaging/threads/PoolableExecutors;->DEFAULT_INSTANCE:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
     if-ne v0, v1, :cond_9
 
-    .line 186
     sput-object p0, Lcom/google/firebase/messaging/threads/PoolableExecutors;->instance:Lcom/google/firebase/messaging/threads/ExecutorFactory;
 
     return-void
 
-    .line 184
     :cond_9
     new-instance p0, Ljava/lang/IllegalStateException;
 

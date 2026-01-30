@@ -91,7 +91,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 21
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$Sequence$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/SequencesKt__SequencesKt$Sequence$1;-><init>(Lkotlin/jvm/functions/Function0;)V
@@ -119,7 +118,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$asSequence$$inlined$Sequence$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/SequencesKt__SequencesKt$asSequence$$inlined$Sequence$1;-><init>(Ljava/util/Iterator;)V
@@ -151,7 +149,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 626
     instance-of v0, p0, Lkotlin/sequences/ConstrainedOnceSequence;
 
     if-eqz v0, :cond_a
@@ -183,7 +180,6 @@
         }
     .end annotation
 
-    .line 42
     sget-object v0, Lkotlin/sequences/EmptySequence;->INSTANCE:Lkotlin/sequences/EmptySequence;
 
     check-cast v0, Lkotlin/sequences/Sequence;
@@ -229,7 +225,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 328
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;
 
     const/4 v1, 0x0
@@ -267,7 +262,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 82
     sget-object v0, Lkotlin/sequences/SequencesKt__SequencesKt$flatten$1;->INSTANCE:Lkotlin/sequences/SequencesKt__SequencesKt$flatten$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -299,12 +293,10 @@
         }
     .end annotation
 
-    .line 95
     instance-of v0, p0, Lkotlin/sequences/TransformingSequence;
 
     if-eqz v0, :cond_b
 
-    .line 96
     check-cast p0, Lkotlin/sequences/TransformingSequence;
 
     invoke-virtual {p0, p1}, Lkotlin/sequences/TransformingSequence;->flatten$kotlin_stdlib(Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
@@ -313,7 +305,6 @@
 
     return-object p0
 
-    .line 98
     :cond_b
     new-instance v0, Lkotlin/sequences/FlatteningSequence;
 
@@ -348,7 +339,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
     sget-object v0, Lkotlin/sequences/SequencesKt__SequencesKt$flatten$2;->INSTANCE:Lkotlin/sequences/SequencesKt__SequencesKt$flatten$2;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -380,14 +370,12 @@
 
     if-nez p0, :cond_c
 
-    .line 660
     sget-object p0, Lkotlin/sequences/EmptySequence;->INSTANCE:Lkotlin/sequences/EmptySequence;
 
     check-cast p0, Lkotlin/sequences/Sequence;
 
     goto :goto_1b
 
-    .line 662
     :cond_c
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
@@ -425,7 +413,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 641
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
     new-instance v1, Lkotlin/sequences/SequencesKt__SequencesKt$generateSequence$1;
@@ -469,7 +456,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 678
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
     invoke-direct {v0, p0, p1}, Lkotlin/sequences/GeneratorSequence;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
@@ -505,7 +491,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 66
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;
 
     const/4 v1, 0x0
@@ -537,7 +522,6 @@
 
     if-nez p0, :cond_6
 
-    .line 56
     invoke-static {}, Lkotlin/sequences/SequencesKt;->emptySequence()Lkotlin/sequences/Sequence;
 
     move-result-object p0
@@ -562,7 +546,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 37
     array-length v0, p0
 
     if-nez v0, :cond_d
@@ -600,7 +583,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 128
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -636,7 +618,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 139
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$shuffled$1;
 
     const/4 v1, 0x0
@@ -677,17 +658,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 111
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 112
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 113
     invoke-interface {p0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -705,14 +683,12 @@
 
     check-cast v2, Lkotlin/Pair;
 
-    .line 114
     invoke-virtual {v2}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 115
     invoke-virtual {v2}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v2
@@ -721,7 +697,6 @@
 
     goto :goto_13
 
-    .line 117
     :cond_2e
     invoke-static {v0, v1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 

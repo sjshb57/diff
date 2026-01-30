@@ -86,7 +86,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 101
     new-instance v0, Lkotlin/contracts/InvocationKind;
 
     const-string v1, "AT_MOST_ONCE"
@@ -97,7 +96,6 @@
 
     sput-object v0, Lkotlin/contracts/InvocationKind;->AT_MOST_ONCE:Lkotlin/contracts/InvocationKind;
 
-    .line 108
     new-instance v0, Lkotlin/contracts/InvocationKind;
 
     const-string v1, "AT_LEAST_ONCE"
@@ -108,7 +106,6 @@
 
     sput-object v0, Lkotlin/contracts/InvocationKind;->AT_LEAST_ONCE:Lkotlin/contracts/InvocationKind;
 
-    .line 115
     new-instance v0, Lkotlin/contracts/InvocationKind;
 
     const-string v1, "EXACTLY_ONCE"
@@ -119,7 +116,6 @@
 
     sput-object v0, Lkotlin/contracts/InvocationKind;->EXACTLY_ONCE:Lkotlin/contracts/InvocationKind;
 
-    .line 122
     new-instance v0, Lkotlin/contracts/InvocationKind;
 
     const-string v1, "UNKNOWN"
@@ -147,7 +143,6 @@
         }
     .end annotation
 
-    .line 93
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

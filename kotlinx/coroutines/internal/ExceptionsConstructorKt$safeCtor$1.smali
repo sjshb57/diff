@@ -88,7 +88,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 66
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ExceptionsConstructorKt$safeCtor$1;->invoke(Ljava/lang/Throwable;)Ljava/lang/Throwable;
@@ -101,7 +100,6 @@
 .method public final invoke(Ljava/lang/Throwable;)Ljava/lang/Throwable;
     .registers 6
 
-    .line 67
     iget-object v0, p0, Lkotlinx/coroutines/internal/ExceptionsConstructorKt$safeCtor$1;->$block:Lkotlin/jvm/functions/Function1;
 
     const/4 v1, 0x0
@@ -109,14 +107,12 @@
     :try_start_3
     sget-object v2, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    .line 68
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 73
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
@@ -147,7 +143,6 @@
 
     move-object v0, v1
 
-    .line 67
     :cond_28
     invoke-static {v0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -170,7 +165,6 @@
 
     move-result-object p1
 
-    .line 75
     :goto_38
     invoke-static {p1}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
 

@@ -68,7 +68,6 @@
         }
     .end annotation
 
-    .line 361
     iput-object p1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberBuffered;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
     invoke-virtual {p1}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->getCapacity()I
@@ -89,7 +88,6 @@
 .method public cancelImpl(Ljava/lang/Throwable;)Z
     .registers 5
 
-    .line 362
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberBuffered;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
     invoke-static {v0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->access$getLock$p(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)Ljava/util/concurrent/locks/ReentrantLock;
@@ -98,12 +96,10 @@
 
     iget-object v1, p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberBuffered;->this$0:Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
-    .line 415
     check-cast v0, Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 364
     :try_start_d
     move-object v2, p0
 
@@ -111,14 +107,12 @@
 
     invoke-static {v1, v2}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;->access$removeSubscriber(Lkotlinx/coroutines/channels/BroadcastChannelImpl;Lkotlinx/coroutines/channels/ReceiveChannel;)V
 
-    .line 365
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/BufferedChannel;->cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
 
     move-result p1
     :try_end_17
     .catchall {:try_start_d .. :try_end_17} :catchall_1b
 
-    .line 415
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return p1
@@ -134,7 +128,6 @@
 .method public bridge synthetic cancelImpl$kotlinx_coroutines_core(Ljava/lang/Throwable;)Z
     .registers 2
 
-    .line 361
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberBuffered;->cancelImpl(Ljava/lang/Throwable;)Z
 
     move-result p1

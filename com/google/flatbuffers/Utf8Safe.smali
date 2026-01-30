@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 63
     invoke-direct {p0}, Lcom/google/flatbuffers/Utf8;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method private static computeEncodedLength(Ljava/lang/CharSequence;)I
     .registers 6
 
-    .line 75
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -34,7 +32,6 @@
     :goto_5
     if-ge v1, v0, :cond_12
 
-    .line 80
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -53,7 +50,6 @@
     :goto_13
     if-ge v1, v0, :cond_2a
 
-    .line 86
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -72,7 +68,6 @@
 
     goto :goto_13
 
-    .line 90
     :cond_25
     invoke-static {p0, v1}, Lcom/google/flatbuffers/Utf8Safe;->encodedLengthGeneral(Ljava/lang/CharSequence;I)I
 
@@ -85,7 +80,6 @@
 
     return v2
 
-    .line 97
     :cond_2d
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -117,7 +111,6 @@
 
     or-int v0, p1, p2
 
-    .line 128
     array-length v1, p0
 
     sub-int/2addr v1, p1
@@ -132,7 +125,6 @@
 
     add-int v0, p1, p2
 
-    .line 138
     new-array p2, p2, [C
 
     move v2, v1
@@ -140,10 +132,8 @@
     :goto_e
     if-ge p1, v0, :cond_22
 
-    .line 144
     aget-byte v3, p0, p1
 
-    .line 145
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -157,7 +147,6 @@
 
     add-int/lit8 v4, v2, 0x1
 
-    .line 149
     invoke-static {v3, p2, v2}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     move v2, v4
@@ -173,10 +162,8 @@
 
     add-int/lit8 v2, p1, 0x1
 
-    .line 153
     aget-byte v3, p0, p1
 
-    .line 154
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -185,16 +172,13 @@
 
     add-int/lit8 p1, v8, 0x1
 
-    .line 155
     invoke-static {v3, p2, v8}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     :goto_34
     if-ge v2, v0, :cond_48
 
-    .line 159
     aget-byte v3, p0, v2
 
-    .line 160
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -208,7 +192,6 @@
 
     add-int/lit8 v4, p1, 0x1
 
-    .line 164
     invoke-static {v3, p2, p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     move p1, v4
@@ -223,7 +206,6 @@
 
     goto :goto_23
 
-    .line 166
     :cond_4b
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isTwoBytes(B)Z
 
@@ -237,7 +219,6 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 170
     aget-byte v2, p0, v2
 
     add-int/lit8 v4, v8, 0x1
@@ -248,7 +229,6 @@
 
     goto :goto_23
 
-    .line 168
     :cond_60
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -256,7 +236,6 @@
 
     throw p0
 
-    .line 171
     :cond_66
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isThreeBytes(B)Z
 
@@ -270,7 +249,6 @@
 
     add-int/lit8 v4, p1, 0x2
 
-    .line 175
     aget-byte v2, p0, v2
 
     add-int/lit8 p1, p1, 0x3
@@ -285,7 +263,6 @@
 
     goto :goto_23
 
-    .line 173
     :cond_7f
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -300,7 +277,6 @@
 
     add-int/lit8 v4, p1, 0x2
 
-    .line 185
     aget-byte v5, p0, v2
 
     add-int/lit8 v2, p1, 0x3
@@ -327,7 +303,6 @@
 
     goto :goto_23
 
-    .line 183
     :cond_a0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -335,7 +310,6 @@
 
     throw p0
 
-    .line 197
     :cond_a6
     new-instance p0, Ljava/lang/String;
 
@@ -343,13 +317,11 @@
 
     return-object p0
 
-    .line 129
     :cond_ac
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
     array-length p0, p0
 
-    .line 130
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -392,7 +364,6 @@
 
     or-int v0, p1, p2
 
-    .line 203
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v1
@@ -409,7 +380,6 @@
 
     add-int v0, p1, p2
 
-    .line 213
     new-array p2, p2, [C
 
     move v2, v1
@@ -417,12 +387,10 @@
     :goto_11
     if-ge p1, v0, :cond_27
 
-    .line 219
     invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v3
 
-    .line 220
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -436,7 +404,6 @@
 
     add-int/lit8 v4, v2, 0x1
 
-    .line 224
     invoke-static {v3, p2, v2}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     move v2, v4
@@ -452,12 +419,10 @@
 
     add-int/lit8 v2, p1, 0x1
 
-    .line 228
     invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v3
 
-    .line 229
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -466,18 +431,15 @@
 
     add-int/lit8 p1, v8, 0x1
 
-    .line 230
     invoke-static {v3, p2, v8}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     :goto_3b
     if-ge v2, v0, :cond_51
 
-    .line 234
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v3
 
-    .line 235
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isOneByte(B)Z
 
     move-result v4
@@ -491,7 +453,6 @@
 
     add-int/lit8 v4, p1, 0x1
 
-    .line 239
     invoke-static {v3, p2, p1}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleOneByte(B[CI)V
 
     move p1, v4
@@ -506,7 +467,6 @@
 
     goto :goto_28
 
-    .line 241
     :cond_54
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isTwoBytes(B)Z
 
@@ -520,21 +480,18 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 246
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
 
     add-int/lit8 v4, v8, 0x1
 
-    .line 245
     invoke-static {v3, v2, p2, v8}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleTwoBytes(BB[CI)V
 
     move v8, v4
 
     goto :goto_28
 
-    .line 243
     :cond_6b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -542,7 +499,6 @@
 
     throw p0
 
-    .line 247
     :cond_71
     invoke-static {v3}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->isThreeBytes(B)Z
 
@@ -556,28 +512,24 @@
 
     add-int/lit8 v4, p1, 0x2
 
-    .line 253
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 254
     invoke-virtual {p0, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v4
 
     add-int/lit8 v5, v8, 0x1
 
-    .line 251
     invoke-static {v3, v2, v4, p2, v8}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleThreeBytes(BBB[CI)V
 
     move v8, v5
 
     goto :goto_28
 
-    .line 249
     :cond_8e
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -592,21 +544,18 @@
 
     add-int/lit8 v4, p1, 0x2
 
-    .line 263
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v5
 
     add-int/lit8 v2, p1, 0x3
 
-    .line 264
     invoke-virtual {p0, v4}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v4
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 265
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v6
@@ -621,14 +570,12 @@
 
     move v7, v8
 
-    .line 261
     invoke-static/range {v2 .. v7}, Lcom/google/flatbuffers/Utf8$DecodeUtil;->handleFourBytes(BBBB[CI)V
 
     add-int/lit8 v8, v8, 0x2
 
     goto/16 :goto_28
 
-    .line 259
     :cond_b6
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -636,7 +583,6 @@
 
     throw p0
 
-    .line 273
     :cond_bc
     new-instance p0, Ljava/lang/String;
 
@@ -644,11 +590,9 @@
 
     return-object p0
 
-    .line 204
     :cond_c2
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
-    .line 205
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result p0
@@ -657,7 +601,6 @@
 
     move-result-object p0
 
-    .line 206
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -680,7 +623,6 @@
 
     aput-object p2, v2, p0
 
-    .line 205
     const-string p0, "buffer limit=%d, index=%d, limit=%d"
 
     invoke-static {p0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -695,7 +637,6 @@
 .method private static encodeUtf8Array(Ljava/lang/CharSequence;[BII)I
     .registers 11
 
-    .line 370
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -713,7 +654,6 @@
 
     if-ge v3, p3, :cond_1a
 
-    .line 376
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v4
@@ -722,7 +662,6 @@
 
     int-to-byte v2, v4
 
-    .line 377
     aput-byte v2, p1, v3
 
     add-int/lit8 v1, v1, 0x1
@@ -742,7 +681,6 @@
     :goto_1f
     if-ge v1, v0, :cond_fa
 
-    .line 384
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -755,7 +693,6 @@
 
     int-to-byte v3, v3
 
-    .line 386
     aput-byte v3, p1, p2
 
     move p2, v4
@@ -779,7 +716,6 @@
 
     int-to-byte v5, v5
 
-    .line 388
     aput-byte v5, p1, p2
 
     add-int/lit8 p2, p2, 0x2
@@ -790,7 +726,6 @@
 
     int-to-byte v3, v3
 
-    .line 389
     aput-byte v3, p1, v4
 
     goto :goto_b5
@@ -817,7 +752,6 @@
 
     int-to-byte v5, v5
 
-    .line 392
     aput-byte v5, p1, p2
 
     add-int/lit8 v5, p2, 0x2
@@ -830,7 +764,6 @@
 
     int-to-byte v6, v6
 
-    .line 393
     aput-byte v6, p1, v4
 
     add-int/lit8 p2, p2, 0x3
@@ -841,7 +774,6 @@
 
     int-to-byte v3, v3
 
-    .line 394
     aput-byte v3, p1, v5
 
     goto :goto_b5
@@ -853,14 +785,12 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    .line 399
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v5
 
     if-eq v4, v5, :cond_ba
 
-    .line 400
     invoke-interface {p0, v4}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1
@@ -871,7 +801,6 @@
 
     if-eqz v5, :cond_b9
 
-    .line 403
     invoke-static {v3, v1}, Ljava/lang/Character;->toCodePoint(CC)I
 
     move-result v1
@@ -884,7 +813,6 @@
 
     int-to-byte v5, v5
 
-    .line 404
     aput-byte v5, p1, p2
 
     add-int/lit8 v5, p2, 0x2
@@ -897,7 +825,6 @@
 
     int-to-byte v6, v6
 
-    .line 405
     aput-byte v6, p1, v3
 
     add-int/lit8 v3, p2, 0x3
@@ -910,7 +837,6 @@
 
     int-to-byte v6, v6
 
-    .line 406
     aput-byte v6, p1, v5
 
     add-int/lit8 p2, p2, 0x4
@@ -921,7 +847,6 @@
 
     int-to-byte v1, v1
 
-    .line 407
     aput-byte v1, p1, v3
 
     move v1, v4
@@ -934,7 +859,6 @@
     :cond_b9
     move v1, v4
 
-    .line 401
     :cond_ba
     new-instance p0, Lcom/google/flatbuffers/Utf8Safe$UnpairedSurrogateException;
 
@@ -951,14 +875,12 @@
 
     add-int/lit8 p1, v1, 0x1
 
-    .line 412
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result p3
 
     if-eq p1, p3, :cond_d8
 
-    .line 413
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p0
@@ -969,7 +891,6 @@
 
     if-nez p0, :cond_de
 
-    .line 414
     :cond_d8
     new-instance p0, Lcom/google/flatbuffers/Utf8Safe$UnpairedSurrogateException;
 
@@ -977,7 +898,6 @@
 
     throw p0
 
-    .line 416
     :cond_de
     new-instance p0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -1010,12 +930,10 @@
 .method private static encodeUtf8Buffer(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
     .registers 10
 
-    .line 298
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
-    .line 299
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v1
@@ -1027,7 +945,6 @@
 
     if-ge v2, v0, :cond_1c
 
-    .line 308
     :try_start_d
     invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -1039,7 +956,6 @@
 
     int-to-byte v4, v4
 
-    .line 309
     invoke-virtual {p1, v3, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
 
     add-int/lit8 v2, v2, 0x1
@@ -1051,7 +967,6 @@
 
     add-int v0, v1, v2
 
-    .line 313
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-void
@@ -1062,7 +977,6 @@
     :goto_25
     if-ge v2, v0, :cond_c5
 
-    .line 319
     invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v4
@@ -1071,7 +985,6 @@
 
     int-to-byte v4, v4
 
-    .line 322
     invoke-virtual {p1, v1, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_31
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_d .. :try_end_31} :catch_c9
@@ -1091,7 +1004,6 @@
 
     int-to-byte v6, v6
 
-    .line 327
     :try_start_3e
     invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
 
@@ -1101,7 +1013,6 @@
 
     int-to-byte v1, v1
 
-    .line 328
     invoke-virtual {p1, v5, v1}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_48
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_3e .. :try_end_48} :catch_4b
@@ -1131,7 +1042,6 @@
 
     if-eq v5, v0, :cond_9d
 
-    .line 343
     :try_start_5d
     invoke-interface {p0, v5}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -1143,7 +1053,6 @@
 
     if-eqz v6, :cond_99
 
-    .line 347
     invoke-static {v4, v2}, Ljava/lang/Character;->toCodePoint(CC)I
 
     move-result v2
@@ -1158,7 +1067,6 @@
 
     int-to-byte v6, v6
 
-    .line 348
     :try_start_72
     invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_75
@@ -1174,7 +1082,6 @@
 
     int-to-byte v7, v7
 
-    .line 349
     :try_start_7d
     invoke-virtual {p1, v4, v7}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_80
@@ -1190,7 +1097,6 @@
 
     int-to-byte v4, v4
 
-    .line 350
     :try_start_88
     invoke-virtual {p1, v6, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
 
@@ -1200,7 +1106,6 @@
 
     int-to-byte v2, v2
 
-    .line 351
     invoke-virtual {p1, v1, v2}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_92
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_88 .. :try_end_92} :catch_9b
@@ -1232,7 +1137,6 @@
 
     goto :goto_c9
 
-    .line 344
     :cond_9d
     :goto_9d
     :try_start_9d
@@ -1254,7 +1158,6 @@
 
     int-to-byte v6, v6
 
-    .line 334
     :try_start_aa
     invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
     :try_end_ad
@@ -1270,7 +1173,6 @@
 
     int-to-byte v6, v6
 
-    .line 335
     :try_start_b5
     invoke-virtual {p1, v5, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
 
@@ -1280,7 +1182,6 @@
 
     int-to-byte v4, v4
 
-    .line 336
     invoke-virtual {p1, v1, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
 
     :goto_bf
@@ -1290,7 +1191,6 @@
 
     goto/16 :goto_25
 
-    .line 356
     :cond_c5
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
     :try_end_c8
@@ -1298,7 +1198,6 @@
 
     return-void
 
-    .line 362
     :catch_c9
     :goto_c9
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
@@ -1319,7 +1218,6 @@
 
     add-int/2addr v0, p1
 
-    .line 363
     new-instance p1, Ljava/lang/ArrayIndexOutOfBoundsException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1328,7 +1226,6 @@
 
     invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 364
     invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p0
@@ -1353,7 +1250,6 @@
 .method private static encodedLengthGeneral(Ljava/lang/CharSequence;I)I
     .registers 6
 
-    .line 104
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -1363,7 +1259,6 @@
     :goto_5
     if-ge p1, v0, :cond_35
 
-    .line 107
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -1391,7 +1286,6 @@
 
     if-gt v2, v3, :cond_32
 
-    .line 115
     invoke-static {p0, p1}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
 
     move-result v2
@@ -1404,7 +1298,6 @@
 
     goto :goto_32
 
-    .line 117
     :cond_2c
     new-instance p0, Lcom/google/flatbuffers/Utf8Safe$UnpairedSurrogateException;
 
@@ -1432,14 +1325,12 @@
         }
     .end annotation
 
-    .line 289
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasArray()Z
 
     move-result v0
 
     if-eqz v0, :cond_14
 
-    .line 290
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object v0
@@ -1456,7 +1347,6 @@
 
     return-object p1
 
-    .line 292
     :cond_14
     invoke-static {p1, p2, p3}, Lcom/google/flatbuffers/Utf8Safe;->decodeUtf8Buffer(Ljava/nio/ByteBuffer;II)Ljava/lang/String;
 
@@ -1468,19 +1358,16 @@
 .method public encodeUtf8(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
     .registers 7
 
-    .line 433
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->hasArray()Z
 
     move-result v0
 
     if-eqz v0, :cond_20
 
-    .line 434
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->arrayOffset()I
 
     move-result v0
 
-    .line 435
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object v1
@@ -1491,24 +1378,20 @@
 
     add-int/2addr v2, v0
 
-    .line 436
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v3
 
-    .line 435
     invoke-static {p1, v1, v2, v3}, Lcom/google/flatbuffers/Utf8Safe;->encodeUtf8Array(Ljava/lang/CharSequence;[BII)I
 
     move-result p1
 
     sub-int/2addr p1, v0
 
-    .line 437
     invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     goto :goto_23
 
-    .line 439
     :cond_20
     invoke-static {p1, p2}, Lcom/google/flatbuffers/Utf8Safe;->encodeUtf8Buffer(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
 
@@ -1519,7 +1402,6 @@
 .method public encodedLength(Ljava/lang/CharSequence;)I
     .registers 2
 
-    .line 278
     invoke-static {p1}, Lcom/google/flatbuffers/Utf8Safe;->computeEncodedLength(Ljava/lang/CharSequence;)I
 
     move-result p1

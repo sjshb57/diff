@@ -110,7 +110,6 @@
         }
     .end annotation
 
-    .line 170
     iget-object v0, p0, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt$thenByDescending$1;->$this_thenByDescending:Ljava/util/Comparator;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -121,7 +120,6 @@
 
     goto :goto_1b
 
-    .line 171
     :cond_9
     iget-object v0, p0, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt$thenByDescending$1;->$selector:Lkotlin/jvm/functions/Function1;
 

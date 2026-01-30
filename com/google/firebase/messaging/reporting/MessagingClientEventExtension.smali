@@ -23,7 +23,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 10
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension$Builder;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension$Builder;-><init>()V
@@ -40,10 +39,8 @@
 .method constructor <init>(Lcom/google/firebase/messaging/reporting/MessagingClientEvent;)V
     .registers 2
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     iput-object p1, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;->messaging_client_event_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent;
 
     return-void
@@ -52,7 +49,6 @@
 .method public static getDefaultInstance()Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;
     .registers 1
 
-    .line 46
     sget-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;->DEFAULT_INSTANCE:Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;
 
     return-object v0
@@ -61,7 +57,6 @@
 .method public static newBuilder()Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension$Builder;
     .registers 1
 
-    .line 27
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension$Builder;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension$Builder;-><init>()V
@@ -76,7 +71,6 @@
     .annotation runtime Lcom/google/firebase/encoders/annotations/Encodable$Ignore;
     .end annotation
 
-    .line 32
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;->messaging_client_event_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent;
 
     if-nez v0, :cond_8
@@ -95,7 +89,6 @@
         name = "messagingClientEvent"
     .end annotation
 
-    .line 42
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEventExtension;->messaging_client_event_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent;
 
     return-object v0
@@ -104,7 +97,6 @@
 .method public toByteArray()[B
     .registers 2
 
-    .line 19
     invoke-static {p0}, Lcom/google/firebase/messaging/ProtoEncoderDoNotUse;->encode(Ljava/lang/Object;)[B
 
     move-result-object v0
@@ -120,7 +112,6 @@
         }
     .end annotation
 
-    .line 23
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/ProtoEncoderDoNotUse;->encode(Ljava/lang/Object;Ljava/io/OutputStream;)V
 
     return-void

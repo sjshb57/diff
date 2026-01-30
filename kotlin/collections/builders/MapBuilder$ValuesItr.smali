@@ -74,7 +74,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 509
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Itr;-><init>(Lkotlin/collections/builders/MapBuilder;)V
 
     return-void
@@ -90,7 +89,6 @@
         }
     .end annotation
 
-    .line 511
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -105,7 +103,6 @@
 
     if-ge v0, v1, :cond_2f
 
-    .line 512
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -116,7 +113,6 @@
 
     invoke-virtual {p0, v0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;->setLastIndex$kotlin_stdlib(I)V
 
-    .line 513
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v0
@@ -133,12 +129,10 @@
 
     aget-object v0, v0, v1
 
-    .line 514
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;->initNext$kotlin_stdlib()V
 
     return-object v0
 
-    .line 511
     :cond_2f
     new-instance v0, Ljava/util/NoSuchElementException;
 

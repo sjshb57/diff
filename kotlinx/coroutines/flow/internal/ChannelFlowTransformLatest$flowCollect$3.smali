@@ -196,7 +196,6 @@
 
     move-result-object v0
 
-    .line 25
     iget v1, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest$flowCollect$3;->label:I
 
     const/4 v2, 0x1
@@ -225,12 +224,10 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 26
     new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 27
     iget-object v3, p0, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest$flowCollect$3;->this$0:Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;
 
     iget-object v3, v3, Lkotlinx/coroutines/flow/internal/ChannelFlowTransformLatest;->flow:Lkotlinx/coroutines/flow/Flow;
@@ -259,7 +256,6 @@
 
     return-object v0
 
-    .line 37
     :cond_3e
     :goto_3e
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

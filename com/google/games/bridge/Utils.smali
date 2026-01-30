@@ -11,7 +11,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,7 +19,6 @@
 .method public static startActivityForResult(Landroid/app/Fragment;Landroid/content/Intent;I)V
     .registers 3
 
-    .line 19
     :try_start_0
     invoke-virtual {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_3
@@ -28,7 +26,6 @@
 
     goto :goto_c
 
-    .line 21
     :catch_4
     const-string p0, "Utils"
 

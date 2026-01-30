@@ -94,12 +94,10 @@
         }
     .end annotation
 
-    .line 156
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__ReduceKt$last$2;->$result:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iput-object p1, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 157
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

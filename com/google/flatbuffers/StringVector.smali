@@ -11,10 +11,8 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 27
     invoke-direct {p0}, Lcom/google/flatbuffers/BaseVector;-><init>()V
 
-    .line 28
     invoke-static {}, Lcom/google/flatbuffers/Utf8;->getDefault()Lcom/google/flatbuffers/Utf8;
 
     move-result-object v0
@@ -29,7 +27,6 @@
 .method public __assign(IILjava/nio/ByteBuffer;)Lcom/google/flatbuffers/StringVector;
     .registers 4
 
-    .line 40
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/flatbuffers/StringVector;->__reset(IILjava/nio/ByteBuffer;)V
 
     return-object p0
@@ -38,7 +35,6 @@
 .method public get(I)Ljava/lang/String;
     .registers 4
 
-    .line 50
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/StringVector;->__element(I)I
 
     move-result p1

@@ -40,7 +40,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 11
     invoke-direct {p0}, Lkotlin/random/AbstractPlatformRandom;-><init>()V
 
     return-void
@@ -51,7 +50,6 @@
 .method public getImpl()Ljava/util/Random;
     .registers 3
 
-    .line 13
     invoke-static {}, Ljava/util/concurrent/ThreadLocalRandom;->current()Ljava/util/concurrent/ThreadLocalRandom;
 
     move-result-object v0
@@ -68,7 +66,6 @@
 .method public nextDouble(D)D
     .registers 4
 
-    .line 18
     invoke-static {}, Ljava/util/concurrent/ThreadLocalRandom;->current()Ljava/util/concurrent/ThreadLocalRandom;
 
     move-result-object v0
@@ -83,7 +80,6 @@
 .method public nextInt(II)I
     .registers 4
 
-    .line 15
     invoke-static {}, Ljava/util/concurrent/ThreadLocalRandom;->current()Ljava/util/concurrent/ThreadLocalRandom;
 
     move-result-object v0
@@ -98,7 +94,6 @@
 .method public nextLong(J)J
     .registers 4
 
-    .line 16
     invoke-static {}, Ljava/util/concurrent/ThreadLocalRandom;->current()Ljava/util/concurrent/ThreadLocalRandom;
 
     move-result-object v0
@@ -113,7 +108,6 @@
 .method public nextLong(JJ)J
     .registers 6
 
-    .line 17
     invoke-static {}, Ljava/util/concurrent/ThreadLocalRandom;->current()Ljava/util/concurrent/ThreadLocalRandom;
 
     move-result-object v0

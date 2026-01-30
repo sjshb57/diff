@@ -73,7 +73,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 4
 
-    .line 72
     check-cast p1, Lkotlin/io/path/CopyActionContext;
 
     check-cast p2, Ljava/nio/file/Path;
@@ -102,7 +101,6 @@
 
     invoke-static {p3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
     sget-object p1, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     iget-boolean v0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;->$followLinks:Z
@@ -113,7 +111,6 @@
 
     const/4 v0, 0x1
 
-    .line 74
     new-array v1, v0, [Ljava/nio/file/LinkOption;
 
     sget-object v2, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
@@ -132,7 +129,6 @@
 
     move-result v0
 
-    .line 75
     array-length v1, p1
 
     invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -160,10 +156,8 @@
     :cond_3f
     if-eqz v0, :cond_44
 
-    .line 78
     invoke-static {p3}, Lkotlin/io/path/PathsKt;->deleteRecursively(Ljava/nio/file/Path;)V
 
-    .line 80
     :cond_44
     new-instance v0, Lkotlin/jvm/internal/SpreadBuilder;
 
@@ -205,7 +199,6 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
     :cond_6e
     sget-object p1, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
 

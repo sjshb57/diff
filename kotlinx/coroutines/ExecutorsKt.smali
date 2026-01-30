@@ -40,7 +40,6 @@
 .method public static final asExecutor(Lkotlinx/coroutines/CoroutineDispatcher;)Ljava/util/concurrent/Executor;
     .registers 2
 
-    .line 108
     instance-of v0, p0, Lkotlinx/coroutines/ExecutorCoroutineDispatcher;
 
     if-eqz v0, :cond_8
@@ -77,7 +76,6 @@
 .method public static final from(Ljava/util/concurrent/Executor;)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 2
 
-    .line 100
     instance-of v0, p0, Lkotlinx/coroutines/DispatcherExecutor;
 
     if-eqz v0, :cond_8
@@ -112,7 +110,6 @@
 .method public static final from(Ljava/util/concurrent/ExecutorService;)Lkotlinx/coroutines/ExecutorCoroutineDispatcher;
     .registers 2
 
-    .line 70
     new-instance v0, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;
 
     check-cast p0, Ljava/util/concurrent/Executor;

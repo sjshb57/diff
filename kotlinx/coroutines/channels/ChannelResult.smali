@@ -102,7 +102,6 @@
 
     sput-object v0, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
-    .line 472
     new-instance v0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     invoke-direct {v0}, Lkotlinx/coroutines/channels/ChannelResult$Failed;-><init>()V
@@ -115,7 +114,6 @@
 .method private synthetic constructor <init>(Ljava/lang/Object;)V
     .registers 2
 
-    .line 407
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/ChannelResult;->holder:Ljava/lang/Object;
@@ -126,7 +124,6 @@
 .method public static final synthetic access$getFailed$cp()Lkotlinx/coroutines/channels/ChannelResult$Failed;
     .registers 1
 
-    .line 405
     sget-object v0, Lkotlinx/coroutines/channels/ChannelResult;->failed:Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     return-object v0
@@ -203,7 +200,6 @@
 .method public static final exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
     .registers 3
 
-    .line 458
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     const/4 v1, 0x0
@@ -242,7 +238,6 @@
         }
     .end annotation
 
-    .line 442
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v0, :cond_5
@@ -266,14 +261,12 @@
         }
     .end annotation
 
-    .line 449
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v0, :cond_5
 
     return-object p0
 
-    .line 450
     :cond_5
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
@@ -294,7 +287,6 @@
     :cond_13
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 451
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Trying to call \'getOrThrow\' on a failed channel result: "
@@ -337,7 +329,6 @@
 .method public static final isClosed-impl(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 436
     instance-of p0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     return p0
@@ -346,7 +337,6 @@
 .method public static final isFailure-impl(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 425
     instance-of p0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     return p0
@@ -355,7 +345,6 @@
 .method public static final isSuccess-impl(Ljava/lang/Object;)Z
     .registers 1
 
-    .line 414
     instance-of p0, p0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     xor-int/lit8 p0, p0, 0x1
@@ -366,7 +355,6 @@
 .method public static toString-impl(Ljava/lang/Object;)Ljava/lang/String;
     .registers 3
 
-    .line 489
     instance-of v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     if-eqz v0, :cond_b
@@ -379,7 +367,6 @@
 
     goto :goto_1f
 
-    .line 490
     :cond_b
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -432,7 +419,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 487
     iget-object v0, p0, Lkotlinx/coroutines/channels/ChannelResult;->holder:Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlinx/coroutines/channels/ChannelResult;->toString-impl(Ljava/lang/Object;)Ljava/lang/String;

@@ -28,7 +28,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 298
     const-class v0, Lcom/yahoo/sketches/quantiles/Util;
 
     return-void
@@ -37,7 +36,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 298
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,7 +75,6 @@
 
     div-double v8, v0, v2
 
-    .line 370
     invoke-static {v8, v9, p0, p1}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->epsForKPredicate(DD)Z
 
     move-result v0
@@ -90,7 +87,6 @@
 
     move-wide v8, p4
 
-    .line 371
     invoke-static/range {v4 .. v9}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->bracketedBinarySearchForEps(DDD)D
 
     move-result-wide p0
@@ -102,7 +98,6 @@
 
     move-wide v6, p2
 
-    .line 374
     invoke-static/range {v4 .. v9}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->bracketedBinarySearchForEps(DDD)D
 
     move-result-wide p0
@@ -123,7 +118,6 @@
         }
     .end annotation
 
-    .line 357
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->kOfEpsFormula(D)D
 
     move-result-wide p0
@@ -156,7 +150,6 @@
 
     const-wide v0, 0x3ff5555555555555L  # 1.3333333333333333
 
-    .line 324
     invoke-static {p0, v0, v1}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->getTheoreticalEpsilon(ID)D
 
     move-result-wide v0
@@ -189,14 +182,12 @@
 
     const-wide v6, 0x3fefffffffffffffL  # 0.9999999999999999
 
-    .line 349
     invoke-static/range {v2 .. v7}, Lcom/yahoo/sketches/quantiles/Util$EpsilonFromK;->bracketedBinarySearchForEps(DDD)D
 
     move-result-wide p0
 
     return-wide p0
 
-    .line 339
     :cond_15
     new-instance p0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -228,7 +219,6 @@
 
     div-double/2addr v0, p0
 
-    .line 353
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0

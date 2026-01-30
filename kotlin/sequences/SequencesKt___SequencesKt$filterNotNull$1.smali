@@ -96,7 +96,6 @@
     :cond_4
     const/4 p1, 0x0
 
-    .line 508
     :goto_5
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -108,7 +107,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 508
     invoke-virtual {p0, p1}, Lkotlin/sequences/SequencesKt___SequencesKt$filterNotNull$1;->invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object p1

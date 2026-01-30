@@ -84,10 +84,8 @@
         }
     .end annotation
 
-    .line 489
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 490
     invoke-static {p1}, Lkotlin/sequences/DropSequence;->access$getSequence$p(Lkotlin/sequences/DropSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
@@ -98,7 +96,6 @@
 
     iput-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
-    .line 491
     invoke-static {p1}, Lkotlin/sequences/DropSequence;->access$getCount$p(Lkotlin/sequences/DropSequence;)I
 
     move-result p1
@@ -111,7 +108,6 @@
 .method private final drop()V
     .registers 2
 
-    .line 495
     :goto_0
     iget v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
@@ -125,12 +121,10 @@
 
     if-eqz v0, :cond_18
 
-    .line 496
     iget-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 497
     iget v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     add-int/lit8 v0, v0, -0x1
@@ -155,7 +149,6 @@
         }
     .end annotation
 
-    .line 490
     iget-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -164,7 +157,6 @@
 .method public final getLeft()I
     .registers 2
 
-    .line 491
     iget v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     return v0
@@ -173,10 +165,8 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 507
     invoke-direct {p0}, Lkotlin/sequences/DropSequence$iterator$1;->drop()V
 
-    .line 508
     iget-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -194,10 +184,8 @@
         }
     .end annotation
 
-    .line 502
     invoke-direct {p0}, Lkotlin/sequences/DropSequence$iterator$1;->drop()V
 
-    .line 503
     iget-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -222,7 +210,6 @@
 .method public final setLeft(I)V
     .registers 2
 
-    .line 491
     iput p1, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     return-void

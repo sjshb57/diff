@@ -36,7 +36,6 @@
         }
     .end annotation
 
-    .line 98
     iput-object p1, p0, Lcom/youka/iapplugin/OneTimeOfferBridge$2;->val$act:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/youka/iapplugin/OneTimeOfferBridge$2;->val$productIdsCsv:Ljava/lang/String;
@@ -55,7 +54,6 @@
 .method public onBillingServiceDisconnected()V
     .registers 3
 
-    .line 112
     const-string v0, "OneTimeOfferBridge"
 
     const-string v1, "onBillingServiceDisconnected"
@@ -64,7 +62,6 @@
 
     const/4 v0, 0x0
 
-    .line 113
     invoke-static {v0}, Lcom/youka/iapplugin/OneTimeOfferBridge;->-$$Nest$sfputisReady(Z)V
 
     return-void
@@ -73,7 +70,6 @@
 .method public onBillingSetupFinished(Lcom/android/billingclient/api/BillingResult;)V
     .registers 6
 
-    .line 101
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "FetchAllOffers - onBillingSetupFinished: "
@@ -104,7 +100,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 102
     invoke-virtual {p1}, Lcom/android/billingclient/api/BillingResult;->getResponseCode()I
 
     move-result v0
@@ -113,10 +108,8 @@
 
     const/4 p1, 0x1
 
-    .line 103
     invoke-static {p1}, Lcom/youka/iapplugin/OneTimeOfferBridge;->-$$Nest$sfputisReady(Z)V
 
-    .line 104
     iget-object v0, p0, Lcom/youka/iapplugin/OneTimeOfferBridge$2;->val$act:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/youka/iapplugin/OneTimeOfferBridge$2;->val$productIdsCsv:Ljava/lang/String;
@@ -129,7 +122,6 @@
 
     goto :goto_46
 
-    .line 106
     :cond_39
     iget-object v0, p0, Lcom/youka/iapplugin/OneTimeOfferBridge$2;->val$unityObject:Ljava/lang/String;
 

@@ -57,20 +57,16 @@
 .method public constructor <init>(JJ)V
     .registers 9
 
-    .line 166
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 167
     iput-wide p1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->stopTimeout:J
 
-    .line 168
     iput-wide p3, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->replayExpiration:J
 
     const-wide/16 v0, 0x0
 
     cmp-long v2, p1, v0
 
-    .line 171
     const-string v3, " ms) cannot be negative"
 
     if-ltz v2, :cond_2f
@@ -81,7 +77,6 @@
 
     return-void
 
-    .line 172
     :cond_14
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -107,7 +102,6 @@
 
     throw p2
 
-    .line 171
     :cond_2f
     new-instance p3, Ljava/lang/StringBuilder;
 
@@ -137,7 +131,6 @@
 .method public static final synthetic access$getReplayExpiration$p(Lkotlinx/coroutines/flow/StartedWhileSubscribed;)J
     .registers 3
 
-    .line 166
     iget-wide v0, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->replayExpiration:J
 
     return-wide v0
@@ -146,7 +139,6 @@
 .method public static final synthetic access$getStopTimeout$p(Lkotlinx/coroutines/flow/StartedWhileSubscribed;)J
     .registers 3
 
-    .line 166
     iget-wide v0, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->stopTimeout:J
 
     return-wide v0
@@ -168,10 +160,8 @@
         }
     .end annotation
 
-    .line 175
     check-cast p1, Lkotlinx/coroutines/flow/Flow;
 
-    .line 176
     new-instance v0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$1;
 
     const/4 v1, 0x0
@@ -184,7 +174,6 @@
 
     move-result-object p1
 
-    .line 188
     new-instance v0, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$2;
 
     invoke-direct {v0, v1}, Lkotlinx/coroutines/flow/StartedWhileSubscribed$command$2;-><init>(Lkotlin/coroutines/Continuation;)V
@@ -195,7 +184,6 @@
 
     move-result-object p1
 
-    .line 189
     invoke-static {p1}, Lkotlinx/coroutines/flow/FlowKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p1
@@ -206,12 +194,10 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 202
     instance-of v0, p1, Lkotlinx/coroutines/flow/StartedWhileSubscribed;
 
     if-eqz v0, :cond_18
 
-    .line 203
     iget-wide v0, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->stopTimeout:J
 
     check-cast p1, Lkotlinx/coroutines/flow/StartedWhileSubscribed;
@@ -222,7 +208,6 @@
 
     if-nez v0, :cond_18
 
-    .line 204
     iget-wide v0, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->replayExpiration:J
 
     iget-wide v2, p1, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->replayExpiration:J
@@ -245,7 +230,6 @@
 .method public hashCode()I
     .registers 4
 
-    .line 207
     iget-wide v0, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->stopTimeout:J
 
     invoke-static {v0, v1}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m(J)I
@@ -270,12 +254,10 @@
 
     const/4 v0, 0x2
 
-    .line 193
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->createListBuilder(I)Ljava/util/List;
 
     move-result-object v0
 
-    .line 194
     iget-wide v1, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->stopTimeout:J
 
     const-wide/16 v3, 0x0
@@ -304,7 +286,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 195
     :cond_25
     iget-wide v3, p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;->replayExpiration:J
 
@@ -334,13 +315,11 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 193
     :cond_47
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->build(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 197
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "SharingStarted.WhileSubscribed("

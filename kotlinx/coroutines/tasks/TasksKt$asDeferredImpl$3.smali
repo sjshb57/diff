@@ -132,7 +132,6 @@
         }
     .end annotation
 
-    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/tasks/TasksKt$asDeferredImpl$3;->$$delegate_0:Lkotlinx/coroutines/CompletableDeferred;

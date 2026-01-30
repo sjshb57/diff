@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/android/gms/tasks/Task;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig$$ExternalSyntheticLambda9;->f$0:Lcom/google/android/gms/tasks/Task;
@@ -27,7 +26,6 @@
 .method public final then(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig$$ExternalSyntheticLambda9;->f$0:Lcom/google/android/gms/tasks/Task;
 
     invoke-static {v0, p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->lambda$ensureInitialized$0(Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/Task;)Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigInfo;

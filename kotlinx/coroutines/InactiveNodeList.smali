@@ -44,10 +44,8 @@
 .method public constructor <init>(Lkotlinx/coroutines/NodeList;)V
     .registers 2
 
-    .line 1374
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1375
     iput-object p1, p0, Lkotlinx/coroutines/InactiveNodeList;->list:Lkotlinx/coroutines/NodeList;
 
     return-void
@@ -58,7 +56,6 @@
 .method public getList()Lkotlinx/coroutines/NodeList;
     .registers 2
 
-    .line 1375
     iget-object v0, p0, Lkotlinx/coroutines/InactiveNodeList;->list:Lkotlinx/coroutines/NodeList;
 
     return-object v0
@@ -75,7 +72,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 1378
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getDEBUG()Z
 
     move-result v0

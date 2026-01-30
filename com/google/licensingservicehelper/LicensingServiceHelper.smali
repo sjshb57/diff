@@ -23,20 +23,16 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .registers 4
 
-    .line 68
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 53
     new-instance v0, Lcom/google/licensingservicehelper/LicensingServiceHelper$1;
 
     invoke-direct {v0, p0}, Lcom/google/licensingservicehelper/LicensingServiceHelper$1;-><init>(Lcom/google/licensingservicehelper/LicensingServiceHelper;)V
 
     iput-object v0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->serviceConnection:Landroid/content/ServiceConnection;
 
-    .line 69
     iput-object p1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->context:Landroid/content/Context;
 
-    .line 70
     iput-object p2, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->publicKey:Ljava/lang/String;
 
     return-void
@@ -45,7 +41,6 @@
 .method static synthetic access$002(Lcom/google/licensingservicehelper/LicensingServiceHelper;Lcom/android/vending/licensing/ILicensingService;)Lcom/android/vending/licensing/ILicensingService;
     .registers 2
 
-    .line 44
     iput-object p1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->licensingService:Lcom/android/vending/licensing/ILicensingService;
 
     return-object p1
@@ -54,7 +49,6 @@
 .method static synthetic access$100(Lcom/google/licensingservicehelper/LicensingServiceHelper;)V
     .registers 1
 
-    .line 44
     invoke-direct {p0}, Lcom/google/licensingservicehelper/LicensingServiceHelper;->callLicensingService()V
 
     return-void
@@ -63,7 +57,6 @@
 .method static synthetic access$200(Lcom/google/licensingservicehelper/LicensingServiceHelper;)Ljava/lang/String;
     .registers 1
 
-    .line 44
     iget-object p0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->publicKey:Ljava/lang/String;
 
     return-object p0
@@ -77,7 +70,6 @@
         }
     .end annotation
 
-    .line 44
     invoke-static {p0, p1}, Lcom/google/licensingservicehelper/LicensingServiceHelper;->parseAndVerify(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -88,7 +80,6 @@
 .method static synthetic access$400(Lcom/google/licensingservicehelper/LicensingServiceHelper;)Lcom/google/licensingservicehelper/LicensingServiceCallback;
     .registers 1
 
-    .line 44
     iget-object p0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->callback:Lcom/google/licensingservicehelper/LicensingServiceCallback;
 
     return-object p0
@@ -97,13 +88,11 @@
 .method private callLicensingService()V
     .registers 5
 
-    .line 115
     :try_start_0
     iget-object v0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->licensingService:Lcom/android/vending/licensing/ILicensingService;
 
     iget-object v1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->context:Landroid/content/Context;
 
-    .line 116
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
@@ -116,7 +105,6 @@
 
     invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
 
-    .line 115
     invoke-interface {v0, v1, v2, v3}, Lcom/android/vending/licensing/ILicensingService;->checkLicenseV2(Ljava/lang/String;Lcom/android/vending/licensing/ILicenseV2ResultListener;Landroid/os/Bundle;)V
     :try_end_15
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_15} :catch_16
@@ -126,14 +114,12 @@
     :catch_16
     move-exception v0
 
-    .line 157
     const-string v1, "LicensingServiceHelper"
 
     const-string v2, "RemoteException in checkLicenseV2 call."
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 158
     iget-object v0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->callback:Lcom/google/licensingservicehelper/LicensingServiceCallback;
 
     const-string v1, "RemoteException in checkLicenseV2 call"
@@ -149,20 +135,17 @@
 
     const/4 v0, 0x0
 
-    .line 202
     :try_start_1
     invoke-static {p0, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object p0
 
-    .line 203
     const-string v0, "RSA"
 
     invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
     move-result-object v0
 
-    .line 204
     new-instance v1, Ljava/security/spec/X509EncodedKeySpec;
 
     invoke-direct {v1, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
@@ -179,7 +162,6 @@
     :catch_15
     move-exception p0
 
-    .line 208
     const-string v0, "LicensingServiceHelper"
 
     const/4 v1, 0x0
@@ -188,7 +170,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 209
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -198,7 +179,6 @@
     :catch_24
     move-exception p0
 
-    .line 206
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -214,7 +194,6 @@
         }
     .end annotation
 
-    .line 186
     invoke-static {}, Lcom/google/api/client/json/jackson2/JacksonFactory;->getDefaultInstance()Lcom/google/api/client/json/jackson2/JacksonFactory;
 
     move-result-object v0
@@ -227,26 +206,22 @@
 
     move-result-object p1
 
-    .line 187
     invoke-static {p0}, Lcom/google/licensingservicehelper/LicensingServiceHelper;->generatePublicKey(Ljava/lang/String;)Ljava/security/PublicKey;
 
     move-result-object p0
 
-    .line 188
     invoke-virtual {p1, p0}, Lcom/google/api/client/json/webtoken/JsonWebSignature;->verifySignature(Ljava/security/PublicKey;)Z
 
     move-result p0
 
     if-eqz p0, :cond_26
 
-    .line 192
     const-string p0, "LicensingServiceHelper"
 
     const-string v0, "JWS verification succeeded"
 
     invoke-static {p0, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 193
     invoke-virtual {p1}, Lcom/google/api/client/json/webtoken/JsonWebSignature;->getPayload()Lcom/google/api/client/json/webtoken/JsonWebToken$Payload;
 
     move-result-object p0
@@ -257,7 +232,6 @@
 
     return-object p0
 
-    .line 190
     :cond_26
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -273,15 +247,12 @@
 .method public checkLicense(Lcom/google/licensingservicehelper/LicensingServiceCallback;)V
     .registers 5
 
-    .line 82
     iput-object p1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->callback:Lcom/google/licensingservicehelper/LicensingServiceCallback;
 
-    .line 83
     iget-object p1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->licensingService:Lcom/android/vending/licensing/ILicensingService;
 
     if-nez p1, :cond_33
 
-    .line 85
     new-instance p1, Landroid/content/Intent;
 
     const-class v0, Lcom/android/vending/licensing/ILicensingService;
@@ -292,12 +263,10 @@
 
     invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 86
     const-string v0, "com.android.vending"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 87
     iget-object v0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->context:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->serviceConnection:Landroid/content/ServiceConnection;
@@ -308,7 +277,6 @@
 
     move-result p1
 
-    .line 88
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "service bound with "
@@ -327,7 +295,6 @@
 
     goto :goto_36
 
-    .line 90
     :cond_33
     invoke-direct {p0}, Lcom/google/licensingservicehelper/LicensingServiceHelper;->callLicensingService()V
 
@@ -338,7 +305,6 @@
 .method public onDestroy()V
     .registers 4
 
-    .line 167
     const-string v0, "LicensingServiceHelper"
 
     :try_start_2
@@ -346,7 +312,6 @@
 
     if-eqz v1, :cond_11
 
-    .line 168
     iget-object v2, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->serviceConnection:Landroid/content/ServiceConnection;
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
@@ -355,7 +320,6 @@
 
     goto :goto_11
 
-    .line 171
     :catch_c
     const-string v1, "Unable to unbind from licensing service (already unbound)"
 
@@ -365,10 +329,8 @@
     :goto_11
     const/4 v1, 0x0
 
-    .line 173
     iput-object v1, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->licensingService:Lcom/android/vending/licensing/ILicensingService;
 
-    .line 174
     const-string v1, "Destroyed LicenseServiceHelper"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -384,10 +346,8 @@
         }
     .end annotation
 
-    .line 102
     iget-object v0, p0, Lcom/google/licensingservicehelper/LicensingServiceHelper;->context:Landroid/content/Context;
 
-    .line 103
     invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
 
     move-result-object v1
@@ -400,7 +360,6 @@
 
     const/4 v3, 0x0
 
-    .line 102
     invoke-virtual/range {v0 .. v5}, Landroid/content/Context;->startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;III)V
 
     return-void

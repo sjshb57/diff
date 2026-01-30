@@ -34,7 +34,6 @@
 .method constructor <init>(Lcom/google/flatbuffers/FlexBuffersBuilder;)V
     .registers 2
 
-    .line 94
     iput-object p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$1;->this$0:Lcom/google/flatbuffers/FlexBuffersBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,13 +46,10 @@
 .method public compare(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;Lcom/google/flatbuffers/FlexBuffersBuilder$Value;)I
     .registers 5
 
-    .line 97
     iget p1, p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->key:I
 
-    .line 98
     iget p2, p2, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->key:I
 
-    .line 101
     :cond_4
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$1;->this$0:Lcom/google/flatbuffers/FlexBuffersBuilder;
 
@@ -65,7 +61,6 @@
 
     move-result v0
 
-    .line 102
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$1;->this$0:Lcom/google/flatbuffers/FlexBuffersBuilder;
 
     invoke-static {v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->access$000(Lcom/google/flatbuffers/FlexBuffersBuilder;)Lcom/google/flatbuffers/ReadWriteBuf;
@@ -97,7 +92,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .registers 3
 
-    .line 94
     check-cast p1, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     check-cast p2, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;

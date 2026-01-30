@@ -108,10 +108,8 @@
 
     const/4 v0, 0x0
 
-    .line 152
     invoke-direct {p0, p1, p2, v0}, Lkotlinx/coroutines/channels/ActorCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/channels/Channel;Z)V
 
-    .line 154
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -128,7 +126,6 @@
 .method public static final synthetic access$onSendRegFunction(Lkotlinx/coroutines/channels/LazyActorCoroutine;Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V
     .registers 3
 
-    .line 148
     invoke-direct {p0, p1, p2}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->onSendRegFunction(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V
 
     return-void
@@ -152,10 +149,8 @@
         }
     .end annotation
 
-    .line 197
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->onStart()V
 
-    .line 198
     invoke-super {p0}, Lkotlinx/coroutines/channels/ActorCoroutine;->getOnSend()Lkotlinx/coroutines/selects/SelectClause2;
 
     move-result-object v0
@@ -174,12 +169,10 @@
 .method public close(Ljava/lang/Throwable;)Z
     .registers 2
 
-    .line 183
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/ActorCoroutine;->close(Ljava/lang/Throwable;)Z
 
     move-result p1
 
-    .line 185
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->start()Z
 
     return p1
@@ -197,10 +190,8 @@
         }
     .end annotation
 
-    .line 190
     new-instance v7, Lkotlinx/coroutines/selects/SelectClause2Impl;
 
-    .line 192
     sget-object v0, Lkotlinx/coroutines/channels/LazyActorCoroutine$onSend$1;->INSTANCE:Lkotlinx/coroutines/channels/LazyActorCoroutine$onSend$1;
 
     const/4 v1, 0x0
@@ -219,7 +210,6 @@
 
     check-cast v2, Lkotlin/jvm/functions/Function3;
 
-    .line 193
     invoke-super {p0}, Lkotlinx/coroutines/channels/ActorCoroutine;->getOnSend()Lkotlinx/coroutines/selects/SelectClause2;
 
     move-result-object v0
@@ -238,7 +228,6 @@
 
     move-object v1, p0
 
-    .line 190
     invoke-direct/range {v0 .. v6}, Lkotlinx/coroutines/selects/SelectClause2Impl;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     check-cast v7, Lkotlinx/coroutines/selects/SelectClause2;
@@ -263,10 +252,8 @@
         .end subannotation
     .end annotation
 
-    .line 172
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->start()Z
 
-    .line 173
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/ActorCoroutine;->offer(Ljava/lang/Object;)Z
 
     move-result p1
@@ -277,7 +264,6 @@
 .method protected onStart()V
     .registers 3
 
-    .line 157
     iget-object v0, p0, Lkotlinx/coroutines/channels/LazyActorCoroutine;->continuation:Lkotlin/coroutines/Continuation;
 
     move-object v1, p0
@@ -302,10 +288,8 @@
         }
     .end annotation
 
-    .line 161
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->start()Z
 
-    .line 162
     invoke-super {p0, p1, p2}, Lkotlinx/coroutines/channels/ActorCoroutine;->send(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p1
@@ -333,10 +317,8 @@
         }
     .end annotation
 
-    .line 177
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/LazyActorCoroutine;->start()Z
 
-    .line 178
     invoke-super {p0, p1}, Lkotlinx/coroutines/channels/ActorCoroutine;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

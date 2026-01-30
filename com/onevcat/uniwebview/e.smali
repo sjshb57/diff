@@ -70,7 +70,6 @@
 
     check-cast v8, La/v;
 
-    .line 1
     const-string v1, "it"
 
     invoke-static {v8, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -91,7 +90,6 @@
 
     invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
     const-string v9, "identifier"
 
     invoke-static {v7, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -104,13 +102,10 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 3
     sget-object v1, La/i;->d:La/i;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v2, "message"
 
     const-string v3, "Trying to animate web view but an other transition animation is not finished yet. Ignore this one."
@@ -136,12 +131,10 @@
 
     float-to-long v1, v2
 
-    .line 6
     new-instance v13, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v13, v10}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 7
     new-instance v9, Landroid/view/animation/TranslateAnimation;
 
     int-to-float v10, v3
@@ -176,10 +169,8 @@
 
     invoke-virtual {v9, v1, v2}, Landroid/view/animation/Animation;->setStartOffset(J)V
 
-    .line 8
     invoke-virtual {v13, v9}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 9
     new-instance v11, La/k;
 
     iget-object v10, v8, La/v;->d:La/b0;
@@ -230,7 +221,6 @@
 
     move-object/from16 v9, v20
 
-    .line 10
     invoke-virtual {v9, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
     new-instance v0, La/t;
@@ -253,7 +243,6 @@
 
     move v10, v15
 
-    .line 11
     :goto_b0
     invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

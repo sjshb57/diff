@@ -200,7 +200,6 @@
 
     move-result-object v0
 
-    .line 312
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$fixedPeriodTicker$3;->label:I
 
     const/4 v2, 0x3
@@ -256,7 +255,6 @@
 
     check-cast v1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 313
     iget-wide v5, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$fixedPeriodTicker$3;->$initialDelayMillis:J
 
     move-object p1, p0
@@ -275,7 +273,6 @@
 
     return-object v0
 
-    .line 315
     :cond_42
     :goto_42
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ProducerScope;->getChannel()Lkotlinx/coroutines/channels/SendChannel;
@@ -300,7 +297,6 @@
 
     return-object v0
 
-    .line 316
     :cond_56
     :goto_56
     iget-wide v4, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$fixedPeriodTicker$3;->$delayMillis:J

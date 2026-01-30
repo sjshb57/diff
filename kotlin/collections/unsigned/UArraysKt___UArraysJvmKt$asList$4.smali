@@ -76,7 +76,6 @@
 
     iput-object p1, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
-    .line 122
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -87,7 +86,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 122
     instance-of v0, p1, Lkotlin/UShort;
 
     if-nez v0, :cond_6
@@ -113,7 +111,6 @@
 .method public contains-xj2QHRw(S)Z
     .registers 3
 
-    .line 125
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0, p1}, Lkotlin/UShortArray;->contains-xj2QHRw([SS)Z
@@ -126,7 +123,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 122
     invoke-virtual {p0, p1}, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->get-Mh2AYeg(I)S
 
     move-result p1
@@ -141,7 +137,6 @@
 .method public get-Mh2AYeg(I)S
     .registers 3
 
-    .line 126
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0, p1}, Lkotlin/UShortArray;->get-Mh2AYeg([SI)S
@@ -154,7 +149,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 123
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0}, Lkotlin/UShortArray;->getSize-impl([S)I
@@ -167,7 +161,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 122
     instance-of v0, p1, Lkotlin/UShort;
 
     if-nez v0, :cond_6
@@ -193,7 +186,6 @@
 .method public indexOf-xj2QHRw(S)I
     .registers 3
 
-    .line 127
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->indexOf([SS)I
@@ -206,7 +198,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 124
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0}, Lkotlin/UShortArray;->isEmpty-impl([S)Z
@@ -219,7 +210,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 122
     instance-of v0, p1, Lkotlin/UShort;
 
     if-nez v0, :cond_6
@@ -245,7 +235,6 @@
 .method public lastIndexOf-xj2QHRw(S)I
     .registers 3
 
-    .line 128
     iget-object v0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;->$this_asList:[S
 
     invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->lastIndexOf([SS)I

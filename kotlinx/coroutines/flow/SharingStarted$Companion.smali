@@ -61,7 +61,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/SharingStarted$Companion;->$$INSTANCE:Lkotlinx/coroutines/flow/SharingStarted$Companion;
 
-    .line 80
     new-instance v0, Lkotlinx/coroutines/flow/StartedEagerly;
 
     invoke-direct {v0}, Lkotlinx/coroutines/flow/StartedEagerly;-><init>()V
@@ -70,7 +69,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/SharingStarted$Companion;->Eagerly:Lkotlinx/coroutines/flow/SharingStarted;
 
-    .line 85
     new-instance v0, Lkotlinx/coroutines/flow/StartedLazily;
 
     invoke-direct {v0}, Lkotlinx/coroutines/flow/StartedLazily;-><init>()V
@@ -85,7 +83,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -107,7 +104,6 @@
 
     const-wide p3, 0x7fffffffffffffffL
 
-    .line 105
     :cond_f
     invoke-virtual {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/SharingStarted$Companion;->WhileSubscribed(JJ)Lkotlinx/coroutines/flow/SharingStarted;
 
@@ -121,7 +117,6 @@
 .method public final WhileSubscribed(JJ)Lkotlinx/coroutines/flow/SharingStarted;
     .registers 6
 
-    .line 109
     new-instance v0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/StartedWhileSubscribed;-><init>(JJ)V
@@ -134,7 +129,6 @@
 .method public final getEagerly()Lkotlinx/coroutines/flow/SharingStarted;
     .registers 2
 
-    .line 80
     sget-object v0, Lkotlinx/coroutines/flow/SharingStarted$Companion;->Eagerly:Lkotlinx/coroutines/flow/SharingStarted;
 
     return-object v0
@@ -143,7 +137,6 @@
 .method public final getLazily()Lkotlinx/coroutines/flow/SharingStarted;
     .registers 2
 
-    .line 85
     sget-object v0, Lkotlinx/coroutines/flow/SharingStarted$Companion;->Lazily:Lkotlinx/coroutines/flow/SharingStarted;
 
     return-object v0

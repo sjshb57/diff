@@ -85,7 +85,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/MovingSubList;->list:Ljava/util/List;
@@ -103,14 +102,12 @@
         }
     .end annotation
 
-    .line 75
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     iget v1, p0, Lkotlin/collections/MovingSubList;->_size:I
 
     invoke-virtual {v0, p1, v1}, Lkotlin/collections/AbstractList$Companion;->checkElementIndex$kotlin_stdlib(II)V
 
-    .line 77
     iget-object v0, p0, Lkotlin/collections/MovingSubList;->list:Ljava/util/List;
 
     iget v1, p0, Lkotlin/collections/MovingSubList;->fromIndex:I
@@ -127,7 +124,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 80
     iget v0, p0, Lkotlin/collections/MovingSubList;->_size:I
 
     return v0
@@ -136,7 +132,6 @@
 .method public final move(II)V
     .registers 5
 
-    .line 69
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     iget-object v1, p0, Lkotlin/collections/MovingSubList;->list:Ljava/util/List;
@@ -147,12 +142,10 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lkotlin/collections/AbstractList$Companion;->checkRangeIndexes$kotlin_stdlib(III)V
 
-    .line 70
     iput p1, p0, Lkotlin/collections/MovingSubList;->fromIndex:I
 
     sub-int/2addr p2, p1
 
-    .line 71
     iput p2, p0, Lkotlin/collections/MovingSubList;->_size:I
 
     return-void

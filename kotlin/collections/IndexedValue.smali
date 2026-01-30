@@ -73,7 +73,6 @@
         }
     .end annotation
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlin/collections/IndexedValue;->index:I
@@ -196,7 +195,6 @@
 .method public final getIndex()I
     .registers 2
 
-    .line 14
     iget v0, p0, Lkotlin/collections/IndexedValue;->index:I
 
     return v0
@@ -210,7 +208,6 @@
         }
     .end annotation
 
-    .line 14
     iget-object v0, p0, Lkotlin/collections/IndexedValue;->value:Ljava/lang/Object;
 
     return-object v0

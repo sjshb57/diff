@@ -98,7 +98,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 54
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -115,7 +114,6 @@
 .method private final getDays-UwyO8pc(D)J
     .registers 4
 
-    .line 199
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -128,7 +126,6 @@
 .method private final getDays-UwyO8pc(I)J
     .registers 4
 
-    .line 185
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -141,7 +138,6 @@
 .method private final getDays-UwyO8pc(J)J
     .registers 4
 
-    .line 189
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -172,7 +168,6 @@
 .method private final getHours-UwyO8pc(D)J
     .registers 4
 
-    .line 180
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -185,7 +180,6 @@
 .method private final getHours-UwyO8pc(I)J
     .registers 4
 
-    .line 166
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -198,7 +192,6 @@
 .method private final getHours-UwyO8pc(J)J
     .registers 4
 
-    .line 170
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -229,7 +222,6 @@
 .method private final getMicroseconds-UwyO8pc(D)J
     .registers 4
 
-    .line 104
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -242,7 +234,6 @@
 .method private final getMicroseconds-UwyO8pc(I)J
     .registers 4
 
-    .line 90
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -255,7 +246,6 @@
 .method private final getMicroseconds-UwyO8pc(J)J
     .registers 4
 
-    .line 94
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -286,7 +276,6 @@
 .method private final getMilliseconds-UwyO8pc(D)J
     .registers 4
 
-    .line 123
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -299,7 +288,6 @@
 .method private final getMilliseconds-UwyO8pc(I)J
     .registers 4
 
-    .line 109
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -312,7 +300,6 @@
 .method private final getMilliseconds-UwyO8pc(J)J
     .registers 4
 
-    .line 113
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -343,7 +330,6 @@
 .method private final getMinutes-UwyO8pc(D)J
     .registers 4
 
-    .line 161
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -356,7 +342,6 @@
 .method private final getMinutes-UwyO8pc(I)J
     .registers 4
 
-    .line 147
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -369,7 +354,6 @@
 .method private final getMinutes-UwyO8pc(J)J
     .registers 4
 
-    .line 151
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -400,7 +384,6 @@
 .method private final getNanoseconds-UwyO8pc(D)J
     .registers 4
 
-    .line 85
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -413,7 +396,6 @@
 .method private final getNanoseconds-UwyO8pc(I)J
     .registers 4
 
-    .line 71
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -426,7 +408,6 @@
 .method private final getNanoseconds-UwyO8pc(J)J
     .registers 4
 
-    .line 75
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -457,7 +438,6 @@
 .method private final getSeconds-UwyO8pc(D)J
     .registers 4
 
-    .line 142
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -470,7 +450,6 @@
 .method private final getSeconds-UwyO8pc(I)J
     .registers 4
 
-    .line 128
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -483,7 +462,6 @@
 .method private final getSeconds-UwyO8pc(J)J
     .registers 4
 
-    .line 132
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -526,7 +504,6 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
     invoke-static {p1, p2, p3, p4}, Lkotlin/time/DurationUnitKt;->convertDurationUnit(DLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)D
 
     move-result-wide p1
@@ -551,7 +528,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 383
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -578,7 +554,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 365
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -605,7 +580,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 372
     sget-object v0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -618,7 +592,6 @@
 .method public final getINFINITE-UwyO8pc()J
     .registers 3
 
-    .line 59
     invoke-static {}, Lkotlin/time/Duration;->access$getINFINITE$cp()J
 
     move-result-wide v0
@@ -629,7 +602,6 @@
 .method public final getNEG_INFINITE-UwyO8pc$kotlin_stdlib()J
     .registers 3
 
-    .line 60
     invoke-static {}, Lkotlin/time/Duration;->access$getNEG_INFINITE$cp()J
 
     move-result-wide v0
@@ -640,7 +612,6 @@
 .method public final getZERO-UwyO8pc()J
     .registers 3
 
-    .line 56
     invoke-static {}, Lkotlin/time/Duration;->access$getZERO$cp()J
 
     move-result-wide v0
@@ -665,7 +636,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 357
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -692,7 +662,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 339
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -719,7 +688,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 346
     sget-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -746,7 +714,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 253
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -773,7 +740,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 235
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -800,7 +766,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 242
     sget-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -827,7 +792,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 279
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -854,7 +818,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 261
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -881,7 +844,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 268
     sget-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -908,7 +870,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 331
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -935,7 +896,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 313
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -962,7 +922,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 320
     sget-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -989,7 +948,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 227
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -1016,7 +974,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 209
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -1043,7 +1000,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 216
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -1062,7 +1018,6 @@
 
     const/4 v0, 0x0
 
-    .line 398
     :try_start_6
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->access$parseDuration(Ljava/lang/String;Z)J
 
@@ -1075,7 +1030,6 @@
     :catch_b
     move-exception v0
 
-    .line 400
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1112,7 +1066,6 @@
 
     const/4 v0, 0x1
 
-    .line 419
     :try_start_7
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->access$parseDuration(Ljava/lang/String;Z)J
 
@@ -1125,7 +1078,6 @@
     :catch_c
     move-exception v0
 
-    .line 421
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1162,7 +1114,6 @@
 
     const/4 v0, 0x1
 
-    .line 449
     :try_start_7
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->access$parseDuration(Ljava/lang/String;Z)J
 
@@ -1192,7 +1143,6 @@
 
     const/4 v0, 0x0
 
-    .line 436
     :try_start_6
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->access$parseDuration(Ljava/lang/String;Z)J
 
@@ -1230,7 +1180,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 305
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(DLkotlin/time/DurationUnit;)J
@@ -1257,7 +1206,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 287
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, v0}, Lkotlin/time/DurationKt;->toDuration(ILkotlin/time/DurationUnit;)J
@@ -1284,7 +1232,6 @@
         warningSince = "1.6"
     .end annotation
 
-    .line 294
     sget-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p1, p2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J

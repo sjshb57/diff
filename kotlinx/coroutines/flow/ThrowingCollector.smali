@@ -51,7 +51,6 @@
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 205
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/ThrowingCollector;->e:Ljava/lang/Throwable;
@@ -75,7 +74,6 @@
         }
     .end annotation
 
-    .line 207
     iget-object p1, p0, Lkotlinx/coroutines/flow/ThrowingCollector;->e:Ljava/lang/Throwable;
 
     throw p1

@@ -36,7 +36,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 413
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "NO_ELEMENT"
@@ -79,7 +78,6 @@
 
     if-eq p0, v0, :cond_15
 
-    .line 79
     new-instance v0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/channels/BroadcastChannelImpl;-><init>(I)V
@@ -88,7 +86,6 @@
 
     goto :goto_3c
 
-    .line 76
     :cond_15
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -98,7 +95,6 @@
 
     throw p0
 
-    .line 75
     :cond_1d
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -108,7 +104,6 @@
 
     throw p0
 
-    .line 77
     :cond_25
     new-instance p0, Lkotlinx/coroutines/channels/ConflatedBroadcastChannel;
 
@@ -120,7 +115,6 @@
 
     goto :goto_3c
 
-    .line 78
     :cond_2e
     new-instance p0, Lkotlinx/coroutines/channels/BroadcastChannelImpl;
 
@@ -143,7 +137,6 @@
 .method public static final synthetic access$getNO_ELEMENT$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/channels/BroadcastChannelKt;->NO_ELEMENT:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0

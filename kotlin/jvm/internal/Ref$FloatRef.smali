@@ -25,7 +25,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +35,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 63
     iget v0, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;

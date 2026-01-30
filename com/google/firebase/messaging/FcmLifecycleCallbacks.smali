@@ -26,10 +26,8 @@
 .method constructor <init>()V
     .registers 3
 
-    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
     new-instance v0, Ljava/util/ArrayDeque;
 
     const/16 v1, 0xa
@@ -46,7 +44,6 @@
 
     const/4 v0, 0x0
 
-    .line 81
     :try_start_1
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -54,19 +51,16 @@
 
     if-eqz p1, :cond_30
 
-    .line 83
     invoke-static {p1}, Lcom/google/firebase/messaging/MessagingAnalytics;->getMessageId(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 84
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_1f
 
-    .line 85
     iget-object v2, p0, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;->recentlyLoggedMessageIds:Ljava/util/Queue;
 
     invoke-interface {v2, v1}, Ljava/util/Queue;->contains(Ljava/lang/Object;)Z
@@ -77,13 +71,11 @@
 
     return-void
 
-    .line 89
     :cond_1a
     iget-object v2, p0, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;->recentlyLoggedMessageIds:Ljava/util/Queue;
 
     invoke-interface {v2, v1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 91
     :cond_1f
     const-string v1, "gcm.n.analytics_data"
 
@@ -98,7 +90,6 @@
     :catch_26
     move-exception p1
 
-    .line 96
     const/4 v1, 0x0
 
     sget-object v1, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->BVaE:Ljava/lang/String;
@@ -109,7 +100,6 @@
 
     invoke-static {v1, v2, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 98
     :cond_30
     :goto_30
     invoke-static {v0}, Lcom/google/firebase/messaging/MessagingAnalytics;->shouldUploadScionMetrics(Landroid/os/Bundle;)Z
@@ -118,7 +108,6 @@
 
     if-eqz p1, :cond_39
 
-    .line 99
     invoke-static {v0}, Lcom/google/firebase/messaging/MessagingAnalytics;->logNotificationOpen(Landroid/os/Bundle;)V
 
     :cond_39
@@ -130,7 +119,6 @@
 .method synthetic lambda$onActivityCreated$0$com-google-firebase-messaging-FcmLifecycleCallbacks(Landroid/content/Intent;)V
     .registers 2
 
-    .line 54
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;->logNotificationOpen(Landroid/content/Intent;)V
 
     return-void
@@ -139,7 +127,6 @@
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .registers 4
 
-    .line 44
     invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -148,7 +135,6 @@
 
     return-void
 
-    .line 49
     :cond_7
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -156,7 +142,6 @@
 
     if-gt p2, v0, :cond_1f
 
-    .line 54
     new-instance p2, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -173,7 +158,6 @@
 
     goto :goto_22
 
-    .line 56
     :cond_1f
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;->logNotificationOpen(Landroid/content/Intent;)V
 

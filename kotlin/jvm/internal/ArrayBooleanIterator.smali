@@ -45,7 +45,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
     invoke-direct {p0}, Lkotlin/collections/BooleanIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayBooleanIterator;->array:[Z
@@ -58,7 +57,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 54
     iget v0, p0, Lkotlin/jvm/internal/ArrayBooleanIterator;->index:I
 
     iget-object v1, p0, Lkotlin/jvm/internal/ArrayBooleanIterator;->array:[Z
@@ -81,7 +79,6 @@
 .method public nextBoolean()Z
     .registers 4
 
-    .line 55
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayBooleanIterator;->array:[Z
 

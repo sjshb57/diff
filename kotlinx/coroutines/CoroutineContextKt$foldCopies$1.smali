@@ -81,7 +81,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 80
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Element;
@@ -96,12 +95,10 @@
 .method public final invoke(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)Lkotlin/coroutines/CoroutineContext;
     .registers 4
 
-    .line 82
     instance-of v0, p2, Lkotlinx/coroutines/CopyableThreadContextElement;
 
     if-eqz v0, :cond_11
 
-    .line 83
     check-cast p2, Lkotlinx/coroutines/CopyableThreadContextElement;
 
     invoke-interface {p2}, Lkotlinx/coroutines/CopyableThreadContextElement;->copyForChild()Lkotlinx/coroutines/CopyableThreadContextElement;
@@ -116,7 +113,6 @@
 
     return-object p1
 
-    .line 85
     :cond_11
     check-cast p2, Lkotlin/coroutines/CoroutineContext;
 

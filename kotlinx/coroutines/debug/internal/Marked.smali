@@ -33,7 +33,6 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .registers 2
 
-    .line 273
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/debug/internal/Marked;->ref:Ljava/lang/Object;

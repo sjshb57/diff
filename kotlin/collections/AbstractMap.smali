@@ -133,7 +133,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -142,7 +141,6 @@
 .method public static final synthetic access$toString(Lkotlin/collections/AbstractMap;Ljava/util/Map$Entry;)Ljava/lang/String;
     .registers 2
 
-    .line 21
     invoke-direct {p0, p1}, Lkotlin/collections/AbstractMap;->toString(Ljava/util/Map$Entry;)Ljava/lang/String;
 
     move-result-object p0
@@ -160,14 +158,12 @@
         }
     .end annotation
 
-    .line 141
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 160
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -187,7 +183,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 141
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -203,7 +198,6 @@
     :cond_22
     const/4 v1, 0x0
 
-    .line 161
     :goto_23
     check-cast v1, Ljava/util/Map$Entry;
 
@@ -215,7 +209,6 @@
 
     if-ne p1, p0, :cond_5
 
-    .line 110
     const-string p1, "(this Map)"
 
     goto :goto_9
@@ -240,7 +233,6 @@
         }
     .end annotation
 
-    .line 108
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -306,18 +298,15 @@
 
     return v0
 
-    .line 33
     :cond_4
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 34
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 35
     move-object v2, p0
 
     check-cast v2, Ljava/util/Map;
@@ -330,7 +319,6 @@
 
     move-result-object v3
 
-    .line 37
     invoke-static {p1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
@@ -342,7 +330,6 @@
     :cond_1f
     if-nez v3, :cond_2d
 
-    .line 42
     const-string p1, "null cannot be cast to non-null type kotlin.collections.Map<K of kotlin.collections.MapsKt__MapsKt.containsKey, *>"
 
     invoke-static {v2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -364,7 +351,6 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .registers 2
 
-    .line 25
     invoke-direct {p0, p1}, Lkotlin/collections/AbstractMap;->implFindEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -385,14 +371,12 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .registers 5
 
-    .line 28
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 154
     instance-of v1, v0, Ljava/util/Collection;
 
     const/4 v2, 0x0
@@ -411,7 +395,6 @@
 
     goto :goto_30
 
-    .line 155
     :cond_15
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -430,7 +413,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 28
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -459,7 +441,6 @@
         }
     .end annotation
 
-    .line 21
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->getEntries()Ljava/util/Set;
 
     move-result-object v0
@@ -476,7 +457,6 @@
 
     return v0
 
-    .line 57
     :cond_4
     instance-of v1, p1, Ljava/util/Map;
 
@@ -486,7 +466,6 @@
 
     return v2
 
-    .line 58
     :cond_a
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->size()I
 
@@ -502,7 +481,6 @@
 
     return v2
 
-    .line 60
     :cond_17
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -510,7 +488,6 @@
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 157
     instance-of v1, p1, Ljava/util/Collection;
 
     if-eqz v1, :cond_2b
@@ -527,7 +504,6 @@
 
     goto :goto_42
 
-    .line 158
     :cond_2b
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -546,7 +522,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 60
     invoke-virtual {p0, v1}, Lkotlin/collections/AbstractMap;->containsEntry$kotlin_stdlib(Ljava/util/Map$Entry;)Z
 
     move-result v1
@@ -570,7 +545,6 @@
         }
     .end annotation
 
-    .line 63
     invoke-direct {p0, p1}, Lkotlin/collections/AbstractMap;->implFindEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -603,12 +577,10 @@
         }
     .end annotation
 
-    .line 84
     iget-object v0, p0, Lkotlin/collections/AbstractMap;->_keys:Ljava/util/Set;
 
     if-nez v0, :cond_d
 
-    .line 85
     new-instance v0, Lkotlin/collections/AbstractMap$keys$1;
 
     invoke-direct {v0, p0}, Lkotlin/collections/AbstractMap$keys$1;-><init>(Lkotlin/collections/AbstractMap;)V
@@ -617,7 +589,6 @@
 
     iput-object v0, p0, Lkotlin/collections/AbstractMap;->_keys:Ljava/util/Set;
 
-    .line 99
     :cond_d
     iget-object v0, p0, Lkotlin/collections/AbstractMap;->_keys:Ljava/util/Set;
 
@@ -629,7 +600,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 74
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -651,12 +621,10 @@
         }
     .end annotation
 
-    .line 120
     iget-object v0, p0, Lkotlin/collections/AbstractMap;->_values:Ljava/util/Collection;
 
     if-nez v0, :cond_d
 
-    .line 121
     new-instance v0, Lkotlin/collections/AbstractMap$values$1;
 
     invoke-direct {v0, p0}, Lkotlin/collections/AbstractMap$values$1;-><init>(Lkotlin/collections/AbstractMap;)V
@@ -665,7 +633,6 @@
 
     iput-object v0, p0, Lkotlin/collections/AbstractMap;->_values:Ljava/util/Collection;
 
-    .line 135
     :cond_d
     iget-object v0, p0, Lkotlin/collections/AbstractMap;->_values:Ljava/util/Collection;
 
@@ -677,7 +644,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 71
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -692,7 +658,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 73
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->size()I
 
     move-result v0
@@ -720,7 +685,6 @@
         }
     .end annotation
 
-    .line 21
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->getKeys()Ljava/util/Set;
 
     move-result-object v0
@@ -786,7 +750,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 21
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->getSize()I
 
     move-result v0
@@ -797,7 +760,6 @@
 .method public toString()Ljava/lang/String;
     .registers 11
 
-    .line 106
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -857,7 +819,6 @@
         }
     .end annotation
 
-    .line 21
     invoke-virtual {p0}, Lkotlin/collections/AbstractMap;->getValues()Ljava/util/Collection;
 
     move-result-object v0

@@ -107,7 +107,6 @@
 .method private synthetic constructor <init>([B)V
     .registers 2
 
-    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/UByteArray;->storage:[B
@@ -128,7 +127,6 @@
 .method public static constructor-impl(I)[B
     .registers 1
 
-    .line 20
     new-array p0, p0, [B
 
     invoke-static {p0}, Lkotlin/UByteArray;->constructor-impl([B)[B
@@ -151,7 +149,6 @@
 .method public static contains-7apg3OU([BB)Z
     .registers 2
 
-    .line 58
     invoke-static {p0, p1}, Lkotlin/collections/ArraysKt;->contains([BB)Z
 
     move-result p0
@@ -174,10 +171,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 62
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 87
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -192,7 +187,6 @@
 
     goto :goto_32
 
-    .line 88
     :cond_12
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -209,7 +203,6 @@
 
     move-result-object v0
 
-    .line 62
     instance-of v2, v0, Lkotlin/UByte;
 
     if-eqz v2, :cond_31
@@ -281,7 +274,6 @@
 .method public static final get-w2LRezQ([BI)B
     .registers 2
 
-    .line 28
     aget-byte p0, p0, p1
 
     invoke-static {p0}, Lkotlin/UByte;->constructor-impl(B)B
@@ -294,7 +286,6 @@
 .method public static getSize-impl([B)I
     .registers 1
 
-    .line 41
     array-length p0, p0
 
     return p0
@@ -319,7 +310,6 @@
 .method public static isEmpty-impl([B)Z
     .registers 1
 
-    .line 65
     array-length p0, p0
 
     if-nez p0, :cond_5
@@ -346,7 +336,6 @@
         }
     .end annotation
 
-    .line 44
     new-instance v0, Lkotlin/UByteArray$Iterator;
 
     invoke-direct {v0, p0}, Lkotlin/UByteArray$Iterator;-><init>([B)V
@@ -359,7 +348,6 @@
 .method public static final set-VurrAj0([BIB)V
     .registers 3
 
-    .line 37
     aput-byte p2, p0, p1
 
     return-void
@@ -453,7 +441,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 12
     instance-of v0, p1, Lkotlin/UByte;
 
     if-nez v0, :cond_6
@@ -479,7 +466,6 @@
 .method public contains-7apg3OU(B)Z
     .registers 3
 
-    .line 52
     iget-object v0, p0, Lkotlin/UByteArray;->storage:[B
 
     invoke-static {v0, p1}, Lkotlin/UByteArray;->contains-7apg3OU([BB)Z
@@ -505,7 +491,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 61
     iget-object v0, p0, Lkotlin/UByteArray;->storage:[B
 
     invoke-static {v0, p1}, Lkotlin/UByteArray;->containsAll-impl([BLjava/util/Collection;)Z
@@ -530,7 +515,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 41
     iget-object v0, p0, Lkotlin/UByteArray;->storage:[B
 
     invoke-static {v0}, Lkotlin/UByteArray;->getSize-impl([B)I
@@ -555,7 +539,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 65
     iget-object v0, p0, Lkotlin/UByteArray;->storage:[B
 
     invoke-static {v0}, Lkotlin/UByteArray;->isEmpty-impl([B)Z
@@ -576,7 +559,6 @@
         }
     .end annotation
 
-    .line 44
     iget-object v0, p0, Lkotlin/UByteArray;->storage:[B
 
     invoke-static {v0}, Lkotlin/UByteArray;->iterator-impl([B)Ljava/util/Iterator;
@@ -643,7 +625,6 @@
 .method public bridge synthetic size()I
     .registers 2
 
-    .line 12
     invoke-virtual {p0}, Lkotlin/UByteArray;->getSize()I
 
     move-result v0

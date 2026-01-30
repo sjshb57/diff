@@ -95,7 +95,6 @@
 .method public constructor <init>(III)V
     .registers 5
 
-    .line 77
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p3, :cond_1c
@@ -104,22 +103,18 @@
 
     if-eq p3, v0, :cond_14
 
-    .line 92
     iput p1, p0, Lkotlin/ranges/IntProgression;->first:I
 
-    .line 97
     invoke-static {p1, p2, p3}, Lkotlin/internal/ProgressionUtilKt;->getProgressionLastElement(III)I
 
     move-result p1
 
     iput p1, p0, Lkotlin/ranges/IntProgression;->last:I
 
-    .line 102
     iput p3, p0, Lkotlin/ranges/IntProgression;->step:I
 
     return-void
 
-    .line 86
     :cond_14
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -129,7 +124,6 @@
 
     throw p1
 
-    .line 85
     :cond_1c
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -145,7 +139,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 115
     instance-of v0, p1, Lkotlin/ranges/IntProgression;
 
     if-eqz v0, :cond_29
@@ -166,7 +159,6 @@
 
     if-nez v0, :cond_27
 
-    .line 116
     :cond_13
     iget v0, p0, Lkotlin/ranges/IntProgression;->first:I
 
@@ -203,7 +195,6 @@
 .method public final getFirst()I
     .registers 2
 
-    .line 92
     iget v0, p0, Lkotlin/ranges/IntProgression;->first:I
 
     return v0
@@ -212,7 +203,6 @@
 .method public final getLast()I
     .registers 2
 
-    .line 97
     iget v0, p0, Lkotlin/ranges/IntProgression;->last:I
 
     return v0
@@ -221,7 +211,6 @@
 .method public final getStep()I
     .registers 2
 
-    .line 102
     iget v0, p0, Lkotlin/ranges/IntProgression;->step:I
 
     return v0
@@ -230,7 +219,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 119
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->isEmpty()Z
 
     move-result v0
@@ -263,7 +251,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 112
     iget v0, p0, Lkotlin/ranges/IntProgression;->step:I
 
     const/4 v1, 0x1
@@ -299,7 +286,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .registers 2
 
-    .line 77
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->iterator()Lkotlin/collections/IntIterator;
 
     move-result-object v0
@@ -312,7 +298,6 @@
 .method public iterator()Lkotlin/collections/IntIterator;
     .registers 5
 
-    .line 104
     new-instance v0, Lkotlin/ranges/IntProgressionIterator;
 
     iget v1, p0, Lkotlin/ranges/IntProgression;->first:I
@@ -331,7 +316,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 121
     iget v0, p0, Lkotlin/ranges/IntProgression;->step:I
 
     const-string v1, " step "

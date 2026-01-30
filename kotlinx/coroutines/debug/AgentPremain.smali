@@ -66,11 +66,9 @@
 
     const/4 v0, 0x0
 
-    .line 24
     :try_start_8
     sget-object v1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    .line 25
     const-string v1, "kotlinx.coroutines.debug.enable.creation.stack.trace"
 
     invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -92,7 +90,6 @@
     :cond_1b
     move-object v1, v0
 
-    .line 24
     :goto_1c
     invoke-static {v1}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -115,7 +112,6 @@
 
     move-result-object v1
 
-    .line 26
     :goto_2c
     invoke-static {v1}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
 
@@ -133,14 +129,12 @@
 
     if-eqz v0, :cond_3d
 
-    .line 24
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     goto :goto_43
 
-    .line 26
     :cond_3d
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
@@ -148,7 +142,6 @@
 
     move-result v0
 
-    .line 24
     :goto_43
     sput-boolean v0, Lkotlinx/coroutines/debug/AgentPremain;->enableCreationStackTraces:Z
 
@@ -158,7 +151,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -167,7 +159,6 @@
 .method private final installSignalHandler()V
     .registers 3
 
-    .line 63
     :try_start_0
     new-instance v0, Lsun/misc/Signal;
 
@@ -190,7 +181,6 @@
 .method private static final installSignalHandler$lambda$1(Lsun/misc/Signal;)V
     .registers 2
 
-    .line 64
     sget-object p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->isInstalled$kotlinx_coroutines_core()Z
@@ -199,7 +189,6 @@
 
     if-eqz p0, :cond_10
 
-    .line 67
     sget-object p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
@@ -208,7 +197,6 @@
 
     goto :goto_17
 
-    .line 69
     :cond_10
     const-string p0, "Cannot perform coroutines dump, debug probes are disabled"
 
@@ -225,33 +213,28 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    .line 31
     sget-object p0, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->INSTANCE:Lkotlinx/coroutines/debug/internal/AgentInstallationType;
 
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->setInstalledStatically$kotlinx_coroutines_core(Z)V
 
-    .line 32
     sget-object p0, Lkotlinx/coroutines/debug/AgentPremain$DebugProbesTransformer;->INSTANCE:Lkotlinx/coroutines/debug/AgentPremain$DebugProbesTransformer;
 
     check-cast p0, Ljava/lang/instrument/ClassFileTransformer;
 
     invoke-interface {p1, p0}, Ljava/lang/instrument/Instrumentation;->addTransformer(Ljava/lang/instrument/ClassFileTransformer;)V
 
-    .line 33
     sget-object p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     sget-boolean p1, Lkotlinx/coroutines/debug/AgentPremain;->enableCreationStackTraces:Z
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->setEnableCreationStackTraces(Z)V
 
-    .line 34
     sget-object p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->install()V
 
-    .line 35
     sget-object p0, Lkotlinx/coroutines/debug/AgentPremain;->INSTANCE:Lkotlinx/coroutines/debug/AgentPremain;
 
     invoke-direct {p0}, Lkotlinx/coroutines/debug/AgentPremain;->installSignalHandler()V

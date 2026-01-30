@@ -73,7 +73,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->INSTANCE:Lkotlin/text/Charsets;
 
-    .line 29
     const-string v0, "UTF-8"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -86,7 +85,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
-    .line 36
     const-string v0, "UTF-16"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16:Ljava/nio/charset/Charset;
 
-    .line 42
     const-string v0, "UTF-16BE"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -112,7 +109,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16BE:Ljava/nio/charset/Charset;
 
-    .line 48
     const-string v0, "UTF-16LE"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -125,7 +121,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->UTF_16LE:Ljava/nio/charset/Charset;
 
-    .line 55
     const-string v0, "US-ASCII"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -138,7 +133,6 @@
 
     sput-object v0, Lkotlin/text/Charsets;->US_ASCII:Ljava/nio/charset/Charset;
 
-    .line 61
     const-string v0, "ISO-8859-1"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -157,7 +151,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -168,7 +161,6 @@
 .method public final UTF32()Ljava/nio/charset/Charset;
     .registers 3
 
-    .line 68
     sget-object v0, Lkotlin/text/Charsets;->utf_32:Ljava/nio/charset/Charset;
 
     if-nez v0, :cond_14
@@ -177,7 +169,6 @@
 
     check-cast v0, Lkotlin/text/Charsets;
 
-    .line 69
     const-string v0, "UTF-32"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -188,7 +179,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 70
     sput-object v0, Lkotlin/text/Charsets;->utf_32:Ljava/nio/charset/Charset;
 
     :cond_14
@@ -198,7 +188,6 @@
 .method public final UTF32_BE()Ljava/nio/charset/Charset;
     .registers 3
 
-    .line 96
     sget-object v0, Lkotlin/text/Charsets;->utf_32be:Ljava/nio/charset/Charset;
 
     if-nez v0, :cond_15
@@ -207,7 +196,6 @@
 
     check-cast v0, Lkotlin/text/Charsets;
 
-    .line 97
     const-string v0, "UTF-32BE"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -220,7 +208,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 98
     sput-object v0, Lkotlin/text/Charsets;->utf_32be:Ljava/nio/charset/Charset;
 
     :cond_15
@@ -230,7 +217,6 @@
 .method public final UTF32_LE()Ljava/nio/charset/Charset;
     .registers 3
 
-    .line 82
     sget-object v0, Lkotlin/text/Charsets;->utf_32le:Ljava/nio/charset/Charset;
 
     if-nez v0, :cond_14
@@ -239,7 +225,6 @@
 
     check-cast v0, Lkotlin/text/Charsets;
 
-    .line 83
     const-string v0, "UTF-32LE"
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
@@ -250,7 +235,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
     sput-object v0, Lkotlin/text/Charsets;->utf_32le:Ljava/nio/charset/Charset;
 
     :cond_14

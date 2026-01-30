@@ -66,12 +66,10 @@
 .method static constructor <clinit>()V
     .registers 10
 
-    .line 17
     const-string v0, "kotlinx.coroutines.scheduler.default.name"
 
     const-string v1, "DefaultDispatcher"
 
-    .line 16
     invoke-static {v0, v1}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -82,7 +80,6 @@
 
     const/4 v9, 0x0
 
-    .line 22
     const-string v1, "kotlinx.coroutines.scheduler.resolution.ns"
 
     const-wide/32 v2, 0x186a0
@@ -97,7 +94,6 @@
 
     sput-wide v0, Lkotlinx/coroutines/scheduling/TasksKt;->WORK_STEALING_TIME_RESOLUTION_NS:J
 
-    .line 35
     invoke-static {}, Lkotlinx/coroutines/internal/SystemPropsKt;->getAVAILABLE_PROCESSORS()I
 
     move-result v0
@@ -112,7 +108,6 @@
 
     const/4 v7, 0x0
 
-    .line 33
     const-string v2, "kotlinx.coroutines.scheduler.core.pool.size"
 
     const/4 v4, 0x1
@@ -129,7 +124,6 @@
 
     const/4 v6, 0x0
 
-    .line 41
     const-string v1, "kotlinx.coroutines.scheduler.max.pool.size"
 
     const v2, 0x1ffffe
@@ -144,10 +138,8 @@
 
     sput v0, Lkotlinx/coroutines/scheduling/TasksKt;->MAX_POOL_SIZE:I
 
-    .line 48
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 49
     const-string v1, "kotlinx.coroutines.scheduler.keep.alive.sec"
 
     const-wide/16 v2, 0x3c
@@ -160,21 +152,18 @@
 
     move-result-wide v1
 
-    .line 48
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide v0
 
     sput-wide v0, Lkotlinx/coroutines/scheduling/TasksKt;->IDLE_WORKER_KEEP_ALIVE_NS:J
 
-    .line 53
     sget-object v0, Lkotlinx/coroutines/scheduling/NanoTimeSource;->INSTANCE:Lkotlinx/coroutines/scheduling/NanoTimeSource;
 
     check-cast v0, Lkotlinx/coroutines/scheduling/SchedulerTimeSource;
 
     sput-object v0, Lkotlinx/coroutines/scheduling/TasksKt;->schedulerTimeSource:Lkotlinx/coroutines/scheduling/SchedulerTimeSource;
 
-    .line 77
     new-instance v0, Lkotlinx/coroutines/scheduling/TaskContextImpl;
 
     const/4 v1, 0x0
@@ -185,7 +174,6 @@
 
     sput-object v0, Lkotlinx/coroutines/scheduling/TasksKt;->NonBlockingContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
-    .line 80
     new-instance v0, Lkotlinx/coroutines/scheduling/TaskContextImpl;
 
     const/4 v1, 0x1
@@ -202,7 +190,6 @@
 .method public static final isBlocking(Lkotlinx/coroutines/scheduling/Task;)Z
     .registers 2
 
-    .line 90
     iget-object p0, p0, Lkotlinx/coroutines/scheduling/Task;->taskContext:Lkotlinx/coroutines/scheduling/TaskContext;
 
     invoke-interface {p0}, Lkotlinx/coroutines/scheduling/TaskContext;->getTaskMode()I

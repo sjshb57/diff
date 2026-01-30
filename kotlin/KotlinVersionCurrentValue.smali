@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 80
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +56,6 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    .line 82
     new-instance v0, Lkotlin/KotlinVersion;
 
     const/16 v1, 0x8

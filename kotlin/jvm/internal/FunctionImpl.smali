@@ -44,7 +44,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,14 +52,12 @@
 .method private checkArity(I)V
     .registers 3
 
-    .line 31
     invoke-virtual {p0}, Lkotlin/jvm/internal/FunctionImpl;->getArity()I
 
     move-result v0
 
     if-eq v0, p1, :cond_9
 
-    .line 32
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/FunctionImpl;->throwWrongArity(I)V
 
     :cond_9
@@ -70,7 +67,6 @@
 .method private throwWrongArity(I)V
     .registers 5
 
-    .line 37
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -112,10 +108,8 @@
 
     const/4 v0, 0x0
 
-    .line 42
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 43
     new-array v0, v0, [Ljava/lang/Object;
 
     invoke-virtual {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->invokeVararg([Ljava/lang/Object;)Ljava/lang/Object;
@@ -130,10 +124,8 @@
 
     const/4 v0, 0x1
 
-    .line 48
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 49
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -152,10 +144,8 @@
 
     const/4 v0, 0x2
 
-    .line 54
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 55
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -178,10 +168,8 @@
 
     const/4 v0, 0x3
 
-    .line 60
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 61
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -208,10 +196,8 @@
 
     const/4 v0, 0x4
 
-    .line 66
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 67
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -242,10 +228,8 @@
 
     const/4 v0, 0x5
 
-    .line 72
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 73
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -280,10 +264,8 @@
 
     const/4 v0, 0x6
 
-    .line 78
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 79
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -322,10 +304,8 @@
 
     const/4 v0, 0x7
 
-    .line 84
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 85
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -368,10 +348,8 @@
 
     const/16 v0, 0x8
 
-    .line 90
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 91
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -418,10 +396,8 @@
 
     const/16 v0, 0x9
 
-    .line 96
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 97
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -472,10 +448,8 @@
 
     const/16 v0, 0xa
 
-    .line 102
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 103
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -530,10 +504,8 @@
 
     const/16 v0, 0xb
 
-    .line 108
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 109
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -592,10 +564,8 @@
 
     const/16 v0, 0xc
 
-    .line 114
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 115
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -658,10 +628,8 @@
 
     const/16 v0, 0xd
 
-    .line 120
     invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 121
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -730,10 +698,8 @@
 
     const/16 v1, 0xe
 
-    .line 126
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 127
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -806,10 +772,8 @@
 
     const/16 v1, 0xf
 
-    .line 132
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 133
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -886,10 +850,8 @@
 
     const/16 v1, 0x10
 
-    .line 138
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 139
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -970,10 +932,8 @@
 
     const/16 v1, 0x11
 
-    .line 144
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 145
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1058,10 +1018,8 @@
 
     const/16 v1, 0x12
 
-    .line 150
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 151
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1150,10 +1108,8 @@
 
     const/16 v1, 0x13
 
-    .line 156
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 157
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1246,10 +1202,8 @@
 
     const/16 v1, 0x14
 
-    .line 162
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 163
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1346,10 +1300,8 @@
 
     const/16 v1, 0x15
 
-    .line 168
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 169
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1450,10 +1402,8 @@
 
     const/16 v1, 0x16
 
-    .line 174
     invoke-direct {p0, v1}, Lkotlin/jvm/internal/FunctionImpl;->checkArity(I)V
 
-    .line 175
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -1554,7 +1504,6 @@
 .method public varargs invokeVararg([Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 27
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

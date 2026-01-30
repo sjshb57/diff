@@ -101,16 +101,12 @@
         }
     .end annotation
 
-    .line 103
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 104
     iput-object p1, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->value:Ljava/lang/Object;
 
-    .line 105
     iput-object p2, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->threadLocal:Ljava/lang/ThreadLocal;
 
-    .line 107
     new-instance p1, Lkotlinx/coroutines/internal/ThreadLocalKey;
 
     invoke-direct {p1, p2}, Lkotlinx/coroutines/internal/ThreadLocalKey;-><init>(Ljava/lang/ThreadLocal;)V
@@ -138,7 +134,6 @@
         }
     .end annotation
 
-    .line 103
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->fold(Lkotlinx/coroutines/ThreadContextElement;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
     move-result-object p1
@@ -158,7 +153,6 @@
         }
     .end annotation
 
-    .line 127
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadLocalElement;->getKey()Lkotlin/coroutines/CoroutineContext$Key;
 
     move-result-object v0
@@ -196,7 +190,6 @@
         }
     .end annotation
 
-    .line 107
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->key:Lkotlin/coroutines/CoroutineContext$Key;
 
     return-object v0
@@ -213,7 +206,6 @@
         }
     .end annotation
 
-    .line 121
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadLocalElement;->getKey()Lkotlin/coroutines/CoroutineContext$Key;
 
     move-result-object v0
@@ -242,7 +234,6 @@
 .method public plus(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 103
     invoke-static {p0, p1}, Lkotlinx/coroutines/ThreadContextElement$DefaultImpls;->plus(Lkotlinx/coroutines/ThreadContextElement;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -260,7 +251,6 @@
         }
     .end annotation
 
-    .line 116
     iget-object p1, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->threadLocal:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1, p2}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
@@ -271,7 +261,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 129
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ThreadLocal(value="
@@ -311,14 +300,12 @@
         }
     .end annotation
 
-    .line 110
     iget-object p1, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->threadLocal:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 111
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->threadLocal:Ljava/lang/ThreadLocal;
 
     iget-object v1, p0, Lkotlinx/coroutines/internal/ThreadLocalElement;->value:Ljava/lang/Object;

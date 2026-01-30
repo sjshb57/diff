@@ -57,7 +57,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -108,7 +107,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 15
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->next()Ljava/lang/Void;
 
     move-result-object v0
@@ -119,7 +117,6 @@
 .method public next()Ljava/lang/Void;
     .registers 2
 
-    .line 20
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -138,7 +135,6 @@
 .method public bridge synthetic previous()Ljava/lang/Object;
     .registers 2
 
-    .line 15
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->previous()Ljava/lang/Void;
 
     move-result-object v0
@@ -149,7 +145,6 @@
 .method public previous()Ljava/lang/Void;
     .registers 2
 
-    .line 21
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V

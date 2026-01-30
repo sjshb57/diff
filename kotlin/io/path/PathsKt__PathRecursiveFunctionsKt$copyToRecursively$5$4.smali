@@ -109,7 +109,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 203
     check-cast p1, Ljava/nio/file/Path;
 
     check-cast p2, Ljava/io/IOException;
@@ -130,12 +129,10 @@
 
     if-nez p2, :cond_a
 
-    .line 205
     sget-object p1, Ljava/nio/file/FileVisitResult;->CONTINUE:Ljava/nio/file/FileVisitResult;
 
     goto :goto_16
 
-    .line 207
     :cond_a
     iget-object v0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$onError:Lkotlin/jvm/functions/Function3;
 

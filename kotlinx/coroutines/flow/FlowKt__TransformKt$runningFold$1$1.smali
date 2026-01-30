@@ -163,7 +163,6 @@
 
     move-result-object v1
 
-    .line 108
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$runningFold$1$1$emit$1;->label:I
 
     const/4 v3, 0x2
@@ -205,7 +204,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 109
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$runningFold$1$1;->$accumulator:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object v2, p0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$runningFold$1$1;->$operation:Lkotlin/jvm/functions/Function3;
@@ -235,11 +233,9 @@
 
     move-object p1, v6
 
-    .line 108
     :goto_5b
     iput-object p2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 110
     iget-object p1, v2, Lkotlinx/coroutines/flow/FlowKt__TransformKt$runningFold$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
 
     iget-object p2, v2, Lkotlinx/coroutines/flow/FlowKt__TransformKt$runningFold$1$1;->$accumulator:Lkotlin/jvm/internal/Ref$ObjectRef;
@@ -262,7 +258,6 @@
 
     return-object v1
 
-    .line 111
     :cond_71
     :goto_71
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

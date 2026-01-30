@@ -28,10 +28,8 @@
 .method public constructor <init>(Lcom/google/firebase/messaging/FirebaseMessaging;J)V
     .registers 13
 
-    .line 60
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -58,13 +56,10 @@
 
     iput-object v8, p0, Lcom/google/firebase/messaging/SyncTask;->processorExecutor:Ljava/util/concurrent/ExecutorService;
 
-    .line 61
     iput-object p1, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
-    .line 62
     iput-wide p2, p0, Lcom/google/firebase/messaging/SyncTask;->nextDelaySeconds:J
 
-    .line 63
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SyncTask;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -79,7 +74,6 @@
 
     const/4 p2, 0x1
 
-    .line 64
     const-string p3, "fiid-sync"
 
     invoke-virtual {p1, p2, p3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
@@ -90,7 +84,6 @@
 
     const/4 p2, 0x0
 
-    .line 66
     invoke-virtual {p1, p2}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
 
     return-void
@@ -99,7 +92,6 @@
 .method static synthetic access$000(Lcom/google/firebase/messaging/SyncTask;)Lcom/google/firebase/messaging/FirebaseMessaging;
     .registers 1
 
-    .line 39
     iget-object p0, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     return-object p0
@@ -108,7 +100,6 @@
 .method static isDebugLogEnabled()Z
     .registers 4
 
-    .line 201
     const-string v0, "FirebaseMessaging"
 
     const/4 v1, 0x3
@@ -125,7 +116,6 @@
 
     if-ne v2, v3, :cond_16
 
-    .line 202
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -152,7 +142,6 @@
 .method getContext()Landroid/content/Context;
     .registers 2
 
-    .line 150
     iget-object v0, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getApplicationContext()Landroid/content/Context;
@@ -165,7 +154,6 @@
 .method isDeviceConnected()Z
     .registers 3
 
-    .line 155
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SyncTask;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -180,7 +168,6 @@
 
     if-eqz v0, :cond_13
 
-    .line 156
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
@@ -193,7 +180,6 @@
     :goto_14
     if-eqz v0, :cond_1e
 
-    .line 157
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
@@ -219,7 +205,6 @@
         }
     .end annotation
 
-    .line 123
     const-string v0, "FirebaseMessaging"
 
     const/4 v1, 0x0
@@ -233,7 +218,6 @@
 
     if-nez v2, :cond_11
 
-    .line 125
     const-string v2, "Token retrieval failed: null"
 
     invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
@@ -243,14 +227,12 @@
     :cond_11
     const/4 v2, 0x3
 
-    .line 128
     invoke-static {v0, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
     if-eqz v2, :cond_1d
 
-    .line 129
     const-string v2, "Token successfully retrieved"
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -263,7 +245,6 @@
 
     return v0
 
-    .line 144
     :catch_1f
     const-string v2, "Token retrieval failed with SecurityException. Will retry token retrieval"
 
@@ -274,7 +255,6 @@
     :catch_25
     move-exception v2
 
-    .line 134
     invoke-virtual {v2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v3
@@ -285,7 +265,6 @@
 
     if-eqz v3, :cond_4b
 
-    .line 135
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "Token retrieval failed: "
@@ -310,7 +289,6 @@
 
     return v1
 
-    .line 137
     :cond_4b
     invoke-virtual {v2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
@@ -318,14 +296,12 @@
 
     if-nez v3, :cond_57
 
-    .line 138
     const-string v2, "Token retrieval failed without exception message. Will retry token retrieval"
 
     invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return v1
 
-    .line 141
     :cond_57
     throw v2
 .end method
@@ -335,7 +311,6 @@
 
     const-string v0, "Topic sync or token retrieval failed on hard failure exceptions: "
 
-    .line 72
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
 
     move-result-object v1
@@ -350,7 +325,6 @@
 
     if-eqz v1, :cond_15
 
-    .line 73
     iget-object v1, p0, Lcom/google/firebase/messaging/SyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->acquire()V
@@ -358,7 +332,6 @@
     :cond_15
     const/4 v1, 0x0
 
-    .line 78
     :try_start_16
     iget-object v2, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
@@ -366,7 +339,6 @@
 
     invoke-virtual {v2, v3}, Lcom/google/firebase/messaging/FirebaseMessaging;->setSyncScheduledOrRunning(Z)V
 
-    .line 80
     iget-object v2, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     invoke-virtual {v2}, Lcom/google/firebase/messaging/FirebaseMessaging;->isGmsCorePresent()Z
@@ -375,7 +347,6 @@
 
     if-nez v2, :cond_3d
 
-    .line 81
     iget-object v2, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     invoke-virtual {v2, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->setSyncScheduledOrRunning(Z)V
@@ -383,7 +354,6 @@
     .catch Ljava/io/IOException; {:try_start_16 .. :try_end_29} :catch_96
     .catchall {:try_start_16 .. :try_end_29} :catchall_94
 
-    .line 106
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
 
     move-result-object v0
@@ -398,7 +368,6 @@
 
     if-eqz v0, :cond_3c
 
-    .line 107
     iget-object v0, p0, Lcom/google/firebase/messaging/SyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
@@ -406,7 +375,6 @@
     :cond_3c
     return-void
 
-    .line 85
     :cond_3d
     :try_start_3d
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
@@ -423,25 +391,21 @@
 
     if-eqz v2, :cond_6d
 
-    .line 86
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SyncTask;->isDeviceConnected()Z
 
     move-result v2
 
     if-nez v2, :cond_6d
 
-    .line 87
     new-instance v2, Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;
 
     invoke-direct {v2, p0}, Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;-><init>(Lcom/google/firebase/messaging/SyncTask;)V
 
-    .line 88
     invoke-virtual {v2}, Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;->registerReceiver()V
     :try_end_59
     .catch Ljava/io/IOException; {:try_start_3d .. :try_end_59} :catch_96
     .catchall {:try_start_3d .. :try_end_59} :catchall_94
 
-    .line 106
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
 
     move-result-object v0
@@ -456,7 +420,6 @@
 
     if-eqz v0, :cond_6c
 
-    .line 107
     iget-object v0, p0, Lcom/google/firebase/messaging/SyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
@@ -464,7 +427,6 @@
     :cond_6c
     return-void
 
-    .line 93
     :cond_6d
     :try_start_6d
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SyncTask;->maybeRefreshToken()Z
@@ -473,14 +435,12 @@
 
     if-eqz v2, :cond_79
 
-    .line 94
     iget-object v2, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     invoke-virtual {v2, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->setSyncScheduledOrRunning(Z)V
 
     goto :goto_80
 
-    .line 96
     :cond_79
     iget-object v2, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
@@ -491,7 +451,6 @@
     .catch Ljava/io/IOException; {:try_start_6d .. :try_end_80} :catch_96
     .catchall {:try_start_6d .. :try_end_80} :catchall_94
 
-    .line 106
     :goto_80
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
 
@@ -507,7 +466,6 @@
 
     if-eqz v0, :cond_c5
 
-    .line 107
     :goto_8e
     iget-object v0, p0, Lcom/google/firebase/messaging/SyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -523,7 +481,6 @@
     :catch_96
     move-exception v2
 
-    .line 99
     :try_start_97
     const-string v3, "FirebaseMessaging"
 
@@ -531,7 +488,6 @@
 
     invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 102
     invoke-virtual {v2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -546,17 +502,14 @@
 
     move-result-object v0
 
-    .line 99
     invoke-static {v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 104
     iget-object v0, p0, Lcom/google/firebase/messaging/SyncTask;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     invoke-virtual {v0, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->setSyncScheduledOrRunning(Z)V
     :try_end_b6
     .catchall {:try_start_97 .. :try_end_b6} :catchall_94
 
-    .line 106
     invoke-static {}, Lcom/google/firebase/messaging/ServiceStarter;->getInstance()Lcom/google/firebase/messaging/ServiceStarter;
 
     move-result-object v0
@@ -592,12 +545,10 @@
 
     if-eqz v1, :cond_d9
 
-    .line 107
     iget-object v1, p0, Lcom/google/firebase/messaging/SyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->release()V
 
-    .line 109
     :cond_d9
     throw v0
 .end method

@@ -82,7 +82,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 4
 
-    .line 224
     check-cast p1, Lkotlinx/coroutines/sync/MutexImpl;
 
     check-cast p2, Lkotlinx/coroutines/selects/SelectInstance;
@@ -107,7 +106,6 @@
         }
     .end annotation
 
-    .line 224
     invoke-virtual {p1, p2, p3}, Lkotlinx/coroutines/sync/MutexImpl;->onLockRegFunction(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V
 
     return-void

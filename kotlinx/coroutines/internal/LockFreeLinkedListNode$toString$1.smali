@@ -50,7 +50,6 @@
 .method public get()Ljava/lang/Object;
     .registers 2
 
-    .line 319
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$toString$1;->receiver:Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlinx/coroutines/DebugStringsKt;->getClassSimpleName(Ljava/lang/Object;)Ljava/lang/String;

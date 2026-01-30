@@ -31,7 +31,6 @@
 .method static constructor <clinit>()V
     .registers 7
 
-    .line 33
     new-instance v0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     const/16 v1, 0x3a
@@ -46,7 +45,6 @@
 
     sput-object v0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->PRIVATE:Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
-    .line 35
     new-instance v1, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     const/16 v2, 0x21
@@ -63,7 +61,6 @@
 
     const/4 v2, 0x2
 
-    .line 28
     new-array v2, v2, [Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     aput-object v0, v2, v4
@@ -83,13 +80,10 @@
         }
     .end annotation
 
-    .line 43
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 44
     iput-char p3, p0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->innerNodeCode:C
 
-    .line 45
     iput-char p4, p0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->leafNodeCode:C
 
     return-void
@@ -98,7 +92,6 @@
 .method static fromCode(C)Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
     .registers 6
 
-    .line 58
     invoke-static {}, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->values()[Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     move-result-object v0
@@ -112,7 +105,6 @@
 
     aget-object v3, v0, v2
 
-    .line 59
     invoke-virtual {v3}, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->getInnerNodeCode()C
 
     move-result v4
@@ -136,7 +128,6 @@
     :goto_1a
     return-object v3
 
-    .line 63
     :cond_1b
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -162,7 +153,6 @@
 
     if-eqz p0, :cond_5
 
-    .line 67
     sget-object p0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->PRIVATE:Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     goto :goto_7
@@ -177,7 +167,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
     .registers 2
 
-    .line 28
     const-class v0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -192,7 +181,6 @@
 .method public static values()[Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
     .registers 1
 
-    .line 28
     sget-object v0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->$VALUES:[Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     invoke-virtual {v0}, [Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->clone()Ljava/lang/Object;
@@ -209,7 +197,6 @@
 .method getInnerNodeCode()C
     .registers 2
 
-    .line 53
     iget-char v0, p0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->innerNodeCode:C
 
     return v0
@@ -218,7 +205,6 @@
 .method getLeafNodeCode()C
     .registers 2
 
-    .line 49
     iget-char v0, p0, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->leafNodeCode:C
 
     return v0

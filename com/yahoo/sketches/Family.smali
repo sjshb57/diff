@@ -85,7 +85,6 @@
 
     const/16 v0, 0xf
 
-    .line 20
     new-array v0, v0, [Lcom/yahoo/sketches/Family;
 
     sget-object v1, Lcom/yahoo/sketches/Family;->ALPHA:Lcom/yahoo/sketches/Family;
@@ -184,7 +183,6 @@
 .method static constructor <clinit>()V
     .registers 15
 
-    .line 37
     new-instance v7, Lcom/yahoo/sketches/Family;
 
     const/4 v5, 0x3
@@ -205,7 +203,6 @@
 
     sput-object v7, Lcom/yahoo/sketches/Family;->ALPHA:Lcom/yahoo/sketches/Family;
 
-    .line 46
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v13, 0x3
@@ -226,7 +223,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->QUICKSELECT:Lcom/yahoo/sketches/Family;
 
-    .line 55
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v6, 0x1
@@ -247,7 +243,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->COMPACT:Lcom/yahoo/sketches/Family;
 
-    .line 61
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v13, 0x4
@@ -268,7 +263,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->UNION:Lcom/yahoo/sketches/Family;
 
-    .line 67
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v6, 0x3
@@ -287,7 +281,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->INTERSECTION:Lcom/yahoo/sketches/Family;
 
-    .line 73
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v13, 0x3
@@ -308,7 +301,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->A_NOT_B:Lcom/yahoo/sketches/Family;
 
-    .line 78
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v6, 0x1
@@ -331,7 +323,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->HLL:Lcom/yahoo/sketches/Family;
 
-    .line 83
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v13, 0x1
@@ -352,7 +343,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->QUANTILES:Lcom/yahoo/sketches/Family;
 
-    .line 89
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const-string v2, "TUPLE"
@@ -369,7 +359,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->TUPLE:Lcom/yahoo/sketches/Family;
 
-    .line 94
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v14, 0x4
@@ -388,7 +377,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->FREQUENCY:Lcom/yahoo/sketches/Family;
 
-    .line 99
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v7, 0x2
@@ -407,7 +395,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->RESERVOIR:Lcom/yahoo/sketches/Family;
 
-    .line 104
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v14, 0x1
@@ -426,7 +413,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->RESERVOIR_UNION:Lcom/yahoo/sketches/Family;
 
-    .line 109
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v7, 0x4
@@ -447,7 +433,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->VAROPT:Lcom/yahoo/sketches/Family;
 
-    .line 114
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v14, 0x4
@@ -466,7 +451,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->VAROPT_UNION:Lcom/yahoo/sketches/Family;
 
-    .line 119
     new-instance v0, Lcom/yahoo/sketches/Family;
 
     const/4 v7, 0x2
@@ -487,28 +471,24 @@
 
     sput-object v0, Lcom/yahoo/sketches/Family;->KLL:Lcom/yahoo/sketches/Family;
 
-    .line 20
     invoke-static {}, Lcom/yahoo/sketches/Family;->$values()[Lcom/yahoo/sketches/Family;
 
     move-result-object v0
 
     sput-object v0, Lcom/yahoo/sketches/Family;->$VALUES:[Lcom/yahoo/sketches/Family;
 
-    .line 121
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/yahoo/sketches/Family;->lookupID:Ljava/util/Map;
 
-    .line 122
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/yahoo/sketches/Family;->lookupFamName:Ljava/util/Map;
 
-    .line 129
     invoke-static {}, Lcom/yahoo/sketches/Family;->values()[Lcom/yahoo/sketches/Family;
 
     move-result-object v0
@@ -522,7 +502,6 @@
 
     aget-object v3, v0, v2
 
-    .line 130
     sget-object v4, Lcom/yahoo/sketches/Family;->lookupID:Ljava/util/Map;
 
     invoke-virtual {v3}, Lcom/yahoo/sketches/Family;->getID()I
@@ -535,7 +514,6 @@
 
     invoke-interface {v4, v5, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 131
     sget-object v4, Lcom/yahoo/sketches/Family;->lookupFamName:Ljava/util/Map;
 
     invoke-virtual {v3}, Lcom/yahoo/sketches/Family;->getFamilyName()Ljava/lang/String;
@@ -585,23 +563,18 @@
         }
     .end annotation
 
-    .line 135
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 136
     iput p3, p0, Lcom/yahoo/sketches/Family;->id_:I
 
-    .line 137
     invoke-virtual {p4}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/yahoo/sketches/Family;->famName_:Ljava/lang/String;
 
-    .line 138
     iput p5, p0, Lcom/yahoo/sketches/Family;->minPreLongs_:I
 
-    .line 139
     iput p6, p0, Lcom/yahoo/sketches/Family;->maxPreLongs_:I
 
     return-void
@@ -618,7 +591,6 @@
         }
     .end annotation
 
-    .line 197
     sget-object v0, Lcom/yahoo/sketches/Family;->lookupID:Ljava/util/Map;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -635,7 +607,6 @@
 
     return-object v0
 
-    .line 199
     :cond_f
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -667,7 +638,6 @@
         }
     .end annotation
 
-    .line 210
     sget-object v0, Lcom/yahoo/sketches/Family;->lookupFamName:Ljava/util/Map;
 
     invoke-virtual {p0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
@@ -684,7 +654,6 @@
 
     return-object v0
 
-    .line 212
     :cond_f
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -716,7 +685,6 @@
         }
     .end annotation
 
-    .line 20
     const-class v0, Lcom/yahoo/sketches/Family;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -731,7 +699,6 @@
 .method public static values()[Lcom/yahoo/sketches/Family;
     .registers 1
 
-    .line 20
     sget-object v0, Lcom/yahoo/sketches/Family;->$VALUES:[Lcom/yahoo/sketches/Family;
 
     invoke-virtual {v0}, [Lcom/yahoo/sketches/Family;->clone()Ljava/lang/Object;
@@ -756,14 +723,12 @@
         }
     .end annotation
 
-    .line 155
     iget v0, p0, Lcom/yahoo/sketches/Family;->id_:I
 
     if-ne p1, v0, :cond_5
 
     return-void
 
-    .line 156
     :cond_5
     new-instance v0, Lcom/yahoo/sketches/SketchesArgumentException;
 
@@ -773,7 +738,6 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 157
     invoke-virtual {p0}, Lcom/yahoo/sketches/Family;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -784,7 +748,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 158
     invoke-static {p1}, Lcom/yahoo/sketches/Family;->idToFamily(I)Lcom/yahoo/sketches/Family;
 
     move-result-object p1
@@ -807,7 +770,6 @@
 .method public getFamilyName()Ljava/lang/String;
     .registers 2
 
-    .line 167
     iget-object v0, p0, Lcom/yahoo/sketches/Family;->famName_:Ljava/lang/String;
 
     return-object v0
@@ -816,7 +778,6 @@
 .method public getID()I
     .registers 2
 
-    .line 147
     iget v0, p0, Lcom/yahoo/sketches/Family;->id_:I
 
     return v0
@@ -825,7 +786,6 @@
 .method public getMaxPreLongs()I
     .registers 2
 
-    .line 183
     iget v0, p0, Lcom/yahoo/sketches/Family;->maxPreLongs_:I
 
     return v0
@@ -834,7 +794,6 @@
 .method public getMinPreLongs()I
     .registers 2
 
-    .line 175
     iget v0, p0, Lcom/yahoo/sketches/Family;->minPreLongs_:I
 
     return v0
@@ -843,7 +802,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 188
     iget-object v0, p0, Lcom/yahoo/sketches/Family;->famName_:Ljava/lang/String;
 
     return-object v0

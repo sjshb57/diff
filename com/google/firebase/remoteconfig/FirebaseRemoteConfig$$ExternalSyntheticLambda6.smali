@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig$$ExternalSyntheticLambda6;->f$0:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
@@ -27,7 +26,6 @@
 .method public final call()Ljava/lang/Object;
     .registers 2
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig$$ExternalSyntheticLambda6;->f$0:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->lambda$reset$6$com-google-firebase-remoteconfig-FirebaseRemoteConfig()Ljava/lang/Void;

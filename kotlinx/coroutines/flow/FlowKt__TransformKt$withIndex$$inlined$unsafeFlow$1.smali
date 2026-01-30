@@ -63,7 +63,6 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$withIndex$$inlined$unsafeFlow$1;->$this_withIndex$inlined:Lkotlinx/coroutines/flow/Flow;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -88,12 +87,10 @@
         }
     .end annotation
 
-    .line 113
     new-instance v0, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 114
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__TransformKt$withIndex$$inlined$unsafeFlow$1;->$this_withIndex$inlined:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v2, Lkotlinx/coroutines/flow/FlowKt__TransformKt$withIndex$1$1;
@@ -114,7 +111,6 @@
 
     return-object p1
 
-    .line 108
     :cond_19
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

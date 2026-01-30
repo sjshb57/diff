@@ -74,7 +74,6 @@
 
     iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
-    .line 196
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -85,10 +84,8 @@
 .method public contains(F)Z
     .registers 8
 
-    .line 199
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
-    .line 3421
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -100,7 +97,6 @@
 
     aget v4, v0, v3
 
-    .line 199
     invoke-static {v4}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v4
@@ -128,7 +124,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 196
     instance-of v0, p1, Ljava/lang/Float;
 
     if-nez v0, :cond_6
@@ -154,7 +149,6 @@
 .method public get(I)Ljava/lang/Float;
     .registers 3
 
-    .line 200
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
     aget p1, v0, p1
@@ -169,7 +163,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 196
     invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->get(I)Ljava/lang/Float;
 
     move-result-object p1
@@ -180,7 +173,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 197
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
     array-length v0, v0
@@ -191,10 +183,8 @@
 .method public indexOf(F)I
     .registers 7
 
-    .line 201
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
-    .line 3423
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -202,10 +192,8 @@
     :goto_4
     if-ge v2, v1, :cond_16
 
-    .line 3424
     aget v3, v0, v2
 
-    .line 201
     invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v3
@@ -233,7 +221,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 196
     instance-of v0, p1, Ljava/lang/Float;
 
     if-nez v0, :cond_6
@@ -259,7 +246,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 198
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
     array-length v0, v0
@@ -280,10 +266,8 @@
 .method public lastIndexOf(F)I
     .registers 8
 
-    .line 202
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$5;->$this_asList:[F
 
-    .line 3429
     array-length v1, v0
 
     const/4 v2, -0x1
@@ -295,10 +279,8 @@
     :goto_7
     add-int/lit8 v3, v1, -0x1
 
-    .line 3430
     aget v4, v0, v1
 
-    .line 202
     invoke-static {v4}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v4
@@ -331,7 +313,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 196
     instance-of v0, p1, Ljava/lang/Float;
 
     if-nez v0, :cond_6

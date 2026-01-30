@@ -11,7 +11,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 9
     invoke-direct {p0}, Lcom/google/games/bridge/SimpleUiRequest;-><init>()V
 
     return-void
@@ -32,12 +31,10 @@
         }
     .end annotation
 
-    .line 14
     invoke-static {p1}, Lcom/google/android/gms/games/PlayGames;->getLeaderboardsClient(Landroid/app/Activity;)Lcom/google/android/gms/games/LeaderboardsClient;
 
     move-result-object p1
 
-    .line 15
     invoke-interface {p1}, Lcom/google/android/gms/games/LeaderboardsClient;->getAllLeaderboardsIntent()Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1

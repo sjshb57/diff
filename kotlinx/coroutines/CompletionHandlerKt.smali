@@ -50,7 +50,6 @@
         }
     .end annotation
 
-    .line 19
     check-cast p0, Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -70,7 +69,6 @@
         }
     .end annotation
 
-    .line 13
     check-cast p0, Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -91,7 +89,6 @@
         }
     .end annotation
 
-    .line 22
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void

@@ -90,7 +90,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -99,7 +98,6 @@
 .method public static final synthetic access$getNCollectors(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)I
     .registers 1
 
-    .line 21
     iget p0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
     return p0
@@ -108,7 +106,6 @@
 .method public static final synthetic access$getSlots(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
     .registers 1
 
-    .line 21
     iget-object p0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->slots:[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     return-object p0
@@ -124,10 +121,8 @@
         }
     .end annotation
 
-    .line 142
     monitor-enter p0
 
-    .line 46
     :try_start_1
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->slots:[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
@@ -135,7 +130,6 @@
 
     if-nez v0, :cond_d
 
-    .line 47
     invoke-virtual {p0, v1}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->createSlotArray(I)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object v0
@@ -144,7 +138,6 @@
 
     goto :goto_24
 
-    .line 48
     :cond_d
     iget v2, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
@@ -152,7 +145,6 @@
 
     if-lt v2, v3, :cond_24
 
-    .line 49
     array-length v2, v0
 
     mul-int/2addr v2, v1
@@ -173,12 +165,10 @@
 
     check-cast v0, [Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
-    .line 54
     :cond_24
     :goto_24
     iget v1, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nextIndex:I
 
-    .line 57
     :cond_26
     aget-object v2, v0, v1
 
@@ -193,14 +183,12 @@
     :cond_30
     add-int/lit8 v1, v1, 0x1
 
-    .line 59
     array-length v3, v0
 
     if-lt v1, v3, :cond_36
 
     const/4 v1, 0x0
 
-    .line 60
     :cond_36
     const-string v3, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>"
 
@@ -212,10 +200,8 @@
 
     if-eqz v3, :cond_26
 
-    .line 62
     iput v1, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nextIndex:I
 
-    .line 63
     iget v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
     const/4 v1, 0x1
@@ -224,17 +210,14 @@
 
     iput v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
-    .line 64
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->_subscriptionCount:Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;
     :try_end_4b
     .catchall {:try_start_1 .. :try_end_4b} :catchall_52
 
-    .line 142
     monitor-exit p0
 
     if-eqz v0, :cond_51
 
-    .line 68
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;->increment(I)Z
 
     :cond_51
@@ -243,7 +226,6 @@
     :catchall_52
     move-exception v0
 
-    .line 142
     monitor-exit p0
 
     throw v0
@@ -277,7 +259,6 @@
         }
     .end annotation
 
-    .line 94
     invoke-static {p0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getNCollectors(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)I
 
     move-result v0
@@ -286,7 +267,6 @@
 
     return-void
 
-    .line 95
     :cond_7
     invoke-static {p0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->access$getSlots(Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
@@ -294,7 +274,6 @@
 
     if-eqz v0, :cond_1b
 
-    .line 149
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -306,7 +285,6 @@
 
     if-eqz v3, :cond_18
 
-    .line 96
     invoke-interface {p1, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_18
@@ -326,10 +304,8 @@
         }
     .end annotation
 
-    .line 148
     monitor-enter p0
 
-    .line 77
     :try_start_1
     iget v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
@@ -339,17 +315,14 @@
 
     iput v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
-    .line 78
     iget-object v2, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->_subscriptionCount:Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;
 
     const/4 v3, 0x0
 
     if-nez v0, :cond_e
 
-    .line 80
     iput v3, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nextIndex:I
 
-    .line 81
     :cond_e
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>"
 
@@ -361,10 +334,8 @@
     :try_end_17
     .catchall {:try_start_1 .. :try_end_17} :catchall_33
 
-    .line 148
     monitor-exit p0
 
-    .line 88
     array-length v0, p1
 
     :goto_19
@@ -392,7 +363,6 @@
     :cond_2d
     if-eqz v2, :cond_32
 
-    .line 90
     invoke-virtual {v2, v1}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;->increment(I)Z
 
     :cond_32
@@ -401,7 +371,6 @@
     :catchall_33
     move-exception p1
 
-    .line 148
     monitor-exit p0
 
     throw p1
@@ -410,7 +379,6 @@
 .method protected final getNCollectors()I
     .registers 2
 
-    .line 24
     iget v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->nCollectors:I
 
     return v0
@@ -424,7 +392,6 @@
         }
     .end annotation
 
-    .line 22
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->slots:[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     return-object v0
@@ -441,10 +408,8 @@
         }
     .end annotation
 
-    .line 137
     monitor-enter p0
 
-    .line 32
     :try_start_1
     iget-object v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->_subscriptionCount:Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;
 
@@ -456,16 +421,13 @@
 
     invoke-direct {v0, v1}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;-><init>(I)V
 
-    .line 33
     iput-object v0, p0, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;->_subscriptionCount:Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;
     :try_end_e
     .catchall {:try_start_1 .. :try_end_e} :catchall_12
 
-    .line 137
     :cond_e
     monitor-exit p0
 
-    .line 136
     check-cast v0, Lkotlinx/coroutines/flow/StateFlow;
 
     return-object v0
@@ -473,7 +435,6 @@
     :catchall_12
     move-exception v0
 
-    .line 137
     monitor-exit p0
 
     throw v0

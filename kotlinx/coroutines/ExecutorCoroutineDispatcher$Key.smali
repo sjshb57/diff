@@ -48,17 +48,14 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 24
     sget-object v0, Lkotlinx/coroutines/CoroutineDispatcher;->Key:Lkotlinx/coroutines/CoroutineDispatcher$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
 
-    .line 25
     sget-object v1, Lkotlinx/coroutines/ExecutorCoroutineDispatcher$Key$1;->INSTANCE:Lkotlinx/coroutines/ExecutorCoroutineDispatcher$Key$1;
 
     check-cast v1, Lkotlin/jvm/functions/Function1;
 
-    .line 23
     invoke-direct {p0, v0, v1}, Lkotlin/coroutines/AbstractCoroutineContextKey;-><init>(Lkotlin/coroutines/CoroutineContext$Key;Lkotlin/jvm/functions/Function1;)V
 
     return-void

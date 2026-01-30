@@ -81,7 +81,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 35
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/internal/ThreadContextKt$countAll$1;->invoke(Ljava/lang/Object;Lkotlin/coroutines/CoroutineContext$Element;)Ljava/lang/Object;
@@ -94,12 +93,10 @@
 .method public final invoke(Ljava/lang/Object;Lkotlin/coroutines/CoroutineContext$Element;)Ljava/lang/Object;
     .registers 4
 
-    .line 36
     instance-of v0, p2, Lkotlinx/coroutines/ThreadContextElement;
 
     if-eqz v0, :cond_1e
 
-    .line 37
     instance-of v0, p1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_b
@@ -133,7 +130,6 @@
     :cond_18
     add-int/2addr p1, v0
 
-    .line 38
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2

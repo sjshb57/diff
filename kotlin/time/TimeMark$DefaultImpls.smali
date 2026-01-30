@@ -28,7 +28,6 @@
 .method public static hasNotPassedNow(Lkotlin/time/TimeMark;)Z
     .registers 3
 
-    .line 172
     invoke-interface {p0}, Lkotlin/time/TimeMark;->elapsedNow-UwyO8pc()J
 
     move-result-wide v0
@@ -43,7 +42,6 @@
 .method public static hasPassedNow(Lkotlin/time/TimeMark;)Z
     .registers 3
 
-    .line 164
     invoke-interface {p0}, Lkotlin/time/TimeMark;->elapsedNow-UwyO8pc()J
 
     move-result-wide v0
@@ -60,7 +58,6 @@
 .method public static minus-LRDsOJo(Lkotlin/time/TimeMark;J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 155
     invoke-static {p1, p2}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
 
     move-result-wide p1
@@ -75,7 +72,6 @@
 .method public static plus-LRDsOJo(Lkotlin/time/TimeMark;J)Lkotlin/time/TimeMark;
     .registers 5
 
-    .line 142
     new-instance v0, Lkotlin/time/AdjustedTimeMark;
 
     const/4 v1, 0x0

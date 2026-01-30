@@ -61,7 +61,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -82,7 +81,6 @@
         }
     .end annotation
 
-    .line 21
     new-instance v0, Lkotlin/properties/NotNullVar;
 
     invoke-direct {v0}, Lkotlin/properties/NotNullVar;-><init>()V
@@ -115,7 +113,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 33
     new-instance v0, Lkotlin/properties/Delegates$observable$1;
 
     invoke-direct {v0, p1, p2}, Lkotlin/properties/Delegates$observable$1;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V
@@ -148,7 +145,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
     new-instance v0, Lkotlin/properties/Delegates$vetoable$1;
 
     invoke-direct {v0, p1, p2}, Lkotlin/properties/Delegates$vetoable$1;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V

@@ -188,7 +188,6 @@
 
     move-result-object v0
 
-    .line 88
     iget v1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$second$1;->label:I
 
     const/4 v2, 0x1
@@ -217,7 +216,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 89
     iget-object v1, p0, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$second$1;->$flow2:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v3, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$second$1$1;
@@ -240,7 +238,6 @@
 
     return-object v0
 
-    .line 92
     :cond_33
     :goto_33
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

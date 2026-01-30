@@ -47,7 +47,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 27
     invoke-direct {p0}, Lkotlin/internal/jdk7/JDK7PlatformImplementations;-><init>()V
 
     return-void
@@ -56,7 +55,6 @@
 .method private final sdkIsNullOrAtLeast(I)Z
     .registers 3
 
-    .line 40
     sget-object v0, Lkotlin/internal/jdk8/JDK8PlatformImplementations$ReflectSdkVersion;->sdkVersion:Ljava/lang/Integer;
 
     if-eqz v0, :cond_f
@@ -91,7 +89,6 @@
 
     const/16 v0, 0x22
 
-    .line 58
     invoke-direct {p0, v0}, Lkotlin/internal/jdk8/JDK8PlatformImplementations;->sdkIsNullOrAtLeast(I)Z
 
     move-result v0
@@ -126,7 +123,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 43
     instance-of v0, p1, Ljava/util/regex/Matcher;
 
     const/4 v1, 0x0
@@ -143,7 +139,6 @@
     :goto_13
     if-eqz p1, :cond_3d
 
-    .line 45
     new-instance v0, Lkotlin/ranges/IntRange;
 
     invoke-virtual {p1, p2}, Ljava/util/regex/Matcher;->start(Ljava/lang/String;)I
@@ -158,7 +153,6 @@
 
     invoke-direct {v0, v2, v3}, Lkotlin/ranges/IntRange;-><init>(II)V
 
-    .line 46
     invoke-virtual {v0}, Lkotlin/ranges/IntRange;->getStart()Ljava/lang/Integer;
 
     move-result-object v2
@@ -169,7 +163,6 @@
 
     if-ltz v2, :cond_3c
 
-    .line 47
     new-instance v1, Lkotlin/text/MatchGroup;
 
     invoke-virtual {p1, p2}, Ljava/util/regex/Matcher;->group(Ljava/lang/String;)Ljava/lang/String;
@@ -185,7 +178,6 @@
     :cond_3c
     return-object v1
 
-    .line 43
     :cond_3d
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 

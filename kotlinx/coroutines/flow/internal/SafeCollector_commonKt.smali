@@ -54,7 +54,6 @@
 
     const/4 v0, 0x0
 
-    .line 25
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -75,42 +74,33 @@
 
     move-result v0
 
-    .line 83
     iget v1, p0, Lkotlinx/coroutines/flow/internal/SafeCollector;->collectContextSize:I
 
     if-ne v0, v1, :cond_1b
 
     return-void
 
-    .line 84
     :cond_1b
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 85
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Flow invariant is violated:\n\t\tFlow was collected in "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 86
     iget-object p0, p0, Lkotlinx/coroutines/flow/internal/SafeCollector;->collectContext:Lkotlin/coroutines/CoroutineContext;
 
-    .line 85
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 86
     const-string p0, ",\n\t\tbut emission happened in "
 
-    .line 85
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 87
     const-string p0, ".\n\t\tPlease refer to \'flow\' documentation or use \'flowOn\' instead"
 
-    .line 85
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -141,7 +131,6 @@
 
     return-object p0
 
-    .line 96
     :cond_7
     instance-of v0, p0, Lkotlinx/coroutines/internal/ScopeCoroutine;
 
@@ -149,7 +138,6 @@
 
     return-object p0
 
-    .line 97
     :cond_c
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->getParent()Lkotlinx/coroutines/Job;
 
@@ -180,7 +168,6 @@
         }
     .end annotation
 
-    .line 106
     new-instance v0, Lkotlinx/coroutines/flow/internal/SafeCollector_commonKt$unsafeFlow$1;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/flow/internal/SafeCollector_commonKt$unsafeFlow$1;-><init>(Lkotlin/jvm/functions/Function2;)V

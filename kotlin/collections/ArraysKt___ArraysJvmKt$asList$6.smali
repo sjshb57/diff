@@ -74,7 +74,6 @@
 
     iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
-    .line 210
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -85,10 +84,8 @@
 .method public contains(D)Z
     .registers 11
 
-    .line 213
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
-    .line 3421
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -100,7 +97,6 @@
 
     aget-wide v4, v0, v3
 
-    .line 213
     invoke-static {v4, v5}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v4
@@ -130,7 +126,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 210
     instance-of v0, p1, Ljava/lang/Double;
 
     if-nez v0, :cond_6
@@ -156,7 +151,6 @@
 .method public get(I)Ljava/lang/Double;
     .registers 5
 
-    .line 214
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
     aget-wide v1, v0, p1
@@ -171,7 +165,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 210
     invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->get(I)Ljava/lang/Double;
 
     move-result-object p1
@@ -182,7 +175,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 211
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
     array-length v0, v0
@@ -193,10 +185,8 @@
 .method public indexOf(D)I
     .registers 10
 
-    .line 215
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
-    .line 3423
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -204,10 +194,8 @@
     :goto_4
     if-ge v2, v1, :cond_18
 
-    .line 3424
     aget-wide v3, v0, v2
 
-    .line 215
     invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v3
@@ -237,7 +225,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 4
 
-    .line 210
     instance-of v0, p1, Ljava/lang/Double;
 
     if-nez v0, :cond_6
@@ -263,7 +250,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 212
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
     array-length v0, v0
@@ -284,10 +270,8 @@
 .method public lastIndexOf(D)I
     .registers 11
 
-    .line 216
     iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysJvmKt$asList$6;->$this_asList:[D
 
-    .line 3429
     array-length v1, v0
 
     const/4 v2, -0x1
@@ -299,10 +283,8 @@
     :goto_7
     add-int/lit8 v3, v1, -0x1
 
-    .line 3430
     aget-wide v4, v0, v1
 
-    .line 216
     invoke-static {v4, v5}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v4
@@ -337,7 +319,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 4
 
-    .line 210
     instance-of v0, p1, Ljava/lang/Double;
 
     if-nez v0, :cond_6

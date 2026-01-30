@@ -41,7 +41,6 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 70
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlinx/coroutines/scheduling/TaskContextImpl;->taskMode:I
@@ -60,7 +59,6 @@
 .method public getTaskMode()I
     .registers 2
 
-    .line 70
     iget v0, p0, Lkotlinx/coroutines/scheduling/TaskContextImpl;->taskMode:I
 
     return v0

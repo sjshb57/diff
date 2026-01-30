@@ -189,7 +189,6 @@
 
     move-result-object v0
 
-    .line 222
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNot$1;->label:I
 
     const/4 v2, 0x1

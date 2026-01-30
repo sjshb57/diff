@@ -38,7 +38,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 47
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -51,22 +50,16 @@
 .method constructor <init>(Lcom/google/firebase/messaging/TopicsSubscriber;Landroid/content/Context;Lcom/google/firebase/messaging/Metadata;J)V
     .registers 6
 
-    .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 66
     iput-object p1, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
-    .line 67
     iput-object p2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
-    .line 68
     iput-wide p4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->nextDelaySeconds:J
 
-    .line 69
     iput-object p3, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->metadata:Lcom/google/firebase/messaging/Metadata;
 
-    .line 71
     const-string p1, "power"
 
     invoke-virtual {p2, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -77,7 +70,6 @@
 
     const/4 p2, 0x1
 
-    .line 72
     const-string p3, "wake:com.google.firebase.messaging"
 
     invoke-virtual {p1, p2, p3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
@@ -92,7 +84,6 @@
 .method static synthetic access$000(Lcom/google/firebase/messaging/TopicsSyncTask;)Z
     .registers 1
 
-    .line 39
     invoke-direct {p0}, Lcom/google/firebase/messaging/TopicsSyncTask;->isDeviceConnected()Z
 
     move-result p0
@@ -103,7 +94,6 @@
 .method static synthetic access$100()Z
     .registers 1
 
-    .line 39
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSyncTask;->isLoggable()Z
 
     move-result v0
@@ -114,7 +104,6 @@
 .method static synthetic access$200(Lcom/google/firebase/messaging/TopicsSyncTask;)Lcom/google/firebase/messaging/TopicsSubscriber;
     .registers 1
 
-    .line 39
     iget-object p0, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
     return-object p0
@@ -123,7 +112,6 @@
 .method static synthetic access$300(Lcom/google/firebase/messaging/TopicsSyncTask;)Landroid/content/Context;
     .registers 1
 
-    .line 39
     iget-object p0, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     return-object p0
@@ -132,7 +120,6 @@
 .method private static createPermissionMissingLog(Ljava/lang/String;)Ljava/lang/String;
     .registers 3
 
-    .line 173
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Missing Permission: "
@@ -155,18 +142,15 @@
 .method private static hasAccessNetworkStatePermission(Landroid/content/Context;)Z
     .registers 4
 
-    .line 145
     sget-object v0, Lcom/google/firebase/messaging/TopicsSyncTask;->TOPIC_SYNC_TASK_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 147
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/TopicsSyncTask;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
     if-nez v1, :cond_e
 
-    .line 148
     const-string v2, "android.permission.ACCESS_NETWORK_STATE"
 
     invoke-static {p0, v2, v1}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasPermission(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Boolean;)Z
@@ -175,13 +159,11 @@
 
     goto :goto_12
 
-    .line 152
     :cond_e
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    .line 147
     :goto_12
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -189,7 +171,6 @@
 
     sput-object p0, Lcom/google/firebase/messaging/TopicsSyncTask;->hasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 153
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -201,7 +182,6 @@
     :catchall_1e
     move-exception p0
 
-    .line 154
     monitor-exit v0
     :try_end_20
     .catchall {:try_start_3 .. :try_end_20} :catchall_1e
@@ -214,14 +194,12 @@
 
     if-eqz p2, :cond_7
 
-    .line 159
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
     return p0
 
-    .line 163
     :cond_7
     invoke-virtual {p0, p1}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
@@ -241,7 +219,6 @@
 
     const/4 p2, 0x3
 
-    .line 165
     const-string v0, "FirebaseMessaging"
 
     invoke-static {v0, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -250,7 +227,6 @@
 
     if-eqz p2, :cond_22
 
-    .line 166
     invoke-static {p1}, Lcom/google/firebase/messaging/TopicsSyncTask;->createPermissionMissingLog(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -264,18 +240,15 @@
 .method private static hasWakeLockPermission(Landroid/content/Context;)Z
     .registers 4
 
-    .line 135
     sget-object v0, Lcom/google/firebase/messaging/TopicsSyncTask;->TOPIC_SYNC_TASK_LOCK:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 137
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission:Ljava/lang/Boolean;
 
     if-nez v1, :cond_e
 
-    .line 138
     const-string v2, "android.permission.WAKE_LOCK"
 
     invoke-static {p0, v2, v1}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasPermission(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Boolean;)Z
@@ -284,13 +257,11 @@
 
     goto :goto_12
 
-    .line 139
     :cond_e
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    .line 137
     :goto_12
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -298,7 +269,6 @@
 
     sput-object p0, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission:Ljava/lang/Boolean;
 
-    .line 140
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -310,7 +280,6 @@
     :catchall_1e
     move-exception p0
 
-    .line 141
     monitor-exit v0
     :try_end_20
     .catchall {:try_start_3 .. :try_end_20} :catchall_1e
@@ -323,13 +292,11 @@
 
     monitor-enter p0
 
-    .line 122
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     const-string v1, "connectivity"
 
-    .line 123
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -338,7 +305,6 @@
 
     if-eqz v0, :cond_12
 
-    .line 124
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
@@ -351,7 +317,6 @@
     :goto_13
     if-eqz v0, :cond_1d
 
-    .line 125
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
@@ -383,7 +348,6 @@
 .method private static isLoggable()Z
     .registers 4
 
-    .line 130
     const-string v0, "FirebaseMessaging"
 
     const/4 v1, 0x3
@@ -400,7 +364,6 @@
 
     if-ne v2, v3, :cond_16
 
-    .line 131
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -427,17 +390,14 @@
 .method public run()V
     .registers 8
 
-    .line 80
     const/4 v0, 0x0
 
     sget-object v0, Landroidx/arch/core/internal/nl/WfPiHVumXD;->sLOTbpUVQfIISCU:Ljava/lang/String;
 
     const-string v1, "FirebaseMessaging"
 
-    .line 0
     const-string v2, "Failed to sync topics. Won\'t retry sync. "
 
-    .line 80
     iget-object v3, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission(Landroid/content/Context;)Z
@@ -446,7 +406,6 @@
 
     if-eqz v3, :cond_16
 
-    .line 81
     iget-object v3, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
     sget-wide v4, Lcom/google/firebase/messaging/Constants;->WAKE_LOCK_ACQUIRE_TIMEOUT_MILLIS:J
@@ -456,7 +415,6 @@
     :cond_16
     const/4 v3, 0x0
 
-    .line 86
     :try_start_17
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
@@ -464,7 +422,6 @@
 
     invoke-virtual {v4, v5}, Lcom/google/firebase/messaging/TopicsSubscriber;->setSyncScheduledOrRunning(Z)V
 
-    .line 88
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {v4}, Lcom/google/firebase/messaging/Metadata;->isGmscorePresent()Z
@@ -473,7 +430,6 @@
 
     if-nez v4, :cond_3c
 
-    .line 89
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
     invoke-virtual {v4, v3}, Lcom/google/firebase/messaging/TopicsSubscriber;->setSyncScheduledOrRunning(Z)V
@@ -481,7 +437,6 @@
     .catch Ljava/io/IOException; {:try_start_17 .. :try_end_2a} :catch_86
     .catchall {:try_start_17 .. :try_end_2a} :catchall_84
 
-    .line 110
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission(Landroid/content/Context;)Z
@@ -490,7 +445,6 @@
 
     if-eqz v2, :cond_3b
 
-    .line 112
     :try_start_32
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -500,7 +454,6 @@
 
     goto :goto_3b
 
-    .line 115
     :catch_38
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -508,7 +461,6 @@
     :goto_3b
     return-void
 
-    .line 93
     :cond_3c
     :try_start_3c
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
@@ -519,25 +471,21 @@
 
     if-eqz v4, :cond_64
 
-    .line 94
     invoke-direct {p0}, Lcom/google/firebase/messaging/TopicsSyncTask;->isDeviceConnected()Z
 
     move-result v4
 
     if-nez v4, :cond_64
 
-    .line 95
     new-instance v4, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;
 
     invoke-direct {v4, p0, p0}, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;-><init>(Lcom/google/firebase/messaging/TopicsSyncTask;Lcom/google/firebase/messaging/TopicsSyncTask;)V
 
-    .line 96
     invoke-virtual {v4}, Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->registerReceiver()V
     :try_end_52
     .catch Ljava/io/IOException; {:try_start_3c .. :try_end_52} :catch_86
     .catchall {:try_start_3c .. :try_end_52} :catchall_84
 
-    .line 110
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission(Landroid/content/Context;)Z
@@ -546,7 +494,6 @@
 
     if-eqz v2, :cond_63
 
-    .line 112
     :try_start_5a
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -556,7 +503,6 @@
 
     goto :goto_63
 
-    .line 115
     :catch_60
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -564,7 +510,6 @@
     :goto_63
     return-void
 
-    .line 101
     :cond_64
     :try_start_64
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
@@ -575,14 +520,12 @@
 
     if-eqz v4, :cond_72
 
-    .line 102
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
     invoke-virtual {v4, v3}, Lcom/google/firebase/messaging/TopicsSubscriber;->setSyncScheduledOrRunning(Z)V
 
     goto :goto_79
 
-    .line 104
     :cond_72
     iget-object v4, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
@@ -593,7 +536,6 @@
     .catch Ljava/io/IOException; {:try_start_64 .. :try_end_79} :catch_86
     .catchall {:try_start_64 .. :try_end_79} :catchall_84
 
-    .line 110
     :goto_79
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
@@ -603,7 +545,6 @@
 
     if-eqz v2, :cond_b0
 
-    .line 112
     :try_start_81
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
     :try_end_83
@@ -619,7 +560,6 @@
     :catch_86
     move-exception v4
 
-    .line 107
     :try_start_87
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -637,14 +577,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 108
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->topicsSubscriber:Lcom/google/firebase/messaging/TopicsSubscriber;
 
     invoke-virtual {v2, v3}, Lcom/google/firebase/messaging/TopicsSubscriber;->setSyncScheduledOrRunning(Z)V
     :try_end_9f
     .catchall {:try_start_87 .. :try_end_9f} :catchall_84
 
-    .line 110
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/google/firebase/messaging/TopicsSyncTask;->hasWakeLockPermission(Landroid/content/Context;)Z
@@ -653,7 +591,6 @@
 
     if-eqz v2, :cond_b0
 
-    .line 112
     :try_start_a7
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -664,7 +601,6 @@
 
     goto :goto_b0
 
-    .line 115
     :catch_ad
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -672,7 +608,6 @@
     :goto_b0
     return-void
 
-    .line 110
     :goto_b1
     iget-object v3, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->context:Landroid/content/Context;
 
@@ -682,7 +617,6 @@
 
     if-eqz v3, :cond_c2
 
-    .line 112
     :try_start_b9
     iget-object v3, p0, Lcom/google/firebase/messaging/TopicsSyncTask;->syncWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -692,11 +626,9 @@
 
     goto :goto_c2
 
-    .line 115
     :catch_bf
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 118
     :cond_c2
     :goto_c2
     throw v2

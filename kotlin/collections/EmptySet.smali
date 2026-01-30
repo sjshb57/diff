@@ -76,7 +76,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +84,6 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 2
 
-    .line 28
     sget-object v0, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
 
     return-object v0
@@ -144,7 +142,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 14
     instance-of v0, p1, Ljava/lang/Void;
 
     if-nez v0, :cond_6
@@ -182,7 +179,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 24
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p1
@@ -193,7 +189,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 17
     instance-of v0, p1, Ljava/util/Set;
 
     if-eqz v0, :cond_e
@@ -244,7 +239,6 @@
 .method public iterator()Ljava/util/Iterator;
     .registers 2
 
-    .line 26
     sget-object v0, Lkotlin/collections/EmptyIterator;->INSTANCE:Lkotlin/collections/EmptyIterator;
 
     check-cast v0, Ljava/util/Iterator;
@@ -291,7 +285,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/EmptySet;->getSize()I
 
     move-result v0
@@ -341,7 +334,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 19
     const-string v0, "[]"
 
     return-object v0

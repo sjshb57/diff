@@ -83,7 +83,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
@@ -108,7 +107,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 2
 
-    .line 35
     check-cast p1, Lkotlin/time/ComparableTimeMark;
 
     invoke-virtual {p0, p1}, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->compareTo(Lkotlin/time/ComparableTimeMark;)I
@@ -121,7 +119,6 @@
 .method public compareTo(Lkotlin/time/ComparableTimeMark;)I
     .registers 2
 
-    .line 35
     invoke-static {p0, p1}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->compareTo(Lkotlin/time/ComparableTimeMark;Lkotlin/time/ComparableTimeMark;)I
 
     move-result p1
@@ -132,7 +129,6 @@
 .method public final effectiveDuration-UwyO8pc$kotlin_stdlib()J
     .registers 11
 
-    .line 57
     iget-wide v0, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
 
     invoke-static {v0, v1}, Lkotlin/time/Duration;->isInfinite-impl(J)Z
@@ -145,7 +141,6 @@
 
     return-wide v0
 
-    .line 58
     :cond_b
     iget-object v0, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->timeSource:Lkotlin/time/AbstractLongTimeSource;
 
@@ -153,7 +148,6 @@
 
     move-result-object v0
 
-    .line 59
     sget-object v1, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     check-cast v1, Ljava/lang/Enum;
@@ -164,7 +158,6 @@
 
     if-ltz v1, :cond_28
 
-    .line 60
     iget-wide v1, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
 
     invoke-static {v1, v2, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -182,25 +175,20 @@
     :cond_28
     const-wide/16 v1, 0x1
 
-    .line 62
     sget-object v3, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {v1, v2, v3, v0}, Lkotlin/time/DurationUnitKt;->convertDurationUnit(JLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)J
 
     move-result-wide v1
 
-    .line 63
     iget-wide v3, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
 
     div-long v5, v3, v1
 
-    .line 64
     rem-long/2addr v3, v1
 
-    .line 66
     iget-wide v1, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
 
-    .line 182
     invoke-static {v1, v2}, Lkotlin/time/Duration;->getInWholeSeconds-impl(J)J
 
     move-result-wide v7
@@ -211,13 +199,10 @@
 
     const v2, 0xf4240
 
-    .line 67
     div-int v9, v1, v2
 
-    .line 68
     rem-int/2addr v1, v2
 
-    .line 71
     invoke-static {v3, v4, v0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
 
     move-result-wide v2
@@ -234,7 +219,6 @@
 
     move-result-wide v0
 
-    .line 72
     sget-object v2, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     int-to-long v2, v9
@@ -247,12 +231,10 @@
 
     move-result-wide v2
 
-    .line 71
     invoke-static {v0, v1, v2, v3}, Lkotlin/time/Duration;->plus-LRDsOJo(JJ)J
 
     move-result-wide v0
 
-    .line 73
     sget-object v2, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     sget-object v2, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
@@ -261,7 +243,6 @@
 
     move-result-wide v2
 
-    .line 71
     invoke-static {v0, v1, v2, v3}, Lkotlin/time/Duration;->plus-LRDsOJo(JJ)J
 
     move-result-wide v0
@@ -272,7 +253,6 @@
 .method public elapsedNow-UwyO8pc()J
     .registers 5
 
-    .line 36
     iget-wide v0, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
 
     invoke-static {v0, v1}, Lkotlin/time/Duration;->isInfinite-impl(J)Z
@@ -323,7 +303,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 54
     instance-of v0, p1, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;
 
     if-eqz v0, :cond_25
@@ -374,7 +353,6 @@
 .method public hasNotPassedNow()Z
     .registers 2
 
-    .line 35
     invoke-static {p0}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->hasNotPassedNow(Lkotlin/time/ComparableTimeMark;)Z
 
     move-result v0
@@ -385,7 +363,6 @@
 .method public hasPassedNow()Z
     .registers 2
 
-    .line 35
     invoke-static {p0}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->hasPassedNow(Lkotlin/time/ComparableTimeMark;)Z
 
     move-result v0
@@ -396,7 +373,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 78
     invoke-virtual {p0}, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->effectiveDuration-UwyO8pc$kotlin_stdlib()J
 
     move-result-wide v0
@@ -411,7 +387,6 @@
 .method public minus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 35
     invoke-static {p0, p1, p2}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->minus-LRDsOJo(Lkotlin/time/ComparableTimeMark;J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -422,7 +397,6 @@
 .method public bridge synthetic minus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 35
     invoke-virtual {p0, p1, p2}, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->minus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -439,7 +413,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
     instance-of v0, p1, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;
 
     if-eqz v0, :cond_5c
@@ -458,7 +431,6 @@
 
     if-eqz v0, :cond_5c
 
-    .line 46
     iget-wide v2, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
 
     iget-wide v4, v1, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
@@ -485,7 +457,6 @@
 
     return-wide v0
 
-    .line 47
     :cond_2f
     iget-wide v2, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->offset:J
 
@@ -495,7 +466,6 @@
 
     move-result-wide v2
 
-    .line 48
     iget-wide v4, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
 
     iget-wide v0, v1, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
@@ -512,7 +482,6 @@
 
     move-result-wide v0
 
-    .line 50
     invoke-static {v2, v3}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
 
     move-result-wide v4
@@ -539,7 +508,6 @@
     :goto_5b
     return-wide v0
 
-    .line 40
     :cond_5c
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -571,7 +539,6 @@
 .method public plus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 11
 
-    .line 37
     new-instance v7, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;
 
     iget-wide v1, p0, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->startedAt:J
@@ -598,7 +565,6 @@
 .method public bridge synthetic plus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 35
     invoke-virtual {p0, p1, p2}, Lkotlin/time/AbstractLongTimeSource$LongTimeMark;->plus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -611,7 +577,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 80
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LongTimeMark("

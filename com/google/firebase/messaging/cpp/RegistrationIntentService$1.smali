@@ -36,7 +36,6 @@
 .method constructor <init>(Lcom/google/firebase/messaging/cpp/RegistrationIntentService;Landroid/content/Context;)V
     .registers 3
 
-    .line 43
     iput-object p1, p0, Lcom/google/firebase/messaging/cpp/RegistrationIntentService$1;->this$0:Lcom/google/firebase/messaging/cpp/RegistrationIntentService;
 
     iput-object p2, p0, Lcom/google/firebase/messaging/cpp/RegistrationIntentService$1;->val$context:Landroid/content/Context;
@@ -59,7 +58,6 @@
         }
     .end annotation
 
-    .line 46
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
     move-result v0
@@ -68,7 +66,6 @@
 
     if-nez v0, :cond_12
 
-    .line 47
     const-string v0, "Fetching FCM registration token failed"
 
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
@@ -79,7 +76,6 @@
 
     return-void
 
-    .line 52
     :cond_12
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
@@ -89,7 +85,6 @@
 
     const/4 v0, 0x1
 
-    .line 54
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -106,7 +101,6 @@
 
     if-eqz p1, :cond_2e
 
-    .line 56
     iget-object v0, p0, Lcom/google/firebase/messaging/cpp/RegistrationIntentService$1;->val$context:Landroid/content/Context;
 
     invoke-static {v0, p1}, Lcom/google/firebase/messaging/cpp/RegistrationIntentService;->writeTokenToInternalStorage(Landroid/content/Context;Ljava/lang/String;)V

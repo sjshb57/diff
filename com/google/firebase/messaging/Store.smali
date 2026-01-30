@@ -29,10 +29,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .registers 4
 
-    .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 52
     const-string v0, "com.google.android.gms.appid"
 
     const/4 v1, 0x0
@@ -43,7 +41,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
 
-    .line 53
     const-string v0, "com.google.android.gms.appid-no-backup"
 
     invoke-direct {p0, p1, v0}, Lcom/google/firebase/messaging/Store;->checkForRestore(Landroid/content/Context;Ljava/lang/String;)V
@@ -54,19 +51,16 @@
 .method private checkForRestore(Landroid/content/Context;Ljava/lang/String;)V
     .registers 5
 
-    .line 57
     const-string v0, "FirebaseMessaging"
 
     invoke-static {p1}, Landroidx/core/content/ContextCompat;->getNoBackupFilesDir(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object p1
 
-    .line 58
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 59
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -75,7 +69,6 @@
 
     return-void
 
-    .line 64
     :cond_12
     :try_start_12
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
@@ -84,19 +77,16 @@
 
     if-eqz p1, :cond_44
 
-    .line 67
     invoke-virtual {p0}, Lcom/google/firebase/messaging/Store;->isEmpty()Z
 
     move-result p1
 
     if-nez p1, :cond_44
 
-    .line 70
     const-string p1, "App restored, clearing state"
 
     invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 71
     invoke-virtual {p0}, Lcom/google/firebase/messaging/Store;->deleteAll()V
     :try_end_26
     .catch Ljava/io/IOException; {:try_start_12 .. :try_end_26} :catch_27
@@ -108,14 +98,12 @@
 
     const/4 p2, 0x3
 
-    .line 76
     invoke-static {v0, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result p2
 
     if-eqz p2, :cond_44
 
-    .line 77
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v1, "Error creating file in no backup dir: "
@@ -142,7 +130,6 @@
 .method private createTokenKey(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .registers 4
 
-    .line 87
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -173,7 +160,6 @@
 
     monitor-enter p0
 
-    .line 92
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
 
@@ -189,7 +175,6 @@
     :try_end_e
     .catchall {:try_start_1 .. :try_end_e} :catchall_10
 
-    .line 93
     monitor-exit p0
 
     return-void
@@ -207,28 +192,23 @@
 
     monitor-enter p0
 
-    .line 112
     :try_start_1
     invoke-direct {p0, p1, p2}, Lcom/google/firebase/messaging/Store;->createTokenKey(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 113
     iget-object p2, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
 
     invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p2
 
-    .line 114
     invoke-interface {p2, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 115
     invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_11
     .catchall {:try_start_1 .. :try_end_11} :catchall_13
 
-    .line 116
     monitor-exit p0
 
     return-void
@@ -246,7 +226,6 @@
 
     monitor-enter p0
 
-    .line 96
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
 
@@ -283,7 +262,6 @@
 
     monitor-enter p0
 
-    .line 83
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
 
@@ -314,7 +292,6 @@
 
     monitor-enter p0
 
-    .line 101
     :try_start_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -328,12 +305,10 @@
 
     if-nez p3, :cond_d
 
-    .line 104
     monitor-exit p0
 
     return-void
 
-    .line 106
     :cond_d
     :try_start_d
     iget-object p4, p0, Lcom/google/firebase/messaging/Store;->store:Landroid/content/SharedPreferences;
@@ -342,19 +317,16 @@
 
     move-result-object p4
 
-    .line 107
     invoke-direct {p0, p1, p2}, Lcom/google/firebase/messaging/Store;->createTokenKey(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-interface {p4, p1, p3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 108
     invoke-interface {p4}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_1d
     .catchall {:try_start_d .. :try_end_1d} :catchall_1f
 
-    .line 109
     monitor-exit p0
 
     return-void

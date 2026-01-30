@@ -22,7 +22,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 1
     invoke-direct {p0}, Lkotlin/LazyKt__LazyKt;-><init>()V
 
     return-void

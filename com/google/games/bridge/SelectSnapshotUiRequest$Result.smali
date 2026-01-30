@@ -24,13 +24,10 @@
 .method constructor <init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;ILcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
     .registers 4
 
-    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 41
     iput p2, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$Result;->status:I
 
-    .line 42
     iput-object p3, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$Result;->metadata:Lcom/google/android/gms/games/snapshot/SnapshotMetadata;
 
     return-void

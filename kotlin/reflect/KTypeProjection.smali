@@ -74,7 +74,6 @@
 
     sput-object v0, Lkotlin/reflect/KTypeProjection;->Companion:Lkotlin/reflect/KTypeProjection$Companion;
 
-    .line 54
     new-instance v0, Lkotlin/reflect/KTypeProjection;
 
     invoke-direct {v0, v1, v1}, Lkotlin/reflect/KTypeProjection;-><init>(Lkotlin/reflect/KVariance;Lkotlin/reflect/KType;)V
@@ -87,13 +86,10 @@
 .method public constructor <init>(Lkotlin/reflect/KVariance;Lkotlin/reflect/KType;)V
     .registers 6
 
-    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
     iput-object p1, p0, Lkotlin/reflect/KTypeProjection;->variance:Lkotlin/reflect/KVariance;
 
-    .line 31
     iput-object p2, p0, Lkotlin/reflect/KTypeProjection;->type:Lkotlin/reflect/KType;
 
     const/4 v0, 0x1
@@ -125,12 +121,10 @@
     :cond_15
     if-nez p1, :cond_1a
 
-    .line 37
     const-string p1, "Star projection must have no type specified."
 
     goto :goto_2d
 
-    .line 39
     :cond_1a
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -148,7 +142,6 @@
 
     move-result-object p1
 
-    .line 35
     :goto_2d
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -304,7 +297,6 @@
 .method public final getType()Lkotlin/reflect/KType;
     .registers 2
 
-    .line 31
     iget-object v0, p0, Lkotlin/reflect/KTypeProjection;->type:Lkotlin/reflect/KType;
 
     return-object v0
@@ -313,7 +305,6 @@
 .method public final getVariance()Lkotlin/reflect/KVariance;
     .registers 2
 
-    .line 27
     iget-object v0, p0, Lkotlin/reflect/KTypeProjection;->variance:Lkotlin/reflect/KVariance;
 
     return-object v0
@@ -360,7 +351,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 43
     iget-object v0, p0, Lkotlin/reflect/KTypeProjection;->variance:Lkotlin/reflect/KVariance;
 
     const/4 v1, -0x1
@@ -395,7 +385,6 @@
 
     if-ne v0, v1, :cond_2b
 
-    .line 47
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "out "
@@ -419,7 +408,6 @@
 
     throw v0
 
-    .line 46
     :cond_31
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -437,7 +425,6 @@
 
     goto :goto_4b
 
-    .line 45
     :cond_42
     iget-object v0, p0, Lkotlin/reflect/KTypeProjection;->type:Lkotlin/reflect/KType;
 
@@ -447,7 +434,6 @@
 
     goto :goto_4b
 
-    .line 44
     :cond_49
     const-string v0, "*"
 

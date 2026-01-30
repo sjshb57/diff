@@ -84,7 +84,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 88
     sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x8
@@ -95,7 +94,6 @@
 
     sput-wide v0, Lcom/google/firebase/messaging/FirebaseMessaging;->MAX_DELAY_SEC:J
 
-    .line 112
     new-instance v0, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda8;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda8;-><init>()V
@@ -125,82 +123,64 @@
         }
     .end annotation
 
-    .line 195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 107
     iput-boolean v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->syncScheduledOrRunning:Z
 
-    .line 197
     sput-object p3, Lcom/google/firebase/messaging/FirebaseMessaging;->transportFactory:Lcom/google/firebase/inject/Provider;
 
-    .line 199
     iput-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 200
     iput-object p2, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
-    .line 201
     new-instance p3, Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;
 
     invoke-direct {p3, p0, p4}, Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;Lcom/google/firebase/events/Subscriber;)V
 
     iput-object p3, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->autoInit:Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;
 
-    .line 202
     invoke-virtual {p1}, Lcom/google/firebase/FirebaseApp;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p3
 
     iput-object p3, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
-    .line 203
     new-instance p4, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;
 
     invoke-direct {p4}, Lcom/google/firebase/messaging/FcmLifecycleCallbacks;-><init>()V
 
     iput-object p4, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->lifecycleCallbacks:Landroid/app/Application$ActivityLifecycleCallbacks;
 
-    .line 204
     iput-object p5, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->metadata:Lcom/google/firebase/messaging/Metadata;
 
-    .line 205
     iput-object p6, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 206
     new-instance v0, Lcom/google/firebase/messaging/RequestDeduplicator;
 
     invoke-direct {v0, p7}, Lcom/google/firebase/messaging/RequestDeduplicator;-><init>(Ljava/util/concurrent/Executor;)V
 
     iput-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->requestDeduplicator:Lcom/google/firebase/messaging/RequestDeduplicator;
 
-    .line 207
     iput-object p8, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->initExecutor:Ljava/util/concurrent/Executor;
 
-    .line 208
     iput-object p9, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->fileExecutor:Ljava/util/concurrent/Executor;
 
-    .line 210
     invoke-virtual {p1}, Lcom/google/firebase/FirebaseApp;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 211
     instance-of p7, p1, Landroid/app/Application;
 
     if-eqz p7, :cond_3d
 
-    .line 212
     check-cast p1, Landroid/app/Application;
 
-    .line 213
     invoke-virtual {p1, p4}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     goto :goto_56
 
-    .line 215
     :cond_3d
     new-instance p4, Ljava/lang/StringBuilder;
 
@@ -227,14 +207,12 @@
     :goto_56
     if-eqz p2, :cond_60
 
-    .line 224
     new-instance p1, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda3;
 
     invoke-direct {p1, p0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda3;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
 
     invoke-interface {p2, p1}, Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;->addNewTokenListener(Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal$NewTokenListener;)V
 
-    .line 230
     :cond_60
     new-instance p1, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda4;
 
@@ -242,26 +220,22 @@
 
     invoke-interface {p8, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 239
     invoke-static {}, Lcom/google/firebase/messaging/FcmExecutors;->newTopicsSyncExecutor()Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object p1
 
-    .line 238
     invoke-static {p0, p5, p6, p3, p1}, Lcom/google/firebase/messaging/TopicsSubscriber;->createInstance(Lcom/google/firebase/messaging/FirebaseMessaging;Lcom/google/firebase/messaging/Metadata;Lcom/google/firebase/messaging/GmsRpc;Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->topicsSubscriberTask:Lcom/google/android/gms/tasks/Task;
 
-    .line 243
     new-instance p2, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda5;
 
     invoke-direct {p2, p0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda5;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
 
     invoke-virtual {p1, p8, p2}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
-    .line 253
     new-instance p1, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda6;
 
     invoke-direct {p1, p0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda6;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
@@ -293,10 +267,8 @@
         }
     .end annotation
 
-    .line 153
     new-instance v8, Lcom/google/firebase/messaging/Metadata;
 
-    .line 161
     invoke-virtual {p1}, Lcom/google/firebase/FirebaseApp;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -319,7 +291,6 @@
 
     move-object/from16 v7, p7
 
-    .line 153
     invoke-direct/range {v0 .. v8}, Lcom/google/firebase/messaging/FirebaseMessaging;-><init>(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/events/Subscriber;Lcom/google/firebase/messaging/Metadata;)V
 
     return-void
@@ -348,7 +319,6 @@
         }
     .end annotation
 
-    .line 173
     new-instance v6, Lcom/google/firebase/messaging/GmsRpc;
 
     move-object v0, v6
@@ -365,17 +335,14 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/google/firebase/messaging/GmsRpc;-><init>(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/messaging/Metadata;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/installations/FirebaseInstallationsApi;)V
 
-    .line 181
     invoke-static {}, Lcom/google/firebase/messaging/FcmExecutors;->newTaskExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v7
 
-    .line 182
     invoke-static {}, Lcom/google/firebase/messaging/FcmExecutors;->newInitExecutor()Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object v8
 
-    .line 183
     invoke-static {}, Lcom/google/firebase/messaging/FcmExecutors;->newFileIOExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v9
@@ -390,7 +357,6 @@
 
     move-object/from16 v5, p8
 
-    .line 173
     invoke-direct/range {v0 .. v9}, Lcom/google/firebase/messaging/FirebaseMessaging;-><init>(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/events/Subscriber;Lcom/google/firebase/messaging/Metadata;Lcom/google/firebase/messaging/GmsRpc;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
 
     return-void
@@ -399,7 +365,6 @@
 .method static synthetic access$000(Lcom/google/firebase/messaging/FirebaseMessaging;)Lcom/google/firebase/FirebaseApp;
     .registers 1
 
-    .line 69
     iget-object p0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     return-object p0
@@ -408,7 +373,6 @@
 .method static synthetic access$100(Lcom/google/firebase/messaging/FirebaseMessaging;)V
     .registers 1
 
-    .line 69
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->startSyncIfNecessary()V
 
     return-void
@@ -423,13 +387,11 @@
 
     const/4 v1, 0x0
 
-    .line 133
     :try_start_4
     sput-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->store:Lcom/google/firebase/messaging/Store;
     :try_end_6
     .catchall {:try_start_4 .. :try_end_6} :catchall_8
 
-    .line 134
     monitor-exit v0
 
     return-void
@@ -445,7 +407,6 @@
 .method static clearTransportFactoryForTest()V
     .registers 1
 
-    .line 563
     new-instance v0, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda7;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda7;-><init>()V
@@ -462,7 +423,6 @@
 
     monitor-enter v0
 
-    .line 120
     :try_start_3
     invoke-static {}, Lcom/google/firebase/FirebaseApp;->getInstance()Lcom/google/firebase/FirebaseApp;
 
@@ -493,7 +453,6 @@
 
     monitor-enter v0
 
-    .line 140
     :try_start_3
     const-class v1, Lcom/google/firebase/messaging/FirebaseMessaging;
 
@@ -503,14 +462,12 @@
 
     check-cast p0, Lcom/google/firebase/messaging/FirebaseMessaging;
 
-    .line 141
     const-string v1, "Firebase Messaging component is not present"
 
     invoke-static {p0, v1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_10
     .catchall {:try_start_3 .. :try_end_10} :catchall_12
 
-    .line 142
     monitor-exit v0
 
     return-object p0
@@ -530,20 +487,17 @@
 
     monitor-enter v0
 
-    .line 125
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->store:Lcom/google/firebase/messaging/Store;
 
     if-nez v1, :cond_e
 
-    .line 126
     new-instance v1, Lcom/google/firebase/messaging/Store;
 
     invoke-direct {v1, p0}, Lcom/google/firebase/messaging/Store;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->store:Lcom/google/firebase/messaging/Store;
 
-    .line 128
     :cond_e
     sget-object p0, Lcom/google/firebase/messaging/FirebaseMessaging;->store:Lcom/google/firebase/messaging/Store;
     :try_end_10
@@ -564,7 +518,6 @@
 .method private getSubtype()Ljava/lang/String;
     .registers 3
 
-    .line 672
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getName()Ljava/lang/String;
@@ -579,12 +532,10 @@
 
     if-eqz v0, :cond_11
 
-    .line 673
     const-string v0, ""
 
     goto :goto_17
 
-    .line 674
     :cond_11
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
@@ -599,7 +550,6 @@
 .method public static getTransportFactory()Lcom/google/android/datatransport/TransportFactory;
     .registers 1
 
-    .line 558
     sget-object v0, Lcom/google/firebase/messaging/FirebaseMessaging;->transportFactory:Lcom/google/firebase/inject/Provider;
 
     invoke-interface {v0}, Lcom/google/firebase/inject/Provider;->get()Ljava/lang/Object;
@@ -614,10 +564,8 @@
 .method private handleProxiedNotificationData()V
     .registers 4
 
-    .line 285
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 286
     invoke-virtual {v0}, Lcom/google/firebase/messaging/GmsRpc;->getProxyNotificationData()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -628,7 +576,6 @@
 
     invoke-direct {v2, p0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda12;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
 
-    .line 287
     invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
     return-void
@@ -637,32 +584,26 @@
 .method private initializeProxyNotifications()V
     .registers 4
 
-    .line 258
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/ProxyNotificationInitializer;->initialize(Landroid/content/Context;)V
 
-    .line 260
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 261
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->shouldRetainProxyNotifications()Z
 
     move-result v2
 
-    .line 260
     invoke-static {v0, v1, v2}, Lcom/google/firebase/messaging/ProxyNotificationPreferences;->setProxyRetention(Landroid/content/Context;Lcom/google/firebase/messaging/GmsRpc;Z)V
 
-    .line 262
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->shouldRetainProxyNotifications()Z
 
     move-result v0
 
     if-eqz v0, :cond_19
 
-    .line 264
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->handleProxiedNotificationData()V
 
     :cond_19
@@ -672,7 +613,6 @@
 .method private invokeOnTokenRefresh(Ljava/lang/String;)V
     .registers 5
 
-    .line 686
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getName()Ljava/lang/String;
@@ -689,7 +629,6 @@
 
     const/4 v0, 0x3
 
-    .line 687
     const-string v1, "FirebaseMessaging"
 
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -698,7 +637,6 @@
 
     if-eqz v0, :cond_2e
 
-    .line 688
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Invoking onNewToken for app: "
@@ -719,7 +657,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 690
     :cond_2e
     new-instance v0, Landroid/content/Intent;
 
@@ -727,12 +664,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 691
     const-string v1, "token"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 694
     new-instance p1, Lcom/google/firebase/messaging/FcmBroadcastProcessor;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
@@ -769,7 +704,6 @@
         }
     .end annotation
 
-    .line 491
     invoke-virtual {p1, p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->subscribeToTopic(Ljava/lang/String;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p0
@@ -785,7 +719,6 @@
         }
     .end annotation
 
-    .line 508
     invoke-virtual {p1, p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->unsubscribeFromTopic(Ljava/lang/String;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p0
@@ -796,12 +729,10 @@
 .method private shouldRetainProxyNotifications()Z
     .registers 4
 
-    .line 270
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/ProxyNotificationInitializer;->initialize(Landroid/content/Context;)V
 
-    .line 271
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/ProxyNotificationInitializer;->isProxyNotificationEnabled(Landroid/content/Context;)Z
@@ -814,7 +745,6 @@
 
     return v1
 
-    .line 275
     :cond_f
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
@@ -830,7 +760,6 @@
 
     return v2
 
-    .line 281
     :cond_1b
     invoke-static {}, Lcom/google/firebase/messaging/MessagingAnalytics;->deliveryMetricsExportToBigQueryEnabled()Z
 
@@ -853,7 +782,6 @@
 
     monitor-enter p0
 
-    .line 616
     :try_start_1
     iget-boolean v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->syncScheduledOrRunning:Z
 
@@ -861,12 +789,10 @@
 
     const-wide/16 v0, 0x0
 
-    .line 617
     invoke-virtual {p0, v0, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->syncWithDelaySecondsInternal(J)V
     :try_end_a
     .catchall {:try_start_1 .. :try_end_a} :catchall_c
 
-    .line 619
     :cond_a
     monitor-exit p0
 
@@ -883,30 +809,25 @@
 .method private startSyncIfNecessary()V
     .registers 2
 
-    .line 601
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
     if-eqz v0, :cond_8
 
-    .line 604
     invoke-interface {v0}, Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;->getToken()Ljava/lang/String;
 
     return-void
 
-    .line 607
     :cond_8
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getTokenWithoutTriggeringSync()Lcom/google/firebase/messaging/Store$Token;
 
     move-result-object v0
 
-    .line 610
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->tokenNeedsRefresh(Lcom/google/firebase/messaging/Store$Token;)Z
 
     move-result v0
 
     if-eqz v0, :cond_15
 
-    .line 611
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->startSync()V
 
     :cond_15
@@ -923,12 +844,10 @@
         }
     .end annotation
 
-    .line 632
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
     if-eqz v0, :cond_18
 
-    .line 634
     :try_start_4
     invoke-interface {v0}, Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;->getTokenTask()Lcom/google/android/gms/tasks/Task;
 
@@ -953,7 +872,6 @@
     :catch_11
     move-exception v0
 
-    .line 636
     :goto_12
     new-instance v1, Ljava/io/IOException;
 
@@ -961,25 +879,21 @@
 
     throw v1
 
-    .line 639
     :cond_18
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getTokenWithoutTriggeringSync()Lcom/google/firebase/messaging/Store$Token;
 
     move-result-object v0
 
-    .line 640
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->tokenNeedsRefresh(Lcom/google/firebase/messaging/Store$Token;)Z
 
     move-result v1
 
     if-nez v1, :cond_25
 
-    .line 641
     iget-object v0, v0, Lcom/google/firebase/messaging/Store$Token;->token:Ljava/lang/String;
 
     return-object v0
 
-    .line 644
     :cond_25
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
@@ -987,19 +901,16 @@
 
     move-result-object v1
 
-    .line 645
     iget-object v2, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->requestDeduplicator:Lcom/google/firebase/messaging/RequestDeduplicator;
 
     new-instance v3, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda14;
 
     invoke-direct {v3, p0, v1, v0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda14;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;Ljava/lang/String;Lcom/google/firebase/messaging/Store$Token;)V
 
-    .line 646
     invoke-virtual {v2, v1, v3}, Lcom/google/firebase/messaging/RequestDeduplicator;->getOrStartGetTokenRequest(Ljava/lang/String;Lcom/google/firebase/messaging/RequestDeduplicator$GetTokenRequest;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
 
-    .line 663
     :try_start_36
     invoke-static {v0}, Lcom/google/android/gms/tasks/Tasks;->await(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
 
@@ -1020,7 +931,6 @@
     :catch_3f
     move-exception v0
 
-    .line 665
     :goto_40
     new-instance v1, Ljava/io/IOException;
 
@@ -1040,17 +950,14 @@
         }
     .end annotation
 
-    .line 439
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
     if-eqz v0, :cond_18
 
-    .line 440
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
-    .line 441
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->initExecutor:Ljava/util/concurrent/Executor;
 
     new-instance v2, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda1;
@@ -1059,14 +966,12 @@
 
     invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 450
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
 
     return-object v0
 
-    .line 452
     :cond_18
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getTokenWithoutTriggeringSync()Lcom/google/firebase/messaging/Store$Token;
 
@@ -1076,32 +981,27 @@
 
     const/4 v0, 0x0
 
-    .line 454
     invoke-static {v0}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
 
     return-object v0
 
-    .line 456
     :cond_24
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
-    .line 457
     invoke-static {}, Lcom/google/firebase/messaging/FcmExecutors;->newNetworkIOExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v1
 
-    .line 458
     new-instance v2, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda2;
 
     invoke-direct {v2, p0, v0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda2;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
     invoke-interface {v1, v2}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
-    .line 468
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -1112,7 +1012,6 @@
 .method public deliveryMetricsExportToBigQueryEnabled()Z
     .registers 2
 
-    .line 336
     invoke-static {}, Lcom/google/firebase/messaging/MessagingAnalytics;->deliveryMetricsExportToBigQueryEnabled()Z
 
     move-result v0
@@ -1123,18 +1022,15 @@
 .method enqueueTaskWithDelaySeconds(Ljava/lang/Runnable;J)V
     .registers 8
 
-    .line 592
     const-class v0, Lcom/google/firebase/messaging/FirebaseMessaging;
 
     monitor-enter v0
 
-    .line 593
     :try_start_3
     sget-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->syncExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
     if-nez v1, :cond_16
 
-    .line 594
     new-instance v1, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
     new-instance v2, Lcom/google/android/gms/common/util/concurrent/NamedThreadFactory;
@@ -1149,7 +1045,6 @@
 
     sput-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->syncExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 596
     :cond_16
     sget-object v1, Lcom/google/firebase/messaging/FirebaseMessaging;->syncExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -1157,7 +1052,6 @@
 
     invoke-interface {v1, p1, p2, p3, v2}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
 
-    .line 597
     monitor-exit v0
 
     return-void
@@ -1175,7 +1069,6 @@
 .method getApplicationContext()Landroid/content/Context;
     .registers 2
 
-    .line 573
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     return-object v0
@@ -1192,25 +1085,21 @@
         }
     .end annotation
 
-    .line 413
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
     if-eqz v0, :cond_9
 
-    .line 414
     invoke-interface {v0}, Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;->getTokenTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
 
     return-object v0
 
-    .line 416
     :cond_9
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
-    .line 417
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->initExecutor:Ljava/util/concurrent/Executor;
 
     new-instance v2, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda11;
@@ -1219,7 +1108,6 @@
 
     invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 425
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -1230,7 +1118,6 @@
 .method getTokenWithoutTriggeringSync()Lcom/google/firebase/messaging/Store$Token;
     .registers 4
 
-    .line 625
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getStore(Landroid/content/Context;)Lcom/google/firebase/messaging/Store;
@@ -1265,7 +1152,6 @@
         }
     .end annotation
 
-    .line 552
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->topicsSubscriberTask:Lcom/google/android/gms/tasks/Task;
 
     return-object v0
@@ -1274,7 +1160,6 @@
 .method public isAutoInitEnabled()Z
     .registers 2
 
-    .line 304
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->autoInit:Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;->isEnabled()Z
@@ -1287,7 +1172,6 @@
 .method isGmsCorePresent()Z
     .registers 2
 
-    .line 569
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/Metadata;->isGmscorePresent()Z
@@ -1300,7 +1184,6 @@
 .method public isNotificationDelegationEnabled()Z
     .registers 2
 
-    .line 367
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/ProxyNotificationInitializer;->isProxyNotificationEnabled(Landroid/content/Context;)Z
@@ -1318,14 +1201,12 @@
         }
     .end annotation
 
-    .line 654
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getStore(Landroid/content/Context;)Lcom/google/firebase/messaging/Store;
 
     move-result-object v0
 
-    .line 656
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getSubtype()Ljava/lang/String;
 
     move-result-object v1
@@ -1336,12 +1217,10 @@
 
     move-result-object v2
 
-    .line 655
     invoke-virtual {v0, v1, p1, p3, v2}, Lcom/google/firebase/messaging/Store;->saveToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p2, :cond_1d
 
-    .line 657
     iget-object p1, p2, Lcom/google/firebase/messaging/Store$Token;->token:Ljava/lang/String;
 
     invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1350,11 +1229,9 @@
 
     if-nez p1, :cond_20
 
-    .line 658
     :cond_1d
     invoke-direct {p0, p3}, Lcom/google/firebase/messaging/FirebaseMessaging;->invokeOnTokenRefresh(Ljava/lang/String;)V
 
-    .line 660
     :cond_20
     invoke-static {p3}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
@@ -1366,10 +1243,8 @@
 .method synthetic lambda$blockingGetToken$14$com-google-firebase-messaging-FirebaseMessaging(Ljava/lang/String;Lcom/google/firebase/messaging/Store$Token;)Lcom/google/android/gms/tasks/Task;
     .registers 6
 
-    .line 649
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 650
     invoke-virtual {v0}, Lcom/google/firebase/messaging/GmsRpc;->getToken()Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -1380,7 +1255,6 @@
 
     invoke-direct {v2, p0, p1, p2}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda9;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;Ljava/lang/String;Lcom/google/firebase/messaging/Store$Token;)V
 
-    .line 651
     invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/tasks/Task;->onSuccessTask(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/SuccessContinuation;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -1391,7 +1265,6 @@
 .method synthetic lambda$deleteToken$8$com-google-firebase-messaging-FirebaseMessaging(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .registers 5
 
-    .line 444
     :try_start_0
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->iid:Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;
 
@@ -1409,7 +1282,6 @@
 
     const/4 v0, 0x0
 
-    .line 445
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
     :try_end_12
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_12} :catch_13
@@ -1419,7 +1291,6 @@
     :catch_13
     move-exception v0
 
-    .line 447
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
     :goto_17
@@ -1429,7 +1300,6 @@
 .method synthetic lambda$deleteToken$9$com-google-firebase-messaging-FirebaseMessaging(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .registers 5
 
-    .line 461
     :try_start_0
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
@@ -1439,7 +1309,6 @@
 
     invoke-static {v0}, Lcom/google/android/gms/tasks/Tasks;->await(Lcom/google/android/gms/tasks/Task;)Ljava/lang/Object;
 
-    .line 462
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->getStore(Landroid/content/Context;)Lcom/google/firebase/messaging/Store;
@@ -1460,7 +1329,6 @@
 
     const/4 v0, 0x0
 
-    .line 463
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
     :try_end_20
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_20} :catch_21
@@ -1470,7 +1338,6 @@
     :catch_21
     move-exception v0
 
-    .line 465
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
     :goto_25
@@ -1480,7 +1347,6 @@
 .method synthetic lambda$getToken$7$com-google-firebase-messaging-FirebaseMessaging(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .registers 3
 
-    .line 420
     :try_start_0
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->blockingGetToken()Ljava/lang/String;
 
@@ -1495,7 +1361,6 @@
     :catch_8
     move-exception v0
 
-    .line 422
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
     :goto_c
@@ -1505,17 +1370,14 @@
 .method synthetic lambda$handleProxiedNotificationData$5$com-google-firebase-messaging-FirebaseMessaging(Lcom/google/android/gms/cloudmessaging/CloudMessage;)V
     .registers 2
 
-    .line 0
     if-eqz p1, :cond_c
 
-    .line 292
     invoke-virtual {p1}, Lcom/google/android/gms/cloudmessaging/CloudMessage;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/google/firebase/messaging/MessagingAnalytics;->logNotificationReceived(Landroid/content/Intent;)V
 
-    .line 293
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->handleProxiedNotificationData()V
 
     :cond_c
@@ -1525,7 +1387,6 @@
 .method synthetic lambda$new$1$com-google-firebase-messaging-FirebaseMessaging(Ljava/lang/String;)V
     .registers 2
 
-    .line 226
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging;->invokeOnTokenRefresh(Ljava/lang/String;)V
 
     return-void
@@ -1534,14 +1395,12 @@
 .method synthetic lambda$new$2$com-google-firebase-messaging-FirebaseMessaging()V
     .registers 2
 
-    .line 232
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->isAutoInitEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 233
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->startSyncIfNecessary()V
 
     :cond_9
@@ -1551,14 +1410,12 @@
 .method synthetic lambda$new$3$com-google-firebase-messaging-FirebaseMessaging(Lcom/google/firebase/messaging/TopicsSubscriber;)V
     .registers 3
 
-    .line 248
     invoke-virtual {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->isAutoInitEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 249
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicsSubscriber;->startTopicsSyncIfNecessary()V
 
     :cond_9
@@ -1568,7 +1425,6 @@
 .method synthetic lambda$new$4$com-google-firebase-messaging-FirebaseMessaging()V
     .registers 1
 
-    .line 253
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->initializeProxyNotifications()V
 
     return-void
@@ -1577,17 +1433,14 @@
 .method synthetic lambda$setNotificationDelegationEnabled$6$com-google-firebase-messaging-FirebaseMessaging(Ljava/lang/Void;)V
     .registers 4
 
-    .line 398
     iget-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 399
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->shouldRetainProxyNotifications()Z
 
     move-result v1
 
-    .line 398
     invoke-static {p1, v0, v1}, Lcom/google/firebase/messaging/ProxyNotificationPreferences;->setProxyRetention(Landroid/content/Context;Lcom/google/firebase/messaging/GmsRpc;Z)V
 
     return-void
@@ -1598,7 +1451,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 524
     invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->getTo()Ljava/lang/String;
 
     move-result-object v0
@@ -1609,49 +1461,40 @@
 
     if-nez v0, :cond_39
 
-    .line 528
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.google.android.gcm.intent.SEND"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 532
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 533
     const-string v2, "com.google.example.invalidpackage"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 534
     iget-object v2, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     const/4 v3, 0x0
 
     const/high16 v4, 0x4000000
 
-    .line 536
     invoke-static {v2, v3, v1, v4}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v1
 
-    .line 534
     const-string v2, "app"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 542
     const-string v1, "com.google.android.gms"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 543
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage;->populateSendMessageIntent(Landroid/content/Intent;)V
 
-    .line 546
     iget-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     const-string v1, "com.google.android.gtalkservice.permission.GTALK_SERVICE"
@@ -1660,7 +1503,6 @@
 
     return-void
 
-    .line 525
     :cond_39
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1674,7 +1516,6 @@
 .method public setAutoInitEnabled(Z)V
     .registers 3
 
-    .line 326
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->autoInit:Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;
 
     invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging$AutoInit;->setEnabled(Z)V
@@ -1685,20 +1526,16 @@
 .method public setDeliveryMetricsExportToBigQuery(Z)V
     .registers 4
 
-    .line 355
     invoke-static {p1}, Lcom/google/firebase/messaging/MessagingAnalytics;->setDeliveryMetricsExportToBigQuery(Z)V
 
-    .line 357
     iget-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
 
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->gmsRpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 358
     invoke-direct {p0}, Lcom/google/firebase/messaging/FirebaseMessaging;->shouldRetainProxyNotifications()Z
 
     move-result v1
 
-    .line 357
     invoke-static {p1, v0, v1}, Lcom/google/firebase/messaging/ProxyNotificationPreferences;->setProxyRetention(Landroid/content/Context;Lcom/google/firebase/messaging/GmsRpc;Z)V
 
     return-void
@@ -1715,7 +1552,6 @@
         }
     .end annotation
 
-    .line 393
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->initExecutor:Ljava/util/concurrent/Executor;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->context:Landroid/content/Context;
@@ -1732,7 +1568,6 @@
 
     invoke-direct {v1, p0}, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda10;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
 
-    .line 394
     invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -1745,13 +1580,11 @@
 
     monitor-enter p0
 
-    .line 577
     :try_start_1
     iput-boolean p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->syncScheduledOrRunning:Z
     :try_end_3
     .catchall {:try_start_1 .. :try_end_3} :catchall_5
 
-    .line 578
     monitor-exit p0
 
     return-void
@@ -1777,7 +1610,6 @@
         }
     .end annotation
 
-    .line 490
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->topicsSubscriberTask:Lcom/google/android/gms/tasks/Task;
 
     new-instance v1, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda0;
@@ -1802,7 +1634,6 @@
 
     const-wide/16 v2, 0x1e
 
-    .line 582
     :try_start_6
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->max(JJ)J
 
@@ -1814,22 +1645,18 @@
 
     move-result-wide v0
 
-    .line 583
     new-instance v2, Lcom/google/firebase/messaging/SyncTask;
 
     invoke-direct {v2, p0, v0, v1}, Lcom/google/firebase/messaging/SyncTask;-><init>(Lcom/google/firebase/messaging/FirebaseMessaging;J)V
 
-    .line 584
     invoke-virtual {p0, v2, p1, p2}, Lcom/google/firebase/messaging/FirebaseMessaging;->enqueueTaskWithDelaySeconds(Ljava/lang/Runnable;J)V
 
     const/4 p1, 0x1
 
-    .line 585
     iput-boolean p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->syncScheduledOrRunning:Z
     :try_end_1b
     .catchall {:try_start_6 .. :try_end_1b} :catchall_1d
 
-    .line 586
     monitor-exit p0
 
     return-void
@@ -1847,7 +1674,6 @@
 
     if-eqz p1, :cond_11
 
-    .line 679
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/Metadata;->getAppVersionCode()Ljava/lang/String;
@@ -1888,7 +1714,6 @@
         }
     .end annotation
 
-    .line 507
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging;->topicsSubscriberTask:Lcom/google/android/gms/tasks/Task;
 
     new-instance v1, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda13;

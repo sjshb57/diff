@@ -44,7 +44,6 @@
 .method public constructor <init>(Z)V
     .registers 2
 
-    .line 1302
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lkotlinx/coroutines/Empty;->isActive:Z
@@ -65,7 +64,6 @@
 .method public isActive()Z
     .registers 2
 
-    .line 1302
     iget-boolean v0, p0, Lkotlinx/coroutines/Empty;->isActive:Z
 
     return v0
@@ -74,7 +72,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 1304
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Empty{"

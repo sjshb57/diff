@@ -108,10 +108,8 @@
 
     iput-object p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->this$0:Lkotlin/sequences/DropWhileSequence;
 
-    .line 523
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 524
     invoke-static {p1}, Lkotlin/sequences/DropWhileSequence;->access$getSequence$p(Lkotlin/sequences/DropWhileSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -124,7 +122,6 @@
 
     const/4 p1, -0x1
 
-    .line 525
     iput p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -133,7 +130,6 @@
 .method private final drop()V
     .registers 3
 
-    .line 529
     :cond_0
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
@@ -143,14 +139,12 @@
 
     if-eqz v0, :cond_26
 
-    .line 530
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 531
     iget-object v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->this$0:Lkotlin/sequences/DropWhileSequence;
 
     invoke-static {v1}, Lkotlin/sequences/DropWhileSequence;->access$getPredicate$p(Lkotlin/sequences/DropWhileSequence;)Lkotlin/jvm/functions/Function1;
@@ -169,12 +163,10 @@
 
     if-nez v1, :cond_0
 
-    .line 532
     iput-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v0, 0x1
 
-    .line 533
     iput v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -182,7 +174,6 @@
     :cond_26
     const/4 v0, 0x0
 
-    .line 537
     iput v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -193,7 +184,6 @@
 .method public final getDropState()I
     .registers 2
 
-    .line 525
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return v0
@@ -209,7 +199,6 @@
         }
     .end annotation
 
-    .line 524
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -223,7 +212,6 @@
         }
     .end annotation
 
-    .line 526
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-object v0
@@ -232,17 +220,14 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 555
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_8
 
-    .line 556
     invoke-direct {p0}, Lkotlin/sequences/DropWhileSequence$iterator$1;->drop()V
 
-    .line 557
     :cond_8
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
@@ -276,17 +261,14 @@
         }
     .end annotation
 
-    .line 541
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_8
 
-    .line 542
     invoke-direct {p0}, Lkotlin/sequences/DropWhileSequence$iterator$1;->drop()V
 
-    .line 544
     :cond_8
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
@@ -294,22 +276,18 @@
 
     if-ne v0, v1, :cond_16
 
-    .line 546
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 547
     iput-object v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 548
     iput v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-object v0
 
-    .line 551
     :cond_16
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
@@ -335,7 +313,6 @@
 .method public final setDropState(I)V
     .registers 2
 
-    .line 525
     iput p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -349,7 +326,6 @@
         }
     .end annotation
 
-    .line 526
     iput-object p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-void

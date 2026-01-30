@@ -70,14 +70,12 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .registers 3
 
-    .line 19
     sget-object v0, Lkotlinx/coroutines/CoroutineName;->Key:Lkotlinx/coroutines/CoroutineName$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
 
     invoke-direct {p0, v0}, Lkotlin/coroutines/AbstractCoroutineContextElement;-><init>(Lkotlin/coroutines/CoroutineContext$Key;)V
 
-    .line 18
     iput-object p1, p0, Lkotlinx/coroutines/CoroutineName;->name:Ljava/lang/String;
 
     return-void
@@ -160,7 +158,6 @@
 .method public final getName()Ljava/lang/String;
     .registers 2
 
-    .line 18
     iget-object v0, p0, Lkotlinx/coroutines/CoroutineName;->name:Ljava/lang/String;
 
     return-object v0
@@ -181,7 +178,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 28
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CoroutineName("

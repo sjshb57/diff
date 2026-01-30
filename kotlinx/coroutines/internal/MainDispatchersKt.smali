@@ -60,7 +60,6 @@
 .method private static final createMissingDispatcher(Ljava/lang/Throwable;Ljava/lang/String;)Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;
     .registers 3
 
-    .line 77
     sget-boolean v0, Lkotlinx/coroutines/internal/MainDispatchersKt;->SUPPORT_MISSING:Z
 
     if-eqz v0, :cond_a
@@ -74,7 +73,6 @@
     :cond_a
     if-eqz p0, :cond_d
 
-    .line 78
     throw p0
 
     :cond_d
@@ -105,7 +103,6 @@
 
     move-object p1, v0
 
-    .line 76
     :cond_b
     invoke-static {p0, p1}, Lkotlinx/coroutines/internal/MainDispatchersKt;->createMissingDispatcher(Ljava/lang/Throwable;Ljava/lang/String;)Lkotlinx/coroutines/internal/MissingMainCoroutineDispatcher;
 
@@ -123,7 +120,6 @@
 .method public static final isMissing(Lkotlinx/coroutines/MainCoroutineDispatcher;)Z
     .registers 1
 
-    .line 66
     invoke-virtual {p0}, Lkotlinx/coroutines/MainCoroutineDispatcher;->getImmediate()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
     move-result-object p0
@@ -136,15 +132,12 @@
 .method public static final throwMissingMainDispatcherException()Ljava/lang/Void;
     .registers 2
 
-    .line 81
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 82
     const/4 v1, 0x0
 
     sget-object v1, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->EMoHiTEh:Ljava/lang/String;
 
-    .line 81
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -164,7 +157,6 @@
         }
     .end annotation
 
-    .line 57
     :try_start_0
     invoke-interface {p0, p1}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->createDispatcher(Ljava/util/List;)Lkotlinx/coroutines/MainCoroutineDispatcher;
 
@@ -177,7 +169,6 @@
     :catchall_5
     move-exception p1
 
-    .line 59
     invoke-interface {p0}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->hintOnError()Ljava/lang/String;
 
     move-result-object p0

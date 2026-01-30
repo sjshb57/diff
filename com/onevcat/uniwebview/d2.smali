@@ -56,7 +56,6 @@
 
     check-cast v0, La/v;
 
-    .line 1
     const-string p1, "it"
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V

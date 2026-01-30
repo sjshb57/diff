@@ -89,16 +89,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 348
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 349
     iput-object p1, p0, Lkotlin/sequences/SubSequence;->sequence:Lkotlin/sequences/Sequence;
 
-    .line 350
     iput p2, p0, Lkotlin/sequences/SubSequence;->startIndex:I
 
-    .line 351
     iput p3, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     if-ltz p2, :cond_4d
@@ -109,7 +105,6 @@
 
     return-void
 
-    .line 357
     :cond_15
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -139,7 +134,6 @@
 
     throw p2
 
-    .line 356
     :cond_35
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -163,7 +157,6 @@
 
     throw p2
 
-    .line 355
     :cond_4d
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -193,7 +186,6 @@
 .method public static final synthetic access$getEndIndex$p(Lkotlin/sequences/SubSequence;)I
     .registers 1
 
-    .line 348
     iget p0, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     return p0
@@ -202,7 +194,6 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/SubSequence;)Lkotlin/sequences/Sequence;
     .registers 1
 
-    .line 348
     iget-object p0, p0, Lkotlin/sequences/SubSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -211,7 +202,6 @@
 .method public static final synthetic access$getStartIndex$p(Lkotlin/sequences/SubSequence;)I
     .registers 1
 
-    .line 348
     iget p0, p0, Lkotlin/sequences/SubSequence;->startIndex:I
 
     return p0
@@ -220,7 +210,6 @@
 .method private final getCount()I
     .registers 3
 
-    .line 360
     iget v0, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     iget v1, p0, Lkotlin/sequences/SubSequence;->startIndex:I
@@ -242,7 +231,6 @@
         }
     .end annotation
 
-    .line 362
     invoke-direct {p0}, Lkotlin/sequences/SubSequence;->getCount()I
 
     move-result v0
@@ -286,7 +274,6 @@
         }
     .end annotation
 
-    .line 365
     new-instance v0, Lkotlin/sequences/SubSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/SubSequence$iterator$1;-><init>(Lkotlin/sequences/SubSequence;)V
@@ -306,7 +293,6 @@
         }
     .end annotation
 
-    .line 363
     invoke-direct {p0}, Lkotlin/sequences/SubSequence;->getCount()I
 
     move-result v0

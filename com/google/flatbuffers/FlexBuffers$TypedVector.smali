@@ -26,7 +26,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 986
     new-instance v0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers;->access$000()Lcom/google/flatbuffers/ReadBuf;
@@ -45,10 +44,8 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;III)V
     .registers 5
 
-    .line 991
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffers$Vector;-><init>(Lcom/google/flatbuffers/ReadBuf;II)V
 
-    .line 992
     iput p4, p0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->elemType:I
 
     return-void
@@ -57,7 +54,6 @@
 .method public static empty()Lcom/google/flatbuffers/FlexBuffers$TypedVector;
     .registers 1
 
-    .line 996
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->EMPTY_VECTOR:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     return-object v0
@@ -68,21 +64,18 @@
 .method public get(I)Lcom/google/flatbuffers/FlexBuffers$Reference;
     .registers 9
 
-    .line 1025
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->size()I
 
     move-result v0
 
     if-lt p1, v0, :cond_b
 
-    .line 1026
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers$Reference;->access$600()Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     move-result-object p1
 
     return-object p1
 
-    .line 1027
     :cond_b
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->end:I
 
@@ -92,7 +85,6 @@
 
     add-int v3, v0, p1
 
-    .line 1028
     new-instance p1, Lcom/google/flatbuffers/FlexBuffers$Reference;
 
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->bb:Lcom/google/flatbuffers/ReadBuf;
@@ -113,7 +105,6 @@
 .method public getElemType()I
     .registers 2
 
-    .line 1014
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->elemType:I
 
     return v0
@@ -122,7 +113,6 @@
 .method public isEmptyVector()Z
     .registers 2
 
-    .line 1005
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->EMPTY_VECTOR:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     if-ne p0, v0, :cond_6

@@ -53,7 +53,6 @@
 .method private static final checkInfiniteSumDefined-PjuGub4(JJJ)J
     .registers 6
 
-    .line 30
     invoke-static {p2, p3}, Lkotlin/time/Duration;->isInfinite-impl(J)Z
 
     move-result p2
@@ -113,7 +112,6 @@
 .method public static final saturatingAdd-pTJri5U(JJ)J
     .registers 12
 
-    .line 14
     invoke-static {p2, p3}, Lkotlin/time/Duration;->getInWholeNanoseconds-impl(J)J
 
     move-result-wide v4
@@ -134,7 +132,6 @@
 
     move-wide v2, p2
 
-    .line 16
     invoke-static/range {v0 .. v5}, Lkotlin/time/LongSaturatedMathKt;->checkInfiniteSumDefined-PjuGub4(JJJ)J
 
     move-result-wide p0
@@ -150,7 +147,6 @@
 
     if-nez v0, :cond_25
 
-    .line 19
     invoke-static {p0, p1, p2, p3}, Lkotlin/time/LongSaturatedMathKt;->saturatingAddInHalves-pTJri5U(JJ)J
 
     move-result-wide p0
@@ -190,12 +186,10 @@
 
     const/4 v0, 0x2
 
-    .line 35
     invoke-static {p2, p3, v0}, Lkotlin/time/Duration;->div-UwyO8pc(JI)J
 
     move-result-wide v0
 
-    .line 36
     invoke-static {v0, v1}, Lkotlin/time/Duration;->getInWholeNanoseconds-impl(J)J
 
     move-result-wide v2
@@ -214,7 +208,6 @@
 
     long-to-double p0, p0
 
-    .line 38
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-static {p2, p3, v0}, Lkotlin/time/Duration;->toDouble-impl(JLkotlin/time/DurationUnit;)D
@@ -227,7 +220,6 @@
 
     return-wide p0
 
-    .line 40
     :cond_20
     invoke-static {p0, p1, v0, v1}, Lkotlin/time/LongSaturatedMathKt;->saturatingAdd-pTJri5U(JJ)J
 
@@ -259,7 +251,6 @@
 
     if-nez v0, :cond_19
 
-    .line 46
     sget-object p0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p2, p3, p0}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -272,7 +263,6 @@
 
     return-wide p0
 
-    .line 48
     :cond_19
     invoke-static {p0, p1, p2, p3}, Lkotlin/time/LongSaturatedMathKt;->saturatingFiniteDiff(JJ)J
 
@@ -304,21 +294,18 @@
 
     int-to-long v0, v0
 
-    .line 65
     div-long v2, p0, v0
 
     div-long v4, p2, v0
 
     sub-long/2addr v2, v4
 
-    .line 66
     rem-long/2addr p0, v0
 
     rem-long/2addr p2, v0
 
     sub-long/2addr p0, p2
 
-    .line 67
     sget-object p2, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     sget-object p2, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
@@ -341,7 +328,6 @@
 
     return-wide p0
 
-    .line 69
     :cond_2f
     sget-object p0, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
@@ -373,7 +359,6 @@
 
     if-nez p0, :cond_19
 
-    .line 53
     sget-object p0, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {p0}, Lkotlin/time/Duration$Companion;->getZERO-UwyO8pc()J
@@ -382,7 +367,6 @@
 
     return-wide p0
 
-    .line 54
     :cond_19
     sget-object p0, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
@@ -405,7 +389,6 @@
 
     if-nez v0, :cond_32
 
-    .line 57
     sget-object p2, Lkotlin/time/DurationUnit;->DAYS:Lkotlin/time/DurationUnit;
 
     invoke-static {p0, p1, p2}, Lkotlin/time/DurationKt;->toDuration(JLkotlin/time/DurationUnit;)J
@@ -414,7 +397,6 @@
 
     return-wide p0
 
-    .line 59
     :cond_32
     invoke-static {p0, p1, p2, p3}, Lkotlin/time/LongSaturatedMathKt;->saturatingFiniteDiff(JJ)J
 

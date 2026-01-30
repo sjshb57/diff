@@ -150,7 +150,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
     new-instance v0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$1;
 
     invoke-direct {v0, p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$1;-><init>([I)V
@@ -175,7 +174,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 106
     new-instance v0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$3;
 
     invoke-direct {v0, p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$3;-><init>([B)V
@@ -200,7 +198,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 90
     new-instance v0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$2;
 
     invoke-direct {v0, p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$2;-><init>([J)V
@@ -225,7 +222,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 122
     new-instance v0, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;
 
     invoke-direct {v0, p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysJvmKt$asList$4;-><init>([S)V
@@ -242,7 +238,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 153
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-static {p0}, Lkotlin/UIntArray;->getSize-impl([I)I
@@ -260,10 +255,8 @@
 
     ushr-int/lit8 v0, v0, 0x1
 
-    .line 159
     aget v1, p0, v0
 
-    .line 160
     invoke-static {v1, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v1
@@ -306,7 +299,6 @@
 
     if-eqz p4, :cond_d
 
-    .line 152
     invoke-static {p0}, Lkotlin/UIntArray;->getSize-impl([I)I
 
     move-result p3
@@ -326,7 +318,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 270
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-static {p0}, Lkotlin/UShortArray;->getSize-impl([S)I
@@ -348,10 +339,8 @@
 
     ushr-int/lit8 v0, v0, 0x1
 
-    .line 276
     aget-short v1, p0, v0
 
-    .line 277
     invoke-static {v1, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v1
@@ -394,7 +383,6 @@
 
     if-eqz p4, :cond_d
 
-    .line 269
     invoke-static {p0}, Lkotlin/UShortArray;->getSize-impl([S)I
 
     move-result p3
@@ -414,7 +402,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 192
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-static {p0}, Lkotlin/ULongArray;->getSize-impl([J)I
@@ -432,10 +419,8 @@
 
     ushr-int/lit8 v0, v0, 0x1
 
-    .line 198
     aget-wide v1, p0, v0
 
-    .line 199
     invoke-static {v1, v2, p1, p2}, Lkotlin/UnsignedKt;->ulongCompare(JJ)I
 
     move-result v1
@@ -478,7 +463,6 @@
 
     if-eqz p5, :cond_d
 
-    .line 191
     invoke-static {p0}, Lkotlin/ULongArray;->getSize-impl([J)I
 
     move-result p4
@@ -498,7 +482,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 231
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-static {p0}, Lkotlin/UByteArray;->getSize-impl([B)I
@@ -518,10 +501,8 @@
 
     ushr-int/lit8 v0, v0, 0x1
 
-    .line 237
     aget-byte v1, p0, v0
 
-    .line 238
     invoke-static {v1, p1}, Lkotlin/UnsignedKt;->uintCompare(II)I
 
     move-result v1
@@ -564,7 +545,6 @@
 
     if-eqz p4, :cond_d
 
-    .line 230
     invoke-static {p0}, Lkotlin/UByteArray;->getSize-impl([B)I
 
     move-result p3
@@ -584,7 +564,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 53
     invoke-static {p0, p1}, Lkotlin/UByteArray;->get-w2LRezQ([BI)B
 
     move-result p0
@@ -599,7 +578,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
     invoke-static {p0, p1}, Lkotlin/UShortArray;->get-Mh2AYeg([SI)S
 
     move-result p0
@@ -614,7 +592,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 29
     invoke-static {p0, p1}, Lkotlin/UIntArray;->get-pVg5ArA([II)I
 
     move-result p0
@@ -629,7 +606,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
     invoke-static {p0, p1}, Lkotlin/ULongArray;->get-s-VKNKU([JI)J
 
     move-result-wide p0
@@ -657,7 +633,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 294
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->maxOrNull--ajY-9A([I)Lkotlin/UInt;
 
     move-result-object p0
@@ -685,7 +660,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 312
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->maxOrNull-GBYM_sE([B)Lkotlin/UByte;
 
     move-result-object p0
@@ -713,7 +687,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 303
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->maxOrNull-QwZRm1k([J)Lkotlin/ULong;
 
     move-result-object p0
@@ -741,7 +714,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 321
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->maxOrNull-rL5Bavg([S)Lkotlin/UShort;
 
     move-result-object p0
@@ -786,7 +758,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 351
     invoke-static {p0}, Lkotlin/UByteArray;->isEmpty-impl([B)Z
 
     move-result v0
@@ -917,7 +888,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 341
     invoke-static {p0}, Lkotlin/ULongArray;->isEmpty-impl([J)Z
 
     move-result v0
@@ -1048,7 +1018,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 331
     invoke-static {p0}, Lkotlin/UIntArray;->isEmpty-impl([I)Z
 
     move-result v0
@@ -1179,7 +1148,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 361
     invoke-static {p0}, Lkotlin/UShortArray;->isEmpty-impl([S)Z
 
     move-result v0
@@ -1297,7 +1265,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 388
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->maxWithOrNull-XMRcp5o([BLjava/util/Comparator;)Lkotlin/UByte;
 
     move-result-object p0
@@ -1329,7 +1296,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 370
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->maxWithOrNull-YmdZ_VM([ILjava/util/Comparator;)Lkotlin/UInt;
 
     move-result-object p0
@@ -1363,7 +1329,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 397
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->maxWithOrNull-eOHTfZs([SLjava/util/Comparator;)Lkotlin/UShort;
 
     move-result-object p0
@@ -1395,7 +1360,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 379
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->maxWithOrNull-zrEWJaI([JLjava/util/Comparator;)Lkotlin/ULong;
 
     move-result-object p0
@@ -1423,7 +1387,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 406
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->minOrNull--ajY-9A([I)Lkotlin/UInt;
 
     move-result-object p0
@@ -1451,7 +1414,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 424
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->minOrNull-GBYM_sE([B)Lkotlin/UByte;
 
     move-result-object p0
@@ -1479,7 +1441,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 415
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->minOrNull-QwZRm1k([J)Lkotlin/ULong;
 
     move-result-object p0
@@ -1507,7 +1468,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 433
     invoke-static {p0}, Lkotlin/collections/unsigned/UArraysKt;->minOrNull-rL5Bavg([S)Lkotlin/UShort;
 
     move-result-object p0
@@ -1552,7 +1512,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 463
     invoke-static {p0}, Lkotlin/UByteArray;->isEmpty-impl([B)Z
 
     move-result v0
@@ -1683,7 +1642,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 453
     invoke-static {p0}, Lkotlin/ULongArray;->isEmpty-impl([J)Z
 
     move-result v0
@@ -1814,7 +1772,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 443
     invoke-static {p0}, Lkotlin/UIntArray;->isEmpty-impl([I)Z
 
     move-result v0
@@ -1947,7 +1904,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 473
     invoke-static {p0}, Lkotlin/UShortArray;->isEmpty-impl([S)Z
 
     move-result v0
@@ -2065,7 +2021,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 500
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->minWithOrNull-XMRcp5o([BLjava/util/Comparator;)Lkotlin/UByte;
 
     move-result-object p0
@@ -2097,7 +2052,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 482
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->minWithOrNull-YmdZ_VM([ILjava/util/Comparator;)Lkotlin/UInt;
 
     move-result-object p0
@@ -2129,7 +2083,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 509
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->minWithOrNull-eOHTfZs([SLjava/util/Comparator;)Lkotlin/UShort;
 
     move-result-object p0
@@ -2161,7 +2114,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 491
     invoke-static {p0, p1}, Lkotlin/collections/unsigned/UArraysKt;->minWithOrNull-zrEWJaI([JLjava/util/Comparator;)Lkotlin/ULong;
 
     move-result-object p0
@@ -2194,7 +2146,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 559
     invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object v0
@@ -2205,7 +2156,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 560
     invoke-static {p0}, Lkotlin/UByteArray;->getSize-impl([B)I
 
     move-result v1
@@ -2219,7 +2169,6 @@
 
     move-result v3
 
-    .line 561
     invoke-static {v3}, Lkotlin/UByte;->box-impl(B)Lkotlin/UByte;
 
     move-result-object v3
@@ -2273,7 +2222,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 523
     invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object v0
@@ -2284,7 +2232,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 524
     invoke-static {p0}, Lkotlin/UIntArray;->getSize-impl([I)I
 
     move-result v1
@@ -2298,7 +2245,6 @@
 
     move-result v3
 
-    .line 525
     invoke-static {v3}, Lkotlin/UInt;->box-impl(I)Lkotlin/UInt;
 
     move-result-object v3
@@ -2350,7 +2296,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 541
     invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object v0
@@ -2359,7 +2304,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 542
     invoke-static {p0}, Lkotlin/ULongArray;->getSize-impl([J)I
 
     move-result v1
@@ -2373,7 +2317,6 @@
 
     move-result-wide v3
 
-    .line 543
     invoke-static {v3, v4}, Lkotlin/ULong;->box-impl(J)Lkotlin/ULong;
 
     move-result-object v3
@@ -2425,7 +2368,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 577
     invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object v0
@@ -2436,7 +2378,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 578
     invoke-static {p0}, Lkotlin/UShortArray;->getSize-impl([S)I
 
     move-result v1
@@ -2450,7 +2391,6 @@
 
     move-result v3
 
-    .line 579
     invoke-static {v3}, Lkotlin/UShort;->box-impl(S)Lkotlin/UShort;
 
     move-result-object v3
@@ -2502,7 +2442,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 631
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -2511,7 +2450,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 632
     invoke-static {p0}, Lkotlin/UByteArray;->getSize-impl([B)I
 
     move-result v1
@@ -2525,7 +2463,6 @@
 
     move-result v3
 
-    .line 633
     invoke-static {v3}, Lkotlin/UByte;->box-impl(B)Lkotlin/UByte;
 
     move-result-object v3
@@ -2579,7 +2516,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 595
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -2588,7 +2524,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 596
     invoke-static {p0}, Lkotlin/UIntArray;->getSize-impl([I)I
 
     move-result v1
@@ -2602,7 +2537,6 @@
 
     move-result v3
 
-    .line 597
     invoke-static {v3}, Lkotlin/UInt;->box-impl(I)Lkotlin/UInt;
 
     move-result-object v3
@@ -2654,7 +2588,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 613
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -2663,7 +2596,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 614
     invoke-static {p0}, Lkotlin/ULongArray;->getSize-impl([J)I
 
     move-result v1
@@ -2677,7 +2609,6 @@
 
     move-result-wide v3
 
-    .line 615
     invoke-static {v3, v4}, Lkotlin/ULong;->box-impl(J)Lkotlin/ULong;
 
     move-result-object v3
@@ -2729,7 +2660,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 649
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -2738,7 +2668,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 650
     invoke-static {p0}, Lkotlin/UShortArray;->getSize-impl([S)I
 
     move-result v1
@@ -2752,7 +2681,6 @@
 
     move-result v3
 
-    .line 651
     invoke-static {v3}, Lkotlin/UShort;->box-impl(S)Lkotlin/UShort;
 
     move-result-object v3

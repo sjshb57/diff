@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +56,6 @@
 .method public final next()Ljava/lang/Boolean;
     .registers 2
 
-    .line 68
     invoke-virtual {p0}, Lkotlin/collections/BooleanIterator;->nextBoolean()Z
 
     move-result v0
@@ -72,7 +70,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 67
     invoke-virtual {p0}, Lkotlin/collections/BooleanIterator;->nextBoolean()Z
 
     move-result v0

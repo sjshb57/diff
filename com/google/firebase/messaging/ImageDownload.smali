@@ -37,10 +37,8 @@
 .method private constructor <init>(Ljava/net/URL;)V
     .registers 2
 
-    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 63
     iput-object p1, p0, Lcom/google/firebase/messaging/ImageDownload;->url:Ljava/net/URL;
 
     return-void
@@ -54,14 +52,12 @@
         }
     .end annotation
 
-    .line 104
     iget-object v0, p0, Lcom/google/firebase/messaging/ImageDownload;->url:Ljava/net/URL;
 
     invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v0
 
-    .line 107
     invoke-virtual {v0}, Ljava/net/URLConnection;->getContentLength()I
 
     move-result v1
@@ -70,20 +66,17 @@
 
     if-gt v1, v2, :cond_5f
 
-    .line 114
     invoke-virtual {v0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
     const-wide/32 v3, 0x100001
 
-    .line 119
     :try_start_15
     invoke-static {v0, v3, v4}, Lcom/google/firebase/messaging/ByteStreams;->limit(Ljava/io/InputStream;J)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 118
     invoke-static {v1}, Lcom/google/firebase/messaging/ByteStreams;->toByteArray(Ljava/io/InputStream;)[B
 
     move-result-object v1
@@ -92,13 +85,11 @@
 
     if-eqz v0, :cond_22
 
-    .line 120
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     :cond_22
     const/4 v0, 0x2
 
-    .line 122
     const-string v3, "FirebaseMessaging"
 
     invoke-static {v3, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -107,7 +98,6 @@
 
     if-eqz v0, :cond_47
 
-    .line 123
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v4, "Downloaded "
@@ -132,7 +122,6 @@
 
     invoke-static {v3, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 126
     :cond_47
     array-length v0, v1
 
@@ -140,7 +129,6 @@
 
     return-object v1
 
-    .line 127
     :cond_4b
     new-instance v0, Ljava/io/IOException;
 
@@ -155,7 +143,6 @@
 
     if-eqz v0, :cond_5e
 
-    .line 114
     :try_start_56
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_59
@@ -172,7 +159,6 @@
     :goto_5e
     throw v1
 
-    .line 109
     :cond_5f
     new-instance v0, Ljava/io/IOException;
 
@@ -186,7 +172,6 @@
 .method public static create(Ljava/lang/String;)Lcom/google/firebase/messaging/ImageDownload;
     .registers 4
 
-    .line 51
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -197,7 +182,6 @@
 
     return-object v1
 
-    .line 55
     :cond_8
     :try_start_8
     new-instance v0, Lcom/google/firebase/messaging/ImageDownload;
@@ -212,7 +196,6 @@
 
     return-object v0
 
-    .line 57
     :catch_13
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -245,7 +228,6 @@
 
     const/4 v0, 0x4
 
-    .line 86
     const-string v1, "FirebaseMessaging"
 
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -254,7 +236,6 @@
 
     if-eqz v0, :cond_1c
 
-    .line 87
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Starting download of: "
@@ -271,7 +252,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 90
     :cond_1c
     invoke-direct {p0}, Lcom/google/firebase/messaging/ImageDownload;->blockingDownloadBytes()[B
 
@@ -279,7 +259,6 @@
 
     const/4 v2, 0x0
 
-    .line 91
     array-length v3, v0
 
     invoke-static {v0, v2, v3}, Landroid/graphics/BitmapFactory;->decodeByteArray([BII)Landroid/graphics/Bitmap;
@@ -290,14 +269,12 @@
 
     const/4 v2, 0x3
 
-    .line 96
     invoke-static {v1, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
     if-eqz v2, :cond_42
 
-    .line 97
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Successfully downloaded image: "
@@ -317,7 +294,6 @@
     :cond_42
     return-object v0
 
-    .line 93
     :cond_43
     new-instance v0, Ljava/io/IOException;
 
@@ -343,7 +319,6 @@
 .method public close()V
     .registers 3
 
-    .line 134
     iget-object v0, p0, Lcom/google/firebase/messaging/ImageDownload;->future:Ljava/util/concurrent/Future;
 
     const/4 v1, 0x1
@@ -364,7 +339,6 @@
         }
     .end annotation
 
-    .line 82
     iget-object v0, p0, Lcom/google/firebase/messaging/ImageDownload;->task:Lcom/google/android/gms/tasks/Task;
 
     invoke-static {v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -379,13 +353,11 @@
 .method synthetic lambda$start$0$com-google-firebase-messaging-ImageDownload(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .registers 3
 
-    .line 72
     :try_start_0
     invoke-virtual {p0}, Lcom/google/firebase/messaging/ImageDownload;->blockingDownload()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 73
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_7} :catch_8
@@ -395,7 +367,6 @@
     :catch_8
     move-exception v0
 
-    .line 75
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
     :goto_c
@@ -405,24 +376,20 @@
 .method public start(Ljava/util/concurrent/ExecutorService;)V
     .registers 4
 
-    .line 67
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
-    .line 68
     new-instance v1, Lcom/google/firebase/messaging/ImageDownload$$ExternalSyntheticLambda0;
 
     invoke-direct {v1, p0, v0}, Lcom/google/firebase/messaging/ImageDownload$$ExternalSyntheticLambda0;-><init>(Lcom/google/firebase/messaging/ImageDownload;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    .line 69
     invoke-interface {p1, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/firebase/messaging/ImageDownload;->future:Ljava/util/concurrent/Future;
 
-    .line 78
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1

@@ -72,10 +72,8 @@
 .method private constructor <init>(Lcom/google/firebase/messaging/NotificationParams;)V
     .registers 4
 
-    .line 468
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 469
     const-string v0, "gcm.n.title"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -84,21 +82,18 @@
 
     iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->title:Ljava/lang/String;
 
-    .line 470
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getLocalizationResourceForKey(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->titleLocKey:Ljava/lang/String;
 
-    .line 471
     invoke-static {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getLocalizationArgs(Lcom/google/firebase/messaging/NotificationParams;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->titleLocArgs:[Ljava/lang/String;
 
-    .line 472
     const-string v0, "gcm.n.body"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -107,21 +102,18 @@
 
     iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->body:Ljava/lang/String;
 
-    .line 473
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getLocalizationResourceForKey(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->bodyLocKey:Ljava/lang/String;
 
-    .line 474
     invoke-static {p1, v0}, Lcom/google/firebase/messaging/RemoteMessage$Notification;->getLocalizationArgs(Lcom/google/firebase/messaging/NotificationParams;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->bodyLocArgs:[Ljava/lang/String;
 
-    .line 475
     const-string v0, "gcm.n.icon"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -130,14 +122,12 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->icon:Ljava/lang/String;
 
-    .line 476
     invoke-virtual {p1}, Lcom/google/firebase/messaging/NotificationParams;->getSoundResourceName()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->sound:Ljava/lang/String;
 
-    .line 477
     const-string v0, "gcm.n.tag"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -146,7 +136,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->tag:Ljava/lang/String;
 
-    .line 478
     const-string v0, "gcm.n.color"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -155,7 +144,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->color:Ljava/lang/String;
 
-    .line 479
     const-string v0, "gcm.n.click_action"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -164,7 +152,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->clickAction:Ljava/lang/String;
 
-    .line 480
     const-string v0, "gcm.n.android_channel_id"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -173,14 +160,12 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->channelId:Ljava/lang/String;
 
-    .line 481
     invoke-virtual {p1}, Lcom/google/firebase/messaging/NotificationParams;->getLink()Landroid/net/Uri;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->link:Landroid/net/Uri;
 
-    .line 482
     const-string v0, "gcm.n.image"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -189,7 +174,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->imageUrl:Ljava/lang/String;
 
-    .line 483
     const-string v0, "gcm.n.ticker"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -198,7 +182,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->ticker:Ljava/lang/String;
 
-    .line 484
     const-string v0, "gcm.n.notification_priority"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getInteger(Ljava/lang/String;)Ljava/lang/Integer;
@@ -207,7 +190,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->notificationPriority:Ljava/lang/Integer;
 
-    .line 485
     const-string v0, "gcm.n.visibility"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getInteger(Ljava/lang/String;)Ljava/lang/Integer;
@@ -216,7 +198,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->visibility:Ljava/lang/Integer;
 
-    .line 486
     const-string v0, "gcm.n.notification_count"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getInteger(Ljava/lang/String;)Ljava/lang/Integer;
@@ -225,7 +206,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->notificationCount:Ljava/lang/Integer;
 
-    .line 487
     const-string v0, "gcm.n.sticky"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getBoolean(Ljava/lang/String;)Z
@@ -234,7 +214,6 @@
 
     iput-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->sticky:Z
 
-    .line 488
     const-string v0, "gcm.n.local_only"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getBoolean(Ljava/lang/String;)Z
@@ -243,7 +222,6 @@
 
     iput-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->localOnly:Z
 
-    .line 489
     const-string v0, "gcm.n.default_sound"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getBoolean(Ljava/lang/String;)Z
@@ -252,7 +230,6 @@
 
     iput-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultSound:Z
 
-    .line 490
     const-string v0, "gcm.n.default_vibrate_timings"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getBoolean(Ljava/lang/String;)Z
@@ -261,7 +238,6 @@
 
     iput-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultVibrateTimings:Z
 
-    .line 491
     const-string v0, "gcm.n.default_light_settings"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getBoolean(Ljava/lang/String;)Z
@@ -270,7 +246,6 @@
 
     iput-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultLightSettings:Z
 
-    .line 492
     const-string v0, "gcm.n.event_time"
 
     invoke-virtual {p1, v0}, Lcom/google/firebase/messaging/NotificationParams;->getLong(Ljava/lang/String;)Ljava/lang/Long;
@@ -279,14 +254,12 @@
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->eventTime:Ljava/lang/Long;
 
-    .line 493
     invoke-virtual {p1}, Lcom/google/firebase/messaging/NotificationParams;->getLightSettings()[I
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->lightSettings:[I
 
-    .line 494
     invoke-virtual {p1}, Lcom/google/firebase/messaging/NotificationParams;->getVibrateTimings()[J
 
     move-result-object p1
@@ -299,7 +272,6 @@
 .method synthetic constructor <init>(Lcom/google/firebase/messaging/NotificationParams;Lcom/google/firebase/messaging/RemoteMessage$1;)V
     .registers 3
 
-    .line 438
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/RemoteMessage$Notification;-><init>(Lcom/google/firebase/messaging/NotificationParams;)V
 
     return-void
@@ -308,7 +280,6 @@
 .method private static getLocalizationArgs(Lcom/google/firebase/messaging/NotificationParams;Ljava/lang/String;)[Ljava/lang/String;
     .registers 4
 
-    .line 498
     invoke-virtual {p0, p1}, Lcom/google/firebase/messaging/NotificationParams;->getLocalizationArgsForKey(Ljava/lang/String;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -319,7 +290,6 @@
 
     return-object p0
 
-    .line 502
     :cond_8
     array-length p1, p0
 
@@ -327,13 +297,11 @@
 
     const/4 v0, 0x0
 
-    .line 503
     :goto_c
     array-length v1, p0
 
     if-ge v0, v1, :cond_1a
 
-    .line 504
     aget-object v1, p0, v0
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -355,7 +323,6 @@
 .method public getBody()Ljava/lang/String;
     .registers 2
 
-    .line 538
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->body:Ljava/lang/String;
 
     return-object v0
@@ -364,7 +331,6 @@
 .method public getBodyLocalizationArgs()[Ljava/lang/String;
     .registers 2
 
-    .line 558
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->bodyLocArgs:[Ljava/lang/String;
 
     return-object v0
@@ -373,7 +339,6 @@
 .method public getBodyLocalizationKey()Ljava/lang/String;
     .registers 2
 
-    .line 547
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->bodyLocKey:Ljava/lang/String;
 
     return-object v0
@@ -382,7 +347,6 @@
 .method public getChannelId()Ljava/lang/String;
     .registers 2
 
-    .line 625
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->channelId:Ljava/lang/String;
 
     return-object v0
@@ -391,7 +355,6 @@
 .method public getClickAction()Ljava/lang/String;
     .registers 2
 
-    .line 613
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->clickAction:Ljava/lang/String;
 
     return-object v0
@@ -400,7 +363,6 @@
 .method public getColor()Ljava/lang/String;
     .registers 2
 
-    .line 601
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->color:Ljava/lang/String;
 
     return-object v0
@@ -409,7 +371,6 @@
 .method public getDefaultLightSettings()Z
     .registers 2
 
-    .line 702
     iget-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultLightSettings:Z
 
     return v0
@@ -418,7 +379,6 @@
 .method public getDefaultSound()Z
     .registers 2
 
-    .line 676
     iget-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultSound:Z
 
     return v0
@@ -427,7 +387,6 @@
 .method public getDefaultVibrateSettings()Z
     .registers 2
 
-    .line 689
     iget-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->defaultVibrateTimings:Z
 
     return v0
@@ -436,7 +395,6 @@
 .method public getEventTime()Ljava/lang/Long;
     .registers 2
 
-    .line 750
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->eventTime:Ljava/lang/Long;
 
     return-object v0
@@ -445,7 +403,6 @@
 .method public getIcon()Ljava/lang/String;
     .registers 2
 
-    .line 564
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->icon:Ljava/lang/String;
 
     return-object v0
@@ -454,7 +411,6 @@
 .method public getImageUrl()Landroid/net/Uri;
     .registers 2
 
-    .line 574
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->imageUrl:Ljava/lang/String;
 
     if-eqz v0, :cond_9
@@ -475,7 +431,6 @@
 .method public getLightSettings()[I
     .registers 2
 
-    .line 764
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->lightSettings:[I
 
     return-object v0
@@ -484,7 +439,6 @@
 .method public getLink()Landroid/net/Uri;
     .registers 2
 
-    .line 631
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->link:Landroid/net/Uri;
 
     return-object v0
@@ -493,7 +447,6 @@
 .method public getLocalOnly()Z
     .registers 2
 
-    .line 663
     iget-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->localOnly:Z
 
     return v0
@@ -502,7 +455,6 @@
 .method public getNotificationCount()Ljava/lang/Integer;
     .registers 2
 
-    .line 738
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->notificationCount:Ljava/lang/Integer;
 
     return-object v0
@@ -511,7 +463,6 @@
 .method public getNotificationPriority()Ljava/lang/Integer;
     .registers 2
 
-    .line 714
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->notificationPriority:Ljava/lang/Integer;
 
     return-object v0
@@ -520,7 +471,6 @@
 .method public getSound()Ljava/lang/String;
     .registers 2
 
-    .line 585
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->sound:Ljava/lang/String;
 
     return-object v0
@@ -529,7 +479,6 @@
 .method public getSticky()Z
     .registers 2
 
-    .line 650
     iget-boolean v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->sticky:Z
 
     return v0
@@ -538,7 +487,6 @@
 .method public getTag()Ljava/lang/String;
     .registers 2
 
-    .line 591
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->tag:Ljava/lang/String;
 
     return-object v0
@@ -547,7 +495,6 @@
 .method public getTicker()Ljava/lang/String;
     .registers 2
 
-    .line 637
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->ticker:Ljava/lang/String;
 
     return-object v0
@@ -556,7 +503,6 @@
 .method public getTitle()Ljava/lang/String;
     .registers 2
 
-    .line 512
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->title:Ljava/lang/String;
 
     return-object v0
@@ -565,7 +511,6 @@
 .method public getTitleLocalizationArgs()[Ljava/lang/String;
     .registers 2
 
-    .line 532
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->titleLocArgs:[Ljava/lang/String;
 
     return-object v0
@@ -574,7 +519,6 @@
 .method public getTitleLocalizationKey()Ljava/lang/String;
     .registers 2
 
-    .line 521
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->titleLocKey:Ljava/lang/String;
 
     return-object v0
@@ -583,7 +527,6 @@
 .method public getVibrateTimings()[J
     .registers 2
 
-    .line 776
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->vibrateTimings:[J
 
     return-object v0
@@ -592,7 +535,6 @@
 .method public getVisibility()Ljava/lang/Integer;
     .registers 2
 
-    .line 726
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage$Notification;->visibility:Ljava/lang/Integer;
 
     return-object v0

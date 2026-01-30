@@ -244,7 +244,6 @@
 
     move-result-object v0
 
-    .line 209
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterIndexed$1;->label:I
 
     const/4 v2, 0x0
@@ -331,7 +330,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 211
     iget-object v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterIndexed$1;->$this_filterIndexed:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -385,7 +383,6 @@
 
     move-result-object p1
 
-    .line 212
     iget-object v8, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterIndexed$1;->$predicate:Lkotlin/jvm/functions/Function3;
 
     add-int/lit8 v9, v1, 0x1
@@ -457,7 +454,6 @@
 
     goto :goto_5b
 
-    .line 214
     :cond_b6
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

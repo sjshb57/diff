@@ -34,7 +34,6 @@
 
     if-eqz p3, :cond_8
 
-    .line 85
     sget-object p2, Lkotlin/contracts/InvocationKind;->UNKNOWN:Lkotlin/contracts/InvocationKind;
 
     :cond_8

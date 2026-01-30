@@ -105,7 +105,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 21
     invoke-direct {p0}, Lkotlin/collections/AbstractCollection;-><init>()V
 
     return-void
@@ -158,7 +157,6 @@
 
     return p1
 
-    .line 61
     :cond_4
     instance-of v0, p1, Ljava/util/List;
 
@@ -168,7 +166,6 @@
 
     return p1
 
-    .line 63
     :cond_a
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
@@ -199,7 +196,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 69
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     move-object v1, p0
@@ -221,12 +217,10 @@
         }
     .end annotation
 
-    .line 27
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
-    .line 159
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -244,7 +238,6 @@
 
     move-result-object v2
 
-    .line 27
     invoke-static {v2, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
@@ -275,7 +268,6 @@
         }
     .end annotation
 
-    .line 25
     new-instance v0, Lkotlin/collections/AbstractList$IteratorImpl;
 
     invoke-direct {v0, p0}, Lkotlin/collections/AbstractList$IteratorImpl;-><init>(Lkotlin/collections/AbstractList;)V
@@ -293,12 +285,10 @@
         }
     .end annotation
 
-    .line 29
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
-    .line 165
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -307,7 +297,6 @@
 
     move-result-object v0
 
-    .line 166
     :cond_b
     invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -315,19 +304,16 @@
 
     if-eqz v1, :cond_20
 
-    .line 167
     invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 29
     invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_b
 
-    .line 168
     invoke-interface {v0}, Ljava/util/ListIterator;->nextIndex()I
 
     move-result p1
@@ -351,7 +337,6 @@
         }
     .end annotation
 
-    .line 31
     new-instance v0, Lkotlin/collections/AbstractList$ListIteratorImpl;
 
     const/4 v1, 0x0
@@ -373,7 +358,6 @@
         }
     .end annotation
 
-    .line 33
     new-instance v0, Lkotlin/collections/AbstractList$ListIteratorImpl;
 
     invoke-direct {v0, p0, p1}, Lkotlin/collections/AbstractList$ListIteratorImpl;-><init>(Lkotlin/collections/AbstractList;I)V
@@ -427,7 +411,6 @@
         }
     .end annotation
 
-    .line 35
     new-instance v0, Lkotlin/collections/AbstractList$SubList;
 
     invoke-direct {v0, p0, p1, p2}, Lkotlin/collections/AbstractList$SubList;-><init>(Lkotlin/collections/AbstractList;II)V

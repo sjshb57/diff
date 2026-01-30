@@ -110,18 +110,14 @@
         }
     .end annotation
 
-    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
     iput p1, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->maxCapacity:I
 
-    .line 20
     iput-object p2, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->create:Lkotlin/jvm/functions/Function1;
 
     new-instance p2, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-    .line 27
     invoke-direct {p2, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
 
     iput-object p2, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->elements:Ljava/util/concurrent/atomic/AtomicReferenceArray;
@@ -199,7 +195,6 @@
 
     return v0
 
-    .line 36
     :cond_e
     sget-object v3, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->controlState$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -236,7 +231,6 @@
 
     return v0
 
-    .line 55
     :cond_d
     iget v2, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->maxCapacity:I
 
@@ -246,7 +240,6 @@
 
     return v3
 
-    .line 56
     :cond_13
     sget-object v2, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->controlState$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -258,7 +251,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 57
     iget-object v0, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->elements:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget-object v2, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->create:Lkotlin/jvm/functions/Function1;
@@ -286,7 +278,6 @@
         }
     .end annotation
 
-    .line 76
     sget-object v0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->controlState$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     :cond_2
@@ -306,7 +297,6 @@
 
     goto :goto_18
 
-    .line 111
     :cond_f
     sget-object v3, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->controlState$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -318,7 +308,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 77
     :goto_18
     invoke-static {v4, v1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
@@ -326,7 +315,6 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 117
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -339,7 +327,6 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 118
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -359,7 +346,6 @@
 
     move-result v2
 
-    .line 80
     :cond_3c
     iget-object v3, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->elements:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -371,12 +357,10 @@
 
     if-eqz v3, :cond_3c
 
-    .line 119
     invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2f
 
-    .line 122
     :cond_49
     check-cast v1, Ljava/util/List;
 
@@ -388,7 +372,6 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->controlState$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 90
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -399,14 +382,12 @@
 
     const/4 v2, 0x0
 
-    .line 91
     invoke-static {v2, v1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 123
     new-instance v2, Ljava/util/ArrayList;
 
     const/16 v3, 0xa
@@ -419,7 +400,6 @@
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 124
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -439,23 +419,19 @@
 
     move-result v3
 
-    .line 91
     iget-object v4, p0, Lkotlinx/coroutines/internal/OnDemandAllocatingPool;->elements:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-virtual {v4, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 125
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_22
 
-    .line 126
     :cond_39
     check-cast v2, Ljava/util/List;
 
-    .line 91
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -466,7 +442,6 @@
 
     if-eqz v0, :cond_47
 
-    .line 92
     const-string v0, "[closed]"
 
     goto :goto_49
@@ -474,7 +449,6 @@
     :cond_47
     const-string v0, ""
 
-    .line 93
     :goto_49
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -494,7 +468,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 96
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "OnDemandAllocatingPool("

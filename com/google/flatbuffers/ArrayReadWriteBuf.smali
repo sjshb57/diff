@@ -18,7 +18,6 @@
 
     const/16 v0, 0xa
 
-    .line 20
     invoke-direct {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;-><init>(I)V
 
     return-void
@@ -27,7 +26,6 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 24
     new-array p1, p1, [B
 
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;-><init>([B)V
@@ -38,15 +36,12 @@
 .method public constructor <init>([B)V
     .registers 2
 
-    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
     iput-object p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     const/4 p1, 0x0
 
-    .line 29
     iput p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     return-void
@@ -55,13 +50,10 @@
 .method public constructor <init>([BI)V
     .registers 3
 
-    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 33
     iput-object p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
-    .line 34
     iput p2, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     return-void
@@ -72,7 +64,6 @@
 .method public data()[B
     .registers 2
 
-    .line 89
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     return-object v0
@@ -81,7 +72,6 @@
 .method public get(I)B
     .registers 3
 
-    .line 44
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     aget-byte p1, v0, p1
@@ -92,7 +82,6 @@
 .method public getBoolean(I)Z
     .registers 3
 
-    .line 39
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     aget-byte p1, v0, p1
@@ -113,7 +102,6 @@
 .method public getDouble(I)D
     .registers 4
 
-    .line 79
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->getLong(I)J
 
     move-result-wide v0
@@ -128,7 +116,6 @@
 .method public getFloat(I)F
     .registers 2
 
-    .line 74
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->getInt(I)I
 
     move-result p1
@@ -143,7 +130,6 @@
 .method public getInt(I)I
     .registers 5
 
-    .line 54
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x3
@@ -184,7 +170,6 @@
 .method public getLong(I)J
     .registers 11
 
-    .line 62
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x1
@@ -297,7 +282,6 @@
 .method public getShort(I)S
     .registers 4
 
-    .line 49
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x1
@@ -320,7 +304,6 @@
 .method public getString(II)Ljava/lang/String;
     .registers 4
 
-    .line 84
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     invoke-static {v0, p1, p2}, Lcom/google/flatbuffers/Utf8Safe;->decodeUtf8Array([BII)Ljava/lang/String;
@@ -333,7 +316,6 @@
 .method public limit()I
     .registers 2
 
-    .line 222
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     return v0
@@ -342,12 +324,10 @@
 .method public put(B)V
     .registers 3
 
-    .line 107
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->set(IB)V
 
-    .line 108
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x1
@@ -360,12 +340,10 @@
 .method public put([BII)V
     .registers 5
 
-    .line 101
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1, p2, p3}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->set(I[BII)V
 
-    .line 102
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/2addr p1, p3
@@ -378,12 +356,10 @@
 .method public putBoolean(Z)V
     .registers 3
 
-    .line 95
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setBoolean(IZ)V
 
-    .line 96
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x1
@@ -396,12 +372,10 @@
 .method public putDouble(D)V
     .registers 4
 
-    .line 137
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setDouble(ID)V
 
-    .line 138
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x8
@@ -414,12 +388,10 @@
 .method public putFloat(F)V
     .registers 3
 
-    .line 131
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setFloat(IF)V
 
-    .line 132
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x4
@@ -432,12 +404,10 @@
 .method public putInt(I)V
     .registers 3
 
-    .line 119
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setInt(II)V
 
-    .line 120
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x4
@@ -450,12 +420,10 @@
 .method public putLong(J)V
     .registers 4
 
-    .line 125
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setLong(IJ)V
 
-    .line 126
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x8
@@ -468,12 +436,10 @@
 .method public putShort(S)V
     .registers 3
 
-    .line 113
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->setShort(IS)V
 
-    .line 114
     iget p1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     add-int/lit8 p1, p1, 0x2
@@ -486,7 +452,6 @@
 .method public requestCapacity(I)Z
     .registers 5
 
-    .line 232
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     array-length v1, v0
@@ -497,7 +462,6 @@
 
     return v2
 
-    .line 236
     :cond_7
     array-length p1, v0
 
@@ -505,7 +469,6 @@
 
     add-int/2addr p1, v1
 
-    .line 238
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([BI)[B
 
     move-result-object p1
@@ -520,10 +483,8 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 148
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 149
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     aput-byte p2, v0, p1
@@ -538,10 +499,8 @@
 
     add-int/2addr v0, p1
 
-    .line 154
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 155
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     invoke-static {p2, p3, v0, p1, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
@@ -552,7 +511,6 @@
 .method public setBoolean(IZ)V
     .registers 3
 
-    .line 143
     invoke-virtual {p0, p1, p2}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->set(IB)V
 
     return-void
@@ -563,17 +521,14 @@
 
     add-int/lit8 v0, p1, 0x8
 
-    .line 205
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 207
     invoke-static {p2, p3}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p2
 
     long-to-int v0, p2
 
-    .line 209
     iget-object v1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v2, p1, 0x1
@@ -592,7 +547,6 @@
 
     int-to-byte v4, v4
 
-    .line 210
     aput-byte v4, v1, v2
 
     add-int/lit8 v2, p1, 0x3
@@ -603,7 +557,6 @@
 
     int-to-byte v4, v4
 
-    .line 211
     aput-byte v4, v1, v3
 
     add-int/lit8 v3, p1, 0x4
@@ -614,7 +567,6 @@
 
     int-to-byte v0, v0
 
-    .line 212
     aput-byte v0, v1, v2
 
     const/16 v0, 0x20
@@ -629,7 +581,6 @@
 
     int-to-byte v0, v0
 
-    .line 214
     aput-byte v0, v1, v3
 
     add-int/lit8 v0, p1, 0x6
@@ -640,7 +591,6 @@
 
     int-to-byte v2, v2
 
-    .line 215
     aput-byte v2, v1, p3
 
     add-int/lit8 p1, p1, 0x7
@@ -651,7 +601,6 @@
 
     int-to-byte p3, p3
 
-    .line 216
     aput-byte p3, v1, v0
 
     shr-int/lit8 p2, p2, 0x18
@@ -660,7 +609,6 @@
 
     int-to-byte p2, p2
 
-    .line 217
     aput-byte p2, v1, p1
 
     return-void
@@ -671,15 +619,12 @@
 
     add-int/lit8 v0, p1, 0x4
 
-    .line 194
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 196
     invoke-static {p2}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     move-result p2
 
-    .line 197
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x1
@@ -698,7 +643,6 @@
 
     int-to-byte v3, v3
 
-    .line 198
     aput-byte v3, v0, v1
 
     add-int/lit8 p1, p1, 0x3
@@ -709,7 +653,6 @@
 
     int-to-byte v1, v1
 
-    .line 199
     aput-byte v1, v0, v2
 
     shr-int/lit8 p2, p2, 0x18
@@ -718,7 +661,6 @@
 
     int-to-byte p2, p2
 
-    .line 200
     aput-byte p2, v0, p1
 
     return-void
@@ -729,10 +671,8 @@
 
     add-int/lit8 v0, p1, 0x4
 
-    .line 168
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 170
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x1
@@ -751,7 +691,6 @@
 
     int-to-byte v3, v3
 
-    .line 171
     aput-byte v3, v0, v1
 
     add-int/lit8 p1, p1, 0x3
@@ -762,7 +701,6 @@
 
     int-to-byte v1, v1
 
-    .line 172
     aput-byte v1, v0, v2
 
     shr-int/lit8 p2, p2, 0x18
@@ -771,7 +709,6 @@
 
     int-to-byte p2, p2
 
-    .line 173
     aput-byte p2, v0, p1
 
     return-void
@@ -782,12 +719,10 @@
 
     add-int/lit8 v0, p1, 0x8
 
-    .line 178
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
     long-to-int v0, p2
 
-    .line 181
     iget-object v1, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v2, p1, 0x1
@@ -806,7 +741,6 @@
 
     int-to-byte v4, v4
 
-    .line 182
     aput-byte v4, v1, v2
 
     add-int/lit8 v2, p1, 0x3
@@ -817,7 +751,6 @@
 
     int-to-byte v4, v4
 
-    .line 183
     aput-byte v4, v1, v3
 
     add-int/lit8 v3, p1, 0x4
@@ -828,7 +761,6 @@
 
     int-to-byte v0, v0
 
-    .line 184
     aput-byte v0, v1, v2
 
     const/16 v0, 0x20
@@ -843,7 +775,6 @@
 
     int-to-byte v0, v0
 
-    .line 186
     aput-byte v0, v1, v3
 
     add-int/lit8 v0, p1, 0x6
@@ -854,7 +785,6 @@
 
     int-to-byte v2, v2
 
-    .line 187
     aput-byte v2, v1, p3
 
     add-int/lit8 p1, p1, 0x7
@@ -865,7 +795,6 @@
 
     int-to-byte p3, p3
 
-    .line 188
     aput-byte p3, v1, v0
 
     shr-int/lit8 p2, p2, 0x18
@@ -874,7 +803,6 @@
 
     int-to-byte p2, p2
 
-    .line 189
     aput-byte p2, v1, p1
 
     return-void
@@ -885,10 +813,8 @@
 
     add-int/lit8 v0, p1, 0x2
 
-    .line 160
     invoke-virtual {p0, v0}, Lcom/google/flatbuffers/ArrayReadWriteBuf;->requestCapacity(I)Z
 
-    .line 162
     iget-object v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->buffer:[B
 
     add-int/lit8 v1, p1, 0x1
@@ -905,7 +831,6 @@
 
     int-to-byte p1, p1
 
-    .line 163
     aput-byte p1, v0, v1
 
     return-void
@@ -914,7 +839,6 @@
 .method public writePosition()I
     .registers 2
 
-    .line 227
     iget v0, p0, Lcom/google/flatbuffers/ArrayReadWriteBuf;->writePos:I
 
     return v0

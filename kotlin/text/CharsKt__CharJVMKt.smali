@@ -75,7 +75,6 @@
 .method public static final checkRadix(I)I
     .registers 6
 
-    .line 313
     new-instance v0, Lkotlin/ranges/IntRange;
 
     const/4 v1, 0x2
@@ -92,7 +91,6 @@
 
     return p0
 
-    .line 314
     :cond_f
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -126,7 +124,6 @@
 .method public static final digitOf(CI)I
     .registers 2
 
-    .line 306
     invoke-static {p0, p1}, Ljava/lang/Character;->digit(II)I
 
     move-result p0
@@ -137,7 +134,6 @@
 .method public static final getCategory(C)Lkotlin/text/CharCategory;
     .registers 2
 
-    .line 17
     sget-object v0, Lkotlin/text/CharCategory;->Companion:Lkotlin/text/CharCategory$Companion;
 
     invoke-static {p0}, Ljava/lang/Character;->getType(C)I
@@ -154,7 +150,6 @@
 .method public static final getDirectionality(C)Lkotlin/text/CharDirectionality;
     .registers 2
 
-    .line 284
     sget-object v0, Lkotlin/text/CharDirectionality;->Companion:Lkotlin/text/CharDirectionality$Companion;
 
     invoke-static {p0}, Ljava/lang/Character;->getDirectionality(C)B
@@ -171,7 +166,6 @@
 .method private static final isDefined(C)Z
     .registers 1
 
-    .line 25
     invoke-static {p0}, Ljava/lang/Character;->isDefined(C)Z
 
     move-result p0
@@ -182,7 +176,6 @@
 .method private static final isDigit(C)Z
     .registers 1
 
-    .line 57
     invoke-static {p0}, Ljava/lang/Character;->isDigit(C)Z
 
     move-result p0
@@ -193,7 +186,6 @@
 .method private static final isHighSurrogate(C)Z
     .registers 1
 
-    .line 290
     invoke-static {p0}, Ljava/lang/Character;->isHighSurrogate(C)Z
 
     move-result p0
@@ -204,7 +196,6 @@
 .method private static final isISOControl(C)Z
     .registers 1
 
-    .line 76
     invoke-static {p0}, Ljava/lang/Character;->isISOControl(C)Z
 
     move-result p0
@@ -215,7 +206,6 @@
 .method private static final isIdentifierIgnorable(C)Z
     .registers 1
 
-    .line 65
     invoke-static {p0}, Ljava/lang/Character;->isIdentifierIgnorable(C)Z
 
     move-result p0
@@ -226,7 +216,6 @@
 .method private static final isJavaIdentifierPart(C)Z
     .registers 1
 
-    .line 83
     invoke-static {p0}, Ljava/lang/Character;->isJavaIdentifierPart(C)Z
 
     move-result p0
@@ -237,7 +226,6 @@
 .method private static final isJavaIdentifierStart(C)Z
     .registers 1
 
-    .line 90
     invoke-static {p0}, Ljava/lang/Character;->isJavaIdentifierStart(C)Z
 
     move-result p0
@@ -248,7 +236,6 @@
 .method private static final isLetter(C)Z
     .registers 1
 
-    .line 36
     invoke-static {p0}, Ljava/lang/Character;->isLetter(C)Z
 
     move-result p0
@@ -259,7 +246,6 @@
 .method private static final isLetterOrDigit(C)Z
     .registers 1
 
-    .line 47
     invoke-static {p0}, Ljava/lang/Character;->isLetterOrDigit(C)Z
 
     move-result p0
@@ -270,7 +256,6 @@
 .method private static final isLowSurrogate(C)Z
     .registers 1
 
-    .line 296
     invoke-static {p0}, Ljava/lang/Character;->isLowSurrogate(C)Z
 
     move-result p0
@@ -281,7 +266,6 @@
 .method private static final isLowerCase(C)Z
     .registers 1
 
-    .line 120
     invoke-static {p0}, Ljava/lang/Character;->isLowerCase(C)Z
 
     move-result p0
@@ -292,7 +276,6 @@
 .method private static final isTitleCase(C)Z
     .registers 1
 
-    .line 232
     invoke-static {p0}, Ljava/lang/Character;->isTitleCase(C)Z
 
     move-result p0
@@ -303,7 +286,6 @@
 .method private static final isUpperCase(C)Z
     .registers 1
 
-    .line 109
     invoke-static {p0}, Ljava/lang/Character;->isUpperCase(C)Z
 
     move-result p0
@@ -314,7 +296,6 @@
 .method public static final isWhitespace(C)Z
     .registers 2
 
-    .line 98
     invoke-static {p0}, Ljava/lang/Character;->isWhitespace(C)Z
 
     move-result v0
@@ -345,7 +326,6 @@
 .method private static final lowercase(C)Ljava/lang/String;
     .registers 2
 
-    .line 208
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object p0
@@ -374,7 +354,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 222
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object p0
@@ -397,7 +376,6 @@
 .method private static final lowercaseChar(C)C
     .registers 1
 
-    .line 193
     invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
 
     move-result p0
@@ -412,12 +390,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 271
     invoke-static {p0, p1}, Lkotlin/text/CharsKt;->uppercase(CLjava/util/Locale;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 272
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -439,7 +415,6 @@
     :cond_18
     const/4 p0, 0x0
 
-    .line 273
     invoke-virtual {p1, p0}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
@@ -481,7 +456,6 @@
     :goto_46
     return-object p1
 
-    .line 275
     :cond_47
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
@@ -507,7 +481,6 @@
 
     return-object p1
 
-    .line 278
     :cond_60
     invoke-static {p0}, Ljava/lang/Character;->toTitleCase(C)C
 
@@ -523,7 +496,6 @@
 .method private static final titlecaseChar(C)C
     .registers 1
 
-    .line 256
     invoke-static {p0}, Ljava/lang/Character;->toTitleCase(C)C
 
     move-result p0
@@ -545,7 +517,6 @@
         warningSince = "1.5"
     .end annotation
 
-    .line 179
     invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
 
     move-result p0
@@ -567,7 +538,6 @@
         warningSince = "1.5"
     .end annotation
 
-    .line 242
     invoke-static {p0}, Ljava/lang/Character;->toTitleCase(C)C
 
     move-result p0
@@ -589,7 +559,6 @@
         warningSince = "1.5"
     .end annotation
 
-    .line 128
     invoke-static {p0}, Ljava/lang/Character;->toUpperCase(C)C
 
     move-result p0
@@ -600,7 +569,6 @@
 .method private static final uppercase(C)Ljava/lang/String;
     .registers 2
 
-    .line 157
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object p0
@@ -629,7 +597,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 171
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object p0
@@ -652,7 +619,6 @@
 .method private static final uppercaseChar(C)C
     .registers 1
 
-    .line 142
     invoke-static {p0}, Ljava/lang/Character;->toUpperCase(C)C
 
     move-result p0

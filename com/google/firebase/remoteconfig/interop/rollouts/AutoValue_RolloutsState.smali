@@ -27,17 +27,14 @@
         }
     .end annotation
 
-    .line 12
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;-><init>()V
 
     if-eqz p1, :cond_8
 
-    .line 16
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutsState;->rolloutAssignments:Ljava/util/Set;
 
     return-void
 
-    .line 14
     :cond_8
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -59,16 +56,13 @@
 
     return p1
 
-    .line 37
     :cond_4
     instance-of v0, p1, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;
 
     if-eqz v0, :cond_15
 
-    .line 38
     check-cast p1, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;
 
-    .line 39
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutsState;->rolloutAssignments:Ljava/util/Set;
 
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutsState;->getRolloutAssignments()Ljava/util/Set;
@@ -98,7 +92,6 @@
         }
     .end annotation
 
-    .line 22
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutsState;->rolloutAssignments:Ljava/util/Set;
 
     return-object v0
@@ -107,7 +100,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 48
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutsState;->rolloutAssignments:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->hashCode()I
@@ -124,7 +116,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 27
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "RolloutsState{rolloutAssignments="

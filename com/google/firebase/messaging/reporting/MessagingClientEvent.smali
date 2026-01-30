@@ -54,7 +54,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 9
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Builder;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Builder;-><init>()V
@@ -73,82 +72,66 @@
 
     move-object v0, p0
 
-    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     move-wide v1, p1
 
-    .line 45
     iput-wide v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->project_number_:J
 
     move-object v1, p3
 
-    .line 46
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->message_id_:Ljava/lang/String;
 
     move-object v1, p4
 
-    .line 47
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->instance_id_:Ljava/lang/String;
 
     move-object v1, p5
 
-    .line 48
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->message_type_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$MessageType;
 
     move-object v1, p6
 
-    .line 49
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->sdk_platform_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     move-object v1, p7
 
-    .line 50
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->package_name_:Ljava/lang/String;
 
     move-object v1, p8
 
-    .line 51
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->collapse_key_:Ljava/lang/String;
 
     move v1, p9
 
-    .line 52
     iput v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->priority_:I
 
     move v1, p10
 
-    .line 53
     iput v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->ttl_:I
 
     move-object v1, p11
 
-    .line 54
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->topic_:Ljava/lang/String;
 
     move-wide v1, p12
 
-    .line 55
     iput-wide v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->bulk_id_:J
 
     move-object/from16 v1, p14
 
-    .line 56
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->event_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Event;
 
     move-object/from16 v1, p15
 
-    .line 57
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->analytics_label_:Ljava/lang/String;
 
     move-wide/from16 v1, p16
 
-    .line 58
     iput-wide v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->campaign_id_:J
 
     move-object/from16 v1, p18
 
-    .line 59
     iput-object v1, v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->composer_label_:Ljava/lang/String;
 
     return-void
@@ -157,7 +140,6 @@
 .method public static getDefaultInstance()Lcom/google/firebase/messaging/reporting/MessagingClientEvent;
     .registers 1
 
-    .line 172
     sget-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->DEFAULT_INSTANCE:Lcom/google/firebase/messaging/reporting/MessagingClientEvent;
 
     return-object v0
@@ -166,7 +148,6 @@
 .method public static newBuilder()Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Builder;
     .registers 1
 
-    .line 63
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Builder;
 
     invoke-direct {v0}, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Builder;-><init>()V
@@ -179,7 +160,6 @@
 .method public getAnalyticsLabel()Ljava/lang/String;
     .registers 2
 
-    .line 154
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->analytics_label_:Ljava/lang/String;
 
     return-object v0
@@ -188,7 +168,6 @@
 .method public getBulkId()J
     .registers 3
 
-    .line 140
     iget-wide v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->bulk_id_:J
 
     return-wide v0
@@ -197,7 +176,6 @@
 .method public getCampaignId()J
     .registers 3
 
-    .line 161
     iget-wide v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->campaign_id_:J
 
     return-wide v0
@@ -206,7 +184,6 @@
 .method public getCollapseKey()Ljava/lang/String;
     .registers 2
 
-    .line 112
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->collapse_key_:Ljava/lang/String;
 
     return-object v0
@@ -215,7 +192,6 @@
 .method public getComposerLabel()Ljava/lang/String;
     .registers 2
 
-    .line 168
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->composer_label_:Ljava/lang/String;
 
     return-object v0
@@ -224,7 +200,6 @@
 .method public getEvent()Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Event;
     .registers 2
 
-    .line 147
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->event_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$Event;
 
     return-object v0
@@ -233,7 +208,6 @@
 .method public getInstanceId()Ljava/lang/String;
     .registers 2
 
-    .line 84
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->instance_id_:Ljava/lang/String;
 
     return-object v0
@@ -242,7 +216,6 @@
 .method public getMessageId()Ljava/lang/String;
     .registers 2
 
-    .line 77
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->message_id_:Ljava/lang/String;
 
     return-object v0
@@ -251,7 +224,6 @@
 .method public getMessageType()Lcom/google/firebase/messaging/reporting/MessagingClientEvent$MessageType;
     .registers 2
 
-    .line 91
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->message_type_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$MessageType;
 
     return-object v0
@@ -260,7 +232,6 @@
 .method public getPackageName()Ljava/lang/String;
     .registers 2
 
-    .line 105
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->package_name_:Ljava/lang/String;
 
     return-object v0
@@ -269,7 +240,6 @@
 .method public getPriority()I
     .registers 2
 
-    .line 119
     iget v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->priority_:I
 
     return v0
@@ -278,7 +248,6 @@
 .method public getProjectNumber()J
     .registers 3
 
-    .line 70
     iget-wide v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->project_number_:J
 
     return-wide v0
@@ -287,7 +256,6 @@
 .method public getSdkPlatform()Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
     .registers 2
 
-    .line 98
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->sdk_platform_:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     return-object v0
@@ -296,7 +264,6 @@
 .method public getTopic()Ljava/lang/String;
     .registers 2
 
-    .line 133
     iget-object v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->topic_:Ljava/lang/String;
 
     return-object v0
@@ -305,7 +272,6 @@
 .method public getTtl()I
     .registers 2
 
-    .line 126
     iget v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent;->ttl_:I
 
     return v0

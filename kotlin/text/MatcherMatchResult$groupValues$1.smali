@@ -57,7 +57,6 @@
 
     iput-object p1, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
-    .line 381
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     return-void
@@ -68,7 +67,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
     if-nez v0, :cond_6
@@ -90,7 +88,6 @@
 .method public bridge contains(Ljava/lang/String;)Z
     .registers 2
 
-    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->contains(Ljava/lang/Object;)Z
 
     move-result p1
@@ -101,7 +98,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 381
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groupValues$1;->get(I)Ljava/lang/String;
 
     move-result-object p1
@@ -112,7 +108,6 @@
 .method public get(I)Ljava/lang/String;
     .registers 3
 
-    .line 383
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -134,7 +129,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 382
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groupValues$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -153,7 +147,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
     if-nez v0, :cond_6
@@ -175,7 +168,6 @@
 .method public bridge indexOf(Ljava/lang/String;)I
     .registers 2
 
-    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -186,7 +178,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 381
     instance-of v0, p1, Ljava/lang/String;
 
     if-nez v0, :cond_6
@@ -208,7 +199,6 @@
 .method public bridge lastIndexOf(Ljava/lang/String;)I
     .registers 2
 
-    .line 381
     invoke-super {p0, p1}, Lkotlin/collections/AbstractList;->lastIndexOf(Ljava/lang/Object;)I
 
     move-result p1

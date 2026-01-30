@@ -69,17 +69,14 @@
 
     const/16 v0, 0x8
 
-    .line 71
     new-array v0, v0, [I
 
     fill-array-data v0, :array_12
 
     sput-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->BACKOFF_TIME_DURATIONS_IN_MINUTES:[I
 
-    .line 77
     const-string v0, "^[^:]+:([0-9]+):(android|ios|web):([0-9a-f]+)"
 
-    .line 78
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -121,33 +118,26 @@
         }
     .end annotation
 
-    .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x8
 
-    .line 103
     iput v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->ORIGINAL_RETRIES:I
 
-    .line 126
     iput-object p7, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->listeners:Ljava/util/Set;
 
     const/4 p7, 0x0
 
-    .line 127
     iput-boolean p7, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isHttpConnectionRunning:Z
 
-    .line 128
     iput-object p9, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 131
     new-instance p9, Ljava/util/Random;
 
     invoke-direct {p9}, Ljava/util/Random;-><init>()V
 
     iput-object p9, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->random:Ljava/util/Random;
 
-    .line 135
     invoke-virtual {p8}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
 
     move-result-object p9
@@ -160,45 +150,34 @@
 
     const/4 p9, 0x1
 
-    .line 134
     invoke-static {v0, p9}, Ljava/lang/Math;->max(II)I
 
     move-result p9
 
     iput p9, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->httpRetriesRemaining:I
 
-    .line 137
     invoke-static {}, Lcom/google/android/gms/common/util/DefaultClock;->getInstance()Lcom/google/android/gms/common/util/Clock;
 
     move-result-object p9
 
     iput-object p9, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->clock:Lcom/google/android/gms/common/util/Clock;
 
-    .line 139
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 140
     iput-object p3, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
-    .line 141
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
-    .line 142
     iput-object p4, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->activatedCache:Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
-    .line 143
     iput-object p5, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->context:Landroid/content/Context;
 
-    .line 144
     iput-object p6, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->namespace:Ljava/lang/String;
 
-    .line 145
     iput-object p8, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
-    .line 146
     iput-boolean p7, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isRealtimeDisabled:Z
 
-    .line 147
     iput-boolean p7, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isInBackground:Z
 
     return-void
@@ -207,7 +186,6 @@
 .method static synthetic access$000(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;)V
     .registers 1
 
-    .line 64
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->enableBackoff()V
 
     return-void
@@ -216,7 +194,6 @@
 .method static synthetic access$100(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
     .registers 2
 
-    .line 64
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->propagateErrors(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
 
     return-void
@@ -227,7 +204,6 @@
 
     monitor-enter p0
 
-    .line 286
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->listeners:Ljava/util/Set;
 
@@ -274,15 +250,12 @@
 .method private createRequestBody(Ljava/lang/String;)Lorg/json/JSONObject;
     .registers 5
 
-    .line 198
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 199
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 200
     invoke-virtual {v1}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
     move-result-object v1
@@ -295,22 +268,18 @@
 
     move-result-object v1
 
-    .line 199
     const-string v2, "project"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 201
     const-string v1, "namespace"
 
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->namespace:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 202
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
 
-    .line 203
     invoke-virtual {v1}, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;->getTemplateVersionNumber()J
 
     move-result-wide v1
@@ -319,12 +288,10 @@
 
     move-result-object v1
 
-    .line 202
     const-string v2, "lastKnownVersionNumber"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 204
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {v1}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
@@ -339,19 +306,16 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 205
     const-string v1, "sdkVersion"
 
     const-string v2, "22.1.0"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 206
     const-string v1, "appInstanceId"
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 208
     new-instance p1, Lorg/json/JSONObject;
 
     invoke-direct {p1, v0}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
@@ -366,13 +330,11 @@
 
     const/4 v0, 0x1
 
-    .line 282
     :try_start_2
     iput-boolean v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isRealtimeDisabled:Z
     :try_end_4
     .catchall {:try_start_2 .. :try_end_4} :catchall_6
 
-    .line 283
     monitor-exit p0
 
     return-void
@@ -388,14 +350,12 @@
 .method private static extractProjectNumberFromAppId(Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    .line 151
     sget-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->GMP_APP_ID_PATTERN:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p0
 
-    .line 152
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v0
@@ -420,31 +380,25 @@
 .method private getFingerprintHashForPackage()Ljava/lang/String;
     .registers 6
 
-    .line 160
     const-string v0, "FirebaseRemoteConfig"
 
-    .line 0
     const-string v1, "Could not get fingerprint hash for package: "
 
     const/4 v2, 0x0
 
-    .line 160
     :try_start_5
     iget-object v3, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->context:Landroid/content/Context;
 
-    .line 162
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 161
     invoke-static {v3, v4}, Lcom/google/android/gms/common/util/AndroidUtilsLight;->getPackageCertificateHashBytes(Landroid/content/Context;Ljava/lang/String;)[B
 
     move-result-object v3
 
     if-nez v3, :cond_27
 
-    .line 164
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -468,7 +422,6 @@
     :cond_27
     const/4 v1, 0x0
 
-    .line 167
     invoke-static {v3, v1}, Lcom/google/android/gms/common/util/Hex;->bytesToStringUppercase([BZ)Ljava/lang/String;
 
     move-result-object v0
@@ -477,7 +430,6 @@
 
     return-object v0
 
-    .line 170
     :catch_2d
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -505,7 +457,6 @@
 .method private getRandomizedBackoffDurationInMillis(I)J
     .registers 6
 
-    .line 268
     sget-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->BACKOFF_TIME_DURATIONS_IN_MINUTES:[I
 
     array-length v1, v0
@@ -517,7 +468,6 @@
     :cond_6
     move p1, v1
 
-    .line 274
     :goto_7
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
@@ -527,14 +477,12 @@
 
     int-to-long v2, p1
 
-    .line 275
     invoke-virtual {v1, v2, v3}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     move-result-wide v0
 
     const-wide/16 v2, 0x2
 
-    .line 278
     div-long v2, v0, v2
 
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->random:Ljava/util/Random;
@@ -555,10 +503,8 @@
 .method private getRealtimeURL(Ljava/lang/String;)Ljava/lang/String;
     .registers 5
 
-    .line 293
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
-    .line 295
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
 
     move-result-object v0
@@ -583,7 +529,6 @@
 
     aput-object p1, v1, v0
 
-    .line 293
     const-string p1, "https://firebaseremoteconfigrealtime.googleapis.com/v1/projects/%s/namespaces/%s:streamFetchInvalidations"
 
     invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -596,7 +541,6 @@
 .method private getUrl()Ljava/net/URL;
     .registers 3
 
-    .line 302
     :try_start_0
     new-instance v0, Ljava/net/URL;
 
@@ -612,7 +556,6 @@
 
     goto :goto_14
 
-    .line 304
     :catch_c
     const-string v0, "FirebaseRemoteConfig"
 
@@ -669,7 +612,6 @@
 
     monitor-enter p0
 
-    .line 371
     :try_start_1
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->canMakeHttpStreamConnection()Z
 
@@ -679,12 +621,10 @@
 
     if-nez v0, :cond_9
 
-    .line 372
     monitor-exit p0
 
     return-void
 
-    .line 375
     :cond_9
     :try_start_9
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->httpRetriesRemaining:I
@@ -693,10 +633,8 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 376
     iput v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->httpRetriesRemaining:I
 
-    .line 377
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v1, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$1;
@@ -709,13 +647,11 @@
 
     goto :goto_2e
 
-    .line 386
     :cond_1e
     iget-boolean p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isInBackground:Z
 
     if-nez p1, :cond_2e
 
-    .line 387
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p2, "Unable to connect to the server. Check your connection and try again."
@@ -728,7 +664,6 @@
     :try_end_2e
     .catchall {:try_start_9 .. :try_end_2e} :catchall_30
 
-    .line 392
     :cond_2e
     :goto_2e
     monitor-exit p0
@@ -746,12 +681,10 @@
 .method private parseForbiddenErrorResponseMessage(Ljava/io/InputStream;)Ljava/lang/String;
     .registers 5
 
-    .line 445
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 448
     :try_start_5
     new-instance v1, Ljava/io/BufferedReader;
 
@@ -761,7 +694,6 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
 
-    .line 450
     :goto_f
     invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -769,14 +701,12 @@
 
     if-eqz p1, :cond_22
 
-    .line 451
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     :try_end_18
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_18} :catch_19
 
     goto :goto_f
 
-    .line 455
     :catch_19
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -784,12 +714,10 @@
 
     if-nez p1, :cond_22
 
-    .line 456
     const-string p1, "Unable to connect to the server, access is forbidden. HTTP status code: 403"
 
     return-object p1
 
-    .line 460
     :cond_22
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -803,7 +731,6 @@
 
     monitor-enter p0
 
-    .line 225
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->listeners:Ljava/util/Set;
 
@@ -824,14 +751,12 @@
 
     check-cast v1, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;
 
-    .line 226
     invoke-interface {v1, p1}, Lcom/google/firebase/remoteconfig/ConfigUpdateListener;->onError(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
     :try_end_16
     .catchall {:try_start_1 .. :try_end_16} :catchall_19
 
     goto :goto_7
 
-    .line 228
     :cond_17
     monitor-exit p0
 
@@ -852,13 +777,11 @@
 
     const/16 v0, 0x8
 
-    .line 399
     :try_start_3
     iput v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->httpRetriesRemaining:I
     :try_end_5
     .catchall {:try_start_3 .. :try_end_5} :catchall_7
 
-    .line 400
     monitor-exit p0
 
     return-void
@@ -874,12 +797,10 @@
 .method private setCommonRequestHeaders(Ljava/net/HttpURLConnection;Ljava/lang/String;)V
     .registers 4
 
-    .line 177
     const-string v0, "X-Goog-Firebase-Installations-Auth"
 
     invoke-virtual {p1, v0, p2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 180
     iget-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseApp:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {p2}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
@@ -894,7 +815,6 @@
 
     invoke-virtual {p1, v0, p2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 183
     iget-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -905,7 +825,6 @@
 
     invoke-virtual {p1, v0, p2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 184
     const-string p2, "X-Android-Cert"
 
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->getFingerprintHashForPackage()Ljava/lang/String;
@@ -914,28 +833,24 @@
 
     invoke-virtual {p1, p2, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 187
     const-string p2, "X-Google-GFE-Can-Retry"
 
     const-string v0, "yes"
 
     invoke-virtual {p1, p2, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 190
     const-string p2, "X-Accept-Response-Streaming"
 
     const-string v0, "true"
 
     invoke-virtual {p1, p2, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 193
     const-string p2, "Content-Type"
 
     const-string v0, "application/json"
 
     invoke-virtual {p1, p2, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 194
     const-string p2, "Accept"
 
     invoke-virtual {p1, p2, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
@@ -948,13 +863,11 @@
 
     monitor-enter p0
 
-    .line 403
     :try_start_1
     iput-boolean p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isHttpConnectionRunning:Z
     :try_end_3
     .catchall {:try_start_1 .. :try_end_3} :catchall_5
 
-    .line 404
     monitor-exit p0
 
     return-void
@@ -970,7 +883,6 @@
 .method private updateBackoffMetadataWithLastFailedStreamConnectionTime(Ljava/util/Date;)V
     .registers 8
 
-    .line 251
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
@@ -983,15 +895,12 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 255
     invoke-direct {p0, v0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->getRandomizedBackoffDurationInMillis(I)J
 
     move-result-wide v1
 
-    .line 256
     new-instance v3, Ljava/util/Date;
 
-    .line 257
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
     move-result-wide v4
@@ -1000,7 +909,6 @@
 
     invoke-direct {v3, v4, v5}, Ljava/util/Date;-><init>(J)V
 
-    .line 259
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-virtual {p1, v0, v3}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->setRealtimeBackoffMetadata(ILjava/util/Date;)V
@@ -1013,7 +921,6 @@
 .method public beginRealtimeHttpStream()V
     .registers 5
 
-    .line 472
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->canMakeHttpStreamConnection()Z
 
     move-result v0
@@ -1022,16 +929,13 @@
 
     return-void
 
-    .line 476
     :cond_7
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
-    .line 477
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
 
     move-result-object v0
 
-    .line 478
     new-instance v1, Ljava/util/Date;
 
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->clock:Lcom/google/android/gms/common/util/Clock;
@@ -1042,7 +946,6 @@
 
     invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
 
-    .line 479
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;->getBackoffEndTime()Ljava/util/Date;
 
     move-result-object v0
@@ -1053,12 +956,10 @@
 
     if-eqz v0, :cond_26
 
-    .line 480
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->retryHttpConnectionWhenBackoffEnds()V
 
     return-void
 
-    .line 485
     :cond_26
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->createRealtimeConnection()Lcom/google/android/gms/tasks/Task;
 
@@ -1066,7 +967,6 @@
 
     const/4 v1, 0x1
 
-    .line 487
     new-array v1, v1, [Lcom/google/android/gms/tasks/Task;
 
     const/4 v2, 0x0
@@ -1083,7 +983,6 @@
 
     invoke-direct {v3, p0, v0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$$ExternalSyntheticLambda1;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;Lcom/google/android/gms/tasks/Task;)V
 
-    .line 488
     invoke-virtual {v1, v2, v3}, Lcom/google/android/gms/tasks/Task;->continueWith(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/Continuation;)Lcom/google/android/gms/tasks/Task;
 
     return-void
@@ -1094,10 +993,8 @@
 
     if-eqz p1, :cond_19
 
-    .line 566
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 571
     :try_start_5
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -1105,14 +1002,12 @@
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    .line 572
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v0
 
     if-eqz v0, :cond_19
 
-    .line 573
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object p1
@@ -1137,7 +1032,6 @@
         }
     .end annotation
 
-    .line 314
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
     const/4 v1, 0x0
@@ -1146,7 +1040,6 @@
 
     move-result-object v0
 
-    .line 316
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
     invoke-interface {v2}, Lcom/google/firebase/installations/FirebaseInstallationsApi;->getId()Lcom/google/android/gms/tasks/Task;
@@ -1155,7 +1048,6 @@
 
     const/4 v3, 0x2
 
-    .line 318
     new-array v3, v3, [Lcom/google/android/gms/tasks/Task;
 
     aput-object v0, v3, v1
@@ -1174,7 +1066,6 @@
 
     invoke-direct {v4, p0, v0, v2}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$$ExternalSyntheticLambda0;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;Lcom/google/android/gms/tasks/Task;Lcom/google/android/gms/tasks/Task;)V
 
-    .line 319
     invoke-virtual {v1, v3, v4}, Lcom/google/android/gms/tasks/Task;->continueWithTask(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/Continuation;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -1185,7 +1076,6 @@
 .method public getBackoffEndTime()Ljava/util/Date;
     .registers 2
 
-    .line 239
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
@@ -1202,7 +1092,6 @@
 .method public getNumberOfFailedStreams()I
     .registers 2
 
-    .line 233
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
@@ -1224,7 +1113,6 @@
         }
     .end annotation
 
-    .line 491
     const-string p2, "Unable to connect to the server. Try again in a few minutes. HTTP status code: %d"
 
     const/16 v0, 0x193
@@ -1237,7 +1125,6 @@
 
     const/4 v4, 0x0
 
-    .line 496
     :try_start_9
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
@@ -1245,10 +1132,8 @@
 
     if-eqz v5, :cond_94
 
-    .line 499
     invoke-direct {p0, v2}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setIsHttpConnectionRunning(Z)V
 
-    .line 502
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p1
@@ -1258,7 +1143,6 @@
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_18} :catch_a3
     .catchall {:try_start_9 .. :try_end_18} :catchall_9e
 
-    .line 503
     :try_start_18
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -1271,41 +1155,33 @@
     .catch Ljava/io/IOException; {:try_start_18 .. :try_end_20} :catch_91
     .catchall {:try_start_18 .. :try_end_20} :catchall_8c
 
-    .line 506
     :try_start_20
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     if-ne v5, v1, :cond_34
 
-    .line 508
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->resetRetryCount()V
 
-    .line 509
     iget-object v7, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
     invoke-virtual {v7}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->resetRealtimeBackoff()V
 
-    .line 512
     invoke-virtual {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->startAutoFetch(Ljava/net/HttpURLConnection;)Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
 
     move-result-object v7
 
-    .line 513
     invoke-virtual {v7}, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;->listenForNotifications()V
     :try_end_34
     .catch Ljava/io/IOException; {:try_start_20 .. :try_end_34} :catch_8a
     .catchall {:try_start_20 .. :try_end_34} :catchall_103
 
-    .line 524
     :cond_34
     invoke-virtual {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->closeRealtimeHttpStream(Ljava/net/HttpURLConnection;)V
 
-    .line 525
     invoke-direct {p0, v3}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setIsHttpConnectionRunning(Z)V
 
     if-eqz v6, :cond_48
 
-    .line 528
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     invoke-direct {p0, v5}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isStatusCodeRetryable(I)Z
@@ -1328,48 +1204,40 @@
     :goto_49
     if-eqz v7, :cond_59
 
-    .line 530
     new-instance v8, Ljava/util/Date;
 
     iget-object v9, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->clock:Lcom/google/android/gms/common/util/Clock;
 
-    .line 531
     invoke-interface {v9}, Lcom/google/android/gms/common/util/Clock;->currentTimeMillis()J
 
     move-result-wide v9
 
     invoke-direct {v8, v9, v10}, Ljava/util/Date;-><init>(J)V
 
-    .line 530
     invoke-direct {p0, v8}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->updateBackoffMetadataWithLastFailedStreamConnectionTime(Ljava/util/Date;)V
 
     :cond_59
     if-nez v7, :cond_85
 
-    .line 537
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     if-ne v5, v1, :cond_61
 
     goto :goto_85
 
-    .line 540
     :cond_61
     new-array v1, v2, [Ljava/lang/Object;
 
     aput-object v6, v1, v3
 
-    .line 541
     invoke-static {p2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 547
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     if-ne v5, v0, :cond_76
 
-    .line 549
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object p1
@@ -1378,24 +1246,20 @@
 
     move-result-object p2
 
-    .line 551
     :cond_76
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;
 
-    .line 553
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     sget-object v0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException$Code;->CONFIG_UPDATE_STREAM_ERROR:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException$Code;
 
     invoke-direct {p1, v5, p2, v0}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;-><init>(ILjava/lang/String;Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException$Code;)V
 
-    .line 551
     :goto_80
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->propagateErrors(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
 
     goto/16 :goto_fe
 
-    .line 538
     :cond_85
     :goto_85
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->retryHttpConnectionWhenBackoffEnds()V
@@ -1423,7 +1287,6 @@
 
     goto :goto_a6
 
-    .line 497
     :cond_94
     :try_start_94
     new-instance v5, Ljava/io/IOException;
@@ -1457,7 +1320,6 @@
 
     move-object v6, p1
 
-    .line 519
     :goto_a6
     :try_start_a6
     const-string v7, "FirebaseRemoteConfig"
@@ -1468,15 +1330,12 @@
     :try_end_ad
     .catchall {:try_start_a6 .. :try_end_ad} :catchall_103
 
-    .line 524
     invoke-virtual {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->closeRealtimeHttpStream(Ljava/net/HttpURLConnection;)V
 
-    .line 525
     invoke-direct {p0, v3}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setIsHttpConnectionRunning(Z)V
 
     if-eqz v6, :cond_c2
 
-    .line 528
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
@@ -1501,25 +1360,21 @@
     :goto_c3
     if-eqz v5, :cond_d3
 
-    .line 530
     new-instance v7, Ljava/util/Date;
 
     iget-object v8, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->clock:Lcom/google/android/gms/common/util/Clock;
 
-    .line 531
     invoke-interface {v8}, Lcom/google/android/gms/common/util/Clock;->currentTimeMillis()J
 
     move-result-wide v8
 
     invoke-direct {v7, v8, v9}, Ljava/util/Date;-><init>(J)V
 
-    .line 530
     invoke-direct {p0, v7}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->updateBackoffMetadataWithLastFailedStreamConnectionTime(Ljava/util/Date;)V
 
     :cond_d3
     if-nez v5, :cond_85
 
-    .line 537
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
@@ -1528,25 +1383,21 @@
 
     goto :goto_85
 
-    .line 540
     :cond_dc
     new-array v1, v2, [Ljava/lang/Object;
 
     aput-object v6, v1, v3
 
-    .line 541
     invoke-static {p2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 547
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
     if-ne v1, v0, :cond_f2
 
-    .line 549
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object p1
@@ -1555,11 +1406,9 @@
 
     move-result-object p2
 
-    .line 551
     :cond_f2
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;
 
-    .line 553
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1570,7 +1419,6 @@
 
     goto :goto_80
 
-    .line 559
     :goto_fe
     invoke-static {v4}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
@@ -1581,16 +1429,13 @@
     :catchall_103
     move-exception v4
 
-    .line 524
     :goto_104
     invoke-virtual {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->closeRealtimeHttpStream(Ljava/net/HttpURLConnection;)V
 
-    .line 525
     invoke-direct {p0, v3}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setIsHttpConnectionRunning(Z)V
 
     if-eqz v6, :cond_119
 
-    .line 528
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
@@ -1615,49 +1460,41 @@
     :goto_11a
     if-eqz v5, :cond_12a
 
-    .line 530
     new-instance v7, Ljava/util/Date;
 
     iget-object v8, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->clock:Lcom/google/android/gms/common/util/Clock;
 
-    .line 531
     invoke-interface {v8}, Lcom/google/android/gms/common/util/Clock;->currentTimeMillis()J
 
     move-result-wide v8
 
     invoke-direct {v7, v8, v9}, Ljava/util/Date;-><init>(J)V
 
-    .line 530
     invoke-direct {p0, v7}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->updateBackoffMetadataWithLastFailedStreamConnectionTime(Ljava/util/Date;)V
 
     :cond_12a
     if-nez v5, :cond_157
 
-    .line 537
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
 
     if-eq v5, v1, :cond_157
 
-    .line 540
     new-array v1, v2, [Ljava/lang/Object;
 
     aput-object v6, v1, v3
 
-    .line 541
     invoke-static {p2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 547
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
     if-ne v1, v0, :cond_148
 
-    .line 549
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object p1
@@ -1666,11 +1503,9 @@
 
     move-result-object p2
 
-    .line 551
     :cond_148
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;
 
-    .line 553
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1679,16 +1514,13 @@
 
     invoke-direct {p1, v0, p2, v1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigServerException;-><init>(ILjava/lang/String;Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException$Code;)V
 
-    .line 551
     invoke-direct {p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->propagateErrors(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigException;)V
 
     goto :goto_15a
 
-    .line 538
     :cond_157
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->retryHttpConnectionWhenBackoffEnds()V
 
-    .line 557
     :goto_15a
     throw v4
 .end method
@@ -1701,33 +1533,28 @@
         }
     .end annotation
 
-    .line 322
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
     move-result p3
 
     if-nez p3, :cond_16
 
-    .line 323
     new-instance p2, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p3, "Firebase Installations failed to get installation auth token for config update listener connection."
 
-    .line 326
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object p1
 
     invoke-direct {p2, p3, p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 323
     invoke-static {p2}, Lcom/google/android/gms/tasks/Tasks;->forException(Ljava/lang/Exception;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 328
     :cond_16
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
@@ -1735,40 +1562,34 @@
 
     if-nez p3, :cond_2c
 
-    .line 329
     new-instance p1, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p3, "Firebase Installations failed to get installation ID for config update listener connection."
 
-    .line 332
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->getException()Ljava/lang/Exception;
 
     move-result-object p2
 
     invoke-direct {p1, p3, p2}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 329
     invoke-static {p1}, Lcom/google/android/gms/tasks/Tasks;->forException(Ljava/lang/Exception;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
     return-object p1
 
-    .line 337
     :cond_2c
     :try_start_2c
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->getUrl()Ljava/net/URL;
 
     move-result-object p3
 
-    .line 338
     invoke-virtual {p3}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object p3
 
     check-cast p3, Ljava/net/HttpURLConnection;
 
-    .line 340
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p1
@@ -1779,19 +1600,16 @@
 
     move-result-object p1
 
-    .line 341
     invoke-virtual {p2}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Ljava/lang/String;
 
-    .line 342
     invoke-virtual {p0, p3, p2, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setRequestParams(Ljava/net/HttpURLConnection;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_49
     .catch Ljava/io/IOException; {:try_start_2c .. :try_end_49} :catch_4e
 
-    .line 349
     invoke-static {p3}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -1801,7 +1619,6 @@
     :catch_4e
     move-exception p1
 
-    .line 344
     new-instance p2, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigClientException;
 
     const-string p3, "Failed to open HTTP stream connection"
@@ -1820,7 +1637,6 @@
 
     monitor-enter p0
 
-    .line 361
     :try_start_1
     new-instance v0, Ljava/util/Date;
 
@@ -1832,10 +1648,8 @@
 
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
-    .line 362
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->sharedPrefsClient:Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;
 
-    .line 365
     invoke-virtual {v1}, Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient;->getRealtimeBackoffMetadata()Lcom/google/firebase/remoteconfig/internal/ConfigSharedPrefsClient$RealtimeBackoffMetadata;
 
     move-result-object v1
@@ -1848,7 +1662,6 @@
 
     move-result-wide v1
 
-    .line 366
     invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
     move-result-wide v3
@@ -1857,17 +1670,14 @@
 
     const-wide/16 v3, 0x0
 
-    .line 363
     invoke-static {v3, v4, v1, v2}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v0
 
-    .line 367
     invoke-direct {p0, v0, v1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->makeRealtimeHttpConnection(J)V
     :try_end_28
     .catchall {:try_start_1 .. :try_end_28} :catchall_2a
 
-    .line 368
     monitor-exit p0
 
     return-void
@@ -1883,7 +1693,6 @@
 .method setRealtimeBackgroundState(Z)V
     .registers 2
 
-    .line 395
     iput-boolean p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->isInBackground:Z
 
     return-void
@@ -1897,15 +1706,12 @@
         }
     .end annotation
 
-    .line 215
     const-string v0, "POST"
 
     invoke-virtual {p1, v0}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 216
     invoke-direct {p0, p1, p3}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->setCommonRequestHeaders(Ljava/net/HttpURLConnection;Ljava/lang/String;)V
 
-    .line 217
     invoke-direct {p0, p2}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->createRequestBody(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p2
@@ -1920,7 +1726,6 @@
 
     move-result-object p2
 
-    .line 218
     new-instance p3, Ljava/io/BufferedOutputStream;
 
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
@@ -1929,13 +1734,10 @@
 
     invoke-direct {p3, p1}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 219
     invoke-virtual {p3, p2}, Ljava/io/OutputStream;->write([B)V
 
-    .line 220
     invoke-virtual {p3}, Ljava/io/OutputStream;->flush()V
 
-    .line 221
     invoke-virtual {p3}, Ljava/io/OutputStream;->close()V
 
     return-void
@@ -1946,13 +1748,11 @@
 
     monitor-enter p0
 
-    .line 412
     :try_start_1
     new-instance v5, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$2;
 
     invoke-direct {v5, p0}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient$2;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;)V
 
-    .line 426
     new-instance v7, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
 
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->configFetchHandler:Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;
@@ -1988,7 +1788,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 355
     invoke-direct {p0, v0, v1}, Lcom/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient;->makeRealtimeHttpConnection(J)V
 
     return-void

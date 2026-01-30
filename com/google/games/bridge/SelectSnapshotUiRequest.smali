@@ -52,26 +52,20 @@
 .method constructor <init>(Ljava/lang/String;ZZI)V
     .registers 6
 
-    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 29
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
     iput-object v0, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    .line 48
     iput-object p1, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->title:Ljava/lang/String;
 
-    .line 49
     iput-boolean p2, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->allowAddButton:Z
 
-    .line 50
     iput-boolean p3, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->allowDelete:Z
 
-    .line 51
     iput p4, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->maxSnapshots:I
 
     return-void
@@ -90,7 +84,6 @@
         }
     .end annotation
 
-    .line 55
     iget-object v0, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
@@ -111,7 +104,6 @@
 
     if-ne p2, p1, :cond_14
 
-    .line 84
     const-string p1, "com.google.android.gms.games.SNAPSHOT_METADATA"
 
     invoke-virtual {p3, p1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -131,7 +123,6 @@
 
     const/4 p1, 0x2
 
-    .line 86
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest;->setResult(I)V
 
     goto :goto_3f
@@ -143,12 +134,10 @@
 
     const/4 p1, -0x3
 
-    .line 88
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest;->setResult(I)V
 
     goto :goto_3f
 
-    .line 90
     :cond_24
     new-instance p3, Ljava/lang/StringBuilder;
 
@@ -170,7 +159,6 @@
 
     invoke-static {p3, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 91
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest;->setResult(I)V
 
     :cond_3f
@@ -181,17 +169,14 @@
 .method public process(Lcom/google/games/bridge/HelperFragment;)V
     .registers 8
 
-    .line 59
     invoke-virtual {p1}, Lcom/google/games/bridge/HelperFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 60
     invoke-static {v0}, Lcom/google/android/gms/games/PlayGames;->getSnapshotsClient(Landroid/app/Activity;)Lcom/google/android/gms/games/SnapshotsClient;
 
     move-result-object v1
 
-    .line 61
     iget-object v2, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->title:Ljava/lang/String;
 
     iget-boolean v3, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->allowAddButton:Z
@@ -200,7 +185,6 @@
 
     iget v5, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->maxSnapshots:I
 
-    .line 62
     invoke-interface {v1, v2, v3, v4, v5}, Lcom/google/android/gms/games/SnapshotsClient;->getSelectSnapshotIntent(Ljava/lang/String;ZZI)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v1
@@ -209,7 +193,6 @@
 
     invoke-direct {v2, p0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest$2;-><init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;Lcom/google/games/bridge/HelperFragment;)V
 
-    .line 63
     invoke-virtual {v1, v0, v2}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Landroid/app/Activity;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -218,7 +201,6 @@
 
     invoke-direct {v1, p0}, Lcom/google/games/bridge/SelectSnapshotUiRequest$1;-><init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;)V
 
-    .line 71
     invoke-virtual {p1, v0, v1}, Lcom/google/android/gms/tasks/Task;->addOnFailureListener(Landroid/app/Activity;Lcom/google/android/gms/tasks/OnFailureListener;)Lcom/google/android/gms/tasks/Task;
 
     return-void
@@ -227,12 +209,10 @@
 .method setFailure(Ljava/lang/Exception;)V
     .registers 3
 
-    .line 107
     iget-object v0, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setException(Ljava/lang/Exception;)V
 
-    .line 108
     invoke-static {p0}, Lcom/google/games/bridge/HelperFragment;->finishRequest(Lcom/google/games/bridge/HelperFragment$Request;)V
 
     return-void
@@ -243,7 +223,6 @@
 
     const/4 v0, 0x0
 
-    .line 103
     invoke-virtual {p0, p1, v0}, Lcom/google/games/bridge/SelectSnapshotUiRequest;->setResult(ILcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
 
     return-void
@@ -252,17 +231,14 @@
 .method setResult(ILcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
     .registers 4
 
-    .line 97
     new-instance v0, Lcom/google/games/bridge/SelectSnapshotUiRequest$Result;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/games/bridge/SelectSnapshotUiRequest$Result;-><init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;ILcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
 
-    .line 98
     iget-object p1, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest;->resultTaskSource:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
 
-    .line 99
     invoke-static {p0}, Lcom/google/games/bridge/HelperFragment;->finishRequest(Lcom/google/games/bridge/HelperFragment$Request;)V
 
     return-void

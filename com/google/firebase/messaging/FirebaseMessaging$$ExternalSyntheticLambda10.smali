@@ -14,7 +14,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/messaging/FirebaseMessaging;)V
     .registers 2
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda10;->f$0:Lcom/google/firebase/messaging/FirebaseMessaging;
@@ -27,7 +26,6 @@
 .method public final onSuccess(Ljava/lang/Object;)V
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/FirebaseMessaging$$ExternalSyntheticLambda10;->f$0:Lcom/google/firebase/messaging/FirebaseMessaging;
 
     check-cast p1, Ljava/lang/Void;

@@ -59,7 +59,6 @@
         }
     .end annotation
 
-    .line 42
     invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -77,7 +76,6 @@
 
     const/4 v1, 0x0
 
-    .line 129
     new-array v1, v1, [Lkotlinx/coroutines/Deferred;
 
     invoke-interface {p0, v1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -86,7 +84,6 @@
 
     check-cast p0, [Lkotlinx/coroutines/Deferred;
 
-    .line 42
     invoke-direct {v0, p0}, Lkotlinx/coroutines/AwaitAll;-><init>([Lkotlinx/coroutines/Deferred;)V
 
     invoke-virtual {v0, p1}, Lkotlinx/coroutines/AwaitAll;->await(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -113,7 +110,6 @@
         }
     .end annotation
 
-    .line 25
     array-length v0, p0
 
     if-nez v0, :cond_8
@@ -189,7 +185,6 @@
 
     move-result-object v1
 
-    .line 66
     iget v2, v0, Lkotlinx/coroutines/AwaitKt$joinAll$3;->label:I
 
     const/4 v3, 0x1
@@ -220,7 +215,6 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 132
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -239,7 +233,6 @@
 
     check-cast p1, Lkotlinx/coroutines/Job;
 
-    .line 66
     iput-object p0, v0, Lkotlinx/coroutines/AwaitKt$joinAll$3;->L$0:Ljava/lang/Object;
 
     iput v3, v0, Lkotlinx/coroutines/AwaitKt$joinAll$3;->label:I
@@ -252,7 +245,6 @@
 
     return-object v1
 
-    .line 133
     :cond_56
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -309,7 +301,6 @@
 
     move-result-object v1
 
-    .line 54
     iget v2, v0, Lkotlinx/coroutines/AwaitKt$joinAll$1;->label:I
 
     const/4 v3, 0x1
@@ -344,7 +335,6 @@
     :cond_3b
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 130
     array-length p1, p0
 
     const/4 v2, 0x0
@@ -360,7 +350,6 @@
 
     aget-object v4, p1, v2
 
-    .line 54
     iput-object p1, v0, Lkotlinx/coroutines/AwaitKt$joinAll$1;->L$0:Ljava/lang/Object;
 
     iput v2, v0, Lkotlinx/coroutines/AwaitKt$joinAll$1;->I$0:I
@@ -383,7 +372,6 @@
 
     goto :goto_43
 
-    .line 131
     :cond_58
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

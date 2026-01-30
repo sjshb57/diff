@@ -109,7 +109,6 @@
 
     move v2, p2
 
-    .line 28
     invoke-direct/range {v0 .. v6}, Lkotlin/random/XorWowRandom;-><init>(IIIIII)V
 
     return-void
@@ -118,25 +117,18 @@
 .method public constructor <init>(IIIIII)V
     .registers 7
 
-    .line 25
     invoke-direct {p0}, Lkotlin/random/Random;-><init>()V
 
-    .line 19
     iput p1, p0, Lkotlin/random/XorWowRandom;->x:I
 
-    .line 20
     iput p2, p0, Lkotlin/random/XorWowRandom;->y:I
 
-    .line 21
     iput p3, p0, Lkotlin/random/XorWowRandom;->z:I
 
-    .line 22
     iput p4, p0, Lkotlin/random/XorWowRandom;->w:I
 
-    .line 23
     iput p5, p0, Lkotlin/random/XorWowRandom;->v:I
 
-    .line 24
     iput p6, p0, Lkotlin/random/XorWowRandom;->addend:I
 
     or-int/2addr p1, p2
@@ -156,7 +148,6 @@
 
     if-ge p1, p2, :cond_20
 
-    .line 34
     invoke-virtual {p0}, Lkotlin/random/XorWowRandom;->nextInt()I
 
     add-int/lit8 p1, p1, 0x1
@@ -166,7 +157,6 @@
     :cond_20
     return-void
 
-    .line 31
     :cond_21
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -186,7 +176,6 @@
 .method public nextBits(I)I
     .registers 3
 
-    .line 54
     invoke-virtual {p0}, Lkotlin/random/XorWowRandom;->nextInt()I
 
     move-result v0
@@ -201,32 +190,26 @@
 .method public nextInt()I
     .registers 4
 
-    .line 40
     iget v0, p0, Lkotlin/random/XorWowRandom;->x:I
 
     ushr-int/lit8 v1, v0, 0x2
 
     xor-int/2addr v0, v1
 
-    .line 42
     iget v1, p0, Lkotlin/random/XorWowRandom;->y:I
 
     iput v1, p0, Lkotlin/random/XorWowRandom;->x:I
 
-    .line 43
     iget v1, p0, Lkotlin/random/XorWowRandom;->z:I
 
     iput v1, p0, Lkotlin/random/XorWowRandom;->y:I
 
-    .line 44
     iget v1, p0, Lkotlin/random/XorWowRandom;->w:I
 
     iput v1, p0, Lkotlin/random/XorWowRandom;->z:I
 
-    .line 45
     iget v1, p0, Lkotlin/random/XorWowRandom;->v:I
 
-    .line 46
     iput v1, p0, Lkotlin/random/XorWowRandom;->w:I
 
     shl-int/lit8 v2, v0, 0x1
@@ -239,10 +222,8 @@
 
     xor-int/2addr v0, v1
 
-    .line 48
     iput v0, p0, Lkotlin/random/XorWowRandom;->v:I
 
-    .line 49
     iget v1, p0, Lkotlin/random/XorWowRandom;->addend:I
 
     const v2, 0x587c5

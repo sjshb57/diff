@@ -49,12 +49,10 @@
 .method public constructor <init>(JJJ)V
     .registers 9
 
-    .line 62
     invoke-direct {p0}, Lkotlin/collections/LongIterator;-><init>()V
 
     iput-wide p5, p0, Lkotlin/ranges/LongProgressionIterator;->step:J
 
-    .line 63
     iput-wide p3, p0, Lkotlin/ranges/LongProgressionIterator;->finalElement:J
 
     const-wide/16 v0, 0x0
@@ -83,7 +81,6 @@
     :cond_19
     move p6, v0
 
-    .line 64
     :goto_1a
     iput-boolean p6, p0, Lkotlin/ranges/LongProgressionIterator;->hasNext:Z
 
@@ -94,7 +91,6 @@
     :cond_1f
     move-wide p1, p3
 
-    .line 65
     :goto_20
     iput-wide p1, p0, Lkotlin/ranges/LongProgressionIterator;->next:J
 
@@ -106,7 +102,6 @@
 .method public final getStep()J
     .registers 3
 
-    .line 62
     iget-wide v0, p0, Lkotlin/ranges/LongProgressionIterator;->step:J
 
     return-wide v0
@@ -115,7 +110,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 67
     iget-boolean v0, p0, Lkotlin/ranges/LongProgressionIterator;->hasNext:Z
 
     return v0
@@ -124,29 +118,24 @@
 .method public nextLong()J
     .registers 5
 
-    .line 70
     iget-wide v0, p0, Lkotlin/ranges/LongProgressionIterator;->next:J
 
-    .line 71
     iget-wide v2, p0, Lkotlin/ranges/LongProgressionIterator;->finalElement:J
 
     cmp-long v2, v0, v2
 
     if-nez v2, :cond_16
 
-    .line 72
     iget-boolean v2, p0, Lkotlin/ranges/LongProgressionIterator;->hasNext:Z
 
     if-eqz v2, :cond_10
 
     const/4 v2, 0x0
 
-    .line 73
     iput-boolean v2, p0, Lkotlin/ranges/LongProgressionIterator;->hasNext:Z
 
     goto :goto_1b
 
-    .line 72
     :cond_10
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -154,7 +143,6 @@
 
     throw v0
 
-    .line 76
     :cond_16
     iget-wide v2, p0, Lkotlin/ranges/LongProgressionIterator;->step:J
 

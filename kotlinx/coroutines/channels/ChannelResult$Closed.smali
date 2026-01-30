@@ -51,7 +51,6 @@
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 464
     invoke-direct {p0}, Lkotlinx/coroutines/channels/ChannelResult$Failed;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;->cause:Ljava/lang/Throwable;
@@ -64,7 +63,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 465
     instance-of v0, p1, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     if-eqz v0, :cond_12
@@ -95,7 +93,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 466
     iget-object v0, p0, Lkotlinx/coroutines/channels/ChannelResult$Closed;->cause:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_9
@@ -116,7 +113,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 467
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Closed("

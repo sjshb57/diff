@@ -60,7 +60,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 72
     instance-of v0, p0, Ljava/io/BufferedInputStream;
 
     if-eqz v0, :cond_c
@@ -87,7 +86,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 88
     instance-of v0, p0, Ljava/io/BufferedOutputStream;
 
     if-eqz v0, :cond_c
@@ -116,7 +114,6 @@
 
     const/16 p1, 0x2000
 
-    .line 71
     :cond_6
     const/4 p2, 0x0
 
@@ -124,7 +121,6 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 72
     instance-of p2, p0, Ljava/io/BufferedInputStream;
 
     if-eqz p2, :cond_13
@@ -153,13 +149,11 @@
 
     const/16 p1, 0x2000
 
-    .line 87
     :cond_6
     const-string p2, "<this>"
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 88
     instance-of p2, p0, Ljava/io/BufferedOutputStream;
 
     if-eqz p2, :cond_12
@@ -194,7 +188,6 @@
 
     new-instance v0, Ljava/io/InputStreamReader;
 
-    .line 80
     invoke-direct {v0, p0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
     check-cast v0, Ljava/io/Reader;
@@ -227,7 +220,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 80
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
@@ -279,7 +271,6 @@
 
     new-instance v0, Ljava/io/OutputStreamWriter;
 
-    .line 96
     invoke-direct {v0, p0, p1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
 
     check-cast v0, Ljava/io/Writer;
@@ -312,7 +303,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 96
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
@@ -362,7 +352,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 50
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
@@ -385,7 +374,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 50
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
@@ -423,10 +411,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
     new-array p2, p2, [B
 
-    .line 106
     invoke-virtual {p0, p2}, Ljava/io/InputStream;->read([B)I
 
     move-result v0
@@ -438,14 +424,12 @@
 
     const/4 v3, 0x0
 
-    .line 108
     invoke-virtual {p1, p2, v3, v0}, Ljava/io/OutputStream;->write([BII)V
 
     int-to-long v3, v0
 
     add-long/2addr v1, v3
 
-    .line 110
     invoke-virtual {p0, p2}, Ljava/io/InputStream;->read([B)I
 
     move-result v0
@@ -465,7 +449,6 @@
 
     const/16 p2, 0x2000
 
-    .line 103
     :cond_6
     invoke-static {p0, p1, p2}, Lkotlin/io/ByteStreamsKt;->copyTo(Ljava/io/InputStream;Ljava/io/OutputStream;I)J
 
@@ -481,7 +464,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 56
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v0, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
@@ -496,7 +478,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v0, p0, p1, p2}, Ljava/io/ByteArrayInputStream;-><init>([BII)V
@@ -511,7 +492,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 16
     new-instance v0, Lkotlin/io/ByteStreamsKt$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/io/ByteStreamsKt$iterator$1;-><init>(Ljava/io/BufferedInputStream;)V
@@ -528,7 +508,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 135
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     const/16 v1, 0x2000
@@ -543,7 +522,6 @@
 
     invoke-direct {v0, v1}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 136
     move-object v1, v0
 
     check-cast v1, Ljava/io/OutputStream;
@@ -556,7 +534,6 @@
 
     invoke-static {p0, v1, v4, v2, v3}, Lkotlin/io/ByteStreamsKt;->copyTo$default(Ljava/io/InputStream;Ljava/io/OutputStream;IILjava/lang/Object;)J
 
-    .line 137
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -587,7 +564,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 123
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {p0}, Ljava/io/InputStream;->available()I
@@ -600,7 +576,6 @@
 
     invoke-direct {v0, p1}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 124
     move-object p1, v0
 
     check-cast p1, Ljava/io/OutputStream;
@@ -613,7 +588,6 @@
 
     invoke-static {p0, p1, v3, v1, v2}, Lkotlin/io/ByteStreamsKt;->copyTo$default(Ljava/io/InputStream;Ljava/io/OutputStream;IILjava/lang/Object;)J
 
-    .line 125
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -634,7 +608,6 @@
 
     const/16 p1, 0x2000
 
-    .line 122
     :cond_6
     invoke-static {p0, p1}, Lkotlin/io/ByteStreamsKt;->readBytes(Ljava/io/InputStream;I)[B
 
@@ -654,7 +627,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
     new-instance v0, Ljava/io/InputStreamReader;
 
     invoke-direct {v0, p0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
@@ -669,7 +641,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 76
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
@@ -699,7 +670,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
     new-instance v0, Ljava/io/OutputStreamWriter;
 
     invoke-direct {v0, p0, p1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
@@ -714,7 +684,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 92
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6

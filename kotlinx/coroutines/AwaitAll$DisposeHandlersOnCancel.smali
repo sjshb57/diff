@@ -81,7 +81,6 @@
         }
     .end annotation
 
-    .line 94
     iput-object p1, p0, Lkotlinx/coroutines/AwaitAll$DisposeHandlersOnCancel;->this$0:Lkotlinx/coroutines/AwaitAll;
 
     invoke-direct {p0}, Lkotlinx/coroutines/CancelHandler;-><init>()V
@@ -96,10 +95,8 @@
 .method public final disposeAll()V
     .registers 5
 
-    .line 96
     iget-object v0, p0, Lkotlinx/coroutines/AwaitAll$DisposeHandlersOnCancel;->nodes:[Lkotlinx/coroutines/AwaitAll$AwaitAllNode;
 
-    .line 128
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -109,7 +106,6 @@
 
     aget-object v3, v0, v2
 
-    .line 96
     invoke-virtual {v3}, Lkotlinx/coroutines/AwaitAll$AwaitAllNode;->getHandle()Lkotlinx/coroutines/DisposableHandle;
 
     move-result-object v3
@@ -127,7 +123,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 94
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/AwaitAll$DisposeHandlersOnCancel;->invoke(Ljava/lang/Throwable;)V
@@ -140,7 +135,6 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .registers 2
 
-    .line 99
     invoke-virtual {p0}, Lkotlinx/coroutines/AwaitAll$DisposeHandlersOnCancel;->disposeAll()V
 
     return-void
@@ -149,7 +143,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 100
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DisposeHandlersOnCancel["

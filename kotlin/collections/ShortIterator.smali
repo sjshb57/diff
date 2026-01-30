@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +56,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 27
     invoke-virtual {p0}, Lkotlin/collections/ShortIterator;->nextShort()S
 
     move-result v0
@@ -72,7 +70,6 @@
 .method public final next()Ljava/lang/Short;
     .registers 2
 
-    .line 28
     invoke-virtual {p0}, Lkotlin/collections/ShortIterator;->nextShort()S
 
     move-result v0

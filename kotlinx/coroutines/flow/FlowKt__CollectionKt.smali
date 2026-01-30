@@ -91,7 +91,6 @@
 
     move-result-object v1
 
-    .line 25
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__CollectionKt$toCollection$1;->label:I
 
     const/4 v3, 0x1
@@ -122,7 +121,6 @@
     :cond_37
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 26
     new-instance p2, Lkotlinx/coroutines/flow/FlowKt__CollectionKt$toCollection$2;
 
     invoke-direct {p2, p1}, Lkotlinx/coroutines/flow/FlowKt__CollectionKt$toCollection$2;-><init>(Ljava/util/Collection;)V
@@ -165,7 +163,6 @@
         }
     .end annotation
 
-    .line 15
     check-cast p1, Ljava/util/Collection;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt;->toCollection(Lkotlinx/coroutines/flow/Flow;Ljava/util/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -182,7 +179,6 @@
 
     if-eqz p3, :cond_b
 
-    .line 15
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -216,7 +212,6 @@
         }
     .end annotation
 
-    .line 20
     check-cast p1, Ljava/util/Collection;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/flow/FlowKt;->toCollection(Lkotlinx/coroutines/flow/Flow;Ljava/util/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -233,7 +228,6 @@
 
     if-eqz p3, :cond_b
 
-    .line 20
     new-instance p1, Ljava/util/LinkedHashSet;
 
     invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V

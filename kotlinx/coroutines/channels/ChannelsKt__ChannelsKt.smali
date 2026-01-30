@@ -47,7 +47,6 @@
         .end subannotation
     .end annotation
 
-    .line 54
     invoke-interface {p0, p1}, Lkotlinx/coroutines/channels/SendChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     return-void
 
-    .line 57
     :cond_b
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__ChannelsKt$sendBlocking$1;
 
@@ -90,19 +88,16 @@
         }
     .end annotation
 
-    .line 37
     invoke-interface {p0, p1}, Lkotlinx/coroutines/channels/SendChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 66
     instance-of v1, v0, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v1, :cond_13
 
     check-cast v0, Lkotlin/Unit;
 
-    .line 37
     sget-object p0, Lkotlinx/coroutines/channels/ChannelResult;->Companion:Lkotlinx/coroutines/channels/ChannelResult$Companion;
 
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -113,7 +108,6 @@
 
     return-object p0
 
-    .line 38
     :cond_13
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__ChannelsKt$trySendBlocking$2;
 

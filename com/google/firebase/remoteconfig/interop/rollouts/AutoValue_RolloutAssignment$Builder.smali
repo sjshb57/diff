@@ -32,7 +32,6 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 110
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;-><init>()V
 
     return-void
@@ -43,7 +42,6 @@
 .method public build()Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment;
     .registers 11
 
-    .line 152
     iget-byte v0, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->set$0:B
 
     const/4 v1, 0x1
@@ -68,7 +66,6 @@
 
     goto :goto_28
 
-    .line 175
     :cond_16
     new-instance v0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment;
 
@@ -90,57 +87,47 @@
 
     return-object v0
 
-    .line 157
     :cond_28
     :goto_28
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 158
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->rolloutId:Ljava/lang/String;
 
     if-nez v2, :cond_36
 
-    .line 159
     const-string v2, " rolloutId"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 161
     :cond_36
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->variantId:Ljava/lang/String;
 
     if-nez v2, :cond_3f
 
-    .line 162
     const-string v2, " variantId"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 164
     :cond_3f
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->parameterKey:Ljava/lang/String;
 
     if-nez v2, :cond_48
 
-    .line 165
     const-string v2, " parameterKey"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 167
     :cond_48
     iget-object v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->parameterValue:Ljava/lang/String;
 
     if-nez v2, :cond_51
 
-    .line 168
     const-string v2, " parameterValue"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 170
     :cond_51
     iget-byte v2, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->set$0:B
 
@@ -148,12 +135,10 @@
 
     if-nez v1, :cond_5b
 
-    .line 171
     const-string v1, " templateVersion"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 173
     :cond_5b
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -179,12 +164,10 @@
 
     if-eqz p1, :cond_5
 
-    .line 133
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->parameterKey:Ljava/lang/String;
 
     return-object p0
 
-    .line 131
     :cond_5
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -200,12 +183,10 @@
 
     if-eqz p1, :cond_5
 
-    .line 141
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->parameterValue:Ljava/lang/String;
 
     return-object p0
 
-    .line 139
     :cond_5
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -221,12 +202,10 @@
 
     if-eqz p1, :cond_5
 
-    .line 117
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->rolloutId:Ljava/lang/String;
 
     return-object p0
 
-    .line 115
     :cond_5
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -240,10 +219,8 @@
 .method public setTemplateVersion(J)Lcom/google/firebase/remoteconfig/interop/rollouts/RolloutAssignment$Builder;
     .registers 3
 
-    .line 146
     iput-wide p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->templateVersion:J
 
-    .line 147
     iget-byte p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->set$0:B
 
     or-int/lit8 p1, p1, 0x1
@@ -260,12 +237,10 @@
 
     if-eqz p1, :cond_5
 
-    .line 125
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/interop/rollouts/AutoValue_RolloutAssignment$Builder;->variantId:Ljava/lang/String;
 
     return-object p0
 
-    .line 123
     :cond_5
     new-instance p1, Ljava/lang/NullPointerException;
 

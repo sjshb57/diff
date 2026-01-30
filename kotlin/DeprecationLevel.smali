@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 86
     new-instance v0, Lkotlin/DeprecationLevel;
 
     const-string v1, "WARNING"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
 
-    .line 88
     new-instance v0, Lkotlin/DeprecationLevel;
 
     const-string v1, "ERROR"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/DeprecationLevel;->ERROR:Lkotlin/DeprecationLevel;
 
-    .line 90
     new-instance v0, Lkotlin/DeprecationLevel;
 
     const-string v1, "HIDDEN"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 84
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -218,7 +218,6 @@
 
     move-result-object v0
 
-    .line 250
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransform$6;->label:I
 
     const/4 v2, 0x1
@@ -247,7 +246,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 251
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransform$6;->$flows:[Lkotlinx/coroutines/flow/Flow;
 
     invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->needClassReification()V
@@ -286,7 +284,6 @@
 
     return-object v0
 
-    .line 252
     :cond_45
     :goto_45
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -301,7 +298,6 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 251
     iget-object v0, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combineTransform$6;->$flows:[Lkotlinx/coroutines/flow/Flow;
 
     invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->needClassReification()V
@@ -340,7 +336,6 @@
 
     invoke-static {p1}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 252
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

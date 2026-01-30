@@ -201,7 +201,6 @@
 
     move-result-object v0
 
-    .line 70
     iget v1, p0, Lkotlinx/coroutines/channels/TickerChannelsKt$ticker$3;->label:I
 
     const/4 v2, 0x2
@@ -235,7 +234,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 71
     iget-object v1, p0, Lkotlinx/coroutines/channels/TickerChannelsKt$ticker$3;->$mode:Lkotlinx/coroutines/channels/TickerMode;
 
     sget-object v4, Lkotlinx/coroutines/channels/TickerChannelsKt$ticker$3$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -252,7 +250,6 @@
 
     goto :goto_5a
 
-    .line 73
     :cond_30
     iget-wide v4, p0, Lkotlinx/coroutines/channels/TickerChannelsKt$ticker$3;->$delayMillis:J
 
@@ -276,7 +273,6 @@
 
     return-object v0
 
-    .line 72
     :cond_44
     iget-wide v1, p0, Lkotlinx/coroutines/channels/TickerChannelsKt$ticker$3;->$delayMillis:J
 
@@ -304,7 +300,6 @@
 
     return-object v0
 
-    .line 75
     :cond_5a
     :goto_5a
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

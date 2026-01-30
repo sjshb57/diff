@@ -49,7 +49,6 @@
 
     sput-object v0, Lkotlinx/coroutines/internal/ClassValueCtorCache;->INSTANCE:Lkotlinx/coroutines/internal/ClassValueCtorCache;
 
-    .line 107
     new-instance v0, Lkotlinx/coroutines/internal/ClassValueCtorCache$cache$1;
 
     invoke-direct {v0}, Lkotlinx/coroutines/internal/ClassValueCtorCache$cache$1;-><init>()V
@@ -62,7 +61,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 106
     invoke-direct {p0}, Lkotlinx/coroutines/internal/CtorCache;-><init>()V
 
     return-void
@@ -86,7 +84,6 @@
         }
     .end annotation
 
-    .line 114
     sget-object v0, Lkotlinx/coroutines/internal/ClassValueCtorCache;->cache:Lkotlinx/coroutines/internal/ClassValueCtorCache$cache$1;
 
     invoke-virtual {v0, p1}, Lkotlinx/coroutines/internal/ClassValueCtorCache$cache$1;->get(Ljava/lang/Class;)Ljava/lang/Object;

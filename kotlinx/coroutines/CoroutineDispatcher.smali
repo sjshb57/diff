@@ -79,7 +79,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 32
     sget-object v0, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -97,7 +96,6 @@
 .method public dispatchYield(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .registers 3
 
-    .line 150
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/CoroutineDispatcher;->dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
 
     return-void
@@ -115,7 +113,6 @@
         }
     .end annotation
 
-    .line 31
     invoke-static {p0, p1}, Lkotlin/coroutines/ContinuationInterceptor$DefaultImpls;->get(Lkotlin/coroutines/ContinuationInterceptor;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
 
     move-result-object p1
@@ -137,7 +134,6 @@
         }
     .end annotation
 
-    .line 159
     new-instance v0, Lkotlinx/coroutines/internal/DispatchedContinuation;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/internal/DispatchedContinuation;-><init>(Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/coroutines/Continuation;)V
@@ -158,10 +154,8 @@
 .method public limitedParallelism(I)Lkotlinx/coroutines/CoroutineDispatcher;
     .registers 3
 
-    .line 106
     invoke-static {p1}, Lkotlinx/coroutines/internal/LimitedDispatcherKt;->checkParallelism(I)V
 
-    .line 107
     new-instance v0, Lkotlinx/coroutines/internal/LimitedDispatcher;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/internal/LimitedDispatcher;-><init>(Lkotlinx/coroutines/CoroutineDispatcher;I)V
@@ -182,7 +176,6 @@
         }
     .end annotation
 
-    .line 31
     invoke-static {p0, p1}, Lkotlin/coroutines/ContinuationInterceptor$DefaultImpls;->minusKey(Lkotlin/coroutines/ContinuationInterceptor;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -210,14 +203,12 @@
         }
     .end annotation
 
-    .line 166
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lkotlinx/coroutines/internal/DispatchedContinuation;
 
-    .line 167
     invoke-virtual {p1}, Lkotlinx/coroutines/internal/DispatchedContinuation;->release()V
 
     return-void
@@ -226,7 +217,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 185
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

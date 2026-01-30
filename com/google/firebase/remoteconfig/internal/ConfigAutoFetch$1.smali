@@ -34,7 +34,6 @@
         }
     .end annotation
 
-    .line 204
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$1;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
 
     iput p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$1;->val$remainingAttempts:I
@@ -51,7 +50,6 @@
 .method public run()V
     .registers 5
 
-    .line 207
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$1;->this$0:Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch;
 
     iget v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigAutoFetch$1;->val$remainingAttempts:I

@@ -42,14 +42,12 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean v0, p0, Lcom/onevcat/uniwebview/p1;->a:Z
 
-    .line 2
     iget-object p1, p1, La/v;->n:La/x;
 
     if-eqz v0, :cond_f
@@ -64,7 +62,6 @@
     :goto_11
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 3
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

@@ -49,7 +49,6 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 3
 
-    .line 1
     sget-object v0, La/o;->i:La/o$a;
 
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
@@ -58,7 +57,6 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     const-string v1, "activity"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -77,7 +75,6 @@
     :catch_15
     const/4 v0, 0x0
 
-    .line 3
     :goto_16
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

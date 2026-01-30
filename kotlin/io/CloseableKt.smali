@@ -40,12 +40,10 @@
 
     if-nez p1, :cond_8
 
-    .line 56
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     goto :goto_10
 
-    .line 59
     :cond_8
     :try_start_8
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
@@ -57,7 +55,6 @@
     :catchall_c
     move-exception p0
 
-    .line 61
     invoke-static {p1, p0}, Lkotlin/ExceptionsKt;->addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     :cond_10
@@ -87,7 +84,6 @@
 
     const/4 v1, 0x1
 
-    .line 27
     :try_start_7
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -97,7 +93,6 @@
 
     invoke-static {v1}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 33
     invoke-static {v1, v1, v0}, Lkotlin/internal/PlatformImplementationsKt;->apiVersionIsAtLeast(III)Z
 
     move-result v0
@@ -113,7 +108,6 @@
     :cond_19
     if-eqz p0, :cond_1e
 
-    .line 35
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     :cond_1e
@@ -125,7 +119,6 @@
     :catchall_22
     move-exception p1
 
-    .line 30
     :try_start_23
     throw p1
     :try_end_24
@@ -134,10 +127,8 @@
     :catchall_24
     move-exception v2
 
-    .line 32
     invoke-static {v1}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 33
     invoke-static {v1, v1, v0}, Lkotlin/internal/PlatformImplementationsKt;->apiVersionIsAtLeast(III)Z
 
     move-result v0
@@ -146,7 +137,6 @@
 
     if-eqz p0, :cond_37
 
-    .line 38
     :try_start_30
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_33
@@ -154,11 +144,9 @@
 
     goto :goto_37
 
-    .line 33
     :cond_34
     invoke-static {p0, p1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    .line 39
     :catchall_37
     :cond_37
     :goto_37

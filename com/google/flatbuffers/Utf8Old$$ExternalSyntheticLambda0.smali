@@ -10,7 +10,6 @@
 .method public synthetic constructor <init>()V
     .registers 1
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public final get()Ljava/lang/Object;
     .registers 2
 
-    .line 0
     invoke-static {}, Lcom/google/flatbuffers/Utf8Old;->lambda$static$0()Lcom/google/flatbuffers/Utf8Old$Cache;
 
     move-result-object v0

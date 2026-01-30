@@ -104,7 +104,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     iput-object p1, p0, Lkotlin/enums/EnumEntriesList;->entriesProvider:Lkotlin/jvm/functions/Function0;
@@ -120,14 +119,12 @@
         }
     .end annotation
 
-    .line 84
     iget-object v0, p0, Lkotlin/enums/EnumEntriesList;->_entries:[Ljava/lang/Enum;
 
     if-eqz v0, :cond_5
 
     return-object v0
 
-    .line 86
     :cond_5
     iget-object v0, p0, Lkotlin/enums/EnumEntriesList;->entriesProvider:Lkotlin/jvm/functions/Function0;
 
@@ -137,7 +134,6 @@
 
     check-cast v0, [Ljava/lang/Enum;
 
-    .line 87
     iput-object v0, p0, Lkotlin/enums/EnumEntriesList;->_entries:[Ljava/lang/Enum;
 
     return-object v0
@@ -146,7 +142,6 @@
 .method private final writeReplace()Ljava/lang/Object;
     .registers 3
 
-    .line 124
     new-instance v0, Lkotlin/enums/EnumEntriesSerializationProxy;
 
     invoke-direct {p0}, Lkotlin/enums/EnumEntriesList;->getEntries()[Ljava/lang/Enum;
@@ -172,7 +167,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 107
     invoke-direct {p0}, Lkotlin/enums/EnumEntriesList;->getEntries()[Ljava/lang/Enum;
 
     move-result-object v0
@@ -203,7 +197,6 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 72
     instance-of v0, p1, Ljava/lang/Enum;
 
     if-nez v0, :cond_6
@@ -230,19 +223,16 @@
         }
     .end annotation
 
-    .line 95
     invoke-direct {p0}, Lkotlin/enums/EnumEntriesList;->getEntries()[Ljava/lang/Enum;
 
     move-result-object v0
 
-    .line 96
     sget-object v1, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     array-length v2, v0
 
     invoke-virtual {v1, p1, v2}, Lkotlin/collections/AbstractList$Companion;->checkElementIndex$kotlin_stdlib(II)V
 
-    .line 97
     aget-object p1, v0, p1
 
     return-object p1
@@ -251,7 +241,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .registers 2
 
-    .line 72
     invoke-virtual {p0, p1}, Lkotlin/enums/EnumEntriesList;->get(I)Ljava/lang/Enum;
 
     move-result-object p1
@@ -262,7 +251,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 92
     invoke-direct {p0}, Lkotlin/enums/EnumEntriesList;->getEntries()[Ljava/lang/Enum;
 
     move-result-object v0
@@ -284,12 +272,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
 
-    .line 116
     invoke-direct {p0}, Lkotlin/enums/EnumEntriesList;->getEntries()[Ljava/lang/Enum;
 
     move-result-object v1
@@ -314,7 +300,6 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 72
     instance-of v0, p1, Ljava/lang/Enum;
 
     if-nez v0, :cond_6
@@ -345,7 +330,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
     invoke-virtual {p0, p1}, Lkotlin/enums/EnumEntriesList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -356,7 +340,6 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .registers 3
 
-    .line 72
     instance-of v0, p1, Ljava/lang/Enum;
 
     if-nez v0, :cond_6

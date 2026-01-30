@@ -38,7 +38,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 11
     const-string v0, "kotlinx.coroutines.main.delay"
 
     const/4 v1, 0x0
@@ -49,7 +48,6 @@
 
     sput-boolean v0, Lkotlinx/coroutines/DefaultExecutorKt;->defaultMainDelayOptIn:Z
 
-    .line 13
     invoke-static {}, Lkotlinx/coroutines/DefaultExecutorKt;->initializeDefaultDelay()Lkotlinx/coroutines/Delay;
 
     move-result-object v0
@@ -62,7 +60,6 @@
 .method public static final getDefaultDelay()Lkotlinx/coroutines/Delay;
     .registers 1
 
-    .line 13
     sget-object v0, Lkotlinx/coroutines/DefaultExecutorKt;->DefaultDelay:Lkotlinx/coroutines/Delay;
 
     return-object v0
@@ -71,7 +68,6 @@
 .method private static final initializeDefaultDelay()Lkotlinx/coroutines/Delay;
     .registers 2
 
-    .line 17
     sget-boolean v0, Lkotlinx/coroutines/DefaultExecutorKt;->defaultMainDelayOptIn:Z
 
     if-nez v0, :cond_9
@@ -82,13 +78,11 @@
 
     return-object v0
 
-    .line 18
     :cond_9
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getMain()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
     move-result-object v0
 
-    .line 24
     invoke-static {v0}, Lkotlinx/coroutines/internal/MainDispatchersKt;->isMissing(Lkotlinx/coroutines/MainCoroutineDispatcher;)Z
 
     move-result v1

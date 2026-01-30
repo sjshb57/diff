@@ -34,7 +34,6 @@
 .method constructor <init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;Lcom/google/games/bridge/HelperFragment;)V
     .registers 3
 
-    .line 65
     iput-object p2, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$2;->val$helperFragment:Lcom/google/games/bridge/HelperFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +46,6 @@
 .method public onSuccess(Landroid/content/Intent;)V
     .registers 4
 
-    .line 68
     iget-object v0, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$2;->val$helperFragment:Lcom/google/games/bridge/HelperFragment;
 
     const/16 v1, 0x232c
@@ -60,7 +58,6 @@
 .method public bridge synthetic onSuccess(Ljava/lang/Object;)V
     .registers 2
 
-    .line 65
     check-cast p1, Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest$2;->onSuccess(Landroid/content/Intent;)V

@@ -85,7 +85,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,7 +93,6 @@
 .method private final readResolve()Ljava/lang/Object;
     .registers 2
 
-    .line 31
     sget-object v0, Lkotlin/collections/EmptyMap;->INSTANCE:Lkotlin/collections/EmptyMap;
 
     return-object v0
@@ -125,7 +123,6 @@
 .method public final bridge containsValue(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 14
     instance-of v0, p1, Ljava/lang/Void;
 
     if-nez v0, :cond_6
@@ -167,7 +164,6 @@
         }
     .end annotation
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getEntries()Ljava/util/Set;
 
     move-result-object v0
@@ -178,7 +174,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 17
     instance-of v0, p1, Ljava/util/Map;
 
     if-eqz v0, :cond_e
@@ -205,7 +200,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 14
     invoke-virtual {p0, p1}, Lkotlin/collections/EmptyMap;->get(Ljava/lang/Object;)Ljava/lang/Void;
 
     move-result-object p1
@@ -232,7 +226,6 @@
         }
     .end annotation
 
-    .line 27
     sget-object v0, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
 
     check-cast v0, Ljava/util/Set;
@@ -251,7 +244,6 @@
         }
     .end annotation
 
-    .line 28
     sget-object v0, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
 
     check-cast v0, Ljava/util/Set;
@@ -270,7 +262,6 @@
 .method public getValues()Ljava/util/Collection;
     .registers 2
 
-    .line 29
     sget-object v0, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     check-cast v0, Ljava/util/Collection;
@@ -305,7 +296,6 @@
         }
     .end annotation
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getKeys()Ljava/util/Set;
 
     move-result-object v0
@@ -354,7 +344,6 @@
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 14
     invoke-virtual {p0, p1}, Lkotlin/collections/EmptyMap;->remove(Ljava/lang/Object;)Ljava/lang/Void;
 
     move-result-object p1
@@ -377,7 +366,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getSize()I
 
     move-result v0
@@ -388,7 +376,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 19
     const-string v0, "{}"
 
     return-object v0
@@ -397,7 +384,6 @@
 .method public final bridge values()Ljava/util/Collection;
     .registers 2
 
-    .line 14
     invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getValues()Ljava/util/Collection;
 
     move-result-object v0

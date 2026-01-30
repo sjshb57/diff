@@ -46,7 +46,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 462
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +62,6 @@
 .method public static final synthetic access$computeHashSize(Lkotlin/collections/builders/MapBuilder$Companion;I)I
     .registers 2
 
-    .line 462
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->computeHashSize(I)I
 
     move-result p0
@@ -74,7 +72,6 @@
 .method public static final synthetic access$computeShift(Lkotlin/collections/builders/MapBuilder$Companion;I)I
     .registers 2
 
-    .line 462
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->computeShift(I)I
 
     move-result p0
@@ -87,7 +84,6 @@
 
     const/4 v0, 0x1
 
-    .line 468
     invoke-static {p1, v0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result p1
@@ -104,7 +100,6 @@
 .method private final computeShift(I)I
     .registers 2
 
-    .line 470
     invoke-static {p1}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p1

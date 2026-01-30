@@ -24,15 +24,12 @@
 .method public constructor <init>()V
     .registers 3
 
-    .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x3c
 
-    .line 59
     iput-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->fetchTimeoutInSeconds:J
 
-    .line 60
     sget-wide v0, Lcom/google/firebase/remoteconfig/internal/ConfigFetchHandler;->DEFAULT_MINIMUM_FETCH_INTERVAL_IN_SECONDS:J
 
     iput-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->minimumFetchInterval:J
@@ -43,7 +40,6 @@
 .method static synthetic access$000(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;)J
     .registers 3
 
-    .line 57
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->fetchTimeoutInSeconds:J
 
     return-wide v0
@@ -52,7 +48,6 @@
 .method static synthetic access$100(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;)J
     .registers 3
 
-    .line 57
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->minimumFetchInterval:J
 
     return-wide v0
@@ -63,7 +58,6 @@
 .method public build()Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;
     .registers 3
 
-    .line 124
     new-instance v0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;
 
     const/4 v1, 0x0
@@ -76,7 +70,6 @@
 .method public getFetchTimeoutInSeconds()J
     .registers 3
 
-    .line 111
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->fetchTimeoutInSeconds:J
 
     return-wide v0
@@ -85,7 +78,6 @@
 .method public getMinimumFetchIntervalInSeconds()J
     .registers 3
 
-    .line 116
     iget-wide v0, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->minimumFetchInterval:J
 
     return-wide v0
@@ -105,16 +97,13 @@
 
     if-ltz v0, :cond_9
 
-    .line 80
     iput-wide p1, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->fetchTimeoutInSeconds:J
 
     return-object p0
 
-    .line 74
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    .line 78
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -127,7 +116,6 @@
 
     aput-object p1, p2, v1
 
-    .line 75
     const-string p1, "Fetch connection timeout has to be a non-negative number. %d is an invalid argument"
 
     invoke-static {p1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -148,12 +136,10 @@
 
     if-ltz v0, :cond_9
 
-    .line 100
     iput-wide p1, p0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings$Builder;->minimumFetchInterval:J
 
     return-object p0
 
-    .line 95
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

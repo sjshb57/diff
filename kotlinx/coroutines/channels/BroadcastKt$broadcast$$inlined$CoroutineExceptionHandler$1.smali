@@ -50,7 +50,6 @@
 .method public constructor <init>(Lkotlinx/coroutines/CoroutineExceptionHandler$Key;)V
     .registers 2
 
-    .line 48
     check-cast p1, Lkotlin/coroutines/CoroutineContext$Key;
 
     invoke-direct {p0, p1}, Lkotlin/coroutines/AbstractCoroutineContextElement;-><init>(Lkotlin/coroutines/CoroutineContext$Key;)V

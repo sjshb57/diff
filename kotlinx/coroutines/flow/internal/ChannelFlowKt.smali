@@ -47,7 +47,6 @@
 .method public static final synthetic access$withUndispatchedContextCollector(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/FlowCollector;
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlinx/coroutines/flow/internal/ChannelFlowKt;->withUndispatchedContextCollector(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/flow/FlowCollector;
 
     move-result-object p0
@@ -69,7 +68,6 @@
         }
     .end annotation
 
-    .line 16
     instance-of v0, p0, Lkotlinx/coroutines/flow/internal/ChannelFlow;
 
     if-eqz v0, :cond_8
@@ -134,12 +132,10 @@
         }
     .end annotation
 
-    .line 246
     invoke-static {p0, p2}, Lkotlinx/coroutines/internal/ThreadContextKt;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 227
     :try_start_4
     new-instance v0, Lkotlinx/coroutines/flow/internal/StackFrameContinuation;
 
@@ -161,10 +157,8 @@
     :try_end_16
     .catchall {:try_start_4 .. :try_end_16} :catchall_23
 
-    .line 250
     invoke-static {p0, p2}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
-    .line 225
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object p0
@@ -179,7 +173,6 @@
     :catchall_23
     move-exception p1
 
-    .line 250
     invoke-static {p0, p2}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
     throw p1
@@ -192,12 +185,10 @@
 
     if-eqz p5, :cond_8
 
-    .line 222
     invoke-static {p0}, Lkotlinx/coroutines/internal/ThreadContextKt;->threadContextElements(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 219
     :cond_8
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/internal/ChannelFlowKt;->withContextUndispatched(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -222,7 +213,6 @@
         }
     .end annotation
 
-    .line 202
     instance-of v0, p0, Lkotlinx/coroutines/flow/internal/SendingCollector;
 
     if-eqz v0, :cond_5
@@ -236,7 +226,6 @@
 
     goto :goto_12
 
-    .line 204
     :cond_a
     new-instance v0, Lkotlinx/coroutines/flow/internal/UndispatchedContextCollector;
 

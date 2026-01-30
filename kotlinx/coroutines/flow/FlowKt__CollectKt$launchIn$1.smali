@@ -176,7 +176,6 @@
 
     move-result-object v0
 
-    .line 49
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$launchIn$1;->label:I
 
     const/4 v2, 0x1
@@ -201,7 +200,6 @@
     :cond_17
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 50
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__CollectKt$launchIn$1;->$this_launchIn:Lkotlinx/coroutines/flow/Flow;
 
     move-object v1, p0
@@ -218,7 +216,6 @@
 
     return-object v0
 
-    .line 51
     :cond_28
     :goto_28
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

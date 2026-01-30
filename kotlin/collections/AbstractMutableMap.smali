@@ -54,7 +54,6 @@
 .method protected constructor <init>()V
     .registers 1
 
-    .line 19
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
     return-void
@@ -73,7 +72,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableMap;->getEntries()Ljava/util/Set;
 
     move-result-object v0
@@ -95,7 +93,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-super {p0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -106,7 +103,6 @@
 .method public bridge getSize()I
     .registers 2
 
-    .line 18
     invoke-super {p0}, Ljava/util/AbstractMap;->size()I
 
     move-result v0
@@ -125,7 +121,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-super {p0}, Ljava/util/AbstractMap;->values()Ljava/util/Collection;
 
     move-result-object v0
@@ -143,7 +138,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableMap;->getKeys()Ljava/util/Set;
 
     move-result-object v0
@@ -162,7 +156,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 18
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableMap;->getSize()I
 
     move-result v0
@@ -180,7 +173,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-virtual {p0}, Lkotlin/collections/AbstractMutableMap;->getValues()Ljava/util/Collection;
 
     move-result-object v0

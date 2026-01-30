@@ -48,14 +48,12 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 56
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->clientInstances:Ljava/util/Map;
 
-    .line 246
     new-instance v0, Landroidx/privacysandbox/ads/adservices/adid/AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda0;
 
     invoke-direct {v0}, Landroidx/privacysandbox/ads/adservices/adid/AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda0;-><init>()V
@@ -68,18 +66,14 @@
 .method private constructor <init>(Ljava/util/concurrent/Executor;Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;)V
     .registers 3
 
-    .line 73
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 74
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->executor:Ljava/util/concurrent/Executor;
 
-    .line 75
     iput-object p2, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->storageClient:Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;
 
     const/4 p1, 0x0
 
-    .line 77
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
     return-void
@@ -107,46 +101,38 @@
         }
     .end annotation
 
-    .line 228
     new-instance v0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$1;)V
 
-    .line 230
     sget-object v1, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->DIRECT_EXECUTOR:Ljava/util/concurrent/Executor;
 
     invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/tasks/Task;->addOnSuccessListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
 
-    .line 231
     invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/tasks/Task;->addOnFailureListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnFailureListener;)Lcom/google/android/gms/tasks/Task;
 
-    .line 232
     invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/tasks/Task;->addOnCanceledListener(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/OnCanceledListener;)Lcom/google/android/gms/tasks/Task;
 
-    .line 234
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$AwaitListener;->await(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p1
 
     if-eqz p1, :cond_2c
 
-    .line 238
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->isSuccessful()Z
 
     move-result p1
 
     if-eqz p1, :cond_22
 
-    .line 239
     invoke-virtual {p0}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 241
     :cond_22
     new-instance p1, Ljava/util/concurrent/ExecutionException;
 
@@ -158,7 +144,6 @@
 
     throw p1
 
-    .line 235
     :cond_2c
     new-instance p0, Ljava/util/concurrent/TimeoutException;
 
@@ -176,7 +161,6 @@
 
     monitor-enter v0
 
-    .line 212
     :try_start_3
     sget-object v1, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->clientInstances:Ljava/util/Map;
 
@@ -184,7 +168,6 @@
     :try_end_8
     .catchall {:try_start_3 .. :try_end_8} :catchall_a
 
-    .line 213
     monitor-exit v0
 
     return-void
@@ -204,13 +187,11 @@
 
     monitor-enter v0
 
-    .line 203
     :try_start_3
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;->getFileName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 204
     sget-object v2, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->clientInstances:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -219,14 +200,12 @@
 
     if-nez v3, :cond_17
 
-    .line 205
     new-instance v3, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;
 
     invoke-direct {v3, p0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;-><init>(Ljava/util/concurrent/Executor;Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;)V
 
     invoke-interface {v2, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 207
     :cond_17
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -253,7 +232,6 @@
 
     monitor-enter p0
 
-    .line 187
     :try_start_1
     invoke-static {p1}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
@@ -263,7 +241,6 @@
     :try_end_7
     .catchall {:try_start_1 .. :try_end_7} :catchall_9
 
-    .line 188
     monitor-exit p0
 
     return-void
@@ -281,12 +258,10 @@
 .method public clear()V
     .registers 2
 
-    .line 174
     monitor-enter p0
 
     const/4 v0, 0x0
 
-    .line 180
     :try_start_2
     invoke-static {v0}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
@@ -294,12 +269,10 @@
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
-    .line 181
     monitor-exit p0
     :try_end_9
     .catchall {:try_start_2 .. :try_end_9} :catchall_f
 
-    .line 182
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->storageClient:Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;
 
     invoke-virtual {v0}, Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;->clear()Ljava/lang/Void;
@@ -309,7 +282,6 @@
     :catchall_f
     move-exception v0
 
-    .line 181
     :try_start_10
     monitor-exit p0
     :try_end_11
@@ -331,13 +303,11 @@
 
     monitor-enter p0
 
-    .line 165
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
     if-eqz v0, :cond_13
 
-    .line 166
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/Task;->isComplete()Z
 
     move-result v0
@@ -352,7 +322,6 @@
 
     if-nez v0, :cond_25
 
-    .line 167
     :cond_13
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->executor:Ljava/util/concurrent/Executor;
 
@@ -370,7 +339,6 @@
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
-    .line 169
     :cond_25
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
     :try_end_27
@@ -393,7 +361,6 @@
 
     const-wide/16 v0, 0x5
 
-    .line 88
     invoke-virtual {p0, v0, v1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->getBlocking(J)Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     move-result-object v0
@@ -404,10 +371,8 @@
 .method getBlocking(J)Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
     .registers 5
 
-    .line 94
     monitor-enter p0
 
-    .line 95
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
@@ -419,7 +384,6 @@
 
     if-eqz v0, :cond_15
 
-    .line 96
     iget-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
 
     invoke-virtual {p1}, Lcom/google/android/gms/tasks/Task;->getResult()Ljava/lang/Object;
@@ -432,13 +396,11 @@
 
     return-object p1
 
-    .line 98
     :cond_15
     monitor-exit p0
     :try_end_16
     .catchall {:try_start_1 .. :try_end_16} :catchall_31
 
-    .line 101
     :try_start_16
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->get()Lcom/google/android/gms/tasks/Task;
 
@@ -471,7 +433,6 @@
     :catch_27
     move-exception p1
 
-    .line 103
     :goto_28
     const-string p2, "FirebaseRemoteConfig"
 
@@ -486,7 +447,6 @@
     :catchall_31
     move-exception p1
 
-    .line 98
     :try_start_32
     monitor-exit p0
     :try_end_33
@@ -508,7 +468,6 @@
 
     monitor-enter p0
 
-    .line 193
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->cachedContainerTask:Lcom/google/android/gms/tasks/Task;
     :try_end_3
@@ -534,7 +493,6 @@
         }
     .end annotation
 
-    .line 128
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->storageClient:Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;
 
     invoke-virtual {v0, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigStorageClient;->write(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)Ljava/lang/Void;
@@ -552,13 +510,10 @@
         }
     .end annotation
 
-    .line 0
     if-eqz p1, :cond_5
 
-    .line 133
     invoke-direct {p0, p2}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->updateInMemoryConfigContainer(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)V
 
-    .line 135
     :cond_5
     invoke-static {p2}, Lcom/google/android/gms/tasks/Tasks;->forResult(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
 
@@ -582,7 +537,6 @@
 
     const/4 v0, 0x1
 
-    .line 115
     invoke-virtual {p0, p1, v0}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->put(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;Z)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -603,7 +557,6 @@
         }
     .end annotation
 
-    .line 128
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;->executor:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$$ExternalSyntheticLambda0;
@@ -620,7 +573,6 @@
 
     invoke-direct {v2, p0, p2, p1}, Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient$$ExternalSyntheticLambda1;-><init>(Lcom/google/firebase/remoteconfig/internal/ConfigCacheClient;ZLcom/google/firebase/remoteconfig/internal/ConfigContainer;)V
 
-    .line 129
     invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/tasks/Task;->onSuccessTask(Ljava/util/concurrent/Executor;Lcom/google/android/gms/tasks/SuccessContinuation;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1

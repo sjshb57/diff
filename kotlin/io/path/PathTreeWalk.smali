@@ -86,13 +86,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
     iput-object p1, p0, Lkotlin/io/path/PathTreeWalk;->start:Ljava/nio/file/Path;
 
-    .line 23
     iput-object p2, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     return-void
@@ -101,7 +98,6 @@
 .method public static final synthetic access$getFollowLinks(Lkotlin/io/path/PathTreeWalk;)Z
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->getFollowLinks()Z
 
     move-result p0
@@ -112,7 +108,6 @@
 .method public static final synthetic access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->getIncludeDirectories()Z
 
     move-result p0
@@ -123,7 +118,6 @@
 .method public static final synthetic access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->getLinkOptions()[Ljava/nio/file/LinkOption;
 
     move-result-object p0
@@ -134,7 +128,6 @@
 .method public static final synthetic access$getStart$p(Lkotlin/io/path/PathTreeWalk;)Ljava/nio/file/Path;
     .registers 1
 
-    .line 20
     iget-object p0, p0, Lkotlin/io/path/PathTreeWalk;->start:Ljava/nio/file/Path;
 
     return-object p0
@@ -151,7 +144,6 @@
         }
     .end annotation
 
-    .line 89
     new-instance v0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;
 
     const/4 v1, 0x0
@@ -178,7 +170,6 @@
         }
     .end annotation
 
-    .line 61
     new-instance v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;
 
     const/4 v1, 0x0
@@ -197,7 +188,6 @@
 .method private final getFollowLinks()Z
     .registers 3
 
-    .line 27
     iget-object v0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v1, Lkotlin/io/path/PathWalkOption;->FOLLOW_LINKS:Lkotlin/io/path/PathWalkOption;
@@ -212,7 +202,6 @@
 .method private final getIncludeDirectories()Z
     .registers 3
 
-    .line 33
     iget-object v0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v1, Lkotlin/io/path/PathWalkOption;->INCLUDE_DIRECTORIES:Lkotlin/io/path/PathWalkOption;
@@ -227,7 +216,6 @@
 .method private final getLinkOptions()[Ljava/nio/file/LinkOption;
     .registers 3
 
-    .line 30
     sget-object v0, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->getFollowLinks()Z
@@ -244,7 +232,6 @@
 .method private final isBFS()Z
     .registers 3
 
-    .line 36
     iget-object v0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v1, Lkotlin/io/path/PathWalkOption;->BREADTH_FIRST:Lkotlin/io/path/PathWalkOption;
@@ -282,12 +269,10 @@
         }
     .end annotation
 
-    .line 45
     invoke-virtual {p2}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object v0
 
-    .line 46
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
     move-result-object v1
@@ -318,28 +303,24 @@
 
     if-eqz v1, :cond_5d
 
-    .line 47
     invoke-static {p2}, Lkotlin/io/path/PathTreeWalkKt;->access$createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result v1
 
     if-nez v1, :cond_53
 
-    .line 50
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
 
     move-result v1
 
     if-eqz v1, :cond_33
 
-    .line 51
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     invoke-virtual {p1, v0, p5}, Lkotlin/sequences/SequenceScope;->yield(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     invoke-static {v3}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 53
     :cond_33
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -367,7 +348,6 @@
 
     if-eqz p1, :cond_7b
 
-    .line 54
     invoke-virtual {p3, p2}, Lkotlin/io/path/DirectoryEntriesReader;->readEntries(Lkotlin/io/path/PathNode;)Ljava/util/List;
 
     move-result-object p1
@@ -376,7 +356,6 @@
 
     goto :goto_7b
 
-    .line 48
     :cond_53
     new-instance p1, Ljava/nio/file/FileSystemLoopException;
 
@@ -388,7 +367,6 @@
 
     throw p1
 
-    .line 56
     :cond_5d
     new-array p2, v3, [Ljava/nio/file/LinkOption;
 
@@ -408,7 +386,6 @@
 
     if-eqz p2, :cond_7b
 
-    .line 57
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     invoke-virtual {p1, v0, p5}, Lkotlin/sequences/SequenceScope;->yield(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -419,7 +396,6 @@
 
     return-object p1
 
-    .line 59
     :cond_7b
     :goto_7b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -440,7 +416,6 @@
         }
     .end annotation
 
-    .line 38
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->isBFS()Z
 
     move-result v0

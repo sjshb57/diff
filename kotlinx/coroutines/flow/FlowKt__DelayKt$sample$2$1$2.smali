@@ -197,7 +197,6 @@
 
     move-result-object v0
 
-    .line 296
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$2;->label:I
 
     const/4 v2, 0x1
@@ -222,7 +221,6 @@
     :cond_17
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 297
     iget-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$2;->$lastValue:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object p1, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
@@ -233,7 +231,6 @@
 
     return-object p1
 
-    .line 298
     :cond_23
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$2;->$lastValue:Lkotlin/jvm/internal/Ref$ObjectRef;
 
@@ -241,7 +238,6 @@
 
     iput-object v3, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 299
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$2;->$downstream:Lkotlinx/coroutines/flow/FlowCollector;
 
     sget-object v4, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
@@ -250,13 +246,11 @@
 
     move-object p1, v3
 
-    .line 406
     :cond_2f
     move-object v3, p0
 
     check-cast v3, Lkotlin/coroutines/Continuation;
 
-    .line 299
     iput v2, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$sample$2$1$2;->label:I
 
     invoke-interface {v1, p1, v3}, Lkotlinx/coroutines/flow/FlowCollector;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -267,7 +261,6 @@
 
     return-object v0
 
-    .line 300
     :cond_3b
     :goto_3b
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

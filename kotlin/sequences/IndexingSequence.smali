@@ -70,10 +70,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 247
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 248
     iput-object p1, p0, Lkotlin/sequences/IndexingSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-void
@@ -82,7 +80,6 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/IndexingSequence;)Lkotlin/sequences/Sequence;
     .registers 1
 
-    .line 247
     iget-object p0, p0, Lkotlin/sequences/IndexingSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -101,7 +98,6 @@
         }
     .end annotation
 
-    .line 249
     new-instance v0, Lkotlin/sequences/IndexingSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/IndexingSequence$iterator$1;-><init>(Lkotlin/sequences/IndexingSequence;)V

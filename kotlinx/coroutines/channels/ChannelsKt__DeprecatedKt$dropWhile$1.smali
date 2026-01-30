@@ -238,7 +238,6 @@
 
     move-result-object v0
 
-    .line 180
     iget v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$dropWhile$1;->label:I
 
     const/4 v2, 0x5
@@ -362,7 +361,6 @@
 
     check-cast p1, Lkotlinx/coroutines/channels/ProducerScope;
 
-    .line 181
     iget-object v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$dropWhile$1;->$this_dropWhile:Lkotlinx/coroutines/channels/ReceiveChannel;
 
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -405,7 +403,6 @@
 
     move-result-object p1
 
-    .line 182
     iget-object v9, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$dropWhile$1;->$predicate:Lkotlin/jvm/functions/Function2;
 
     iput-object v1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$dropWhile$1;->L$0:Ljava/lang/Object;
@@ -444,7 +441,6 @@
 
     if-nez p1, :cond_c3
 
-    .line 183
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -475,7 +471,6 @@
 
     goto :goto_73
 
-    .line 187
     :cond_c5
     :goto_c5
     iget-object p1, p0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$dropWhile$1;->$this_dropWhile:Lkotlinx/coroutines/channels/ReceiveChannel;
@@ -525,7 +520,6 @@
 
     move-result-object p1
 
-    .line 188
     move-object v5, p0
 
     check-cast v5, Lkotlin/coroutines/Continuation;
@@ -544,7 +538,6 @@
 
     return-object v0
 
-    .line 190
     :cond_fb
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

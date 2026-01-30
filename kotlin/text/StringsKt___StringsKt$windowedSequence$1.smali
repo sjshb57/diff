@@ -79,7 +79,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 2382
     check-cast p1, Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Lkotlin/text/StringsKt___StringsKt$windowedSequence$1;->invoke(Ljava/lang/CharSequence;)Ljava/lang/String;
@@ -96,7 +95,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2382
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1

@@ -247,7 +247,6 @@
 
     move-result-object v0
 
-    .line 87
     iget v2, v1, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1;->label:I
 
     const/4 v3, 0x1
@@ -298,7 +297,6 @@
 
     check-cast v2, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 88
     new-instance v5, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1$second$1;
 
     iget-object v6, v1, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1;->$flow2:Lkotlinx/coroutines/flow/Flow;
@@ -323,12 +321,10 @@
 
     move-result-object v5
 
-    .line 105
     invoke-static {v4, v3, v4}, Lkotlinx/coroutines/JobKt;->Job$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableJob;
 
     move-result-object v6
 
-    .line 106
     const-string v7, "null cannot be cast to non-null type kotlinx.coroutines.channels.SendChannel<*>"
 
     invoke-static {v5, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -347,18 +343,15 @@
 
     invoke-interface {v7, v8}, Lkotlinx/coroutines/channels/SendChannel;->invokeOnClose(Lkotlin/jvm/functions/Function1;)V
 
-    .line 124
     :try_start_58
     invoke-interface {v2}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v13
 
-    .line 125
     invoke-static {v13}, Lkotlinx/coroutines/internal/ThreadContextKt;->threadContextElements(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/Object;
 
     move-result-object v14
 
-    .line 126
     invoke-interface {v2}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v2
@@ -427,7 +420,6 @@
     :cond_9b
     move-object v2, v5
 
-    .line 139
     :goto_9c
     invoke-static {v2, v4, v3, v4}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel$default(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
@@ -445,7 +437,6 @@
 
     move-object v2, v5
 
-    .line 137
     :goto_a5
     :try_start_a5
     iget-object v5, v1, Lkotlinx/coroutines/flow/internal/CombineKt$zipImpl$1$1;->$this_unsafeFlow:Lkotlinx/coroutines/flow/FlowCollector;
@@ -456,13 +447,11 @@
 
     goto :goto_9c
 
-    .line 141
     :goto_ab
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 139
     :goto_ae
     invoke-static {v2, v4, v3, v4}, Lkotlinx/coroutines/channels/ReceiveChannel$DefaultImpls;->cancel$default(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 

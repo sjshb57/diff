@@ -46,7 +46,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 10
     invoke-direct {p0}, Lkotlin/collections/ByteIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayByteIterator;->array:[B
@@ -59,7 +58,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 12
     iget v0, p0, Lkotlin/jvm/internal/ArrayByteIterator;->index:I
 
     iget-object v1, p0, Lkotlin/jvm/internal/ArrayByteIterator;->array:[B
@@ -82,7 +80,6 @@
 .method public nextByte()B
     .registers 4
 
-    .line 13
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayByteIterator;->array:[B
 

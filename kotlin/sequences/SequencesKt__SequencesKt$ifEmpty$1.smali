@@ -201,7 +201,6 @@
 
     move-result-object v0
 
-    .line 66
     iget v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->label:I
 
     const/4 v2, 0x2
@@ -238,21 +237,18 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 67
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$this_ifEmpty:Lkotlin/sequences/Sequence;
 
     invoke-interface {v1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 68
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
 
     if-eqz v4, :cond_3a
 
-    .line 69
     move-object v2, p0
 
     check-cast v2, Lkotlin/coroutines/Continuation;
@@ -267,7 +263,6 @@
 
     return-object v0
 
-    .line 71
     :cond_3a
     iget-object v1, p0, Lkotlin/sequences/SequencesKt__SequencesKt$ifEmpty$1;->$defaultValue:Lkotlin/jvm/functions/Function0;
 
@@ -291,7 +286,6 @@
 
     return-object v0
 
-    .line 73
     :cond_4e
     :goto_4e
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

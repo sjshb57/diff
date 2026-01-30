@@ -68,7 +68,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 22
     new-instance v0, Lkotlin/io/FileWalkDirection;
 
     const-string v1, "TOP_DOWN"
@@ -79,7 +78,6 @@
 
     sput-object v0, Lkotlin/io/FileWalkDirection;->TOP_DOWN:Lkotlin/io/FileWalkDirection;
 
-    .line 24
     new-instance v0, Lkotlin/io/FileWalkDirection;
 
     const-string v1, "BOTTOM_UP"
@@ -107,7 +105,6 @@
         }
     .end annotation
 
-    .line 20
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

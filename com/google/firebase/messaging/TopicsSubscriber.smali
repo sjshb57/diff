@@ -48,7 +48,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 52
     sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x8
@@ -65,10 +64,8 @@
 .method private constructor <init>(Lcom/google/firebase/messaging/FirebaseMessaging;Lcom/google/firebase/messaging/Metadata;Lcom/google/firebase/messaging/TopicsStore;Lcom/google/firebase/messaging/GmsRpc;Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;)V
     .registers 8
 
-    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 59
     new-instance v0, Landroidx/collection/ArrayMap;
 
     invoke-direct {v0}, Landroidx/collection/ArrayMap;-><init>()V
@@ -77,25 +74,18 @@
 
     const/4 v0, 0x0
 
-    .line 65
     iput-boolean v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->syncScheduledOrRunning:Z
 
-    .line 95
     iput-object p1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
 
-    .line 96
     iput-object p2, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->metadata:Lcom/google/firebase/messaging/Metadata;
 
-    .line 97
     iput-object p3, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
-    .line 98
     iput-object p4, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->rpc:Lcom/google/firebase/messaging/GmsRpc;
 
-    .line 99
     iput-object p5, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->context:Landroid/content/Context;
 
-    .line 100
     iput-object p6, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->syncExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
@@ -113,18 +103,15 @@
         }
     .end annotation
 
-    .line 125
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 127
     :try_start_3
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicOperation;->serialize()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 128
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -133,7 +120,6 @@
 
     if-eqz v1, :cond_18
 
-    .line 129
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -144,24 +130,20 @@
 
     goto :goto_23
 
-    .line 131
     :cond_18
     new-instance v1, Ljava/util/ArrayDeque;
 
     invoke-direct {v1}, Ljava/util/ArrayDeque;-><init>()V
 
-    .line 132
     iget-object v2, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object p1, v1
 
-    .line 134
     :goto_23
     invoke-virtual {p1, p2}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
 
-    .line 135
     monitor-exit v0
 
     return-void
@@ -194,7 +176,6 @@
         }
     .end annotation
 
-    .line 287
     :try_start_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -216,7 +197,6 @@
     :catch_a
     move-exception p0
 
-    .line 300
     :goto_b
     new-instance v0, Ljava/io/IOException;
 
@@ -229,27 +209,22 @@
     :catch_13
     move-exception p0
 
-    .line 291
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 
-    .line 292
     instance-of v1, v0, Ljava/io/IOException;
 
     if-nez v1, :cond_29
 
-    .line 294
     instance-of v1, v0, Ljava/lang/RuntimeException;
 
     if-eqz v1, :cond_23
 
-    .line 295
     check-cast v0, Ljava/lang/RuntimeException;
 
     throw v0
 
-    .line 298
     :cond_23
     new-instance v0, Ljava/io/IOException;
 
@@ -257,7 +232,6 @@
 
     throw v0
 
-    .line 293
     :cond_29
     check-cast v0, Ljava/io/IOException;
 
@@ -272,7 +246,6 @@
         }
     .end annotation
 
-    .line 275
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->rpc:Lcom/google/firebase/messaging/GmsRpc;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
@@ -298,7 +271,6 @@
         }
     .end annotation
 
-    .line 280
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->rpc:Lcom/google/firebase/messaging/GmsRpc;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->firebaseMessaging:Lcom/google/firebase/messaging/FirebaseMessaging;
@@ -333,7 +305,6 @@
         }
     .end annotation
 
-    .line 77
     new-instance v6, Lcom/google/firebase/messaging/TopicsSubscriber$$ExternalSyntheticLambda0;
 
     move-object v0, v6
@@ -360,7 +331,6 @@
 .method static isDebugLogEnabled()Z
     .registers 4
 
-    .line 314
     const-string v0, "FirebaseMessaging"
 
     const/4 v1, 0x3
@@ -377,7 +347,6 @@
 
     if-ne v2, v3, :cond_16
 
-    .line 315
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -407,12 +376,10 @@
         }
     .end annotation
 
-    .line 80
     invoke-static {p0, p1}, Lcom/google/firebase/messaging/TopicsStore;->getInstance(Landroid/content/Context;Ljava/util/concurrent/Executor;)Lcom/google/firebase/messaging/TopicsStore;
 
     move-result-object v3
 
-    .line 81
     new-instance v7, Lcom/google/firebase/messaging/TopicsSubscriber;
 
     move-object v0, v7
@@ -435,18 +402,15 @@
 .method private markCompletePendingOperation(Lcom/google/firebase/messaging/TopicOperation;)V
     .registers 6
 
-    .line 200
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 201
     :try_start_3
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicOperation;->serialize()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 202
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -455,12 +419,10 @@
 
     if-nez v1, :cond_11
 
-    .line 203
     monitor-exit v0
 
     return-void
 
-    .line 206
     :cond_11
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
@@ -470,7 +432,6 @@
 
     check-cast v1, Ljava/util/ArrayDeque;
 
-    .line 210
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
 
     move-result-object v2
@@ -481,10 +442,8 @@
 
     const/4 v3, 0x0
 
-    .line 213
     invoke-virtual {v2, v3}, Lcom/google/android/gms/tasks/TaskCompletionSource;->setResult(Ljava/lang/Object;)V
 
-    .line 215
     :cond_25
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->isEmpty()Z
 
@@ -492,12 +451,10 @@
 
     if-eqz v1, :cond_30
 
-    .line 216
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->pendingOperations:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 218
     :cond_30
     monitor-exit v0
 
@@ -516,7 +473,6 @@
 .method private startSync()V
     .registers 3
 
-    .line 149
     invoke-virtual {p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->isSyncScheduledOrRunning()Z
 
     move-result v0
@@ -525,7 +481,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 150
     invoke-virtual {p0, v0, v1}, Lcom/google/firebase/messaging/TopicsSubscriber;->syncWithDelaySecondsInternal(J)V
 
     :cond_b
@@ -537,7 +492,6 @@
 .method getStore()Lcom/google/firebase/messaging/TopicsStore;
     .registers 2
 
-    .line 320
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
     return-object v0
@@ -546,7 +500,6 @@
 .method hasPendingOperation()Z
     .registers 2
 
-    .line 139
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
     invoke-virtual {v0}, Lcom/google/firebase/messaging/TopicsStore;->getNextTopicOperation()Lcom/google/firebase/messaging/TopicOperation;
@@ -571,7 +524,6 @@
 
     monitor-enter p0
 
-    .line 305
     :try_start_1
     iget-boolean v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->syncScheduledOrRunning:Z
     :try_end_3
@@ -597,10 +549,8 @@
         }
     .end annotation
 
-    .line 232
     const-string v0, "FirebaseMessaging"
 
-    .line 0
     const-string v1, "Unsubscribe from topic: "
 
     const-string v2, "Subscribe to topic: "
@@ -609,7 +559,6 @@
 
     const/4 v4, 0x0
 
-    .line 232
     :try_start_9
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicOperation;->getOperation()Ljava/lang/String;
 
@@ -670,7 +619,6 @@
 
     if-eq v5, v8, :cond_51
 
-    .line 247
     :try_start_36
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSubscriber;->isDebugLogEnabled()Z
 
@@ -678,7 +626,6 @@
 
     if-eqz v1, :cond_98
 
-    .line 248
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -697,7 +644,6 @@
 
     goto :goto_98
 
-    .line 240
     :cond_51
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicOperation;->getTopic()Ljava/lang/String;
 
@@ -705,14 +651,12 @@
 
     invoke-direct {p0, v2}, Lcom/google/firebase/messaging/TopicsSubscriber;->blockingUnsubscribeFromTopic(Ljava/lang/String;)V
 
-    .line 241
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSubscriber;->isDebugLogEnabled()Z
 
     move-result v2
 
     if-eqz v2, :cond_98
 
-    .line 242
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -733,7 +677,6 @@
 
     goto :goto_98
 
-    .line 234
     :cond_75
     invoke-virtual {p1}, Lcom/google/firebase/messaging/TopicOperation;->getTopic()Ljava/lang/String;
 
@@ -741,14 +684,12 @@
 
     invoke-direct {p0, v1}, Lcom/google/firebase/messaging/TopicsSubscriber;->blockingSubscribeToTopic(Ljava/lang/String;)V
 
-    .line 235
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSubscriber;->isDebugLogEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_98
 
-    .line 236
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -776,7 +717,6 @@
     :catch_99
     move-exception p1
 
-    .line 253
     const/4 v1, 0x0
 
     sget-object v1, Landroidx/browser/customtabs/NP/AfoCF;->QePdnkmaJxZ:Ljava/lang/String;
@@ -793,7 +733,6 @@
 
     const-string v1, "INTERNAL_SERVER_ERROR"
 
-    .line 254
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v2
@@ -806,7 +745,6 @@
 
     const-string v1, "TOO_MANY_SUBSCRIBERS"
 
-    .line 255
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v2
@@ -819,7 +757,6 @@
 
     goto :goto_cd
 
-    .line 259
     :cond_c0
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
@@ -827,18 +764,15 @@
 
     if-nez v1, :cond_cc
 
-    .line 260
     const-string p1, "Topic operation failed without exception message. Will retry Topic operation."
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return v4
 
-    .line 265
     :cond_cc
     throw p1
 
-    .line 256
     :cond_cd
     :goto_cd
     new-instance v1, Ljava/lang/StringBuilder;
@@ -869,7 +803,6 @@
 .method scheduleSyncTaskWithDelaySeconds(Ljava/lang/Runnable;J)V
     .registers 6
 
-    .line 163
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->syncExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -892,20 +825,16 @@
         }
     .end annotation
 
-    .line 117
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
     invoke-virtual {v0, p1}, Lcom/google/firebase/messaging/TopicsStore;->addTopicOperation(Lcom/google/firebase/messaging/TopicOperation;)Z
 
-    .line 118
     new-instance v0, Lcom/google/android/gms/tasks/TaskCompletionSource;
 
     invoke-direct {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;-><init>()V
 
-    .line 119
     invoke-direct {p0, p1, v0}, Lcom/google/firebase/messaging/TopicsSubscriber;->addToPendingOperations(Lcom/google/firebase/messaging/TopicOperation;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
-    .line 120
     invoke-virtual {v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->getTask()Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -918,13 +847,11 @@
 
     monitor-enter p0
 
-    .line 309
     :try_start_1
     iput-boolean p1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->syncScheduledOrRunning:Z
     :try_end_3
     .catchall {:try_start_1 .. :try_end_3} :catchall_5
 
-    .line 310
     monitor-exit p0
 
     return-void
@@ -940,14 +867,12 @@
 .method startTopicsSyncIfNecessary()V
     .registers 2
 
-    .line 143
     invoke-virtual {p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->hasPendingOperation()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 144
     invoke-direct {p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->startSync()V
 
     :cond_9
@@ -967,7 +892,6 @@
         }
     .end annotation
 
-    .line 104
     invoke-static {p1}, Lcom/google/firebase/messaging/TopicOperation;->subscribe(Ljava/lang/String;)Lcom/google/firebase/messaging/TopicOperation;
 
     move-result-object p1
@@ -976,7 +900,6 @@
 
     move-result-object p1
 
-    .line 105
     invoke-virtual {p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->startTopicsSyncIfNecessary()V
 
     return-object p1
@@ -990,11 +913,9 @@
         }
     .end annotation
 
-    .line 177
     :goto_0
     monitor-enter p0
 
-    .line 178
     :try_start_1
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
@@ -1004,21 +925,18 @@
 
     if-nez v0, :cond_19
 
-    .line 180
     invoke-static {}, Lcom/google/firebase/messaging/TopicsSubscriber;->isDebugLogEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_16
 
-    .line 181
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "topic sync succeeded"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 184
     :cond_16
     monitor-exit p0
 
@@ -1026,13 +944,11 @@
 
     return v0
 
-    .line 186
     :cond_19
     monitor-exit p0
     :try_end_1a
     .catchall {:try_start_1 .. :try_end_1a} :catchall_2b
 
-    .line 188
     invoke-virtual {p0, v0}, Lcom/google/firebase/messaging/TopicsSubscriber;->performTopicOperation(Lcom/google/firebase/messaging/TopicOperation;)Z
 
     move-result v1
@@ -1043,13 +959,11 @@
 
     return v0
 
-    .line 194
     :cond_22
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->store:Lcom/google/firebase/messaging/TopicsStore;
 
     invoke-virtual {v1, v0}, Lcom/google/firebase/messaging/TopicsStore;->removeTopicOperation(Lcom/google/firebase/messaging/TopicOperation;)Z
 
-    .line 195
     invoke-direct {p0, v0}, Lcom/google/firebase/messaging/TopicsSubscriber;->markCompletePendingOperation(Lcom/google/firebase/messaging/TopicOperation;)V
 
     goto :goto_0
@@ -1057,7 +971,6 @@
     :catchall_2b
     move-exception v0
 
-    .line 186
     :try_start_2c
     monitor-exit p0
     :try_end_2d
@@ -1075,7 +988,6 @@
 
     const-wide/16 v2, 0x1e
 
-    .line 155
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v0
@@ -1086,7 +998,6 @@
 
     move-result-wide v8
 
-    .line 156
     new-instance v0, Lcom/google/firebase/messaging/TopicsSyncTask;
 
     iget-object v6, p0, Lcom/google/firebase/messaging/TopicsSubscriber;->context:Landroid/content/Context;
@@ -1099,12 +1010,10 @@
 
     invoke-direct/range {v4 .. v9}, Lcom/google/firebase/messaging/TopicsSyncTask;-><init>(Lcom/google/firebase/messaging/TopicsSubscriber;Landroid/content/Context;Lcom/google/firebase/messaging/Metadata;J)V
 
-    .line 157
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/firebase/messaging/TopicsSubscriber;->scheduleSyncTaskWithDelaySeconds(Ljava/lang/Runnable;J)V
 
     const/4 p1, 0x1
 
-    .line 158
     invoke-virtual {p0, p1}, Lcom/google/firebase/messaging/TopicsSubscriber;->setSyncScheduledOrRunning(Z)V
 
     return-void
@@ -1123,7 +1032,6 @@
         }
     .end annotation
 
-    .line 110
     invoke-static {p1}, Lcom/google/firebase/messaging/TopicOperation;->unsubscribe(Ljava/lang/String;)Lcom/google/firebase/messaging/TopicOperation;
 
     move-result-object p1
@@ -1132,7 +1040,6 @@
 
     move-result-object p1
 
-    .line 111
     invoke-virtual {p0}, Lcom/google/firebase/messaging/TopicsSubscriber;->startTopicsSyncIfNecessary()V
 
     return-object p1

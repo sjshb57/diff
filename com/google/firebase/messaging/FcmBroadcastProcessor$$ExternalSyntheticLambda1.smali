@@ -16,7 +16,6 @@
 .method public synthetic constructor <init>(Landroid/content/Context;Landroid/content/Intent;)V
     .registers 3
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/FcmBroadcastProcessor$$ExternalSyntheticLambda1;->f$0:Landroid/content/Context;
@@ -31,7 +30,6 @@
 .method public final call()Ljava/lang/Object;
     .registers 3
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/FcmBroadcastProcessor$$ExternalSyntheticLambda1;->f$0:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/FcmBroadcastProcessor$$ExternalSyntheticLambda1;->f$1:Landroid/content/Intent;

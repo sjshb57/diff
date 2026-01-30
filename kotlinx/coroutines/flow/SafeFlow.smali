@@ -83,7 +83,6 @@
         }
     .end annotation
 
-    .line 59
     invoke-direct {p0}, Lkotlinx/coroutines/flow/AbstractFlow;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/flow/SafeFlow;->block:Lkotlin/jvm/functions/Function2;
@@ -108,7 +107,6 @@
         }
     .end annotation
 
-    .line 61
     iget-object v0, p0, Lkotlinx/coroutines/flow/SafeFlow;->block:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -22,7 +22,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 743
     new-instance v0, Lcom/google/flatbuffers/FlexBuffers$Key;
 
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers;->access$000()Lcom/google/flatbuffers/ReadBuf;
@@ -41,7 +40,6 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;II)V
     .registers 4
 
-    .line 746
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffers$Object;-><init>(Lcom/google/flatbuffers/ReadBuf;II)V
 
     return-void
@@ -50,7 +48,6 @@
 .method static synthetic access$700()Lcom/google/flatbuffers/FlexBuffers$Key;
     .registers 1
 
-    .line 741
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$Key;->EMPTY:Lcom/google/flatbuffers/FlexBuffers$Key;
 
     return-object v0
@@ -59,7 +56,6 @@
 .method public static empty()Lcom/google/flatbuffers/FlexBuffers$Key;
     .registers 1
 
-    .line 754
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$Key;->EMPTY:Lcom/google/flatbuffers/FlexBuffers$Key;
 
     return-object v0
@@ -70,12 +66,10 @@
 .method compareTo([B)I
     .registers 7
 
-    .line 778
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->end:I
 
     const/4 v1, 0x0
 
-    .line 782
     :cond_3
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->bb:Lcom/google/flatbuffers/ReadBuf;
 
@@ -83,7 +77,6 @@
 
     move-result v2
 
-    .line 783
     aget-byte v3, p1, v1
 
     if-nez v2, :cond_f
@@ -97,7 +90,6 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 788
     array-length v4, p1
 
     if-ne v1, v4, :cond_18
@@ -117,7 +109,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 5
 
-    .line 805
     instance-of v0, p1, Lcom/google/flatbuffers/FlexBuffers$Key;
 
     const/4 v1, 0x0
@@ -126,7 +117,6 @@
 
     return v1
 
-    .line 808
     :cond_6
     check-cast p1, Lcom/google/flatbuffers/FlexBuffers$Key;
 
@@ -151,7 +141,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 812
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->end:I
 
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->byteWidth:I
@@ -164,10 +153,8 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 768
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->end:I
 
-    .line 769
     :goto_2
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->bb:Lcom/google/flatbuffers/ReadBuf;
 
@@ -177,12 +164,10 @@
 
     if-nez v1, :cond_16
 
-    .line 770
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->end:I
 
     sub-int/2addr v0, v1
 
-    .line 774
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     iget v2, p0, Lcom/google/flatbuffers/FlexBuffers$Key;->end:I
@@ -202,7 +187,6 @@
 .method public toString(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
     .registers 3
 
-    .line 762
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$Key;->toString()Ljava/lang/String;
 
     move-result-object v0

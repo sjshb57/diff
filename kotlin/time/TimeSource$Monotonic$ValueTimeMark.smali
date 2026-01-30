@@ -85,7 +85,6 @@
 .method private synthetic constructor <init>(J)V
     .registers 3
 
-    .line 66
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
@@ -106,7 +105,6 @@
 .method public static final compareTo-6eNON_k(JJ)I
     .registers 4
 
-    .line 100
     invoke-static {p0, p1, p2, p3}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->minus-6eNON_k(JJ)J
 
     move-result-wide p0
@@ -131,7 +129,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 66
     invoke-static {p0, p1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->box-impl(J)Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;
 
     move-result-object p0
@@ -152,7 +149,6 @@
 .method public static elapsedNow-UwyO8pc(J)J
     .registers 3
 
-    .line 67
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-virtual {v0, p0, p1}, Lkotlin/time/MonotonicTimeSource;->elapsedFrom-6eNON_k(J)J
@@ -213,7 +209,6 @@
 .method public static hasNotPassedNow-impl(J)Z
     .registers 2
 
-    .line 71
     invoke-static {p0, p1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->elapsedNow-UwyO8pc(J)J
 
     move-result-wide p0
@@ -228,7 +223,6 @@
 .method public static hasPassedNow-impl(J)Z
     .registers 2
 
-    .line 70
     invoke-static {p0, p1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->elapsedNow-UwyO8pc(J)J
 
     move-result-wide p0
@@ -255,7 +249,6 @@
 .method public static final minus-6eNON_k(JJ)J
     .registers 5
 
-    .line 90
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-virtual {v0, p0, p1, p2, p3}, Lkotlin/time/MonotonicTimeSource;->differenceBetween-fRLX17w(JJ)J
@@ -268,7 +261,6 @@
 .method public static minus-LRDsOJo(JJ)J
     .registers 5
 
-    .line 69
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-static {p2, p3}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
@@ -289,12 +281,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
     instance-of v0, p2, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;
 
     if-eqz v0, :cond_14
 
-    .line 76
     check-cast p2, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;
 
     invoke-virtual {p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->unbox-impl()J
@@ -307,7 +297,6 @@
 
     return-wide p0
 
-    .line 75
     :cond_14
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -341,7 +330,6 @@
 .method public static plus-LRDsOJo(JJ)J
     .registers 5
 
-    .line 68
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-virtual {v0, p0, p1, p2, p3}, Lkotlin/time/MonotonicTimeSource;->adjustReading-6QKq23U(JJ)J
@@ -378,7 +366,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 2
 
-    .line 63
     check-cast p1, Lkotlin/time/ComparableTimeMark;
 
     invoke-virtual {p0, p1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->compareTo(Lkotlin/time/ComparableTimeMark;)I
@@ -391,7 +378,6 @@
 .method public compareTo(Lkotlin/time/ComparableTimeMark;)I
     .registers 3
 
-    .line 63
     move-object v0, p0
 
     check-cast v0, Lkotlin/time/ComparableTimeMark;
@@ -406,7 +392,6 @@
 .method public elapsedNow-UwyO8pc()J
     .registers 3
 
-    .line 67
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->elapsedNow-UwyO8pc(J)J
@@ -431,7 +416,6 @@
 .method public hasNotPassedNow()Z
     .registers 3
 
-    .line 71
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->hasNotPassedNow-impl(J)Z
@@ -444,7 +428,6 @@
 .method public hasPassedNow()Z
     .registers 3
 
-    .line 70
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->hasPassedNow-impl(J)Z
@@ -469,7 +452,6 @@
 .method public minus-LRDsOJo(J)J
     .registers 5
 
-    .line 69
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->minus-LRDsOJo(JJ)J
@@ -482,7 +464,6 @@
 .method public bridge synthetic minus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 63
     invoke-virtual {p0, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->minus-LRDsOJo(J)J
 
     move-result-wide p1
@@ -497,7 +478,6 @@
 .method public bridge synthetic minus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 63
     invoke-virtual {p0, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->minus-LRDsOJo(J)J
 
     move-result-wide p1
@@ -516,7 +496,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1, p1}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->minus-UwyO8pc(JLkotlin/time/ComparableTimeMark;)J
@@ -529,7 +508,6 @@
 .method public plus-LRDsOJo(J)J
     .registers 5
 
-    .line 68
     iget-wide v0, p0, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->reading:J
 
     invoke-static {v0, v1, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->plus-LRDsOJo(JJ)J
@@ -542,7 +520,6 @@
 .method public bridge synthetic plus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 63
     invoke-virtual {p0, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->plus-LRDsOJo(J)J
 
     move-result-wide p1
@@ -557,7 +534,6 @@
 .method public bridge synthetic plus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 63
     invoke-virtual {p0, p1, p2}, Lkotlin/time/TimeSource$Monotonic$ValueTimeMark;->plus-LRDsOJo(J)J
 
     move-result-wide p1

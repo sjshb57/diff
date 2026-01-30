@@ -138,19 +138,14 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
     iput-object p1, p0, Lkotlin/jvm/internal/TypeReference;->classifier:Lkotlin/reflect/KClassifier;
 
-    .line 13
     iput-object p2, p0, Lkotlin/jvm/internal/TypeReference;->arguments:Ljava/util/List;
 
-    .line 14
     iput-object p3, p0, Lkotlin/jvm/internal/TypeReference;->platformTypeUpperBound:Lkotlin/reflect/KType;
 
-    .line 15
     iput p4, p0, Lkotlin/jvm/internal/TypeReference;->flags:I
 
     return-void
@@ -178,7 +173,6 @@
 
     const/4 v0, 0x0
 
-    .line 21
     invoke-direct {p0, p1, p2, v0, p3}, Lkotlin/jvm/internal/TypeReference;-><init>(Lkotlin/reflect/KClassifier;Ljava/util/List;Lkotlin/reflect/KType;I)V
 
     return-void
@@ -187,7 +181,6 @@
 .method public static final synthetic access$asString(Lkotlin/jvm/internal/TypeReference;Lkotlin/reflect/KTypeProjection;)Ljava/lang/String;
     .registers 2
 
-    .line 10
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/TypeReference;->asString(Lkotlin/reflect/KTypeProjection;)Ljava/lang/String;
 
     move-result-object p0
@@ -198,7 +191,6 @@
 .method private final asString(Lkotlin/reflect/KTypeProjection;)Ljava/lang/String;
     .registers 5
 
-    .line 88
     invoke-virtual {p1}, Lkotlin/reflect/KTypeProjection;->getVariance()Lkotlin/reflect/KVariance;
 
     move-result-object v0
@@ -209,7 +201,6 @@
 
     return-object p1
 
-    .line 90
     :cond_9
     invoke-virtual {p1}, Lkotlin/reflect/KTypeProjection;->getType()Lkotlin/reflect/KType;
 
@@ -246,7 +237,6 @@
 
     move-result-object v0
 
-    .line 91
     :cond_26
     invoke-virtual {p1}, Lkotlin/reflect/KTypeProjection;->getVariance()Lkotlin/reflect/KVariance;
 
@@ -270,7 +260,6 @@
 
     if-ne p1, v1, :cond_49
 
-    .line 94
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v1, "out "
@@ -292,7 +281,6 @@
 
     throw p1
 
-    .line 93
     :cond_4f
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -314,7 +302,6 @@
 .method private final asString(Z)Ljava/lang/String;
     .registers 13
 
-    .line 41
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v0
@@ -342,7 +329,6 @@
     :cond_13
     if-nez v2, :cond_1e
 
-    .line 43
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object p1
@@ -353,7 +339,6 @@
 
     goto :goto_52
 
-    .line 44
     :cond_1e
     iget v0, p0, Lkotlin/jvm/internal/TypeReference;->flags:I
 
@@ -365,7 +350,6 @@
 
     goto :goto_52
 
-    .line 45
     :cond_27
     invoke-virtual {v2}, Ljava/lang/Class;->isArray()Z
 
@@ -382,7 +366,6 @@
     :cond_32
     if-eqz p1, :cond_4e
 
-    .line 46
     invoke-virtual {v2}, Ljava/lang/Class;->isPrimitive()Z
 
     move-result p1
@@ -409,13 +392,11 @@
 
     goto :goto_52
 
-    .line 47
     :cond_4e
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 50
     :goto_52
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getArguments()Ljava/util/List;
 
@@ -433,7 +414,6 @@
 
     goto :goto_87
 
-    .line 51
     :cond_60
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getArguments()Ljava/util/List;
 
@@ -481,7 +461,6 @@
 
     move-result-object v0
 
-    .line 52
     :goto_87
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->isMarkedNullable()Z
 
@@ -491,7 +470,6 @@
 
     const-string v1, "?"
 
-    .line 54
     :cond_8f
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -507,15 +485,12 @@
 
     move-result-object p1
 
-    .line 56
     iget-object v0, p0, Lkotlin/jvm/internal/TypeReference;->platformTypeUpperBound:Lkotlin/reflect/KType;
 
-    .line 57
     instance-of v1, v0, Lkotlin/jvm/internal/TypeReference;
 
     if-eqz v1, :cond_f9
 
-    .line 58
     check-cast v0, Lkotlin/jvm/internal/TypeReference;
 
     const/4 v1, 0x1
@@ -524,7 +499,6 @@
 
     move-result-object v0
 
-    .line 59
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -533,7 +507,6 @@
 
     goto :goto_f9
 
-    .line 64
     :cond_b5
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -571,7 +544,6 @@
 
     goto :goto_f9
 
-    .line 65
     :cond_de
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -611,7 +583,6 @@
         }
     .end annotation
 
-    .line 74
     const-class v0, [Z
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -624,7 +595,6 @@
 
     goto :goto_5a
 
-    .line 75
     :cond_b
     const-class v0, [C
 
@@ -638,7 +608,6 @@
 
     goto :goto_5a
 
-    .line 76
     :cond_16
     const-class v0, [B
 
@@ -652,7 +621,6 @@
 
     goto :goto_5a
 
-    .line 77
     :cond_21
     const-class v0, [S
 
@@ -666,7 +634,6 @@
 
     goto :goto_5a
 
-    .line 78
     :cond_2c
     const-class v0, [I
 
@@ -680,7 +647,6 @@
 
     goto :goto_5a
 
-    .line 79
     :cond_37
     const-class v0, [F
 
@@ -694,7 +660,6 @@
 
     goto :goto_5a
 
-    .line 80
     :cond_42
     const-class v0, [J
 
@@ -708,7 +673,6 @@
 
     goto :goto_5a
 
-    .line 81
     :cond_4d
     const-class v0, [D
 
@@ -722,7 +686,6 @@
 
     goto :goto_5a
 
-    .line 82
     :cond_58
     const-string p1, "kotlin.Array"
 
@@ -747,12 +710,10 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 30
     instance-of v0, p1, Lkotlin/jvm/internal/TypeReference;
 
     if-eqz v0, :cond_34
 
-    .line 31
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v0
@@ -793,7 +754,6 @@
 
     if-eqz v0, :cond_34
 
-    .line 32
     iget v0, p0, Lkotlin/jvm/internal/TypeReference;->flags:I
 
     iget p1, p1, Lkotlin/jvm/internal/TypeReference;->flags:I
@@ -822,7 +782,6 @@
         }
     .end annotation
 
-    .line 24
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -841,7 +800,6 @@
         }
     .end annotation
 
-    .line 13
     iget-object v0, p0, Lkotlin/jvm/internal/TypeReference;->arguments:Ljava/util/List;
 
     return-object v0
@@ -850,7 +808,6 @@
 .method public getClassifier()Lkotlin/reflect/KClassifier;
     .registers 2
 
-    .line 12
     iget-object v0, p0, Lkotlin/jvm/internal/TypeReference;->classifier:Lkotlin/reflect/KClassifier;
 
     return-object v0
@@ -859,7 +816,6 @@
 .method public final getFlags$kotlin_stdlib()I
     .registers 2
 
-    .line 15
     iget v0, p0, Lkotlin/jvm/internal/TypeReference;->flags:I
 
     return v0
@@ -868,7 +824,6 @@
 .method public final getPlatformTypeUpperBound$kotlin_stdlib()Lkotlin/reflect/KType;
     .registers 2
 
-    .line 14
     iget-object v0, p0, Lkotlin/jvm/internal/TypeReference;->platformTypeUpperBound:Lkotlin/reflect/KType;
 
     return-object v0
@@ -877,7 +832,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 35
     invoke-virtual {p0}, Lkotlin/jvm/internal/TypeReference;->getClassifier()Lkotlin/reflect/KClassifier;
 
     move-result-object v0
@@ -910,7 +864,6 @@
 .method public isMarkedNullable()Z
     .registers 3
 
-    .line 27
     iget v0, p0, Lkotlin/jvm/internal/TypeReference;->flags:I
 
     const/4 v1, 0x1
@@ -931,7 +884,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 38
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

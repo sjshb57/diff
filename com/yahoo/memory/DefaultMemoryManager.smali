@@ -14,7 +14,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 13
     new-instance v0, Lcom/yahoo/memory/DefaultMemoryManager;
 
     invoke-direct {v0}, Lcom/yahoo/memory/DefaultMemoryManager;-><init>()V
@@ -27,7 +26,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method static getInstance()Lcom/yahoo/memory/DefaultMemoryManager;
     .registers 1
 
-    .line 18
     sget-object v0, Lcom/yahoo/memory/DefaultMemoryManager;->memMgr:Lcom/yahoo/memory/DefaultMemoryManager;
 
     return-object v0
@@ -57,12 +54,10 @@
 
     long-to-int p1, p1
 
-    .line 23
     invoke-static {p1}, Lcom/yahoo/memory/WritableMemory;->allocate(I)Lcom/yahoo/memory/WritableMemory;
 
     move-result-object p1
 
-    .line 24
     invoke-virtual {p1, p0}, Lcom/yahoo/memory/WritableMemory;->setMemoryRequest(Lcom/yahoo/memory/MemoryRequestServer;)V
 
     return-object p1

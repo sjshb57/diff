@@ -82,13 +82,10 @@
         }
     .end annotation
 
-    .line 237
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 238
     iput-object p1, p0, Lkotlinx/coroutines/channels/BufferedChannel$SendBroadcast;->cont:Lkotlinx/coroutines/CancellableContinuation;
 
-    .line 239
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuationImpl<kotlin.Boolean>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -113,7 +110,6 @@
         }
     .end annotation
 
-    .line 238
     iget-object v0, p0, Lkotlinx/coroutines/channels/BufferedChannel$SendBroadcast;->cont:Lkotlinx/coroutines/CancellableContinuation;
 
     return-object v0

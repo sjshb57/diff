@@ -6,10 +6,8 @@
 .method public static onResume(Lcom/unity3d/player/UnityPlayerActivity;)V
     .registers 2
 
-    .line 111
     invoke-static {p0}, Lcom/unity3d/player/UnityPlayerActivity;->onResume$001(Landroid/app/Activity;)V
 
-    .line 113
     invoke-static {p0}, Lcom/unity3d/player/MultiWindowSupport;->getAllowResizableWindow(Landroid/app/Activity;)Z
 
     move-result v0
@@ -24,7 +22,6 @@
 
     return-void
 
-    .line 116
     :cond_10
     iget-object v0, p0, Lcom/unity3d/player/UnityPlayerActivity;->mUnityPlayer:Lcom/unity3d/player/UnityPlayer;
 

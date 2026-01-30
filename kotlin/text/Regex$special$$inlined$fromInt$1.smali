@@ -86,7 +86,6 @@
         }
     .end annotation
 
-    .line 23
     iget v0, p0, Lkotlin/text/Regex$special$$inlined$fromInt$1;->$value:I
 
     check-cast p1, Lkotlin/text/FlagEnum;
@@ -121,7 +120,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .registers 2
 
-    .line 23
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Lkotlin/text/Regex$special$$inlined$fromInt$1;->invoke(Ljava/lang/Enum;)Ljava/lang/Boolean;

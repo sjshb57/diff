@@ -34,7 +34,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 636
     const-class v0, Lcom/google/flatbuffers/FlexBuffersBuilder;
 
     return-void
@@ -43,24 +42,18 @@
 .method constructor <init>(IIID)V
     .registers 6
 
-    .line 657
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 658
     iput p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->key:I
 
-    .line 659
     iput p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
-    .line 660
     iput p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
 
-    .line 661
     iput-wide p4, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->dValue:D
 
     const-wide/high16 p1, -0x8000000000000000L
 
-    .line 662
     iput-wide p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     return-void
@@ -69,24 +62,18 @@
 .method constructor <init>(IIIJ)V
     .registers 6
 
-    .line 649
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 650
     iput p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->key:I
 
-    .line 651
     iput p2, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
-    .line 652
     iput p3, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
 
-    .line 653
     iput-wide p4, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->iValue:J
 
     const-wide/16 p1, 0x1
 
-    .line 654
     iput-wide p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->dValue:D
 
     return-void
@@ -95,7 +82,6 @@
 .method static synthetic access$100(II)I
     .registers 2
 
-    .line 636
     invoke-static {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->paddingBytes(II)I
 
     move-result p0
@@ -106,7 +92,6 @@
 .method static synthetic access$200(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;II)I
     .registers 3
 
-    .line 636
     invoke-direct {p0, p1, p2}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->elemWidth(II)I
 
     move-result p0
@@ -117,7 +102,6 @@
 .method static synthetic access$300(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;)B
     .registers 1
 
-    .line 636
     invoke-direct {p0}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->storedPackedType()B
 
     move-result p0
@@ -128,7 +112,6 @@
 .method static synthetic access$400(Lcom/google/flatbuffers/FlexBuffersBuilder$Value;I)B
     .registers 2
 
-    .line 636
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->storedPackedType(I)B
 
     move-result p0
@@ -139,7 +122,6 @@
 .method static synthetic access$500(IIJII)I
     .registers 6
 
-    .line 636
     invoke-static/range {p0 .. p5}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->elemWidth(IIJII)I
 
     move-result p0
@@ -150,7 +132,6 @@
 .method static blob(IIII)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 11
 
-    .line 670
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     int-to-long v4, p1
@@ -171,7 +152,6 @@
 .method static bool(IZ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 666
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     if-eqz p1, :cond_7
@@ -202,7 +182,6 @@
 .method private elemWidth(II)I
     .registers 9
 
-    .line 734
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
@@ -223,7 +202,6 @@
 .method private static elemWidth(IIJII)I
     .registers 10
 
-    .line 738
     invoke-static {p0}, Lcom/google/flatbuffers/FlexBuffers;->isTypeInline(I)Z
 
     move-result p0
@@ -240,7 +218,6 @@
 
     if-gt p0, p1, :cond_28
 
-    .line 751
     invoke-static {p4, p0}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->paddingBytes(II)I
 
     move-result p1
@@ -259,7 +236,6 @@
 
     int-to-long v0, p1
 
-    .line 755
     invoke-static {v0, v1}, Lcom/google/flatbuffers/FlexBuffersBuilder;->widthUInBits(J)I
 
     move-result p1
@@ -290,7 +266,6 @@
 .method static float32(IF)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 706
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x2
@@ -311,7 +286,6 @@
 .method static float64(ID)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 10
 
-    .line 710
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v2, 0x3
@@ -332,7 +306,6 @@
 .method static int16(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 678
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x1
@@ -353,7 +326,6 @@
 .method static int32(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 682
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x2
@@ -374,7 +346,6 @@
 .method static int64(IJ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 10
 
-    .line 686
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v2, 0x1
@@ -395,7 +366,6 @@
 .method static int8(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 674
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x0
@@ -444,7 +414,6 @@
 
     const/4 v0, 0x0
 
-    .line 714
     invoke-direct {p0, v0}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->storedPackedType(I)B
 
     move-result v0
@@ -455,7 +424,6 @@
 .method private storedPackedType(I)B
     .registers 3
 
-    .line 718
     invoke-direct {p0, p1}, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->storedWidth(I)I
 
     move-result p1
@@ -472,7 +440,6 @@
 .method private storedWidth(I)I
     .registers 3
 
-    .line 726
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->type:I
 
     invoke-static {v0}, Lcom/google/flatbuffers/FlexBuffers;->isTypeInline(I)Z
@@ -481,7 +448,6 @@
 
     if-eqz v0, :cond_f
 
-    .line 727
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
 
     invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
@@ -490,7 +456,6 @@
 
     return p1
 
-    .line 729
     :cond_f
     iget p1, p0, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;->minBitWidth:I
 
@@ -500,7 +465,6 @@
 .method static uInt16(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 694
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x1
@@ -521,7 +485,6 @@
 .method static uInt32(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 698
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x2
@@ -542,7 +505,6 @@
 .method static uInt64(IJ)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 10
 
-    .line 702
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v2, 0x2
@@ -563,7 +525,6 @@
 .method static uInt8(II)Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
     .registers 9
 
-    .line 690
     new-instance v6, Lcom/google/flatbuffers/FlexBuffersBuilder$Value;
 
     const/4 v3, 0x0

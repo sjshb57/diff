@@ -17,14 +17,12 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 38
     invoke-static {}, Lcom/google/firebase/StartupTime;->now()Lcom/google/firebase/StartupTime;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->startupTime:Lcom/google/firebase/StartupTime;
 
-    .line 40
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -39,7 +37,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 34
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -48,12 +45,10 @@
 .method private static checkContentProviderAuthority(Landroid/content/pm/ProviderInfo;)V
     .registers 2
 
-    .line 85
     const-string v0, "FirebaseInitProvider ProviderInfo cannot be null."
 
     invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 86
     const-string v0, "com.google.firebase.firebaseinitprovider"
 
     iget-object p0, p0, Landroid/content/pm/ProviderInfo;->authority:Ljava/lang/String;
@@ -66,7 +61,6 @@
 
     return-void
 
-    .line 87
     :cond_10
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -80,7 +74,6 @@
 .method public static getStartupTime()Lcom/google/firebase/StartupTime;
     .registers 1
 
-    .line 44
     sget-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->startupTime:Lcom/google/firebase/StartupTime;
 
     return-object v0
@@ -89,7 +82,6 @@
 .method public static isCurrentlyInitializing()Z
     .registers 1
 
-    .line 49
     sget-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->currentlyInitializing:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -104,10 +96,8 @@
 .method public attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
     .registers 3
 
-    .line 60
     invoke-static {p2}, Lcom/google/firebase/provider/FirebaseInitProvider;->checkContentProviderAuthority(Landroid/content/pm/ProviderInfo;)V
 
-    .line 61
     invoke-super {p0, p1, p2}, Landroid/content/ContentProvider;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
     return-void
@@ -142,7 +132,6 @@
 
     const/4 v0, 0x0
 
-    .line 68
     :try_start_1
     sget-object v1, Lcom/google/firebase/provider/FirebaseInitProvider;->currentlyInitializing:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -150,7 +139,6 @@
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 69
     invoke-virtual {p0}, Lcom/google/firebase/provider/FirebaseInitProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -165,7 +153,6 @@
 
     if-nez v1, :cond_19
 
-    .line 70
     :try_start_13
     const-string v1, "FirebaseApp initialization unsuccessful"
 
@@ -173,7 +160,6 @@
 
     goto :goto_1e
 
-    .line 72
     :cond_19
     const-string v1, "FirebaseApp initialization successful"
 
@@ -181,7 +167,6 @@
     :try_end_1e
     .catchall {:try_start_13 .. :try_end_1e} :catchall_24
 
-    .line 76
     :goto_1e
     sget-object v1, Lcom/google/firebase/provider/FirebaseInitProvider;->currentlyInitializing:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -196,7 +181,6 @@
 
     invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 77
     throw v1
 .end method
 

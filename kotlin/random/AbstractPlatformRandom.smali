@@ -52,7 +52,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 35
     invoke-direct {p0}, Lkotlin/random/Random;-><init>()V
 
     return-void
@@ -66,7 +65,6 @@
 .method public nextBits(I)I
     .registers 3
 
-    .line 39
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -85,7 +83,6 @@
 .method public nextBoolean()Z
     .registers 2
 
-    .line 44
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -104,7 +101,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 47
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -117,7 +113,6 @@
 .method public nextDouble()D
     .registers 3
 
-    .line 45
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -132,7 +127,6 @@
 .method public nextFloat()F
     .registers 2
 
-    .line 46
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -147,7 +141,6 @@
 .method public nextInt()I
     .registers 2
 
-    .line 41
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -162,7 +155,6 @@
 .method public nextInt(I)I
     .registers 3
 
-    .line 42
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0
@@ -177,7 +169,6 @@
 .method public nextLong()J
     .registers 3
 
-    .line 43
     invoke-virtual {p0}, Lkotlin/random/AbstractPlatformRandom;->getImpl()Ljava/util/Random;
 
     move-result-object v0

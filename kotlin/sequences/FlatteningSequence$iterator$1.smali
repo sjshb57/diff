@@ -99,10 +99,8 @@
 
     iput-object p1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->this$0:Lkotlin/sequences/FlatteningSequence;
 
-    .line 292
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 293
     invoke-static {p1}, Lkotlin/sequences/FlatteningSequence;->access$getSequence$p(Lkotlin/sequences/FlatteningSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -119,7 +117,6 @@
 .method private final ensureItemIterator()Z
     .registers 5
 
-    .line 307
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     if-eqz v0, :cond_d
@@ -132,10 +129,8 @@
 
     const/4 v0, 0x0
 
-    .line 308
     iput-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
-    .line 310
     :cond_d
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
@@ -143,7 +138,6 @@
 
     if-nez v0, :cond_40
 
-    .line 311
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -156,7 +150,6 @@
 
     return v0
 
-    .line 314
     :cond_1c
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
@@ -164,7 +157,6 @@
 
     move-result-object v0
 
-    .line 315
     iget-object v2, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->this$0:Lkotlin/sequences/FlatteningSequence;
 
     invoke-static {v2}, Lkotlin/sequences/FlatteningSequence;->access$getIterator$p(Lkotlin/sequences/FlatteningSequence;)Lkotlin/jvm/functions/Function1;
@@ -187,14 +179,12 @@
 
     check-cast v0, Ljava/util/Iterator;
 
-    .line 316
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_d
 
-    .line 317
     iput-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     :cond_40
@@ -213,7 +203,6 @@
         }
     .end annotation
 
-    .line 294
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     return-object v0
@@ -229,7 +218,6 @@
         }
     .end annotation
 
-    .line 293
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object v0
@@ -238,7 +226,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 303
     invoke-direct {p0}, Lkotlin/sequences/FlatteningSequence$iterator$1;->ensureItemIterator()Z
 
     move-result v0
@@ -254,14 +241,12 @@
         }
     .end annotation
 
-    .line 297
     invoke-direct {p0}, Lkotlin/sequences/FlatteningSequence$iterator$1;->ensureItemIterator()Z
 
     move-result v0
 
     if-eqz v0, :cond_10
 
-    .line 299
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -272,7 +257,6 @@
 
     return-object v0
 
-    .line 298
     :cond_10
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -303,7 +287,6 @@
         }
     .end annotation
 
-    .line 294
     iput-object p1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     return-void

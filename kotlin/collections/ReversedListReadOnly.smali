@@ -70,7 +70,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 11
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/ReversedListReadOnly;->delegate:Ljava/util/List;
@@ -88,7 +87,6 @@
         }
     .end annotation
 
-    .line 13
     iget-object v0, p0, Lkotlin/collections/ReversedListReadOnly;->delegate:Ljava/util/List;
 
     move-object v1, p0
@@ -109,7 +107,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 12
     iget-object v0, p0, Lkotlin/collections/ReversedListReadOnly;->delegate:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

@@ -58,15 +58,12 @@
 
     sput-object v0, Lkotlin/internal/PlatformImplementations$ReflectThrowable;->INSTANCE:Lkotlin/internal/PlatformImplementations$ReflectThrowable;
 
-    .line 21
     const-class v0, Ljava/lang/Throwable;
 
-    .line 23
     invoke-virtual {v0}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
 
     move-result-object v1
 
-    .line 24
     const-string v2, "throwableMethods"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
@@ -84,7 +81,6 @@
 
     aget-object v6, v1, v4
 
-    .line 25
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object v7
@@ -127,11 +123,9 @@
     :cond_3f
     move-object v6, v5
 
-    .line 24
     :goto_40
     sput-object v6, Lkotlin/internal/PlatformImplementations$ReflectThrowable;->addSuppressed:Ljava/lang/reflect/Method;
 
-    .line 27
     array-length v0, v1
 
     :goto_43
@@ -170,7 +164,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

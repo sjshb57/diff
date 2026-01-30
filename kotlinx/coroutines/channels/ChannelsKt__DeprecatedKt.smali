@@ -168,7 +168,6 @@
 
     move-result-object v1
 
-    .line 402
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$any$1;->label:I
 
     const/4 v3, 0x1
@@ -200,7 +199,6 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 404
     :try_start_39
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -224,7 +222,6 @@
     :goto_48
     const/4 v0, 0x0
 
-    .line 669
     invoke-static {p0, v0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p1
@@ -232,7 +229,6 @@
     :catchall_4d
     move-exception p1
 
-    .line 667
     :try_start_4e
     throw p1
     :try_end_4f
@@ -241,7 +237,6 @@
     :catchall_4f
     move-exception v0
 
-    .line 669
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw v0
@@ -261,7 +256,6 @@
         }
     .end annotation
 
-    .line 476
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumes$1;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumes$1;-><init>(Lkotlinx/coroutines/channels/ReceiveChannel;)V
@@ -285,7 +279,6 @@
         }
     .end annotation
 
-    .line 17
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumesAll$1;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$consumesAll$1;-><init>([Lkotlinx/coroutines/channels/ReceiveChannel;)V
@@ -338,7 +331,6 @@
 
     move-result-object v1
 
-    .line 409
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$count$1;->label:I
 
     const/4 v3, 0x0
@@ -385,12 +377,10 @@
     :cond_41
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 410
     new-instance p1, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 677
     :try_start_49
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -443,7 +433,6 @@
 
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
-    .line 411
     iget p1, v5, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     add-int/2addr p1, v4
@@ -454,16 +443,13 @@
 
     goto :goto_50
 
-    .line 678
     :cond_74
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_76
     .catchall {:try_start_62 .. :try_end_76} :catchall_37
 
-    .line 679
     invoke-static {v2, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
-    .line 412
     iget p0, v5, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxInt(I)Ljava/lang/Integer;
@@ -486,7 +472,6 @@
 
     move-object p0, p1
 
-    .line 682
     :goto_86
     :try_start_86
     throw p0
@@ -496,7 +481,6 @@
     :catchall_87
     move-exception p1
 
-    .line 679
     invoke-static {v2, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -509,7 +493,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 378
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$distinct$1;
 
     const/4 v1, 0x0
@@ -550,7 +533,6 @@
         }
     .end annotation
 
-    .line 385
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -595,14 +577,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 382
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 381
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->distinctBy(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -618,7 +598,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 160
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -663,7 +642,6 @@
 
     if-eqz p3, :cond_a
 
-    .line 159
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p2
@@ -685,7 +663,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 180
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -730,14 +707,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 177
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 176
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->dropWhile(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -789,7 +764,6 @@
 
     move-result-object v1
 
-    .line 34
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$elementAt$1;->label:I
 
     const/16 v3, 0x2e
@@ -842,7 +816,6 @@
 
     if-ltz p1, :cond_9a
 
-    .line 38
     :try_start_4b
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -902,7 +875,6 @@
 
     if-ne p1, p0, :cond_7a
 
-    .line 490
     invoke-static {v7, v4}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p2
@@ -916,7 +888,6 @@
 
     goto :goto_50
 
-    .line 43
     :cond_7e
     :try_start_7e
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
@@ -950,7 +921,6 @@
 
     goto :goto_af
 
-    .line 36
     :cond_9a
     :try_start_9a
     new-instance p2, Ljava/lang/IndexOutOfBoundsException;
@@ -973,7 +943,6 @@
     :try_end_af
     .catchall {:try_start_9a .. :try_end_af} :catchall_96
 
-    .line 488
     :goto_af
     :try_start_af
     throw p0
@@ -983,7 +952,6 @@
     :catchall_b0
     move-exception p1
 
-    .line 490
     invoke-static {v7, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -1032,7 +1000,6 @@
 
     move-result-object v1
 
-    .line 48
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$elementAtOrNull$1;->label:I
 
     const/4 v3, 0x1
@@ -1095,12 +1062,10 @@
 
     if-gez p1, :cond_51
 
-    .line 501
     invoke-static {p0, v4}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v4
 
-    .line 53
     :cond_51
     :try_start_51
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
@@ -1160,7 +1125,6 @@
 
     if-ne p1, v2, :cond_81
 
-    .line 501
     invoke-static {p0, v6}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p2
@@ -1188,7 +1152,6 @@
 
     move-object p0, p1
 
-    .line 499
     :goto_8d
     :try_start_8d
     throw p0
@@ -1198,7 +1161,6 @@
     :catchall_8e
     move-exception p1
 
-    .line 501
     invoke-static {v5, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -1227,7 +1189,6 @@
         }
     .end annotation
 
-    .line 197
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -1272,14 +1233,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 194
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 193
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->filter(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -1295,7 +1254,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 209
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -1340,14 +1298,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 206
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 205
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->filterIndexed(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -1363,7 +1319,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 222
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNot$1;
 
     const/4 v1, 0x0
@@ -1386,14 +1341,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 219
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 218
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->filterNot(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -1416,7 +1369,6 @@
         }
     .end annotation
 
-    .line 227
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNotNull$1;
 
     const/4 v1, 0x0
@@ -1481,7 +1433,6 @@
 
     move-result-object v1
 
-    .line 231
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNotNullTo$1;->label:I
 
     const/4 v3, 0x0
@@ -1528,7 +1479,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 601
     :try_start_44
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -1584,7 +1534,6 @@
 
     if-eqz p2, :cond_6f
 
-    .line 233
     invoke-interface {v2, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_6f
@@ -1592,13 +1541,11 @@
 
     goto :goto_4c
 
-    .line 602
     :cond_71
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_73
     .catchall {:try_start_4c .. :try_end_73} :catchall_37
 
-    .line 603
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -1612,7 +1559,6 @@
 
     move-object p0, v5
 
-    .line 606
     :goto_7b
     :try_start_7b
     throw p0
@@ -1622,7 +1568,6 @@
     :catchall_7c
     move-exception p2
 
-    .line 603
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -1671,7 +1616,6 @@
 
     move-result-object v1
 
-    .line 240
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNotNullTo$3;->label:I
 
     const/4 v3, 0x2
@@ -1742,7 +1686,6 @@
     :cond_54
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 614
     :try_start_57
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -1794,7 +1737,6 @@
 
     if-eqz p2, :cond_8c
 
-    .line 242
     iput-object v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNotNullTo$3;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$filterNotNullTo$3;->L$1:Ljava/lang/Object;
@@ -1821,13 +1763,11 @@
 
     goto :goto_5b
 
-    .line 615
     :cond_90
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_92
     .catchall {:try_start_6f .. :try_end_92} :catchall_52
 
-    .line 616
     invoke-static {p1, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -1841,7 +1781,6 @@
 
     move-object p0, v6
 
-    .line 619
     :goto_9a
     :try_start_9a
     throw p0
@@ -1851,7 +1790,6 @@
     :catchall_9b
     move-exception p2
 
-    .line 616
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -1900,7 +1838,6 @@
 
     move-result-object v1
 
-    .line 62
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$first$1;->label:I
 
     const/4 v3, 0x1
@@ -1941,13 +1878,11 @@
     :cond_3c
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 64
     :try_start_3f
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 65
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$first$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$first$1;->L$1:Ljava/lang/Object;
@@ -1983,7 +1918,6 @@
 
     if-eqz p1, :cond_65
 
-    .line 67
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p0
@@ -1992,12 +1926,10 @@
 
     const/4 p1, 0x0
 
-    .line 512
     invoke-static {v0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p0
 
-    .line 66
     :cond_65
     :try_start_65
     new-instance p0, Ljava/util/NoSuchElementException;
@@ -2017,7 +1949,6 @@
 
     move-object p0, p1
 
-    .line 510
     :goto_70
     :try_start_70
     throw p0
@@ -2027,7 +1958,6 @@
     :catchall_71
     move-exception p1
 
-    .line 512
     invoke-static {v0, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -2076,7 +2006,6 @@
 
     move-result-object v1
 
-    .line 72
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$firstOrNull$1;->label:I
 
     const/4 v3, 0x1
@@ -2117,13 +2046,11 @@
     :cond_3c
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 74
     :try_start_3f
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 75
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$firstOrNull$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$firstOrNull$1;->L$1:Ljava/lang/Object;
@@ -2163,12 +2090,10 @@
 
     if-nez p1, :cond_61
 
-    .line 523
     invoke-static {v0, v1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v1
 
-    .line 77
     :cond_61
     :try_start_61
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
@@ -2177,7 +2102,6 @@
     :try_end_65
     .catchall {:try_start_61 .. :try_end_65} :catchall_32
 
-    .line 523
     invoke-static {v0, v1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p0
@@ -2189,7 +2113,6 @@
 
     move-object p0, p1
 
-    .line 521
     :goto_6c
     :try_start_6c
     throw p0
@@ -2199,7 +2122,6 @@
     :catchall_6d
     move-exception p1
 
-    .line 523
     invoke-static {v0, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -2212,7 +2134,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 320
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -2257,14 +2178,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 317
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 316
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->flatMap(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -2316,7 +2235,6 @@
 
     move-result-object v1
 
-    .line 82
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$indexOf$1;->label:I
 
     const/4 v3, 0x0
@@ -2365,12 +2283,10 @@
     :cond_43
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 83
     new-instance p2, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 531
     :try_start_4b
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -2428,14 +2344,12 @@
 
     move-result-object p2
 
-    .line 85
     invoke-static {v5, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_84
 
-    .line 86
     iget p0, v2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxInt(I)Ljava/lang/Integer;
@@ -2444,12 +2358,10 @@
     :try_end_80
     .catchall {:try_start_54 .. :try_end_80} :catchall_39
 
-    .line 532
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p0
 
-    .line 87
     :cond_84
     :try_start_84
     iget p2, v2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -2462,18 +2374,15 @@
 
     goto :goto_54
 
-    .line 533
     :cond_8b
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_8d
     .catchall {:try_start_84 .. :try_end_8d} :catchall_39
 
-    .line 532
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     const/4 p0, -0x1
 
-    .line 89
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxInt(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -2489,7 +2398,6 @@
 
     move-object p0, v6
 
-    .line 536
     :goto_9a
     :try_start_9a
     throw p0
@@ -2499,7 +2407,6 @@
     :catchall_9b
     move-exception p2
 
-    .line 532
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -2548,7 +2455,6 @@
 
     move-result-object v1
 
-    .line 94
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$last$1;->label:I
 
     const/4 v3, 0x2
@@ -2620,13 +2526,11 @@
     :cond_52
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 96
     :try_start_55
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 97
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$last$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$last$1;->L$1:Ljava/lang/Object;
@@ -2662,7 +2566,6 @@
 
     if-eqz p1, :cond_9e
 
-    .line 99
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p1
@@ -2675,7 +2578,6 @@
 
     move-object p0, v6
 
-    .line 100
     :goto_79
     :try_start_79
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$last$1;->L$0:Ljava/lang/Object;
@@ -2715,7 +2617,6 @@
 
     if-eqz p1, :cond_9a
 
-    .line 101
     invoke-interface {v2}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p1
@@ -2726,13 +2627,11 @@
 
     goto :goto_79
 
-    .line 547
     :cond_9a
     invoke-static {v4, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p0
 
-    .line 98
     :cond_9e
     :try_start_9e
     new-instance p0, Ljava/util/NoSuchElementException;
@@ -2752,7 +2651,6 @@
 
     move-object p0, p1
 
-    .line 545
     :goto_a9
     :try_start_a9
     throw p0
@@ -2762,7 +2660,6 @@
     :catchall_aa
     move-exception p1
 
-    .line 547
     invoke-static {v2, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -2811,7 +2708,6 @@
 
     move-result-object v1
 
-    .line 107
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$lastIndexOf$1;->label:I
 
     const/4 v3, 0x0
@@ -2864,7 +2760,6 @@
     :cond_48
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     new-instance p2, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {p2}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
@@ -2873,12 +2768,10 @@
 
     iput v2, p2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 109
     new-instance v2, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {v2}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
 
-    .line 555
     :try_start_58
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -2938,19 +2831,16 @@
 
     move-result-object p2
 
-    .line 111
     invoke-static {v6, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_8d
 
-    .line 112
     iget p2, v2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     iput p2, v5, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 113
     :cond_8d
     iget p2, v2, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
@@ -2962,16 +2852,13 @@
 
     goto :goto_61
 
-    .line 556
     :cond_94
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_96
     .catchall {:try_start_61 .. :try_end_96} :catchall_3d
 
-    .line 557
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
-    .line 115
     iget p0, v5, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxInt(I)Ljava/lang/Integer;
@@ -2989,7 +2876,6 @@
 
     move-object p0, v7
 
-    .line 560
     :goto_a4
     :try_start_a4
     throw p0
@@ -2999,7 +2885,6 @@
     :catchall_a5
     move-exception p2
 
-    .line 557
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -3048,7 +2933,6 @@
 
     move-result-object v1
 
-    .line 120
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$lastOrNull$1;->label:I
 
     const/4 v3, 0x2
@@ -3120,13 +3004,11 @@
     :cond_52
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 122
     :try_start_55
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 123
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$lastOrNull$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$lastOrNull$1;->L$1:Ljava/lang/Object;
@@ -3164,12 +3046,10 @@
 
     if-nez p1, :cond_76
 
-    .line 571
     invoke-static {v2, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v5
 
-    .line 125
     :cond_76
     :try_start_76
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
@@ -3184,7 +3064,6 @@
 
     move-object p0, v6
 
-    .line 126
     :goto_7d
     :try_start_7d
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$lastOrNull$1;->L$0:Ljava/lang/Object;
@@ -3224,7 +3103,6 @@
 
     if-eqz p1, :cond_9e
 
-    .line 127
     invoke-interface {v2}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p1
@@ -3235,7 +3113,6 @@
 
     goto :goto_7d
 
-    .line 571
     :cond_9e
     invoke-static {v4, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
@@ -3248,7 +3125,6 @@
 
     move-object p0, p1
 
-    .line 569
     :goto_a5
     :try_start_a5
     throw p0
@@ -3258,7 +3134,6 @@
     :catchall_a6
     move-exception p1
 
-    .line 571
     invoke-static {v2, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -3287,7 +3162,6 @@
         }
     .end annotation
 
-    .line 331
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -3332,14 +3206,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 328
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 327
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->map(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -3373,7 +3245,6 @@
         }
     .end annotation
 
-    .line 342
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -3418,14 +3289,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 339
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 338
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->mapIndexed(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -3441,7 +3310,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 355
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->mapIndexed(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -3460,14 +3328,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 352
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 351
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->mapIndexedNotNull(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -3483,7 +3349,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 363
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->map(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
     move-result-object p0
@@ -3502,14 +3367,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 360
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 359
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->mapNotNull(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -3561,7 +3424,6 @@
 
     move-result-object v1
 
-    .line 417
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$maxWith$1;->label:I
 
     const/4 v3, 0x2
@@ -3650,13 +3512,11 @@
     :cond_60
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 419
     :try_start_63
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p2
 
-    .line 420
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$maxWith$1;->L$0:Ljava/lang/Object;
 
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$maxWith$1;->L$1:Ljava/lang/Object;
@@ -3698,12 +3558,10 @@
 
     if-nez p2, :cond_87
 
-    .line 693
     invoke-static {p1, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v5
 
-    .line 421
     :cond_87
     :try_start_87
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
@@ -3720,7 +3578,6 @@
 
     move-object p0, v7
 
-    .line 422
     :goto_8f
     :try_start_8f
     iput-object v4, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$maxWith$1;->L$0:Ljava/lang/Object;
@@ -3759,12 +3616,10 @@
 
     if-eqz p2, :cond_ba
 
-    .line 423
     invoke-interface {p1}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 424
     invoke-interface {v4, v0, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v6
@@ -3783,7 +3638,6 @@
 
     goto :goto_8f
 
-    .line 693
     :cond_ba
     invoke-static {p0, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
@@ -3798,7 +3652,6 @@
 
     move-object p0, v7
 
-    .line 691
     :goto_c2
     :try_start_c2
     throw p0
@@ -3808,7 +3661,6 @@
     :catchall_c3
     move-exception p2
 
-    .line 693
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -3857,7 +3709,6 @@
 
     move-result-object v1
 
-    .line 431
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$minWith$1;->label:I
 
     const/4 v3, 0x2
@@ -3946,13 +3797,11 @@
     :cond_60
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 433
     :try_start_63
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p2
 
-    .line 434
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$minWith$1;->L$0:Ljava/lang/Object;
 
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$minWith$1;->L$1:Ljava/lang/Object;
@@ -3994,12 +3843,10 @@
 
     if-nez p2, :cond_87
 
-    .line 704
     invoke-static {p1, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v5
 
-    .line 435
     :cond_87
     :try_start_87
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
@@ -4016,7 +3863,6 @@
 
     move-object p0, v7
 
-    .line 436
     :goto_8f
     :try_start_8f
     iput-object v4, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$minWith$1;->L$0:Ljava/lang/Object;
@@ -4055,12 +3901,10 @@
 
     if-eqz p2, :cond_ba
 
-    .line 437
     invoke-interface {p1}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 438
     invoke-interface {v4, v0, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v6
@@ -4079,7 +3923,6 @@
 
     goto :goto_8f
 
-    .line 704
     :cond_ba
     invoke-static {p0, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
@@ -4094,7 +3937,6 @@
 
     move-object p0, v7
 
-    .line 702
     :goto_c2
     :try_start_c2
     throw p0
@@ -4104,7 +3946,6 @@
     :catchall_c3
     move-exception p2
 
-    .line 704
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -4153,7 +3994,6 @@
 
     move-result-object v1
 
-    .line 445
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$none$1;->label:I
 
     const/4 v3, 0x1
@@ -4185,7 +4025,6 @@
     :cond_36
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 447
     :try_start_39
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -4221,7 +4060,6 @@
 
     const/4 v0, 0x0
 
-    .line 715
     invoke-static {p0, v0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p1
@@ -4229,7 +4067,6 @@
     :catchall_58
     move-exception p1
 
-    .line 713
     :try_start_59
     throw p1
     :try_end_5a
@@ -4238,7 +4075,6 @@
     :catchall_5a
     move-exception v0
 
-    .line 715
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw v0
@@ -4251,7 +4087,6 @@
         message = "Left for binary compatibility"
     .end annotation
 
-    .line 453
     new-instance v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$requireNoNulls$1;
 
     const/4 v1, 0x0
@@ -4312,7 +4147,6 @@
 
     move-result-object v1
 
-    .line 133
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$single$1;->label:I
 
     const/4 v3, 0x2
@@ -4378,13 +4212,11 @@
     :cond_4d
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 135
     :try_start_50
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 136
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$single$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$single$1;->L$1:Ljava/lang/Object;
@@ -4420,12 +4252,10 @@
 
     if-eqz p1, :cond_97
 
-    .line 138
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 139
     iput-object v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$single$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$single$1;->L$1:Ljava/lang/Object;
@@ -4465,12 +4295,10 @@
 
     const/4 p1, 0x0
 
-    .line 582
     invoke-static {v0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object p0
 
-    .line 140
     :cond_8f
     :try_start_8f
     new-instance p0, Ljava/lang/IllegalArgumentException;
@@ -4483,7 +4311,6 @@
     :try_end_97
     .catchall {:try_start_8f .. :try_end_97} :catchall_33
 
-    .line 137
     :cond_97
     :try_start_97
     new-instance p0, Ljava/util/NoSuchElementException;
@@ -4503,7 +4330,6 @@
 
     move-object p0, p1
 
-    .line 580
     :goto_a2
     :try_start_a2
     throw p0
@@ -4513,7 +4339,6 @@
     :catchall_a3
     move-exception p1
 
-    .line 582
     invoke-static {v2, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -4562,7 +4387,6 @@
 
     move-result-object v1
 
-    .line 146
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$singleOrNull$1;->label:I
 
     const/4 v3, 0x2
@@ -4630,13 +4454,11 @@
     :cond_4e
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 148
     :try_start_51
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
     move-result-object p1
 
-    .line 149
     iput-object p0, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$singleOrNull$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$singleOrNull$1;->L$1:Ljava/lang/Object;
@@ -4674,19 +4496,16 @@
 
     if-nez p1, :cond_72
 
-    .line 593
     invoke-static {v2, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v5
 
-    .line 151
     :cond_72
     :try_start_72
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ChannelIterator;->next()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 152
     iput-object v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$singleOrNull$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$singleOrNull$1;->L$1:Ljava/lang/Object;
@@ -4724,7 +4543,6 @@
 
     if-eqz p1, :cond_93
 
-    .line 593
     invoke-static {v0, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v5
@@ -4741,7 +4559,6 @@
 
     move-object p0, p1
 
-    .line 591
     :goto_9a
     :try_start_9a
     throw p0
@@ -4751,7 +4568,6 @@
     :catchall_9b
     move-exception p1
 
-    .line 593
     invoke-static {v2, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p1
@@ -4764,7 +4580,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 250
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -4809,7 +4624,6 @@
 
     if-eqz p3, :cond_a
 
-    .line 249
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p2
@@ -4831,7 +4645,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 268
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -4876,14 +4689,12 @@
 
     if-eqz p3, :cond_a
 
-    .line 265
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/coroutines/CoroutineContext;
 
-    .line 264
     :cond_a
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/channels/ChannelsKt;->takeWhile(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 
@@ -4945,7 +4756,6 @@
 
     move-result-object v1
 
-    .line 276
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$toChannel$1;->label:I
 
     const/4 v3, 0x2
@@ -5023,7 +4833,6 @@
     :cond_57
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 627
     :try_start_5a
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -5073,7 +4882,6 @@
 
     move-result-object p2
 
-    .line 278
     iput-object v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$toChannel$1;->L$0:Ljava/lang/Object;
 
     iput-object p1, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$toChannel$1;->L$1:Ljava/lang/Object;
@@ -5090,13 +4898,11 @@
 
     return-object v1
 
-    .line 628
     :cond_8d
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_8f
     .catchall {:try_start_72 .. :try_end_8f} :catchall_55
 
-    .line 629
     invoke-static {p1, v5}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -5110,7 +4916,6 @@
 
     move-object p0, v6
 
-    .line 632
     :goto_97
     :try_start_97
     throw p0
@@ -5120,7 +4925,6 @@
     :catchall_98
     move-exception p2
 
-    .line 629
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -5179,7 +4983,6 @@
 
     move-result-object v1
 
-    .line 284
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$toCollection$1;->label:I
 
     const/4 v3, 0x0
@@ -5226,7 +5029,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 640
     :try_start_44
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -5280,20 +5082,17 @@
 
     move-result-object p2
 
-    .line 286
     invoke-interface {v2, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move-object p2, v2
 
     goto :goto_4c
 
-    .line 641
     :cond_6f
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_71
     .catchall {:try_start_4c .. :try_end_71} :catchall_37
 
-    .line 642
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -5307,7 +5106,6 @@
 
     move-object p0, v5
 
-    .line 645
     :goto_79
     :try_start_79
     throw p0
@@ -5317,7 +5115,6 @@
     :catchall_7a
     move-exception p2
 
-    .line 642
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -5380,7 +5177,6 @@
 
     move-result-object v1
 
-    .line 297
     iget v2, v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$toMap$2;->label:I
 
     const/4 v3, 0x0
@@ -5427,7 +5223,6 @@
     :cond_41
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 653
     :try_start_44
     invoke-interface {p0}, Lkotlinx/coroutines/channels/ReceiveChannel;->iterator()Lkotlinx/coroutines/channels/ChannelIterator;
 
@@ -5483,7 +5278,6 @@
 
     check-cast p2, Lkotlin/Pair;
 
-    .line 299
     invoke-virtual {p2}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
     move-result-object v5
@@ -5498,13 +5292,11 @@
 
     goto :goto_4c
 
-    .line 654
     :cond_79
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_7b
     .catchall {:try_start_4c .. :try_end_7b} :catchall_37
 
-    .line 655
     invoke-static {p1, v3}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -5518,7 +5310,6 @@
 
     move-object p0, v6
 
-    .line 658
     :goto_83
     :try_start_83
     throw p0
@@ -5528,7 +5319,6 @@
     :catchall_84
     move-exception p2
 
-    .line 655
     invoke-static {p1, p0}, Lkotlinx/coroutines/channels/ChannelsKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
 
     throw p2
@@ -5541,7 +5331,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 294
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -5562,7 +5351,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 307
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -5593,7 +5381,6 @@
         }
     .end annotation
 
-    .line 398
     new-instance v0, Ljava/util/LinkedHashSet;
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
@@ -5614,7 +5401,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 312
     invoke-static {p0, p1}, Lkotlinx/coroutines/channels/ChannelsKt;->toMutableSet(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -5629,7 +5415,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 368
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -5674,7 +5459,6 @@
 
     if-eqz p2, :cond_a
 
-    .line 367
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p1
@@ -5696,7 +5480,6 @@
         message = "Binary compatibility"
     .end annotation
 
-    .line 458
     sget-object v0, Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$zip$1;->INSTANCE:Lkotlinx/coroutines/channels/ChannelsKt__DeprecatedKt$zip$1;
 
     move-object v4, v0
@@ -5743,7 +5526,6 @@
         }
     .end annotation
 
-    .line 466
     sget-object v0, Lkotlinx/coroutines/GlobalScope;->INSTANCE:Lkotlinx/coroutines/GlobalScope;
 
     move-object v1, v0
@@ -5800,14 +5582,12 @@
 
     if-eqz p4, :cond_a
 
-    .line 463
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getUnconfined()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p2
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext;
 
-    .line 461
     :cond_a
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/channels/ChannelsKt;->zip(Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlinx/coroutines/channels/ReceiveChannel;Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/channels/ReceiveChannel;
 

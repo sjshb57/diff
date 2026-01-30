@@ -32,31 +32,26 @@
 .method private constructor <init>()V
     .registers 3
 
-    .line 313
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 314
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderConfigsJson:Lorg/json/JSONObject;
 
-    .line 315
     invoke-static {}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->access$000()Ljava/util/Date;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderFetchTime:Ljava/util/Date;
 
-    .line 316
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderAbtExperiments:Lorg/json/JSONArray;
 
-    .line 317
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
@@ -65,10 +60,8 @@
 
     const-wide/16 v0, 0x0
 
-    .line 318
     iput-wide v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderTemplateVersionNumber:J
 
-    .line 319
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
@@ -81,7 +74,6 @@
 .method synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigContainer$1;)V
     .registers 2
 
-    .line 305
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;-><init>()V
 
     return-void
@@ -90,45 +82,38 @@
 .method public constructor <init>(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)V
     .registers 4
 
-    .line 322
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 323
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getConfigs()Lorg/json/JSONObject;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderConfigsJson:Lorg/json/JSONObject;
 
-    .line 324
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getFetchTime()Ljava/util/Date;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderFetchTime:Ljava/util/Date;
 
-    .line 325
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getAbtExperiments()Lorg/json/JSONArray;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderAbtExperiments:Lorg/json/JSONArray;
 
-    .line 326
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getPersonalizationMetadata()Lorg/json/JSONObject;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderPersonalizationMetadata:Lorg/json/JSONObject;
 
-    .line 327
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getTemplateVersionNumber()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderTemplateVersionNumber:J
 
-    .line 328
     invoke-virtual {p1}, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;->getRolloutMetadata()Lorg/json/JSONArray;
 
     move-result-object p1
@@ -148,7 +133,6 @@
         }
     .end annotation
 
-    .line 396
     new-instance v9, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     iget-object v1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderConfigsJson:Lorg/json/JSONObject;
@@ -185,7 +169,6 @@
         }
     .end annotation
 
-    .line 332
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
@@ -198,7 +181,6 @@
 .method public replaceConfigsWith(Lorg/json/JSONObject;)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 3
 
-    .line 338
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -219,7 +201,6 @@
 .method public withAbtExperiments(Lorg/json/JSONArray;)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 3
 
-    .line 355
     :try_start_0
     new-instance v0, Lorg/json/JSONArray;
 
@@ -240,7 +221,6 @@
 .method public withFetchTime(Ljava/util/Date;)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 2
 
-    .line 349
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderFetchTime:Ljava/util/Date;
 
     return-object p0
@@ -249,7 +229,6 @@
 .method public withPersonalizationMetadata(Lorg/json/JSONObject;)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 3
 
-    .line 367
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -270,7 +249,6 @@
 .method public withRolloutMetadata(Lorg/json/JSONArray;)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 3
 
-    .line 384
     :try_start_0
     new-instance v0, Lorg/json/JSONArray;
 
@@ -291,7 +269,6 @@
 .method public withTemplateVersionNumber(J)Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;
     .registers 3
 
-    .line 378
     iput-wide p1, p0, Lcom/google/firebase/remoteconfig/internal/ConfigContainer$Builder;->builderTemplateVersionNumber:J
 
     return-object p0

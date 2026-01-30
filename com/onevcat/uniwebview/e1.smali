@@ -42,14 +42,12 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean v0, p0, Lcom/onevcat/uniwebview/e1;->a:Z
 
-    .line 2
     iget-object v1, p1, La/v;->o:Landroid/widget/LinearLayout;
 
     iget-object v2, p1, La/v;->n:La/x;
@@ -75,7 +73,6 @@
 
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 3
     :goto_22
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

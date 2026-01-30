@@ -47,7 +47,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 117
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,7 +72,6 @@
         }
     .end annotation
 
-    .line 118
     invoke-static {}, Lkotlin/text/CharDirectionality;->access$getDirectionalityMap$delegate$cp()Lkotlin/Lazy;
 
     move-result-object v0
@@ -92,7 +90,6 @@
 .method public final valueOf(I)Lkotlin/text/CharDirectionality;
     .registers 5
 
-    .line 120
     invoke-direct {p0}, Lkotlin/text/CharDirectionality$Companion;->getDirectionalityMap()Ljava/util/Map;
 
     move-result-object v0

@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 22
     new-instance v0, Lkotlinx/coroutines/flow/SharingCommand;
 
     const-string v1, "START"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/SharingCommand;->START:Lkotlinx/coroutines/flow/SharingCommand;
 
-    .line 27
     new-instance v0, Lkotlinx/coroutines/flow/SharingCommand;
 
     const-string v1, "STOP"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlinx/coroutines/flow/SharingCommand;->STOP:Lkotlinx/coroutines/flow/SharingCommand;
 
-    .line 35
     new-instance v0, Lkotlinx/coroutines/flow/SharingCommand;
 
     const-string v1, "STOP_AND_RESET_REPLAY_CACHE"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -33,7 +33,6 @@
 .method public static final WhileSubscribed-5qebJ5I(Lkotlinx/coroutines/flow/SharingStarted$Companion;JJ)Lkotlinx/coroutines/flow/SharingStarted;
     .registers 5
 
-    .line 142
     new-instance p0, Lkotlinx/coroutines/flow/StartedWhileSubscribed;
 
     invoke-static {p1, p2}, Lkotlin/time/Duration;->getInWholeMilliseconds-impl(J)J
@@ -58,7 +57,6 @@
 
     if-eqz p6, :cond_a
 
-    .line 139
     sget-object p1, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {p1}, Lkotlin/time/Duration$Companion;->getZERO-UwyO8pc()J
@@ -70,14 +68,12 @@
 
     if-eqz p5, :cond_14
 
-    .line 140
     sget-object p3, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
 
     invoke-virtual {p3}, Lkotlin/time/Duration$Companion;->getINFINITE-UwyO8pc()J
 
     move-result-wide p3
 
-    .line 138
     :cond_14
     invoke-static {p0, p1, p2, p3, p4}, Lkotlinx/coroutines/flow/SharingStartedKt;->WhileSubscribed-5qebJ5I(Lkotlinx/coroutines/flow/SharingStarted$Companion;JJ)Lkotlinx/coroutines/flow/SharingStarted;
 

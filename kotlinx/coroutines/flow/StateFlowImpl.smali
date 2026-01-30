@@ -137,10 +137,8 @@
 .method public constructor <init>(Ljava/lang/Object;)V
     .registers 2
 
-    .line 309
     invoke-direct {p0}, Lkotlinx/coroutines/flow/internal/AbstractSharedFlow;-><init>()V
 
-    .line 310
     iput-object p1, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->_state:Ljava/lang/Object;
 
     return-void
@@ -155,13 +153,11 @@
 .method private final updateState(Ljava/lang/Object;Ljava/lang/Object;)Z
     .registers 9
 
-    .line 434
     monitor-enter p0
 
     :try_start_1
     sget-object v0, Lkotlinx/coroutines/flow/StateFlowImpl;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 325
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -170,7 +166,6 @@
 
     if-eqz p1, :cond_12
 
-    .line 326
     invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
@@ -183,7 +178,6 @@
 
     return v2
 
-    .line 327
     :cond_12
     :try_start_12
     invoke-static {v1, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -200,12 +194,10 @@
 
     return v1
 
-    .line 328
     :cond_1b
     :try_start_1b
     invoke-virtual {v0, p0, p2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 329
     iget p1, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->sequence:I
 
     and-int/lit8 p2, p1, 0x1
@@ -214,29 +206,23 @@
 
     add-int/2addr p1, v1
 
-    .line 332
     iput p1, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->sequence:I
 
-    .line 338
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/StateFlowImpl;->getSlots()[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object p2
 
-    .line 339
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2d
     .catchall {:try_start_1b .. :try_end_2d} :catchall_5e
 
-    .line 434
     monitor-exit p0
 
-    .line 348
     :goto_2e
     check-cast p2, [Lkotlinx/coroutines/flow/StateFlowSlot;
 
     if-eqz p2, :cond_40
 
-    .line 435
     array-length v0, p2
 
     move v3, v2
@@ -248,7 +234,6 @@
 
     if-eqz v4, :cond_3d
 
-    .line 349
     invoke-virtual {v4}, Lkotlinx/coroutines/flow/StateFlowSlot;->makePending()V
 
     :cond_3d
@@ -256,11 +241,9 @@
 
     goto :goto_34
 
-    .line 441
     :cond_40
     monitor-enter p0
 
-    .line 353
     :try_start_41
     iget p2, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->sequence:I
 
@@ -268,29 +251,24 @@
 
     add-int/2addr p1, v1
 
-    .line 354
     iput p1, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->sequence:I
     :try_end_48
     .catchall {:try_start_41 .. :try_end_48} :catchall_55
 
-    .line 355
     monitor-exit p0
 
     return v1
 
-    .line 359
     :cond_4a
     :try_start_4a
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/StateFlowImpl;->getSlots()[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object p1
 
-    .line 360
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_50
     .catchall {:try_start_4a .. :try_end_50} :catchall_55
 
-    .line 441
     monitor-exit p0
 
     move v5, p2
@@ -311,13 +289,11 @@
     :cond_58
     add-int/lit8 p1, p1, 0x2
 
-    .line 335
     :try_start_5a
     iput p1, p0, Lkotlinx/coroutines/flow/StateFlowImpl;->sequence:I
     :try_end_5c
     .catchall {:try_start_5a .. :try_end_5c} :catchall_5e
 
-    .line 336
     monitor-exit p0
 
     return v1
@@ -325,7 +301,6 @@
     :catchall_5e
     move-exception p1
 
-    .line 434
     monitor-exit p0
 
     throw p1
@@ -382,7 +357,6 @@
 
     move-result-object v1
 
-    .line 381
     iget v2, v0, Lkotlinx/coroutines/flow/StateFlowImpl$collect$1;->label:I
 
     const/4 v3, 0x0
@@ -493,14 +467,12 @@
     :cond_77
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 382
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/StateFlowImpl;->allocateSlot()Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
     move-result-object p2
 
     check-cast p2, Lkotlinx/coroutines/flow/StateFlowSlot;
 
-    .line 384
     :try_start_80
     instance-of v2, p1, Lkotlinx/coroutines/flow/SubscribedFlowCollector;
 
@@ -533,14 +505,12 @@
 
     move-object v6, p2
 
-    .line 442
     :goto_98
     :try_start_98
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p2
 
-    .line 385
     sget-object v2, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v2, Lkotlin/coroutines/CoroutineContext$Key;
@@ -557,32 +527,27 @@
 
     move-object p1, v3
 
-    .line 388
     :cond_a9
     :goto_a9
     sget-object p2, Lkotlinx/coroutines/flow/StateFlowImpl;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    .line 391
     invoke-virtual {p2, v8}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
     if-eqz v2, :cond_b4
 
-    .line 393
     invoke-static {v2}, Lkotlinx/coroutines/JobKt;->ensureActive(Lkotlinx/coroutines/Job;)V
 
     :cond_b4
     if-eqz p1, :cond_bc
 
-    .line 395
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v9
 
     if-nez v9, :cond_d7
 
-    .line 396
     :cond_bc
     sget-object p1, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
 
@@ -619,7 +584,6 @@
     :cond_d6
     move-object p1, p2
 
-    .line 400
     :cond_d7
     :goto_d7
     invoke-virtual {v6}, Lkotlinx/coroutines/flow/StateFlowSlot;->takePending()Z
@@ -628,7 +592,6 @@
 
     if-nez p2, :cond_a9
 
-    .line 401
     iput-object v8, v0, Lkotlinx/coroutines/flow/StateFlowImpl$collect$1;->L$0:Ljava/lang/Object;
 
     iput-object v7, v0, Lkotlinx/coroutines/flow/StateFlowImpl$collect$1;->L$1:Ljava/lang/Object;
@@ -658,7 +621,6 @@
 
     move-object v6, p2
 
-    .line 405
     :goto_f3
     check-cast v6, Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
 
@@ -677,7 +639,6 @@
 
     if-nez p1, :cond_4
 
-    .line 319
     sget-object p1, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
 
     :cond_4
@@ -696,7 +657,6 @@
 .method protected createSlot()Lkotlinx/coroutines/flow/StateFlowSlot;
     .registers 2
 
-    .line 409
     new-instance v0, Lkotlinx/coroutines/flow/StateFlowSlot;
 
     invoke-direct {v0}, Lkotlinx/coroutines/flow/StateFlowSlot;-><init>()V
@@ -707,7 +667,6 @@
 .method public bridge synthetic createSlot()Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
     .registers 2
 
-    .line 307
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/StateFlowImpl;->createSlot()Lkotlinx/coroutines/flow/StateFlowSlot;
 
     move-result-object v0
@@ -720,7 +679,6 @@
 .method protected createSlotArray(I)[Lkotlinx/coroutines/flow/StateFlowSlot;
     .registers 2
 
-    .line 410
     new-array p1, p1, [Lkotlinx/coroutines/flow/StateFlowSlot;
 
     return-object p1
@@ -729,7 +687,6 @@
 .method public bridge synthetic createSlotArray(I)[Lkotlinx/coroutines/flow/internal/AbstractSharedFlowSlot;
     .registers 2
 
-    .line 307
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/StateFlowImpl;->createSlotArray(I)[Lkotlinx/coroutines/flow/StateFlowSlot;
 
     move-result-object p1
@@ -752,10 +709,8 @@
         }
     .end annotation
 
-    .line 373
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/StateFlowImpl;->setValue(Ljava/lang/Object;)V
 
-    .line 374
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
@@ -775,7 +730,6 @@
         }
     .end annotation
 
-    .line 413
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/flow/StateFlow;
@@ -797,7 +751,6 @@
         }
     .end annotation
 
-    .line 365
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/StateFlowImpl;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -817,7 +770,6 @@
         }
     .end annotation
 
-    .line 315
     sget-object v0, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
 
     sget-object v1, Lkotlinx/coroutines/flow/StateFlowImpl;->_state$FU:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
@@ -837,7 +789,6 @@
 .method public resetReplayCache()V
     .registers 3
 
-    .line 378
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "MutableStateFlow.resetReplayCache is not supported"
@@ -857,7 +808,6 @@
 
     if-nez p1, :cond_4
 
-    .line 316
     sget-object p1, Lkotlinx/coroutines/flow/internal/NullSurrogateKt;->NULL:Lkotlinx/coroutines/internal/Symbol;
 
     :cond_4
@@ -876,7 +826,6 @@
         }
     .end annotation
 
-    .line 368
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/flow/StateFlowImpl;->setValue(Ljava/lang/Object;)V
 
     const/4 p1, 0x1

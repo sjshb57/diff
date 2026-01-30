@@ -37,7 +37,6 @@
 
     int-to-short p0, p0
 
-    .line 369
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -50,7 +49,6 @@
 
     int-to-short p0, p0
 
-    .line 392
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -65,7 +63,6 @@
 
     int-to-short p0, p0
 
-    .line 404
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0
@@ -76,7 +73,6 @@
 .method private static final toUShort(S)S
     .registers 1
 
-    .line 380
     invoke-static {p0}, Lkotlin/UShort;->constructor-impl(S)S
 
     move-result p0

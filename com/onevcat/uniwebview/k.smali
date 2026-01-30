@@ -44,19 +44,16 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v1, "it"
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/onevcat/uniwebview/k;->a:Ljava/lang/String;
 
-    .line 2
     invoke-virtual {p1}, La/v;->f()Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 3
     iget-object v3, p1, La/v;->a:Landroid/app/Activity;
 
     invoke-virtual {v3}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
@@ -114,10 +111,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 4
     sget-object v1, La/i;->d:La/i;
 
-    .line 5
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -143,10 +138,8 @@
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 6
     sget-object v1, La/i;->d:La/i;
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Error during save snapshot image: "
@@ -168,7 +161,6 @@
 
     if-eqz v0, :cond_91
 
-    .line 8
     new-instance v2, La/f0;
 
     const/4 v3, 0x0
@@ -208,7 +200,6 @@
 
     invoke-interface {v1, p1, v2, v0}, La/i0;->a(Ljava/lang/String;La/j0;La/f0;)V
 
-    .line 9
     :goto_a5
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

@@ -22,7 +22,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 194
     new-instance v0, Lcom/google/flatbuffers/FlatBufferBuilder$HeapByteBufferFactory;
 
     invoke-direct {v0}, Lcom/google/flatbuffers/FlatBufferBuilder$HeapByteBufferFactory;-><init>()V
@@ -35,7 +34,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 192
     invoke-direct {p0}, Lcom/google/flatbuffers/FlatBufferBuilder$ByteBufferFactory;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
 .method public newByteBuffer(I)Ljava/nio/ByteBuffer;
     .registers 3
 
-    .line 198
     invoke-static {p1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object p1

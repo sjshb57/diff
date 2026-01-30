@@ -200,7 +200,6 @@
 
     move-result-object v0
 
-    .line 392
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -235,15 +234,12 @@
 
     move-result-object p1
 
-    .line 393
     iget-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$1;->$downStream:Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 410
     instance-of v3, p1, Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     if-nez v3, :cond_37
 
-    .line 394
     iput-object p1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$1;->L$0:Ljava/lang/Object;
 
     iput v2, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$1;->label:I
@@ -262,7 +258,6 @@
     :goto_36
     move-object p1, v0
 
-    .line 415
     :cond_37
     nop
 
@@ -274,14 +269,12 @@
 
     const/4 p1, 0x0
 
-    .line 396
     invoke-static {p1}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
     return-object p1
 
-    .line 398
     :cond_45
     invoke-static {v2}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 

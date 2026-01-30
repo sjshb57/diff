@@ -66,13 +66,10 @@
 
     const/4 v0, 0x1
 
-    .line 66
     invoke-direct {p0, p1, v0, v0}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
-    .line 64
     iput-object p2, p0, Lkotlinx/coroutines/BlockingCoroutine;->blockedThread:Ljava/lang/Thread;
 
-    .line 65
     iput-object p3, p0, Lkotlinx/coroutines/BlockingCoroutine;->eventLoop:Lkotlinx/coroutines/EventLoop;
 
     return-void
@@ -83,7 +80,6 @@
 .method protected afterCompletion(Ljava/lang/Object;)V
     .registers 3
 
-    .line 72
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -96,7 +92,6 @@
 
     if-nez p1, :cond_20
 
-    .line 73
     iget-object p1, p0, Lkotlinx/coroutines/BlockingCoroutine;->blockedThread:Ljava/lang/Thread;
 
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
@@ -139,7 +134,6 @@
         }
     .end annotation
 
-    .line 78
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -148,7 +142,6 @@
 
     invoke-virtual {v0}, Lkotlinx/coroutines/AbstractTimeSource;->registerTimeLoopThread()V
 
-    .line 80
     :cond_9
     :try_start_9
     iget-object v0, p0, Lkotlinx/coroutines/BlockingCoroutine;->eventLoop:Lkotlinx/coroutines/EventLoop;
@@ -165,7 +158,6 @@
     :try_end_13
     .catchall {:try_start_9 .. :try_end_13} :catchall_7c
 
-    .line 84
     :cond_13
     :goto_13
     :try_start_13
@@ -175,7 +167,6 @@
 
     if-nez v0, :cond_65
 
-    .line 85
     iget-object v0, p0, Lkotlinx/coroutines/BlockingCoroutine;->eventLoop:Lkotlinx/coroutines/EventLoop;
 
     if-eqz v0, :cond_22
@@ -189,7 +180,6 @@
     :cond_22
     const-wide v4, 0x7fffffffffffffffL
 
-    .line 87
     :goto_27
     invoke-virtual {p0}, Lkotlinx/coroutines/BlockingCoroutine;->isCompleted()Z
 
@@ -197,7 +187,6 @@
 
     if-nez v0, :cond_40
 
-    .line 88
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0
@@ -222,7 +211,6 @@
 
     goto :goto_13
 
-    .line 91
     :cond_40
     :try_start_40
     iget-object v0, p0, Lkotlinx/coroutines/BlockingCoroutine;->eventLoop:Lkotlinx/coroutines/EventLoop;
@@ -233,7 +221,6 @@
     :try_end_47
     .catchall {:try_start_40 .. :try_end_47} :catchall_7c
 
-    .line 94
     :cond_47
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
@@ -243,7 +230,6 @@
 
     invoke-virtual {v0}, Lkotlinx/coroutines/AbstractTimeSource;->unregisterTimeLoopThread()V
 
-    .line 97
     :cond_50
     invoke-virtual {p0}, Lkotlinx/coroutines/BlockingCoroutine;->getState$kotlinx_coroutines_core()Ljava/lang/Object;
 
@@ -253,7 +239,6 @@
 
     move-result-object v0
 
-    .line 98
     instance-of v1, v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     if-eqz v1, :cond_5f
@@ -272,7 +257,6 @@
 
     throw v0
 
-    .line 84
     :cond_65
     :try_start_65
     new-instance v0, Ljava/lang/InterruptedException;
@@ -294,7 +278,6 @@
     :catchall_73
     move-exception v0
 
-    .line 91
     :try_start_74
     iget-object v4, p0, Lkotlinx/coroutines/BlockingCoroutine;->eventLoop:Lkotlinx/coroutines/EventLoop;
 
@@ -310,7 +293,6 @@
     :catchall_7c
     move-exception v0
 
-    .line 94
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v1

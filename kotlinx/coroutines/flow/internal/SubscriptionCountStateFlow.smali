@@ -57,14 +57,12 @@
 
     const v0, 0x7fffffff
 
-    .line 121
     sget-object v1, Lkotlinx/coroutines/channels/BufferOverflow;->DROP_OLDEST:Lkotlinx/coroutines/channels/BufferOverflow;
 
     const/4 v2, 0x1
 
     invoke-direct {p0, v2, v0, v1}, Lkotlinx/coroutines/flow/SharedFlowImpl;-><init>(IILkotlinx/coroutines/channels/BufferOverflow;)V
 
-    .line 123
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -79,10 +77,8 @@
 .method public getValue()Ljava/lang/Integer;
     .registers 2
 
-    .line 137
     monitor-enter p0
 
-    .line 126
     :try_start_1
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;->getLastReplayedLocked()Ljava/lang/Object;
 
@@ -100,7 +96,6 @@
     :try_end_f
     .catchall {:try_start_1 .. :try_end_f} :catchall_11
 
-    .line 137
     monitor-exit p0
 
     return-object v0
@@ -116,7 +111,6 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .registers 2
 
-    .line 120
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;->getValue()Ljava/lang/Integer;
 
     move-result-object v0
@@ -127,10 +121,8 @@
 .method public final increment(I)Z
     .registers 3
 
-    .line 142
     monitor-enter p0
 
-    .line 129
     :try_start_1
     invoke-virtual {p0}, Lkotlinx/coroutines/flow/internal/SubscriptionCountStateFlow;->getLastReplayedLocked()Ljava/lang/Object;
 
@@ -154,7 +146,6 @@
     :try_end_14
     .catchall {:try_start_1 .. :try_end_14} :catchall_16
 
-    .line 142
     monitor-exit p0
 
     return p1

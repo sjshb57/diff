@@ -32,7 +32,6 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0}, Lkotlinx/coroutines/Deferred$DefaultImpls;->cancel(Lkotlinx/coroutines/Deferred;)V
@@ -58,7 +57,6 @@
         }
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/Deferred$DefaultImpls;->fold(Lkotlinx/coroutines/Deferred;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -84,7 +82,6 @@
         }
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Deferred$DefaultImpls;->get(Lkotlinx/coroutines/Deferred;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
@@ -109,7 +106,6 @@
         }
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Deferred$DefaultImpls;->minusKey(Lkotlinx/coroutines/Deferred;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
@@ -134,7 +130,6 @@
         }
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Deferred$DefaultImpls;->plus(Lkotlinx/coroutines/Deferred;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
@@ -164,7 +159,6 @@
         message = "Operator \'+\' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`."
     .end annotation
 
-    .line 25
     check-cast p0, Lkotlinx/coroutines/Deferred;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Deferred$DefaultImpls;->plus(Lkotlinx/coroutines/Deferred;Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/Job;

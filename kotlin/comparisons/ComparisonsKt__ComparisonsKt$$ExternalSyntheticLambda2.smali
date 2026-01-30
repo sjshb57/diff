@@ -16,7 +16,6 @@
 .method public synthetic constructor <init>(Ljava/util/Comparator;Ljava/util/Comparator;)V
     .registers 3
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt$$ExternalSyntheticLambda2;->f$0:Ljava/util/Comparator;
@@ -31,7 +30,6 @@
 .method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .registers 5
 
-    .line 0
     iget-object v0, p0, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt$$ExternalSyntheticLambda2;->f$0:Ljava/util/Comparator;
 
     iget-object v1, p0, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt$$ExternalSyntheticLambda2;->f$1:Ljava/util/Comparator;

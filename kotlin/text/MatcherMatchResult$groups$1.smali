@@ -68,7 +68,6 @@
 
     iput-object p1, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
-    .line 358
     invoke-direct {p0}, Lkotlin/collections/AbstractCollection;-><init>()V
 
     return-void
@@ -83,7 +82,6 @@
 
     goto :goto_9
 
-    .line 358
     :cond_3
     instance-of v0, p1, Lkotlin/text/MatchGroup;
 
@@ -107,7 +105,6 @@
 .method public bridge contains(Lkotlin/text/MatchGroup;)Z
     .registers 2
 
-    .line 358
     invoke-super {p0, p1}, Lkotlin/collections/AbstractCollection;->contains(Ljava/lang/Object;)Z
 
     move-result p1
@@ -118,7 +115,6 @@
 .method public get(I)Lkotlin/text/MatchGroup;
     .registers 5
 
-    .line 364
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -129,7 +125,6 @@
 
     move-result-object v0
 
-    .line 365
     invoke-virtual {v0}, Lkotlin/ranges/IntRange;->getStart()Ljava/lang/Integer;
 
     move-result-object v1
@@ -140,7 +135,6 @@
 
     if-ltz v1, :cond_29
 
-    .line 366
     new-instance v1, Lkotlin/text/MatchGroup;
 
     iget-object v2, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
@@ -175,7 +169,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 372
     sget-object v0, Lkotlin/internal/PlatformImplementationsKt;->IMPLEMENTATIONS:Lkotlin/internal/PlatformImplementations;
 
     iget-object v1, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
@@ -194,7 +187,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 359
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -229,7 +221,6 @@
         }
     .end annotation
 
-    .line 362
     move-object v0, p0
 
     check-cast v0, Ljava/util/Collection;

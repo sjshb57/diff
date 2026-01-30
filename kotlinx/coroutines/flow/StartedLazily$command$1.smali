@@ -188,7 +188,6 @@
 
     move-result-object v0
 
-    .line 153
     iget v1, p0, Lkotlinx/coroutines/flow/StartedLazily$command$1;->label:I
 
     const/4 v2, 0x1
@@ -217,12 +216,10 @@
 
     check-cast p1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 154
     new-instance v1, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 155
     iget-object v3, p0, Lkotlinx/coroutines/flow/StartedLazily$command$1;->$subscriptionCount:Lkotlinx/coroutines/flow/StateFlow;
 
     new-instance v4, Lkotlinx/coroutines/flow/StartedLazily$command$1$1;

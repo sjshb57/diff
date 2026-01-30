@@ -35,7 +35,6 @@
 
     const/4 v0, 0x4
 
-    .line 15
     new-array v0, v0, [Lcom/yahoo/sketches/ResizeFactor;
 
     sget-object v1, Lcom/yahoo/sketches/ResizeFactor;->X1:Lcom/yahoo/sketches/ResizeFactor;
@@ -68,7 +67,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 19
     new-instance v0, Lcom/yahoo/sketches/ResizeFactor;
 
     const-string v1, "X1"
@@ -79,7 +77,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/ResizeFactor;->X1:Lcom/yahoo/sketches/ResizeFactor;
 
-    .line 23
     new-instance v0, Lcom/yahoo/sketches/ResizeFactor;
 
     const-string v1, "X2"
@@ -90,7 +87,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/ResizeFactor;->X2:Lcom/yahoo/sketches/ResizeFactor;
 
-    .line 27
     new-instance v0, Lcom/yahoo/sketches/ResizeFactor;
 
     const-string v1, "X4"
@@ -101,7 +97,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/ResizeFactor;->X4:Lcom/yahoo/sketches/ResizeFactor;
 
-    .line 31
     new-instance v0, Lcom/yahoo/sketches/ResizeFactor;
 
     const-string v1, "X8"
@@ -112,7 +107,6 @@
 
     sput-object v0, Lcom/yahoo/sketches/ResizeFactor;->X8:Lcom/yahoo/sketches/ResizeFactor;
 
-    .line 15
     invoke-static {}, Lcom/yahoo/sketches/ResizeFactor;->$values()[Lcom/yahoo/sketches/ResizeFactor;
 
     move-result-object v0
@@ -143,10 +137,8 @@
         }
     .end annotation
 
-    .line 35
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 36
     iput p3, p0, Lcom/yahoo/sketches/ResizeFactor;->lg_:I
 
     return-void
@@ -163,7 +155,6 @@
         }
     .end annotation
 
-    .line 53
     sget-object v0, Lcom/yahoo/sketches/ResizeFactor;->X1:Lcom/yahoo/sketches/ResizeFactor;
 
     invoke-virtual {v0}, Lcom/yahoo/sketches/ResizeFactor;->lg()I
@@ -174,7 +165,6 @@
 
     return-object v0
 
-    .line 54
     :cond_9
     sget-object v0, Lcom/yahoo/sketches/ResizeFactor;->X2:Lcom/yahoo/sketches/ResizeFactor;
 
@@ -186,7 +176,6 @@
 
     return-object v0
 
-    .line 55
     :cond_12
     sget-object v0, Lcom/yahoo/sketches/ResizeFactor;->X4:Lcom/yahoo/sketches/ResizeFactor;
 
@@ -198,7 +187,6 @@
 
     return-object v0
 
-    .line 56
     :cond_1b
     sget-object p0, Lcom/yahoo/sketches/ResizeFactor;->X8:Lcom/yahoo/sketches/ResizeFactor;
 
@@ -216,7 +204,6 @@
         }
     .end annotation
 
-    .line 15
     const-class v0, Lcom/yahoo/sketches/ResizeFactor;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -231,7 +218,6 @@
 .method public static values()[Lcom/yahoo/sketches/ResizeFactor;
     .registers 1
 
-    .line 15
     sget-object v0, Lcom/yahoo/sketches/ResizeFactor;->$VALUES:[Lcom/yahoo/sketches/ResizeFactor;
 
     invoke-virtual {v0}, [Lcom/yahoo/sketches/ResizeFactor;->clone()Ljava/lang/Object;
@@ -250,7 +236,6 @@
 
     const/4 v0, 0x1
 
-    .line 64
     iget v1, p0, Lcom/yahoo/sketches/ResizeFactor;->lg_:I
 
     shl-int/2addr v0, v1
@@ -261,7 +246,6 @@
 .method public lg()I
     .registers 2
 
-    .line 44
     iget v0, p0, Lcom/yahoo/sketches/ResizeFactor;->lg_:I
 
     return v0

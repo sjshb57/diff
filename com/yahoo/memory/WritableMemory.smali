@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Lcom/yahoo/memory/Memory;-><init>()V
 
     return-void
@@ -26,21 +25,17 @@
 
     if-nez p0, :cond_5
 
-    .line 60
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 62
     :cond_5
     new-array p0, p0, [B
 
-    .line 63
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 64
     new-instance v0, Lcom/yahoo/memory/WritableMemoryImpl;
 
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
@@ -63,26 +58,22 @@
         }
     .end annotation
 
-    .line 28
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->isReadOnly()Z
 
     move-result v0
 
     if-nez v0, :cond_19
 
-    .line 31
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
 
     if-nez v0, :cond_f
 
-    .line 32
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 34
     :cond_f
     new-instance v0, Lcom/yahoo/memory/WritableMemoryImpl;
 
@@ -94,7 +85,6 @@
 
     return-object v0
 
-    .line 29
     :cond_19
     new-instance p0, Lcom/yahoo/memory/ReadOnlyException;
 
@@ -116,26 +106,21 @@
         }
     .end annotation
 
-    .line 74
     invoke-static {p0}, Lcom/yahoo/memory/Util;->nullCheck(Ljava/lang/Object;)V
 
-    .line 75
     array-length v0, p0
 
     if-nez v0, :cond_9
 
-    .line 76
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 78
     :cond_9
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 79
     new-instance v0, Lcom/yahoo/memory/WritableMemoryImpl;
 
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
@@ -160,26 +145,21 @@
         }
     .end annotation
 
-    .line 89
     invoke-static {p0}, Lcom/yahoo/memory/Util;->nullCheck(Ljava/lang/Object;)V
 
-    .line 90
     array-length v0, p0
 
     if-nez v0, :cond_9
 
-    .line 91
     sget-object p0, Lcom/yahoo/memory/WritableMemoryImpl;->ZERO_SIZE_MEMORY:Lcom/yahoo/memory/WritableMemoryImpl;
 
     return-object p0
 
-    .line 93
     :cond_9
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 94
     new-instance v0, Lcom/yahoo/memory/WritableMemoryImpl;
 
     invoke-direct {v0, p0, p1}, Lcom/yahoo/memory/WritableMemoryImpl;-><init>(Ljava/nio/ByteBuffer;Ljava/nio/ByteOrder;)V

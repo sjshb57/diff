@@ -22,10 +22,8 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;II)V
     .registers 4
 
-    .line 657
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffers$Object;-><init>(Lcom/google/flatbuffers/ReadBuf;II)V
 
-    .line 658
     iget-object p1, p0, Lcom/google/flatbuffers/FlexBuffers$Sized;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     sub-int/2addr p2, p3
@@ -44,7 +42,6 @@
 .method public size()I
     .registers 2
 
-    .line 662
     iget v0, p0, Lcom/google/flatbuffers/FlexBuffers$Sized;->size:I
 
     return v0

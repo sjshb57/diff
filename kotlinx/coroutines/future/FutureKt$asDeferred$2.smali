@@ -88,7 +88,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 130
     check-cast p2, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/future/FutureKt$asDeferred$2;->invoke(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
@@ -111,7 +110,6 @@
 
     if-nez p2, :cond_9
 
-    .line 134
     :try_start_2
     iget-object p2, p0, Lkotlinx/coroutines/future/FutureKt$asDeferred$2;->$result:Lkotlinx/coroutines/CompletableDeferred;
 
@@ -121,7 +119,6 @@
 
     goto :goto_22
 
-    .line 138
     :cond_9
     iget-object p1, p0, Lkotlinx/coroutines/future/FutureKt$asDeferred$2;->$result:Lkotlinx/coroutines/CompletableDeferred;
 
@@ -170,7 +167,6 @@
     :catchall_27
     move-exception p1
 
-    .line 142
     sget-object p2, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext;

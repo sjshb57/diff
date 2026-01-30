@@ -18,7 +18,6 @@
 .method constructor <init>(II)V
     .registers 5
 
-    .line 190
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Unpaired surrogate at index "

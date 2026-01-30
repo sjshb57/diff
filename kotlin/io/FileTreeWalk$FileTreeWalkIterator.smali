@@ -86,19 +86,16 @@
         }
     .end annotation
 
-    .line 66
     iput-object p1, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->this$0:Lkotlin/io/FileTreeWalk;
 
     invoke-direct {p0}, Lkotlin/collections/AbstractIterator;-><init>()V
 
-    .line 69
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
     iput-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
-    .line 73
     invoke-static {p1}, Lkotlin/io/FileTreeWalk;->access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
 
     move-result-object v1
@@ -121,7 +118,6 @@
 
     goto :goto_3c
 
-    .line 74
     :cond_22
     invoke-static {p1}, Lkotlin/io/FileTreeWalk;->access$getStart$p(Lkotlin/io/FileTreeWalk;)Ljava/io/File;
 
@@ -145,7 +141,6 @@
 
     goto :goto_3c
 
-    .line 75
     :cond_39
     invoke-virtual {p0}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->done()V
 
@@ -156,7 +151,6 @@
 .method private final directoryState(Ljava/io/File;)Lkotlin/io/FileTreeWalk$DirectoryState;
     .registers 4
 
-    .line 89
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->this$0:Lkotlin/io/FileTreeWalk;
 
     invoke-static {v0}, Lkotlin/io/FileTreeWalk;->access$getDirection$p(Lkotlin/io/FileTreeWalk;)Lkotlin/io/FileWalkDirection;
@@ -179,7 +173,6 @@
 
     if-ne v0, v1, :cond_1c
 
-    .line 91
     new-instance v0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState;
 
     invoke-direct {v0, p0, p1}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState;-><init>(Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;Ljava/io/File;)V
@@ -195,7 +188,6 @@
 
     throw p1
 
-    .line 90
     :cond_22
     new-instance v0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState;
 
@@ -210,7 +202,6 @@
 .method private final gotoNext()Ljava/io/File;
     .registers 4
 
-    .line 97
     :goto_0
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
@@ -226,7 +217,6 @@
 
     return-object v0
 
-    .line 98
     :cond_c
     invoke-virtual {v0}, Lkotlin/io/FileTreeWalk$WalkState;->step()Ljava/io/File;
 
@@ -234,14 +224,12 @@
 
     if-nez v1, :cond_18
 
-    .line 101
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
     invoke-virtual {v0}, Ljava/util/ArrayDeque;->pop()Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 105
     :cond_18
     invoke-virtual {v0}, Lkotlin/io/FileTreeWalk$WalkState;->getRoot()Ljava/io/File;
 
@@ -275,7 +263,6 @@
 
     goto :goto_41
 
-    .line 110
     :cond_37
     iget-object v0, p0, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->state:Ljava/util/ArrayDeque;
 
@@ -297,19 +284,16 @@
 .method protected computeNext()V
     .registers 2
 
-    .line 80
     invoke-direct {p0}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->gotoNext()Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_a
 
-    .line 82
     invoke-virtual {p0, v0}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->setNext(Ljava/lang/Object;)V
 
     goto :goto_d
 
-    .line 84
     :cond_a
     invoke-virtual {p0}, Lkotlin/io/FileTreeWalk$FileTreeWalkIterator;->done()V
 

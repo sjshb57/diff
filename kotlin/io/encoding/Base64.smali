@@ -122,14 +122,12 @@
 
     const/4 v0, 0x2
 
-    .line 539
     new-array v0, v0, [B
 
     fill-array-data v0, :array_22
 
     sput-object v0, Lkotlin/io/encoding/Base64;->mimeLineSeparatorSymbols:[B
 
-    .line 551
     new-instance v0, Lkotlin/io/encoding/Base64;
 
     const/4 v1, 0x1
@@ -140,7 +138,6 @@
 
     sput-object v0, Lkotlin/io/encoding/Base64;->UrlSafe:Lkotlin/io/encoding/Base64;
 
-    .line 563
     new-instance v0, Lkotlin/io/encoding/Base64;
 
     invoke-direct {v0, v2, v1}, Lkotlin/io/encoding/Base64;-><init>(ZZ)V
@@ -161,13 +158,10 @@
 .method private constructor <init>(ZZ)V
     .registers 3
 
-    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
     iput-boolean p1, p0, Lkotlin/io/encoding/Base64;->isUrlSafe:Z
 
-    .line 22
     iput-boolean p2, p0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
     if-eqz p1, :cond_18
@@ -176,7 +170,6 @@
 
     goto :goto_18
 
-    .line 25
     :cond_c
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -206,7 +199,6 @@
 .method public static final synthetic access$getMime$cp()Lkotlin/io/encoding/Base64;
     .registers 1
 
-    .line 18
     sget-object v0, Lkotlin/io/encoding/Base64;->Mime:Lkotlin/io/encoding/Base64;
 
     return-object v0
@@ -215,7 +207,6 @@
 .method public static final synthetic access$getMimeLineSeparatorSymbols$cp()[B
     .registers 1
 
-    .line 18
     sget-object v0, Lkotlin/io/encoding/Base64;->mimeLineSeparatorSymbols:[B
 
     return-object v0
@@ -224,7 +215,6 @@
 .method public static final synthetic access$getUrlSafe$cp()Lkotlin/io/encoding/Base64;
     .registers 1
 
-    .line 18
     sget-object v0, Lkotlin/io/encoding/Base64;->UrlSafe:Lkotlin/io/encoding/Base64;
 
     return-object v0
@@ -233,7 +223,6 @@
 .method private final checkDestinationBounds(III)V
     .registers 8
 
-    .line 502
     const-string v0, ", destination size: "
 
     if-ltz p2, :cond_2f
@@ -248,11 +237,9 @@
 
     return-void
 
-    .line 508
     :cond_d
     new-instance v1, Ljava/lang/IndexOutOfBoundsException;
 
-    .line 509
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "The destination array does not have enough capacity, destination offset: "
@@ -265,10 +252,8 @@
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 510
     const-string p1, ", capacity needed: "
 
-    .line 509
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -277,12 +262,10 @@
 
     move-result-object p1
 
-    .line 508
     invoke-direct {v1, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
     throw v1
 
-    .line 503
     :cond_2f
     new-instance p3, Ljava/lang/IndexOutOfBoundsException;
 
@@ -323,7 +306,6 @@
 
     if-eqz p4, :cond_f
 
-    .line 216
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p3
@@ -361,7 +343,6 @@
 
     if-eqz p4, :cond_c
 
-    .line 150
     array-length p3, p1
 
     :cond_c
@@ -390,7 +371,6 @@
 
     move/from16 v2, p5
 
-    .line 341
     iget-boolean v3, v0, Lkotlin/io/encoding/Base64;->isUrlSafe:Z
 
     if-eqz v3, :cond_f
@@ -419,7 +399,6 @@
 
     move/from16 v5, p4
 
-    .line 347
     :goto_1b
     const/4 v9, 0x0
 
@@ -441,7 +420,6 @@
 
     add-int/lit8 v15, v5, 0x1
 
-    .line 349
     aget-byte v4, v1, v5
 
     and-int/lit16 v4, v4, 0xff
@@ -450,7 +428,6 @@
 
     add-int/lit8 v16, v5, 0x2
 
-    .line 350
     aget-byte v15, v1, v15
 
     and-int/lit16 v15, v15, 0xff
@@ -459,7 +436,6 @@
 
     add-int/lit8 v17, v5, 0x3
 
-    .line 351
     aget-byte v14, v1, v16
 
     and-int/lit16 v14, v14, 0xff
@@ -468,7 +444,6 @@
 
     add-int/lit8 v16, v5, 0x4
 
-    .line 352
     aget-byte v12, v1, v17
 
     and-int/lit16 v12, v12, 0xff
@@ -495,7 +470,6 @@
 
     int-to-byte v9, v9
 
-    .line 355
     aput-byte v9, p2, v8
 
     add-int/lit8 v9, v8, 0x2
@@ -504,41 +478,35 @@
 
     int-to-byte v10, v10
 
-    .line 356
     aput-byte v10, p2, v5
 
     add-int/lit8 v8, v8, 0x3
 
     int-to-byte v4, v4
 
-    .line 357
     aput-byte v4, p2, v9
 
     move/from16 v5, v16
 
     goto :goto_cb
 
-    .line 363
     :cond_6c
     aget-byte v4, v1, v5
 
     and-int/lit16 v4, v4, 0xff
 
-    .line 364
     aget v12, v3, v4
 
     if-gez v12, :cond_b0
 
     if-ne v12, v13, :cond_7b
 
-    .line 367
     invoke-direct {v0, v1, v5, v2, v7}, Lkotlin/io/encoding/Base64;->handlePaddingSymbol([BIII)I
 
     move-result v5
 
     goto :goto_ce
 
-    .line 369
     :cond_7b
     iget-boolean v12, v0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
@@ -548,7 +516,6 @@
 
     goto :goto_cb
 
-    .line 373
     :cond_82
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -607,7 +574,6 @@
 
     int-to-byte v10, v10
 
-    .line 383
     aput-byte v10, p2, v8
 
     const/4 v8, 0x1
@@ -636,7 +602,6 @@
     :goto_ce
     if-eq v7, v13, :cond_112
 
-    .line 398
     invoke-direct {v0, v1, v5, v2}, Lkotlin/io/encoding/Base64;->skipIllegalSymbolsIfMime([BII)I
 
     move-result v3
@@ -647,13 +612,11 @@
 
     return v8
 
-    .line 400
     :cond_d9
     aget-byte v1, v1, v3
 
     and-int/lit16 v1, v1, 0xff
 
-    .line 401
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -702,7 +665,6 @@
 
     throw v2
 
-    .line 393
     :cond_112
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -748,7 +710,6 @@
 
     if-eqz p3, :cond_19
 
-    .line 248
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p5
@@ -762,7 +723,6 @@
 
     move-object v3, p2
 
-    .line 243
     invoke-virtual/range {v1 .. v6}, Lkotlin/io/encoding/Base64;->decodeIntoByteArray(Ljava/lang/CharSequence;[BIII)I
 
     move-result p0
@@ -814,7 +774,6 @@
 
     if-eqz p3, :cond_16
 
-    .line 190
     array-length p5, p1
 
     :cond_16
@@ -826,7 +785,6 @@
 
     move-object v3, p2
 
-    .line 185
     invoke-virtual/range {v1 .. v6}, Lkotlin/io/encoding/Base64;->decodeIntoByteArray([B[BIII)I
 
     move-result p0
@@ -859,7 +817,6 @@
 
     if-eq v0, v1, :cond_44
 
-    .line 415
     iget-boolean v1, p0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
     if-eqz v1, :cond_26
@@ -867,12 +824,10 @@
     :goto_d
     if-ge p2, p3, :cond_3a
 
-    .line 417
     aget-byte v1, p1, p2
 
     and-int/lit16 v1, v1, 0xff
 
-    .line 418
     invoke-static {}, Lkotlin/io/encoding/Base64Kt;->access$getBase64DecodeMap$p()[I
 
     move-result-object v2
@@ -902,7 +857,6 @@
     :cond_26
     add-int/lit8 p2, p3, -0x1
 
-    .line 427
     aget-byte p2, p1, p2
 
     const/16 v1, 0x3d
@@ -913,7 +867,6 @@
 
     add-int/lit8 p3, p3, -0x2
 
-    .line 429
     aget-byte p1, p1, p3
 
     if-ne p1, v1, :cond_39
@@ -939,14 +892,12 @@
 
     int-to-long v0, p3
 
-    .line 433
     div-long/2addr p1, v0
 
     long-to-int p1, p1
 
     return p1
 
-    .line 413
     :cond_44
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -989,7 +940,6 @@
 
     if-eqz p4, :cond_c
 
-    .line 100
     array-length p3, p1
 
     :cond_c
@@ -1044,7 +994,6 @@
 
     if-eqz p3, :cond_16
 
-    .line 77
     array-length p5, p1
 
     :cond_16
@@ -1056,7 +1005,6 @@
 
     move-object v3, p2
 
-    .line 72
     invoke-virtual/range {v1 .. v6}, Lkotlin/io/encoding/Base64;->encodeIntoByteArray([B[BIII)I
 
     move-result p0
@@ -1078,10 +1026,8 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 325
     div-int/lit8 p1, p1, 0x3
 
-    .line 326
     iget-boolean v0, p0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
     if-eqz v0, :cond_d
@@ -1106,7 +1052,6 @@
 
     return p1
 
-    .line 329
     :cond_16
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1133,10 +1078,8 @@
 
     if-eqz p5, :cond_c
 
-    .line 125
     array-length p4, p1
 
-    .line 121
     :cond_c
     invoke-virtual {p0, p1, p2, p3, p4}, Lkotlin/io/encoding/Base64;->encodeToAppendable([BLjava/lang/Appendable;II)Ljava/lang/Appendable;
 
@@ -1170,7 +1113,6 @@
 
     if-eqz p4, :cond_c
 
-    .line 48
     array-length p3, p1
 
     :cond_c
@@ -1211,11 +1153,9 @@
 
     goto :goto_3c
 
-    .line 476
     :cond_d
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 478
     const-string p2, "Unreachable"
 
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1229,14 +1169,12 @@
     :cond_19
     add-int/lit8 p2, p2, 0x1
 
-    .line 469
     invoke-direct {p0, p1, p2, p3}, Lkotlin/io/encoding/Base64;->skipIllegalSymbolsIfMime([BII)I
 
     move-result p2
 
     if-eq p2, p3, :cond_28
 
-    .line 470
     aget-byte p1, p1, p2
 
     const/16 p3, 0x3d
@@ -1245,7 +1183,6 @@
 
     goto :goto_3c
 
-    .line 471
     :cond_28
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1271,7 +1208,6 @@
 
     return p2
 
-    .line 465
     :cond_3f
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1295,7 +1231,6 @@
 .method private final skipIllegalSymbolsIfMime([BII)I
     .registers 6
 
-    .line 483
     iget-boolean v0, p0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
     if-nez v0, :cond_5
@@ -1306,12 +1241,10 @@
     :goto_5
     if-ge p2, p3, :cond_18
 
-    .line 488
     aget-byte v0, p1, p2
 
     and-int/lit16 v0, v0, 0xff
 
-    .line 489
     invoke-static {}, Lkotlin/io/encoding/Base64Kt;->access$getBase64DecodeMap$p()[I
 
     move-result-object v1
@@ -1342,14 +1275,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 455
     new-instance v0, Ljava/lang/StringBuilder;
 
     array-length v1, p1
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 456
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -1361,14 +1292,12 @@
 
     int-to-char v3, v3
 
-    .line 457
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_d
 
-    .line 459
     :cond_18
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1390,7 +1319,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 437
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -1399,7 +1327,6 @@
 
     sub-int v0, p3, p2
 
-    .line 439
     new-array v0, v0, [B
 
     const/4 v1, 0x0
@@ -1407,7 +1334,6 @@
     :goto_12
     if-ge p2, p3, :cond_2d
 
-    .line 442
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -1420,7 +1346,6 @@
 
     int-to-byte v2, v2
 
-    .line 444
     aput-byte v2, v0, v1
 
     move v1, v3
@@ -1432,7 +1357,6 @@
 
     const/16 v3, 0x3f
 
-    .line 448
     aput-byte v3, v0, v1
 
     move v1, v2
@@ -1449,7 +1373,6 @@
 .method public final checkSourceBounds$kotlin_stdlib(III)V
     .registers 5
 
-    .line 498
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-virtual {v0, p2, p3, p1}, Lkotlin/collections/AbstractList$Companion;->checkBoundsIndexes$kotlin_stdlib(III)V
@@ -1464,7 +1387,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 217
     instance-of v0, p1, Ljava/lang/String;
 
     if-eqz v0, :cond_2c
@@ -1519,7 +1441,6 @@
 
     move-object v0, p0
 
-    .line 218
     invoke-static/range {v0 .. v5}, Lkotlin/io/encoding/Base64;->decode$default(Lkotlin/io/encoding/Base64;[BIIILjava/lang/Object;)[B
 
     move-result-object p1
@@ -1534,17 +1455,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 151
     array-length v0, p1
 
     invoke-virtual {p0, v0, p2, p3}, Lkotlin/io/encoding/Base64;->checkSourceBounds$kotlin_stdlib(III)V
 
-    .line 153
     invoke-direct {p0, p1, p2, p3}, Lkotlin/io/encoding/Base64;->decodeSize([BII)I
 
     move-result v0
 
-    .line 154
     new-array v7, v0, [B
 
     const/4 v4, 0x0
@@ -1559,7 +1477,6 @@
 
     move v6, p3
 
-    .line 156
     invoke-direct/range {v1 .. v6}, Lkotlin/io/encoding/Base64;->decodeImpl([B[BIII)I
 
     move-result p1
@@ -1568,7 +1485,6 @@
 
     return-object v7
 
-    .line 158
     :cond_1c
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -1594,7 +1510,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 250
     instance-of v0, p1, Ljava/lang/String;
 
     if-eqz v0, :cond_31
@@ -1653,7 +1568,6 @@
 
     move v3, p3
 
-    .line 251
     invoke-static/range {v0 .. v7}, Lkotlin/io/encoding/Base64;->decodeIntoByteArray$default(Lkotlin/io/encoding/Base64;[B[BIIIILjava/lang/Object;)I
 
     move-result p1
@@ -1674,12 +1588,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 192
     array-length v0, p1
 
     invoke-virtual {p0, v0, p4, p5}, Lkotlin/io/encoding/Base64;->checkSourceBounds$kotlin_stdlib(III)V
 
-    .line 193
     array-length v0, p2
 
     invoke-direct {p0, p1, p4, p5}, Lkotlin/io/encoding/Base64;->decodeSize([BII)I
@@ -1688,7 +1600,6 @@
 
     invoke-direct {p0, v0, p3, v1}, Lkotlin/io/encoding/Base64;->checkDestinationBounds(III)V
 
-    .line 195
     invoke-direct/range {p0 .. p5}, Lkotlin/io/encoding/Base64;->decodeImpl([B[BIII)I
 
     move-result p1
@@ -1703,7 +1614,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 101
     invoke-virtual {p0, p1, p2, p3}, Lkotlin/io/encoding/Base64;->encodeToByteArrayImpl$kotlin_stdlib([BII)[B
 
     move-result-object p1
@@ -1728,7 +1638,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
     invoke-virtual/range {p0 .. p5}, Lkotlin/io/encoding/Base64;->encodeIntoByteArrayImpl$kotlin_stdlib([B[BIII)I
 
     move-result p1
@@ -1759,12 +1668,10 @@
 
     invoke-static {v2, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 272
     array-length v6, v1
 
     invoke-virtual {v0, v6, v4, v5}, Lkotlin/io/encoding/Base64;->checkSourceBounds$kotlin_stdlib(III)V
 
-    .line 273
     array-length v6, v2
 
     sub-int v7, v5, v4
@@ -1775,7 +1682,6 @@
 
     invoke-direct {v0, v6, v3, v7}, Lkotlin/io/encoding/Base64;->checkDestinationBounds(III)V
 
-    .line 275
     iget-boolean v6, v0, Lkotlin/io/encoding/Base64;->isUrlSafe:Z
 
     if-eqz v6, :cond_2d
@@ -1791,7 +1697,6 @@
 
     move-result-object v6
 
-    .line 278
     :goto_31
     iget-boolean v7, v0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
@@ -1817,7 +1722,6 @@
 
     sub-int v9, v5, v4
 
-    .line 281
     div-int/lit8 v9, v9, 0x3
 
     invoke-static {v9, v7}, Ljava/lang/Math;->min(II)I
@@ -1833,21 +1737,18 @@
 
     add-int/lit8 v13, v4, 0x1
 
-    .line 283
     aget-byte v14, v1, v4
 
     and-int/lit16 v14, v14, 0xff
 
     add-int/lit8 v15, v4, 0x2
 
-    .line 284
     aget-byte v13, v1, v13
 
     and-int/lit16 v13, v13, 0xff
 
     add-int/lit8 v4, v4, 0x3
 
-    .line 285
     aget-byte v15, v1, v15
 
     and-int/lit16 v15, v15, 0xff
@@ -1864,7 +1765,6 @@
 
     ushr-int/lit8 v15, v13, 0x12
 
-    .line 287
     aget-byte v15, v6, v15
 
     aput-byte v15, v2, v8
@@ -1875,7 +1775,6 @@
 
     and-int/lit8 v16, v16, 0x3f
 
-    .line 288
     aget-byte v16, v6, v16
 
     aput-byte v16, v2, v14
@@ -1886,7 +1785,6 @@
 
     and-int/lit8 v16, v16, 0x3f
 
-    .line 289
     aget-byte v16, v6, v16
 
     aput-byte v16, v2, v15
@@ -1895,7 +1793,6 @@
 
     and-int/lit8 v13, v13, 0x3f
 
-    .line 290
     aget-byte v13, v6, v13
 
     aput-byte v13, v2, v14
@@ -1911,7 +1808,6 @@
 
     add-int/lit8 v9, v8, 0x1
 
-    .line 293
     sget-object v12, Lkotlin/io/encoding/Base64;->mimeLineSeparatorSymbols:[B
 
     aget-byte v11, v12, v11
@@ -1920,7 +1816,6 @@
 
     add-int/lit8 v8, v8, 0x2
 
-    .line 294
     aget-byte v10, v12, v10
 
     aput-byte v10, v2, v9
@@ -1943,14 +1838,12 @@
     :cond_a9
     add-int/lit8 v7, v4, 0x1
 
-    .line 308
     aget-byte v11, v1, v4
 
     and-int/lit16 v11, v11, 0xff
 
     add-int/lit8 v4, v4, 0x2
 
-    .line 309
     aget-byte v1, v1, v7
 
     and-int/lit16 v1, v1, 0xff
@@ -1965,7 +1858,6 @@
 
     ushr-int/lit8 v10, v1, 0xc
 
-    .line 311
     aget-byte v10, v6, v10
 
     aput-byte v10, v2, v8
@@ -1976,7 +1868,6 @@
 
     and-int/lit8 v11, v11, 0x3f
 
-    .line 312
     aget-byte v11, v6, v11
 
     aput-byte v11, v2, v7
@@ -1985,14 +1876,12 @@
 
     and-int/lit8 v1, v1, 0x3f
 
-    .line 313
     aget-byte v1, v6, v1
 
     aput-byte v1, v2, v10
 
     add-int/lit8 v8, v8, 0x4
 
-    .line 314
     aput-byte v9, v2, v7
 
     goto :goto_f9
@@ -2000,7 +1889,6 @@
     :cond_d8
     add-int/lit8 v7, v4, 0x1
 
-    .line 300
     aget-byte v1, v1, v4
 
     and-int/lit16 v1, v1, 0xff
@@ -2011,7 +1899,6 @@
 
     ushr-int/lit8 v10, v1, 0x6
 
-    .line 302
     aget-byte v10, v6, v10
 
     aput-byte v10, v2, v8
@@ -2020,19 +1907,16 @@
 
     and-int/lit8 v1, v1, 0x3f
 
-    .line 303
     aget-byte v1, v6, v1
 
     aput-byte v1, v2, v4
 
     add-int/lit8 v1, v8, 0x3
 
-    .line 304
     aput-byte v9, v2, v10
 
     add-int/lit8 v8, v8, 0x4
 
-    .line 305
     aput-byte v9, v2, v1
 
     move v4, v7
@@ -2044,7 +1928,6 @@
 
     return v8
 
-    .line 318
     :cond_fd
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -2077,7 +1960,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 127
     invoke-virtual {p0, p1, p3, p4}, Lkotlin/io/encoding/Base64;->encodeToByteArrayImpl$kotlin_stdlib([BII)[B
 
     move-result-object p1
@@ -2088,7 +1970,6 @@
 
     invoke-direct {p3, p1, p4}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 128
     check-cast p3, Ljava/lang/CharSequence;
 
     invoke-interface {p2, p3}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
@@ -2103,7 +1984,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 49
     invoke-virtual {p0, p1, p2, p3}, Lkotlin/io/encoding/Base64;->encodeToByteArrayImpl$kotlin_stdlib([BII)[B
 
     move-result-object p1
@@ -2118,19 +1998,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 257
     array-length v0, p1
 
     invoke-virtual {p0, v0, p2, p3}, Lkotlin/io/encoding/Base64;->checkSourceBounds$kotlin_stdlib(III)V
 
     sub-int v0, p3, p2
 
-    .line 259
     invoke-direct {p0, v0}, Lkotlin/io/encoding/Base64;->encodeSize(I)I
 
     move-result v0
 
-    .line 260
     new-array v0, v0, [B
 
     const/4 v4, 0x0
@@ -2145,7 +2022,6 @@
 
     move v6, p3
 
-    .line 261
     invoke-virtual/range {v1 .. v6}, Lkotlin/io/encoding/Base64;->encodeIntoByteArrayImpl$kotlin_stdlib([B[BIII)I
 
     return-object v0
@@ -2154,7 +2030,6 @@
 .method public final isMimeScheme$kotlin_stdlib()Z
     .registers 2
 
-    .line 22
     iget-boolean v0, p0, Lkotlin/io/encoding/Base64;->isMimeScheme:Z
 
     return v0
@@ -2163,7 +2038,6 @@
 .method public final isUrlSafe$kotlin_stdlib()Z
     .registers 2
 
-    .line 21
     iget-boolean v0, p0, Lkotlin/io/encoding/Base64;->isUrlSafe:Z
 
     return v0

@@ -42,14 +42,12 @@
 
     sput-object v0, Lkotlin/text/ScreenFloatValueRegEx;->INSTANCE:Lkotlin/text/ScreenFloatValueRegEx;
 
-    .line 269
     new-instance v0, Lkotlin/text/Regex;
 
     const-string v1, "[\\x00-\\x20]*[+-]?(NaN|Infinity|((((\\p{Digit}+)(\\.)?((\\p{Digit}+)?)([eE][+-]?(\\p{Digit}+))?)|(\\.((\\p{Digit}+))([eE][+-]?(\\p{Digit}+))?)|(((0[xX](\\p{XDigit}+)(\\.)?)|(0[xX](\\p{XDigit}+)?(\\.)(\\p{XDigit}+)))[pP][+-]?(\\p{Digit}+)))[fFdD]?))[\\x00-\\x20]*"
 
     invoke-direct {v0, v1}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
-    .line 255
     sput-object v0, Lkotlin/text/ScreenFloatValueRegEx;->value:Lkotlin/text/Regex;
 
     return-void
@@ -58,7 +56,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 254
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

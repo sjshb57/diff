@@ -80,7 +80,6 @@
 
     sput-object v0, Lkotlin/reflect/WildcardTypeImpl;->Companion:Lkotlin/reflect/WildcardTypeImpl$Companion;
 
-    .line 180
     new-instance v0, Lkotlin/reflect/WildcardTypeImpl;
 
     invoke-direct {v0, v1, v1}, Lkotlin/reflect/WildcardTypeImpl;-><init>(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
@@ -93,10 +92,8 @@
 .method public constructor <init>(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
     .registers 3
 
-    .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 158
     iput-object p1, p0, Lkotlin/reflect/WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
 
     iput-object p2, p0, Lkotlin/reflect/WildcardTypeImpl;->lowerBound:Ljava/lang/reflect/Type;
@@ -107,7 +104,6 @@
 .method public static final synthetic access$getSTAR$cp()Lkotlin/reflect/WildcardTypeImpl;
     .registers 1
 
-    .line 157
     sget-object v0, Lkotlin/reflect/WildcardTypeImpl;->STAR:Lkotlin/reflect/WildcardTypeImpl;
 
     return-object v0
@@ -118,7 +114,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 172
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_24
@@ -167,14 +162,12 @@
 .method public getLowerBounds()[Ljava/lang/reflect/Type;
     .registers 4
 
-    .line 163
     iget-object v0, p0, Lkotlin/reflect/WildcardTypeImpl;->lowerBound:Ljava/lang/reflect/Type;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_8
 
-    .line 231
     new-array v0, v1, [Ljava/lang/reflect/Type;
 
     goto :goto_e
@@ -182,7 +175,6 @@
     :cond_8
     const/4 v2, 0x1
 
-    .line 163
     new-array v2, v2, [Ljava/lang/reflect/Type;
 
     aput-object v0, v2, v1
@@ -196,7 +188,6 @@
 .method public getTypeName()Ljava/lang/String;
     .registers 3
 
-    .line 166
     iget-object v0, p0, Lkotlin/reflect/WildcardTypeImpl;->lowerBound:Ljava/lang/reflect/Type;
 
     if-eqz v0, :cond_19
@@ -221,7 +212,6 @@
 
     goto :goto_3c
 
-    .line 167
     :cond_19
     iget-object v0, p0, Lkotlin/reflect/WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
 
@@ -255,7 +245,6 @@
 
     goto :goto_3c
 
-    .line 168
     :cond_3a
     const-string v0, "?"
 
@@ -268,7 +257,6 @@
 
     const/4 v0, 0x1
 
-    .line 160
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     iget-object v1, p0, Lkotlin/reflect/WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
@@ -290,7 +278,6 @@
 .method public hashCode()I
     .registers 3
 
-    .line 175
     invoke-virtual {p0}, Lkotlin/reflect/WildcardTypeImpl;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v0
@@ -315,7 +302,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 177
     invoke-virtual {p0}, Lkotlin/reflect/WildcardTypeImpl;->getTypeName()Ljava/lang/String;
 
     move-result-object v0

@@ -59,7 +59,6 @@
 
     const-wide/high16 v0, 0x4000000000000000L  # 2.0
 
-    .line 24
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -68,21 +67,18 @@
 
     const-wide/high16 v0, 0x3ff0000000000000L  # 1.0
 
-    .line 27
     invoke-static {v0, v1}, Ljava/lang/Math;->ulp(D)D
 
     move-result-wide v0
 
     sput-wide v0, Lkotlin/math/Constants;->epsilon:D
 
-    .line 29
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
 
     sput-wide v0, Lkotlin/math/Constants;->taylor_2_bound:D
 
-    .line 31
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v2
@@ -95,12 +91,10 @@
 
     div-double v0, v4, v0
 
-    .line 33
     sput-wide v0, Lkotlin/math/Constants;->upper_taylor_2_bound:D
 
     div-double/2addr v4, v2
 
-    .line 35
     sput-wide v4, Lkotlin/math/Constants;->upper_taylor_n_bound:D
 
     return-void
@@ -109,7 +103,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

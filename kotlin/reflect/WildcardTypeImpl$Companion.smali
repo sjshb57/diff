@@ -41,7 +41,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 179
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +59,6 @@
 .method public final getSTAR()Lkotlin/reflect/WildcardTypeImpl;
     .registers 2
 
-    .line 180
     invoke-static {}, Lkotlin/reflect/WildcardTypeImpl;->access$getSTAR$cp()Lkotlin/reflect/WildcardTypeImpl;
 
     move-result-object v0

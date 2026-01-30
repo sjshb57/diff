@@ -60,10 +60,8 @@
 .method public constructor <init>(Lkotlinx/coroutines/internal/LockFreeLinkedListNode;)V
     .registers 2
 
-    .line 58
     invoke-direct {p0}, Lkotlinx/coroutines/internal/AtomicOp;-><init>()V
 
-    .line 57
     iput-object p1, p0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$CondAddOp;->newNode:Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     return-void
@@ -74,7 +72,6 @@
 .method public bridge synthetic complete(Ljava/lang/Object;Ljava/lang/Object;)V
     .registers 3
 
-    .line 55
     check-cast p1, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$CondAddOp;->complete(Lkotlinx/coroutines/internal/LockFreeLinkedListNode;Ljava/lang/Object;)V
@@ -97,7 +94,6 @@
     :goto_5
     if-eqz p2, :cond_a
 
-    .line 63
     iget-object v0, p0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$CondAddOp;->newNode:Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     goto :goto_c
@@ -108,7 +104,6 @@
     :goto_c
     if-eqz v0, :cond_24
 
-    .line 64
     invoke-static {}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->access$get_next$FU$p()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     move-result-object v1
@@ -121,7 +116,6 @@
 
     if-eqz p2, :cond_24
 
-    .line 66
     iget-object p1, p0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$CondAddOp;->newNode:Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     iget-object p2, p0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode$CondAddOp;->oldNext:Lkotlinx/coroutines/internal/LockFreeLinkedListNode;

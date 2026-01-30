@@ -52,12 +52,10 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p1, La/v;->d:La/b0;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -91,25 +89,20 @@
 
     sget-object v0, La/e;->b:La/e$a;
 
-    .line 3
     sget-object v0, La/e;->c:La/e;
 
-    .line 4
     iget-object p1, p1, La/v;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 5
     const-string v1, "name"
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v1, La/i;->c:La/i$a;
 
-    .line 6
     sget-object v1, La/i;->d:La/i;
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Removing web view container from manager: "
@@ -128,7 +121,6 @@
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

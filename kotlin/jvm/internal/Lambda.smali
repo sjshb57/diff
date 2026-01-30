@@ -56,7 +56,6 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlin/jvm/internal/Lambda;->arity:I
@@ -69,7 +68,6 @@
 .method public getArity()I
     .registers 2
 
-    .line 10
     iget v0, p0, Lkotlin/jvm/internal/Lambda;->arity:I
 
     return v0
@@ -78,7 +76,6 @@
 .method public toString()Ljava/lang/String;
     .registers 3
 
-    .line 11
     invoke-static {p0}, Lkotlin/jvm/internal/Reflection;->renderLambdaToString(Lkotlin/jvm/internal/Lambda;)Ljava/lang/String;
 
     move-result-object v0

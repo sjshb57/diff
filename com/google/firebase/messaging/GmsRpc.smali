@@ -119,25 +119,18 @@
         }
     .end annotation
 
-    .line 184
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 185
     iput-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->app:Lcom/google/firebase/FirebaseApp;
 
-    .line 186
     iput-object p2, p0, Lcom/google/firebase/messaging/GmsRpc;->metadata:Lcom/google/firebase/messaging/Metadata;
 
-    .line 187
     iput-object p3, p0, Lcom/google/firebase/messaging/GmsRpc;->rpc:Lcom/google/android/gms/cloudmessaging/Rpc;
 
-    .line 188
     iput-object p4, p0, Lcom/google/firebase/messaging/GmsRpc;->userAgentPublisher:Lcom/google/firebase/inject/Provider;
 
-    .line 189
     iput-object p5, p0, Lcom/google/firebase/messaging/GmsRpc;->heartbeatInfo:Lcom/google/firebase/inject/Provider;
 
-    .line 190
     iput-object p6, p0, Lcom/google/firebase/messaging/GmsRpc;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
     return-void
@@ -161,10 +154,8 @@
         }
     .end annotation
 
-    .line 168
     new-instance v3, Lcom/google/android/gms/cloudmessaging/Rpc;
 
-    .line 171
     invoke-virtual {p1}, Lcom/google/firebase/FirebaseApp;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -183,7 +174,6 @@
 
     move-object v6, p5
 
-    .line 168
     invoke-direct/range {v0 .. v6}, Lcom/google/firebase/messaging/GmsRpc;-><init>(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/messaging/Metadata;Lcom/google/android/gms/cloudmessaging/Rpc;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/inject/Provider;Lcom/google/firebase/installations/FirebaseInstallationsApi;)V
 
     return-void
@@ -194,7 +184,6 @@
 
     const/16 v0, 0xb
 
-    .line 254
     invoke-static {p0, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object p0
@@ -216,7 +205,6 @@
         }
     .end annotation
 
-    .line 342
     new-instance v0, Landroidx/privacysandbox/ads/adservices/adid/AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda0;
 
     invoke-direct {v0}, Landroidx/privacysandbox/ads/adservices/adid/AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda0;-><init>()V
@@ -235,17 +223,14 @@
 .method private getHashedFirebaseAppName()Ljava/lang/String;
     .registers 3
 
-    .line 258
     iget-object v0, p0, Lcom/google/firebase/messaging/GmsRpc;->app:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {v0}, Lcom/google/firebase/FirebaseApp;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 259
     const-string v1, "SHA-1"
 
-    .line 261
     :try_start_8
     invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
@@ -267,7 +252,6 @@
 
     return-object v0
 
-    .line 263
     :catch_19
     const-string v0, "[HASH-ERROR]"
 
@@ -282,12 +266,10 @@
         }
     .end annotation
 
-    .line 311
     const-string v0, "SERVICE_NOT_AVAILABLE"
 
     if-eqz p1, :cond_53
 
-    .line 316
     const-string v1, "registration_id"
 
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -298,7 +280,6 @@
 
     return-object v1
 
-    .line 321
     :cond_d
     const-string v1, "unregistered"
 
@@ -310,7 +291,6 @@
 
     return-object v1
 
-    .line 326
     :cond_16
     const-string v1, "error"
 
@@ -318,7 +298,6 @@
 
     move-result-object v1
 
-    .line 327
     const/4 v2, 0x0
 
     sget-object v2, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->HJidWDLXA:Ljava/lang/String;
@@ -331,14 +310,12 @@
 
     if-eqz v1, :cond_2d
 
-    .line 332
     new-instance p1, Ljava/io/IOException;
 
     invoke-direct {p1, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 336
     :cond_2d
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -360,14 +337,12 @@
 
     invoke-static {v2, p1, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 337
     new-instance p1, Ljava/io/IOException;
 
     invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 330
     :cond_4b
     new-instance p1, Ljava/io/IOException;
 
@@ -377,7 +352,6 @@
 
     throw p1
 
-    .line 313
     :cond_53
     new-instance p1, Ljava/io/IOException;
 
@@ -389,7 +363,6 @@
 .method static isErrorMessageForRetryableError(Ljava/lang/String;)Z
     .registers 2
 
-    .line 347
     const-string v0, "SERVICE_NOT_AVAILABLE"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -400,7 +373,6 @@
 
     const-string v0, "INTERNAL_SERVER_ERROR"
 
-    .line 348
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -409,7 +381,6 @@
 
     const-string v0, "InternalServerError"
 
-    .line 349
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -440,26 +411,22 @@
         }
     .end annotation
 
-    .line 269
     const-string v0, "FirebaseMessaging"
 
     const-string v1, "scope"
 
     invoke-virtual {p3, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 270
     const-string p2, "sender"
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 272
     const/4 p2, 0x0
 
     sget-object p2, Lcom/brotato/shooting/survivors/games/paid/android/ZVh/EBDotepEFW;->WRYJuxJoCdSTOJm:Ljava/lang/String;
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 275
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->app:Lcom/google/firebase/FirebaseApp;
 
     invoke-virtual {p1}, Lcom/google/firebase/FirebaseApp;->getOptions()Lcom/google/firebase/FirebaseOptions;
@@ -474,7 +441,6 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 276
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {p1}, Lcom/google/firebase/messaging/Metadata;->getGmsVersionCode()I
@@ -491,7 +457,6 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 277
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -502,7 +467,6 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 278
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {p1}, Lcom/google/firebase/messaging/Metadata;->getAppVersionCode()Ljava/lang/String;
@@ -513,7 +477,6 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 279
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->metadata:Lcom/google/firebase/messaging/Metadata;
 
     invoke-virtual {p1}, Lcom/google/firebase/messaging/Metadata;->getAppVersionName()Ljava/lang/String;
@@ -524,7 +487,6 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 280
     const-string p1, "firebase-app-name-hash"
 
     invoke-direct {p0}, Lcom/google/firebase/messaging/GmsRpc;->getHashedFirebaseAppName()Ljava/lang/String;
@@ -533,7 +495,6 @@
 
     invoke-virtual {p3, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 283
     :try_start_5b
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
@@ -553,21 +514,18 @@
 
     move-result-object p1
 
-    .line 284
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p2
 
     if-nez p2, :cond_78
 
-    .line 285
     const-string p2, "Goog-Firebase-Installations-Auth"
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_86
 
-    .line 287
     :cond_78
     const-string p1, "FIS auth token is empty"
 
@@ -586,13 +544,11 @@
     :catch_80
     move-exception p1
 
-    .line 290
     :goto_81
     const-string p2, "Failed to get FIS auth token"
 
     invoke-static {v0, p2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 294
     :goto_86
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->firebaseInstallations:Lcom/google/firebase/installations/FirebaseInstallationsApi;
 
@@ -610,14 +566,12 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 297
     const-string p1, "cliv"
 
     const-string p2, "fcm-24.1.0"
 
     invoke-virtual {p3, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 298
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->heartbeatInfo:Lcom/google/firebase/inject/Provider;
 
     invoke-interface {p1}, Lcom/google/firebase/inject/Provider;->get()Ljava/lang/Object;
@@ -626,7 +580,6 @@
 
     check-cast p1, Lcom/google/firebase/heartbeatinfo/HeartBeatInfo;
 
-    .line 299
     iget-object p2, p0, Lcom/google/firebase/messaging/GmsRpc;->userAgentPublisher:Lcom/google/firebase/inject/Provider;
 
     invoke-interface {p2}, Lcom/google/firebase/inject/Provider;->get()Ljava/lang/Object;
@@ -639,19 +592,16 @@
 
     if-eqz p2, :cond_d2
 
-    .line 301
     const-string v0, "fire-iid"
 
     invoke-interface {p1, v0}, Lcom/google/firebase/heartbeatinfo/HeartBeatInfo;->getHeartBeatCode(Ljava/lang/String;)Lcom/google/firebase/heartbeatinfo/HeartBeatInfo$HeartBeat;
 
     move-result-object p1
 
-    .line 302
     sget-object v0, Lcom/google/firebase/heartbeatinfo/HeartBeatInfo$HeartBeat;->NONE:Lcom/google/firebase/heartbeatinfo/HeartBeatInfo$HeartBeat;
 
     if-eq p1, v0, :cond_d2
 
-    .line 303
     invoke-virtual {p1}, Lcom/google/firebase/heartbeatinfo/HeartBeatInfo$HeartBeat;->getCode()I
 
     move-result p1
@@ -664,7 +614,6 @@
 
     invoke-virtual {p3, v0, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 304
     const-string p1, "Firebase-Client"
 
     invoke-interface {p2}, Lcom/google/firebase/platforminfo/UserAgentPublisher;->getUserAgent()Ljava/lang/String;
@@ -692,14 +641,12 @@
         }
     .end annotation
 
-    .line 245
     :try_start_0
     invoke-direct {p0, p1, p2, p3}, Lcom/google/firebase/messaging/GmsRpc;->setDefaultAttributesToBundle(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
     :try_end_3
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_3} :catch_c
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_3} :catch_a
 
-    .line 250
     iget-object p1, p0, Lcom/google/firebase/messaging/GmsRpc;->rpc:Lcom/google/android/gms/cloudmessaging/Rpc;
 
     invoke-virtual {p1, p3}, Lcom/google/android/gms/cloudmessaging/Rpc;->send(Landroid/os/Bundle;)Lcom/google/android/gms/tasks/Task;
@@ -716,7 +663,6 @@
     :catch_c
     move-exception p1
 
-    .line 247
     :goto_d
     invoke-static {p1}, Lcom/google/android/gms/tasks/Tasks;->forException(Ljava/lang/Exception;)Lcom/google/android/gms/tasks/Task;
 
@@ -737,19 +683,16 @@
         }
     .end annotation
 
-    .line 200
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 202
     const-string v1, "delete"
 
     const-string v2, "1"
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 204
     iget-object v1, p0, Lcom/google/firebase/messaging/GmsRpc;->app:Lcom/google/firebase/FirebaseApp;
 
     invoke-static {v1}, Lcom/google/firebase/messaging/Metadata;->getDefaultSenderId(Lcom/google/firebase/FirebaseApp;)Ljava/lang/String;
@@ -762,7 +705,6 @@
 
     move-result-object v0
 
-    .line 205
     invoke-direct {p0, v0}, Lcom/google/firebase/messaging/GmsRpc;->extractResponseWhenComplete(Lcom/google/android/gms/tasks/Task;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -781,7 +723,6 @@
         }
     .end annotation
 
-    .line 240
     iget-object v0, p0, Lcom/google/firebase/messaging/GmsRpc;->rpc:Lcom/google/android/gms/cloudmessaging/Rpc;
 
     invoke-virtual {v0}, Lcom/google/android/gms/cloudmessaging/Rpc;->getProxiedNotificationData()Lcom/google/android/gms/tasks/Task;
@@ -802,10 +743,8 @@
         }
     .end annotation
 
-    .line 194
     iget-object v0, p0, Lcom/google/firebase/messaging/GmsRpc;->app:Lcom/google/firebase/FirebaseApp;
 
-    .line 195
     invoke-static {v0}, Lcom/google/firebase/messaging/Metadata;->getDefaultSenderId(Lcom/google/firebase/FirebaseApp;)Ljava/lang/String;
 
     move-result-object v0
@@ -820,7 +759,6 @@
 
     move-result-object v0
 
-    .line 196
     invoke-direct {p0, v0}, Lcom/google/firebase/messaging/GmsRpc;->extractResponseWhenComplete(Lcom/google/android/gms/tasks/Task;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object v0
@@ -836,7 +774,6 @@
         }
     .end annotation
 
-    .line 343
     const-class v0, Ljava/io/IOException;
 
     invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/Task;->getResult(Ljava/lang/Class;)Ljava/lang/Object;
@@ -863,7 +800,6 @@
         }
     .end annotation
 
-    .line 236
     iget-object v0, p0, Lcom/google/firebase/messaging/GmsRpc;->rpc:Lcom/google/android/gms/cloudmessaging/Rpc;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/cloudmessaging/Rpc;->setRetainProxiedNotifications(Z)Lcom/google/android/gms/tasks/Task;
@@ -886,12 +822,10 @@
         }
     .end annotation
 
-    .line 209
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 211
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "/topics/"
@@ -908,7 +842,6 @@
 
     invoke-virtual {v0, v3, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 217
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -919,12 +852,10 @@
 
     move-result-object p2
 
-    .line 218
     invoke-direct {p0, p1, p2, v0}, Lcom/google/firebase/messaging/GmsRpc;->startRpc(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
-    .line 219
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/GmsRpc;->extractResponseWhenComplete(Lcom/google/android/gms/tasks/Task;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
@@ -945,12 +876,10 @@
         }
     .end annotation
 
-    .line 223
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 225
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "/topics/"
@@ -967,14 +896,12 @@
 
     invoke-virtual {v0, v3, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 226
     const-string v1, "delete"
 
     const-string v3, "1"
 
     invoke-virtual {v0, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 229
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -985,12 +912,10 @@
 
     move-result-object p2
 
-    .line 231
     invoke-direct {p0, p1, p2, v0}, Lcom/google/firebase/messaging/GmsRpc;->startRpc(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1
 
-    .line 232
     invoke-direct {p0, p1}, Lcom/google/firebase/messaging/GmsRpc;->extractResponseWhenComplete(Lcom/google/android/gms/tasks/Task;)Lcom/google/android/gms/tasks/Task;
 
     move-result-object p1

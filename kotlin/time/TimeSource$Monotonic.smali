@@ -69,7 +69,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,7 +79,6 @@
 .method public bridge synthetic markNow()Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 47
     invoke-virtual {p0}, Lkotlin/time/TimeSource$Monotonic;->markNow-z9LOYto()J
 
     move-result-wide v0
@@ -95,7 +93,6 @@
 .method public bridge synthetic markNow()Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 47
     invoke-virtual {p0}, Lkotlin/time/TimeSource$Monotonic;->markNow-z9LOYto()J
 
     move-result-wide v0
@@ -110,7 +107,6 @@
 .method public markNow-z9LOYto()J
     .registers 3
 
-    .line 48
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-virtual {v0}, Lkotlin/time/MonotonicTimeSource;->markNow-z9LOYto()J
@@ -123,7 +119,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 49
     sget-object v0, Lkotlin/time/MonotonicTimeSource;->INSTANCE:Lkotlin/time/MonotonicTimeSource;
 
     invoke-virtual {v0}, Lkotlin/time/MonotonicTimeSource;->toString()Ljava/lang/String;

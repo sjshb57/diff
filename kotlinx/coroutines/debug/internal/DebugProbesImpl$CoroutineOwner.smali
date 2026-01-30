@@ -100,13 +100,10 @@
         }
     .end annotation
 
-    .line 525
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 526
     iput-object p1, p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->delegate:Lkotlin/coroutines/Continuation;
 
-    .line 527
     iput-object p2, p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     return-void
@@ -115,7 +112,6 @@
 .method private final getFrame()Lkotlinx/coroutines/debug/internal/StackTraceFrame;
     .registers 2
 
-    .line 529
     iget-object v0, p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->info:Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl;->getCreationStackBottom()Lkotlinx/coroutines/debug/internal/StackTraceFrame;
@@ -130,7 +126,6 @@
 .method public getCallerFrame()Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;
     .registers 2
 
-    .line 532
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->getFrame()Lkotlinx/coroutines/debug/internal/StackTraceFrame;
 
     move-result-object v0
@@ -165,7 +160,6 @@
 .method public getStackTraceElement()Ljava/lang/StackTraceElement;
     .registers 2
 
-    .line 534
     invoke-direct {p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->getFrame()Lkotlinx/coroutines/debug/internal/StackTraceFrame;
 
     move-result-object v0
@@ -188,12 +182,10 @@
 .method public resumeWith(Ljava/lang/Object;)V
     .registers 3
 
-    .line 537
     sget-object v0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->INSTANCE:Lkotlinx/coroutines/debug/internal/DebugProbesImpl;
 
     invoke-static {v0, p0}, Lkotlinx/coroutines/debug/internal/DebugProbesImpl;->access$probeCoroutineCompleted(Lkotlinx/coroutines/debug/internal/DebugProbesImpl;Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;)V
 
-    .line 538
     iget-object v0, p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-interface {v0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
@@ -204,7 +196,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 541
     iget-object v0, p0, Lkotlinx/coroutines/debug/internal/DebugProbesImpl$CoroutineOwner;->delegate:Lkotlin/coroutines/Continuation;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

@@ -171,7 +171,6 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 43
     iget v0, p0, Lkotlinx/coroutines/InterruptibleKt$runInterruptible$2;->label:I
 
     if-nez v0, :cond_19
@@ -182,7 +181,6 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 44
     invoke-interface {p1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -195,7 +193,6 @@
 
     return-object p1
 
-    .line 43
     :cond_19
     new-instance p1, Ljava/lang/IllegalStateException;
 

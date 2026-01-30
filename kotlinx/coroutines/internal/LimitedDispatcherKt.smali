@@ -38,7 +38,6 @@
 
     return-void
 
-    .line 133
     :cond_4
     new-instance v0, Ljava/lang/StringBuilder;
 

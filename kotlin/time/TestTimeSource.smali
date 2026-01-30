@@ -43,7 +43,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 146
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-direct {p0, v0}, Lkotlin/time/AbstractLongTimeSource;-><init>(Lkotlin/time/DurationUnit;)V
@@ -54,7 +53,6 @@
 .method private final overflow-LRDsOJo(J)V
     .registers 7
 
-    .line 177
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -105,7 +103,6 @@
 .method public final plusAssign-LRDsOJo(J)V
     .registers 11
 
-    .line 161
     invoke-virtual {p0}, Lkotlin/time/TestTimeSource;->getUnit()Lkotlin/time/DurationUnit;
 
     move-result-object v0
@@ -126,7 +123,6 @@
 
     if-eqz v2, :cond_2c
 
-    .line 164
     iget-wide v2, p0, Lkotlin/time/TestTimeSource;->reading:J
 
     add-long v4, v2, v0
@@ -145,12 +141,10 @@
 
     if-gez v0, :cond_48
 
-    .line 165
     invoke-direct {p0, p1, p2}, Lkotlin/time/TestTimeSource;->overflow-LRDsOJo(J)V
 
     goto :goto_48
 
-    .line 168
     :cond_2c
     invoke-virtual {p0}, Lkotlin/time/TestTimeSource;->getUnit()Lkotlin/time/DurationUnit;
 
@@ -160,7 +154,6 @@
 
     move-result-wide v0
 
-    .line 170
     iget-wide v2, p0, Lkotlin/time/TestTimeSource;->reading:J
 
     long-to-double v2, v2
@@ -179,14 +172,12 @@
 
     if-gez v0, :cond_47
 
-    .line 171
     :cond_44
     invoke-direct {p0, p1, p2}, Lkotlin/time/TestTimeSource;->overflow-LRDsOJo(J)V
 
     :cond_47
     double-to-long v4, v2
 
-    .line 162
     :cond_48
     :goto_48
     iput-wide v4, p0, Lkotlin/time/TestTimeSource;->reading:J
@@ -197,7 +188,6 @@
 .method protected read()J
     .registers 3
 
-    .line 149
     iget-wide v0, p0, Lkotlin/time/TestTimeSource;->reading:J
 
     return-wide v0

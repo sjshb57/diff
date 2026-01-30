@@ -134,7 +134,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/MutableMapWithDefaultImpl;->map:Ljava/util/Map;
@@ -149,7 +148,6 @@
 .method public clear()V
     .registers 2
 
-    .line 99
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -162,7 +160,6 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 89
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -177,7 +174,6 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 90
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -200,7 +196,6 @@
         }
     .end annotation
 
-    .line 83
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getEntries()Ljava/util/Set;
 
     move-result-object v0
@@ -211,7 +206,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 3
 
-    .line 84
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -233,7 +227,6 @@
         }
     .end annotation
 
-    .line 91
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -256,7 +249,6 @@
         }
     .end annotation
 
-    .line 94
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -278,7 +270,6 @@
         }
     .end annotation
 
-    .line 92
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -300,7 +291,6 @@
         }
     .end annotation
 
-    .line 83
     iget-object v0, p0, Lkotlin/collections/MutableMapWithDefaultImpl;->map:Ljava/util/Map;
 
     return-object v0
@@ -314,26 +304,22 @@
         }
     .end annotation
 
-    .line 101
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 105
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v1, :cond_16
 
-    .line 106
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_16
 
-    .line 101
     iget-object v0, p0, Lkotlin/collections/MutableMapWithDefaultImpl;->default:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -347,7 +333,6 @@
 .method public getSize()I
     .registers 2
 
-    .line 87
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -369,7 +354,6 @@
         }
     .end annotation
 
-    .line 93
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -384,7 +368,6 @@
 .method public hashCode()I
     .registers 2
 
-    .line 85
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -399,7 +382,6 @@
 .method public isEmpty()Z
     .registers 2
 
-    .line 88
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -421,7 +403,6 @@
         }
     .end annotation
 
-    .line 83
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getKeys()Ljava/util/Set;
 
     move-result-object v0
@@ -437,7 +418,6 @@
         }
     .end annotation
 
-    .line 96
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -463,7 +443,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 98
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -483,7 +462,6 @@
         }
     .end annotation
 
-    .line 97
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -498,7 +476,6 @@
 .method public final bridge size()I
     .registers 2
 
-    .line 83
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getSize()I
 
     move-result v0
@@ -509,7 +486,6 @@
 .method public toString()Ljava/lang/String;
     .registers 2
 
-    .line 86
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getMap()Ljava/util/Map;
 
     move-result-object v0
@@ -531,7 +507,6 @@
         }
     .end annotation
 
-    .line 83
     invoke-virtual {p0}, Lkotlin/collections/MutableMapWithDefaultImpl;->getValues()Ljava/util/Collection;
 
     move-result-object v0

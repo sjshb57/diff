@@ -43,7 +43,6 @@
         }
     .end annotation
 
-    .line 61
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1, p2}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->fold(Lkotlin/coroutines/CoroutineContext$Element;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -69,7 +68,6 @@
         }
     .end annotation
 
-    .line 61
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->get(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
@@ -94,7 +92,6 @@
         }
     .end annotation
 
-    .line 61
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->minusKey(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
@@ -119,7 +116,6 @@
         }
     .end annotation
 
-    .line 61
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->plus(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;

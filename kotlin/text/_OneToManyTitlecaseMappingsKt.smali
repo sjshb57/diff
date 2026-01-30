@@ -28,7 +28,6 @@
 .method public static final titlecaseImpl(C)Ljava/lang/String;
     .registers 5
 
-    .line 15
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object v0
@@ -47,7 +46,6 @@
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -65,7 +63,6 @@
     :cond_20
     const/4 p0, 0x0
 
-    .line 17
     invoke-virtual {v0, p0}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
@@ -107,7 +104,6 @@
     :goto_4e
     return-object v0
 
-    .line 19
     :cond_4f
     invoke-static {p0}, Ljava/lang/Character;->toTitleCase(C)C
 

@@ -46,7 +46,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 40
     invoke-direct {p0}, Lkotlin/collections/FloatIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayFloatIterator;->array:[F
@@ -59,7 +58,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 42
     iget v0, p0, Lkotlin/jvm/internal/ArrayFloatIterator;->index:I
 
     iget-object v1, p0, Lkotlin/jvm/internal/ArrayFloatIterator;->array:[F
@@ -82,7 +80,6 @@
 .method public nextFloat()F
     .registers 4
 
-    .line 43
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayFloatIterator;->array:[F
 

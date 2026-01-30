@@ -37,10 +37,8 @@
 .method private constructor <init>(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;)V
     .registers 6
 
-    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
@@ -49,19 +47,14 @@
 
     const/4 v0, 0x0
 
-    .line 44
     iput-boolean v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->bulkOperation:Z
 
-    .line 60
     iput-object p1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->sharedPreferences:Landroid/content/SharedPreferences;
 
-    .line 61
     iput-object p2, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->queueName:Ljava/lang/String;
 
-    .line 62
     iput-object p3, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->itemSeparator:Ljava/lang/String;
 
-    .line 63
     iput-object p4, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->syncExecutor:Ljava/util/concurrent/Executor;
 
     return-void
@@ -79,7 +72,6 @@
     :cond_4
     const/4 v0, 0x0
 
-    .line 135
     :goto_5
     invoke-direct {p0, v0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->checkAndSyncState(Z)Z
 
@@ -91,12 +83,10 @@
 
     if-eqz p1, :cond_9
 
-    .line 148
     iget-boolean v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->bulkOperation:Z
 
     if-nez v0, :cond_9
 
-    .line 149
     invoke-direct {p0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->syncStateAsync()V
 
     :cond_9
@@ -106,12 +96,10 @@
 .method static createInstance(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;)Lcom/google/firebase/messaging/SharedPreferencesQueue;
     .registers 5
 
-    .line 81
     new-instance v0, Lcom/google/firebase/messaging/SharedPreferencesQueue;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/firebase/messaging/SharedPreferencesQueue;-><init>(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;)V
 
-    .line 83
     invoke-direct {v0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->initQueue()V
 
     return-object v0
@@ -120,18 +108,15 @@
 .method private initQueue()V
     .registers 7
 
-    .line 89
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 90
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->clear()V
 
-    .line 91
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->sharedPreferences:Landroid/content/SharedPreferences;
 
     iget-object v2, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->queueName:Ljava/lang/String;
@@ -142,7 +127,6 @@
 
     move-result-object v1
 
-    .line 92
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -159,7 +143,6 @@
 
     goto :goto_48
 
-    .line 95
     :cond_21
     iget-object v2, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->itemSeparator:Ljava/lang/String;
 
@@ -169,19 +152,16 @@
 
     move-result-object v1
 
-    .line 97
     array-length v2, v1
 
     if-nez v2, :cond_32
 
-    .line 98
     const-string v2, "FirebaseMessaging"
 
     const-string v3, "Corrupted queue. Please check the queue contents and item separator provided"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 101
     :cond_32
     array-length v2, v1
 
@@ -192,14 +172,12 @@
 
     aget-object v4, v1, v3
 
-    .line 102
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_43
 
-    .line 103
     iget-object v5, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
@@ -209,13 +187,11 @@
 
     goto :goto_34
 
-    .line 106
     :cond_46
     monitor-exit v0
 
     return-void
 
-    .line 93
     :cond_48
     :goto_48
     monitor-exit v0
@@ -225,7 +201,6 @@
     :catchall_4a
     move-exception v1
 
-    .line 106
     monitor-exit v0
     :try_end_4c
     .catchall {:try_start_3 .. :try_end_4c} :catchall_4a
@@ -236,12 +211,10 @@
 .method private syncState()V
     .registers 5
 
-    .line 160
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 161
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->sharedPreferences:Landroid/content/SharedPreferences;
 
@@ -261,7 +234,6 @@
 
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 162
     monitor-exit v0
 
     return-void
@@ -279,7 +251,6 @@
 .method private syncStateAsync()V
     .registers 3
 
-    .line 155
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->syncExecutor:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/google/firebase/messaging/SharedPreferencesQueue$$ExternalSyntheticLambda0;
@@ -296,7 +267,6 @@
 .method public add(Ljava/lang/String;)Z
     .registers 4
 
-    .line 125
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -313,13 +283,11 @@
 
     goto :goto_21
 
-    .line 128
     :cond_f
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 129
     :try_start_12
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -338,7 +306,6 @@
     :catchall_1e
     move-exception p1
 
-    .line 130
     monitor-exit v0
     :try_end_20
     .catchall {:try_start_12 .. :try_end_20} :catchall_1e
@@ -357,7 +324,6 @@
 
     const/4 v0, 0x1
 
-    .line 178
     iput-boolean v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->bulkOperation:Z
 
     return-void
@@ -366,16 +332,13 @@
 .method beginTransactionSync()V
     .registers 3
 
-    .line 183
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 184
     :try_start_3
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->beginTransaction()V
 
-    .line 185
     monitor-exit v0
 
     return-void
@@ -393,12 +356,10 @@
 .method public clear()V
     .registers 3
 
-    .line 222
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 223
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -406,10 +367,8 @@
 
     const/4 v1, 0x1
 
-    .line 224
     invoke-direct {p0, v1}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->checkAndSyncState(Z)Z
 
-    .line 225
     monitor-exit v0
 
     return-void
@@ -429,10 +388,8 @@
 
     const/4 v0, 0x0
 
-    .line 191
     iput-boolean v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->bulkOperation:Z
 
-    .line 192
     invoke-direct {p0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->syncStateAsync()V
 
     return-void
@@ -441,16 +398,13 @@
 .method commitTransactionSync()V
     .registers 3
 
-    .line 197
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 198
     :try_start_3
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->commitTransaction()V
 
-    .line 199
     monitor-exit v0
 
     return-void
@@ -468,12 +422,10 @@
 .method public peek()Ljava/lang/String;
     .registers 3
 
-    .line 230
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 231
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -490,7 +442,6 @@
     :catchall_d
     move-exception v1
 
-    .line 232
     monitor-exit v0
     :try_end_f
     .catchall {:try_start_3 .. :try_end_f} :catchall_d
@@ -501,12 +452,10 @@
 .method public remove()Ljava/lang/String;
     .registers 3
 
-    .line 216
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 217
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -527,7 +476,6 @@
     :catchall_11
     move-exception v1
 
-    .line 218
     monitor-exit v0
     :try_end_13
     .catchall {:try_start_3 .. :try_end_13} :catchall_11
@@ -538,12 +486,10 @@
 .method public remove(Ljava/lang/Object;)Z
     .registers 4
 
-    .line 210
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 211
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -562,7 +508,6 @@
     :catchall_f
     move-exception p1
 
-    .line 212
     monitor-exit v0
     :try_end_11
     .catchall {:try_start_3 .. :try_end_11} :catchall_f
@@ -573,12 +518,10 @@
 .method public serialize()Ljava/lang/String;
     .registers 4
 
-    .line 168
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 169
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->iterator()Ljava/util/Iterator;
@@ -598,7 +541,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 170
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->itemSeparator:Ljava/lang/String;
@@ -607,7 +549,6 @@
 
     goto :goto_b
 
-    .line 172
     :cond_20
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -619,12 +560,10 @@
 .method public serializeSync()Ljava/lang/String;
     .registers 3
 
-    .line 204
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 205
     :try_start_3
     invoke-virtual {p0}, Lcom/google/firebase/messaging/SharedPreferencesQueue;->serialize()Ljava/lang/String;
 
@@ -637,7 +576,6 @@
     :catchall_9
     move-exception v1
 
-    .line 206
     monitor-exit v0
     :try_end_b
     .catchall {:try_start_3 .. :try_end_b} :catchall_9
@@ -648,12 +586,10 @@
 .method public size()I
     .registers 3
 
-    .line 236
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 237
     :try_start_3
     iget-object v1, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
@@ -668,7 +604,6 @@
     :catchall_b
     move-exception v1
 
-    .line 238
     monitor-exit v0
     :try_end_d
     .catchall {:try_start_3 .. :try_end_d} :catchall_b
@@ -687,12 +622,10 @@
         }
     .end annotation
 
-    .line 111
     iget-object v0, p0, Lcom/google/firebase/messaging/SharedPreferencesQueue;->internalQueue:Ljava/util/ArrayDeque;
 
     monitor-enter v0
 
-    .line 112
     :try_start_3
     new-instance v1, Ljava/util/ArrayList;
 
@@ -707,7 +640,6 @@
     :catchall_c
     move-exception v1
 
-    .line 113
     monitor-exit v0
     :try_end_e
     .catchall {:try_start_3 .. :try_end_e} :catchall_c

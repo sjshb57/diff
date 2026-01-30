@@ -18,7 +18,6 @@
 .method public synthetic constructor <init>(Lcom/google/firebase/messaging/EnhancedIntentService;Landroid/content/Intent;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .registers 4
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/EnhancedIntentService$$ExternalSyntheticLambda1;->f$0:Lcom/google/firebase/messaging/EnhancedIntentService;
@@ -35,7 +34,6 @@
 .method public final run()V
     .registers 4
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/EnhancedIntentService$$ExternalSyntheticLambda1;->f$0:Lcom/google/firebase/messaging/EnhancedIntentService;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/EnhancedIntentService$$ExternalSyntheticLambda1;->f$1:Landroid/content/Intent;

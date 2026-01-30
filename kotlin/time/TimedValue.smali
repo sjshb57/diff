@@ -77,10 +77,8 @@
         }
     .end annotation
 
-    .line 66
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 68
     iput-object p1, p0, Lkotlin/time/TimedValue;->value:Ljava/lang/Object;
 
     iput-wide p2, p0, Lkotlin/time/TimedValue;->duration:J
@@ -215,7 +213,6 @@
 .method public final getDuration-UwyO8pc()J
     .registers 3
 
-    .line 68
     iget-wide v0, p0, Lkotlin/time/TimedValue;->duration:J
 
     return-wide v0
@@ -229,7 +226,6 @@
         }
     .end annotation
 
-    .line 68
     iget-object v0, p0, Lkotlin/time/TimedValue;->value:Ljava/lang/Object;
 
     return-object v0

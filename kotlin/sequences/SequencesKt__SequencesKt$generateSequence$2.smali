@@ -83,7 +83,6 @@
         }
     .end annotation
 
-    .line 662
     iget-object v0, p0, Lkotlin/sequences/SequencesKt__SequencesKt$generateSequence$2;->$seed:Ljava/lang/Object;
 
     return-object v0

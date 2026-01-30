@@ -77,7 +77,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 19
     new-instance v0, Lkotlin/io/path/CopyActionResult;
 
     const-string v1, "CONTINUE"
@@ -88,7 +87,6 @@
 
     sput-object v0, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
 
-    .line 25
     new-instance v0, Lkotlin/io/path/CopyActionResult;
 
     const-string v1, "SKIP_SUBTREE"
@@ -99,7 +97,6 @@
 
     sput-object v0, Lkotlin/io/path/CopyActionResult;->SKIP_SUBTREE:Lkotlin/io/path/CopyActionResult;
 
-    .line 30
     new-instance v0, Lkotlin/io/path/CopyActionResult;
 
     const-string v1, "TERMINATE"
@@ -127,7 +124,6 @@
         }
     .end annotation
 
-    .line 13
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

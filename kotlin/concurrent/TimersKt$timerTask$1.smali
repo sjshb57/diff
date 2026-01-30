@@ -67,7 +67,6 @@
 
     iput-object p1, p0, Lkotlin/concurrent/TimersKt$timerTask$1;->$action:Lkotlin/jvm/functions/Function1;
 
-    .line 146
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     return-void
@@ -78,7 +77,6 @@
 .method public run()V
     .registers 2
 
-    .line 147
     iget-object v0, p0, Lkotlin/concurrent/TimersKt$timerTask$1;->$action:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;

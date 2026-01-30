@@ -129,7 +129,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -143,21 +142,18 @@
         }
     .end annotation
 
-    .line 150
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     if-nez v0, :cond_a
 
     const/4 v0, 0x4
 
-    .line 152
     new-array v0, v0, [Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     iput-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     goto :goto_24
 
-    .line 153
     :cond_a
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
@@ -195,7 +191,6 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->_size$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 31
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->set(Ljava/lang/Object;I)V
 
     return-void
@@ -209,7 +204,6 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 140
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v2
@@ -218,7 +212,6 @@
 
     return-void
 
-    .line 141
     :cond_b
     iget-object v2, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -226,7 +219,6 @@
 
     add-int/lit8 v0, v0, 0x2
 
-    .line 142
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v3
@@ -254,7 +246,6 @@
     :cond_2b
     move v0, v1
 
-    .line 143
     :goto_2c
     aget-object v1, v2, p1
 
@@ -274,7 +265,6 @@
 
     return-void
 
-    .line 144
     :cond_3f
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->swap(II)V
 
@@ -291,7 +281,6 @@
 
     return-void
 
-    .line 131
     :cond_3
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -299,10 +288,8 @@
 
     add-int/lit8 v1, p1, -0x1
 
-    .line 132
     div-int/lit8 v1, v1, 0x2
 
-    .line 133
     aget-object v2, v0, v1
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -321,7 +308,6 @@
 
     return-void
 
-    .line 134
     :cond_1f
     invoke-direct {p0, p1, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->swap(II)V
 
@@ -333,31 +319,24 @@
 .method private final swap(II)V
     .registers 6
 
-    .line 159
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 160
     aget-object v1, v0, p2
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 161
     aget-object v2, v0, p1
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 162
     aput-object v1, v0, p1
 
-    .line 163
     aput-object v2, v0, p2
 
-    .line 164
     invoke-interface {v1, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setIndex(I)V
 
-    .line 165
     invoke-interface {v2, p2}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setIndex(I)V
 
     return-void
@@ -373,7 +352,6 @@
         }
     .end annotation
 
-    .line 120
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -395,17 +373,14 @@
 
     throw p1
 
-    .line 121
     :cond_13
     :goto_13
     invoke-interface {p1, p0}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setHeap(Lkotlinx/coroutines/internal/ThreadSafeHeap;)V
 
-    .line 122
     invoke-direct {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->realloc()[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     move-result-object v0
 
-    .line 123
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v1
@@ -414,13 +389,10 @@
 
     invoke-direct {p0, v2}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->setSize(I)V
 
-    .line 124
     aput-object p1, v0, v1
 
-    .line 125
     invoke-interface {p1, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setIndex(I)V
 
-    .line 126
     invoke-direct {p0, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->siftUpFrom(I)V
 
     return-void
@@ -434,10 +406,8 @@
         }
     .end annotation
 
-    .line 198
     monitor-enter p0
 
-    .line 69
     :try_start_1
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->addImpl(Lkotlinx/coroutines/internal/ThreadSafeHeapNode;)V
 
@@ -445,7 +415,6 @@
     :try_end_6
     .catchall {:try_start_1 .. :try_end_6} :catchall_8
 
-    .line 198
     monitor-exit p0
 
     return-void
@@ -470,12 +439,10 @@
         }
     .end annotation
 
-    .line 203
     monitor-enter p0
 
     const/4 v0, 0x1
 
-    .line 73
     :try_start_2
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->firstImpl()Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -493,7 +460,6 @@
 
     if-eqz p2, :cond_17
 
-    .line 74
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->addImpl(Lkotlinx/coroutines/internal/ThreadSafeHeapNode;)V
     :try_end_15
     .catchall {:try_start_2 .. :try_end_15} :catchall_20
@@ -505,7 +471,6 @@
     :cond_17
     const/4 p1, 0x0
 
-    .line 203
     :goto_18
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
@@ -530,10 +495,8 @@
 .method public final clear()V
     .registers 7
 
-    .line 173
     monitor-enter p0
 
-    .line 36
     :try_start_1
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -556,15 +519,12 @@
 
     const/4 v1, 0x0
 
-    .line 37
     invoke-virtual {v0, p0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->set(Ljava/lang/Object;I)V
 
-    .line 38
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_15
     .catchall {:try_start_1 .. :try_end_15} :catchall_17
 
-    .line 173
     monitor-exit p0
 
     return-void
@@ -589,10 +549,8 @@
         }
     .end annotation
 
-    .line 178
     monitor-enter p0
 
-    .line 43
     :try_start_1
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
@@ -605,7 +563,6 @@
 
     if-ge v1, v0, :cond_22
 
-    .line 44
     iget-object v3, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     if-eqz v3, :cond_f
@@ -615,7 +572,6 @@
     :cond_f
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 45
     invoke-interface {p1, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -637,7 +593,6 @@
 
     goto :goto_6
 
-    .line 178
     :cond_22
     :goto_22
     monitor-exit p0
@@ -660,7 +615,6 @@
         }
     .end annotation
 
-    .line 93
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     if-eqz v0, :cond_8
@@ -683,7 +637,6 @@
 
     sget-object v0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->_size$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    .line 30
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
     move-result v0
@@ -694,7 +647,6 @@
 .method public final isEmpty()Z
     .registers 2
 
-    .line 33
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v0
@@ -720,10 +672,8 @@
         }
     .end annotation
 
-    .line 183
     monitor-enter p0
 
-    .line 50
     :try_start_1
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->firstImpl()Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -731,7 +681,6 @@
     :try_end_5
     .catchall {:try_start_1 .. :try_end_5} :catchall_7
 
-    .line 183
     monitor-exit p0
 
     return-object v0
@@ -752,10 +701,8 @@
         }
     .end annotation
 
-    .line 208
     monitor-enter p0
 
-    .line 82
     :try_start_1
     invoke-interface {p1}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->getHeap()Lkotlinx/coroutines/internal/ThreadSafeHeap;
 
@@ -767,13 +714,11 @@
 
     goto :goto_20
 
-    .line 85
     :cond_9
     invoke-interface {p1}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->getIndex()I
 
     move-result p1
 
-    .line 86
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -791,7 +736,6 @@
 
     throw p1
 
-    .line 87
     :cond_1c
     :goto_1c
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->removeAtImpl(I)Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
@@ -800,7 +744,6 @@
 
     const/4 p1, 0x1
 
-    .line 82
     :goto_20
     monitor-exit p0
 
@@ -822,7 +765,6 @@
         }
     .end annotation
 
-    .line 97
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -844,14 +786,12 @@
 
     throw p1
 
-    .line 98
     :cond_13
     :goto_13
     iget-object v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;->a:[Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 99
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v1
@@ -862,14 +802,12 @@
 
     invoke-direct {p0, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->setSize(I)V
 
-    .line 100
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v1
 
     if-ge p1, v1, :cond_50
 
-    .line 101
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v1
@@ -878,12 +816,10 @@
 
     add-int/lit8 v1, p1, -0x1
 
-    .line 102
     div-int/lit8 v1, v1, 0x2
 
     if-lez p1, :cond_4d
 
-    .line 103
     aget-object v3, v0, p1
 
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -900,19 +836,15 @@
 
     if-gez v3, :cond_4d
 
-    .line 104
     invoke-direct {p0, p1, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->swap(II)V
 
-    .line 105
     invoke-direct {p0, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->siftUpFrom(I)V
 
     goto :goto_50
 
-    .line 107
     :cond_4d
     invoke-direct {p0, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->siftDownFrom(I)V
 
-    .line 110
     :cond_50
     :goto_50
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
@@ -923,7 +855,6 @@
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 111
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v1
@@ -949,13 +880,10 @@
     :goto_6c
     const/4 v1, 0x0
 
-    .line 112
     invoke-interface {p1, v1}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setHeap(Lkotlinx/coroutines/internal/ThreadSafeHeap;)V
 
-    .line 113
     invoke-interface {p1, v2}, Lkotlinx/coroutines/internal/ThreadSafeHeapNode;->setIndex(I)V
 
-    .line 114
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
     move-result v2
@@ -977,12 +905,10 @@
         }
     .end annotation
 
-    .line 193
     monitor-enter p0
 
     const/4 v0, 0x1
 
-    .line 61
     :try_start_2
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->firstImpl()Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -1004,7 +930,6 @@
 
     return-object v2
 
-    .line 62
     :cond_12
     :try_start_12
     invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1021,14 +946,12 @@
 
     const/4 p1, 0x0
 
-    .line 63
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->removeAtImpl(I)Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     move-result-object v2
     :try_end_23
     .catchall {:try_start_12 .. :try_end_23} :catchall_2b
 
-    .line 193
     :cond_23
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
@@ -1058,10 +981,8 @@
         }
     .end annotation
 
-    .line 188
     monitor-enter p0
 
-    .line 53
     :try_start_1
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->getSize()I
 
@@ -1071,7 +992,6 @@
 
     const/4 v0, 0x0
 
-    .line 54
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->removeAtImpl(I)Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
     move-result-object v0
@@ -1083,7 +1003,6 @@
     :cond_d
     const/4 v0, 0x0
 
-    .line 188
     :goto_e
     monitor-exit p0
 

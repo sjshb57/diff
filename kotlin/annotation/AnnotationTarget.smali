@@ -185,7 +185,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 26
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "CLASS"
@@ -196,7 +195,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    .line 28
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "ANNOTATION_CLASS"
@@ -207,7 +205,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->ANNOTATION_CLASS:Lkotlin/annotation/AnnotationTarget;
 
-    .line 30
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "TYPE_PARAMETER"
@@ -218,7 +215,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->TYPE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    .line 32
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "PROPERTY"
@@ -229,7 +225,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY:Lkotlin/annotation/AnnotationTarget;
 
-    .line 34
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const/4 v1, 0x0
@@ -242,7 +237,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->FIELD:Lkotlin/annotation/AnnotationTarget;
 
-    .line 36
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "LOCAL_VARIABLE"
@@ -253,7 +247,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->LOCAL_VARIABLE:Lkotlin/annotation/AnnotationTarget;
 
-    .line 38
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "VALUE_PARAMETER"
@@ -264,7 +257,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->VALUE_PARAMETER:Lkotlin/annotation/AnnotationTarget;
 
-    .line 40
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "CONSTRUCTOR"
@@ -275,7 +267,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->CONSTRUCTOR:Lkotlin/annotation/AnnotationTarget;
 
-    .line 42
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "FUNCTION"
@@ -286,7 +277,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->FUNCTION:Lkotlin/annotation/AnnotationTarget;
 
-    .line 44
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "PROPERTY_GETTER"
@@ -297,7 +287,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY_GETTER:Lkotlin/annotation/AnnotationTarget;
 
-    .line 46
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "PROPERTY_SETTER"
@@ -308,7 +297,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->PROPERTY_SETTER:Lkotlin/annotation/AnnotationTarget;
 
-    .line 48
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "TYPE"
@@ -319,7 +307,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->TYPE:Lkotlin/annotation/AnnotationTarget;
 
-    .line 50
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "EXPRESSION"
@@ -330,7 +317,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->EXPRESSION:Lkotlin/annotation/AnnotationTarget;
 
-    .line 52
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "FILE"
@@ -341,7 +327,6 @@
 
     sput-object v0, Lkotlin/annotation/AnnotationTarget;->FILE:Lkotlin/annotation/AnnotationTarget;
 
-    .line 54
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
     const-string v1, "TYPEALIAS"
@@ -369,7 +354,6 @@
         }
     .end annotation
 
-    .line 24
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

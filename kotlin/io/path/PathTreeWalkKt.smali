@@ -36,7 +36,6 @@
 .method public static final synthetic access$createsCycle(Lkotlin/io/path/PathNode;)Z
     .registers 1
 
-    .line 1
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalkKt;->createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result p0
@@ -47,7 +46,6 @@
 .method public static final synthetic access$keyOf(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
     .registers 2
 
-    .line 1
     invoke-static {p0, p1}, Lkotlin/io/path/PathTreeWalkKt;->keyOf(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
 
     move-result-object p0
@@ -58,7 +56,6 @@
 .method private static final createsCycle(Lkotlin/io/path/PathNode;)Z
     .registers 5
 
-    .line 120
     invoke-virtual {p0}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
 
     move-result-object v0
@@ -66,7 +63,6 @@
     :goto_4
     if-eqz v0, :cond_36
 
-    .line 122
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -81,7 +77,6 @@
 
     if-eqz v1, :cond_22
 
-    .line 123
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -98,7 +93,6 @@
 
     return v2
 
-    .line 127
     :cond_22
     :try_start_22
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
@@ -120,7 +114,6 @@
 
     return v2
 
-    .line 133
     :catch_31
     :cond_31
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
@@ -138,7 +131,6 @@
 .method private static final keyOf(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
     .registers 4
 
-    .line 108
     :try_start_0
     array-length v0, p1
 

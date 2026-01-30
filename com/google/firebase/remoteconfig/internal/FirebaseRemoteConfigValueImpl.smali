@@ -20,13 +20,10 @@
 .method constructor <init>(Ljava/lang/String;I)V
     .registers 3
 
-    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
     iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->value:Ljava/lang/String;
 
-    .line 38
     iput p2, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     return-void
@@ -35,7 +32,6 @@
 .method private asTrimmedString()Ljava/lang/String;
     .registers 2
 
-    .line 119
     invoke-virtual {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->asString()Ljava/lang/String;
 
     move-result-object v0
@@ -50,14 +46,12 @@
 .method private throwIfNullValue()V
     .registers 3
 
-    .line 111
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->value:Ljava/lang/String;
 
     if-eqz v0, :cond_5
 
     return-void
 
-    .line 112
     :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -78,7 +72,6 @@
         }
     .end annotation
 
-    .line 91
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     const/4 v1, 0x0
@@ -87,13 +80,11 @@
 
     return v1
 
-    .line 95
     :cond_6
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->asTrimmedString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 96
     sget-object v2, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;->TRUE_REGEX:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -110,7 +101,6 @@
 
     return v3
 
-    .line 98
     :cond_18
     sget-object v2, Lcom/google/firebase/remoteconfig/internal/ConfigGetParameterHandler;->FALSE_REGEX:Ljava/util/regex/Pattern;
 
@@ -126,7 +116,6 @@
 
     return v1
 
-    .line 101
     :cond_25
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
@@ -140,7 +129,6 @@
 
     aput-object v0, v4, v3
 
-    .line 102
     const-string v0, "[Value: %s] cannot be converted to a %s."
 
     invoke-static {v0, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -155,17 +143,14 @@
 .method public asByteArray()[B
     .registers 3
 
-    .line 83
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     if-nez v0, :cond_7
 
-    .line 84
     sget-object v0, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->DEFAULT_VALUE_FOR_BYTE_ARRAY:[B
 
     return-object v0
 
-    .line 86
     :cond_7
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->value:Ljava/lang/String;
 
@@ -181,7 +166,6 @@
 .method public asDouble()D
     .registers 6
 
-    .line 58
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     if-nez v0, :cond_7
@@ -190,13 +174,11 @@
 
     return-wide v0
 
-    .line 62
     :cond_7
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->asTrimmedString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 64
     :try_start_b
     invoke-static {v0}, Ljava/lang/Double;->valueOf(Ljava/lang/String;)Ljava/lang/Double;
 
@@ -213,7 +195,6 @@
     :catch_14
     move-exception v1
 
-    .line 66
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const/4 v3, 0x2
@@ -230,7 +211,6 @@
 
     aput-object v0, v3, v4
 
-    .line 67
     const-string v0, "[Value: %s] cannot be converted to a %s."
 
     invoke-static {v0, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -245,7 +225,6 @@
 .method public asLong()J
     .registers 6
 
-    .line 43
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     if-nez v0, :cond_7
@@ -254,13 +233,11 @@
 
     return-wide v0
 
-    .line 47
     :cond_7
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->asTrimmedString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 49
     :try_start_b
     invoke-static {v0}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
@@ -277,7 +254,6 @@
     :catch_14
     move-exception v1
 
-    .line 51
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const/4 v3, 0x2
@@ -294,7 +270,6 @@
 
     aput-object v0, v3, v4
 
-    .line 52
     const-string v0, "[Value: %s] cannot be converted to a %s."
 
     invoke-static {v0, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -309,21 +284,17 @@
 .method public asString()Ljava/lang/String;
     .registers 2
 
-    .line 73
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     if-nez v0, :cond_7
 
-    .line 74
     const-string v0, ""
 
     return-object v0
 
-    .line 77
     :cond_7
     invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->throwIfNullValue()V
 
-    .line 78
     iget-object v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->value:Ljava/lang/String;
 
     return-object v0
@@ -332,7 +303,6 @@
 .method public getSource()I
     .registers 2
 
-    .line 107
     iget v0, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigValueImpl;->source:I
 
     return v0

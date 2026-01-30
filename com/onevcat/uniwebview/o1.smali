@@ -46,7 +46,6 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -55,7 +54,6 @@
 
     iget v1, p0, Lcom/onevcat/uniwebview/o1;->b:I
 
-    .line 2
     iget-object v2, p1, La/v;->d:La/b0;
 
     int-to-float v0, v0
@@ -68,7 +66,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setY(F)V
 
-    .line 3
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1

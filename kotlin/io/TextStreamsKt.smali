@@ -64,7 +64,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
     instance-of v0, p0, Ljava/io/BufferedReader;
 
     if-eqz v0, :cond_c
@@ -91,7 +90,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
     instance-of v0, p0, Ljava/io/BufferedWriter;
 
     if-eqz v0, :cond_c
@@ -120,13 +118,11 @@
 
     const/16 p1, 0x2000
 
-    .line 19
     :cond_6
     const-string p2, "<this>"
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
     instance-of p2, p0, Ljava/io/BufferedReader;
 
     if-eqz p2, :cond_12
@@ -155,7 +151,6 @@
 
     const/16 p1, 0x2000
 
-    .line 24
     :cond_6
     const/4 p2, 0x0
 
@@ -163,7 +158,6 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
     instance-of p2, p0, Ljava/io/BufferedWriter;
 
     if-eqz p2, :cond_13
@@ -194,10 +188,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
     new-array p2, p2, [C
 
-    .line 122
     invoke-virtual {p0, p2}, Ljava/io/Reader;->read([C)I
 
     move-result v0
@@ -209,14 +201,12 @@
 
     const/4 v3, 0x0
 
-    .line 124
     invoke-virtual {p1, p2, v3, v0}, Ljava/io/Writer;->write([CII)V
 
     int-to-long v3, v0
 
     add-long/2addr v1, v3
 
-    .line 126
     invoke-virtual {p0, p2}, Ljava/io/Reader;->read([C)I
 
     move-result v0
@@ -236,7 +226,6 @@
 
     const/16 p2, 0x2000
 
-    .line 119
     :cond_6
     invoke-static {p0, p1, p2}, Lkotlin/io/TextStreamsKt;->copyTo(Ljava/io/Reader;Ljava/io/Writer;I)J
 
@@ -267,7 +256,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 152
     instance-of v0, p0, Ljava/io/BufferedReader;
 
     if-eqz v0, :cond_11
@@ -297,7 +285,6 @@
 
     move-result-object v0
 
-    .line 154
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -317,7 +304,6 @@
 
     goto :goto_26
 
-    .line 33
     :cond_34
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_36
@@ -325,7 +311,6 @@
 
     const/4 p1, 0x0
 
-    .line 152
     invoke-static {p0, p1}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     return-void
@@ -363,7 +348,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 69
     new-instance v0, Lkotlin/io/LinesSequence;
 
     invoke-direct {v0, p0}, Lkotlin/io/LinesSequence;-><init>(Ljava/io/BufferedReader;)V
@@ -384,7 +368,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 149
     invoke-virtual {p0}, Ljava/net/URL;->openStream()Ljava/io/InputStream;
 
     move-result-object p0
@@ -445,12 +428,10 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 42
     new-instance v1, Lkotlin/io/TextStreamsKt$readLines$1;
 
     invoke-direct {v1, v0}, Lkotlin/io/TextStreamsKt$readLines$1;-><init>(Ljava/util/ArrayList;)V
@@ -459,7 +440,6 @@
 
     invoke-static {p0, v1}, Lkotlin/io/TextStreamsKt;->forEachLine(Ljava/io/Reader;Lkotlin/jvm/functions/Function1;)V
 
-    .line 43
     check-cast v0, Ljava/util/List;
 
     return-object v0
@@ -472,12 +452,10 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
     new-instance v0, Ljava/io/StringWriter;
 
     invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
 
-    .line 106
     move-object v1, v0
 
     check-cast v1, Ljava/io/Writer;
@@ -490,7 +468,6 @@
 
     invoke-static {p0, v1, v4, v2, v3}, Lkotlin/io/TextStreamsKt;->copyTo$default(Ljava/io/Reader;Ljava/io/Writer;IILjava/lang/Object;)J
 
-    .line 107
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -513,7 +490,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 140
     invoke-static {p0}, Lkotlin/io/TextStreamsKt;->readBytes(Ljava/net/URL;)[B
 
     move-result-object p0
@@ -532,7 +508,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 140
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
@@ -562,7 +537,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 56
     new-instance v0, Ljava/io/StringReader;
 
     invoke-direct {v0, p0}, Ljava/io/StringReader;-><init>(Ljava/lang/String;)V
@@ -594,7 +568,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
     instance-of v0, p0, Ljava/io/BufferedReader;
 
     if-eqz v0, :cond_11

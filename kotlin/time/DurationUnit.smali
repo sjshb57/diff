@@ -121,7 +121,6 @@
 .method static constructor <clinit>()V
     .registers 4
 
-    .line 19
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x0
@@ -134,7 +133,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
-    .line 23
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x1
@@ -147,7 +145,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->MICROSECONDS:Lkotlin/time/DurationUnit;
 
-    .line 27
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x2
@@ -160,7 +157,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->MILLISECONDS:Lkotlin/time/DurationUnit;
 
-    .line 31
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x3
@@ -173,7 +169,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
-    .line 35
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x4
@@ -186,7 +181,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
 
-    .line 39
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x5
@@ -199,7 +193,6 @@
 
     sput-object v0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
 
-    .line 43
     new-instance v0, Lkotlin/time/DurationUnit;
 
     const/4 v1, 0x6
@@ -231,10 +224,8 @@
         }
     .end annotation
 
-    .line 13
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 15
     iput-object p3, p0, Lkotlin/time/DurationUnit;->timeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-void
@@ -273,7 +264,6 @@
 .method public final getTimeUnit$kotlin_stdlib()Ljava/util/concurrent/TimeUnit;
     .registers 2
 
-    .line 15
     iget-object v0, p0, Lkotlin/time/DurationUnit;->timeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-object v0

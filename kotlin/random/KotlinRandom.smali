@@ -89,7 +89,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
     invoke-direct {p0}, Ljava/util/Random;-><init>()V
 
     iput-object p1, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
@@ -102,7 +101,6 @@
 .method public final getImpl()Lkotlin/random/Random;
     .registers 2
 
-    .line 65
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     return-object v0
@@ -111,7 +109,6 @@
 .method protected next(I)I
     .registers 3
 
-    .line 66
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0, p1}, Lkotlin/random/Random;->nextBits(I)I
@@ -124,7 +121,6 @@
 .method public nextBoolean()Z
     .registers 2
 
-    .line 69
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0}, Lkotlin/random/Random;->nextBoolean()Z
@@ -141,7 +137,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 75
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0, p1}, Lkotlin/random/Random;->nextBytes([B)[B
@@ -152,7 +147,6 @@
 .method public nextDouble()D
     .registers 3
 
-    .line 72
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0}, Lkotlin/random/Random;->nextDouble()D
@@ -165,7 +159,6 @@
 .method public nextFloat()F
     .registers 2
 
-    .line 71
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0}, Lkotlin/random/Random;->nextFloat()F
@@ -178,7 +171,6 @@
 .method public nextInt()I
     .registers 2
 
-    .line 67
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0}, Lkotlin/random/Random;->nextInt()I
@@ -191,7 +183,6 @@
 .method public nextInt(I)I
     .registers 3
 
-    .line 68
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0, p1}, Lkotlin/random/Random;->nextInt(I)I
@@ -204,7 +195,6 @@
 .method public nextLong()J
     .registers 3
 
-    .line 70
     iget-object v0, p0, Lkotlin/random/KotlinRandom;->impl:Lkotlin/random/Random;
 
     invoke-virtual {v0}, Lkotlin/random/Random;->nextLong()J
@@ -217,19 +207,16 @@
 .method public setSeed(J)V
     .registers 3
 
-    .line 81
     iget-boolean p1, p0, Lkotlin/random/KotlinRandom;->seedInitialized:Z
 
     if-nez p1, :cond_8
 
     const/4 p1, 0x1
 
-    .line 83
     iput-boolean p1, p0, Lkotlin/random/KotlinRandom;->seedInitialized:Z
 
     return-void
 
-    .line 85
     :cond_8
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 

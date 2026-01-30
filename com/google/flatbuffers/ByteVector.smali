@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 27
     invoke-direct {p0}, Lcom/google/flatbuffers/BaseVector;-><init>()V
 
     return-void
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x1
 
-    .line 37
     invoke-virtual {p0, p1, v0, p2}, Lcom/google/flatbuffers/ByteVector;->__reset(IILjava/nio/ByteBuffer;)V
 
     return-object p0
@@ -29,7 +27,6 @@
 .method public get(I)B
     .registers 3
 
-    .line 47
     iget-object v0, p0, Lcom/google/flatbuffers/ByteVector;->bb:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/ByteVector;->__element(I)I
@@ -46,7 +43,6 @@
 .method public getAsUnsigned(I)I
     .registers 2
 
-    .line 58
     invoke-virtual {p0, p1}, Lcom/google/flatbuffers/ByteVector;->get(I)B
 
     move-result p1

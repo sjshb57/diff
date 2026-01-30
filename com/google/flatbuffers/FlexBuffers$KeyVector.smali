@@ -22,10 +22,8 @@
 .method constructor <init>(Lcom/google/flatbuffers/FlexBuffers$TypedVector;)V
     .registers 2
 
-    .line 1039
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1040
     iput-object p1, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     return-void
@@ -36,21 +34,18 @@
 .method public get(I)Lcom/google/flatbuffers/FlexBuffers$Key;
     .registers 6
 
-    .line 1050
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->size()I
 
     move-result v0
 
     if-lt p1, v0, :cond_b
 
-    .line 1051
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers$Key;->access$700()Lcom/google/flatbuffers/FlexBuffers$Key;
 
     move-result-object p1
 
     return-object p1
 
-    .line 1052
     :cond_b
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
@@ -64,7 +59,6 @@
 
     add-int/2addr v0, p1
 
-    .line 1053
     new-instance p1, Lcom/google/flatbuffers/FlexBuffers$Key;
 
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
@@ -93,7 +87,6 @@
 .method public size()I
     .registers 2
 
-    .line 1062
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     invoke-virtual {v0}, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->size()I
@@ -106,19 +99,16 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 1069
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const/16 v1, 0x5b
 
-    .line 1070
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    .line 1071
     :goto_b
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
@@ -128,7 +118,6 @@
 
     if-ge v1, v2, :cond_2e
 
-    .line 1072
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     invoke-virtual {v2, v1}, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->get(I)Lcom/google/flatbuffers/FlexBuffers$Reference;
@@ -137,7 +126,6 @@
 
     invoke-virtual {v2, v0}, Lcom/google/flatbuffers/FlexBuffers$Reference;->toString(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
 
-    .line 1073
     iget-object v2, p0, Lcom/google/flatbuffers/FlexBuffers$KeyVector;->vec:Lcom/google/flatbuffers/FlexBuffers$TypedVector;
 
     invoke-virtual {v2}, Lcom/google/flatbuffers/FlexBuffers$TypedVector;->size()I
@@ -148,7 +136,6 @@
 
     if-eq v1, v2, :cond_2b
 
-    .line 1074
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -158,7 +145,6 @@
 
     goto :goto_b
 
-    .line 1077
     :cond_2e
     const-string v1, "]"
 

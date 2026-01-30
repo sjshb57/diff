@@ -34,7 +34,6 @@
 .method public constructor <init>(I)V
     .registers 2
 
-    .line 98
     invoke-direct {p0, p1}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
     return-void
@@ -45,7 +44,6 @@
 .method public final getBuffer()[B
     .registers 3
 
-    .line 99
     iget-object v0, p0, Lkotlin/io/ExposingBufferByteArrayOutputStream;->buf:[B
 
     const/4 v1, 0x0

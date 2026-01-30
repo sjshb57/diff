@@ -66,7 +66,6 @@
 
     iput-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1;->$action$inlined:Lkotlin/jvm/functions/Function3;
 
-    .line 106
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -125,7 +124,6 @@
 
     move-result-object v1
 
-    .line 105
     iget v2, v0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1$1;->label:I
 
     const/4 v3, 0x3
@@ -202,12 +200,10 @@
     :cond_56
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 108
     move-object p2, v0
 
     check-cast p2, Lkotlin/coroutines/Continuation;
 
-    .line 114
     :try_start_5c
     iget-object p2, p0, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1;->$this_onCompletion$inlined:Lkotlinx/coroutines/flow/Flow;
 
@@ -230,19 +226,15 @@
     :cond_6b
     move-object v2, p0
 
-    .line 125
     :goto_6c
     new-instance p2, Lkotlinx/coroutines/flow/internal/SafeCollector;
 
-    .line 126
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v4
 
-    .line 125
     invoke-direct {p2, p1, v4}, Lkotlinx/coroutines/flow/internal/SafeCollector;-><init>(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 128
     :try_start_75
     iget-object p1, v2, Lkotlinx/coroutines/flow/FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1;->$action$inlined:Lkotlin/jvm/functions/Function3;
 
@@ -273,11 +265,9 @@
     :cond_8c
     move-object p1, p2
 
-    .line 130
     :goto_8d
     invoke-virtual {p1}, Lkotlinx/coroutines/flow/internal/SafeCollector;->releaseIntercepted()V
 
-    .line 108
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
@@ -291,7 +281,6 @@
 
     move-object p1, v7
 
-    .line 130
     :goto_97
     invoke-virtual {p1}, Lkotlinx/coroutines/flow/internal/SafeCollector;->releaseIntercepted()V
 
@@ -302,7 +291,6 @@
 
     move-object v2, p0
 
-    .line 121
     :goto_9d
     new-instance p2, Lkotlinx/coroutines/flow/ThrowingCollector;
 
@@ -326,7 +314,6 @@
 
     return-object v1
 
-    .line 122
     :cond_b3
     :goto_b3
     throw p1

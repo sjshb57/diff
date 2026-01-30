@@ -35,7 +35,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 22
     const-string v0, "Child of the scoped flow was cancelled"
 
     invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
@@ -48,7 +47,6 @@
 .method public fillInStackTrace()Ljava/lang/Throwable;
     .registers 2
 
-    .line 24
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getDEBUG()Z
 
     move-result v0
@@ -64,13 +62,10 @@
     :cond_b
     const/4 v0, 0x0
 
-    .line 31
     new-array v0, v0, [Ljava/lang/StackTraceElement;
 
-    .line 26
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/flow/internal/ChildCancelledException;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
-    .line 27
     move-object v0, p0
 
     check-cast v0, Ljava/lang/Throwable;

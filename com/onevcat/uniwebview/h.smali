@@ -39,18 +39,14 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 5
 
-    .line 1
     sget-object v0, La/d;->b:La/d$a;
 
-    .line 2
     sget-object v0, La/d;->c:La/d;
 
-    .line 3
     iget-object v1, p0, Lcom/onevcat/uniwebview/h;->a:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const-string v2, "name"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -65,12 +61,10 @@
 
     if-eqz v0, :cond_5c
 
-    .line 5
     sget-object v1, La/p;->a:La/p$a;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 6
     const-string v1, "handler"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -91,7 +85,6 @@
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     iput-object v1, v0, La/q;->g:Ljava/lang/String;
 
     sget-object v2, Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity;->Companion:Lcom/onevcat/uniwebview/UniWebViewAuthenticationActivity$a;
@@ -109,7 +102,6 @@
     :cond_42
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 8
     const-string v2, "context"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -128,7 +120,6 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 9
     :cond_5c
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

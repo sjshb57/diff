@@ -156,7 +156,6 @@
 
     move-result-object v0
 
-    .line 258
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$3$2;->label:I
 
     const/4 v2, 0x2
@@ -204,36 +203,28 @@
 
     check-cast p1, [Ljava/lang/Object;
 
-    .line 262
     move-object v4, p0
 
     check-cast v4, Lkotlin/coroutines/Continuation;
 
-    .line 333
     iget-object v5, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$3$2;->$transform$inlined:Lkotlin/jvm/functions/Function6;
 
     const/4 v4, 0x0
 
-    .line 334
     aget-object v6, p1, v4
 
-    .line 335
     aget-object v7, p1, v3
 
-    .line 336
     aget-object v8, p1, v2
 
     const/4 v4, 0x3
 
-    .line 337
     aget-object v9, p1, v4
 
     const/4 v4, 0x4
 
-    .line 338
     aget-object v10, p1, v4
 
-    .line 333
     iput-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$3$2;->L$0:Ljava/lang/Object;
 
     iput v3, p0, Lkotlinx/coroutines/flow/FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$3$2;->label:I
@@ -256,7 +247,6 @@
 
     return-object v0
 
-    .line 262
     :cond_54
     :goto_54
     move-object v3, p0

@@ -52,7 +52,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 24
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "CONDITION_FALSE"
@@ -67,7 +66,6 @@
 .method public static final getCONDITION_FALSE()Ljava/lang/Object;
     .registers 1
 
-    .line 24
     sget-object v0, Lkotlinx/coroutines/internal/LockFreeLinkedListKt;->CONDITION_FALSE:Ljava/lang/Object;
 
     return-object v0
@@ -100,7 +98,6 @@
 .method public static final unwrap(Ljava/lang/Object;)Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
     .registers 2
 
-    .line 327
     instance-of v0, p0, Lkotlinx/coroutines/internal/Removed;
 
     if-eqz v0, :cond_8

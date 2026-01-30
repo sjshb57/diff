@@ -69,7 +69,6 @@
 .method private synthetic constructor <init>(Ljava/lang/Object;)V
     .registers 2
 
-    .line 260
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/internal/SegmentOrClosed;->value:Ljava/lang/Object;
@@ -161,7 +160,6 @@
         }
     .end annotation
 
-    .line 263
     invoke-static {}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->access$getCLOSED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v0
@@ -211,7 +209,6 @@
 .method public static final isClosed-impl(Ljava/lang/Object;)Z
     .registers 2
 
-    .line 261
     invoke-static {}, Lkotlinx/coroutines/internal/ConcurrentLinkedListKt;->access$getCLOSED$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v0

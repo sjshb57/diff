@@ -60,7 +60,6 @@
 
     iput-object p1, p0, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->$block:Lkotlin/jvm/functions/Function0;
 
-    .line 28
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
@@ -71,7 +70,6 @@
 .method public run()V
     .registers 2
 
-    .line 30
     iget-object v0, p0, Lkotlin/concurrent/ThreadsKt$thread$thread$1;->$block:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;

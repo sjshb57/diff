@@ -46,13 +46,11 @@
 
     return-void
 
-    .line 10
     :cond_5
     const-string v0, " must be greater than zero."
 
     if-eq p0, p1, :cond_23
 
-    .line 11
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Both size "
@@ -75,7 +73,6 @@
 
     goto :goto_34
 
-    .line 13
     :cond_23
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -91,7 +88,6 @@
 
     move-result-object p0
 
-    .line 9
     :goto_34
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -123,7 +119,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 23
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -136,7 +131,6 @@
 
     return-object p0
 
-    .line 24
     :cond_10
     new-instance v7, Lkotlin/collections/SlidingWindowKt$windowedIterator$1;
 
@@ -184,10 +178,8 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 18
     invoke-static {p1, p2}, Lkotlin/collections/SlidingWindowKt;->checkWindowSizeStep(II)V
 
-    .line 19
     new-instance v0, Lkotlin/collections/SlidingWindowKt$windowedSequence$$inlined$Sequence$1;
 
     move-object v1, v0

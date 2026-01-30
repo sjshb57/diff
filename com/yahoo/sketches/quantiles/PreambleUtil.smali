@@ -41,7 +41,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 85
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
     move-result-object v0
@@ -66,7 +65,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 61
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +83,6 @@
 
     const-wide/16 v0, 0x2
 
-    .line 184
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getByte(J)B
 
     move-result p0
@@ -108,7 +105,6 @@
 
     const-wide/16 v0, 0x3
 
-    .line 188
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getByte(J)B
 
     move-result p0
@@ -131,7 +127,6 @@
 
     const-wide/16 v0, 0x4
 
-    .line 192
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getShort(J)S
 
     move-result p0
@@ -156,7 +151,6 @@
 
     const-wide/16 v0, 0x18
 
-    .line 204
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getDouble(J)D
 
     move-result-wide v0
@@ -177,7 +171,6 @@
 
     const-wide/16 v0, 0x10
 
-    .line 200
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getDouble(J)D
 
     move-result-wide v0
@@ -198,7 +191,6 @@
 
     const-wide/16 v0, 0x8
 
-    .line 196
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getLong(J)J
 
     move-result-wide v0
@@ -219,7 +211,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 176
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getByte(J)B
 
     move-result p0
@@ -242,7 +233,6 @@
 
     const-wide/16 v0, 0x1
 
-    .line 180
     invoke-virtual {p0, v0, v1}, Lcom/yahoo/memory/Memory;->getByte(J)B
 
     move-result p0
@@ -269,7 +259,6 @@
 
     int-to-byte p1, p1
 
-    .line 250
     invoke-virtual {p0, v0, v1, p1}, Lcom/yahoo/memory/WritableMemory;->putByte(JB)V
 
     return-void
@@ -292,7 +281,6 @@
 
     int-to-byte p1, p1
 
-    .line 254
     invoke-virtual {p0, v0, v1, p1}, Lcom/yahoo/memory/WritableMemory;->putByte(JB)V
 
     return-void
@@ -315,7 +303,6 @@
 
     int-to-short p1, p1
 
-    .line 258
     invoke-virtual {p0, v0, v1, p1}, Lcom/yahoo/memory/WritableMemory;->putShort(JS)V
 
     return-void
@@ -336,7 +323,6 @@
 
     const-wide/16 v0, 0x18
 
-    .line 270
     invoke-virtual {p0, v0, v1, p1, p2}, Lcom/yahoo/memory/WritableMemory;->putDouble(JD)V
 
     return-void
@@ -357,7 +343,6 @@
 
     const-wide/16 v0, 0x10
 
-    .line 266
     invoke-virtual {p0, v0, v1, p1, p2}, Lcom/yahoo/memory/WritableMemory;->putDouble(JD)V
 
     return-void
@@ -378,7 +363,6 @@
 
     const-wide/16 v0, 0x8
 
-    .line 262
     invoke-virtual {p0, v0, v1, p1, p2}, Lcom/yahoo/memory/WritableMemory;->putLong(JJ)V
 
     return-void
@@ -401,7 +385,6 @@
 
     int-to-byte p1, p1
 
-    .line 242
     invoke-virtual {p0, v0, v1, p1}, Lcom/yahoo/memory/WritableMemory;->putByte(JB)V
 
     return-void
@@ -424,7 +407,6 @@
 
     int-to-byte p1, p1
 
-    .line 246
     invoke-virtual {p0, v0, v1, p1}, Lcom/yahoo/memory/WritableMemory;->putByte(JB)V
 
     return-void
@@ -443,22 +425,18 @@
         }
     .end annotation
 
-    .line 125
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractPreLongs(Lcom/yahoo/memory/Memory;)I
 
     move-result v0
 
-    .line 126
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractSerVer(Lcom/yahoo/memory/Memory;)I
 
     move-result v1
 
-    .line 127
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractFamilyID(Lcom/yahoo/memory/Memory;)I
 
     move-result v2
 
-    .line 128
     invoke-static {v2}, Lcom/yahoo/sketches/Family;->idToFamily(I)Lcom/yahoo/sketches/Family;
 
     move-result-object v2
@@ -467,7 +445,6 @@
 
     move-result-object v2
 
-    .line 129
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractFlags(Lcom/yahoo/memory/Memory;)I
 
     move-result v3
@@ -485,7 +462,6 @@
     :cond_1f
     const/4 v4, 0x0
 
-    .line 131
     :goto_20
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
@@ -542,7 +518,6 @@
     :cond_43
     const/4 v11, 0x0
 
-    .line 136
     :goto_44
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractK(Lcom/yahoo/memory/Memory;)I
 
@@ -554,7 +529,6 @@
 
     goto :goto_51
 
-    .line 138
     :cond_4d
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractN(Lcom/yahoo/memory/Memory;)J
 
@@ -565,12 +539,10 @@
 
     if-eqz p1, :cond_62
 
-    .line 142
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractMinDouble(Lcom/yahoo/memory/Memory;)D
 
     move-result-wide v15
 
-    .line 143
     invoke-static/range {p0 .. p0}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->extractMaxDouble(Lcom/yahoo/memory/Memory;)D
 
     move-result-wide v17
@@ -588,18 +560,15 @@
 
     move-wide/from16 v21, v19
 
-    .line 146
     :goto_68
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 147
     sget-object v5, Lcom/yahoo/sketches/quantiles/Util;->LS:Ljava/lang/String;
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 148
     const-string v5, "### QUANTILES SKETCH PREAMBLE SUMMARY:"
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -608,7 +577,6 @@
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 149
     const/4 v5, 0x0
 
     sget-object v5, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->MiMjH:Ljava/lang/String;
@@ -621,7 +589,6 @@
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 150
     const-string v5, "Byte  1: Serialization Version: "
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -632,7 +599,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 151
     const-string v1, "Byte  2: Family               : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -643,7 +609,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 152
     const-string v1, "Byte  3: Flags Field          : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -670,7 +635,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 153
     const-string v1, "  BIG ENDIAN                  : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -681,7 +645,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 154
     const-string v1, "  (Native Byte Order)         : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -692,7 +655,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 155
     const-string v1, "  READ ONLY                   : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -703,7 +665,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 156
     const-string v1, "  EMPTY                       : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -714,7 +675,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 157
     const-string v1, "  COMPACT                     : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -725,7 +685,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 158
     const-string v1, "  ORDERED                     : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -736,7 +695,6 @@
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 159
     const-string v1, "Bytes  4-5  : K               : "
 
     invoke-virtual {v15, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -749,7 +707,6 @@
 
     if-ne v0, v6, :cond_127
 
-    .line 161
     const-string v0, " --ABSENT, ASSUMED:"
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -758,7 +715,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 163
     :cond_127
     const-string v0, "Bytes  8-15 : N                : "
 
@@ -772,7 +728,6 @@
 
     if-eqz p1, :cond_154
 
-    .line 165
     const-string v0, "MinDouble                      : "
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -785,7 +740,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 166
     const-string v0, "MaxDouble                      : "
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -798,7 +752,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 168
     :cond_154
     const-string v0, "Retained Items                 : "
 
@@ -814,7 +767,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 169
     const-string v0, "Total Bytes                    : "
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -829,7 +781,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 170
     const-string v0, "### END SKETCH PREAMBLE SUMMARY"
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -838,7 +789,6 @@
 
     invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 171
     invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -859,7 +809,6 @@
         }
     .end annotation
 
-    .line 121
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->memoryToString(Lcom/yahoo/memory/Memory;Z)Ljava/lang/String;
 
     move-result-object p0
@@ -880,12 +829,10 @@
         }
     .end annotation
 
-    .line 106
     invoke-static {p0}, Lcom/yahoo/memory/Memory;->wrap([B)Lcom/yahoo/memory/Memory;
 
     move-result-object p0
 
-    .line 107
     invoke-static {p0, p1}, Lcom/yahoo/sketches/quantiles/PreambleUtil;->toString(Lcom/yahoo/memory/Memory;Z)Ljava/lang/String;
 
     move-result-object p0

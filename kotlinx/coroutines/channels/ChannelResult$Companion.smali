@@ -53,7 +53,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 470
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -82,7 +81,6 @@
         }
     .end annotation
 
-    .line 484
     new-instance v0, Lkotlinx/coroutines/channels/ChannelResult$Closed;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/channels/ChannelResult$Closed;-><init>(Ljava/lang/Throwable;)V
@@ -105,7 +103,6 @@
         }
     .end annotation
 
-    .line 480
     invoke-static {}, Lkotlinx/coroutines/channels/ChannelResult;->access$getFailed$cp()Lkotlinx/coroutines/channels/ChannelResult$Failed;
 
     move-result-object v0
@@ -128,7 +125,6 @@
         }
     .end annotation
 
-    .line 476
     invoke-static {p1}, Lkotlinx/coroutines/channels/ChannelResult;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

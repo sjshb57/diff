@@ -99,7 +99,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .registers 3
 
-    .line 1266
     check-cast p1, Ljava/lang/CharSequence;
 
     check-cast p2, Ljava/lang/Number;
@@ -133,7 +132,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1266
     iget-object v0, p0, Lkotlin/text/StringsKt__StringsKt$rangesDelimitedBy$2;->$delimitersList:Ljava/util/List;
 
     check-cast v0, Ljava/util/Collection;

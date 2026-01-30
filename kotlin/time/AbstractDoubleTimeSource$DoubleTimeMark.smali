@@ -77,10 +77,8 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 102
     iput-wide p1, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->startedAt:D
 
     iput-object p3, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->timeSource:Lkotlin/time/AbstractDoubleTimeSource;
@@ -103,7 +101,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .registers 2
 
-    .line 101
     check-cast p1, Lkotlin/time/ComparableTimeMark;
 
     invoke-virtual {p0, p1}, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->compareTo(Lkotlin/time/ComparableTimeMark;)I
@@ -116,7 +113,6 @@
 .method public compareTo(Lkotlin/time/ComparableTimeMark;)I
     .registers 2
 
-    .line 101
     invoke-static {p0, p1}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->compareTo(Lkotlin/time/ComparableTimeMark;Lkotlin/time/ComparableTimeMark;)I
 
     move-result p1
@@ -127,7 +123,6 @@
 .method public elapsedNow-UwyO8pc()J
     .registers 5
 
-    .line 103
     iget-object v0, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->timeSource:Lkotlin/time/AbstractDoubleTimeSource;
 
     invoke-virtual {v0}, Lkotlin/time/AbstractDoubleTimeSource;->read()D
@@ -160,7 +155,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 117
     instance-of v0, p1, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;
 
     if-eqz v0, :cond_25
@@ -211,7 +205,6 @@
 .method public hasNotPassedNow()Z
     .registers 2
 
-    .line 101
     invoke-static {p0}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->hasNotPassedNow(Lkotlin/time/ComparableTimeMark;)Z
 
     move-result v0
@@ -222,7 +215,6 @@
 .method public hasPassedNow()Z
     .registers 2
 
-    .line 101
     invoke-static {p0}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->hasPassedNow(Lkotlin/time/ComparableTimeMark;)Z
 
     move-result v0
@@ -233,7 +225,6 @@
 .method public hashCode()I
     .registers 5
 
-    .line 121
     iget-wide v0, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->startedAt:D
 
     iget-object v2, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->timeSource:Lkotlin/time/AbstractDoubleTimeSource;
@@ -262,7 +253,6 @@
 .method public minus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 3
 
-    .line 101
     invoke-static {p0, p1, p2}, Lkotlin/time/ComparableTimeMark$DefaultImpls;->minus-LRDsOJo(Lkotlin/time/ComparableTimeMark;J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -273,7 +263,6 @@
 .method public bridge synthetic minus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 101
     invoke-virtual {p0, p1, p2}, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->minus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -292,7 +281,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 107
     instance-of v0, p1, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;
 
     if-eqz v0, :cond_5d
@@ -311,7 +299,6 @@
 
     if-eqz v0, :cond_5d
 
-    .line 110
     iget-wide v2, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->offset:J
 
     iget-wide v4, v1, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->offset:J
@@ -338,7 +325,6 @@
 
     return-wide v0
 
-    .line 111
     :cond_30
     iget-wide v2, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->offset:J
 
@@ -348,7 +334,6 @@
 
     move-result-wide v2
 
-    .line 112
     iget-wide v4, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->startedAt:D
 
     iget-wide v0, v1, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->startedAt:D
@@ -365,7 +350,6 @@
 
     move-result-wide v0
 
-    .line 113
     invoke-static {v2, v3}, Lkotlin/time/Duration;->unaryMinus-UwyO8pc(J)J
 
     move-result-wide v4
@@ -392,7 +376,6 @@
     :goto_5c
     return-wide v0
 
-    .line 108
     :cond_5d
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -422,7 +405,6 @@
 .method public plus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
     .registers 11
 
-    .line 104
     new-instance v7, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;
 
     iget-wide v1, p0, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->startedAt:D
@@ -449,7 +431,6 @@
 .method public bridge synthetic plus-LRDsOJo(J)Lkotlin/time/TimeMark;
     .registers 3
 
-    .line 101
     invoke-virtual {p0, p1, p2}, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;->plus-LRDsOJo(J)Lkotlin/time/ComparableTimeMark;
 
     move-result-object p1
@@ -462,7 +443,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 124
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DoubleTimeMark("

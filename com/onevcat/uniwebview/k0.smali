@@ -39,18 +39,14 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 4
 
-    .line 1
     sget-object v0, La/l;->b:La/l$a;
 
-    .line 2
     sget-object v0, La/l;->c:La/l;
 
-    .line 3
     iget-object v1, p0, Lcom/onevcat/uniwebview/k0;->a:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
     const-string v2, "name"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -65,10 +61,8 @@
 
     if-eqz v0, :cond_1b
 
-    .line 5
     invoke-virtual {v0}, La/g0;->b()V
 
-    .line 6
     :cond_1b
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

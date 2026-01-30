@@ -43,7 +43,6 @@
 
     move-object v0, p0
 
-    .line 35
     invoke-static/range {v0 .. v6}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;JJJ)J
 
     move-result-wide p0
@@ -56,7 +55,6 @@
 .method public static final systemProp(Ljava/lang/String;JJJ)J
     .registers 11
 
-    .line 50
     invoke-static {p0}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     return-wide p1
 
-    .line 51
     :cond_7
     invoke-static {v0}, Lkotlin/text/StringsKt;->toLongOrNull(Ljava/lang/String;)Ljava/lang/Long;
 
@@ -91,11 +88,9 @@
 
     return-wide v2
 
-    .line 53
     :cond_1e
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 54
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -134,11 +129,9 @@
 
     throw p1
 
-    .line 51
     :cond_4f
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 52
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -169,7 +162,6 @@
 .method public static final systemProp(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    .line 68
     invoke-static {p0}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -188,7 +180,6 @@
 .method public static final systemProp(Ljava/lang/String;Z)Z
     .registers 2
 
-    .line 21
     invoke-static {p0}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -219,7 +210,6 @@
 
     const p3, 0x7fffffff
 
-    .line 30
     :cond_c
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;III)I
 
@@ -253,7 +243,6 @@
 
     move-wide v1, p1
 
-    .line 44
     invoke-static/range {v0 .. v6}, Lkotlinx/coroutines/internal/SystemPropsKt;->systemProp(Ljava/lang/String;JJJ)J
 
     move-result-wide p0

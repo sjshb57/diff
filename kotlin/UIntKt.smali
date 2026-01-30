@@ -39,7 +39,6 @@
 .method private static final toUInt(B)I
     .registers 1
 
-    .line 390
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -50,7 +49,6 @@
 .method private static final toUInt(D)I
     .registers 2
 
-    .line 446
     invoke-static {p0, p1}, Lkotlin/UnsignedKt;->doubleToUInt(D)I
 
     move-result p0
@@ -63,7 +61,6 @@
 
     float-to-double v0, p0
 
-    .line 436
     invoke-static {v0, v1}, Lkotlin/UnsignedKt;->doubleToUInt(D)I
 
     move-result p0
@@ -74,7 +71,6 @@
 .method private static final toUInt(I)I
     .registers 1
 
-    .line 413
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -87,7 +83,6 @@
 
     long-to-int p0, p0
 
-    .line 425
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0
@@ -98,7 +93,6 @@
 .method private static final toUInt(S)I
     .registers 1
 
-    .line 402
     invoke-static {p0}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p0

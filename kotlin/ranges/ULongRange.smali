@@ -90,7 +90,6 @@
 
     sput-object v0, Lkotlin/ranges/ULongRange;->Companion:Lkotlin/ranges/ULongRange$Companion;
 
-    .line 52
     new-instance v0, Lkotlin/ranges/ULongRange;
 
     const-wide/16 v5, 0x0
@@ -121,7 +120,6 @@
 
     move-wide v3, p3
 
-    .line 20
     invoke-direct/range {v0 .. v7}, Lkotlin/ranges/ULongProgression;-><init>(JJJLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -138,7 +136,6 @@
 .method public static final synthetic access$getEMPTY$cp()Lkotlin/ranges/ULongRange;
     .registers 1
 
-    .line 17
     sget-object v0, Lkotlin/ranges/ULongRange;->EMPTY:Lkotlin/ranges/ULongRange;
 
     return-object v0
@@ -158,7 +155,6 @@
 .method public bridge synthetic contains(Ljava/lang/Comparable;)Z
     .registers 4
 
-    .line 17
     check-cast p1, Lkotlin/ULong;
 
     invoke-virtual {p1}, Lkotlin/ULong;->unbox-impl()J
@@ -175,7 +171,6 @@
 .method public contains-VKZWuLQ(J)Z
     .registers 5
 
-    .line 32
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
@@ -210,7 +205,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .registers 6
 
-    .line 42
     instance-of v0, p1, Lkotlin/ranges/ULongRange;
 
     if-eqz v0, :cond_2f
@@ -231,7 +225,6 @@
 
     if-nez v0, :cond_2d
 
-    .line 43
     :cond_13
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
@@ -274,7 +267,6 @@
 .method public bridge synthetic getEndExclusive()Ljava/lang/Comparable;
     .registers 3
 
-    .line 17
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getEndExclusive-s-VKNKU()J
 
     move-result-wide v0
@@ -289,7 +281,6 @@
 .method public getEndExclusive-s-VKNKU()J
     .registers 7
 
-    .line 28
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
@@ -300,7 +291,6 @@
 
     if-eqz v0, :cond_20
 
-    .line 29
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
@@ -325,7 +315,6 @@
 
     return-wide v0
 
-    .line 28
     :cond_20
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -343,7 +332,6 @@
 .method public bridge synthetic getEndInclusive()Ljava/lang/Comparable;
     .registers 3
 
-    .line 17
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getEndInclusive-s-VKNKU()J
 
     move-result-wide v0
@@ -358,7 +346,6 @@
 .method public getEndInclusive-s-VKNKU()J
     .registers 3
 
-    .line 22
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getLast-s-VKNKU()J
 
     move-result-wide v0
@@ -369,7 +356,6 @@
 .method public bridge synthetic getStart()Ljava/lang/Comparable;
     .registers 3
 
-    .line 17
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getStart-s-VKNKU()J
 
     move-result-wide v0
@@ -384,7 +370,6 @@
 .method public getStart-s-VKNKU()J
     .registers 3
 
-    .line 21
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
@@ -395,7 +380,6 @@
 .method public hashCode()I
     .registers 8
 
-    .line 46
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->isEmpty()Z
 
     move-result v0
@@ -464,7 +448,6 @@
 .method public isEmpty()Z
     .registers 5
 
-    .line 39
     invoke-virtual {p0}, Lkotlin/ranges/ULongRange;->getFirst-s-VKNKU()J
 
     move-result-wide v0
@@ -493,7 +476,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 48
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

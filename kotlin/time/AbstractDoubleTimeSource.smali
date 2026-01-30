@@ -58,10 +58,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 91
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 94
     iput-object p1, p0, Lkotlin/time/AbstractDoubleTimeSource;->unit:Lkotlin/time/DurationUnit;
 
     return-void
@@ -72,7 +70,6 @@
 .method protected final getUnit()Lkotlin/time/DurationUnit;
     .registers 2
 
-    .line 94
     iget-object v0, p0, Lkotlin/time/AbstractDoubleTimeSource;->unit:Lkotlin/time/DurationUnit;
 
     return-object v0
@@ -81,7 +78,6 @@
 .method public markNow()Lkotlin/time/ComparableTimeMark;
     .registers 9
 
-    .line 127
     new-instance v7, Lkotlin/time/AbstractDoubleTimeSource$DoubleTimeMark;
 
     invoke-virtual {p0}, Lkotlin/time/AbstractDoubleTimeSource;->read()D
@@ -110,7 +106,6 @@
 .method public bridge synthetic markNow()Lkotlin/time/TimeMark;
     .registers 2
 
-    .line 91
     invoke-virtual {p0}, Lkotlin/time/AbstractDoubleTimeSource;->markNow()Lkotlin/time/ComparableTimeMark;
 
     move-result-object v0

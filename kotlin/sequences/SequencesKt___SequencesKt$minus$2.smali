@@ -79,7 +79,6 @@
 
     iput-object p2, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2;->$elements:[Ljava/lang/Object;
 
-    .line 2622
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -97,7 +96,6 @@
         }
     .end annotation
 
-    .line 2624
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2;->$this_minus:Lkotlin/sequences/Sequence;
 
     new-instance v1, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2$iterator$1;

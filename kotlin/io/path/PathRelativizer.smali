@@ -51,7 +51,6 @@
 
     const/4 v0, 0x0
 
-    .line 160
     new-array v1, v0, [Ljava/lang/String;
 
     const-string v2, ""
@@ -62,7 +61,6 @@
 
     sput-object v1, Lkotlin/io/path/PathRelativizer;->emptyPath:Ljava/nio/file/Path;
 
-    .line 161
     const/4 v1, 0x0
 
     sget-object v1, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->GjhfhhAiZXttT:Ljava/lang/String;
@@ -81,7 +79,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 159
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -100,22 +97,18 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 165
     invoke-interface {p2}, Ljava/nio/file/Path;->normalize()Ljava/nio/file/Path;
 
     move-result-object p2
 
-    .line 166
     invoke-interface {p1}, Ljava/nio/file/Path;->normalize()Ljava/nio/file/Path;
 
     move-result-object p1
 
-    .line 167
     invoke-interface {p2, p1}, Ljava/nio/file/Path;->relativize(Ljava/nio/file/Path;)Ljava/nio/file/Path;
 
     move-result-object v0
 
-    .line 169
     invoke-interface {p2}, Ljava/nio/file/Path;->getNameCount()I
 
     move-result v1
@@ -135,7 +128,6 @@
     :goto_24
     if-ge v3, v1, :cond_47
 
-    .line 170
     invoke-interface {p2, v3}, Ljava/nio/file/Path;->getName(I)Ljava/nio/file/Path;
 
     move-result-object v4
@@ -148,7 +140,6 @@
 
     if-eqz v4, :cond_47
 
-    .line 171
     invoke-interface {p1, v3}, Ljava/nio/file/Path;->getName(I)Ljava/nio/file/Path;
 
     move-result-object v4
@@ -172,7 +163,6 @@
 
     throw p1
 
-    .line 174
     :cond_47
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -190,13 +180,11 @@
 
     goto :goto_8b
 
-    .line 177
     :cond_56
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 179
     invoke-interface {v0}, Ljava/nio/file/Path;->getFileSystem()Ljava/nio/file/FileSystem;
 
     move-result-object p2
@@ -219,7 +207,6 @@
 
     if-eqz p2, :cond_8a
 
-    .line 180
     invoke-interface {v0}, Ljava/nio/file/Path;->getFileSystem()Ljava/nio/file/FileSystem;
 
     move-result-object p2
@@ -251,7 +238,6 @@
     :cond_8a
     move-object p1, v0
 
-    .line 184
     :goto_8b
     const/4 p2, 0x0
 

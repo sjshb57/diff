@@ -76,17 +76,14 @@
 
     iput-object p1, p0, Lkotlin/collections/RingBuffer$iterator$1;->this$0:Lkotlin/collections/RingBuffer;
 
-    .line 111
     invoke-direct {p0}, Lkotlin/collections/AbstractIterator;-><init>()V
 
-    .line 112
     invoke-virtual {p1}, Lkotlin/collections/RingBuffer;->size()I
 
     move-result v0
 
     iput v0, p0, Lkotlin/collections/RingBuffer$iterator$1;->count:I
 
-    .line 113
     invoke-static {p1}, Lkotlin/collections/RingBuffer;->access$getStartIndex$p(Lkotlin/collections/RingBuffer;)I
 
     move-result p1
@@ -101,17 +98,14 @@
 .method protected computeNext()V
     .registers 3
 
-    .line 116
     iget v0, p0, Lkotlin/collections/RingBuffer$iterator$1;->count:I
 
     if-nez v0, :cond_8
 
-    .line 117
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer$iterator$1;->done()V
 
     goto :goto_28
 
-    .line 120
     :cond_8
     iget-object v0, p0, Lkotlin/collections/RingBuffer$iterator$1;->this$0:Lkotlin/collections/RingBuffer;
 
@@ -125,24 +119,20 @@
 
     invoke-virtual {p0, v0}, Lkotlin/collections/RingBuffer$iterator$1;->setNext(Ljava/lang/Object;)V
 
-    .line 121
     iget-object v0, p0, Lkotlin/collections/RingBuffer$iterator$1;->this$0:Lkotlin/collections/RingBuffer;
 
     iget v1, p0, Lkotlin/collections/RingBuffer$iterator$1;->index:I
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 208
     invoke-static {v0}, Lkotlin/collections/RingBuffer;->access$getCapacity$p(Lkotlin/collections/RingBuffer;)I
 
     move-result v0
 
     rem-int/2addr v1, v0
 
-    .line 121
     iput v1, p0, Lkotlin/collections/RingBuffer$iterator$1;->index:I
 
-    .line 122
     iget v0, p0, Lkotlin/collections/RingBuffer$iterator$1;->count:I
 
     add-int/lit8 v0, v0, -0x1

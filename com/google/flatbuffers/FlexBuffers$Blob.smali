@@ -24,10 +24,8 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 673
     const-class v0, Lcom/google/flatbuffers/FlexBuffers;
 
-    .line 674
     new-instance v0, Lcom/google/flatbuffers/FlexBuffers$Blob;
 
     invoke-static {}, Lcom/google/flatbuffers/FlexBuffers;->access$000()Lcom/google/flatbuffers/ReadBuf;
@@ -46,7 +44,6 @@
 .method constructor <init>(Lcom/google/flatbuffers/ReadBuf;II)V
     .registers 4
 
-    .line 677
     invoke-direct {p0, p1, p2, p3}, Lcom/google/flatbuffers/FlexBuffers$Sized;-><init>(Lcom/google/flatbuffers/ReadBuf;II)V
 
     return-void
@@ -55,7 +52,6 @@
 .method public static empty()Lcom/google/flatbuffers/FlexBuffers$Blob;
     .registers 1
 
-    .line 682
     sget-object v0, Lcom/google/flatbuffers/FlexBuffers$Blob;->EMPTY:Lcom/google/flatbuffers/FlexBuffers$Blob;
 
     return-object v0
@@ -66,7 +62,6 @@
 .method public data()Ljava/nio/ByteBuffer;
     .registers 4
 
-    .line 690
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     invoke-interface {v0}, Lcom/google/flatbuffers/ReadBuf;->data()[B
@@ -77,12 +72,10 @@
 
     move-result-object v0
 
-    .line 691
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 692
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
 
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$Blob;->size()I
@@ -93,7 +86,6 @@
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 693
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->asReadOnlyBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -108,7 +100,6 @@
 .method public get(I)B
     .registers 4
 
-    .line 715
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
@@ -125,12 +116,10 @@
 .method public getBytes()[B
     .registers 6
 
-    .line 701
     invoke-virtual {p0}, Lcom/google/flatbuffers/FlexBuffers$Blob;->size()I
 
     move-result v0
 
-    .line 702
     new-array v1, v0, [B
 
     const/4 v2, 0x0
@@ -138,7 +127,6 @@
     :goto_7
     if-ge v2, v0, :cond_17
 
-    .line 704
     iget-object v3, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     iget v4, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
@@ -162,7 +150,6 @@
 .method public bridge synthetic size()I
     .registers 2
 
-    .line 673
     invoke-super {p0}, Lcom/google/flatbuffers/FlexBuffers$Sized;->size()I
 
     move-result v0
@@ -173,7 +160,6 @@
 .method public toString()Ljava/lang/String;
     .registers 4
 
-    .line 723
     iget-object v0, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     iget v1, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
@@ -194,10 +180,8 @@
 
     const/16 v0, 0x22
 
-    .line 731
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 732
     iget-object v1, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->bb:Lcom/google/flatbuffers/ReadBuf;
 
     iget v2, p0, Lcom/google/flatbuffers/FlexBuffers$Blob;->end:I
@@ -212,7 +196,6 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 733
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return-object p1

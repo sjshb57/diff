@@ -25,7 +25,6 @@
 .method constructor <init>(Lcom/google/games/bridge/SelectSnapshotUiRequest;)V
     .registers 2
 
-    .line 73
     iput-object p1, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$1;->this$0:Lcom/google/games/bridge/SelectSnapshotUiRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onFailure(Ljava/lang/Exception;)V
     .registers 3
 
-    .line 76
     iget-object v0, p0, Lcom/google/games/bridge/SelectSnapshotUiRequest$1;->this$0:Lcom/google/games/bridge/SelectSnapshotUiRequest;
 
     invoke-virtual {v0, p1}, Lcom/google/games/bridge/SelectSnapshotUiRequest;->setFailure(Ljava/lang/Exception;)V

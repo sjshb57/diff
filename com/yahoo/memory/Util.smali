@@ -29,7 +29,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    .line 27
     const-string v0, "line.separator"
 
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -44,7 +43,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -101,7 +99,6 @@
 
     return-void
 
-    .line 54
     :cond_e
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -149,12 +146,10 @@
         }
     .end annotation
 
-    .line 68
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v0
 
-    .line 69
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide p0
@@ -191,7 +186,6 @@
 
     return-void
 
-    .line 76
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

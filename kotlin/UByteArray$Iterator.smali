@@ -71,7 +71,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/UByteArray$Iterator;->array:[B
@@ -84,7 +83,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 48
     iget v0, p0, Lkotlin/UByteArray$Iterator;->index:I
 
     iget-object v1, p0, Lkotlin/UByteArray$Iterator;->array:[B
@@ -107,7 +105,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 46
     invoke-virtual {p0}, Lkotlin/UByteArray$Iterator;->next-w2LRezQ()B
 
     move-result v0
@@ -122,7 +119,6 @@
 .method public next-w2LRezQ()B
     .registers 4
 
-    .line 49
     iget v0, p0, Lkotlin/UByteArray$Iterator;->index:I
 
     iget-object v1, p0, Lkotlin/UByteArray$Iterator;->array:[B

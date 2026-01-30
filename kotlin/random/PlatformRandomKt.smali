@@ -39,7 +39,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 16
     instance-of v0, p0, Lkotlin/random/AbstractPlatformRandom;
 
     if-eqz v0, :cond_d
@@ -80,7 +79,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 23
     instance-of v0, p0, Lkotlin/random/KotlinRandom;
 
     if-eqz v0, :cond_d
@@ -117,7 +115,6 @@
 .method private static final defaultPlatformRandom()Lkotlin/random/Random;
     .registers 1
 
-    .line 29
     sget-object v0, Lkotlin/internal/PlatformImplementationsKt;->IMPLEMENTATIONS:Lkotlin/internal/PlatformImplementations;
 
     invoke-virtual {v0}, Lkotlin/internal/PlatformImplementations;->defaultPlatformRandom()Lkotlin/random/Random;

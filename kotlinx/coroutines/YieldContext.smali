@@ -59,7 +59,6 @@
 .method public constructor <init>()V
     .registers 2
 
-    .line 42
     sget-object v0, Lkotlinx/coroutines/YieldContext;->Key:Lkotlinx/coroutines/YieldContext$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;

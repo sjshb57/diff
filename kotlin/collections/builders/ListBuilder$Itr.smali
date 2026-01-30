@@ -103,18 +103,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 289
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 290
     iput-object p1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
-    .line 291
     iput p2, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     const/4 p1, -0x1
 
-    .line 292
     iput p1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     return-void
@@ -130,7 +126,6 @@
         }
     .end annotation
 
-    .line 319
     iget-object v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
     iget v1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
@@ -143,7 +138,6 @@
 
     const/4 p1, -0x1
 
-    .line 320
     iput p1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     return-void
@@ -152,7 +146,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 296
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     iget-object v1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
@@ -177,7 +170,6 @@
 .method public hasPrevious()Z
     .registers 2
 
-    .line 295
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     if-lez v0, :cond_6
@@ -201,7 +193,6 @@
         }
     .end annotation
 
-    .line 308
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     iget-object v1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
@@ -212,7 +203,6 @@
 
     if-ge v0, v1, :cond_24
 
-    .line 309
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     add-int/lit8 v1, v0, 0x1
@@ -221,7 +211,6 @@
 
     iput v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
-    .line 310
     iget-object v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
     invoke-static {v0}, Lkotlin/collections/builders/ListBuilder;->access$getArray$p(Lkotlin/collections/builders/ListBuilder;)[Ljava/lang/Object;
@@ -242,7 +231,6 @@
 
     return-object v0
 
-    .line 308
     :cond_24
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -254,7 +242,6 @@
 .method public nextIndex()I
     .registers 2
 
-    .line 299
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     return v0
@@ -268,19 +255,16 @@
         }
     .end annotation
 
-    .line 302
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     if-lez v0, :cond_1c
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 303
     iput v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     iput v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
-    .line 304
     iget-object v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
     invoke-static {v0}, Lkotlin/collections/builders/ListBuilder;->access$getArray$p(Lkotlin/collections/builders/ListBuilder;)[Ljava/lang/Object;
@@ -301,7 +285,6 @@
 
     return-object v0
 
-    .line 302
     :cond_1c
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -313,7 +296,6 @@
 .method public previousIndex()I
     .registers 2
 
-    .line 298
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
     add-int/lit8 v0, v0, -0x1
@@ -324,29 +306,24 @@
 .method public remove()V
     .registers 4
 
-    .line 324
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_11
 
-    .line 325
     iget-object v2, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
     invoke-virtual {v2, v0}, Lkotlin/collections/builders/ListBuilder;->remove(I)Ljava/lang/Object;
 
-    .line 326
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     iput v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->index:I
 
-    .line 327
     iput v1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     return-void
 
-    .line 324
     :cond_11
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -369,21 +346,18 @@
         }
     .end annotation
 
-    .line 314
     iget v0, p0, Lkotlin/collections/builders/ListBuilder$Itr;->lastIndex:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_b
 
-    .line 315
     iget-object v1, p0, Lkotlin/collections/builders/ListBuilder$Itr;->list:Lkotlin/collections/builders/ListBuilder;
 
     invoke-virtual {v1, v0, p1}, Lkotlin/collections/builders/ListBuilder;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
-    .line 314
     :cond_b
     new-instance p1, Ljava/lang/IllegalStateException;
 

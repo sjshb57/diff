@@ -22,7 +22,6 @@
 .method public synthetic constructor <init>(Landroid/content/Context;Ljava/util/concurrent/ScheduledExecutorService;Lcom/google/firebase/messaging/FirebaseMessaging;Lcom/google/firebase/messaging/Metadata;Lcom/google/firebase/messaging/GmsRpc;)V
     .registers 6
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/firebase/messaging/TopicsSubscriber$$ExternalSyntheticLambda0;->f$0:Landroid/content/Context;
@@ -43,7 +42,6 @@
 .method public final call()Ljava/lang/Object;
     .registers 6
 
-    .line 0
     iget-object v0, p0, Lcom/google/firebase/messaging/TopicsSubscriber$$ExternalSyntheticLambda0;->f$0:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/google/firebase/messaging/TopicsSubscriber$$ExternalSyntheticLambda0;->f$1:Ljava/util/concurrent/ScheduledExecutorService;

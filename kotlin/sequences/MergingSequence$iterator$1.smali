@@ -96,10 +96,8 @@
 
     iput-object p1, p0, Lkotlin/sequences/MergingSequence$iterator$1;->this$0:Lkotlin/sequences/MergingSequence;
 
-    .line 273
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 274
     invoke-static {p1}, Lkotlin/sequences/MergingSequence;->access$getSequence1$p(Lkotlin/sequences/MergingSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
@@ -110,7 +108,6 @@
 
     iput-object v0, p0, Lkotlin/sequences/MergingSequence$iterator$1;->iterator1:Ljava/util/Iterator;
 
-    .line 275
     invoke-static {p1}, Lkotlin/sequences/MergingSequence;->access$getSequence2$p(Lkotlin/sequences/MergingSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -136,7 +133,6 @@
         }
     .end annotation
 
-    .line 274
     iget-object v0, p0, Lkotlin/sequences/MergingSequence$iterator$1;->iterator1:Ljava/util/Iterator;
 
     return-object v0
@@ -152,7 +148,6 @@
         }
     .end annotation
 
-    .line 275
     iget-object v0, p0, Lkotlin/sequences/MergingSequence$iterator$1;->iterator2:Ljava/util/Iterator;
 
     return-object v0
@@ -161,7 +156,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 281
     iget-object v0, p0, Lkotlin/sequences/MergingSequence$iterator$1;->iterator1:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -197,7 +191,6 @@
         }
     .end annotation
 
-    .line 277
     iget-object v0, p0, Lkotlin/sequences/MergingSequence$iterator$1;->this$0:Lkotlin/sequences/MergingSequence;
 
     invoke-static {v0}, Lkotlin/sequences/MergingSequence;->access$getTransform$p(Lkotlin/sequences/MergingSequence;)Lkotlin/jvm/functions/Function2;

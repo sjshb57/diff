@@ -68,7 +68,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 33
     new-instance v0, Lkotlinx/coroutines/channels/TickerMode;
 
     const/4 v1, 0x0
@@ -81,7 +80,6 @@
 
     sput-object v0, Lkotlinx/coroutines/channels/TickerMode;->FIXED_PERIOD:Lkotlinx/coroutines/channels/TickerMode;
 
-    .line 38
     new-instance v0, Lkotlinx/coroutines/channels/TickerMode;
 
     const/4 v1, 0x0
@@ -111,7 +109,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

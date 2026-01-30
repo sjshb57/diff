@@ -30,7 +30,6 @@
 .method private static final monitorEnter(Ljava/lang/Object;)V
     .registers 2
 
-    .line 9
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "This function can only be used privately"
@@ -43,7 +42,6 @@
 .method private static final monitorExit(Ljava/lang/Object;)V
     .registers 2
 
-    .line 12
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "This function can only be used privately"

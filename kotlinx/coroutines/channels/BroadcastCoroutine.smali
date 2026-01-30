@@ -122,13 +122,10 @@
 
     const/4 v0, 0x0
 
-    .line 138
     invoke-direct {p0, p1, v0, p3}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
-    .line 136
     iput-object p2, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
-    .line 142
     sget-object p2, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Key;
@@ -151,7 +148,6 @@
 
     if-nez p1, :cond_13
 
-    .line 206
     new-instance p1, Lkotlinx/coroutines/JobCancellationException;
 
     move-object v0, p0
@@ -173,7 +169,6 @@
     :cond_13
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 157
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->cancelInternal(Ljava/lang/Throwable;)V
 
     return-void
@@ -188,7 +183,6 @@
 
     if-nez p1, :cond_13
 
-    .line 204
     new-instance p1, Lkotlinx/coroutines/JobCancellationException;
 
     move-object v0, p0
@@ -207,7 +201,6 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 152
     :cond_13
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->cancelInternal(Ljava/lang/Throwable;)V
 
@@ -219,7 +212,6 @@
 .method public cancelInternal(Ljava/lang/Throwable;)V
     .registers 5
 
-    .line 161
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/JobSupport;
@@ -232,12 +224,10 @@
 
     move-result-object p1
 
-    .line 162
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/BroadcastChannel;->cancel(Ljava/util/concurrent/CancellationException;)V
 
-    .line 163
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->cancelCoroutine(Ljava/lang/Throwable;)Z
@@ -248,14 +238,12 @@
 .method public close(Ljava/lang/Throwable;)Z
     .registers 3
 
-    .line 177
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/BroadcastChannel;->close(Ljava/lang/Throwable;)Z
 
     move-result p1
 
-    .line 178
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->start()Z
 
     return p1
@@ -271,7 +259,6 @@
         }
     .end annotation
 
-    .line 148
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/channels/SendChannel;
@@ -310,7 +297,6 @@
         }
     .end annotation
 
-    .line 136
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
     return-object v0
@@ -339,7 +325,6 @@
 .method public isActive()Z
     .registers 2
 
-    .line 145
     invoke-super {p0}, Lkotlinx/coroutines/AbstractCoroutine;->isActive()Z
 
     move-result v0
@@ -388,7 +373,6 @@
 .method protected onCancelled(Ljava/lang/Throwable;Z)V
     .registers 4
 
-    .line 171
     iget-object v0, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
     invoke-interface {v0, p1}, Lkotlinx/coroutines/channels/BroadcastChannel;->close(Ljava/lang/Throwable;)Z
@@ -399,7 +383,6 @@
 
     if-nez p2, :cond_11
 
-    .line 172
     invoke-virtual {p0}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p2
@@ -413,7 +396,6 @@
 .method public bridge synthetic onCompleted(Ljava/lang/Object;)V
     .registers 2
 
-    .line 134
     check-cast p1, Lkotlin/Unit;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/channels/BroadcastCoroutine;->onCompleted(Lkotlin/Unit;)V
@@ -424,7 +406,6 @@
 .method protected onCompleted(Lkotlin/Unit;)V
     .registers 4
 
-    .line 167
     iget-object p1, p0, Lkotlinx/coroutines/channels/BroadcastCoroutine;->_channel:Lkotlinx/coroutines/channels/BroadcastChannel;
 
     check-cast p1, Lkotlinx/coroutines/channels/SendChannel;

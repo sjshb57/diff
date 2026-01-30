@@ -28,10 +28,8 @@
 .method constructor <init>(Lcom/google/firebase/remoteconfig/CustomSignals$Builder;)V
     .registers 2
 
-    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 84
     invoke-static {p1}, Lcom/google/firebase/remoteconfig/CustomSignals$Builder;->access$000(Lcom/google/firebase/remoteconfig/CustomSignals$Builder;)Ljava/util/Map;
 
     move-result-object p1

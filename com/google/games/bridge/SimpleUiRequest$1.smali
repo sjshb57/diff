@@ -25,7 +25,6 @@
 .method constructor <init>(Lcom/google/games/bridge/SimpleUiRequest;)V
     .registers 2
 
-    .line 40
     iput-object p1, p0, Lcom/google/games/bridge/SimpleUiRequest$1;->this$0:Lcom/google/games/bridge/SimpleUiRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onFailure(Ljava/lang/Exception;)V
     .registers 3
 
-    .line 43
     iget-object v0, p0, Lcom/google/games/bridge/SimpleUiRequest$1;->this$0:Lcom/google/games/bridge/SimpleUiRequest;
 
     invoke-virtual {v0, p1}, Lcom/google/games/bridge/SimpleUiRequest;->setFailure(Ljava/lang/Exception;)V

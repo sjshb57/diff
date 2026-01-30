@@ -99,18 +99,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 473
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 474
     iput-object p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     const/4 p1, -0x1
 
-    .line 477
     iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
-    .line 480
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$Itr;->initNext$kotlin_stdlib()V
 
     return-void
@@ -121,7 +117,6 @@
 .method public final getIndex$kotlin_stdlib()I
     .registers 2
 
-    .line 476
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     return v0
@@ -130,7 +125,6 @@
 .method public final getLastIndex$kotlin_stdlib()I
     .registers 2
 
-    .line 477
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     return v0
@@ -146,7 +140,6 @@
         }
     .end annotation
 
-    .line 474
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     return-object v0
@@ -155,7 +148,6 @@
 .method public final hasNext()Z
     .registers 3
 
-    .line 488
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     iget-object v1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
@@ -180,7 +172,6 @@
 .method public final initNext$kotlin_stdlib()V
     .registers 3
 
-    .line 484
     :goto_0
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
@@ -206,7 +197,6 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 485
     iput v1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     goto :goto_0
@@ -218,31 +208,26 @@
 .method public final remove()V
     .registers 4
 
-    .line 491
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_14
 
-    .line 492
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 493
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     iget v2, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     invoke-static {v0, v2}, Lkotlin/collections/builders/MapBuilder;->access$removeKeyAt(Lkotlin/collections/builders/MapBuilder;I)V
 
-    .line 494
     iput v1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     return-void
 
-    .line 491
     :cond_14
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -260,7 +245,6 @@
 .method public final setIndex$kotlin_stdlib(I)V
     .registers 2
 
-    .line 476
     iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     return-void
@@ -269,7 +253,6 @@
 .method public final setLastIndex$kotlin_stdlib(I)V
     .registers 2
 
-    .line 477
     iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     return-void

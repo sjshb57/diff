@@ -64,10 +64,8 @@
 .method private constructor <init>(III)V
     .registers 7
 
-    .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 126
     iput p2, p0, Lkotlin/ranges/UIntProgressionIterator;->finalElement:I
 
     const/4 v0, 0x1
@@ -76,7 +74,6 @@
 
     if-lez p3, :cond_10
 
-    .line 127
     invoke-static {p1, p2}, Lkotlin/UByte$$ExternalSyntheticBackport0;->m$2(II)I
 
     move-result v2
@@ -100,14 +97,12 @@
     :goto_18
     iput-boolean v0, p0, Lkotlin/ranges/UIntProgressionIterator;->hasNext:Z
 
-    .line 128
     invoke-static {p3}, Lkotlin/UInt;->constructor-impl(I)I
 
     move-result p3
 
     iput p3, p0, Lkotlin/ranges/UIntProgressionIterator;->step:I
 
-    .line 129
     iget-boolean p3, p0, Lkotlin/ranges/UIntProgressionIterator;->hasNext:Z
 
     if-eqz p3, :cond_25
@@ -136,7 +131,6 @@
 .method public hasNext()Z
     .registers 2
 
-    .line 131
     iget-boolean v0, p0, Lkotlin/ranges/UIntProgressionIterator;->hasNext:Z
 
     return v0
@@ -145,7 +139,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 124
     invoke-virtual {p0}, Lkotlin/ranges/UIntProgressionIterator;->next-pVg5ArA()I
 
     move-result v0
@@ -160,27 +153,22 @@
 .method public next-pVg5ArA()I
     .registers 3
 
-    .line 134
     iget v0, p0, Lkotlin/ranges/UIntProgressionIterator;->next:I
 
-    .line 135
     iget v1, p0, Lkotlin/ranges/UIntProgressionIterator;->finalElement:I
 
     if-ne v0, v1, :cond_14
 
-    .line 136
     iget-boolean v1, p0, Lkotlin/ranges/UIntProgressionIterator;->hasNext:Z
 
     if-eqz v1, :cond_e
 
     const/4 v1, 0x0
 
-    .line 137
     iput-boolean v1, p0, Lkotlin/ranges/UIntProgressionIterator;->hasNext:Z
 
     goto :goto_1d
 
-    .line 136
     :cond_e
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -188,7 +176,6 @@
 
     throw v0
 
-    .line 139
     :cond_14
     iget v1, p0, Lkotlin/ranges/UIntProgressionIterator;->step:I
 

@@ -43,7 +43,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 334
     invoke-direct {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;-><init>()V
 
     return-void
@@ -65,7 +64,6 @@
         }
     .end annotation
 
-    .line 341
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v0
@@ -76,7 +74,6 @@
 
     check-cast v0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
-    .line 342
     :goto_b
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -86,7 +83,6 @@
 
     const/4 v1, 0x3
 
-    .line 343
     const-string v2, "T"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
@@ -97,7 +93,6 @@
 
     invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 344
     :cond_1e
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
@@ -112,7 +107,6 @@
 .method public final isEmpty()Z
     .registers 2
 
-    .line 335
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v0
@@ -151,7 +145,6 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 349
     const-string v1, "head cannot be removed"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -166,7 +159,6 @@
 .method public bridge synthetic remove()Z
     .registers 2
 
-    .line 334
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->remove()Ljava/lang/Void;
 
     move-result-object v0
@@ -183,12 +175,10 @@
 .method public final validate$kotlinx_coroutines_core()V
     .registers 6
 
-    .line 356
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
-    .line 357
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v1
@@ -205,7 +195,6 @@
 
     move-object v0, v4
 
-    .line 358
     :goto_11
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -213,12 +202,10 @@
 
     if-nez v3, :cond_21
 
-    .line 359
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     move-result-object v3
 
-    .line 360
     invoke-virtual {v0, v1, v3}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->validateNode$kotlinx_coroutines_core(Lkotlinx/coroutines/internal/LockFreeLinkedListNode;Lkotlinx/coroutines/internal/LockFreeLinkedListNode;)V
 
     move-object v1, v0
@@ -227,7 +214,6 @@
 
     goto :goto_11
 
-    .line 364
     :cond_21
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 

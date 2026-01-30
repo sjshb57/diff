@@ -188,7 +188,6 @@
 
     move-result-object v0
 
-    .line 388
     iget v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->label:I
 
     const/4 v2, 0x1
@@ -233,7 +232,6 @@
 
     check-cast v1, Lkotlinx/coroutines/flow/FlowCollector;
 
-    .line 389
     iget-wide v4, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->$timeout:J
 
     sget-object v6, Lkotlin/time/Duration;->Companion:Lkotlin/time/Duration$Companion;
@@ -248,7 +246,6 @@
 
     if-lez v4, :cond_89
 
-    .line 390
     iget-object v4, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->$this_timeoutInternal:Lkotlinx/coroutines/flow/Flow;
 
     const/4 v5, 0x0
@@ -263,14 +260,12 @@
 
     move-result-object p1
 
-    .line 391
     iget-wide v4, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->$timeout:J
 
     move-object v6, v1
 
     move-object v1, p1
 
-    .line 410
     :cond_4b
     new-instance p1, Lkotlinx/coroutines/selects/SelectImplementation;
 
@@ -280,12 +275,10 @@
 
     invoke-direct {p1, v7}, Lkotlinx/coroutines/selects/SelectImplementation;-><init>(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 411
     move-object v7, p1
 
     check-cast v7, Lkotlinx/coroutines/selects/SelectBuilder;
 
-    .line 392
     invoke-interface {v1}, Lkotlinx/coroutines/channels/ReceiveChannel;->getOnReceiveCatching()Lkotlinx/coroutines/selects/SelectClause1;
 
     move-result-object v8
@@ -298,7 +291,6 @@
 
     invoke-interface {v7, v8, v9}, Lkotlinx/coroutines/selects/SelectBuilder;->invoke(Lkotlinx/coroutines/selects/SelectClause1;Lkotlin/jvm/functions/Function2;)V
 
-    .line 400
     new-instance v8, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$2;
 
     invoke-direct {v8, v4, v5, v3}, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1$1$2;-><init>(JLkotlin/coroutines/Continuation;)V
@@ -307,7 +299,6 @@
 
     invoke-static {v7, v4, v5, v8}, Lkotlinx/coroutines/selects/OnTimeoutKt;->onTimeout-8Mi8wO0(Lkotlinx/coroutines/selects/SelectBuilder;JLkotlin/jvm/functions/Function1;)V
 
-    .line 414
     iput-object v6, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->L$0:Ljava/lang/Object;
 
     iput-object v1, p0, Lkotlinx/coroutines/flow/FlowKt__DelayKt$timeoutInternal$1;->L$1:Ljava/lang/Object;
@@ -324,7 +315,6 @@
 
     return-object v0
 
-    .line 410
     :cond_7e
     :goto_7e
     check-cast p1, Ljava/lang/Boolean;
@@ -335,12 +325,10 @@
 
     if-nez p1, :cond_4b
 
-    .line 404
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p1
 
-    .line 389
     :cond_89
     new-instance p1, Lkotlinx/coroutines/TimeoutCancellationException;
 

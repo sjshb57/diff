@@ -89,7 +89,6 @@
 
     iput-object p2, p0, Lkotlin/sequences/SequencesKt___SequencesKt$groupingBy$1;->$keySelector:Lkotlin/jvm/functions/Function1;
 
-    .line 1037
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -105,7 +104,6 @@
         }
     .end annotation
 
-    .line 1039
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$groupingBy$1;->$keySelector:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -125,7 +123,6 @@
         }
     .end annotation
 
-    .line 1038
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$groupingBy$1;->$this_groupingBy:Lkotlin/sequences/Sequence;
 
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;

@@ -51,7 +51,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 215
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +61,6 @@
 .method public getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
     .registers 2
 
-    .line 221
     sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext;

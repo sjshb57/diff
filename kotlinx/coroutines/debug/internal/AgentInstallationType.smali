@@ -52,7 +52,6 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +62,6 @@
 .method public final isInstalledStatically$kotlinx_coroutines_core()Z
     .registers 2
 
-    .line 15
     sget-boolean v0, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->isInstalledStatically:Z
 
     return v0
@@ -72,7 +70,6 @@
 .method public final setInstalledStatically$kotlinx_coroutines_core(Z)V
     .registers 2
 
-    .line 15
     sput-boolean p1, Lkotlinx/coroutines/debug/internal/AgentInstallationType;->isInstalledStatically:Z
 
     return-void

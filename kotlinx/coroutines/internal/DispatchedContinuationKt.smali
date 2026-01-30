@@ -62,7 +62,6 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 12
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "UNDEFINED"
@@ -71,7 +70,6 @@
 
     sput-object v0, Lkotlinx/coroutines/internal/DispatchedContinuationKt;->UNDEFINED:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 14
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "REUSABLE_CLAIMED"
@@ -86,7 +84,6 @@
 .method public static final synthetic access$getUNDEFINED$p()Lkotlinx/coroutines/internal/Symbol;
     .registers 1
 
-    .line 1
     sget-object v0, Lkotlinx/coroutines/internal/DispatchedContinuationKt;->UNDEFINED:Lkotlinx/coroutines/internal/Symbol;
 
     return-object v0
@@ -107,7 +104,6 @@
         }
     .end annotation
 
-    .line 299
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
     move-result v0
@@ -127,7 +123,6 @@
 
     throw p0
 
-    .line 300
     :cond_10
     :goto_10
     sget-object v0, Lkotlinx/coroutines/ThreadLocalEventLoop;->INSTANCE:Lkotlinx/coroutines/ThreadLocalEventLoop;
@@ -140,7 +135,6 @@
 
     if-eqz p3, :cond_20
 
-    .line 302
     invoke-virtual {v0}, Lkotlinx/coroutines/EventLoop;->isUnconfinedQueueEmpty()Z
 
     move-result p3
@@ -149,7 +143,6 @@
 
     return v1
 
-    .line 303
     :cond_20
     invoke-virtual {v0}, Lkotlinx/coroutines/EventLoop;->isUnconfinedLoopActive()Z
 
@@ -159,13 +152,10 @@
 
     if-eqz p3, :cond_32
 
-    .line 305
     iput-object p1, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->_state:Ljava/lang/Object;
 
-    .line 306
     iput p2, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->resumeMode:I
 
-    .line 307
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/EventLoop;->dispatchUnconfined(Lkotlinx/coroutines/DispatchedTask;)V
@@ -174,18 +164,14 @@
 
     goto :goto_52
 
-    .line 311
     :cond_32
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
-    .line 420
     invoke-virtual {v0, v2}, Lkotlinx/coroutines/EventLoop;->incrementUseCount(Z)V
 
-    .line 422
     :try_start_37
     invoke-interface {p4}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 425
     :cond_3a
     invoke-virtual {v0}, Lkotlinx/coroutines/EventLoop;->processUnconfinedEvent()Z
 
@@ -204,7 +190,6 @@
 
     const/4 p2, 0x0
 
-    .line 432
     :try_start_46
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/DispatchedTask;->handleFatalException(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     :try_end_49
@@ -212,7 +197,6 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 434
     :goto_4c
     invoke-virtual {v0, v2}, Lkotlinx/coroutines/EventLoop;->decrementUseCount(Z)V
 
@@ -244,7 +228,6 @@
 
     move p3, p6
 
-    .line 299
     :cond_6
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
@@ -265,7 +248,6 @@
 
     throw p0
 
-    .line 300
     :cond_16
     :goto_16
     sget-object p5, Lkotlinx/coroutines/ThreadLocalEventLoop;->INSTANCE:Lkotlinx/coroutines/ThreadLocalEventLoop;
@@ -276,7 +258,6 @@
 
     if-eqz p3, :cond_25
 
-    .line 302
     invoke-virtual {p5}, Lkotlinx/coroutines/EventLoop;->isUnconfinedQueueEmpty()Z
 
     move-result p3
@@ -285,7 +266,6 @@
 
     return p6
 
-    .line 303
     :cond_25
     invoke-virtual {p5}, Lkotlinx/coroutines/EventLoop;->isUnconfinedLoopActive()Z
 
@@ -295,13 +275,10 @@
 
     if-eqz p3, :cond_37
 
-    .line 305
     iput-object p1, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->_state:Ljava/lang/Object;
 
-    .line 306
     iput p2, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->resumeMode:I
 
-    .line 307
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
     invoke-virtual {p5, p0}, Lkotlinx/coroutines/EventLoop;->dispatchUnconfined(Lkotlinx/coroutines/DispatchedTask;)V
@@ -310,18 +287,14 @@
 
     goto :goto_57
 
-    .line 311
     :cond_37
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
-    .line 420
     invoke-virtual {p5, v0}, Lkotlinx/coroutines/EventLoop;->incrementUseCount(Z)V
 
-    .line 422
     :try_start_3c
     invoke-interface {p4}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 425
     :cond_3f
     invoke-virtual {p5}, Lkotlinx/coroutines/EventLoop;->processUnconfinedEvent()Z
 
@@ -340,7 +313,6 @@
 
     const/4 p2, 0x0
 
-    .line 432
     :try_start_4b
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/DispatchedTask;->handleFatalException(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     :try_end_4e
@@ -348,7 +320,6 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 434
     :goto_51
     invoke-virtual {p5, v0}, Lkotlinx/coroutines/EventLoop;->decrementUseCount(Z)V
 
@@ -387,19 +358,16 @@
         }
     .end annotation
 
-    .line 280
     instance-of v0, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;
 
     if-eqz v0, :cond_c4
 
     check-cast p0, Lkotlinx/coroutines/internal/DispatchedContinuation;
 
-    .line 316
     invoke-static {p1, p2}, Lkotlinx/coroutines/CompletionStateKt;->toState(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 317
     iget-object v0, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->dispatcher:Lkotlinx/coroutines/CoroutineDispatcher;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/DispatchedContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -414,13 +382,10 @@
 
     if-eqz v0, :cond_28
 
-    .line 318
     iput-object p2, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->_state:Ljava/lang/Object;
 
-    .line 319
     iput v1, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->resumeMode:I
 
-    .line 320
     iget-object p1, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->dispatcher:Lkotlinx/coroutines/CoroutineDispatcher;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/DispatchedContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
@@ -433,49 +398,40 @@
 
     goto/16 :goto_c7
 
-    .line 327
     :cond_28
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
-    .line 329
     sget-object v0, Lkotlinx/coroutines/ThreadLocalEventLoop;->INSTANCE:Lkotlinx/coroutines/ThreadLocalEventLoop;
 
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadLocalEventLoop;->getEventLoop$kotlinx_coroutines_core()Lkotlinx/coroutines/EventLoop;
 
     move-result-object v0
 
-    .line 332
     invoke-virtual {v0}, Lkotlinx/coroutines/EventLoop;->isUnconfinedLoopActive()Z
 
     move-result v2
 
     if-eqz v2, :cond_42
 
-    .line 334
     iput-object p2, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->_state:Ljava/lang/Object;
 
-    .line 335
     iput v1, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->resumeMode:I
 
-    .line 336
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
     invoke-virtual {v0, p0}, Lkotlinx/coroutines/EventLoop;->dispatchUnconfined(Lkotlinx/coroutines/DispatchedTask;)V
 
     goto/16 :goto_c7
 
-    .line 340
     :cond_42
     move-object v2, p0
 
     check-cast v2, Lkotlinx/coroutines/DispatchedTask;
 
-    .line 341
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/EventLoop;->incrementUseCount(Z)V
 
     const/4 v3, 0x0
 
-    .line 345
     :try_start_49
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/DispatchedContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -493,26 +449,22 @@
 
     if-eqz v4, :cond_7b
 
-    .line 346
     invoke-interface {v4}, Lkotlinx/coroutines/Job;->isActive()Z
 
     move-result v5
 
     if-nez v5, :cond_7b
 
-    .line 347
     invoke-interface {v4}, Lkotlinx/coroutines/Job;->getCancellationException()Ljava/util/concurrent/CancellationException;
 
     move-result-object p1
 
-    .line 348
     move-object v4, p1
 
     check-cast v4, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p2, v4}, Lkotlinx/coroutines/internal/DispatchedContinuation;->cancelCompletedResult$kotlinx_coroutines_core(Ljava/lang/Object;Ljava/lang/Throwable;)V
 
-    .line 349
     check-cast p0, Lkotlin/coroutines/Continuation;
 
     sget-object p2, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
@@ -531,28 +483,23 @@
 
     goto :goto_a3
 
-    .line 354
     :cond_7b
     iget-object p2, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->continuation:Lkotlin/coroutines/Continuation;
 
     iget-object v4, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->countOrElement:Ljava/lang/Object;
 
-    .line 355
     invoke-interface {p2}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v5
 
-    .line 356
     invoke-static {v5, v4}, Lkotlinx/coroutines/internal/ThreadContextKt;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 357
     sget-object v6, Lkotlinx/coroutines/internal/ThreadContextKt;->NO_THREAD_ELEMENTS:Lkotlinx/coroutines/internal/Symbol;
 
     if-eq v4, v6, :cond_90
 
-    .line 359
     invoke-static {p2, v5, v4}, Lkotlinx/coroutines/CoroutineContextKt;->updateUndispatchedCompletion(Lkotlin/coroutines/Continuation;Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Lkotlinx/coroutines/UndispatchedCoroutine;
 
     move-result-object p2
@@ -564,21 +511,18 @@
     :cond_90
     move-object p2, v3
 
-    .line 365
     :goto_91
     :try_start_91
     iget-object p0, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->continuation:Lkotlin/coroutines/Continuation;
 
     invoke-interface {p0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
-    .line 366
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_98
     .catchall {:try_start_91 .. :try_end_98} :catchall_aa
 
     if-eqz p2, :cond_a0
 
-    .line 367
     :try_start_9a
     invoke-virtual {p2}, Lkotlinx/coroutines/UndispatchedCoroutine;->clearThreadContext()Z
 
@@ -586,11 +530,9 @@
 
     if-eqz p0, :cond_a3
 
-    .line 368
     :cond_a0
     invoke-static {v5, v4}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
-    .line 373
     :cond_a3
     :goto_a3
     invoke-virtual {v0}, Lkotlinx/coroutines/EventLoop;->processUnconfinedEvent()Z
@@ -606,14 +548,12 @@
 
     if-eqz p2, :cond_b3
 
-    .line 367
     invoke-virtual {p2}, Lkotlinx/coroutines/UndispatchedCoroutine;->clearThreadContext()Z
 
     move-result p1
 
     if-eqz p1, :cond_b6
 
-    .line 368
     :cond_b3
     invoke-static {v5, v4}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
@@ -625,13 +565,11 @@
     :catchall_b7
     move-exception p0
 
-    .line 380
     :try_start_b8
     invoke-virtual {v2, p0, v3}, Lkotlinx/coroutines/DispatchedTask;->handleFatalException(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     :try_end_bb
     .catchall {:try_start_b8 .. :try_end_bb} :catchall_bf
 
-    .line 382
     :goto_bb
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/EventLoop;->decrementUseCount(Z)V
 
@@ -644,7 +582,6 @@
 
     throw p0
 
-    .line 281
     :cond_c4
     invoke-interface {p0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
@@ -661,7 +598,6 @@
 
     const/4 p2, 0x0
 
-    .line 276
     :cond_5
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/internal/DispatchedContinuationKt;->resumeCancellableWith(Lkotlin/coroutines/Continuation;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
 
@@ -680,20 +616,16 @@
         }
     .end annotation
 
-    .line 285
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    .line 387
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getASSERTIONS_ENABLED()Z
 
-    .line 389
     sget-object v1, Lkotlinx/coroutines/ThreadLocalEventLoop;->INSTANCE:Lkotlinx/coroutines/ThreadLocalEventLoop;
 
     invoke-virtual {v1}, Lkotlinx/coroutines/ThreadLocalEventLoop;->getEventLoop$kotlinx_coroutines_core()Lkotlinx/coroutines/EventLoop;
 
     move-result-object v1
 
-    .line 391
     invoke-virtual {v1}, Lkotlinx/coroutines/EventLoop;->isUnconfinedQueueEmpty()Z
 
     move-result v2
@@ -704,7 +636,6 @@
 
     goto :goto_3d
 
-    .line 392
     :cond_13
     invoke-virtual {v1}, Lkotlinx/coroutines/EventLoop;->isUnconfinedLoopActive()Z
 
@@ -714,13 +645,10 @@
 
     if-eqz v2, :cond_25
 
-    .line 394
     iput-object v0, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->_state:Ljava/lang/Object;
 
-    .line 395
     iput v4, p0, Lkotlinx/coroutines/internal/DispatchedContinuation;->resumeMode:I
 
-    .line 396
     check-cast p0, Lkotlinx/coroutines/DispatchedTask;
 
     invoke-virtual {v1, p0}, Lkotlinx/coroutines/EventLoop;->dispatchUnconfined(Lkotlinx/coroutines/DispatchedTask;)V
@@ -729,20 +657,16 @@
 
     goto :goto_3d
 
-    .line 400
     :cond_25
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/DispatchedTask;
 
-    .line 401
     invoke-virtual {v1, v4}, Lkotlinx/coroutines/EventLoop;->incrementUseCount(Z)V
 
-    .line 286
     :try_start_2b
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/DispatchedContinuation;->run()V
 
-    .line 406
     :cond_2e
     invoke-virtual {v1}, Lkotlinx/coroutines/EventLoop;->processUnconfinedEvent()Z
 
@@ -759,13 +683,11 @@
 
     const/4 v2, 0x0
 
-    .line 413
     :try_start_37
     invoke-virtual {v0, p0, v2}, Lkotlinx/coroutines/DispatchedTask;->handleFatalException(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     :try_end_3a
     .catchall {:try_start_37 .. :try_end_3a} :catchall_3e
 
-    .line 415
     :goto_3a
     invoke-virtual {v1, v4}, Lkotlinx/coroutines/EventLoop;->decrementUseCount(Z)V
 

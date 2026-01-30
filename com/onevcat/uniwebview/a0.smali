@@ -42,7 +42,6 @@
 
     check-cast p1, La/v;
 
-    .line 1
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
@@ -51,24 +50,19 @@
 
     if-nez v0, :cond_13
 
-    .line 2
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 3
     const-string v0, ""
 
     invoke-virtual {p1, v0}, La/o;->loadUrl(Ljava/lang/String;)V
 
     goto :goto_18
 
-    .line 4
     :cond_13
     iget-object p1, p1, La/v;->m:La/o;
 
-    .line 5
     invoke-virtual {p1, v0}, La/o;->loadUrl(Ljava/lang/String;)V
 
-    .line 6
     :goto_18
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

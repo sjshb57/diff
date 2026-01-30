@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .registers 1
 
-    .line 12
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     return-void
@@ -22,10 +21,8 @@
 .method private finishWithResult(I)V
     .registers 2
 
-    .line 49
     invoke-virtual {p0, p1}, Lcom/google/games/bridge/GenericResolutionActivity;->setResult(I)V
 
-    .line 50
     invoke-virtual {p0}, Lcom/google/games/bridge/GenericResolutionActivity;->finish()V
 
     return-void
@@ -44,7 +41,6 @@
 
     if-ne p2, p1, :cond_b
 
-    .line 39
     invoke-direct {p0, p1}, Lcom/google/games/bridge/GenericResolutionActivity;->finishWithResult(I)V
 
     goto :goto_13
@@ -52,12 +48,10 @@
     :cond_b
     const/4 p1, 0x0
 
-    .line 41
     invoke-direct {p0, p1}, Lcom/google/games/bridge/GenericResolutionActivity;->finishWithResult(I)V
 
     goto :goto_13
 
-    .line 44
     :cond_10
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -68,10 +62,8 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .registers 10
 
-    .line 18
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 20
     invoke-virtual {p0}, Lcom/google/games/bridge/GenericResolutionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -84,7 +76,6 @@
 
     check-cast p1, Landroid/app/PendingIntent;
 
-    .line 23
     :try_start_f
     invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
 
@@ -104,7 +95,6 @@
 
     move-object v0, p0
 
-    .line 22
     invoke-virtual/range {v0 .. v7}, Lcom/google/games/bridge/GenericResolutionActivity;->startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V
     :try_end_1e
     .catch Landroid/content/IntentSender$SendIntentException; {:try_start_f .. :try_end_1e} :catch_1f
@@ -114,7 +104,6 @@
     :catch_1f
     const/4 p1, 0x0
 
-    .line 31
     invoke-direct {p0, p1}, Lcom/google/games/bridge/GenericResolutionActivity;->finishWithResult(I)V
 
     :goto_23

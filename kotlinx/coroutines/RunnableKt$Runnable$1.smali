@@ -75,7 +75,6 @@
 .method public final run()V
     .registers 2
 
-    .line 17
     iget-object v0, p0, Lkotlinx/coroutines/RunnableKt$Runnable$1;->$block:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;

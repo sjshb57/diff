@@ -77,7 +77,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/IndexingIterator;->iterator:Ljava/util/Iterator;
@@ -90,7 +89,6 @@
 .method public final hasNext()Z
     .registers 2
 
-    .line 40
     iget-object v0, p0, Lkotlin/collections/IndexingIterator;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -103,7 +101,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .registers 2
 
-    .line 38
     invoke-virtual {p0}, Lkotlin/collections/IndexingIterator;->next()Lkotlin/collections/IndexedValue;
 
     move-result-object v0
@@ -121,7 +118,6 @@
         }
     .end annotation
 
-    .line 41
     new-instance v0, Lkotlin/collections/IndexedValue;
 
     iget v1, p0, Lkotlin/collections/IndexingIterator;->index:I

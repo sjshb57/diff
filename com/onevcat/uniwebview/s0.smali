@@ -39,13 +39,10 @@
 .method public final invoke()Ljava/lang/Object;
     .registers 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/onevcat/uniwebview/s0;->a:Z
 
-    .line 2
     sput-boolean v0, La/o$b;->d:Z
 
-    .line 3
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

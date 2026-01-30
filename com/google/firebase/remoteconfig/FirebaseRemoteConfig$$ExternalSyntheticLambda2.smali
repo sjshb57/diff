@@ -10,7 +10,6 @@
 .method public synthetic constructor <init>()V
     .registers 1
 
-    .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public final then(Ljava/lang/Object;)Lcom/google/android/gms/tasks/Task;
     .registers 2
 
-    .line 0
     check-cast p1, Lcom/google/firebase/remoteconfig/internal/ConfigContainer;
 
     invoke-static {p1}, Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;->lambda$setDefaultsWithStringsMapAsync$7(Lcom/google/firebase/remoteconfig/internal/ConfigContainer;)Lcom/google/android/gms/tasks/Task;

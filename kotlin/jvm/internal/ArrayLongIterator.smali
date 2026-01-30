@@ -46,7 +46,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 34
     invoke-direct {p0}, Lkotlin/collections/LongIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayLongIterator;->array:[J
@@ -59,7 +58,6 @@
 .method public hasNext()Z
     .registers 3
 
-    .line 36
     iget v0, p0, Lkotlin/jvm/internal/ArrayLongIterator;->index:I
 
     iget-object v1, p0, Lkotlin/jvm/internal/ArrayLongIterator;->array:[J
@@ -82,7 +80,6 @@
 .method public nextLong()J
     .registers 4
 
-    .line 37
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayLongIterator;->array:[J
 

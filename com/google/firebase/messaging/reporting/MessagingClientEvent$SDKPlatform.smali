@@ -48,7 +48,6 @@
 
     const/4 v0, 0x4
 
-    .line 325
     new-array v0, v0, [Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     sget-object v1, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->UNKNOWN_OS:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
@@ -81,7 +80,6 @@
 .method static constructor <clinit>()V
     .registers 3
 
-    .line 326
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     const/4 v1, 0x0
@@ -94,7 +92,6 @@
 
     sput-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->UNKNOWN_OS:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
-    .line 328
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     const-string v1, "ANDROID"
@@ -105,7 +102,6 @@
 
     sput-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->ANDROID:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
-    .line 330
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     const-string v1, "IOS"
@@ -116,7 +112,6 @@
 
     sput-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->IOS:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
-    .line 332
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     const-string v1, "WEB"
@@ -127,7 +122,6 @@
 
     sput-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->WEB:Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
-    .line 325
     invoke-static {}, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->$values()[Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     move-result-object v0
@@ -145,10 +139,8 @@
         }
     .end annotation
 
-    .line 336
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 337
     iput p3, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->number_:I
 
     return-void
@@ -157,7 +149,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
     .registers 2
 
-    .line 325
     const-class v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -172,7 +163,6 @@
 .method public static values()[Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
     .registers 1
 
-    .line 325
     sget-object v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->$VALUES:[Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
     invoke-virtual {v0}, [Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->clone()Ljava/lang/Object;
@@ -189,7 +179,6 @@
 .method public getNumber()I
     .registers 2
 
-    .line 342
     iget v0, p0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;->number_:I
 
     return v0
