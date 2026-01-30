@@ -60,9 +60,7 @@
 
     const-class v2, Ljava/lang/Class;
 
-    const/4 v4, 0x0
-
-    sget-object v4, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->EWQSawIT:Ljava/lang/String;
+    const-string v4, "getComponentType()Ljava/lang/Class;"
 
     const/4 v5, 0x0
 

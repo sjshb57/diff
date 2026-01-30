@@ -70,9 +70,7 @@
 
     new-instance v0, Lkotlinx/coroutines/channels/TickerMode;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/internal/stats/VUpu/YEFIqUAF;->KoNzHjCBVXKTCPo:Ljava/lang/String;
+    const-string v1, "FIXED_PERIOD"
 
     const/4 v2, 0x0
 
@@ -82,9 +80,7 @@
 
     new-instance v0, Lkotlinx/coroutines/channels/TickerMode;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->jyHCrQaUt:Ljava/lang/String;
+    const-string v1, "FIXED_DELAY"
 
     const/4 v2, 0x1
 

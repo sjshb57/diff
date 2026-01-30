@@ -591,9 +591,7 @@
     :cond_10
     move-wide v2, p2
 
-    const/4 p2, 0x0
-
-    sget-object p2, Landroidx/activity/result/contract/Kr/Zeqt;->uZIE:Ljava/lang/String;
+    const-string p2, "action"
 
     invoke-static {p6, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

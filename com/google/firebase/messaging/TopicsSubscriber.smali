@@ -717,9 +717,7 @@
     :catch_99
     move-exception p1
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/browser/customtabs/NP/AfoCF;->QePdnkmaJxZ:Ljava/lang/String;
+    const-string v1, "SERVICE_NOT_AVAILABLE"
 
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 

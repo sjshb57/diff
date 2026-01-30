@@ -390,9 +390,7 @@
 .method public run()V
     .registers 8
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/arch/core/internal/nl/WfPiHVumXD;->sLOTbpUVQfIISCU:Ljava/lang/String;
+    const-string v0, "TopicsSyncTask\'s wakelock was already released due to timeout."
 
     const-string v1, "FirebaseMessaging"
 

@@ -377,9 +377,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->Hncx:Ljava/lang/String;
+    const-string v1, "kotlin.jvm.functions.Function"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

@@ -152,9 +152,7 @@
     const/16 p1, 0x2000
 
     :cond_6
-    const/4 p2, 0x0
-
-    sget-object p2, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->ZHgxM:Ljava/lang/String;
+    const-string p2, "<this>"
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
