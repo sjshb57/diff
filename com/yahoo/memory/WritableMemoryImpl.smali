@@ -327,9 +327,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->HheYBtYtxAshMH:Ljava/lang/String;
+    const-string v0, "Data, littleEndian  :  0  1  2  3  4  5  6  7"
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3091,9 +3089,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->LNmM:Ljava/lang/String;
+    const-string v3, "### "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

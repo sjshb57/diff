@@ -55,9 +55,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->pAiy:Ljava/lang/String;
+    const-string v0, "Flow was aborted, no more elements needed"
 
     invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 

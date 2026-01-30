@@ -67,9 +67,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/api/client/util/escape/TGjE/orViZ;->gGaOOVUhsR:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -175,9 +173,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/fasterxml/jackson/core/base/zv/knDAArvm;->QFHNYcC:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

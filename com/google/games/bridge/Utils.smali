@@ -29,9 +29,7 @@
     :catch_4
     const-string p0, "Utils"
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->etVNxezMauu:Ljava/lang/String;
+    const-string p1, "Activity not found. Please install Play Games App."
 
     invoke-static {p0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

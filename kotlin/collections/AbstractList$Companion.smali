@@ -263,9 +263,7 @@
 
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->chaA:Ljava/lang/String;
+    const-string p1, ", size: "
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -237,9 +237,7 @@
     :cond_1f
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->bfIGcAO:Ljava/lang/String;
+    const-string p1, "Invalid UTF-8: Illegal leading byte in 2 bytes utf"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

@@ -50,9 +50,7 @@
 .method public constructor <init>(Lkotlin/time/DurationUnit;)V
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/arch/core/internal/nl/WfPiHVumXD;->IbZcZaSSjpBrM:Ljava/lang/String;
+    const-string v0, "unit"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -224,17 +224,13 @@
     :cond_d
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/common/reflect/FGG/KrvIJwjgtvwpVx;->AzD:Ljava/lang/String;
+    const-string v2, "\""
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->drSk:Ljava/lang/String;
+    const-string v0, "\":"
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

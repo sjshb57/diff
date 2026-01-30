@@ -299,9 +299,7 @@
 
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->pgwpB:Ljava/lang/String;
+    const-string v0, "Operation is not supported for read-only collection"
 
     invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

@@ -319,9 +319,7 @@
     :catch_3c
     move-exception v0
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->IMmx:Ljava/lang/String;
+    const-string v2, "Exception while binding the service"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 

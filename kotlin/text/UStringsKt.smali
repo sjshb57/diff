@@ -81,9 +81,7 @@
 
     move-result-object p0
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/activity/result/contract/Kr/Zeqt;->LQG:Ljava/lang/String;
+    const-string p1, "toString(this, checkRadix(radix))"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -321,9 +319,7 @@
 .method public static final toUIntOrNull(Ljava/lang/String;)Lkotlin/UInt;
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/fasterxml/jackson/core/base/zv/knDAArvm;->nJmDCTlzVT:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -504,9 +500,7 @@
 .method public static final toULong(Ljava/lang/String;I)J
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/api/client/util/escape/TGjE/orViZ;->HhtPBfWZyUYV:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

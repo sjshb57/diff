@@ -534,9 +534,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->CZtJU:Ljava/lang/String;
+    const-string v1, "Cannot get random in empty range: "
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

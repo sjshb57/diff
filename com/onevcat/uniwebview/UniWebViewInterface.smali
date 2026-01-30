@@ -161,9 +161,7 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->UUWhcSv:Ljava/lang/String;
+    const-string v1, "name"
 
     const-string v2, "domain"
 
@@ -257,9 +255,7 @@
 
     sget-object v1, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/saucesdk/android/HGf/BqwBVtsr;->swJKlUrFd:Ljava/lang/String;
+    const-string v2, "name"
 
     const-string v3, "identifier"
 
@@ -813,9 +809,7 @@
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/nano/privacy/kry/CWPSZeXinZQPM;->xHoHFJzwWEfYRWm:Ljava/lang/String;
+    const-string v1, "identifier"
 
     invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -997,9 +991,7 @@
 
     new-instance v3, Lkotlin/text/Regex;
 
-    const/4 v4, 0x0
-
-    sget-object v4, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->fCwuUfCPn:Ljava/lang/String;
+    const-string v4, "="
 
     invoke-direct {v3, v4}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;)V
 
@@ -1097,9 +1089,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->tZdmfWYMdVZ:Ljava/lang/String;
+    const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1247,9 +1237,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->pXqCTOGROkZ:Ljava/lang/String;
+    const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1603,9 +1591,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->nrSOCHy:Ljava/lang/String;
+    const-string v2, "message"
 
     const-string v3, "Interface loadHTMLString"
 
@@ -1813,9 +1799,7 @@
 
     const-string v1, "name"
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->AkUyVHgLdnbm:Ljava/lang/String;
+    const-string v2, "domain"
 
     invoke-static {v0, p0, v1, p1, v2}, La/d0;->a(Lcom/onevcat/uniwebview/UniWebViewInterface$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1825,9 +1809,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->MgzsVzRrnnQk:Ljava/lang/String;
+    const-string v3, "Interface removePermissionTrustDomain: "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1879,9 +1861,7 @@
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->ftDqf:Ljava/lang/String;
+    const-string v3, ", domain: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3009,9 +2989,7 @@
 
     sget-object v0, Lcom/onevcat/uniwebview/UniWebViewInterface;->Companion:Lcom/onevcat/uniwebview/UniWebViewInterface$a;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/brotato/shooting/survivors/games/paid/android/ZVh/EBDotepEFW;->WIACxuaxLWKz:Ljava/lang/String;
+    const-string v1, "name"
 
     const-string v2, "text"
 
@@ -3029,9 +3007,7 @@
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->TWKpExWF:Ljava/lang/String;
+    const-string v3, ", text: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3299,9 +3275,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->KWCPaDjdgSfSxZb:Ljava/lang/String;
+    const-string v1, "name"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -4231,9 +4205,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/saucesdk/android/HGf/BqwBVtsr;->RdMtbX:Ljava/lang/String;
+    const-string v3, "Interface setWebViewAlpha: "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

@@ -123,9 +123,7 @@
 
     new-instance v15, Lcom/unity3d/player/UnityPlayer$d;
 
-    const/4 v14, 0x0
-
-    sget-object v14, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->wtpHTX:Ljava/lang/String;
+    const-string v14, "URL_ACTIVATED"
 
     const/16 v12, 0x8
 

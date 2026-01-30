@@ -263,9 +263,7 @@
 
     move-result-object v2
 
-    const/4 v4, 0x0
-
-    sget-object v4, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->dIoh:Ljava/lang/String;
+    const-string v4, "FMOD"
 
     invoke-static {v4, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

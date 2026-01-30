@@ -227,9 +227,7 @@
 
     new-instance v0, Lkotlin/annotation/AnnotationTarget;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/dobest/analyticshwsdk/c/YY/DTcAcStO;->tOdUJw:Ljava/lang/String;
+    const-string v1, "FIELD"
 
     const/4 v2, 0x4
 

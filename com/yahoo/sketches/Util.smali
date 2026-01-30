@@ -388,9 +388,7 @@
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->WpyJitWYfcFXknG:Ljava/lang/String;
+    const-string p2, "\" must be a positive multiple of 8 and greater than zero: "
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

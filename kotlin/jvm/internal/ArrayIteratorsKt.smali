@@ -107,9 +107,7 @@
 .method public static final iterator([F)Lkotlin/collections/FloatIterator;
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lbitter/jnibridge/QtR/SjdKIoNPuzgJRR;->XmXEIepSrOaSX:Ljava/lang/String;
+    const-string v0, "array"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

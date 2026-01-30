@@ -1150,9 +1150,7 @@
 .method public static final first(Lkotlin/ranges/ULongProgression;)J
     .registers 4
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->owEs:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1179,9 +1177,7 @@
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 p0, 0x0
-
-    sget-object p0, Lcom/google/android/gms/security/sW/SFkL;->jtyQz:Ljava/lang/String;
+    const-string p0, " is empty."
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1300,9 +1296,7 @@
 .method public static final last(Lkotlin/ranges/ULongProgression;)J
     .registers 4
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->rJzA:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1475,9 +1469,7 @@
 .method public static final random(Lkotlin/ranges/ULongRange;Lkotlin/random/Random;)J
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/dobest/analyticshwsdk/c/YY/DTcAcStO;->xTmAXRJFpN:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
