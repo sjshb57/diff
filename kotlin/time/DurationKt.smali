@@ -1109,9 +1109,7 @@
 
     const-string v4, "this as java.lang.String).substring(startIndex)"
 
-    const/4 v3, 0x0
-
-    sget-object v3, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->YVS:Ljava/lang/String;
+    const-string v3, "Unexpected order of duration components"
 
     move-object/from16 v16, v5
 
@@ -1190,9 +1188,7 @@
 
     if-nez v15, :cond_97
 
-    const/4 v15, 0x0
-
-    sget-object v15, Lkotlin/text/SqO/XzEfIqifQnwxPs;->bYC:Ljava/lang/String;
+    const-string v15, "+-."
 
     check-cast v15, Ljava/lang/CharSequence;
 

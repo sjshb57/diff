@@ -35,9 +35,7 @@
 
     const/4 p1, 0x6
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->CdKfoHGOViQrU:Ljava/lang/String;
+    const-string v0, "Camera2: CaptureSession configuration failed."
 
     invoke-static {p1, v0}, Lcom/unity3d/player/f;->Log(ILjava/lang/String;)V
 

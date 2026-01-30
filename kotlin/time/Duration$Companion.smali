@@ -494,9 +494,7 @@
 .method public final convert(DLkotlin/time/DurationUnit;Lkotlin/time/DurationUnit;)D
     .registers 6
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->ofXBjqPwtSDqtu:Ljava/lang/String;
+    const-string v0, "sourceUnit"
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1106,9 +1104,7 @@
 .method public final parseIsoStringOrNull-FghU774(Ljava/lang/String;)Lkotlin/time/Duration;
     .registers 4
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->lgZL:Ljava/lang/String;
+    const-string v0, "value"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

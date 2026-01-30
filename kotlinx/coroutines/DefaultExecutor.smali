@@ -459,9 +459,7 @@
 
     if-nez v0, :cond_3f
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->ITcMH:Ljava/lang/String;
+    const-string v0, "null cannot be cast to non-null type java.lang.Object"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 

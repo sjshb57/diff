@@ -84,9 +84,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->oPKwihi:Ljava/lang/String;
+    const-string v0, "base64"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

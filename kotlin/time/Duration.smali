@@ -1831,9 +1831,7 @@
     :cond_14
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->yctSHaYstcs:Ljava/lang/String;
+    const-string v1, "Multiplying infinite duration by zero yields an undefined result."
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

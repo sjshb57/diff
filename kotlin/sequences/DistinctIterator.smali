@@ -89,9 +89,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->jRtNHqr:Ljava/lang/String;
+    const-string v0, "source"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

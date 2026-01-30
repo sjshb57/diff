@@ -194,9 +194,7 @@
     :cond_d
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->PbwWwc:Ljava/lang/String;
+    const-string v1, "Already suspended"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

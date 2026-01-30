@@ -342,9 +342,7 @@
 
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->lDbWgwkpEl:Ljava/lang/String;
+    const-string v1, "CLOSE_HANDLER_CLOSED"
 
     invoke-direct {v0, v1}, Lkotlinx/coroutines/internal/Symbol;-><init>(Ljava/lang/String;)V
 

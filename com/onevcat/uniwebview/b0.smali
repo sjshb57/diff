@@ -106,9 +106,7 @@
     const-string v3, ""
 
     :goto_43
-    const/4 v4, 0x0
-
-    sget-object v4, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->PtgQuKecEDAaoQz:Ljava/lang/String;
+    const-string v4, "text/html"
 
     invoke-virtual/range {v1 .. v6}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 

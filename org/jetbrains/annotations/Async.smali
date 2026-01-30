@@ -20,9 +20,7 @@
 
     new-instance v0, Ljava/lang/AssertionError;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/common/images/fgBV/xVnYvYZdvU;->WtHY:Ljava/lang/String;
+    const-string v1, "Async should not be instantiated"
 
     invoke-direct {v0, v1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 

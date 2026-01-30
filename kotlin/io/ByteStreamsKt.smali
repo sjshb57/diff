@@ -115,9 +115,7 @@
     const/16 p1, 0x2000
 
     :cond_6
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->SXL:Ljava/lang/String;
+    const-string p2, "<this>"
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -176,9 +174,7 @@
 .method private static final bufferedReader(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/HGf/BqwBVtsr;->MYNnga:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
