@@ -223,9 +223,7 @@
 
     move-result-object v10
 
-    const/4 v11, 0x0
-
-    sget-object v11, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->BnGjS:Ljava/lang/String;
+    const-string v11, "   BaseBuffer   :"
 
     invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -468,9 +466,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->ANIV:Ljava/lang/String;
+    const-string v1, "   K                            : "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

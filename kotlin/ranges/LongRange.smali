@@ -286,9 +286,7 @@
     :cond_19
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->Bce:Ljava/lang/String;
+    const-string v1, "Cannot return the exclusive upper bound of a range that includes MAX_VALUE."
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

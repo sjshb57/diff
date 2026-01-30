@@ -163,9 +163,7 @@
 .method public final getModuleName(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/String;
     .registers 7
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->VoUCsDeDYFSa:Ljava/lang/String;
+    const-string v0, "continuation"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

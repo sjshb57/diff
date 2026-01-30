@@ -330,9 +330,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/security/sW/SFkL;->YbhPwy:Ljava/lang/String;
+    const-string v1, "InlineList(holder="
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

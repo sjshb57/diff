@@ -29,9 +29,7 @@
 .method static deliveryMetricsExportToBigQueryEnabled()Z
     .registers 6
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/HGf/BqwBVtsr;->MRROWYoW:Ljava/lang/String;
+    const-string v0, "delivery_metrics_exported_to_big_query_enabled"
 
     const/4 v1, 0x0
 
@@ -468,9 +466,7 @@
 .method static getMessageTime(Landroid/os/Bundle;)Ljava/lang/String;
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->WAjbaShpvivBfJz:Ljava/lang/String;
+    const-string v0, "google.c.a.ts"
 
     invoke-virtual {p0, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -744,9 +740,7 @@
 
     if-eqz p0, :cond_12
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/dobest/analyticshwsdk/c/YY/DTcAcStO;->ShMj:Ljava/lang/String;
+    const-string v0, "/topics/"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -1122,9 +1116,7 @@
     if-eqz v2, :cond_67
 
     :try_start_56
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->HdXhGEtkfYB:Ljava/lang/String;
+    const-string v3, "_nmt"
 
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -1185,9 +1177,7 @@
 
     if-nez v2, :cond_92
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lkotlin/text/SqO/XzEfIqifQnwxPs;->hWXSyTGBxOQ:Ljava/lang/String;
+    const-string v2, "_nf"
 
     invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1383,9 +1373,7 @@
 
     invoke-virtual {v1, v3, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 p0, 0x0
-
-    sget-object p0, Landroidx/activity/result/contract/Kr/Zeqt;->kaagOVnfI:Ljava/lang/String;
+    const-string p0, "_cmp"
 
     invoke-interface {v0, v2, p0, v1}, Lcom/google/firebase/analytics/connector/AnalyticsConnector;->logEvent(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 

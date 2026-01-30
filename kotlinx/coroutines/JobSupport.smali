@@ -2582,9 +2582,7 @@
     goto :goto_34
 
     :cond_31
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->zbskpp:Ljava/lang/String;
+    const-string v1, "Completed"
 
     :cond_34
     :goto_34
@@ -4704,9 +4702,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->YsfZvi:Ljava/lang/String;
+    const-string v2, "Job "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

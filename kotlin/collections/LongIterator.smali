@@ -89,9 +89,7 @@
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->IBRzBbkI:Ljava/lang/String;
+    const-string v1, "Operation is not supported for read-only collection"
 
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

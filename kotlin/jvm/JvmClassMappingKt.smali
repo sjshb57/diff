@@ -85,9 +85,7 @@
 
     move-result-object p0
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->kKQt:Ljava/lang/String;
+    const-string v0, "null cannot be cast to non-null type kotlin.reflect.KClass<out T of kotlin.jvm.JvmClassMappingKt.<get-annotationClass>>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -572,9 +570,7 @@
     goto :goto_96
 
     :sswitch_7c
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->MluvkCZzagvI:Ljava/lang/String;
+    const-string v0, "java.lang.Float"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

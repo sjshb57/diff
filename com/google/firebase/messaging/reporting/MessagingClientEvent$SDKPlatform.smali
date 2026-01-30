@@ -82,9 +82,7 @@
 
     new-instance v0, Lcom/google/firebase/messaging/reporting/MessagingClientEvent$SDKPlatform;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->NvprxtAWFJP:Ljava/lang/String;
+    const-string v1, "UNKNOWN_OS"
 
     const/4 v2, 0x0
 

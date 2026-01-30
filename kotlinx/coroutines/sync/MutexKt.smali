@@ -57,9 +57,7 @@
 
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->nfgrXBY:Ljava/lang/String;
+    const-string v1, "NO_OWNER"
 
     invoke-direct {v0, v1}, Lkotlinx/coroutines/internal/Symbol;-><init>(Ljava/lang/String;)V
 

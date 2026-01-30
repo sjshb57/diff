@@ -54,9 +54,7 @@
     :cond_8
     new-instance v2, La/g0;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/api/client/http/javanet/iQHD/aWJnqiuODg;->ZeTodwwGkjHleKm:Ljava/lang/String;
+    const-string v3, "activity"
 
     invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

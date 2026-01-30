@@ -79,9 +79,7 @@
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 v4, 0x0
-
-    sget-object v4, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->HePCnE:Ljava/lang/String;
+    const-string v4, ".png"
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -134,9 +134,7 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->EMoHiTEh:Ljava/lang/String;
+    const-string v1, "Module with the Main dispatcher is missing. Add dependency providing the Main dispatcher, e.g. \'kotlinx-coroutines-android\' and ensure it has the same version as \'kotlinx-coroutines-core\'"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

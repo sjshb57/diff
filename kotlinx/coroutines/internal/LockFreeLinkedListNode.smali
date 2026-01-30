@@ -133,9 +133,7 @@
 
     const-class v0, Ljava/lang/Object;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->bjG:Ljava/lang/String;
+    const-string v1, "_removedRef"
 
     invoke-static {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 

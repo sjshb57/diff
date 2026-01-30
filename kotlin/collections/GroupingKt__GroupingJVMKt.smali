@@ -245,9 +245,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/fasterxml/jackson/core/base/zv/knDAArvm;->ZsXhkcbi:Ljava/lang/String;
+    const-string v2, "null cannot be cast to non-null type kotlin.collections.MutableMap.MutableEntry<K of kotlin.collections.GroupingKt__GroupingJVMKt.mapValuesInPlace$lambda$4, R of kotlin.collections.GroupingKt__GroupingJVMKt.mapValuesInPlace$lambda$4>"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -52,9 +52,7 @@
 
     iput-object p1, p0, Lcom/unity3d/player/HFPStatus;->a:Landroid/content/Context;
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/nano/privacy/kry/CWPSZeXinZQPM;->hXRCHPWUBxWUUcF:Ljava/lang/String;
+    const-string v0, "audio"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

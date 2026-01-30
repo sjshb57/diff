@@ -326,9 +326,7 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->UfgyRxqfhyreQ:Ljava/lang/String;
+    const-string v1, "com.google.android.c2dm.permission.SEND"
 
     const-string v2, "com.google.android.gms"
 

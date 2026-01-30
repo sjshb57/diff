@@ -129,9 +129,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->nVgxacnC:Ljava/lang/String;
+    const-string v0, "builderAction"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -453,9 +451,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/text/SqO/XzEfIqifQnwxPs;->yZiipvmAcBejE:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

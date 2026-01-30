@@ -164,9 +164,7 @@
 
     const-string v0, "LicensingServiceHelper"
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->knVN:Ljava/lang/String;
+    const-string v1, "Invalid key specification."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

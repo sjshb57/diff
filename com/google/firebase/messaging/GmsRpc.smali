@@ -298,9 +298,7 @@
 
     move-result-object v1
 
-    const/4 v2, 0x0
-
-    sget-object v2, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->HJidWDLXA:Ljava/lang/String;
+    const-string v2, "RST"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -421,9 +419,7 @@
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/brotato/shooting/survivors/games/paid/android/ZVh/EBDotepEFW;->WRYJuxJoCdSTOJm:Ljava/lang/String;
+    const-string p2, "subtype"
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -451,9 +447,7 @@
 
     move-result-object p1
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->ikGbk:Ljava/lang/String;
+    const-string p2, "gmsv"
 
     invoke-virtual {p3, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
