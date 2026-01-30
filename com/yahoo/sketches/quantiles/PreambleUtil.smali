@@ -577,9 +577,7 @@
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v5, 0x0
-
-    sget-object v5, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->MiMjH:Ljava/lang/String;
+    const-string v5, "Byte  0: Preamble Longs       : "
 
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

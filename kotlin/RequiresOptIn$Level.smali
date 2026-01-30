@@ -89,9 +89,7 @@
 
     new-instance v0, Lkotlin/RequiresOptIn$Level;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->kStdzfXwUMAixXV:Ljava/lang/String;
+    const-string v1, "ERROR"
 
     const/4 v2, 0x1
 

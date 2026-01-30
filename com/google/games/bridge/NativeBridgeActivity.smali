@@ -90,9 +90,7 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/arch/core/internal/nl/WfPiHVumXD;->FaDWcMtD:Ljava/lang/String;
+    const-string v1, "NativeBridgeActivity"
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -122,9 +120,7 @@
 
     if-ne p1, v0, :cond_14
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->AWKYauoBvBUSbp:Ljava/lang/String;
+    const-string v0, "Forwarding activity result to native SDK."
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -217,9 +217,7 @@
 
     move-result-object p0
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/fasterxml/jackson/core/base/zv/knDAArvm;->hldXeYUcX:Ljava/lang/String;
+    const-string p1, "this.add(other)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -407,9 +405,7 @@
 .method private static final unaryMinus(Ljava/math/BigInteger;)Ljava/math/BigInteger;
     .registers 2
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->lCSHjhl:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

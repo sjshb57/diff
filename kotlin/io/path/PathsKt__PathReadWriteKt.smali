@@ -208,9 +208,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->kMYCAU:Ljava/lang/String;
+    const-string v0, "lines"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -550,15 +548,11 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->YxIzpmohqbcZcBx:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/drive/query/internal/ipbP/WoKRHhTzodlI;->eLpuRIGEbxiwyp:Ljava/lang/String;
+    const-string v0, "charset"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -783,9 +777,7 @@
 
     invoke-static {p0, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p3, 0x0
-
-    sget-object p3, Lbitter/jnibridge/QtR/SjdKIoNPuzgJRR;->rjuv:Ljava/lang/String;
+    const-string p3, "charset"
 
     invoke-static {p1, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -898,9 +890,7 @@
 
     move-result-object p0
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lbitter/jnibridge/QtR/SjdKIoNPuzgJRR;->SoAfwCpXyGyGdbG:Ljava/lang/String;
+    const-string p1, "newInputStream(this, *options)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1562,9 +1552,7 @@
     sget-object p2, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
-    const/4 p4, 0x0
-
-    sget-object p4, Lcom/brotato/shooting/survivors/games/paid/android/ZVh/EBDotepEFW;->jTiMnxsIisj:Ljava/lang/String;
+    const-string p4, "<this>"
 
     invoke-static {p0, p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

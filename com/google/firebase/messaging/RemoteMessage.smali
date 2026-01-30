@@ -304,9 +304,7 @@
     :cond_1c
     iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->bundle:Landroid/os/Bundle;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/nano/privacy/kry/CWPSZeXinZQPM;->fUsWbIxP:Ljava/lang/String;
+    const-string v1, "google.priority"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 

@@ -226,9 +226,7 @@
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->MdnNSACED:Ljava/lang/String;
+    const-string v1, "This job is always active"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

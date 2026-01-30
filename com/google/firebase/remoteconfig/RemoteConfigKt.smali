@@ -87,9 +87,7 @@
 .method public static final get(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfig;Ljava/lang/String;)Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigValue;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/HGf/BqwBVtsr;->jcaDSjQsEkD:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

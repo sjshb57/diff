@@ -47,9 +47,7 @@
 
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/android/gms/measurement/sdk/api/Pl/hrhW;->FKshlBqYfTkvlgJ:Ljava/lang/String;
+    const-string v1, "UNINITIALIZED"
 
     invoke-direct {v0, v1}, Lkotlinx/coroutines/internal/Symbol;-><init>(Ljava/lang/String;)V
 

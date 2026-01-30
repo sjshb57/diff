@@ -1186,9 +1186,7 @@
 
     if-eqz v0, :cond_5c
 
-    const/4 p0, 0x0
-
-    sget-object p0, Lcom/google/api/client/util/escape/TGjE/orViZ;->ItKnGVOFiWFE:Ljava/lang/String;
+    const-string p0, "J"
 
     return-object p0
 

@@ -131,17 +131,13 @@
 
     move-result-object v5
 
-    const/4 v6, 0x0
-
-    sget-object v6, Lcom/google/android/gms/common/providers/uZkk/KFzQBytWuUcFq;->QqFKsJjpDpbrnuT:Ljava/lang/String;
+    const-string v6, "rolloutId"
 
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    const/4 v7, 0x0
-
-    sget-object v7, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->QuJCmm:Ljava/lang/String;
+    const-string v7, "affectedParameterKeys"
 
     invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 

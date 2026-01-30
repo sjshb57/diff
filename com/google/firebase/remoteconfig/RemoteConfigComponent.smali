@@ -236,9 +236,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->jdjTNVcEBr:Ljava/lang/String;
+    const-string v2, "frc"
 
     const/4 v3, 0x0
 

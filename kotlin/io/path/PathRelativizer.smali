@@ -61,9 +61,7 @@
 
     sput-object v1, Lkotlin/io/path/PathRelativizer;->emptyPath:Ljava/nio/file/Path;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->GjhfhhAiZXttT:Ljava/lang/String;
+    const-string v1, ".."
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -239,9 +237,7 @@
     move-object p1, v0
 
     :goto_8b
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/android/gms/common/images/fgBV/xVnYvYZdvU;->FwGuz:Ljava/lang/String;
+    const-string p2, "r"
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

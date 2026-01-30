@@ -91,9 +91,7 @@
 .method public final invoke(Ljava/lang/reflect/Type;)Ljava/lang/String;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->fpsRkHJbce:Ljava/lang/String;
+    const-string v0, "p0"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

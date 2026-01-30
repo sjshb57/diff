@@ -121,9 +121,7 @@
     return-object p1
 
     :catch_3f
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->GBH:Ljava/lang/String;
+    const-string p1, "Java interface default methods are only supported since Android Oreo"
 
     new-array p2, v0, [Ljava/lang/Object;
 

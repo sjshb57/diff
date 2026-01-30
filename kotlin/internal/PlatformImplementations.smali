@@ -64,15 +64,11 @@
 .method public addSuppressed(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .registers 6
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->GowmqWSZOxSKaeX:Ljava/lang/String;
+    const-string v0, "cause"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->BmGCFgcgixsp:Ljava/lang/String;
+    const-string v0, "exception"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -89,9 +89,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->TdIunD:Ljava/lang/String;
+    const-string v3, "Restricting intent to a specific service: "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
