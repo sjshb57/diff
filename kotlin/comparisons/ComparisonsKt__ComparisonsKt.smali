@@ -590,9 +590,7 @@
 .method private static final nullsFirst$lambda$3$ComparisonsKt__ComparisonsKt(Ljava/util/Comparator;Ljava/lang/Object;Ljava/lang/Object;)I
     .registers 4
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/drive/query/internal/ipbP/WoKRHhTzodlI;->jFFUEyriUURc:Ljava/lang/String;
+    const-string v0, "$comparator"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

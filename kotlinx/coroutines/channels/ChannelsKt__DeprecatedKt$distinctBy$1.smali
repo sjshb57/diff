@@ -278,9 +278,7 @@
     :cond_24
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->GKNFE:Ljava/lang/String;
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

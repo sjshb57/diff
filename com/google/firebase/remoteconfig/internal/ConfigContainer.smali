@@ -206,9 +206,7 @@
 
     move-result-object v4
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/saucesdk/android/HGf/BqwBVtsr;->hASiuHLVoiemYC:Ljava/lang/String;
+    const-string v1, "template_version_number_key"
 
     invoke-virtual {p0, v1}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 

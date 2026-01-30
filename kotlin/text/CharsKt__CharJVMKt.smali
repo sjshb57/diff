@@ -398,9 +398,7 @@
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->zYVHRxlL:Ljava/lang/String;
+    const-string v1, "null cannot be cast to non-null type java.lang.String"
 
     const/4 v2, 0x1
 

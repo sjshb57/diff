@@ -563,9 +563,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Lcom/google/api/client/util/escape/TGjE/orViZ;->vURiKzvWEV:Ljava/lang/String;
+    const-string v1, "CompletedContinuation(result="
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

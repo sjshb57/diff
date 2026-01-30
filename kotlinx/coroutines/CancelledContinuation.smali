@@ -85,9 +85,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->YYCfNwvUEiQ:Ljava/lang/String;
+    const-string p1, " was cancelled normally"
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

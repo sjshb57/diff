@@ -439,9 +439,7 @@
 
     invoke-virtual {v0, v2, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/android/gms/security/sW/SFkL;->NSwRWrfGf:Ljava/lang/String;
+    const-string v2, "short"
 
     const-string v7, "kotlin.Short"
 
@@ -481,9 +479,7 @@
 
     invoke-virtual {v2, v12, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->laHXBmw:Ljava/lang/String;
+    const-string v3, "java.lang.Character"
 
     invoke-virtual {v2, v3, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -537,9 +533,7 @@
 
     const-string v5, "java.lang.Throwable"
 
-    const/4 v6, 0x0
-
-    sget-object v6, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->WMkSm:Ljava/lang/String;
+    const-string v6, "kotlin.Throwable"
 
     invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

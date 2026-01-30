@@ -473,9 +473,7 @@
 
     const-string v2, "Nl"
 
-    const/4 v3, 0x0
-
-    sget-object v3, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->VeRkxkeGfV:Ljava/lang/String;
+    const-string v3, "LETTER_NUMBER"
 
     invoke-direct {v0, v3, v1, v1, v2}, Lkotlin/text/CharCategory;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 

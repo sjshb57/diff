@@ -598,9 +598,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/activity/result/contract/Kr/Zeqt;->yzpf:Ljava/lang/String;
+    const-string v0, "<this>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1149,9 +1147,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->VMnRYlqZ:Ljava/lang/String;
+    const-string v0, "elements"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

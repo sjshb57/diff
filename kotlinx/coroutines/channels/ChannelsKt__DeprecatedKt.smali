@@ -1049,9 +1049,7 @@
     :cond_3f
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lkotlin/text/SqO/XzEfIqifQnwxPs;->QgBYnwhjaVtKrL:Ljava/lang/String;
+    const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

@@ -74,9 +74,7 @@
     :cond_c
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/android/datatransport/runtime/backends/oKH/lWcvVmRwzmOI;->EKFeXVhiYGzLdph:Ljava/lang/String;
+    const-string p1, "Super calls with default arguments not supported in this target, function: tryResume"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

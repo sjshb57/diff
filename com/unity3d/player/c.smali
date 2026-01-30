@@ -1432,9 +1432,7 @@
 
     if-nez v1, :cond_3c
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/browser/customtabs/NP/AfoCF;->QcbWObhSkY:Ljava/lang/String;
+    const-string v1, "Camera2: Timeout waiting to close camera."
 
     invoke-static {v2, v1}, Lcom/unity3d/player/f;->Log(ILjava/lang/String;)V
     :try_end_29
@@ -1804,9 +1802,7 @@
 
     iget-object v0, p0, Lcom/unity3d/player/c;->t:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/privacysandbox/ads/adservices/internal/cwk/rPKJFT;->pwlJXQ:Ljava/lang/String;
+    const-string v1, "Cancel focus"
 
     invoke-virtual {v0, v1}, Landroid/hardware/camera2/CaptureRequest$Builder;->setTag(Ljava/lang/Object;)V
 

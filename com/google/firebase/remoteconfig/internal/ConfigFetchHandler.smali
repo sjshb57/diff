@@ -297,9 +297,7 @@
 
     aput-object p1, p2, v0
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/android/gms/auth/api/signin/Jlon/RVjMOLoUouxm;->rrAvARvRx:Ljava/lang/String;
+    const-string p1, "Fetch is throttled. Please wait before calling fetch again: %s"
 
     invoke-static {p1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 

@@ -46,9 +46,7 @@
     :cond_d
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->xKNoTmF:Ljava/lang/String;
+    const-string p1, "Super calls with default arguments not supported in this target, function: callsInPlace"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

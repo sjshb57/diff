@@ -310,9 +310,7 @@
     :cond_40
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/saucesdk/android/getgaid/shYz/ocQSSK;->SBWxt:Ljava/lang/String;
+    const-string p2, "Idle worker keep alive time "
 
     invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

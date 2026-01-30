@@ -69,9 +69,7 @@
 
     sget-object v1, La/i;->d:La/i;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->ZvrPhcfhPCzJ:Ljava/lang/String;
+    const-string v2, "Exception when preparing web view. This usually means there is no web view on the device and the whole UniWebView won\'t work. "
 
     invoke-static {v2}, La/g;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
