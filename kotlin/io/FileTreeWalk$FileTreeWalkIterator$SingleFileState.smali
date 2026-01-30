@@ -59,9 +59,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/browser/customtabs/NP/AfoCF;->aqSYf:Ljava/lang/String;
+    const-string v0, "rootFile"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

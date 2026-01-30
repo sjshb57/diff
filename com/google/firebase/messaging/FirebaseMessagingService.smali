@@ -203,9 +203,7 @@
 .method private getMessageId(Landroid/content/Intent;)Ljava/lang/String;
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lcom/google/android/gms/security/sW/SFkL;->RBeovMiTOnM:Ljava/lang/String;
+    const-string v0, "google.message_id"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
@@ -370,9 +368,7 @@
 
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
-
-    sget-object v1, Landroidx/activity/result/contract/Kr/Zeqt;->CrPPS:Ljava/lang/String;
+    const-string v1, "Received message with unknown type: "
 
     invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

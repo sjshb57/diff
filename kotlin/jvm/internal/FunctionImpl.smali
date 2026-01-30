@@ -71,9 +71,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/android/gms/internal/ads_identifier/qn/GYVFDGEnzLd;->SVJCVQLZa:Ljava/lang/String;
+    const-string v2, "Wrong function arity, expected: "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

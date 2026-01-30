@@ -104,9 +104,7 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    sget-object v0, Lkotlin/text/SqO/XzEfIqifQnwxPs;->fKKWgQOkmAkJ:Ljava/lang/String;
+    const-string v0, "operation"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

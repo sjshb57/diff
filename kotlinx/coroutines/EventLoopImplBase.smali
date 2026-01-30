@@ -455,9 +455,7 @@
 
     invoke-direct {v3, v4, v2}, Lkotlinx/coroutines/internal/LockFreeTaskQueueCore;-><init>(IZ)V
 
-    const/4 v4, 0x0
-
-    sget-object v4, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->EUohkCoNVEUYJPM:Ljava/lang/String;
+    const-string v4, "null cannot be cast to non-null type java.lang.Runnable{ kotlinx.coroutines.RunnableKt.Runnable }"
 
     invoke-static {v1, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 

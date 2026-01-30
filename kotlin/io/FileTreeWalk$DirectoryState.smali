@@ -43,9 +43,7 @@
 .method public constructor <init>(Ljava/io/File;)V
     .registers 3
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/arch/core/executor/AWwc/FjTezVABEiMiti;->wydk:Ljava/lang/String;
+    const-string v0, "rootDir"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

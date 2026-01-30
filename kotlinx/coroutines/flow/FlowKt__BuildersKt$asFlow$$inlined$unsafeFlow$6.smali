@@ -149,9 +149,7 @@
     :cond_37
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Landroidx/arch/core/internal/nl/WfPiHVumXD;->qVKWtUgt:Ljava/lang/String;
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

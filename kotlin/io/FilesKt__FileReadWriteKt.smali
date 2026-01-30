@@ -643,9 +643,7 @@
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
     :cond_6
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/google/common/reflect/FGG/KrvIJwjgtvwpVx;->gpiwATwZpuJ:Ljava/lang/String;
+    const-string p2, "<this>"
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

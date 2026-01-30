@@ -249,9 +249,7 @@
     :cond_22
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lcom/saucesdk/android/HGf/BqwBVtsr;->poGqqStufhvK:Ljava/lang/String;
+    const-string p2, "Check failed."
 
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -350,9 +348,7 @@
 .method public write([BII)V
     .registers 8
 
-    const/4 v0, 0x0
-
-    sget-object v0, Landroidx/activity/result/contract/Kr/Zeqt;->KABQVn:Ljava/lang/String;
+    const-string v0, "source"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

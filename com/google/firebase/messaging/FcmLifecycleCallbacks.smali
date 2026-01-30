@@ -90,13 +90,9 @@
     :catch_26
     move-exception p1
 
-    const/4 v1, 0x0
+    const-string v1, "FirebaseMessaging"
 
-    sget-object v1, Landroidx/privacysandbox/ads/adservices/adselection/oJ/LFBAEOAct;->BVaE:Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/saucesdk/android/getgaid/shYz/gnCvd;->zzHfDiXhHIQJd:Ljava/lang/String;
+    const-string v2, "Failed trying to get analytics data from Intent extras."
 
     invoke-static {v1, v2, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 

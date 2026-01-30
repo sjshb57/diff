@@ -308,9 +308,7 @@
 
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    const/4 p2, 0x0
-
-    sget-object p2, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->SQhnjFZ:Ljava/lang/String;
+    const-string p2, "Operation is not supported for read-only collection"
 
     invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 

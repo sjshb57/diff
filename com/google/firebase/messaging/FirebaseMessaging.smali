@@ -190,9 +190,7 @@
 
     invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
-
-    sget-object p1, Lcom/google/firebase/remoteconfig/XFy/cBAEZLzlMbW;->dCB:Ljava/lang/String;
+    const-string p1, " was not an application, can\'t register for lifecycle callbacks. Some notification events may be dropped as a result."
 
     invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1274,9 +1272,7 @@
 
     move-result-object v1
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lkotlin/jvm/optionals/NVB/ylZYEMtWDxk;->flX:Ljava/lang/String;
+    const-string v2, "FCM"
 
     invoke-interface {v0, v1, v2}, Lcom/google/firebase/iid/internal/FirebaseInstanceIdInternal;->deleteToken(Ljava/lang/String;Ljava/lang/String;)V
 

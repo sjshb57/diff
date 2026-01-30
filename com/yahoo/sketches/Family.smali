@@ -307,9 +307,7 @@
 
     const/4 v7, 0x1
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/firebase/installations/rpcD/KymwBoUEGBCwi;->eBGXJKHYfFFX:Ljava/lang/String;
+    const-string v2, "HLL"
 
     const/4 v3, 0x6
 
@@ -417,9 +415,7 @@
 
     const/4 v7, 0x4
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lcom/google/android/libraries/play/hpe/Nqz/HXjHgRCaYyjPn;->DPPMEbYU:Ljava/lang/String;
+    const-string v2, "VAROPT"
 
     const/16 v3, 0xc
 
@@ -455,9 +451,7 @@
 
     const/4 v7, 0x2
 
-    const/4 v2, 0x0
-
-    sget-object v2, Lkotlinx/coroutines/future/xI/AZbRohQeEzrszi;->HXpWmo:Ljava/lang/String;
+    const-string v2, "KLL"
 
     const/16 v3, 0xe
 
